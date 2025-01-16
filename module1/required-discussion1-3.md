@@ -1,4 +1,4 @@
-# Required Discussion 1.3: Creating Visualizations Using Personally
+# Required Discussion 1.3: Creating Visualizations Using Personally Sourced Data
 
 ## Learning Outcome Addressed
 Analyze different data visualization techniques.
