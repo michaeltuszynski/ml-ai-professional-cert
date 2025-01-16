@@ -13,7 +13,7 @@ In addition, it is important to mention that due to the complexity of ML and AI 
 5. Evaluation
 6. Deployment
 
-![The CRISP-DM framework](image.png)
+![The CRISP-DM framework](images/crisp-dm-framework.png)
 
 *The CRISP-DM framework*
 
