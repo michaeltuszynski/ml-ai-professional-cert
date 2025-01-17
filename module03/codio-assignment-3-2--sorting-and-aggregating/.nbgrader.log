@@ -1,0 +1,25 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://xrayunder-icebergsplit:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook codio_assignment_3.2.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: ddee89a3-c592-4b28-89e3-856f194be701
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel ddee89a3-c592-4b28-89e3-856f194be701) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment_3.2.ipynb
+[NotebookApp | WARNING] Trusting notebook /codio_assignment_3.2.ipynb
+[NotebookApp | INFO] Starting buffering for ddee89a3-c592-4b28-89e3-856f194be701:7fe7b19483a1498593aa3b1ebe9bc7a3
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel ddee89a3-c592-4b28-89e3-856f194be701) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment_3.2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_3.2.ipynb
+[NotebookApp | INFO] Starting buffering for ddee89a3-c592-4b28-89e3-856f194be701:80ca505c6eae42a783a7abab4af13322
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: ddee89a3-c592-4b28-89e3-856f194be701
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://nobodysponsor-elementengine:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
