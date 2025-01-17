@@ -23,61 +23,111 @@ def extract_text_from_pdf(pdf_path: str) -> str:
 
 def clean_text(text: str) -> str:
     """Clean and format extracted text."""
-    # Remove page numbers/headers
-    text = re.sub(r'Page \d+ of \d+\s*', '', text)
+    # Remove page numbers and headers more aggressively
+    text = re.sub(r'Page\s+\d+\s+of\s+\d+.*?\n', '', text, flags=re.IGNORECASE)
+    text = re.sub(r'^\s*\d+\s*$', '', text, flags=re.MULTILINE)  # Standalone page numbers
 
-    # Fix hyphenated words at line breaks (more comprehensive)
-    text = re.sub(r'(\w+)\s*-\s*\n\s*(\w+)', r'\1\2', text)
-    text = re.sub(r'(\w+)\s+-\s+(\w+)', r'\1-\2', text)
+    # Fix hyphenated words at line breaks
+    text = re.sub(r'(\w+)-\s*\n\s*(\w+)', r'\1\2', text)
 
-    # Remove multiple spaces
-    text = re.sub(r'\s+', ' ', text)
-
-    # Remove form feed characters
+    # Remove form feed and other special characters
     text = text.replace('\f', '')
+    text = text.replace('\r', '')
 
-    # Clean up newlines
-    text = text.replace('\r', '\n')
-    text = re.sub(r'\n\s*\n', '\n\n', text)
+    # Fix spacing issues
+    text = re.sub(r'\s+', ' ', text)  # Multiple spaces to single space
+    text = re.sub(r'\n\s*\n', '\n\n', text)  # Multiple newlines to double newline
+    text = re.sub(r'(?<=[.!?])\s+(?=[A-Z])', '\n\n', text)  # Add paragraph breaks after sentences
 
-    # Fix spacing around quotes
+    # Fix spacing around quotes and punctuation
     text = re.sub(r'\s+"', ' "', text)
     text = re.sub(r'"\s+', '" ', text)
+    text = re.sub(r'\s+([.,;:!?])', r'\1', text)
+
+    # Remove any remaining whitespace at start/end of lines
+    text = '\n'.join(line.strip() for line in text.split('\n'))
 
     return text.strip()
 
 def format_headers(text: str) -> str:
     """Format text with proper markdown headers."""
+    # First pass: split module and video headers if combined
+    text = re.sub(r'(Module [^V]+)Video', r'\1\nVideo', text)
+
+    # Split into lines and process
     lines = text.split('\n')
     formatted_lines = []
-    current_video = None
 
-    for line in lines:
-        line = line.strip()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+
         if not line:
-            formatted_lines.append(line)
+            formatted_lines.append('')
+            i += 1
             continue
 
         # Module header
         if line.startswith('Module'):
-            formatted_lines.append(f"# {line}")
+            formatted_lines.extend([
+                '',  # Empty line before header
+                f"# {line}",
+                ''   # Empty line after header
+            ])
+            i += 1
             continue
 
         # Video sections
         video_match = re.match(r'^Video\s+(\d+):\s+(.+)', line, re.IGNORECASE)
         if video_match:
             num, title = video_match.groups()
-            current_video = num
-            formatted_lines.append(f"\n## Video {num}: {title}")
+            formatted_lines.extend([
+                '',  # Empty line before header
+                f"## Video {num}: {title}",
+                ''   # Empty line after header
+            ])
+            i += 1
             continue
 
-        # Subsections (numbered or key concepts)
+        # Subsections
         if re.match(r'^\d+\.?\d*\s+[A-Z]', line) or (len(line) < 60 and line[0].isupper() and not line[-1] in '.,:;?!)'):
-            formatted_lines.append(f"\n### {line}")
-        else:
-            formatted_lines.append(line)
+            formatted_lines.extend([
+                '',  # Empty line before header
+                f"### {line}",
+                ''   # Empty line after header
+            ])
+            i += 1
+            continue
 
-    return '\n'.join(formatted_lines)
+        # Regular content - check if next line is a header
+        next_is_header = False
+        if i + 1 < len(lines):
+            next_line = lines[i + 1].strip()
+            next_is_header = (
+                next_line.startswith('Module') or
+                re.match(r'^Video\s+\d+:', next_line, re.IGNORECASE) or
+                re.match(r'^\d+\.?\d*\s+[A-Z]', next_line) or
+                (len(next_line) < 60 and next_line and next_line[0].isupper() and not next_line[-1] in '.,:;?!)')
+            )
+
+        formatted_lines.append(line)
+        if next_is_header:
+            formatted_lines.append('')  # Add space before next header
+        i += 1
+
+    # Clean up multiple empty lines
+    result = []
+    prev_empty = False
+    for line in formatted_lines:
+        if not line:
+            if not prev_empty:
+                result.append(line)
+            prev_empty = True
+        else:
+            result.append(line)
+            prev_empty = False
+
+    return '\n'.join(result).strip()
 
 def format_code_and_math(text: str) -> str:
     """Format code and mathematical terms."""
@@ -122,49 +172,56 @@ def format_emphasis(text: str) -> str:
 
 def format_paragraphs(text: str) -> str:
     """Improve paragraph formatting."""
+    # Remove any remaining page number artifacts
+    text = re.sub(r'\n\s*\d+\s*\n', '\n\n', text)
+
     # Ensure consistent paragraph spacing
     text = re.sub(r'\n{3,}', '\n\n', text)
 
-    # Add proper spacing after sentences
-    text = re.sub(r'([.!?])\s+([A-Z])', r'\1\n\n\2', text)
-
-    # Ensure lists have proper spacing
-    text = re.sub(r'\n([-*])\s', r'\n\n\1 ', text)
-
-    # Clean up extra spaces around blockquotes
-    text = re.sub(r'\n\s*>\s*', r'\n> ', text)
-    text = re.sub(r'\n>\s*\n\s*>\s*', r'\n> \n> ', text)
-
-    # Fix spacing around mathematical expressions
-    text = re.sub(r'(\w+)\s*=\s*(\w+)', r'\1 = \2', text)
-
-    # Join short lines that are part of the same sentence
+    # Add proper spacing after sentences while preserving lists and code blocks
     lines = text.split('\n')
-    result = []
-    current = []
+    formatted_lines = []
+    in_code_block = False
 
-    for line in lines:
+    for i, line in enumerate(lines):
+        # Skip empty lines
         if not line.strip():
-            if current:
-                result.append(' '.join(current))
-                current = []
-            result.append('')
-        elif len(line) < 60 and not line.rstrip().endswith(('.', '?', '!', ':', '>')):
-            current.append(line)
-        else:
-            if current:
-                current.append(line)
-                result.append(' '.join(current))
-                current = []
+            formatted_lines.append('')
+            continue
+
+        # Handle code blocks
+        if line.strip().startswith('```'):
+            in_code_block = not in_code_block
+            formatted_lines.append(line)
+            continue
+
+        if in_code_block:
+            formatted_lines.append(line)
+            continue
+
+        # Handle lists
+        if line.strip().startswith(('-', '*', '+', '1.', '>')):
+            formatted_lines.append(line)
+            continue
+
+        # Regular paragraph text
+        if i > 0 and lines[i-1].strip() and not lines[i-1].strip().startswith(('-', '*', '+', '1.', '>')):
+            # Join with previous line if it's part of the same paragraph
+            if not any(line.endswith(x) for x in '.!?:'):
+                formatted_lines[-1] = formatted_lines[-1] + ' ' + line
             else:
-                result.append(line)
+                formatted_lines.append(line)
+        else:
+            formatted_lines.append(line)
 
-    if current:
-        result.append(' '.join(current))
+    text = '\n'.join(formatted_lines)
 
-    text = '\n'.join(result)
+    # Clean up spacing
+    text = re.sub(r'\n{3,}', '\n\n', text)  # Remove excessive blank lines
+    text = re.sub(r'(?<=\n\n)[\t ]+', '', text)  # Remove leading spaces after blank lines
+    text = re.sub(r'[\t ]+(?=\n\n)', '', text)  # Remove trailing spaces before blank lines
 
-    return text
+    return text.strip()
 
 def convert_pdf_to_markdown(pdf_path: str, output_path: Optional[str] = None) -> None:
     """Convert PDF file to Markdown format."""
