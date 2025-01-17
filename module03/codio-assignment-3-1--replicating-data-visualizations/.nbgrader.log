@@ -1,0 +1,35 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://sloganprofile-pandagemini:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook codio_assignment_3_1.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/images/np1.png (192.168.10.226) 1.32ms
+[NotebookApp | INFO] Kernel started: d3cacdea-b2eb-4f4e-a466-ffa06ba13acd
+[NotebookApp | INFO] 302 GET /notebooks/images/p4.png (192.168.10.226) 1.31ms
+[NotebookApp | INFO] 302 GET /notebooks/images/np2.png (192.168.10.226) 1.39ms
+[NotebookApp | INFO] 302 GET /notebooks/images/np4.png (192.168.10.226) 1.06ms
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel d3cacdea-b2eb-4f4e-a466-ffa06ba13acd) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment_3_1.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_3_1.ipynb
+[NotebookApp | WARNING] Trusting notebook /codio_assignment_3_1.ipynb
+[NotebookApp | INFO] Starting buffering for d3cacdea-b2eb-4f4e-a466-ffa06ba13acd:6691b097cb714b3e89da5bdcae9a31ab
+[NotebookApp | INFO] 302 GET /notebooks/images/np2.png (192.168.10.226) 1.07ms
+[NotebookApp | INFO] 302 GET /notebooks/images/p4.png (192.168.10.226) 1.06ms
+[NotebookApp | INFO] 302 GET /notebooks/images/np1.png (192.168.10.226) 0.94ms
+[NotebookApp | INFO] 302 GET /notebooks/images/np4.png (192.168.10.226) 1.07ms
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel d3cacdea-b2eb-4f4e-a466-ffa06ba13acd) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment_3_1.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_3_1.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_3_1.ipynb
+[NotebookApp | INFO] Starting buffering for d3cacdea-b2eb-4f4e-a466-ffa06ba13acd:f1031a2303bf454aafcfc1172056b3d7
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: d3cacdea-b2eb-4f4e-a466-ffa06ba13acd
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://nobodysponsor-elementengine:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
