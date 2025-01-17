@@ -1,0 +1,51 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://managerhawaii-archivelesson:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook codio_assignment_2-2.ipynb is not trusted
+[NotebookApp | WARNING] 404 GET /notebooks/images/payroll.png (192.168.10.226): No such file or directory: images/payroll.png
+[NotebookApp | WARNING] 404 GET /notebooks/images/payroll.png (192.168.10.226) 16.57ms referer=https://managerhawaii-archivelesson-3000.codio.io/notebooks/codio_assignment_2-2.ipynb?codioId=752dd8ab-1252-06ae-8739-8da0520ea417
+[NotebookApp | INFO] Kernel started: 6a2bd379-57d1-489a-8551-918198a8fb8c
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 6a2bd379-57d1-489a-8551-918198a8fb8c) to 5.3 (client).
+[NotebookApp | WARNING] Notebook codio_assignment_2-2.ipynb is not trusted
+[NotebookApp | WARNING] Trusting notebook /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Starting buffering for 6a2bd379-57d1-489a-8551-918198a8fb8c:456ae5cffccc4e218c1ca352a8902854
+[NotebookApp | WARNING] 404 GET /notebooks/images/payroll.png (192.168.10.226): No such file or directory: images/payroll.png
+[NotebookApp | WARNING] 404 GET /notebooks/images/payroll.png (192.168.10.226) 2.28ms referer=https://managerhawaii-archivelesson-3000.codio.io/notebooks/codio_assignment_2-2.ipynb?codioId=752dd8ab-1252-06ae-8739-8da0520ea417
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 6a2bd379-57d1-489a-8551-918198a8fb8c) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment_2-2.ipynb
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | INFO] Validating '/home/codio/workspace/codio_assignment_2-2.ipynb'
+[NotebookApp | INFO] Executing notebook with kernel: python3
+[NotebookApp | INFO] Starting buffering for 6a2bd379-57d1-489a-8551-918198a8fb8c:b5dda82a3f2544e78188ad997fae73f0
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: 6a2bd379-57d1-489a-8551-918198a8fb8c
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://nobodysponsor-elementengine:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
