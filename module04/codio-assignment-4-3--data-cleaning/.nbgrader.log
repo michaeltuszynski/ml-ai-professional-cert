@@ -1,0 +1,33 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://praguepluto-centerladder:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook codio_assignment4_3.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 7e9466e7-853f-4a47-a466-5a2542613d55
+[NotebookApp | WARNING] 404 GET /notebooks/images/dbpedia.png (192.168.10.93): No such file or directory: images/dbpedia.png
+[NotebookApp | WARNING] 404 GET /notebooks/images/dbpedia.png (192.168.10.93) 15.73ms referer=https://praguepluto-centerladder-3000.codio.io/notebooks/codio_assignment4_3.ipynb?codioId=a42e8d0d-45c2-2710-b118-7fa71d474817
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 7e9466e7-853f-4a47-a466-5a2542613d55) to 5.3 (client).
+[NotebookApp | WARNING] Notebook codio_assignment4_3.ipynb is not trusted
+[NotebookApp | WARNING] Trusting notebook /codio_assignment4_3.ipynb
+[NotebookApp | INFO] Starting buffering for 7e9466e7-853f-4a47-a466-5a2542613d55:bae97b391c084e9e816a0841c19ff925
+[NotebookApp | WARNING] 404 GET /notebooks/images/dbpedia.png (192.168.10.93): No such file or directory: images/dbpedia.png
+[NotebookApp | WARNING] 404 GET /notebooks/images/dbpedia.png (192.168.10.93) 1.83ms referer=https://praguepluto-centerladder-3000.codio.io/notebooks/codio_assignment4_3.ipynb?codioId=a42e8d0d-45c2-2710-b118-7fa71d474817
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 7e9466e7-853f-4a47-a466-5a2542613d55) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment4_3.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment4_3.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment4_3.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment4_3.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment4_3.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment4_3.ipynb
+[NotebookApp | INFO] Starting buffering for 7e9466e7-853f-4a47-a466-5a2542613d55:978e8634db1b45438f9c7a6aaea78482
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: 7e9466e7-853f-4a47-a466-5a2542613d55
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://nobodysponsor-elementengine:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
