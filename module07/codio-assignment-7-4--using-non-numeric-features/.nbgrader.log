@@ -1,0 +1,25 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://dramanirvana-giraffediamond:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook codio_assignment7.4.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 85e2edc5-2bcc-4609-a24e-8ce678531973
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 85e2edc5-2bcc-4609-a24e-8ce678531973) to 5.3 (client).
+[NotebookApp | WARNING] Notebook codio_assignment7.4.ipynb is not trusted
+[NotebookApp | WARNING] Trusting notebook /codio_assignment7.4.ipynb
+[NotebookApp | INFO] Starting buffering for 85e2edc5-2bcc-4609-a24e-8ce678531973:8c73ce32b5ca450f81c2b874d426c8f9
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel 85e2edc5-2bcc-4609-a24e-8ce678531973) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment7.4.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment7.4.ipynb
+[NotebookApp | INFO] Starting buffering for 85e2edc5-2bcc-4609-a24e-8ce678531973:3c4469bb13124243b1905678adfa4896
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: 85e2edc5-2bcc-4609-a24e-8ce678531973
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://nobodysponsor-elementengine:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
