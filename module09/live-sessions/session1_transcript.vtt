@@ -1,0 +1,1334 @@
+WEBVTT
+
+1
+00:00:05.180 --> 00:00:26.340
+Jessica: Alright! Hello, everybody, and welcome to the module. 9 office hour for the professional certificate in machine learning. And AI. I hope you guys can hear me well and see me. Well, if there are some issues, I'm in a hotel room. So the Wi-fi is.
+
+2
+00:00:26.700 --> 00:00:29.866
+Jessica: you know, not great. So.
+
+3
+00:00:30.600 --> 00:00:54.270
+Jessica: If there are any delays, and you cannot hear me. Well, there is some lag or something, let me know, and I can turn off my video. But for now it seems to be fine. So let's start with today's plan. So the plan for today is to go over a slide deck first, st I do have a slide deck to talk about overfitting
+
+4
+00:00:54.270 --> 00:01:15.959
+Jessica: sequential feature, selection and lasso and ridge regression. And then I also have a Jupyter notebook where I am going to show you how to use a how to perform a comparative analysis when it comes to choosing the correct algorithm to use in a certain situation.
+
+5
+00:01:16.110 --> 00:01:22.399
+Jessica: So let's get started here because we have quite a few things to cover. So let's start with the
+
+6
+00:01:22.410 --> 00:01:24.289
+Jessica: excuse me with the slide deck.
+
+7
+00:01:24.470 --> 00:01:52.459
+Jessica: So I want to start talking today. So Module 9 is a little bit of a, it's a module that is not focused on only one topic. It's sort of like brings together a few different issues and tricks that can be used in order to ensure that your model is working correctly, and also to ensure that you're maximizing the performance of your model.
+
+8
+00:01:52.720 --> 00:02:18.600
+Jessica: So the 1st topic that I want to talk about is overfitting. So I might have mentioned this word before in my previous office hours, and you might have heard this word before. But essentially overfitting is one of the main problems that happens out there in machine learning and deep learning as well, and it refers to the
+
+9
+00:02:18.600 --> 00:02:26.810
+Jessica: phenomenon that happens when your machine learning model is learning from the data too well.
+
+10
+00:02:26.810 --> 00:02:41.610
+Jessica: and then when it's presented with new data to perform the evaluation or the testing. Basically, the performance goes down because it has learned too well from the previous
+
+11
+00:02:41.730 --> 00:02:44.269
+Jessica: from the training set.
+
+12
+00:02:44.600 --> 00:02:52.910
+Jessica: So one way to easily think about the overfitting phenomenon is the following, so imagine that you have a
+
+13
+00:02:53.330 --> 00:03:18.290
+Jessica: data set. Okay? And you have a training portion of the data set and a testing portion of the data set. Okay, this is very normal. We do this all the time to why? Well to prevent overfitting really right. One of the reason why we split the initial data set into training and testing is to avoid this phenomenon of overfitting. That is generally bad. Okay.
+
+14
+00:03:18.290 --> 00:03:24.620
+Jessica: so you are training your machine learning algorithm using the training set.
+
+15
+00:03:24.940 --> 00:03:33.579
+Jessica: And for some reason, okay, you get a pretty good accuracy. Okay? Say that you get an 85% accuracy.
+
+16
+00:03:34.450 --> 00:03:37.050
+Jessica: What happens with the
+
+17
+00:03:38.400 --> 00:03:43.126
+Jessica: when when you then when you're done with the training and you
+
+18
+00:03:44.330 --> 00:03:49.230
+Jessica: pass the testing data to the machine learning algorithm that has been trained.
+
+19
+00:03:49.950 --> 00:04:12.499
+Jessica: You suddenly see, like a drop in accuracy. Okay, you go from 85% of accuracy in the training set to 60% or lower into the into the testing set. Okay, that is when you should recognize that overfitting is happening. Okay, so overfitting always happens
+
+20
+00:04:12.500 --> 00:04:21.230
+Jessica: when the accuracy of the training set is much, much higher than the accuracy on the testing set
+
+21
+00:04:23.300 --> 00:04:42.750
+Jessica: by. There isn't really like a magic number that tells you. Oh, if it's like 20%, there is a 20% difference, then it's overfitting. If it's a 10% difference it's overfitting the rule of thumb that I like to use is that if if the accuracy of the training set and testing set are within
+
+22
+00:04:42.750 --> 00:04:55.829
+Jessica: 5 to 10%. You're probably fine. Anything larger than that. You should probably consider going back to the drawing board. And because you are probably overfitting. Okay.
+
+23
+00:04:56.290 --> 00:04:59.729
+Jessica: why does overfitting happen? Well.
+
+24
+00:05:00.378 --> 00:05:18.370
+Jessica: the reason is because, for example, your training set may contain some values okay, that are not present in your testing set. And so when the machine learning algorithm that is presented with the testing set that has never seen before.
+
+25
+00:05:18.790 --> 00:05:43.490
+Jessica: then it kind of fails to perform in the same way. Okay, this, for example, happens a lot if you have outliers. So if you have a data set that has a lot of outliers. And, for example, these outliers end up in the training set. Okay, the algorithm is going to think that, you know, like the presence of outliers is normal. Okay?
+
+26
+00:05:43.840 --> 00:06:08.630
+Jessica: But then, if you pass the if you pass a testing set, that, for example, has no outliers at all, or vice versa, right. One doesn't have outliers and the other one has outliers. Then that's when you may see this phenomenon of overfitting happening because the machine learning algorithm essentially doesn't know what to do with the new data that is seen because it only knows what happens with the training data. Okay?
+
+27
+00:06:08.700 --> 00:06:31.238
+Jessica: So as you can imagine it is important, you know, to consider the presence of outliers when you're doing data cleaning. Okay? I'm not saying that outliers are bad. I am saying that you know, like anytime that you observe outliers in a data set, you should ask yourself, well, are these actual outliers? Or is this just like
+
+28
+00:06:31.940 --> 00:06:47.760
+Jessica: like a user error. And the data was not recorded correctly. Okay? And unfortunately, again, the cookbook of machine learning doesn't exist. So there isn't really like like a good rule to tell you case by case. Okay.
+
+29
+00:06:47.940 --> 00:06:53.830
+Jessica: whether or not tire is there for a purpose or not. So in most situation
+
+30
+00:06:53.900 --> 00:07:03.590
+Jessica: he would use some tests and some, you know common sense and logic to decide if the value of the outlier is there for a reason or not? Okay.
+
+31
+00:07:05.820 --> 00:07:23.340
+Jessica: there are some ways to prevent overfitting. Okay, overfitting is bad. Okay? You don't want your algorithm to overfit. If your algorithm overfits anytime, it's presented with new data. The accuracy is going to become lower and lower, and it's not going to be good.
+
+32
+00:07:23.560 --> 00:07:24.525
+Jessica: So
+
+33
+00:07:25.980 --> 00:07:52.940
+Jessica: the easiest way to prevent overfitting is if you can to try and get more data. This in some situation is possible. I understand that in others it's not possible. But typically the more data you have, the lower is the risk of overfitting, because you increase your chances of providing every possible case right to your algorithm.
+
+34
+00:07:53.797 --> 00:08:01.402
+Jessica: The next is cross validation and old out. So cross validation is a technique that
+
+35
+00:08:02.240 --> 00:08:31.770
+Jessica: splits the original training set into multiple Mini train test split. And essentially, you just train your model on each one of these Mini batches of data. Okay? And as you train the model over this like Mini sets, okay, you try and adjust the parameters of your model. To prevent overfitting
+
+36
+00:08:34.140 --> 00:08:58.650
+Jessica: augmentation is another technique that can help you with preventing overfitting. So when you cannot get more data, you can artificially add more data to your data set. This means essentially artificially modifying your existing data set by means of transforms that resemble that variation that you might expect
+
+37
+00:08:58.740 --> 00:09:04.239
+Jessica: in the data. So again, there are transformation that you can apply to your data in order to.
+
+38
+00:09:04.430 --> 00:09:05.697
+Jessica: you know, like
+
+39
+00:09:06.440 --> 00:09:13.019
+Jessica: perhaps in the case of outliers, don't, don't make look. The outliers don't, don't have the outliers look so bad.
+
+40
+00:09:13.150 --> 00:09:22.820
+Jessica: And last, but not least, which also is going to lead us to the next topic for today is feature selection. Okay.
+
+41
+00:09:22.980 --> 00:09:41.749
+Jessica: so feature selection is a process that is very commonly used in machine learning. When you have a data set that has a lot of variables. Okay? So I think I mentioned this during my office hour on linear regression.
+
+42
+00:09:41.990 --> 00:09:42.840
+Jessica: It's
+
+43
+00:09:44.980 --> 00:10:05.330
+Jessica: many times when you apply a machine learning algorithm to predict a certain output. You don't want to use all the other variables that are in the data set. Okay? In fact, using all the variables that are in the data set to predict the output variable.
+
+44
+00:10:05.340 --> 00:10:23.469
+Jessica: It's probably going to lead you to the phenomenon of overfitting. Okay? Why? Well, because the variables are not not. All variables are related to the output variable. Maybe some variables have more variance or more outliers than other variables, and so they can negatively impact your analysis.
+
+45
+00:10:23.500 --> 00:10:34.029
+Jessica: So feature selection is a branch, I guess, of machine learning that contains various algorithms. Okay, and various techniques that can help you
+
+46
+00:10:34.090 --> 00:10:41.769
+Jessica: reduce and choose an appropriate number of variables for your case. Okay.
+
+47
+00:10:42.620 --> 00:10:55.120
+Jessica: so another. Before we go into feature selection. I also want to make a note about hyperparameter tuning. So you guys have
+
+48
+00:10:55.240 --> 00:11:01.660
+Jessica: just started learning about machine learning model. Okay? The
+
+49
+00:11:02.486 --> 00:11:13.303
+Jessica: as you might have figure out by now, when it comes to ask using sk, learn, it's fairly easy. Okay to you know, to
+
+50
+00:11:13.720 --> 00:11:42.680
+Jessica: code, an algorithm in python using Sklearn. Okay, you just instantiate the classifier you call the fit method the predict method. And the trick is done. Okay, the problem is that these algorithms are in reality they do depend on internal parameters that essentially are meant to adjust and tune the performance of the algorithm, depending on how the depending on the data that you're using. Okay?
+
+51
+00:11:42.790 --> 00:11:43.710
+Jessica: So
+
+52
+00:11:44.690 --> 00:11:59.769
+Jessica: Another thing that you can do in order to prevent the phenomenon of overfitting is to adjust the parameters of the hyper parameters of the model to see if you can improve the performance. Okay.
+
+53
+00:11:59.990 --> 00:12:07.929
+Jessica: the goes without saying, okay, that nowhere on the Internet, you will find
+
+54
+00:12:08.130 --> 00:12:32.780
+Jessica: directions and nobody's going to be able to teach you. Oh, for this data set, you should set the test size or the Max depth of your tree or the alpha parameter for last regression. To this specific number, okay, in most cases you're going to be given like an interval that a parameter can take. But you it might. It's going to be up to you
+
+55
+00:12:32.780 --> 00:12:53.049
+Jessica: to try different values of that parameter in order to optimize the performance of your algorithm and to prevent overfitting. Okay? So it's definitely a tricky process with experience, you'll get better. You will get a sense of
+
+56
+00:12:53.050 --> 00:13:00.999
+Jessica: what's good. Okay? In sense of in the in terms of like values for the upper parameters. But this is also something you can do
+
+57
+00:13:01.240 --> 00:13:04.159
+Jessica: to to prevent overfitting
+
+58
+00:13:05.000 --> 00:13:15.919
+Jessica: any questions. So far, I know I'm going kind of fast, because I want to get to the coding part. But if you guys are quiet, I assume that everything is well.
+
+59
+00:13:16.840 --> 00:13:43.080
+Jessica: Okay. So the next. The other thing that I mentioned earlier in this office hour is sequential feature selection. So again, there are multiple algorithms out there for sequential feature selection. Today I'm going to talk about sequential forward selection and select sequential backward selection. And there is also something called recursive feature elimination.
+
+60
+00:13:43.080 --> 00:13:49.179
+Jessica: They are all coded in sk learn. Okay, they are available out there. And essentially.
+
+61
+00:13:49.330 --> 00:14:16.639
+Jessica: the purpose of these techniques is to help you reduce the dimensionality of your input, data for your machine learning algorithm. So that to prevent the phenomenon of overfitting and also to make your life easier and your algorithm less computationally expensive. Okay, there is no need to use variables that you know are not going to be related to your.
+
+62
+00:14:16.640 --> 00:14:21.844
+Jessica: to your output variable right? Those are just gonna take up room, and it's not gonna
+
+63
+00:14:22.310 --> 00:14:26.030
+Jessica: contribute positively to your results. Okay.
+
+64
+00:14:27.196 --> 00:14:49.059
+Jessica: these algorithms are automatically programmed. They all work in different ways. But the goal of feature selection is twofold. So 1st of all, we want to improve the computational efficiency and next, we want to also try to remove irrelevant features and noise. So if you have a
+
+65
+00:14:49.440 --> 00:15:06.099
+Jessica: titanic data set. Okay, remember, we, I did some data cleaning with the Titanic data set. And one of the things that I immediately removed from that data set was the passenger. Id. Okay, the passenger Id.
+
+66
+00:15:06.100 --> 00:15:23.449
+Jessica: when I'm working with an indexed data frame, is not going to contribute in any positive way to my prediction. Okay, I already have a data frame. Everything is already indexed. I don't need another number to tell me the number, the specific number for a passenger. Okay.
+
+67
+00:15:23.650 --> 00:15:36.690
+Jessica: on top of that, every number is going to be different. And so that's really not a feature that is going to help help me make any sort of prediction based on whether somebody has survived or not. Okay.
+
+68
+00:15:38.260 --> 00:15:50.820
+Jessica: so the 2 features that I want to talk about today briefly, are sequential forward selection and sequential backward selection.
+
+69
+00:15:51.310 --> 00:15:53.540
+Jessica: So I do have actually.
+
+70
+00:15:53.890 --> 00:16:04.839
+Jessica: Oh, I only have a slide for sequential backwards selection. But let's start with backwards selection. And then the forward selection works basically in the exact same way.
+
+71
+00:16:05.140 --> 00:16:06.030
+Jessica: So
+
+72
+00:16:06.320 --> 00:16:17.769
+Jessica: imagine you have a data set with let me zoom in a little bit with 29 features, and you are trying to predict the 30.th Okay?
+
+73
+00:16:18.783 --> 00:16:22.049
+Jessica: When it comes to decide
+
+74
+00:16:22.180 --> 00:16:25.379
+Jessica: which features you should use and how many?
+
+75
+00:16:26.730 --> 00:16:51.112
+Jessica: trying to go through all the possible combination of the 29 input features that you have sounds impossible, tedious and prone to error. Okay? 1st of all, you're gonna have to decide how many features you want to use. Okay, 3, 4, 5, 7. I don't know. And then with that information manually trying to
+
+76
+00:16:51.540 --> 00:17:00.939
+Jessica: go through. Go through all the possible combinations in your data frame, which is not possible. Okay? And it would take a long time. Okay.
+
+77
+00:17:01.090 --> 00:17:09.390
+Jessica: so for this reason, we do have algorithms such as sequential backwards selection and forward selection that can help us with that
+
+78
+00:17:09.760 --> 00:17:22.035
+Jessica: so sequential backward selection works in the following way. So you start with the original feature set. So with 29 features. Okay, so you fit your
+
+79
+00:17:22.550 --> 00:17:23.810
+Jessica: you start with that.
+
+80
+00:17:23.980 --> 00:17:26.219
+Jessica: In the 1st iteration
+
+81
+00:17:26.400 --> 00:17:30.840
+Jessica: you generate all possible features subset of size.
+
+82
+00:17:30.950 --> 00:17:54.559
+Jessica: 29, minus one, which is 28. So you essentially imagine you're performing linear regression. You do linear regression with all the features except the 1st one, and then you do linear regression with the 1st features. You skip the second one, and you do all the remaining ones, and so on. Okay, and you evaluate the candidate feature subset. Okay?
+
+83
+00:17:54.910 --> 00:17:56.430
+Jessica: Once you're done with it.
+
+84
+00:17:56.810 --> 00:18:14.890
+Jessica: you remove the feature that is absent from the subset with the highest evaluation score. So after you're done with all of your 28 evaluation, you take, you remove the one that has performed the the worst. And you're left with how many features? 27.
+
+85
+00:18:14.930 --> 00:18:26.689
+Jessica: And you repeat this process? Okay, until you are left with a number of features that you decided before. Okay? So every
+
+86
+00:18:27.126 --> 00:18:54.549
+Jessica: feature selection algorithm requires you to decide how many features to use. Okay, you want to use 4 4. You want to use 5. You want to use 7. Okay, that is an eye per parameter of feature selection. Okay, you can experiment with that. Okay? You can probably get a sense of what features are important and how many, by taking a look at the data and by knowing their relationship with the output data.
+
+87
+00:18:54.600 --> 00:19:08.650
+Jessica: But essentially what you would do is just call sequential backward selection or forward selection with the desired and the number of features that you want and let them do the work. Okay.
+
+88
+00:19:09.050 --> 00:19:19.089
+Jessica: Sequential forward selection works in the opposite way of backwards selection. So instead of starting with 29 features.
+
+89
+00:19:19.140 --> 00:19:26.100
+Jessica: You start with one feature at a time. Okay, and you compare the performance of all 29 features.
+
+90
+00:19:26.120 --> 00:19:41.270
+Jessica: You remove the one with the lowest score. And then you start the algorithm starts creating the combination of all the features remaining until you get to the desired number of features.
+
+91
+00:19:42.110 --> 00:19:48.569
+Jessica: Which one you should be using. They both work in the same way. Okay.
+
+92
+00:19:49.051 --> 00:19:57.789
+Jessica: which one you should be using depends on the number of features that you have at the beginning and the number of features that you desire to use. So, for example.
+
+93
+00:19:57.950 --> 00:20:01.609
+Jessica: if you have 10 features and you want to use 8,
+
+94
+00:20:01.920 --> 00:20:11.970
+Jessica: because 8 is closer to 10, I would use a sequential backwards selection because it's going to be faster than sequential. Forward selection. Okay?
+
+95
+00:20:12.530 --> 00:20:33.070
+Jessica: If you have 25 features. And you wanna only select 7. Okay, it makes more sense to do for sequential forward selection, because it's gonna it's gonna find the correct combination faster if it starts from one feature at a time than from 25 features at a time. Okay.
+
+96
+00:20:33.940 --> 00:20:37.710
+Jessica: does this all make sense? Yeah. I hear somebody.
+
+97
+00:20:38.060 --> 00:20:42.229
+Kiran: Yeah. So when you say future, is it a column in the data set.
+
+98
+00:20:42.230 --> 00:20:43.389
+Jessica: Yes, yes.
+
+99
+00:20:44.310 --> 00:20:44.845
+Kiran: Okay.
+
+100
+00:20:48.280 --> 00:20:50.950
+Jessica: yeah. So the other
+
+101
+00:20:51.040 --> 00:21:01.139
+Jessica: thing that we can do to remove overfitting. Okay, overfitting, it's 1 of the worst thing that you can observe. Okay.
+
+102
+00:21:02.080 --> 00:21:04.609
+Jessica: Oh, there is a chat. Let me just read that.
+
+103
+00:21:08.817 --> 00:21:21.970
+Jessica: Patrick is asking, does this feature account for strong correlated feature? I imagine that if 2 features are strong, correlated, they are redundant. The algorithm does not learn anything new. Is that right? And do this? Logos account?
+
+104
+00:21:22.970 --> 00:21:25.539
+Patrick Smith: I'll go. I miss. I was stopping quickly.
+
+105
+00:21:25.860 --> 00:21:26.860
+Jessica: Oh, okay,
+
+106
+00:21:27.880 --> 00:21:48.650
+Jessica: so that's a good question. It depends. Okay, there are some feature selection algorithm that do take into account the relation between them. Because, as you said, if 2 features that are both input features are highly correlated. You know, the algorithm is not gonna learn anything new.
+
+107
+00:21:48.790 --> 00:21:52.469
+Jessica: There are others that consider both.
+
+108
+00:21:52.780 --> 00:22:04.899
+Jessica: So it really depends on what you're using for a sequential backward selection and forward selection. They do take into account the correlation, so that you know, like If
+
+109
+00:22:04.920 --> 00:22:11.870
+Jessica: 2 features are similarly correlated to the output variable, only one of them is taken into account.
+
+110
+00:22:13.280 --> 00:22:13.740
+Patrick Smith: Thank you.
+
+111
+00:22:14.180 --> 00:22:20.789
+Jessica: Yeah, you're welcome. And Zujun I hope I pronounce your name right? So comparing
+
+112
+00:22:20.810 --> 00:22:35.410
+Jessica: Spf. And Sfs will Spf Sps have more chance to be overfitting and Sfs of underfitting again, it depends on the data set. Excuse me.
+
+113
+00:22:35.833 --> 00:22:37.449
+Jessica: Let me get some water.
+
+114
+00:22:41.400 --> 00:22:45.059
+Jessica: it depends on the data set.
+
+115
+00:22:46.290 --> 00:22:48.210
+Jessica: I don't.
+
+116
+00:22:49.800 --> 00:23:06.781
+Jessica: I don't think that's a general rule of thumb. Okay, there are situations where I can see Sps more prone to overfitting than underfitting. But I have not seen, you know, like in my experience,
+
+117
+00:23:07.440 --> 00:23:18.739
+Jessica: like one of one of the 2 algorithms being preferred over the other for these reasons. So it really depends on on the ones that on on the situations that you have actually
+
+118
+00:23:18.800 --> 00:23:29.720
+Jessica: something that I don't think it's mentioned in the course. It's my favorite sequential feature, sequence, feature, selection algorithm. It's called recursive
+
+119
+00:23:29.780 --> 00:23:31.080
+Jessica: feature.
+
+120
+00:23:32.565 --> 00:23:33.630
+Jessica: Elimination
+
+121
+00:23:34.020 --> 00:23:37.509
+Jessica: or Rfv in. Oh.
+
+122
+00:23:38.085 --> 00:23:42.720
+Jessica: I'm typing in the chat Rfv in sk learn
+
+123
+00:23:43.252 --> 00:23:55.949
+Jessica: I think it. It's been working very well for me, and I use that more often than anything else. So if you guys want to take a look at that? That's another one that it's it can be. It's it's useful, you know.
+
+124
+00:23:57.510 --> 00:23:58.100
+Zhujun Wang: Michelle.
+
+125
+00:23:58.830 --> 00:24:04.510
+Jessica: Other things that you can do is to
+
+126
+00:24:05.308 --> 00:24:14.129
+Jessica: you know, if an algorithm is overfitting, you can try other algorithms as well. Okay.
+
+127
+00:24:14.130 --> 00:24:36.659
+Jessica: this is typically called regularization. Okay, when essentially variation of the same algorithms are implemented in order to reduce the phenomenon of overfitting okay. And this is the case of ridge regression and loss regression that I am going to introduce to you now.
+
+128
+00:24:36.870 --> 00:24:56.599
+Jessica: So we have seen linear regression. You know. It's very simple works well for a lot of cases. Okay, but sometimes, you know, linear regression is not very good to pick up like, very like
+
+129
+00:24:57.660 --> 00:25:15.610
+Jessica: a high variance in the data. Okay? So 2 regularized version of linear regression. Sorry that were defined was the Ridge regression and the lasso regression.
+
+130
+00:25:15.820 --> 00:25:20.219
+Jessica: So as you can see, the error
+
+131
+00:25:21.455 --> 00:25:24.879
+Jessica: of the error function of
+
+132
+00:25:25.040 --> 00:25:36.600
+Jessica: ridge regression is very similar to the one of linear regression. So this is the error or the loss function for linear regression.
+
+133
+00:25:36.600 --> 00:26:04.469
+Jessica: Okay, linear regression. And with lasso. You essentially had this term that contains this parameter alpha, that is called the shrinkage quantity, which is a tuning parameter that decides how much we want to penalize the flexibility of our model. Okay, rich regression is used in situation where, like, perhaps, some of the columns
+
+134
+00:26:04.510 --> 00:26:31.220
+Jessica: have a higher variance than others in your data set. And so you use this parameter alpha to sort of like, shrink the variance of those columns. So you see that the loss function for risk regression is essentially the same that we have for linear regression plus this term. Okay, lasso regression is very similar.
+
+135
+00:26:31.630 --> 00:26:52.480
+Jessica: This variation differs from ridge regression as it only penalizes the high coefficients. Okay? And the difference is given by it's very small. Again, so this is the loss function for linear regression. Okay.
+
+136
+00:26:53.360 --> 00:27:06.620
+Jessica: this term is very similar to what we had for Ridge, but the absolute value on the coefficients of the algorithm here tends to only penalize the
+
+137
+00:27:07.060 --> 00:27:07.889
+Jessica: the
+
+138
+00:27:08.750 --> 00:27:10.619
+Jessica: the sorry, the
+
+139
+00:27:10.950 --> 00:27:32.180
+Jessica: columns that have high coefficients. And so it essentially helps regularize everything. Okay, so this type of regularization can lead to 0 coefficient, so meaning that some features get completely neglected. However, so this essentially means that lasso regression.
+
+140
+00:27:33.225 --> 00:27:36.375
+Jessica: Let me just zoom out here.
+
+141
+00:27:36.950 --> 00:27:59.699
+Jessica: not only helps in reducing overfitting, but can help also in feature selection. Okay, when obviously, when one of the coefficients of the model goes to 0, that variable is dropped. And so you can see lasso as a way of combining the like, a technique, a regularization technique to reduce overfitting together with a feature elimination. Okay.
+
+142
+00:28:01.220 --> 00:28:10.199
+Jessica: okay, so that is what I had for the slides. We are about halfway. So I think I have time. I definitely have time for
+
+143
+00:28:10.450 --> 00:28:13.619
+Jessica: the notebook that I have today.
+
+144
+00:28:13.630 --> 00:28:18.485
+Jessica: So we're going to do a car prediction data set. And the
+
+145
+00:28:18.940 --> 00:28:36.600
+Jessica: what I want to show you here is just like a comparison of linear regression, Ridge regression and loss regression which it's going to be fairly similar to what is coming for your practical application. Assignment in module 11. Okay? So
+
+146
+00:28:36.920 --> 00:28:40.060
+Jessica: the data set is different. You know, there is
+
+147
+00:28:40.270 --> 00:28:55.310
+Jessica: obviously not like this is not exactly what you're gonna have to do. But using the 3 models to make a comparative analysis is what is required to you from for the practical application model 11. And so I figure that
+
+148
+00:28:55.590 --> 00:29:03.760
+Jessica: showing you a little bit how to do this out. An example would probably help you with the submission.
+
+149
+00:29:03.890 --> 00:29:29.580
+Jessica: So here we are importing some libraries. Nothing too crazy. I have standard scalar, polynomial feature, linear regression, lasso Ridge. I am also going to do a grid search later. So to search over the parameters of the model. And I do have some metrics functions that I'm going to use to perform my analysis.
+
+150
+00:29:30.430 --> 00:29:34.940
+Jessica: So this is my car data set. Okay.
+
+151
+00:29:36.730 --> 00:29:38.070
+Jessica: so let's
+
+152
+00:29:38.190 --> 00:29:51.749
+Jessica: work through it and see if we can. You know. Pick up any useful information perhaps drop some variables or some columns that are not relevant, and so on.
+
+153
+00:29:52.350 --> 00:30:03.020
+Jessica: So this is info. There are right away some columns that I want to remove. Okay, so for example, car, id symboling
+
+154
+00:30:03.020 --> 00:30:25.710
+Jessica: and car name. Okay, I got this data set from Kaggle. By the way, if you go on Kaggle, and you look at the description of the data set. You know that these 3 are not going to be. Very like, these 3 columns are not going to be very useful for our analysis. Okay, the car name is not going to be useful to predict the price of the car. Same with the car. Id. Okay.
+
+155
+00:30:25.960 --> 00:30:29.029
+Jessica: so I'm dropping those 3 columns right away.
+
+156
+00:30:29.170 --> 00:30:48.069
+Jessica: And the other thing that is always useful to do that I like to do is to use, describe to sort of like, take a look. Okay, describe is a very easy way to like, look for outliers. Okay? And to sort of get an idea of like how the data is distributed.
+
+157
+00:30:48.160 --> 00:30:59.380
+Jessica: So here I am, rounding all the entry in the describe the table to 2
+
+158
+00:30:59.610 --> 00:31:15.820
+Jessica: decimal digits. And I'm also using the transpose because I think it's easier to read. Okay, you have your columns here and your statistical quantities as columns. I think I personally think it's easier to read. You obviously do whatever you like. Okay.
+
+159
+00:31:17.154 --> 00:31:29.189
+Jessica: alright. So obviously, we do have a bunch of categorical variables. Okay, these are all categorical variables that you know cannot have the mean, the standard deviation, the minimum. Or the Max computed.
+
+160
+00:31:29.846 --> 00:31:35.743
+Jessica: We can take a look at the numerical variables, though.
+
+161
+00:31:38.080 --> 00:31:40.820
+Jessica: let's see, there is horsepower.
+
+162
+00:31:42.020 --> 00:31:50.959
+Jessica: Okay? So looking at this values, there is maybe like, maybe this, this is an outlier.
+
+163
+00:31:51.488 --> 00:31:57.609
+Jessica: Okay, 6,600. The Max is 5,100 it's kind of like.
+
+164
+00:31:58.190 --> 00:32:09.220
+Jessica: I don't know if this is an outlier yet or not. I would have to do some calculation, but nothing looks too alarming from this, except from the fact that we have a lot of categorical variables. And so this table looks quite empty.
+
+165
+00:32:09.660 --> 00:32:30.119
+Jessica: So let's take a look at the categorical variables. So an easy way to do that is to select the columns that are object. Okay from the info of my data frame. You essentially know that pandas doesn't like the object. Columns are essentially columns that are categorical.
+
+166
+00:32:30.890 --> 00:32:43.820
+Jessica: So here I am selecting all the categorical columns, and I am creating a box plot for them. This is typically very useful to look for outliers. So you see that the gas
+
+167
+00:32:45.660 --> 00:32:52.750
+Jessica: the when the price versus fuel type box plot gases seem to have quite a few outliers.
+
+168
+00:32:54.510 --> 00:32:59.052
+Jessica: same with standard, which I assume is the
+
+169
+00:33:00.040 --> 00:33:15.060
+Jessica: I'm horrible at cars. So we're just gonna go. So forgive me if I don't know a lot of what these columns means. Price versus the door number 2 or 4. We do have some outliers here as well.
+
+170
+00:33:15.210 --> 00:33:30.540
+Jessica: The car body. Everything. Yeah. Looks pretty standard, you know, like I wouldn't be alarmed by the presence of these these outliers and these box plots, but it's good to see. And again, for your practical application submission. It's.
+
+171
+00:33:30.850 --> 00:33:32.790
+Jessica: you know, it takes
+
+172
+00:33:33.130 --> 00:33:36.589
+Jessica: what 5 lines of code to make all of these plots.
+
+173
+00:33:36.850 --> 00:33:39.020
+Jessica: It's great. Okay, just
+
+174
+00:33:39.790 --> 00:33:49.429
+Jessica: plot as much as you can and show plots because we do like plots and also stakeholders like plots. So it's important that you know how to code that
+
+175
+00:33:49.810 --> 00:33:51.240
+Jessica: that
+
+176
+00:33:51.350 --> 00:34:16.099
+Jessica: drive wheel which I don't know what it is. But oh, rear wheel, drive forward and 4 wheel drive. I got that one engine location front or rear. Okay, I also can see how that basic knowledge tells me that the rear engine is probably more expensive than a front one. This all makes sense price versus the engine type. I
+
+177
+00:34:16.100 --> 00:34:27.380
+Jessica: really don't know what these mean, but you know, if you know anything about cars, or you're passionate about cars. Even just looking at these plots can can also give you like a
+
+178
+00:34:27.840 --> 00:34:47.409
+Jessica: an understanding, whether of whether your data makes sense or not. Okay, is this a good data set or not? Okay, you'll never know the type of data that you're gonna find on the Internet. And so picking a data set. That is that makes sense. That contains data that makes sense is extremely important. Okay.
+
+179
+00:34:47.659 --> 00:34:58.459
+Jessica: So this to me, from the little that I know about cars. It seems to make sense. So this you know, like, I'm not too worried. But it's it's good to look okay.
+
+180
+00:34:58.850 --> 00:35:00.810
+Jessica: Alright. So.
+
+181
+00:35:00.810 --> 00:35:08.080
+Patrick Smith: Jessica, what would concern you about outliers like if you look at this whisker plot with these dots, at what point would you become concerned.
+
+182
+00:35:09.880 --> 00:35:16.028
+Jessica: I mean, it depends really on the variables that you want to use. Okay, so if you're if
+
+183
+00:35:17.290 --> 00:35:27.979
+Jessica: okay, I would become concerned about outliers. If the value of the outliers is something unreasonable. For example, if I go into the
+
+184
+00:35:29.718 --> 00:35:35.460
+Jessica: what was okay, an example that I always do for outliers is, suppose that you have
+
+185
+00:35:35.550 --> 00:36:00.289
+Jessica: a data set that describes the population in the United States. Okay? And you have, you know, you have the census. Okay? And in the census the family completes it, and they are required to put the number of children. Okay, the average number of children in the United States is, I'm going to say, 3.5 per family. Okay, some family have 0. Some family have 10 kids, 12. Okay.
+
+186
+00:36:00.900 --> 00:36:14.470
+Jessica: it's very rare that. You see, like 40 kids. Okay, like an unreasonable number. Okay, a number. That is way, way above average. Okay, to which you know, it could be possible.
+
+187
+00:36:14.550 --> 00:36:29.900
+Jessica: But it's probably a user error, okay, or a value that doesn't make sense. So for example, number of children. And they put negative 4, probably it's not negative 4, it's either 0 or 4. So when I look at when I do have outlier
+
+188
+00:36:30.080 --> 00:36:32.090
+Jessica: outliers are okay.
+
+189
+00:36:32.100 --> 00:36:35.150
+Jessica: if they make sense with the data.
+
+190
+00:36:35.230 --> 00:36:37.959
+Jessica: but if the value is like
+
+191
+00:36:38.350 --> 00:36:56.924
+Jessica: way out there, and it doesn't make sense, that's when I get concerned. Okay. So, for example, if I had again the price of a car. I had like one outlier. That was a 2 million dollars, for example, or $300,000. I know that there are cars that are $300,000. Okay,
+
+192
+00:36:57.550 --> 00:37:15.329
+Jessica: I don't know if a car like that would be in this data set. Okay? So when you see, like these values that are way out there and don't make sense with the data that you have available. Then that's when you know, like, I would probably just remove the outlier from my data set because it's going to cause overfitting.
+
+193
+00:37:16.960 --> 00:37:17.859
+Patrick Smith: Thanks. Yup.
+
+194
+00:37:18.860 --> 00:37:19.635
+Jessica: Okay,
+
+195
+00:37:20.640 --> 00:37:23.420
+Jessica: so I am going. Also.
+
+196
+00:37:23.500 --> 00:37:26.850
+Jessica: there are different ways of doing this. Actually, let me
+
+197
+00:37:29.250 --> 00:37:30.790
+Jessica: df, dot
+
+198
+00:37:31.050 --> 00:37:32.010
+Jessica: had.
+
+199
+00:37:32.120 --> 00:37:36.250
+Jessica: okay, so this is our data set, we do have quite a bit of variables.
+
+200
+00:37:38.000 --> 00:37:45.660
+Jessica: one thing that I can do is, you know, like, for some of the categorical variables
+
+201
+00:37:46.020 --> 00:38:01.209
+Jessica: is to replace the values. Okay, if you don't want to encode those variables, you can just like change them to numerical values if it's simple enough. So, for for example, the door number, it's only 2 or 4. That's pretty easy to replace.
+
+202
+00:38:01.270 --> 00:38:24.089
+Jessica: You can also do it with a number of cylinders. Of course, there are some categorical variables here that really don't make sense to be replaced with numbers. So we're going to encode them or use that get dummies on that. But there are some that you know, like using 4 or 2 in words, or 4 or 2 in numbers probably doesn't make like, doesn't make any difference. And it's better this way.
+
+203
+00:38:25.120 --> 00:38:31.889
+Jessica: Okay, so this is our new data frame. And the other thing that it's
+
+204
+00:38:32.090 --> 00:38:55.940
+Jessica: interesting to look at is the numerical variables. Okay? So we took a look at our categorical variables. And now we take a look at the numerical ones again, look how easy it is to plot all of your categorical variables, and to see if there is any sort of correlation or any sort of relation. Okay, with the price that we're trying to predict.
+
+205
+00:38:56.440 --> 00:39:01.039
+Jessica: So we have let me scroll up here
+
+206
+00:39:02.460 --> 00:39:07.540
+Jessica: all right. Well, the price and the door number is a little odd to look at.
+
+207
+00:39:08.282 --> 00:39:12.559
+Jessica: The wheelbase. It's not great. Okay.
+
+208
+00:39:12.870 --> 00:39:22.379
+Jessica: the car length. Okay. Starting to see some trend that makes sense. This. This, you know, like this.
+
+209
+00:39:23.800 --> 00:39:38.789
+Jessica: line, this fitting line. It's not a line of linear regression, but you can see like like, if there is some sort of relationship. The car width the car. Height, the curb weight
+
+210
+00:39:39.250 --> 00:39:46.980
+Jessica: cylinder number again. This doesn't really make sense, because it's you know, it's so spread out the engine size.
+
+211
+00:39:48.357 --> 00:39:51.069
+Jessica: Yes, I will be sharing the notebook
+
+212
+00:39:53.240 --> 00:40:03.050
+Jessica: with the recording. So they will be uploaded to canvas after the office hour is done. So all of you can download it, together with the data set.
+
+213
+00:40:04.575 --> 00:40:05.399
+Jessica: Borer
+
+214
+00:40:05.610 --> 00:40:07.040
+Jessica: ratio
+
+215
+00:40:07.589 --> 00:40:16.309
+Jessica: the stroke. Not really good. The compression ratio is also not very good. Horsepower starts to make some sense.
+
+216
+00:40:16.690 --> 00:40:18.620
+Jessica: Peak, rpm
+
+217
+00:40:18.850 --> 00:40:48.469
+Jessica: city, Mpg, okay, some negative correlation here. Same with the highway. Mpg, obviously the price with itself. Okay. And of course, you know, if you don't want to look at all these graphs, you can always go back to your trustworthy heat map of the correlation of the correlation matrix. So here we can get some insights about which variables may be related more or less with our price. So we have
+
+218
+00:40:48.470 --> 00:40:49.570
+Jessica: the
+
+219
+00:40:50.100 --> 00:41:12.790
+Jessica: let me zoom in here, so we don't go blind. Oh, it's not zooming in in the axis. Okay. Here, you know. Take take notes from. Don't take notes from me. If you can. Maybe like, you know, like, in your practical application assignment, try to make these a little bit larger, so that, you know, like somebody doesn't have to go like 2 inches from the screen to read.
+
+220
+00:41:13.050 --> 00:41:22.849
+Jessica: But it can give an idea of which variables to use. Okay, so you see, where is price price? It's here. So you have
+
+221
+00:41:23.490 --> 00:41:25.160
+Jessica: wheelbase.
+
+222
+00:41:30.240 --> 00:41:36.369
+Jessica: yeah. Car length. What is this highway? Mpg is pretty high, too.
+
+223
+00:41:36.750 --> 00:41:43.269
+Jessica: So again, you know, you can like, get a sense of what variables to use from the
+
+224
+00:41:44.362 --> 00:42:01.190
+Jessica: correlation matrix. All right. So of course, you can also print the the values. Okay, so engine size, curb, weight, horsepower, car width. These are actually pretty good correlation values. Okay? Like, I would probably just take
+
+225
+00:42:01.430 --> 00:42:10.350
+Jessica: these and even the negative ones. Okay, the negative. The negative correlated ones can also be useful for analysis.
+
+226
+00:42:10.680 --> 00:42:18.609
+Jessica: Okay, so I, as an exercise, I am going to leave the feature selection to you guys
+
+227
+00:42:19.285 --> 00:42:24.544
+Jessica: here, I do have basically all the columns in the
+
+228
+00:42:25.540 --> 00:42:41.071
+Jessica: in the data set. Okay? So I'm using all the columns to make my prediction. Okay. These are the final columns that I'm using. And of course, because some of them are categorical, I'm gonna need to use
+
+229
+00:42:41.670 --> 00:42:48.039
+Jessica: get dummies in order to encode them to feed them to our regression algorithms.
+
+230
+00:42:48.580 --> 00:43:03.720
+Jessica: Okay? Again, we can make sure that now all the category, all the columns are numerical which it's obviously the case because we just use get dummies on the categorical variables. And now I can start dividing my data.
+
+231
+00:43:03.980 --> 00:43:05.460
+Jessica: So I have.
+
+232
+00:43:05.490 --> 00:43:12.210
+Jessica: The X is going to be all the columns but Price and the output column is going to be price.
+
+233
+00:43:12.900 --> 00:43:19.940
+Jessica: Next, I am doing a train test split here. I'm going to use 0 point 3.
+
+234
+00:43:21.060 --> 00:43:23.860
+Jessica: Actually.
+
+235
+00:43:24.260 --> 00:43:26.729
+Jessica: no, this data set is pretty small.
+
+236
+00:43:28.570 --> 00:43:35.940
+Jessica: So I'm gonna do 0 point 2 is fine again. And this data set may be small. Okay? So when you're small.
+
+237
+00:43:35.970 --> 00:43:40.370
+Jessica: when you have a small data set, keep as much as you can for training. Okay.
+
+238
+00:43:42.210 --> 00:43:44.393
+Jessica: so this is the
+
+239
+00:43:45.370 --> 00:43:48.870
+Jessica: These are the sizes of our train and test set. Okay?
+
+240
+00:43:49.080 --> 00:43:59.269
+Jessica: And another thing that I'm gonna do is use a standard scalar to make sure that all my features are, you know, considered correctly by my algorithm.
+
+241
+00:43:59.470 --> 00:44:23.300
+Jessica: Again, this is all very normal. We've seen this in the past, and here I have a function, an helper function, that is, gonna help me just print the errors in a pretty way. Okay, I like it. I use it. If you want. You can use it for your practical application assignment if you don't have to. It's just something that I like to do to display the results in a nice way.
+
+242
+00:44:24.430 --> 00:44:48.760
+Jessica: Okay, so let's start with the 1st algorithm. So we want to predict the price of a car using the features that we have. It's a regression problem. Okay, I did not talk about this yet. It's not. It's not a classification model in any way. We are trying to predict the value of a quantity based on other quantities. So this is a regression model. So at our disposal. For now we have
+
+243
+00:44:48.760 --> 00:45:01.160
+Jessica: linear regression, ridge, regression, lasso regression. Okay, which one works best we don't know. So the strategy that I'm going to use is to start with linear regression and then use Ridge and then use lasso
+
+244
+00:45:01.330 --> 00:45:24.749
+Jessica: and sort of see which one works best. And then I can, you know, like, based on the results that I have, I can make my recommendations. Okay, this is all very standard. Nobody really knows what algorithm is. Best right off the bat. Okay, there are some. There are some situations where I I have a feeling. Okay? But in general, it's not really like, you really don't know. And so you just try multiple ones.
+
+245
+00:45:25.250 --> 00:45:26.070
+Jessica: Okay.
+
+246
+00:45:26.200 --> 00:45:31.590
+Jessica: so linear regression. We have seen this already. So you instantiate the classifier.
+
+247
+00:45:31.690 --> 00:45:37.889
+Jessica: You fit your data to your scaled train X training data and your Y training data.
+
+248
+00:45:38.230 --> 00:45:50.820
+Jessica: And then you make your prediction on the training and on the testing set. Okay, very important, because we want to avoid overfitting. We are
+
+249
+00:45:52.233 --> 00:45:53.520
+Jessica: making like
+
+250
+00:45:53.860 --> 00:46:06.500
+Jessica: making the prediction on the training set and on the testing set, and then look at both accuracies to see if they are in range. Okay, if one is way higher than the other. It means that we're we're fitting and that we're doing something wrong.
+
+251
+00:46:07.610 --> 00:46:12.749
+Jessica: So let's take a look. Okay, so we have
+
+252
+00:46:12.760 --> 00:46:13.860
+Jessica: the
+
+253
+00:46:14.272 --> 00:46:17.410
+Jessica: this is the helper function that I'm using.
+
+254
+00:46:18.180 --> 00:46:22.560
+Jessica: So the R 2 score is.
+
+255
+00:46:22.800 --> 00:46:45.640
+Jessica: you know, here I would say that we are in overfitting range. Okay, the exercise that I'm giving you for this office hour is, try and see if you can reduce the number of features, or pick some of some, pick out some of the features from the original data frame in order to reduce this gap. Okay? Because this is this is alarming. Okay.
+
+256
+00:46:46.600 --> 00:46:52.619
+Jessica: we're not done, though. Let's see if we using lasso or ridge can help us. Okay.
+
+257
+00:46:52.620 --> 00:46:59.740
+Patrick Smith: Sorry, Jessica. It's it's alarming, because it's too. It's too far apart. So it's 20% off from the training error score.
+
+258
+00:46:59.740 --> 00:47:05.640
+Jessica: Yeah, so you have 91% and 77. And it's like that gap is, I mean.
+
+259
+00:47:05.640 --> 00:47:06.390
+Patrick Smith: I mean, it's.
+
+260
+00:47:06.610 --> 00:47:09.590
+Jessica: It's 13%. It's not like
+
+261
+00:47:09.850 --> 00:47:11.150
+Jessica: horrible.
+
+262
+00:47:11.620 --> 00:47:14.910
+Jessica: But you know it's in the range where I'm like.
+
+263
+00:47:14.960 --> 00:47:21.280
+Jessica: I don't know. It's it's starting to alarm me a little bit. I would like to be between 5 and 10% difference.
+
+264
+00:47:21.380 --> 00:47:26.050
+Jessica: We are at 13. So it's it's it's it's significant.
+
+265
+00:47:27.280 --> 00:47:55.479
+Jessica: like, imagine so overfitting. Imagine that you are. You're given some data set from like a client, and you train your model and you go to your client, and you're like, oh, it performs great at 92%. And then this client gives you new data and the model and the model performance drops to 75. It's you don't want that to happen. Okay? So you don't want overfitting to be like that difference in the performance of the algorithm to be that high.
+
+266
+00:47:55.700 --> 00:48:05.759
+Patrick Smith: Got it. Okay? So sorry I missed that. So the R. 2 squared is goodness of fit, which means closer to one is a perfect fit. Is that right? In this case, we're definitely dropping on. Okay, cool thing.
+
+267
+00:48:05.760 --> 00:48:08.710
+Jessica: So also you'll never, if you ever see
+
+268
+00:48:09.170 --> 00:48:22.930
+Jessica: an R 2 score of one or a hundred percent accuracy or a perfect score, you are doing something wrong. That does not happen. Okay, you can get to 99.9 9 9. But if you ever get
+
+269
+00:48:23.260 --> 00:48:27.030
+Jessica: a hundred percent, you are doing something wrong guaranteed.
+
+270
+00:48:27.310 --> 00:48:36.930
+Jessica: This is just something that like just in general, because I've seen, you know, learners in the past that have come to me with a capstone project that perform at 100. And we were like.
+
+271
+00:48:37.050 --> 00:48:45.090
+Jessica: go back to the drawing board because something is wrong. It's just a general thing. No machine learning model is perfect and it should not be okay.
+
+272
+00:48:46.610 --> 00:48:52.570
+Jessica: alright, going to lasso. Okay. So we are overfitting here. So we could, you know.
+
+273
+00:48:52.670 --> 00:49:00.529
+Jessica: play with the features. But we do have regularization methods. Okay? So we can do. We can start with lasso.
+
+274
+00:49:00.700 --> 00:49:18.480
+Jessica: So here I have a pipeline and also a parameter grid. So I am essentially going to use my pipeline and grid search over multiple parameters to see, to essentially try multiple variation of the same model at the same time.
+
+275
+00:49:18.780 --> 00:49:34.840
+Jessica: Okay, so this is, gonna take a second to run. Okay, not too long. It's gonna take a minute or 2. This is normal when you do like grid search and a pipeline, because it's you know you're doing all the possible combination. But here I have some
+
+276
+00:49:36.620 --> 00:49:44.590
+Jessica: values for the alpha parameter of lasso and the polynomial degree, for, like fitting your data.
+
+277
+00:49:44.720 --> 00:49:46.390
+Jessica: so
+
+278
+00:49:46.460 --> 00:49:48.130
+Jessica: where about
+
+279
+00:49:48.872 --> 00:49:52.540
+Jessica: we should be almost halfway done? I saw it took a minute earlier. So
+
+280
+00:49:52.970 --> 00:49:54.159
+Jessica: we can wait.
+
+281
+00:50:09.850 --> 00:50:20.330
+Jessica: Okay, should be almost done. This cell is going to output what the best values are for a lasso. Okay, it's not. We still have to do the fitting.
+
+282
+00:50:24.160 --> 00:50:35.709
+Jessica: oh, this data set is very small. This data set has 200 rows and 27 columns. So again, that could be one another reason why we are overfitting but essentially.
+
+283
+00:50:36.380 --> 00:50:45.409
+Jessica: this is, this is very small. And you know, like, I do this for the office hours. But like, if you want to practice, use like bigger data sets.
+
+284
+00:50:47.314 --> 00:50:48.160
+Jessica: Okay.
+
+285
+00:50:48.170 --> 00:50:49.780
+Jessica: So the
+
+286
+00:50:49.950 --> 00:51:09.590
+Jessica: my pipeline and grid search told me that the polynomial feature with degree one which is the default, one is the best one, and lasso with an alpha of 100 was the one that performed best. Okay, so now, I am actually going to
+
+287
+00:51:09.590 --> 00:51:20.759
+Jessica: use that information to train my lasso regression. Okay? So here I am instantiating Alpha. Sorry lasso with Alpha equal 100
+
+288
+00:51:20.910 --> 00:51:22.719
+Jessica: on my training data.
+
+289
+00:51:22.810 --> 00:51:28.090
+Jessica: and I am looking at the performance of lasso. So
+
+290
+00:51:28.770 --> 00:51:34.379
+Jessica: the accuracy the R 2 scored have gotten a little bit closer, not
+
+291
+00:51:35.030 --> 00:51:36.870
+Jessica: great. Okay.
+
+292
+00:51:37.484 --> 00:51:45.520
+Jessica: Again. I do really think that here, playing with the features or the number of features, so doing, feature, selection would make the difference.
+
+293
+00:51:45.850 --> 00:51:49.390
+Jessica: Let's see if Ridge regression does better
+
+294
+00:51:49.400 --> 00:51:56.560
+Jessica: again. Here we are. We're going to be waiting for grid search to do its job for us
+
+295
+00:52:02.850 --> 00:52:05.170
+Jessica: again should take about a minute.
+
+296
+00:52:07.003 --> 00:52:09.426
+Jessica: But yeah, so I will be.
+
+297
+00:52:10.510 --> 00:52:12.010
+Jessica: Yes, Garmin.
+
+298
+00:52:12.380 --> 00:52:16.579
+Carmen P.: Yes, for the project. Do we have to use all of these Algos, or just one.
+
+299
+00:52:18.050 --> 00:52:20.399
+Jessica: For the practical application you mean.
+
+300
+00:52:21.267 --> 00:52:22.669
+Carmen P.: No! The capstone.
+
+301
+00:52:22.910 --> 00:52:47.149
+Jessica: For the capstone. So for the capstone. It depends so depending on the topic that you pick for the capstone you are going to want to use either some regression algorithms and make a comparison between linear ridge or lasso or other algorithms that we're going to see later. Or if you choose a classification problem.
+
+302
+00:52:47.150 --> 00:53:03.773
+Jessica: Okay? Then the algorithms are going to be different. But typically you are going to want to compare a few different models. Okay? Because you're not going to know which one works best. So once you pick the topic
+
+303
+00:53:04.340 --> 00:53:15.989
+Jessica: and we are going to. So once you pick the topic for your capstone. Then you are going to be able to decide what algorithms work best. Also, I don't know if you guys know this.
+
+304
+00:53:15.990 --> 00:53:44.769
+Jessica: but from Module 11. So pretty soon each one of you is going to be able to book a 1 on one consultation with the corresponding learning facilitator depending on your section. So each one of you is going to have 30 min of time with us, one on one. Okay, we're alone. We're not in an office hour where you can tell us your ideas for the Capstone project, and we can talk about some strategy for you to be successful.
+
+305
+00:53:44.960 --> 00:53:48.220
+Jessica: Yeah, Zuzune, yes.
+
+306
+00:53:48.570 --> 00:54:09.320
+Zhujun Wang: Oh, I just want to ask a quick question about the standard scalar, because would you explain a little bit because we didn't? I didn't remember we have you mentioned in the lecture. So for? Especially for you building the pipeline. And what what's the time I need to use a standard scalar. What's the what's the situation? I don't need to use that.
+
+307
+00:54:09.710 --> 00:54:19.500
+Jessica: Yeah. So standard scalar is something that you always want to use. Okay? The reason is because some, like some
+
+308
+00:54:19.950 --> 00:54:44.480
+Jessica: columns, may have a higher variance than other. So standard scalar essentially scales all the data. Okay, in the data frame to have a mean of 0 and a standard deviation of one, so that the algorithm essentially considers all the column on the same playing field and doesn't think that some columns are
+
+309
+00:54:44.710 --> 00:55:05.580
+Jessica: more important than others. Okay. For example, if you have a data frame that describes some imports for a country, okay, you may have a certain product, that is, that's weight is measured in pounds, and you have a product where the weight is measured in kilograms. Okay.
+
+310
+00:55:06.020 --> 00:55:26.170
+Jessica: the algorithm may think that those 2 quantities are completely different because they use different units to be measured. Standard scalar essentially puts everything on the same scale on the same measure, so that the algorithm doesn't think that one is more important than the other, because it was measured with a different unit.
+
+311
+00:55:27.100 --> 00:55:28.050
+Zhujun Wang: I see.
+
+312
+00:55:28.430 --> 00:55:29.939
+Jessica: Yeah, but it's something that you
+
+313
+00:55:30.030 --> 00:55:59.100
+Jessica: always want, like pretty much. You always want to do standard scalar, not when you get to deep learning. You know, those are like other techniques. But when it comes to machine learning, we did use a standard scalar for K-means. We did use some standard scalar for linear regression is essentially to make sure that you know. Like, if you have anything that is measured in a different unit or a different scale, it gets brought up everything together so that the algorithm doesn't think that one variable is more important than the other.
+
+314
+00:55:59.750 --> 00:56:27.290
+Zhujun Wang: Gotcha last question. So so, for example, like, if I just create a pipeline, only specify the model and the polynomal like index, but I didn't. I didn't specify the scalar scale, so by default it won't apply the standard scalar right? So if you don't specify means like you don't use any scale.
+
+315
+00:56:27.390 --> 00:56:30.559
+Zhujun Wang: Is that correct? Correct? Yes, Gotcha.
+
+316
+00:56:30.560 --> 00:56:47.160
+Jessica: Yeah, cool. Yeah. Okay. So our grid search for bridge is done. So our Alpha chosen. Alpha was 10. So here I am, invoking ridge. Sorry. Let me just fix this. I
+
+317
+00:56:48.480 --> 00:56:51.180
+Jessica: bridge with.
+
+318
+00:56:53.840 --> 00:56:56.630
+Jessica: yes, with Alpha equal to 10.
+
+319
+00:56:57.270 --> 00:57:00.990
+Jessica: So now this should work. And this is our
+
+320
+00:57:02.910 --> 00:57:10.200
+Jessica: final data frame with all our errors, and they are squared. So okay, this is borderline
+
+321
+00:57:10.320 --> 00:57:15.740
+Jessica: acceptable ish, still not super happy. The difference is still 11%, which is
+
+322
+00:57:15.930 --> 00:57:28.810
+Jessica: a tad high. Okay? So lasso. Sorry. Ridge seems to be the one that performed better. Okay, I think we're still in the
+
+323
+00:57:29.520 --> 00:57:37.920
+Jessica: I don't like I would. Some people would not call this an overfitting to me. It worries a little bit. Okay. Probably getting more data would help.
+
+324
+00:57:38.110 --> 00:57:57.130
+Jessica: But I think that if you guys want as an exercise, try to perform some feature selection on these columns. Okay? Because I basically took everything that I had in the data frame. But I do think that you know, if you remove some of those columns that in performance should improve. Okay?
+
+325
+00:57:57.700 --> 00:58:02.939
+Jessica: And that is all I had for today. Did you guys have any questions?
+
+326
+00:58:10.970 --> 00:58:14.379
+Jessica: I think I answered everything in the chat.
+
+327
+00:58:14.400 --> 00:58:25.476
+Jessica: So what to expect from this course. So we are in Module 9. You have module 10 next week. Module 11 is
+
+328
+00:58:26.030 --> 00:58:28.930
+Jessica: is going to be a practical application week
+
+329
+00:58:29.644 --> 00:58:50.360
+Jessica: the practical application assignment is going to be pretty similar to what I show you. It's actually a car prediction data set spoiler alert. The data set is different. It's much bigger performed. There's going to be missing values. But the idea is to use the techniques that I just showed you. Okay, to try and predict the price of a vehicle.
+
+330
+00:58:50.720 --> 00:59:05.033
+Jessica: And thank you so much for the feedback I love to hear. I love to hear. When you guys enjoy the the office hours I will be sharing all the material with you, and oh,
+
+331
+00:59:10.622 --> 00:59:32.959
+Jessica: no, it should be a different Michael. It should be a different data set it should be. It should be a different data set than the one that was the one the one that was included in previous lessons, but the one for the practical application is going to be different is a much larger data set. Okay, so you're gonna have to deal with missing values, with all the techniques and all that. So you you you
+
+332
+00:59:33.160 --> 00:59:37.970
+Jessica: you you know you can take inspiration from what I show you. But it's obviously going to be different.
+
+333
+00:59:38.490 --> 00:59:54.389
+Jessica: All right. Thank you guys again for the feedback. I love to hear it, and I will see you in a couple of weeks. We're talking about the practical application assignment. I'm sure we're going to bring up this notebook again, and thank you again for coming, and have a good rest of your week. Bye.
+

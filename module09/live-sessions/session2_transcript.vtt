@@ -1,0 +1,3078 @@
+WEBVTT
+
+1
+00:00:00.040 --> 00:00:02.370
+shashi: Is getting a bit higher.
+
+2
+00:00:04.930 --> 00:00:08.139
+Vikesh K: Yeah, this will. This will accelerate like this. Now.
+
+3
+00:00:08.530 --> 00:00:13.584
+shashi: Yeah, no, it will be matching one of our charts. What we have been working so far, I think.
+
+4
+00:00:16.650 --> 00:00:19.309
+Ravi Duvvuri: I think, because the challenging part is.
+
+5
+00:00:19.860 --> 00:00:22.040
+Ravi Duvvuri: we are learning so many things like
+
+6
+00:00:22.200 --> 00:00:29.830
+Ravi Duvvuri: trying to keep track of, like what we learned. And you know, from Pca to all other things like, you know, it's like.
+
+7
+00:00:30.510 --> 00:00:36.520
+Ravi Duvvuri: yeah, sometimes. Oh, we did this one. So what's the use of it now? Okay, we forgot it. So
+
+8
+00:00:36.660 --> 00:00:40.299
+Ravi Duvvuri: it's like recollecting. And it's getting tough. Actually.
+
+9
+00:00:40.990 --> 00:00:44.829
+Vikesh K: No, I know if this happens. And you know to be fair.
+
+10
+00:00:44.980 --> 00:00:50.180
+Vikesh K: These are lots of great ideas introduced to you on a weekly basis. So
+
+11
+00:00:51.199 --> 00:01:03.180
+Vikesh K: I don't expect all of you to grasp each and everything in one week primarily, because you also have this is not. You're doing it full time. Right? You have your professional life, you have your personal life. There are 10 other things going on in your life
+
+12
+00:01:03.270 --> 00:01:05.344
+Vikesh K: along with it. You're doing it?
+
+13
+00:01:05.830 --> 00:01:10.329
+Vikesh K: but make sure. Maybe you know, I would suggest strongly. Suggest, also make some notes
+
+14
+00:01:10.730 --> 00:01:23.860
+Vikesh K: so that you get an opportunity to revisit it and check out these notes and learn properly, and you might have to do revision of these topics that can that that would be required.
+
+15
+00:01:24.390 --> 00:01:41.609
+Vikesh K: And but as we move into the practical part, you know, after every couple of modules we have the practical part where that's where maybe the things will start falling into place together, you know, you will start looking into the different projects that you want to work on.
+
+16
+00:01:41.760 --> 00:01:48.550
+Vikesh K: And initially, we would be giving you one or 2 practical assignments. So that would be, that's where you will learn a lot.
+
+17
+00:01:50.050 --> 00:01:57.170
+Vikesh K: But yeah, if if you feel it's too much, don't worry that that's also because the material is quite steep. Yes.
+
+18
+00:01:57.170 --> 00:01:57.930
+Vijay Chaganti: Yeah. One.
+
+19
+00:01:58.440 --> 00:01:59.430
+Vijay Chaganti: Yeah. So
+
+20
+00:01:59.620 --> 00:02:15.240
+Vijay Chaganti: we are back to office. Most of the companies are open on Monday, Wednesday and Friday. And even this. You know, online classes are also happening on the same days. Will it be possible to switch to either Tuesday or you know.
+
+21
+00:02:16.052 --> 00:02:22.670
+Vijay Chaganti: Wednesday? So that it is easy for us to join from home, from office.
+
+22
+00:02:23.400 --> 00:02:23.890
+Vikesh K: He?
+
+23
+00:02:24.530 --> 00:02:25.340
+Vikesh K: yes.
+
+24
+00:02:25.640 --> 00:02:26.410
+Vikesh K: chanting.
+
+25
+00:02:26.410 --> 00:02:31.900
+Chintan Gandhi: Question, is it okay? If I can? Ask, because I might have to run halfway through.
+
+26
+00:02:32.730 --> 00:02:33.979
+Vikesh K: Okay? Sure. Yeah.
+
+27
+00:02:34.140 --> 00:02:38.739
+Vikesh K: I hope it should speak wonderful. So not not like a big discussion.
+
+28
+00:02:38.980 --> 00:03:00.640
+Chintan Gandhi: So the thing is like. From the module 6 onwards there were many new things that were being introduced, going with the Pca. And then clustering. Then follow to that. We had transformation, scaling polynomial features. Then we had linear regression, feature regularizations. So I am a little bit. If you can tell me
+
+29
+00:03:00.710 --> 00:03:14.620
+Chintan Gandhi: through the workflow, I'm I do know that. When we had seen the last office levels, you went through this chart from going beginning to end, which was not covering many of the sections. But say, after we do the test and split
+
+30
+00:03:15.158 --> 00:03:23.619
+Chintan Gandhi: what all things are preferred that we do. Do we do? 1st should be the clustering, then transforming, then scaling, then polynomial feature.
+
+31
+00:03:23.750 --> 00:03:33.689
+Chintan Gandhi: Then we go towards the route of scaling or the scaling has to happen after the polynomial feature. So those are some of the things that are a little bit not very clear.
+
+32
+00:03:33.740 --> 00:03:40.320
+Chintan Gandhi: If you can tell us or give us a guidance about how the whole flow should be.
+
+33
+00:03:41.040 --> 00:03:51.989
+Chintan Gandhi: especially, I think, the pre-processing steps like the now what happens is what confused me? What in that flow? Where is even PC. And cluster and fitting into
+
+34
+00:03:52.474 --> 00:03:59.779
+Chintan Gandhi: are we doing it as a part of preprocessing. Are we doing doing it in the as an option of feature selection for Pca.
+
+35
+00:04:00.050 --> 00:04:14.279
+Chintan Gandhi: So when, to use what like if you wanted to reduce number of features, then either use Pca or feature selection? Some of these questions are not very clear about how and when to use, and where in the flow they come.
+
+36
+00:04:16.010 --> 00:04:17.998
+Vikesh K: Okay, cool. That's a good question
+
+37
+00:04:19.202 --> 00:04:25.447
+Vikesh K: so what I will do. I will maybe start sharing my screen, and I will talk about. I have prepared
+
+38
+00:04:26.390 --> 00:04:30.300
+Vikesh K: notebooks today which I will share with you, and then we can talk about these things. But
+
+39
+00:04:31.960 --> 00:04:36.030
+Vikesh K: let me share that if someone else joins later on, if you can share this with them.
+
+40
+00:04:36.570 --> 00:04:49.449
+Vikesh K: And so regarding your question in in a normal scheme of things unsupervised, learning is different from supervised learning. All right. Unsupervised learning is you don't know what the patterns are like.
+
+41
+00:04:49.930 --> 00:04:50.830
+Vikesh K: You know
+
+42
+00:04:51.260 --> 00:04:57.659
+Vikesh K: how you should label the for example, let's say I'm a retailer. I want to do a marketing.
+
+43
+00:04:58.290 --> 00:05:00.699
+Vikesh K: How should I divide my customers?
+
+44
+00:05:00.760 --> 00:05:19.259
+Vikesh K: One easy way is, I tell them, okay, some of my customers are male, some of my customers are female. I will personalize my marketing strategy based on whether someone is male or female. But that's a very flawed method primarily, because maybe the female is the male is shopping for the
+
+45
+00:05:19.810 --> 00:05:35.439
+Vikesh K: whole household, right? So he's also buying things which maybe his wife requires or his partner requires. So what you do, you segment people based on their purchase behavior. And when you want to do that, then clustering would be helpful
+
+46
+00:05:35.470 --> 00:05:38.689
+Vikesh K: because someone might be buying stuff
+
+47
+00:05:39.080 --> 00:05:47.070
+Vikesh K: for household. And there's another person buying stuff for household. You club them together. Someone is buying, just for let's say.
+
+48
+00:05:47.240 --> 00:05:57.159
+Vikesh K: maybe some certain selection items. You know you, they are in a different club. So clustering is when you you want data to figure out the segments within it.
+
+49
+00:05:57.450 --> 00:06:10.090
+Vikesh K: So it's not really required in every case. So whenever you're doing supervised learning, it's not really required that you have to do clustering unless until there are some reasons, and I will talk about it. Maybe as we progress into the course Pca.
+
+50
+00:06:10.090 --> 00:06:13.410
+Chintan Gandhi: Usually happens before the test and split.
+
+51
+00:06:14.850 --> 00:06:19.610
+Vikesh K: No clustering as such. There. There's no test or split per se.
+
+52
+00:06:19.620 --> 00:06:22.980
+Vikesh K: You have the whole data, and you just want to split it into groups.
+
+53
+00:06:23.250 --> 00:06:24.310
+Chintan Gandhi: Got it. Okay.
+
+54
+00:06:24.310 --> 00:06:28.270
+Vikesh K: That's that's more of a supervised learning paradigm.
+
+55
+00:06:28.270 --> 00:06:29.000
+Chintan Gandhi: Quarter.
+
+56
+00:06:30.340 --> 00:06:31.364
+Vikesh K: Okay, so
+
+57
+00:06:32.400 --> 00:06:43.430
+Vikesh K: essentially, what you want to do is I give you. I give you this customer data. And I tell you, hey? Please tell me what are the segments out there? Then you will do the unsupervised learning. But
+
+58
+00:06:43.620 --> 00:06:46.390
+Vikesh K: if you already know how to divide the customers.
+
+59
+00:06:46.440 --> 00:06:59.220
+Vikesh K: let's say they are, you know, high, spender, low spender, and these are the labels you have already assigned, and you need a model to give out these labels. Then you will do the supervised learning.
+
+60
+00:06:59.900 --> 00:07:01.300
+Vikesh K: Is this part clear
+
+61
+00:07:01.470 --> 00:07:02.780
+Vikesh K: or app history.
+
+62
+00:07:02.780 --> 00:07:10.750
+Chintan Gandhi: Yes. So some. Okay. Clustering, I think, is a little bit clear. The thing is like. If for for the feature selection also, like.
+
+63
+00:07:10.820 --> 00:07:18.029
+Chintan Gandhi: where does Pca Pca fall? And where does even the feature selection? Is it the same thing like for
+
+64
+00:07:19.920 --> 00:07:24.010
+Vikesh K: Okay, okay? So so I will. I will maybe try to explain it with a
+
+65
+00:07:24.240 --> 00:07:25.492
+Vikesh K: with a diagram.
+
+66
+00:07:26.830 --> 00:07:28.860
+Vikesh K: what Pca does
+
+67
+00:07:29.390 --> 00:07:31.620
+Vikesh K: is if you have these
+
+68
+00:07:32.040 --> 00:07:34.009
+Vikesh K: 3
+
+69
+00:07:34.600 --> 00:07:57.510
+Vikesh K: 4 columns. Okay, what Pca does? Pca will reduce this, let's say to 2 columns, one and 2. Okay. And then what Pca will do essentially is, it will take some part of, let's say it reduces this to 2 components A and B. Pca. Will use some part of 1st column, some part of second column.
+
+70
+00:07:57.530 --> 00:08:08.290
+Vikesh K: some part of 3rd column, okay, and some part of 4th column for the component 2 it might use, let's say, a big chunk of column one.
+
+71
+00:08:08.630 --> 00:08:19.789
+Vikesh K: and maybe a big chunk of column 2, and it doesn't use maybe 3 or 4. It just uses 3. So what Pca does. It takes the existing column, it transforms them
+
+72
+00:08:19.900 --> 00:08:21.870
+Vikesh K: into something unique.
+
+73
+00:08:22.590 --> 00:08:38.959
+Vikesh K: Okay, it's a combination. It basically distorts the whole thing. So when you have huge data set, which is quite big in terms of maybe how many columns it has. Pca. Can be helpful in reducing that for you.
+
+74
+00:08:39.130 --> 00:08:42.199
+Vikesh K: And this might be more helpful. Let's say, you know, when you have
+
+75
+00:08:42.240 --> 00:08:44.680
+Vikesh K: problems with respect to
+
+76
+00:08:45.090 --> 00:08:50.639
+Vikesh K: computer vision, or you might have problems with respect to which has huge amount of data.
+
+77
+00:08:50.700 --> 00:08:51.370
+Vikesh K: Okay?
+
+78
+00:08:52.360 --> 00:08:54.550
+Vikesh K: then, Pca can be quite helpful.
+
+79
+00:08:55.120 --> 00:09:07.700
+Vikesh K: Most of the times. The tabular data problems that you will come across Pca can be helpful. But then there is a cost associated with it, and I will tell you the cost. Now the problem is, when you use Pca, you do the predictions.
+
+80
+00:09:07.710 --> 00:09:20.659
+Vikesh K: You have the reduced data format. So predictions can happen well, and they can happen fast. So that's that's 1 advantage. But if you have to interpret this in terms of business for a business clients.
+
+81
+00:09:20.670 --> 00:09:23.600
+Vikesh K: then the interpretation will be very difficult.
+
+82
+00:09:23.610 --> 00:09:27.219
+Vikesh K: because your components are a mishmash of
+
+83
+00:09:27.250 --> 00:09:28.470
+Vikesh K: 4 columns.
+
+84
+00:09:28.780 --> 00:09:29.710
+Vikesh K: Right?
+
+85
+00:09:29.890 --> 00:09:31.439
+Vikesh K: Does that make sense? So when.
+
+86
+00:09:31.440 --> 00:09:32.350
+Chintan Gandhi: Yes.
+
+87
+00:09:32.350 --> 00:09:46.690
+Vikesh K: When I ask you to, hey printan, can you explain me the component? That might be very tricky because there is maybe 10% of column 1, 20% of column. B, it's a linear combination, you know. This is all linear algebra in the background. So you can't really explain it.
+
+88
+00:09:47.130 --> 00:10:03.409
+Vikesh K: Then the other method would be feature selection, or maybe in a way, lasso also what they allow you to do. They will say, Hey, I think column 3 is not helpful. Let's drop that column. 4 is not helpful. Let's drop that. So you are pending. You're left with column one and 2.
+
+89
+00:10:03.740 --> 00:10:07.950
+Vikesh K: And what feature. Selection on lasso will tell you. Hey? You can still build a good model.
+
+90
+00:10:08.000 --> 00:10:12.260
+Vikesh K: and it won't lead to overfitting, and you just have to use column one and column 2
+
+91
+00:10:12.840 --> 00:10:16.370
+Vikesh K: and column one and column 2. You can easily explain to the business. Then.
+
+92
+00:10:16.440 --> 00:10:24.000
+Vikesh K: Okay, I'm using out of 4 columns that I have. I'm using 1, 2 columns and based on that, I can take my decisions. I can build my model.
+
+93
+00:10:24.870 --> 00:10:25.680
+Vikesh K: Does that mean.
+
+94
+00:10:25.680 --> 00:10:34.489
+Chintan Gandhi: Got it got it. So. The scaling part that we usually do that the standardization of the normalization is after we do the feature selection.
+
+95
+00:10:35.810 --> 00:10:39.000
+Vikesh K: Okay. So that's a different thing. That's that's.
+
+96
+00:10:40.610 --> 00:10:44.540
+Chintan Gandhi: I understood this part feature, selection, unless somebody has any questions.
+
+97
+00:10:45.000 --> 00:10:49.609
+Vikesh K: Yeah, so so the standards. So the standardization method is
+
+98
+00:10:50.140 --> 00:10:55.539
+Vikesh K: these methods are required because some of the machine learning algorithms they work best
+
+99
+00:10:55.550 --> 00:11:02.589
+Vikesh K: when the data is in the same range, otherwise the values which are quite big in number
+
+100
+00:11:02.960 --> 00:11:04.889
+Vikesh K: and they will distort the whole picture.
+
+101
+00:11:05.550 --> 00:11:08.750
+Vikesh K: And so then you need to do the scaling part.
+
+102
+00:11:09.280 --> 00:11:13.630
+Vikesh K: And, for example, we would also read about something called support vector machine
+
+103
+00:11:13.830 --> 00:11:31.300
+Vikesh K: scaling becomes very important. We will, if we study knn scaling becomes very important. So anywhere, any machine, and got them where you will see distance being used. You know distance as a measure where hyperplanes when we talk about hyperplanes, which is in the case of, let's say, Svm or
+
+104
+00:11:31.300 --> 00:11:47.850
+Vikesh K: Knn, where some kind of distance or hyperplanes all these are associated. You need to do. Scaling and scaling is best then done when after train test split. This is something which which I talked about in the last officer of mine. Why, you need to do it after train test split.
+
+105
+00:11:48.810 --> 00:11:55.920
+Vikesh K: But, for example, let's say, when you study decision, tree scaling is not very required. Decision trees work without scaling as well.
+
+106
+00:11:56.540 --> 00:11:57.460
+Chintan Gandhi: Makes sense.
+
+107
+00:11:58.040 --> 00:11:59.768
+Vikesh K: Yeah. And you can.
+
+108
+00:12:01.060 --> 00:12:03.200
+Vikesh K: for feature selection.
+
+109
+00:12:03.570 --> 00:12:09.020
+Vikesh K: For example, if you have to do lasso ideally for lasso, you have to 1st normalize them like, you know, scale them.
+
+110
+00:12:09.960 --> 00:12:14.299
+Vikesh K: So you do the polynomial, for example. Then you normalize that.
+
+111
+00:12:14.650 --> 00:12:20.780
+Vikesh K: Then you do your lasso. You know you fit your lasso model, and you see what are the values there
+
+112
+00:12:23.270 --> 00:12:24.110
+Vikesh K: cause that.
+
+113
+00:12:24.110 --> 00:12:29.131
+Chintan Gandhi: Got it. So basically, I think after the training split the feature selection.
+
+114
+00:12:29.550 --> 00:12:37.789
+Chintan Gandhi: then I can maybe move towards a scaling polynomial feature and then go towards the lasso or the other regression that
+
+115
+00:12:37.910 --> 00:12:38.980
+Chintan Gandhi: we want to pick up.
+
+116
+00:12:39.450 --> 00:12:41.849
+Vikesh K: Yeah, you do the polynomial right? You may
+
+117
+00:12:42.180 --> 00:12:49.929
+Vikesh K: multiple categories. Then you do the scaling. Bring them all to the same scale. Then maybe we will, we will. You can do the lasso
+
+118
+00:12:50.340 --> 00:12:54.749
+Vikesh K: and the values. Some of the values which are not important will actually get dropped.
+
+119
+00:12:55.470 --> 00:12:58.049
+Chintan Gandhi: Perfect. Okay. Okay, yeah. Okay. Got it.
+
+120
+00:12:58.200 --> 00:12:59.410
+Chintan Gandhi: I have noted them.
+
+121
+00:12:59.770 --> 00:13:09.459
+Vikesh K: Yeah. So you you might have to do maybe couple couple of practices with it just to get a flow. But I can understand that's a very normal thing to get little confused with the workflow sometimes.
+
+122
+00:13:09.700 --> 00:13:15.740
+Vikesh K: but the good part is, once you have the python in front of you, and some data set, you can actually experiment and see how things work out.
+
+123
+00:13:16.775 --> 00:13:19.459
+Vikesh K: But ideally, this, this should be the procedure
+
+124
+00:13:21.240 --> 00:13:22.379
+Vikesh K: making sense.
+
+125
+00:13:22.770 --> 00:13:23.140
+Chintan Gandhi: Yes.
+
+126
+00:13:23.140 --> 00:13:27.239
+Vikesh K: Others whom I can't see. Does this make sense any questions or doubts?
+
+127
+00:13:27.540 --> 00:13:28.580
+Vikesh K: A quick question.
+
+128
+00:13:28.580 --> 00:13:34.080
+Matt Lee: So would you want to do feature selection, and then to get rid of some of the
+
+129
+00:13:34.280 --> 00:13:37.749
+Matt Lee: variables and columns, and then
+
+130
+00:13:37.890 --> 00:13:42.549
+Matt Lee: PC. After that to check for linearity of the remaining columns.
+
+131
+00:13:42.790 --> 00:13:46.109
+Matt Lee: or will feature selection already kind of get rid of those or.
+
+132
+00:13:47.660 --> 00:13:49.330
+Vikesh K: See, the
+
+133
+00:13:52.900 --> 00:13:54.444
+Vikesh K: feature selection is,
+
+134
+00:13:55.420 --> 00:14:04.430
+Vikesh K: usually the the only challenge with feature selection. 1st of all, it can be computationally very intensive, as professor also explained in his videos, there can be too many options that you have to check.
+
+135
+00:14:04.690 --> 00:14:13.219
+Vikesh K: and if you do feature selection, and if it gives you a good prediction. You don't really need to do the Pca part, especially if you'd later want to interpret those
+
+136
+00:14:14.168 --> 00:14:16.540
+Vikesh K: model. You want to explain those models.
+
+137
+00:14:16.680 --> 00:14:18.880
+Vikesh K: So remember one of the reasons.
+
+138
+00:14:19.140 --> 00:14:27.939
+Vikesh K: By the way, linear regression, just to give you one context, linear regression is one of the oldest methods that you're going, that you're studying. Linear regressions are roughly 200 years old.
+
+139
+00:14:28.320 --> 00:14:37.289
+Vikesh K: So we start from the basic because it can be very powerful. But the real power of linear regression is, you can do quite a decent interpretation.
+
+140
+00:14:37.840 --> 00:14:45.350
+Vikesh K: because, if you remember, linear regression is, if you have y, which you want to predict, then you have alpha.
+
+141
+00:14:45.570 --> 00:14:48.000
+Vikesh K: And then you have beta x 1,
+
+142
+00:14:48.100 --> 00:14:52.089
+Vikesh K: plus beta x 2. Okay, so
+
+143
+00:14:52.200 --> 00:14:59.589
+Vikesh K: this is basically a weighted average where beta one beta, 2. Your coefficients tell you how important
+
+144
+00:14:59.900 --> 00:15:01.680
+Vikesh K: is something
+
+145
+00:15:01.690 --> 00:15:03.369
+Vikesh K: just a second.
+
+146
+00:15:07.720 --> 00:15:24.150
+Vikesh K: So this is this is your linear regression. Now the challenge. Now, later on, we, as we move into the course. Also, we will learn much more powerful algorithms, in fact, algorithm, which were way more powerful than linear regression. But the linear regression, if you do, Pca.
+
+147
+00:15:24.310 --> 00:15:26.499
+Vikesh K: That could be one way
+
+148
+00:15:26.810 --> 00:15:30.810
+Vikesh K: you know, when you have high dimensionality. But you won't be able to explain it. Well.
+
+149
+00:15:32.054 --> 00:15:33.510
+Vikesh K: You know the the
+
+150
+00:15:33.540 --> 00:15:35.719
+Vikesh K: what is the role of each coefficient
+
+151
+00:15:36.040 --> 00:15:44.859
+Vikesh K: so that that can be tricky. So you don't really need to do Pca after feature selection. If feature selection does a good job for you, and gives you a good predictions.
+
+152
+00:15:45.090 --> 00:15:47.319
+Vikesh K: I think you can stop there as well.
+
+153
+00:15:49.340 --> 00:15:54.560
+Matt Lee: Okay, one quick question about Pca, though. So
+
+154
+00:15:54.740 --> 00:16:02.740
+Matt Lee: you know, you're just saying that, you know it gives you result, and you can't really interpret it, but you can do the opposite transform and get back.
+
+155
+00:16:02.850 --> 00:16:03.900
+Matt Lee: You know what
+
+156
+00:16:04.050 --> 00:16:05.240
+Matt Lee: your data
+
+157
+00:16:06.560 --> 00:16:07.659
+Matt Lee: is. Right?
+
+158
+00:16:08.750 --> 00:16:12.710
+Vikesh K: Yeah, you can. You can transform it back. That's true. But
+
+159
+00:16:14.630 --> 00:16:29.890
+Vikesh K: the model which is made, you know, that's using that's made using the components rather than the individual parts. So I think the the challenge which at least I personally think it would be just to put it in a layman terms and explain it. Well.
+
+160
+00:16:30.070 --> 00:16:46.959
+Vikesh K: the linear regression, the problem, the beauty of that would be, let's say you have couple of coefficients, beta 3 and x 3. What lasso, for example, will do, it will say, Hey, one of the coefficients is not useful. Let's make it 0. So then you are left with only this model
+
+161
+00:16:47.010 --> 00:16:49.570
+Vikesh K: till X Beta to x 2.
+
+162
+00:16:50.240 --> 00:16:53.500
+Vikesh K: Okay. And you don't really need to go there.
+
+163
+00:16:57.600 --> 00:16:59.290
+Vikesh K: Is it making sense.
+
+164
+00:16:59.460 --> 00:17:00.179
+Matt Lee: Thank you.
+
+165
+00:17:02.730 --> 00:17:04.580
+Chintan Gandhi: We will be recording this session right?
+
+166
+00:17:06.410 --> 00:17:08.899
+Vikesh K: Yes, it's record being recorded. Yes.
+
+167
+00:17:09.200 --> 00:17:09.819
+Chintan Gandhi: Thank you.
+
+168
+00:17:10.660 --> 00:17:13.059
+Vikesh K: Thanks for the reminder. Yeah, it's being recorded.
+
+169
+00:17:13.730 --> 00:17:15.060
+Vikesh K: Okay? So
+
+170
+00:17:16.730 --> 00:17:25.789
+Vikesh K: I think many of you still have issues with the Pca. And Pca. Is so by the way, this Pca, and then, later on, you would also see something called.
+
+171
+00:17:26.470 --> 00:17:30.670
+Vikesh K: you know, when we will talk about support vector decomposition.
+
+172
+00:17:31.220 --> 00:17:35.430
+Vikesh K: Those topics are a little more tricky because they are directly linear algebra
+
+173
+00:17:36.910 --> 00:17:46.029
+Vikesh K: and and gradient descent. So these are 3 mathematical topics, sort of heavy mathematical topics which usually people struggle with
+
+174
+00:17:47.630 --> 00:17:54.840
+Vikesh K: so you might have to revisit them. So so, you know, don't worry if you if you think you know you're not able to understand them. In the 1st go
+
+175
+00:17:55.960 --> 00:17:57.790
+Vikesh K: but rest of the topics
+
+176
+00:17:57.970 --> 00:18:03.340
+Vikesh K: should be slightly more straightforward, at least conceptually. Okay. Now.
+
+177
+00:18:03.380 --> 00:18:09.560
+Vikesh K: okay, within this, I want to focus on regularization within regularization. Ideally, what happens
+
+178
+00:18:09.750 --> 00:18:20.569
+Vikesh K: is there are 2 ways how you do it. One is, you have the rich method. When one, you have the lasso method, you add a penalty term to the coefficients. Okay.
+
+179
+00:18:20.620 --> 00:18:22.279
+Vikesh K: in both the cases
+
+180
+00:18:22.800 --> 00:18:25.640
+Vikesh K: and the penalty term can ideally
+
+181
+00:18:26.390 --> 00:18:28.790
+Vikesh K: vary from 0 to infinity.
+
+182
+00:18:29.110 --> 00:18:29.870
+Vikesh K: Okay.
+
+183
+00:18:31.350 --> 00:18:42.909
+Vikesh K: now you think about it, if the penalty term is 0 and your loss is so, remember, if you use a simple linear regression, your loss is loss of the model which you are trying to minimize. This is what
+
+184
+00:18:43.210 --> 00:18:47.540
+Vikesh K: you know. The overall model is trying to minimize is root, mean, square error.
+
+185
+00:18:48.610 --> 00:18:50.269
+Vikesh K: Okay? Which is
+
+186
+00:18:50.800 --> 00:18:58.889
+Vikesh K: the collection of all the errors that that your lines, the your fitted line, will give you. You want to minimize those errors.
+
+187
+00:18:59.190 --> 00:19:05.639
+Vikesh K: Only thing which we add in when we do ridge or lasso regression is, we add this component to it.
+
+188
+00:19:05.880 --> 00:19:11.070
+Vikesh K: Okay, if you are taking some of all the coefficients and squaring it.
+
+189
+00:19:11.320 --> 00:19:15.380
+Vikesh K: That's a rich method. If you're taking the absolute values and
+
+190
+00:19:15.580 --> 00:19:19.399
+Vikesh K: adding it to the loss. That's your lasso method.
+
+191
+00:19:19.830 --> 00:19:20.609
+Vikesh K: All right.
+
+192
+00:19:21.460 --> 00:19:26.380
+Vikesh K: I want you to tell me one thing, if I make it 0, what will happen in this equation?
+
+193
+00:19:32.080 --> 00:19:33.469
+Vikesh K: I will put it like this.
+
+194
+00:19:33.510 --> 00:19:36.509
+Vikesh K: So your lambda can basically
+
+195
+00:19:37.590 --> 00:19:39.890
+Vikesh K: go from 0 to infinity. Right
+
+196
+00:19:41.850 --> 00:19:43.900
+Vikesh K: your your lambda value.
+
+197
+00:19:45.830 --> 00:19:47.569
+Chintan Gandhi: It's basically linear regression.
+
+198
+00:19:48.050 --> 00:19:51.790
+Vikesh K: Yes. So if you make this 0, the whole part will become 0.
+
+199
+00:19:52.290 --> 00:19:53.300
+Vikesh K: And
+
+200
+00:19:53.340 --> 00:19:56.869
+Vikesh K: this essentially, both of them will become a linear regression problem.
+
+201
+00:19:57.320 --> 00:20:06.710
+Vikesh K: Okay? And that's where usually in your case, maybe. Yeah, it's maybe there's a problem of overfitting here. Right? If your data has
+
+202
+00:20:06.720 --> 00:20:07.973
+Vikesh K: too many
+
+203
+00:20:11.340 --> 00:20:23.510
+Vikesh K: columns, it actually can lead to overfitting. That's 1 of the reasons why we introduced regularization is because we want to tone down. We want to decrease the influence of some of the columns.
+
+204
+00:20:23.740 --> 00:20:25.200
+Vikesh K: On the other hand.
+
+205
+00:20:25.290 --> 00:20:29.059
+Vikesh K: if you go to the other extreme, which is, you go from 0 to
+
+206
+00:20:29.420 --> 00:20:35.789
+Vikesh K: infinity. And if, let's say, your lambda becomes really big value. Let's say, infinity.
+
+207
+00:20:36.360 --> 00:20:38.410
+Vikesh K: What will happen to the coefficients?
+
+208
+00:20:43.960 --> 00:20:44.949
+Vikesh K: Any guess.
+
+209
+00:20:49.610 --> 00:20:52.180
+shashi: 10 to 0, I mean.
+
+210
+00:20:53.580 --> 00:20:54.880
+Vijay Chaganti: Insignificant.
+
+211
+00:20:55.840 --> 00:20:57.391
+Vikesh K: So so what happens?
+
+212
+00:20:58.880 --> 00:21:02.690
+Vikesh K: if your lambda becomes very big, so the loss function
+
+213
+00:21:02.740 --> 00:21:06.459
+Vikesh K: will try to minimize the whole thing, and it will focus on this part.
+
+214
+00:21:07.400 --> 00:21:13.159
+Vikesh K: Okay? And because the lambda is a very big value, and it's getting multiplied by the coefficients.
+
+215
+00:21:13.230 --> 00:21:17.289
+Vikesh K: the model will try to minimize coefficients as much as possible.
+
+216
+00:21:17.500 --> 00:21:25.040
+Vikesh K: Okay, so essentially, all your as your lambda value becomes big, your coefficients will basically decline.
+
+217
+00:21:25.310 --> 00:21:28.299
+Vikesh K: This will be a relationship like this. Ideally.
+
+218
+00:21:28.380 --> 00:21:31.669
+Vikesh K: If this is your lambda, if this is your coefficient.
+
+219
+00:21:32.130 --> 00:21:39.189
+Vikesh K: as your lambda value increases, your coefficient value will decrease. Okay, just remember this relationship. That's the key idea. I want you to remember
+
+220
+00:21:39.290 --> 00:21:43.760
+Vikesh K: as you increase your lambda values, your coefficient values will decrease
+
+221
+00:21:44.420 --> 00:22:00.940
+Vikesh K: in the case of lasso. What can happen is it basically switches off. It basically touches 0. Your lambda value. Your coefficient value can become 0. So if you have, let's say one, you have x, 1 column x 2, column
+
+222
+00:22:00.990 --> 00:22:03.049
+Vikesh K: x 3, column x 4, column.
+
+223
+00:22:03.100 --> 00:22:09.119
+Vikesh K: one of the coefficients becomes 0. So that means you're dropping the whole column. So there's an automatic feature selection here
+
+224
+00:22:09.690 --> 00:22:12.220
+Vikesh K: in the method, in the lasso method.
+
+225
+00:22:12.590 --> 00:22:14.729
+Vikesh K: in the rich. On the other hand.
+
+226
+00:22:15.020 --> 00:22:19.879
+Vikesh K: what will happen is, it might become 0 point 0 0 1,
+
+227
+00:22:20.860 --> 00:22:23.640
+Vikesh K: but it won't be 0. Exactly.
+
+228
+00:22:23.850 --> 00:22:31.689
+Vikesh K: Okay. So it doesn't reduce the whole thing. It. It just minimizes the impact. But it really doesn't reduce the whole thing.
+
+229
+00:22:31.970 --> 00:22:34.800
+Vikesh K: That's that's the key difference between lasso and rage.
+
+230
+00:22:36.570 --> 00:22:38.269
+Vikesh K: Does that make sense.
+
+231
+00:22:39.910 --> 00:22:41.689
+shashi: Yeah, I mean, it tends to
+
+232
+00:22:41.860 --> 00:22:44.619
+shashi: make all the features non-important.
+
+233
+00:22:44.770 --> 00:22:45.700
+shashi: The.
+
+234
+00:22:46.030 --> 00:22:47.510
+Vikesh K: Yes, in a way, yes.
+
+235
+00:22:47.670 --> 00:22:53.019
+Vikesh K: yeah, it will. It will decrease the importance of the features. Lasso will eliminate them.
+
+236
+00:22:54.640 --> 00:22:55.420
+Vikesh K: Okay.
+
+237
+00:22:56.440 --> 00:22:58.410
+Vikesh K: people whom I can't see
+
+238
+00:22:59.940 --> 00:23:04.569
+Vikesh K: Preeti, Mike Chintan Vijay. Does this make sense, Matt? Vivian?
+
+239
+00:23:05.170 --> 00:23:06.959
+Vikesh K: Yes, yes, yeah.
+
+240
+00:23:08.130 --> 00:23:10.109
+shashi: The thing is.
+
+241
+00:23:11.540 --> 00:23:12.220
+Vikesh K: Yes, we do.
+
+242
+00:23:12.220 --> 00:23:13.000
+Vivian Lau: Go ahead.
+
+243
+00:23:14.860 --> 00:23:21.560
+Vivian Lau: So in this case, the root square error
+
+244
+00:23:21.690 --> 00:23:28.109
+Vivian Lau: wouldn't also minimize that once you have a very large value of lambda right?
+
+245
+00:23:29.390 --> 00:23:30.949
+Vivian Lau: Because, like, it's a.
+
+246
+00:23:30.950 --> 00:23:32.919
+Vikesh K: If I have a large value of lambda, then.
+
+247
+00:23:33.710 --> 00:23:36.530
+Vivian Lau: Then the rooming square error
+
+248
+00:23:37.100 --> 00:23:41.270
+Vivian Lau: would also be undermined, because it's the the
+
+249
+00:23:41.310 --> 00:23:47.510
+Vivian Lau: the value, because now you're looking at, there's 2 terms. One term is
+
+250
+00:23:47.990 --> 00:23:53.510
+Vivian Lau: much bigger. So the other term, the effect of the the air
+
+251
+00:23:53.600 --> 00:23:54.970
+Vivian Lau: will not be
+
+252
+00:23:55.160 --> 00:23:58.249
+Vivian Lau: will basically be be minimized.
+
+253
+00:23:59.440 --> 00:24:26.990
+Vikesh K: Yeah. So, for example, in this case, what the model knows, that root mean square, which is a linear regression part that will remain more or less constant. It knows it can. It can change the value of alpha. You know the that's a bunch of linear algebra in the background. But what it does, it finds what is the component that it can play. So it starts focusing essentially in this equation. Okay, let me put it like this essentially in this equation.
+
+254
+00:24:26.990 --> 00:24:37.729
+Vikesh K: mathematically, back in the background, what happens? This is the main component on which the whole operation happens. Okay. So if your alpha is very small.
+
+255
+00:24:38.170 --> 00:24:44.870
+Vikesh K: your coefficient, your alpha becomes 0. So then, you know, the whole equation becomes 0 and the focus.
+
+256
+00:24:46.290 --> 00:24:47.560
+Vivian Lau: But if the Alpha.
+
+257
+00:24:48.020 --> 00:24:53.150
+Vikesh K: If it's infinity, then the whole focus shifts on reducing this component.
+
+258
+00:24:53.150 --> 00:24:54.660
+Vivian Lau: The right turns right.
+
+259
+00:24:54.660 --> 00:24:59.640
+Vikesh K: Yes. And then what it does, it basically makes the coefficient 0 towards the 0.
+
+260
+00:25:00.700 --> 00:25:01.790
+Vikesh K: Okay, okay.
+
+261
+00:25:01.990 --> 00:25:13.839
+Vikesh K: what? And we can, we can maybe use one example to understand that quickly I have. This is, this is I've taken it. Basically, I found it with one professor who had done this notebook, so I'm reusing it.
+
+262
+00:25:14.250 --> 00:25:20.729
+Vikesh K: I solved. This is this was given as an assignment, so I'm solving it. And so what we can go through. So
+
+263
+00:25:22.130 --> 00:25:23.500
+Vikesh K: you have to.
+
+264
+00:25:24.770 --> 00:25:36.039
+Vikesh K: You know, this is bacteria growth data set very simple. This is a spreading factor. How this virus is spread, how much of percentage of the population is affected by it.
+
+265
+00:25:36.480 --> 00:25:41.690
+Vikesh K: So I'm using spreading factor to predict the percentage population all right.
+
+266
+00:25:42.240 --> 00:25:50.049
+Vikesh K: And so what 1st thing which I'm doing, I'm creating a polynomial features of this data set. So if I do this, I will.
+
+267
+00:25:50.661 --> 00:26:01.209
+Vikesh K: I'm using Degree 4, all right, as you already know, what will happen in this. This is how the data set will look like my original data set. My X,
+
+268
+00:26:04.980 --> 00:26:10.867
+Vikesh K: my X is only one column which is spreading factors. Okay. But when I do
+
+269
+00:26:12.250 --> 00:26:15.230
+Vikesh K: a polynomial of degree 4, I get
+
+270
+00:26:15.500 --> 00:26:17.829
+Vikesh K: multiple columns, which is one
+
+271
+00:26:18.060 --> 00:26:21.600
+Vikesh K: I have included bias. So I will get one here.
+
+272
+00:26:21.870 --> 00:26:26.400
+Vikesh K: which is the, you know, the the bias term the Co. The intercept.
+
+273
+00:26:26.540 --> 00:26:37.810
+Vikesh K: If I put interaction only that will lead to this. In this case, in any case, there are no 2 terms, so the interaction won't happen. But what I'm getting eventually spreading factor one.
+
+274
+00:26:38.260 --> 00:26:39.809
+Vikesh K: let me show it to you.
+
+275
+00:26:39.980 --> 00:26:45.119
+Vikesh K: So this is how the polynomial data set looks like, okay, you have spreading factor one
+
+276
+00:26:45.210 --> 00:26:53.470
+Vikesh K: squared it, you cube it and you do it raised to power 4. So you create 4 columns from one column which you already had here.
+
+277
+00:26:55.210 --> 00:26:58.060
+Vikesh K: Does this step make sense? So far what I did?
+
+278
+00:26:58.930 --> 00:27:00.669
+Vikesh K: I took a simple data set.
+
+279
+00:27:01.180 --> 00:27:07.719
+Vikesh K: and I want to use. Predict this y, using this X. But I 1st
+
+280
+00:27:08.060 --> 00:27:10.160
+Vikesh K: added the polynomial features
+
+281
+00:27:10.250 --> 00:27:11.450
+Vikesh K: to the X.
+
+282
+00:27:13.460 --> 00:27:14.070
+Raghavan Srinivasan: Yes.
+
+283
+00:27:15.190 --> 00:27:20.980
+Vikesh K: Yeah. Makes sense people pretty. Vivian. Any question here, Vivian, you're on mute.
+
+284
+00:27:22.750 --> 00:27:29.229
+Vivian Lau: Then you will pick which degree actually makes the best model from here.
+
+285
+00:27:30.780 --> 00:27:31.140
+Vikesh K: All right.
+
+286
+00:27:31.140 --> 00:27:32.209
+Vivian Lau: Oh, I just.
+
+287
+00:27:32.600 --> 00:27:39.870
+Vikesh K: Yeah. So I want to show you what will happen to the coefficients. As I change my alpha, basically the lambda value.
+
+288
+00:27:40.610 --> 00:27:41.439
+Vikesh K: Okay, we can also.
+
+289
+00:27:41.440 --> 00:27:42.569
+Vivian Lau: And when you
+
+290
+00:27:43.970 --> 00:27:46.890
+Vivian Lau: sorry when when so I.
+
+291
+00:27:46.940 --> 00:27:55.540
+Vivian Lau: So when I look at the visualization of some of these, when you include the bias, equals true versus false right? So that's
+
+292
+00:27:56.090 --> 00:27:57.070
+Vivian Lau: the
+
+293
+00:27:57.200 --> 00:28:01.770
+Vivian Lau: does that even change anything without, with or without intercept? Does
+
+294
+00:28:01.810 --> 00:28:04.750
+Vivian Lau: how? How does that change the equation?
+
+295
+00:28:05.702 --> 00:28:06.747
+Vikesh K: So ideally
+
+296
+00:28:07.590 --> 00:28:15.360
+Vikesh K: your Ridge regression or your lasso regression doesn't really affect the bias term, because that's not really part of the
+
+297
+00:28:15.500 --> 00:28:26.190
+Vikesh K: model. Right? That's that's not connected to any of the x 1 x 2 x 3. So the ridge or lasso don't really work with them. They just focus.
+
+298
+00:28:27.190 --> 00:28:29.260
+Vikesh K: If your model is like this.
+
+299
+00:28:29.490 --> 00:28:30.680
+Vikesh K: beta naught.
+
+300
+00:28:30.800 --> 00:28:32.570
+Vikesh K: then plus beta one
+
+301
+00:28:32.700 --> 00:28:42.399
+Vikesh K: x 1, beta, 2 x 2. So they just focus on this beta one and beta 2 beta 0. They don't really care about in lasso and rich.
+
+302
+00:28:42.600 --> 00:28:45.730
+Vikesh K: What they try to focus on the coefficients is this.
+
+303
+00:28:46.320 --> 00:28:48.689
+Vikesh K: this is where the whole operation happens.
+
+304
+00:28:49.340 --> 00:28:52.800
+Vivian Lau: So you always ignore the intercept, basically.
+
+305
+00:28:52.960 --> 00:28:59.159
+Vikesh K: Yeah, like lasso and all will ignore it. They will focus on the betas, which is which is connected to the columns.
+
+306
+00:29:01.240 --> 00:29:08.839
+Vikesh K: Okay? So then then, we come to the standardization part Chintan. I think this is one of the questions you had.
+
+307
+00:29:08.910 --> 00:29:13.170
+Vikesh K: So I have taken this data set, and I will normalize it.
+
+308
+00:29:14.640 --> 00:29:22.290
+Vikesh K: This is in the array format, so might be little difficult to read. But you can see, this is how it looks. Let me.
+
+309
+00:29:23.910 --> 00:29:28.259
+Vikesh K: I created actually a pandas data frame just to show you how this looks like.
+
+310
+00:29:28.300 --> 00:29:31.070
+Vikesh K: And then what I am doing. I'm normalizing the data set.
+
+311
+00:29:31.640 --> 00:29:36.750
+Vikesh K: Then I am having an alpha list. Basically, I'm trying to fit a ridge regression.
+
+312
+00:29:37.080 --> 00:29:41.690
+Vikesh K: This is not required here. I'm trying to fit enrich regression.
+
+313
+00:29:41.780 --> 00:29:43.100
+Vikesh K: I run this.
+
+314
+00:29:43.890 --> 00:29:44.630
+Vikesh K: and
+
+315
+00:29:45.030 --> 00:29:51.029
+Vikesh K: here it will show you. Okay. So what essentially I did this in code is, I took a value of
+
+316
+00:29:51.540 --> 00:29:55.300
+Vikesh K: that lambda parameter from 10 to 1, 20,
+
+317
+00:29:56.280 --> 00:30:06.330
+Vikesh K: and I ran a for loop to fit for different values of this lambda parameter. Or here I'm calling it Alpha. Okay? And you will see.
+
+318
+00:30:06.680 --> 00:30:14.490
+Vikesh K: as the alpha value is increasing. You know, your lambda value is increasing. Your beta coefficient is decreasing.
+
+319
+00:30:15.730 --> 00:30:16.620
+Vikesh K: Okay.
+
+320
+00:30:16.900 --> 00:30:19.740
+Vikesh K: that's what happens in a rich recreation.
+
+321
+00:30:20.640 --> 00:30:22.920
+Vikesh K: Okay, this is the same thing. So remember.
+
+322
+00:30:23.200 --> 00:30:33.029
+Vikesh K: whenever you have to understand any of the metric here usually think of the extreme value. So if this is your lambda parameter, or in this case I'm calling it alpha.
+
+323
+00:30:33.580 --> 00:30:36.879
+Vikesh K: It can go to extreme values. One value is 0.
+
+324
+00:30:36.970 --> 00:30:38.510
+Vikesh K: One value is infinity.
+
+325
+00:30:38.550 --> 00:30:43.070
+Vikesh K: So as you're increasing your lambda parameter or alpha parameter.
+
+326
+00:30:43.160 --> 00:30:47.630
+Vikesh K: Your coefficient value of beta is decreasing. That will happen.
+
+327
+00:30:48.620 --> 00:30:51.749
+Vikesh K: Okay, so so this is sort of the empirical
+
+328
+00:30:51.820 --> 00:30:54.119
+Vikesh K: proof of what we just discussed.
+
+329
+00:30:54.420 --> 00:31:02.339
+Vikesh K: and same in the case of now, then, you have lasso. I'm doing the same exercise now. I'm fitting a lasso model to it.
+
+330
+00:31:02.590 --> 00:31:07.019
+Vikesh K: In the case of lasso, what will happen? It will basically become 0.
+
+331
+00:31:08.810 --> 00:31:09.590
+Vikesh K: Okay?
+
+332
+00:31:09.840 --> 00:31:19.820
+Vikesh K: So it's it's it's taking the coefficients and then turning into 0 1 coefficient in degree one, it's not really making it 0. But when you have degree 3 and degree 4,
+
+333
+00:31:19.930 --> 00:31:23.680
+Vikesh K: it thinks it's too much complicated, and it's essentially making it 0.
+
+334
+00:31:23.730 --> 00:31:26.870
+Vikesh K: So that's the case with lasso
+
+335
+00:31:27.630 --> 00:31:33.109
+Vikesh K: lasso will basically turn off the columns. Okay. But in both the cases
+
+336
+00:31:33.300 --> 00:31:40.800
+Vikesh K: the relationship will look like this. Essentially, in the case of Nasso, it will actually touch 0 somewhere.
+
+337
+00:31:42.740 --> 00:31:45.269
+Vikesh K: Okay, does this make sense ideally?
+
+338
+00:31:46.230 --> 00:31:51.220
+Chintan Gandhi: So on the above graph the red one was going up. Do you know why.
+
+339
+00:31:53.340 --> 00:32:14.029
+Vikesh K: Degree 3. Yeah, that that's interesting. I would also need to check this. I'm not really sure what could be the reason behind it. We have to check this. But what theory suggests that there's always usually some exception sometimes. I would need to check this one. But overall, this is the pattern of what it happens. Yes, I know this is, this is a bit weird here.
+
+340
+00:32:14.460 --> 00:32:15.840
+Vikesh K: but even I need to check.
+
+341
+00:32:15.840 --> 00:32:20.930
+Vivian Lau: 4 as well beyond beyond lambda value, beyond, around 60.
+
+342
+00:32:20.930 --> 00:32:21.550
+Vikesh K: 5, 7.
+
+343
+00:32:21.550 --> 00:32:22.740
+Vivian Lau: Andy. It also.
+
+344
+00:32:22.740 --> 00:32:23.960
+Vikesh K: And if.
+
+345
+00:32:24.240 --> 00:32:25.580
+Vivian Lau: Go up a little bit.
+
+346
+00:32:25.860 --> 00:32:34.529
+Vikesh K: Yeah, it's increasing slightly, but but overall you will see. The trend is it's it's declining from here only in the case of degree 3. It's a bit different. It's a bit weird.
+
+347
+00:32:35.160 --> 00:32:43.919
+Vikesh K: although I'm not really sure what could be the reason. Like, you have to look into the numbers and to figure it out, but the rest of it usually follows the same procedure.
+
+348
+00:32:47.580 --> 00:32:48.360
+Vikesh K: Okay.
+
+349
+00:32:50.960 --> 00:32:51.730
+Vikesh K: cool.
+
+350
+00:32:52.090 --> 00:32:54.160
+Vikesh K: So this is one part, the
+
+351
+00:32:54.280 --> 00:32:55.949
+Vikesh K: the second part
+
+352
+00:32:55.960 --> 00:32:58.169
+Vikesh K: I was thinking more of, you know.
+
+353
+00:32:58.310 --> 00:33:01.499
+Vikesh K: taking a simple data set and going through the whole procedure.
+
+354
+00:33:01.530 --> 00:33:06.690
+Vikesh K: the different kind of things that we do. But this is one result. I want you to remember is that
+
+355
+00:33:06.710 --> 00:33:08.910
+Vikesh K: usually what happens
+
+356
+00:33:09.020 --> 00:33:13.660
+Vikesh K: as you increase the lambda values, your coefficient values will decrease. Okay.
+
+357
+00:33:14.120 --> 00:33:14.950
+Vikesh K: now.
+
+358
+00:33:15.270 --> 00:33:20.670
+Anu.Arun: Vikash can, can you sh so this one? It was a degree 3
+
+359
+00:33:21.140 --> 00:33:30.059
+Anu.Arun: or or 4 set right that you have. So is so you plotting one of the coefficients.
+
+360
+00:33:31.840 --> 00:33:41.100
+Vikesh K: Yes. So then, what ideally will happen? One of the coefficients will stop becoming. 0 will basically will will change into.
+
+361
+00:33:41.200 --> 00:33:43.830
+Vikesh K: Okay, let me put it like this.
+
+362
+00:33:44.700 --> 00:33:50.059
+Vikesh K: So, for example, you have degree 3 and degree 4, it essentially becomes 0.
+
+363
+00:33:51.380 --> 00:33:57.189
+Anu.Arun: My question is, can I see? For a given degree? Let's say degree
+
+364
+00:33:57.753 --> 00:34:05.899
+Anu.Arun: so for degree 2, you would have 2 coefficients right, Beta one, and Beta 2.
+
+365
+00:34:06.830 --> 00:34:11.079
+Vikesh K: Yes, yeah. So so you have. Yeah, you would have coefficient
+
+366
+00:34:11.460 --> 00:34:19.129
+Vikesh K: for spreading factor. So let's say, this is your degree, one which is spreading factor, then degree 2 is spreading factor raised to power. 2.
+
+367
+00:34:19.620 --> 00:34:32.229
+Anu.Arun: Yeah. So so let me give you background. What I wanted to ask. So if something has to is is increasing, then probably something else will decrease to kind of
+
+368
+00:34:32.520 --> 00:34:33.920
+Anu.Arun: keep the
+
+369
+00:34:34.912 --> 00:34:36.779
+Anu.Arun: fit. Good right?
+
+370
+00:34:38.909 --> 00:34:41.176
+Anu.Arun: Does it make sense? If
+
+371
+00:34:41.630 --> 00:34:56.859
+Vikesh K: Ideally. Yes, in case of lasso. What it does, it says, okay, I have 4 coefficients which I have to figure out which one to basically minimize in our case what Lasso said is, let's remove. Let's beta 4 and beta 3.
+
+372
+00:34:57.060 --> 00:35:04.110
+Vikesh K: We will make it 0. If your alpha value increases beyond a point, we will essentially make this 0.
+
+373
+00:35:05.220 --> 00:35:11.450
+Vikesh K: So in a way, what it suggests is lasso is saying, if you have to build a monitor, beta one and just beta 2
+
+374
+00:35:11.920 --> 00:35:15.810
+Vikesh K: are sufficient. And you basically don't need Beta 3 and Beta 4.
+
+375
+00:35:16.920 --> 00:35:20.969
+Anu.Arun: Right. But the absolute value of beta, one beta or 2 might have increased
+
+376
+00:35:22.780 --> 00:35:26.240
+Anu.Arun: to compensate, but not marginally, because it is yeah.
+
+377
+00:35:26.240 --> 00:35:26.819
+Vikesh K: So, if.
+
+378
+00:35:26.820 --> 00:35:28.550
+Anu.Arun: Were insignificant. To begin with.
+
+379
+00:35:28.550 --> 00:35:30.459
+Vikesh K: If your alpha value is increasing
+
+380
+00:35:30.620 --> 00:35:34.460
+Vikesh K: ideally by theory, your beta value will decrease
+
+381
+00:35:35.680 --> 00:35:36.440
+Vikesh K: right?
+
+382
+00:35:37.050 --> 00:35:39.029
+Vikesh K: It won't increase, it will decrease.
+
+383
+00:35:39.040 --> 00:35:43.559
+Vikesh K: As okay. Let me. Let me go down here and show you the within the chart.
+
+384
+00:35:44.060 --> 00:35:47.462
+Vikesh K: So so if the alpha values, let's say around
+
+385
+00:35:48.260 --> 00:35:49.380
+Vikesh K: 0
+
+386
+00:35:49.480 --> 00:35:52.669
+Vikesh K: here, your beta value is around 2 here
+
+387
+00:35:52.910 --> 00:35:55.470
+Vikesh K: and for degree 2. It's 1.5.
+
+388
+00:35:55.840 --> 00:35:56.350
+Vikesh K: Okay.
+
+389
+00:35:56.350 --> 00:35:59.059
+Anu.Arun: We have 4 right? So which beta is this.
+
+390
+00:35:59.880 --> 00:36:01.080
+Vikesh K: Okay, so
+
+391
+00:36:01.970 --> 00:36:03.300
+Vikesh K: beta one.
+
+392
+00:36:03.710 --> 00:36:04.870
+Vikesh K: beta, 2,
+
+393
+00:36:05.580 --> 00:36:07.840
+Vikesh K: beta, 3, beta. 4.
+
+394
+00:36:08.630 --> 00:36:12.119
+Vikesh K: Okay. What it says. After this value
+
+395
+00:36:12.450 --> 00:36:15.829
+Vikesh K: your beta 3 and beta 4 are essentially 0.
+
+396
+00:36:17.270 --> 00:36:18.360
+Vikesh K: So
+
+397
+00:36:18.470 --> 00:36:20.459
+Vikesh K: after this alpha value
+
+398
+00:36:20.760 --> 00:36:30.659
+Vikesh K: your Beta 3 and Beta 4 will become 0. They are not really the model lasso things. They are not really important to the overall predictions. So we can. Actually, I'm making it 0.
+
+399
+00:36:31.070 --> 00:36:35.840
+Vikesh K: So that's like a feature selection for you, because then you're left only with Beta one, and Beta 2
+
+400
+00:36:39.040 --> 00:36:41.150
+Vikesh K: makes. Does that make sense, Anu? Or how.
+
+401
+00:36:41.760 --> 00:36:45.869
+Anu.Arun: Yeah, that makes that makes sense. Okay, yeah, okay. So
+
+402
+00:36:46.564 --> 00:36:55.110
+Anu.Arun: yeah, okay, it's clear. Now, I I thought I didn't see the beta one, and Beta 4 was captured in this way. Oh, yeah, okay, that just makes sense.
+
+403
+00:36:57.670 --> 00:36:58.290
+Vikesh K: Yeah.
+
+404
+00:36:58.770 --> 00:37:01.410
+Vikesh K: Vivian, any question or any doubt?
+
+405
+00:37:03.770 --> 00:37:05.390
+Vikesh K: No. Okay, cool.
+
+406
+00:37:09.450 --> 00:37:10.440
+Vikesh K: So
+
+407
+00:37:11.030 --> 00:37:22.520
+Vikesh K: with this. So at least you understand the mechanism of how this is done. Let's focus on one simple problem statement with this again. We, I'm using the miles data.
+
+408
+00:37:22.930 --> 00:37:29.699
+Vikesh K: So this is how the data set looks like you have miles per gallon, and there are a couple of other things you will use
+
+409
+00:37:30.060 --> 00:37:33.050
+Vikesh K: to predict for this miles per gallon. Okay.
+
+410
+00:37:33.330 --> 00:37:55.080
+Vikesh K: One basic method is, I won't be using card name. I will use other variables, only numerical to keep it simple. So you can build a simple linear regression model. And or you can build a lasso model or a rich model. Okay? So I will use the same features, and I will play around with it. First, st the basic checks, which is missing values
+
+411
+00:37:55.530 --> 00:38:03.900
+Vikesh K: duplicates not nothing, is there? Then you really, then, you know, typically what you would do is focus on the column which you want to understand.
+
+412
+00:38:04.090 --> 00:38:06.130
+Vikesh K: and you will see
+
+413
+00:38:07.090 --> 00:38:11.990
+Vikesh K: the mean, where is the mean? The this should be more or less normally distributed
+
+414
+00:38:12.590 --> 00:38:14.780
+Vikesh K: idly, because the mean and
+
+415
+00:38:15.170 --> 00:38:17.280
+Vikesh K: median values are quite same.
+
+416
+00:38:19.160 --> 00:38:24.720
+Vikesh K: This is same. If if you remember, I talked about it, you can take the dot plot
+
+417
+00:38:24.850 --> 00:38:33.390
+Vikesh K: and make this into interactive plot, using plotly. You just have to add backend equals to plotly. And this will, this will turn into an interactive plot.
+
+418
+00:38:34.660 --> 00:38:37.495
+Vikesh K: Then one good thing in pandas is
+
+419
+00:38:38.240 --> 00:38:40.499
+Vikesh K: You can use dot histogram to
+
+420
+00:38:40.710 --> 00:38:58.949
+Vikesh K: actually quickly look at the distribution of all the variables in one go right? So, for example, maybe this might be right skewed. But this is normally distributed. This is more or less normally distributed in linear regression many times. What you would have to do is maybe do some transformations. We won't go into that right now
+
+421
+00:38:59.130 --> 00:39:09.320
+Vikesh K: just to keep it simple. But this is one thing which you typically do. The second thing which can be helpful is your correlation. Numbers right how the values are connected to each other.
+
+422
+00:39:09.960 --> 00:39:14.330
+Vikesh K: And, as you can see, for example, you are interested in miles per gallon.
+
+423
+00:39:15.240 --> 00:39:28.600
+Vikesh K: There are values which are highly correlated with it, even though it's negative. But it's highly correlated. So that's good. But the problem is, if the values are correlated among themselves. So, for example, you can see, cylinders
+
+424
+00:39:28.660 --> 00:39:31.310
+Vikesh K: is highly correlated with displacement.
+
+425
+00:39:32.110 --> 00:39:38.929
+Vikesh K: And for linear regression. That's a problem, because linear regression assumes that the columns are not related to each other.
+
+426
+00:39:39.420 --> 00:39:43.120
+Vikesh K: There should not be any multicollinearity.
+
+427
+00:39:43.250 --> 00:39:52.480
+Vikesh K: What happens if there is a multicolor linearity, the beta one beta, 2 coefficients that you get from your model. They are not reliable, they can be wrong.
+
+428
+00:39:52.600 --> 00:39:57.850
+Vikesh K: That's what essentially multicollinearity does overall your R. Square might be good.
+
+429
+00:39:58.120 --> 00:40:01.140
+Vikesh K: but your individual coefficients are not really good
+
+430
+00:40:01.330 --> 00:40:09.860
+Vikesh K: and not really reliable. That's the problem. So you then treat this one of the ways you can treat is also by lasso.
+
+431
+00:40:10.470 --> 00:40:17.410
+Vikesh K: because lasso might drop some of these columns. And that's like automatic feature selection for you.
+
+432
+00:40:17.530 --> 00:40:18.350
+Vikesh K: Okay.
+
+433
+00:40:20.610 --> 00:40:22.899
+Vikesh K: Then we will move to the data prep part
+
+434
+00:40:23.204 --> 00:40:29.800
+Vikesh K: which is train test split. I hope all of you understand this. Everyone remembers what is the random State. Why we use it.
+
+435
+00:40:32.990 --> 00:40:33.840
+Vivian Lau: So you are getting
+
+436
+00:40:34.550 --> 00:40:36.310
+Vivian Lau: of data every time.
+
+437
+00:40:36.310 --> 00:40:38.450
+Vijay Chaganti: Consistency, integration.
+
+438
+00:40:39.130 --> 00:40:48.379
+Vikesh K: Yes. So it's like a pseudo randomness. You can control the randomness that you introduce in the whole split. So you're trying to control that
+
+439
+00:40:48.430 --> 00:40:53.869
+Vikesh K: test size 0 point 3 means 30% of the data will be test. The rest of it would be training.
+
+440
+00:40:54.230 --> 00:40:56.499
+Vikesh K: And this is how the new data set looks like.
+
+441
+00:40:57.180 --> 00:41:02.309
+Vikesh K: And then you do the data transformation, which is your train and test split.
+
+442
+00:41:02.950 --> 00:41:09.949
+Vikesh K: And one of the nice ways how you can see this, although in this case I don't think there was a lot of variation.
+
+443
+00:41:10.220 --> 00:41:13.470
+Vikesh K: But this is how typically data looks like
+
+444
+00:41:13.620 --> 00:41:15.529
+Vikesh K: post transformation.
+
+445
+00:41:19.170 --> 00:41:19.600
+Vikesh K: One
+
+446
+00:41:19.970 --> 00:41:22.499
+Vikesh K: one more way to check this is.
+
+447
+00:41:23.030 --> 00:41:23.870
+Vikesh K: yes.
+
+448
+00:41:54.440 --> 00:41:55.450
+Vikesh K: something
+
+449
+00:41:55.660 --> 00:41:57.479
+Vikesh K: hasn't happened properly.
+
+450
+00:42:00.920 --> 00:42:02.989
+Vikesh K: Oh, I've used Min, Max Killer.
+
+451
+00:42:04.510 --> 00:42:06.939
+Vikesh K: Let me do standard scheduler.
+
+452
+00:42:56.250 --> 00:43:16.839
+Vikesh K: Okay, ignore this part. Maybe I haven't done it in a clean manner. But ideally, whenever you do standardization, your mean should be 0, and you can see all the columns have mean as 0 and standard deviation as one. So this can be quick. Check that your standardization, you know standard scaling that you have done has happened in the right manner, because
+
+453
+00:43:17.710 --> 00:43:23.079
+Vikesh K: if your mean is around 0 standard standard deviation is one that means you have done a
+
+454
+00:43:23.230 --> 00:43:24.699
+Vikesh K: proper job of this.
+
+455
+00:43:25.550 --> 00:43:30.339
+Vikesh K: Okay, once you do this, then what I'm trying to do is fit
+
+456
+00:43:31.150 --> 00:43:34.810
+Vikesh K: 3 models. One is a ridge model, a lasso model
+
+457
+00:43:34.960 --> 00:43:37.330
+Vikesh K: and a linear regression model. All right.
+
+458
+00:43:38.103 --> 00:43:39.870
+Vikesh K: And I make the predictions
+
+459
+00:43:39.900 --> 00:43:43.829
+Vikesh K: based on these 3 models, on the train data and on the test data.
+
+460
+00:43:44.220 --> 00:43:47.539
+Vikesh K: Then for visualization purpose, what I'm doing.
+
+461
+00:43:47.690 --> 00:43:53.180
+Vikesh K: I'm adding this back to the train data. So if you see, this is how my train data looks like
+
+462
+00:43:54.900 --> 00:43:55.900
+Vikesh K: right now.
+
+463
+00:44:00.810 --> 00:44:04.930
+Vikesh K: all right, you just have miles per gallon. I add these values to it.
+
+464
+00:44:05.020 --> 00:44:07.240
+Vikesh K: And then, when you see, you will get
+
+465
+00:44:07.300 --> 00:44:11.509
+Vikesh K: output of a ridge model of a lasso model and of a linear model.
+
+466
+00:44:11.900 --> 00:44:18.710
+Vikesh K: Okay, these are the predictions from the 3 model. By the way, in this case, because the values are quite close. Maybe it won't give you a
+
+467
+00:44:18.750 --> 00:44:26.260
+Vikesh K: big difference, all right. And then you can actually plot this on top of each other. So you can see the lines are pretty
+
+468
+00:44:27.035 --> 00:44:30.259
+Vikesh K: overlapping. One good way is.
+
+469
+00:44:30.510 --> 00:44:32.789
+Vikesh K: if I focus only on one column.
+
+470
+00:44:33.680 --> 00:44:46.460
+Vikesh K: you can actually hide it like this. So now you can see only linear and miles per gallon is the real value. Okay, you can. You can focus on 2 charts at a time. And if I click on linear.
+
+471
+00:44:46.510 --> 00:44:48.699
+Vikesh K: we're just left with the actual value.
+
+472
+00:44:48.880 --> 00:44:53.170
+Vikesh K: Then you click on rich. You can actually now compare the 2 values. Okay.
+
+473
+00:44:53.230 --> 00:44:59.509
+Vikesh K: if I remove the miles per gallon, you are left only with Rich. I can maybe compare it with lasso lines.
+
+474
+00:44:59.610 --> 00:45:05.379
+Vikesh K: and you will see there's a good amount of overlap there, except in some instances, but the values are pretty overlapping.
+
+475
+00:45:05.710 --> 00:45:10.110
+Vikesh K: and if you compare it with linear a ridge. And linear actually is
+
+476
+00:45:10.510 --> 00:45:12.210
+Vikesh K: quite on top of each other.
+
+477
+00:45:12.560 --> 00:45:13.310
+Vikesh K: Okay.
+
+478
+00:45:14.650 --> 00:45:28.589
+Vikesh K: so, but this is 1 1 you why, 1 1 good use case of why you have to. Why, you can use a plotly chart. It can actually make things more interactive compared to your normal. It basically looks like a W.
+
+479
+00:45:29.352 --> 00:45:31.349
+Vikesh K: Chart. There, you know, more interactive.
+
+480
+00:45:31.590 --> 00:45:32.819
+Vikesh K: the same thing.
+
+481
+00:45:32.890 --> 00:45:34.520
+Vikesh K: Any any questions so far.
+
+482
+00:45:37.680 --> 00:45:44.649
+Vikesh K: And you know why maybe the results are not very different is, could be because I have chosen one lambda value, which is
+
+483
+00:45:44.770 --> 00:45:47.839
+Vikesh K: randomly. I gave it a value of 0 point 5.
+
+484
+00:45:48.210 --> 00:45:54.190
+Vikesh K: So maybe that's not the best value, and we have to find the best value of lambda, which will maybe change
+
+485
+00:45:54.280 --> 00:45:56.239
+Vikesh K: how our output looks like.
+
+486
+00:45:56.950 --> 00:45:57.740
+Vikesh K: Okay?
+
+487
+00:45:58.310 --> 00:46:08.079
+Vikesh K: Then I do it. Do the same thing for test data. Remember, that was for the train data. But the real test is performance on the test data. That's what matters
+
+488
+00:46:08.250 --> 00:46:10.910
+Vikesh K: what is what is doing a good job.
+
+489
+00:46:11.830 --> 00:46:13.350
+Vikesh K: And
+
+490
+00:46:13.710 --> 00:46:21.660
+Vikesh K: yeah, I'm just highlighting these separately, you know, more or less, they actually look pretty similar, not very different, except in some instances.
+
+491
+00:46:22.510 --> 00:46:26.899
+Vikesh K: So if you want to see the results, the root mean squared error
+
+492
+00:46:27.520 --> 00:46:38.260
+Vikesh K: of the lasso is 3 point on, let's focus on the second line 4.2 5 4.1 0 and 4.0 9. So there's not much difference, at least in this case, between the 3 models.
+
+493
+00:46:38.580 --> 00:46:52.379
+Vikesh K: the more or less it could be primarily because there are not many different columns here. There were only limited set of columns here. The data set which I've used, and at least is simple. I just wanted also to give you take you through the the workflow.
+
+494
+00:46:53.920 --> 00:46:54.590
+Vikesh K: And
+
+495
+00:46:55.800 --> 00:47:06.670
+Vikesh K: the values are also not very extreme values. Right. So, and I've did the scaling in any case now. So the there's not much difference between the 3 outputs here.
+
+496
+00:47:06.990 --> 00:47:12.879
+Vikesh K: But then the second part usually is, what is the ideal alpha value we should chose
+
+497
+00:47:12.900 --> 00:47:20.140
+Vikesh K: right in this case. I randomly chose an alpha value of 0 point 5. But you need to figure out the alpha value, which is the
+
+498
+00:47:20.170 --> 00:47:22.680
+Vikesh K: which is the right one. And if you run this.
+
+499
+00:47:23.530 --> 00:47:29.459
+Vikesh K: at least, what it tells you is the optimal alpha value is actually 0 in this case.
+
+500
+00:47:29.550 --> 00:47:34.310
+Vikesh K: So when you do 0, that essentially, what it says is, it's a linear regression model.
+
+501
+00:47:35.090 --> 00:47:46.679
+Vikesh K: You don't really need to overcomplicate this. It's the linear regression version of this model is actually the better one. Okay, at least in this case, that that's what it is suggesting you. Because, as a change.
+
+502
+00:47:46.730 --> 00:47:49.179
+Vikesh K: my alpha values as I increase it.
+
+503
+00:47:49.400 --> 00:47:52.949
+Vikesh K: the my root mean, square error is actually increasing in this case.
+
+504
+00:47:54.390 --> 00:48:03.429
+Vikesh K: Okay, it's a little counterintuitive, because we have always because. But there are in some cases where linear regression actually does a good job, and you don't really have to complicate it.
+
+505
+00:48:04.670 --> 00:48:08.049
+Vikesh K: And same with in this case. Your
+
+506
+00:48:08.060 --> 00:48:09.400
+Vikesh K: by the way, I think
+
+507
+00:48:09.610 --> 00:48:12.780
+Vikesh K: no, this one you should use. Let me remove this
+
+508
+00:48:14.980 --> 00:48:20.140
+Vikesh K: yeah. Root mean square error again. The optimal value for rich here is the
+
+509
+00:48:20.250 --> 00:48:28.580
+Vikesh K: alpha value for H is 0. Again. Okay, that's why, in even when when I use 0 point 5 and all, there was not much difference here.
+
+510
+00:48:28.900 --> 00:48:38.529
+Vikesh K: Okay, so in this particular case, I think rich and lasso doesn't really contribute a lot. Maybe we have to pick up a slightly more complicated data set to highlight that.
+
+511
+00:48:39.340 --> 00:48:50.709
+Vikesh K: But this is manually what I saw right manually, what it came around to be. But the other way which you usually can use is something called grid search, Cv. In which
+
+512
+00:48:51.830 --> 00:48:56.379
+Vikesh K: grid search Cv. Has been covered in the course right. The the idea behind it
+
+513
+00:48:58.660 --> 00:48:59.380
+Vikesh K: or not.
+
+514
+00:48:59.380 --> 00:49:00.410
+Matt Lee: Yeah, it has.
+
+515
+00:49:00.870 --> 00:49:01.670
+Matt Lee: Yeah.
+
+516
+00:49:01.990 --> 00:49:07.400
+Vikesh K: If you understand, what is a difference between feature, engineering, and hyperparameter tuning
+
+517
+00:49:07.890 --> 00:49:09.629
+Vikesh K: like what exactly they mean.
+
+518
+00:49:12.872 --> 00:49:16.330
+shashi: Feature. Engineering is where I keep adding the
+
+519
+00:49:16.600 --> 00:49:22.115
+shashi: additional features to consider for model building and fitting, whereas hyper tuning is
+
+520
+00:49:23.460 --> 00:49:26.520
+shashi: importance of each of those
+
+521
+00:49:27.568 --> 00:49:35.730
+shashi: variables which I'm considering arrive at optimal value for each of the features, and then use that for model building.
+
+522
+00:49:38.010 --> 00:49:41.779
+Vikesh K: Oh, no, hyper parameter doesn't have to do anything with the your features.
+
+523
+00:49:43.390 --> 00:49:48.809
+Matt Lee: Hyper parameters like varying the features within like the degree and the alphas and stuff.
+
+524
+00:49:50.240 --> 00:49:56.730
+Vikesh K: Yeah, fetch your your hyperparameter tuning has to do with the model, only not with anything, with the data.
+
+525
+00:49:57.250 --> 00:49:58.000
+Vikesh K: Okay.
+
+526
+00:49:59.450 --> 00:50:03.570
+Vikesh K: how I would like to. How I usually explain this is.
+
+527
+00:50:03.990 --> 00:50:13.979
+Vikesh K: it's it's it's sort of silly. But you hopefully, you will remember it. Let's say you have to prepare chicken. Okay, a nice chicken dish. So you have chicken, and you have microwave oven. Okay?
+
+528
+00:50:14.070 --> 00:50:18.099
+Vikesh K: And then you prepare a chicken dish. There are 2 things how you can improve this
+
+529
+00:50:18.110 --> 00:50:26.360
+Vikesh K: one. You marinate your chicken really? Well, right, you slice it well, then, you put all the spices, and you leave it for overnight.
+
+530
+00:50:26.630 --> 00:50:35.779
+Vikesh K: That that makes the chicken very nice tender. The second thing you can do is oven, maybe. Let's say, 200 degrees 10 min.
+
+531
+00:50:35.910 --> 00:50:38.489
+Vikesh K: or 300 degrees 5 min
+
+532
+00:50:38.570 --> 00:50:45.189
+Vikesh K: or 500 degrees. I think maybe chicken will burn at this. But let's say 2 min. Okay, these are the combinations of the oven.
+
+533
+00:50:45.890 --> 00:50:53.540
+Vikesh K: the the chicken. What you did to that chicken. The marination is your feature engineering. You're just focused on the data there.
+
+534
+00:50:53.880 --> 00:51:02.579
+Vikesh K: Okay, you're adding slicing, editing your Pca. Your your subset lasso. All is feature engineering.
+
+535
+00:51:03.510 --> 00:51:04.520
+Vikesh K: In a way.
+
+536
+00:51:06.770 --> 00:51:11.250
+Vikesh K: your hyperparameter tuning is when you are changing the model values.
+
+537
+00:51:11.430 --> 00:51:15.599
+Vikesh K: Okay, you're not doing anything with the data. But the machine in which you're putting this
+
+538
+00:51:15.710 --> 00:51:26.470
+Vikesh K: so sorry the the alpha values would be hyper parameter tuning here. So so you're changing to the machine, making changes to the machine. That's your hyperparameter tuning.
+
+539
+00:51:26.870 --> 00:51:34.240
+Vikesh K: So what you have to ideally do in machine learning, you have to find the best feature engineering you have to find the best hyperparameter tuning method.
+
+540
+00:51:34.570 --> 00:51:37.250
+Vikesh K: and that will give you the best output.
+
+541
+00:51:37.790 --> 00:51:38.660
+Vikesh K: Okay?
+
+542
+00:51:38.950 --> 00:51:44.370
+Vikesh K: Now the question can be, Hey, I have all these different combinations.
+
+543
+00:51:44.760 --> 00:51:46.499
+Vikesh K: I want to try all of them
+
+544
+00:51:47.480 --> 00:51:48.830
+Vikesh K: how to do it.
+
+545
+00:51:49.400 --> 00:51:56.529
+Vikesh K: Cikit-learn has a solution. They call it grid search. Cv. It will take all the possible combinations which you tell it to take.
+
+546
+00:51:56.570 --> 00:52:11.270
+Vikesh K: You know it will cook the chicken at, let's say, 200 degrees 10 min, 300 degrees 5 min 500 degrees 1 min, and will tell you in the end by some predefined criteria. Hey? I tested all the 3 methods. This is when the chicken is the best
+
+547
+00:52:11.660 --> 00:52:21.430
+Vikesh K: same with the data analysis. It will tell you all the different combinations of hyperparameters, and then tell you which one will give you the best output of prediction.
+
+548
+00:52:23.100 --> 00:52:27.760
+Vikesh K: Does that help now, will you remember, in case maybe it was bit hazy in your mind?
+
+549
+00:52:28.900 --> 00:52:29.710
+Vikesh K: Yeah.
+
+550
+00:52:30.150 --> 00:52:35.630
+Vikesh K: So most of the times you're either doing some kind of hyperparameter tuning.
+
+551
+00:52:36.220 --> 00:52:38.190
+Vikesh K: Or you're doing feature engineering.
+
+552
+00:52:40.190 --> 00:52:44.709
+Vikesh K: Okay? When you do. Pca, that's your feature engineering. You're taking your data set and your
+
+553
+00:52:44.750 --> 00:52:49.359
+Vikesh K: maybe getting rid of some of the pieces, and then you are combining some of the pieces.
+
+554
+00:52:50.930 --> 00:52:51.870
+Vikesh K: Sounds good.
+
+555
+00:52:53.610 --> 00:52:54.850
+Vikesh K: Any questions.
+
+556
+00:52:56.210 --> 00:53:05.599
+Anu.Arun: Okay, that was a funny but nice example the for the Pca. We don't get rid of anything. I thought I thought it was just transforming into another vector.
+
+557
+00:53:05.600 --> 00:53:11.590
+Vikesh K: Yeah, yeah, no. I I meant when you let's say, when you do lasso right, you get off you get rid of a couple of columns.
+
+558
+00:53:11.710 --> 00:53:15.330
+Vikesh K: Yeah, confirmation. That's true. Yeah.
+
+559
+00:53:15.690 --> 00:53:16.360
+Vikesh K: okay.
+
+560
+00:53:16.360 --> 00:53:17.290
+Anu.Arun: Thank you.
+
+561
+00:53:18.960 --> 00:53:22.310
+shashi: Had another small question which I noticed this one.
+
+562
+00:53:22.760 --> 00:53:23.490
+shashi: oh.
+
+563
+00:53:23.620 --> 00:53:25.439
+shashi: we take
+
+564
+00:53:25.947 --> 00:53:32.469
+shashi: mean square error for seeing the difference between test value and the predicted value.
+
+565
+00:53:32.760 --> 00:53:43.538
+shashi: And I was just playing around and I tried it with the Median square error, I mean the error error between the predicted, and the test was
+
+566
+00:53:44.420 --> 00:53:46.839
+shashi: very low. I think it was
+
+567
+00:53:47.430 --> 00:53:54.699
+shashi: handling the outliers in a better way. So I was trying to understand, how does that work and how come?
+
+568
+00:53:55.010 --> 00:53:58.400
+shashi: It doesn't seem to be used the
+
+569
+00:53:58.730 --> 00:54:05.000
+shashi: frequently that I was trying to understand that Median square, when comparing the results and.
+
+570
+00:54:05.000 --> 00:54:05.649
+Vikesh K: I think
+
+571
+00:54:05.850 --> 00:54:09.900
+Vikesh K: when you when you're building a model, usually. And then let's see.
+
+572
+00:54:10.050 --> 00:54:11.990
+Vikesh K: this is your data point.
+
+573
+00:54:12.450 --> 00:54:23.670
+Vikesh K: And you know, and this is your errors, right? All all the data points which are not on the line itself. The vertical distance is your error.
+
+574
+00:54:24.180 --> 00:54:33.910
+Vikesh K: and I think one of the reasons we focus on mean is because you want to minimize the beauty of mean is, it takes. It will take all these errors.
+
+575
+00:54:34.280 --> 00:54:39.370
+Vikesh K: and it will tell you, hey? On an average, what's the error? Value? Right? And you know to.
+
+576
+00:54:39.580 --> 00:54:50.149
+Vikesh K: And then other thing which also happens, you 1st square it, and then you do the under root, so that points which are further away, they get penalized even more right?
+
+577
+00:54:50.628 --> 00:54:55.359
+Vikesh K: That. That's 1 of the other purpose. But why would you do a root mean, square editor.
+
+578
+00:54:55.520 --> 00:54:59.219
+Vikesh K: I think the challenge with Median would be. It won't tell you the whole picture.
+
+579
+00:55:01.040 --> 00:55:12.000
+Vikesh K: So I'm not really that. That's to my mind, maybe there's some more explanation to it, but that, to my mind that's 1 of the reasons why we use root mean square error and not root. Median square error.
+
+580
+00:55:13.720 --> 00:55:15.479
+Vikesh K: Yeah? Because then.
+
+581
+00:55:15.480 --> 00:55:16.360
+Anu.Arun: Renewed.
+
+582
+00:55:17.220 --> 00:55:18.280
+Vikesh K: Yes, Anu, please.
+
+583
+00:55:19.140 --> 00:55:28.390
+Anu.Arun: Yeah. So because then you wouldn't get the error from everything right? So if you have an outlier, then that will skew your.
+
+584
+00:55:30.370 --> 00:55:36.779
+Vikesh K: Because then then it will just take. Give you the. So if you have error values ranging from, let's say.
+
+585
+00:55:36.870 --> 00:55:38.790
+Vikesh K: 0 200,
+
+586
+00:55:38.820 --> 00:55:49.249
+Vikesh K: it will give you the Median error value which is around it will just focus on those 50. Right? You're not getting. You're not taking those extreme error values which average will take into consideration.
+
+587
+00:55:53.510 --> 00:55:59.339
+Vikesh K: Does that make sense, Sashi? Although I I would need to maybe check this further. But this is this is to my.
+
+588
+00:55:59.340 --> 00:56:00.389
+shashi: Yeah, I don't know.
+
+589
+00:56:00.410 --> 00:56:07.379
+shashi: Yeah. Other outliers will have in the mean square error outliers will have a bigger say in the
+
+590
+00:56:07.400 --> 00:56:08.900
+shashi: output. I think so that.
+
+591
+00:56:08.900 --> 00:56:14.959
+Vikesh K: Yes, outliers, actually, basically get penalized more, you know, that model will get penalized.
+
+592
+00:56:15.860 --> 00:56:16.630
+Vikesh K: Okay?
+
+593
+00:56:17.540 --> 00:56:26.230
+Vikesh K: So then, what I'm doing here, I think you would have gone through a grid. Search the grid search. Usually. What happens? You 1st specify the
+
+594
+00:56:26.270 --> 00:56:32.739
+Vikesh K: the parameters that you want to change. So in case of the oven. Right? You say the temperature
+
+595
+00:56:32.910 --> 00:56:47.119
+Vikesh K: you talk about the timings, these these are the 2 things you can control in an oven. So in a model you might. You can control different parameters for a ridge regression. Only thing you can control is alpha value. So you
+
+596
+00:56:47.310 --> 00:56:49.569
+Vikesh K: check the different values of Alpha.
+
+597
+00:56:49.610 --> 00:56:52.520
+Vikesh K: you pass it, and you say, you know I want to
+
+598
+00:56:53.000 --> 00:56:54.580
+Vikesh K: fit this model.
+
+599
+00:56:55.130 --> 00:57:00.700
+Vikesh K: and then tell me the best parameter, and this usually is computationally intensive, and I will.
+
+600
+00:57:01.540 --> 00:57:06.549
+Vikesh K: whenever it becomes too much of for complicated models. You try some other method.
+
+601
+00:57:06.940 --> 00:57:09.210
+Vikesh K: You don't write the grid. Search Cv. Then.
+
+602
+00:57:09.410 --> 00:57:14.799
+Vikesh K: and then it will tell you what is the best parameter here, although in this case now it's saying one.
+
+603
+00:57:15.430 --> 00:57:19.469
+Vikesh K: and we can see that here.
+
+604
+00:57:27.640 --> 00:57:31.640
+Vikesh K: Oh, by the way, this is negative. Remember. So this actually, should
+
+605
+00:57:31.920 --> 00:57:33.149
+Vikesh K: you you.
+
+606
+00:57:33.310 --> 00:57:38.149
+Vikesh K: This is this is little. This gets little complicated because this is negative here.
+
+607
+00:57:38.520 --> 00:57:50.840
+Vikesh K: But as the alpha values are decreasing. You know the negative negative because he's trying to minimize. That's why it's shown as negative here. But again, I think the best value, the best output is at 0.
+
+608
+00:57:51.520 --> 00:57:55.099
+Vikesh K: But I'm little confused with this one here. I will check that.
+
+609
+00:57:55.410 --> 00:57:57.779
+Vikesh K: and you can do the same thing for lasso.
+
+610
+00:57:58.480 --> 00:58:00.729
+Vikesh K: You get nasso grid and
+
+611
+00:58:03.000 --> 00:58:05.829
+Vikesh K: 0 point 0 1. Yeah, which is very close.
+
+612
+00:58:05.870 --> 00:58:07.010
+Vikesh K: 4, 0.
+
+613
+00:58:10.330 --> 00:58:11.180
+Vikesh K: Yes.
+
+614
+00:58:11.950 --> 00:58:13.899
+Vikesh K: it's becoming way more negative.
+
+615
+00:58:14.580 --> 00:58:18.120
+Vikesh K: So the best output is at 0 of your lasso. Alpha.
+
+616
+00:58:19.650 --> 00:58:20.440
+Vikesh K: Okay?
+
+617
+00:58:24.450 --> 00:58:25.250
+Vikesh K: But
+
+618
+00:58:25.460 --> 00:58:36.329
+Vikesh K: so the idea, the main thing is, you need to play around with the alpha values. But grid search. Cv will allow you to figure out these things automatically like, you don't really have to break your head over it.
+
+619
+00:58:37.050 --> 00:58:42.319
+Vikesh K: Okay, I think one thing I can do. I haven't put a value of 0. Here.
+
+620
+00:58:43.610 --> 00:58:44.819
+Vikesh K: let me try that.
+
+621
+00:58:48.540 --> 00:58:50.029
+Vikesh K: In both the cases.
+
+622
+00:58:53.310 --> 00:58:55.100
+shashi: You have to in the parameters also.
+
+623
+00:58:57.570 --> 00:59:00.829
+Vikesh K: Yeah, I I added it here. So if I run it again.
+
+624
+00:59:01.190 --> 00:59:04.460
+Vikesh K: I am just rerunning the whole thing and just trying to check it.
+
+625
+00:59:06.300 --> 00:59:10.549
+Vikesh K: No, it's it's still giving me. Oh, sorry! Oh, that's what you meant.
+
+626
+00:59:13.190 --> 00:59:14.560
+Vikesh K: A white.
+
+627
+00:59:15.030 --> 00:59:17.739
+Vikesh K: Oh, this is yeah, this is very silly of me.
+
+628
+00:59:17.960 --> 00:59:19.469
+Vikesh K: I should actually
+
+629
+00:59:20.120 --> 00:59:20.960
+Vikesh K: call it.
+
+630
+00:59:21.520 --> 00:59:23.469
+Vikesh K: See, you should not do
+
+631
+00:59:23.730 --> 00:59:25.060
+Vikesh K: hard coding. So much of
+
+632
+00:59:26.180 --> 00:59:27.170
+Vikesh K: thanks. Sushi!
+
+633
+00:59:27.490 --> 00:59:28.810
+Vikesh K: This is what you meant.
+
+634
+00:59:31.405 --> 00:59:35.969
+Vikesh K: It's still 1 0. I I would need to check this, though at my end.
+
+635
+00:59:37.920 --> 00:59:38.270
+Anu.Arun: Hello!
+
+636
+00:59:39.430 --> 00:59:40.130
+Vikesh K: Yes.
+
+637
+00:59:42.540 --> 00:59:44.820
+Anu.Arun: Yeah. Yeah. Sorry. Sorry. Yes.
+
+638
+00:59:48.400 --> 00:59:49.750
+Vikesh K: That's a lot of fun.
+
+639
+00:59:56.890 --> 00:59:57.640
+Vikesh K: I haven't.
+
+640
+01:00:07.620 --> 01:00:11.100
+Vikesh K: Okay. I would need to check this again. Why this one
+
+641
+01:00:11.430 --> 01:00:14.140
+Vikesh K: I lead should be 0. But I will check it later.
+
+642
+01:00:14.650 --> 01:00:15.480
+Vikesh K: Okay?
+
+643
+01:00:16.660 --> 01:00:24.798
+Vikesh K: we have also come to the end. But I hope I'm not sure if I if if I manage to clear some of your confusions. But
+
+644
+01:00:25.540 --> 01:00:27.050
+Vikesh K: one good thing is
+
+645
+01:00:27.140 --> 01:00:33.009
+Vikesh K: as we move. Remember linear regression. Like I said, it's 1 of the basic methods out there
+
+646
+01:00:33.710 --> 01:00:41.229
+Vikesh K: when when and this is pretty old method when they realized linear regression method is
+
+647
+01:00:41.390 --> 01:00:44.549
+Vikesh K: not suitable for some of the situations.
+
+648
+01:00:44.570 --> 01:00:51.869
+Vikesh K: they added more. Basically, it was a Stanford statistician who came up with the lasso method. So they made it more sophisticated.
+
+649
+01:00:51.950 --> 01:00:54.040
+Vikesh K: But having said that, it's still.
+
+650
+01:00:54.330 --> 01:00:56.600
+Vikesh K: you know, even if you fit a
+
+651
+01:00:56.640 --> 01:00:58.940
+Vikesh K: engine to your cycle, to your bike.
+
+652
+01:00:58.960 --> 01:01:12.270
+Vikesh K: it will still will not be as powerful, let's say, as like a motorbike proper motorbike. Okay? So as we move into the course. We will talk about other methods like decision tree random for a support vector machines
+
+653
+01:01:12.620 --> 01:01:14.830
+Vikesh K: which are way more powerful.
+
+654
+01:01:14.880 --> 01:01:22.020
+Vikesh K: So sometimes even after last one rich after doing last one rich. Maybe those models will give you a better output.
+
+655
+01:01:22.810 --> 01:01:24.920
+Vikesh K: Okay, so remember that.
+
+656
+01:01:25.452 --> 01:01:28.509
+Vikesh K: I, at least in practice. I don't see
+
+657
+01:01:28.540 --> 01:01:31.569
+Vikesh K: anyone doing a lot of lasso and rich
+
+658
+01:01:31.940 --> 01:01:35.340
+Vikesh K: primarily, because in many cases linear model is not used.
+
+659
+01:01:35.860 --> 01:01:39.760
+Vikesh K: It is only helpful when you have to do a lot of interpretation
+
+660
+01:01:39.970 --> 01:01:42.470
+Vikesh K: when you really want to explain it to the business.
+
+661
+01:01:43.740 --> 01:01:45.240
+Vikesh K: Does that make sense?
+
+662
+01:01:47.510 --> 01:01:48.210
+Vikesh K: Yeah.
+
+663
+01:01:48.540 --> 01:01:49.220
+Vikesh K: okay.
+
+664
+01:01:49.470 --> 01:02:02.120
+Anu.Arun: Question. This might be silly, but when I saw the code in the slide for implementing the Alpha hyperparameter search versus the grid search Cv code.
+
+665
+01:02:02.150 --> 01:02:09.429
+Anu.Arun: The it was the actual code was shorter than the grid search. Cv.
+
+666
+01:02:10.556 --> 01:02:13.703
+Anu.Arun: You know, syntax and
+
+667
+01:02:14.950 --> 01:02:19.999
+Anu.Arun: is this thing as powerful? Or is it. It just to me makes it less
+
+668
+01:02:20.320 --> 01:02:22.320
+Anu.Arun: interactive in a way.
+
+669
+01:02:24.100 --> 01:02:27.360
+Vikesh K: Do you mean the in this notebook which I've shared.
+
+670
+01:02:27.360 --> 01:02:33.640
+Anu.Arun: No, no, in the course code. When I saw the lecture videos.
+
+671
+01:02:33.970 --> 01:02:34.660
+Vikesh K: Yeah.
+
+672
+01:02:35.600 --> 01:02:36.100
+Anu.Arun: Yeah.
+
+673
+01:02:36.100 --> 01:02:36.630
+Vikesh K: So that.
+
+674
+01:02:36.700 --> 01:02:46.959
+Anu.Arun: The the code for actually just running a loop was much shorter than the actual grid search, you know. That was in one slide, and the grid search was in actually one and a half or 2 slides.
+
+675
+01:02:47.030 --> 01:02:49.169
+Anu.Arun: So it was like.
+
+676
+01:02:50.220 --> 01:02:51.709
+Anu.Arun: Yeah, maybe there is
+
+677
+01:02:51.770 --> 01:02:53.736
+Anu.Arun: some advantage, of course. But
+
+678
+01:02:55.000 --> 01:03:12.190
+Vikesh K: No, the advantages is basically you, you can, you know, when you especially when you put it in a pipeline and you automate the whole thing. It just becomes sort of a sort of an automated operation with with loop. You can do it as loop, but sometimes maybe it's not the most efficient method, and maybe you can't fit it in a pipeline.
+
+679
+01:03:12.570 --> 01:03:13.620
+Vikesh K: So
+
+680
+01:03:13.940 --> 01:03:21.448
+Vikesh K: so that's that's 1 advantage of using, you know. That's another thing you can think of as grid. Search. Cv, and remember,
+
+681
+01:03:22.250 --> 01:03:23.850
+Vikesh K: the problem is
+
+682
+01:03:25.000 --> 01:03:32.190
+Vikesh K: right. Now, we you use just one alpha value. Let's say we move to decision. Trees
+
+683
+01:03:32.200 --> 01:03:34.500
+Vikesh K: decision trees, you can actually
+
+684
+01:03:34.530 --> 01:03:36.960
+Vikesh K: play around with 4 or 5 parameters.
+
+685
+01:03:37.380 --> 01:03:43.399
+Vikesh K: Okay, so and then when you write a loop for 4 or 5 5 parameters, that would be a very complicated loop.
+
+686
+01:03:44.230 --> 01:03:48.770
+Vikesh K: Does it make sense? Because how it would look like? Let's say you have.
+
+687
+01:03:49.593 --> 01:03:52.740
+Vikesh K: Parameter, one parameter, 2 parameter, 3 parameter 4.
+
+688
+01:03:53.110 --> 01:03:58.159
+Vikesh K: Each of that parameter can take a value, a, BCT.
+
+689
+01:03:58.350 --> 01:03:59.190
+Vikesh K: Right.
+
+690
+01:03:59.840 --> 01:04:07.910
+Vikesh K: And what you have to try is again your parameter. 2 can take a value of PQRC. Right.
+
+691
+01:04:08.510 --> 01:04:12.490
+Vikesh K: and what you have to do is when you use parameter
+
+692
+01:04:12.510 --> 01:04:17.580
+Vikesh K: value A for parameter one. You have to use it with all the combinations possible.
+
+693
+01:04:18.000 --> 01:04:22.850
+Vikesh K: Okay, so if you try to write a loop of this, this will be a very complicated loop.
+
+694
+01:04:24.960 --> 01:04:27.859
+Anu.Arun: Yeah, of course. Yeah, yeah, no. That makes sense. Yeah.
+
+695
+01:04:28.040 --> 01:04:32.250
+Vikesh K: So so right now, maybe maybe in slides it looks a little
+
+696
+01:04:32.400 --> 01:04:38.399
+Vikesh K: complicated, or maybe little long, but once your parameters become complex.
+
+697
+01:04:38.590 --> 01:04:47.250
+Vikesh K: then grid search will, you know, in the background will do all this hard work for you. It will figure out the possible combinations that you need to go through.
+
+698
+01:04:48.650 --> 01:05:01.269
+Anu.Arun: Yeah, yeah, that makes sense. I I think this powerful tools are making so much things abstract. It kind of makes it so abstract. So sometimes it's easier to know what's happening, you know. So.
+
+699
+01:05:01.570 --> 01:05:03.070
+Vikesh K: Yeah, no, no, I understand.
+
+700
+01:05:03.660 --> 01:05:12.189
+Vikesh K: That's a good point. That's 1 of the reasons I 1st ran a for loop here, and I, you know we we I tried to show you how it looks like. And then I did the grid search Cv.
+
+701
+01:05:13.180 --> 01:05:14.849
+Vikesh K: Just to highlight this thing.
+
+702
+01:05:15.600 --> 01:05:17.199
+Vikesh K: But I understand what you mean.
+
+703
+01:05:17.730 --> 01:05:18.790
+Anu.Arun: Yeah, thanks.
+
+704
+01:05:19.790 --> 01:05:20.470
+Vikesh K: Yeah.
+
+705
+01:05:22.510 --> 01:05:23.939
+Vikesh K: any other points.
+
+706
+01:05:23.940 --> 01:05:29.760
+Matt Lee: Hikesh! If you if we have time can you scroll up to your alpha versus beta plot up above?
+
+707
+01:05:31.880 --> 01:05:32.600
+Matt Lee: So.
+
+708
+01:05:32.600 --> 01:05:36.290
+Vikesh K: Beta! Oh.
+
+709
+01:05:36.290 --> 01:05:40.020
+Matt Lee: Yeah, different variants of of Alpha. Yeah, any one of these. So
+
+710
+01:05:40.490 --> 01:05:48.590
+Matt Lee: one thing I'm I'm having a little bit trouble visualizing is that the you know, Alpha, how it says, like Alpha related to budget.
+
+711
+01:05:48.920 --> 01:05:53.820
+Matt Lee: I'm not visualizing kind of really like how alpha small. That means an unlimited budget.
+
+712
+01:05:53.920 --> 01:05:57.339
+Matt Lee: Alpha is large, it becomes a constrained budget.
+
+713
+01:05:57.370 --> 01:06:02.430
+Matt Lee: What does that mean? And you don't have to use this plot for it. But like, is there a way to
+
+714
+01:06:02.700 --> 01:06:04.580
+Matt Lee: explain that or visualize that.
+
+715
+01:06:07.750 --> 01:06:08.890
+Matt Lee: Yeah.
+
+716
+01:06:09.020 --> 01:06:13.810
+Vikesh K: Can you explain your question again, as in budget? In what sense? So so what.
+
+717
+01:06:14.470 --> 01:06:20.330
+Matt Lee: Yeah. So the you know, the the video professor talks about like Alpha is setting a budget
+
+718
+01:06:21.630 --> 01:06:26.360
+Matt Lee: right? And he's saying, essentially, for Alpha is very small. It means an unlimited budget.
+
+719
+01:06:26.990 --> 01:06:31.449
+Matt Lee: and alpha is large. It means the budget becomes constrained.
+
+720
+01:06:31.720 --> 01:06:33.810
+Matt Lee: I'm just not visualizing
+
+721
+01:06:34.740 --> 01:06:36.230
+Matt Lee: what that means.
+
+722
+01:06:39.490 --> 01:06:52.399
+Vikesh K: So that's I don't think that's a very helpful explanation as well as in as in what what is given in the course. Maybe that's that's slightly more complicated. How I think of this is like I try to remember it in this format.
+
+723
+01:06:53.555 --> 01:06:54.000
+Vikesh K: That
+
+724
+01:06:54.600 --> 01:07:06.850
+Vikesh K: this is this is your alpha, or the you know, lambda parameter lambda parameter gets multiplied with all the coefficients, coefficient square in case of ridge and coefficient, the absolute value of coefficient in case of lasso.
+
+725
+01:07:07.210 --> 01:07:12.919
+Vikesh K: So one and then 2 extreme cases can happen. One is, if if your lambda is 0,
+
+726
+01:07:13.020 --> 01:07:17.909
+Vikesh K: then the whole thing will become 0, and then, essentially, you're left with a linear regression.
+
+727
+01:07:18.220 --> 01:07:24.460
+Vikesh K: On the other hand, if it's a significantly big value, which is, let's say, an infinity value
+
+728
+01:07:24.600 --> 01:07:32.030
+Vikesh K: you the model. The overall minimization will will focus on
+
+729
+01:07:32.050 --> 01:07:36.589
+Vikesh K: making this part as small as possible, and that case the coefficients will become small.
+
+730
+01:07:37.480 --> 01:07:44.629
+Vikesh K: So in terms of that budget thing I would need to again check how Professor has maybe explained it I don't remember on top of it, but
+
+731
+01:07:44.800 --> 01:07:52.230
+Vikesh K: in my mind even that's not a very, maybe the best explanation of it, or maybe at least, maybe it's confusing.
+
+732
+01:07:55.320 --> 01:07:55.950
+Matt Lee: Okay.
+
+733
+01:07:56.590 --> 01:08:14.260
+Vikesh K: Yeah, Matt, I'm not sure how how helpful that was. But yeah, sometimes it does happen that, you know. Maybe like, like, for example, I explained something feature engineering, and that with chicken and microwave. Maybe that's not the some. Some other person might find it silly, but it works for me. But maybe that that work for Professor. How he explained it
+
+734
+01:08:14.380 --> 01:08:19.030
+Vikesh K: I would I would. I would again just check it, just to be sure what? How he explained this thing.
+
+735
+01:08:22.510 --> 01:08:27.169
+Matt Lee: Okay. Got it. I think it, you know. Maybe he's think of budget is like the total loss budget.
+
+736
+01:08:27.460 --> 01:08:30.520
+Matt Lee: And then if you're Alpha.
+
+737
+01:08:30.520 --> 01:08:31.200
+Vikesh K: It's larger.
+
+738
+01:08:31.200 --> 01:08:32.120
+Matt Lee: And then.
+
+739
+01:08:32.120 --> 01:08:33.140
+Vikesh K: Yeah. But it could be that.
+
+740
+01:08:33.140 --> 01:08:34.060
+Matt Lee: Takes over.
+
+741
+01:08:38.970 --> 01:08:40.310
+Vikesh K: Anything else.
+
+742
+01:08:42.439 --> 01:08:47.070
+Vikesh K: I think some people are also putting in chat. But I didn't get an opportunity. Okay.
+
+743
+01:08:49.100 --> 01:08:59.960
+Vikesh K: all right. I think you might all have to hop off just one again, recommendation as you move into this thing. This book is. This is a very recently published book.
+
+744
+01:09:00.550 --> 01:09:05.610
+Vikesh K: but this guy tries to explain some of the maths behind this Ml. Stuff. This is a good book.
+
+745
+01:09:05.630 --> 01:09:19.230
+Vikesh K: I've read parts of it the chapters so far he does a good job. So if you're maybe struggling with the intuitive part, as this guy does a good job of explaining stuff, sometimes even better than the
+
+746
+01:09:19.250 --> 01:09:21.740
+Vikesh K: normal academic textbooks which are out there
+
+747
+01:09:22.170 --> 01:09:29.000
+Vikesh K: because he's a science writer. He has tried to really explain it in a very intuitive manner. So maybe you can check this book as well.
+
+748
+01:09:29.020 --> 01:09:32.209
+Vikesh K: It's it's called, Why Machines Learn. I will just again
+
+749
+01:09:32.680 --> 01:09:33.750
+Vikesh K: put it here.
+
+750
+01:09:35.020 --> 01:09:36.459
+Vikesh K: Why, machine slot? Yeah.
+
+751
+01:09:40.609 --> 01:09:41.330
+Vikesh K: good.
+
+752
+01:09:43.050 --> 01:09:44.670
+Vikesh K: Okay. Anything else.
+
+753
+01:09:45.569 --> 01:09:47.809
+Vikesh K: I hope you are also thinking about your
+
+754
+01:09:48.649 --> 01:09:59.209
+Vikesh K: capstone, at least. Keeping this in mind. We you will. You will have an opportunity to talk to us, one to one, and you know we we will. You will be sh
+
+755
+01:10:00.110 --> 01:10:03.160
+Vikesh K: You will have access to our calendar links.
+
+756
+01:10:03.260 --> 01:10:11.990
+Vikesh K: and then, you know, you can set up meetings with us just just a reminder. You would be able to set it up with your course leader. So let's say, people who are in Section A
+
+757
+01:10:12.000 --> 01:10:19.819
+Vikesh K: would be able to set it up with me. People who are in Section B. Would it set? Would set it up with the the person who's responsible for Section BI think, Viviana.
+
+758
+01:10:20.330 --> 01:10:22.320
+Vikesh K: So that's how it will work.
+
+759
+01:10:24.080 --> 01:10:24.800
+Vikesh K: Yeah.
+
+760
+01:10:26.330 --> 01:10:27.100
+Vikesh K: cool.
+
+761
+01:10:27.850 --> 01:10:31.299
+Vikesh K: Okay, I will call it a day. Then, if there are no more questions or doubts.
+
+762
+01:10:31.510 --> 01:10:35.059
+Vikesh K: Thank you again for your time. I really appreciate your questions.
+
+763
+01:10:35.483 --> 01:10:43.589
+Vikesh K: Anu, every time you ask very good questions. Thank you, Sashi. Thank you again for your inputs especially, and others as well. Thank you for your questions to make it more interactive.
+
+764
+01:10:43.980 --> 01:10:47.230
+Vikesh K: You guys also managed to keep me on my toes. That's very good.
+
+765
+01:10:47.690 --> 01:10:50.649
+Vikesh K: and I hope to see you in the next officer. Then.
+
+766
+01:10:50.650 --> 01:10:53.059
+Raghavan Srinivasan: But class is always, really, really.
+
+767
+01:10:53.783 --> 01:10:55.230
+Anu.Arun: Thanks, bye.
+
+768
+01:10:55.510 --> 01:10:59.370
+Vikesh K: Thank you. That's very kind of all of you. Thank you. Thank you. Ragwan.
+
+769
+01:10:59.690 --> 01:11:01.239
+Vikesh K: Cheers bye, bye.
+
