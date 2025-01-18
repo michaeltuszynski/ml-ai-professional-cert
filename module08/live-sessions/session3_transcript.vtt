@@ -1,0 +1,3033 @@
+WEBVTT
+
+1
+00:00:03.180 --> 00:00:06.699
+Francesca Vera: Alright, so I believe we are recording now.
+
+2
+00:00:08.520 --> 00:00:16.319
+Francesca Vera: welcome everyone. As I mentioned, I will amend the State accidentally wrote yesterday's
+
+3
+00:00:16.430 --> 00:00:23.350
+Francesca Vera: date, but welcome. We are on week 9. Which is right
+
+4
+00:00:23.760 --> 00:00:30.800
+Francesca Vera: sort of in the middle of part 2, where we go over machine learning and AI techniques.
+
+5
+00:00:31.000 --> 00:00:32.549
+Francesca Vera: I'm going to give it
+
+6
+00:00:32.610 --> 00:00:34.960
+Francesca Vera: a couple more minutes to see if anyone
+
+7
+00:00:35.010 --> 00:00:47.509
+Francesca Vera: else is going to join us. Obviously, because these are recorded, people can revisit these sessions at their own pace. In their own time. So totally fine. If
+
+8
+00:00:47.590 --> 00:00:49.160
+Francesca Vera: we do not get
+
+9
+00:00:49.240 --> 00:00:51.040
+Francesca Vera: a few more people. But
+
+10
+00:00:51.170 --> 00:01:00.400
+Francesca Vera: while we're waiting typically, I start with an icebreaker, sometimes a fun one. But I really just wanted to
+
+11
+00:01:00.490 --> 00:01:05.480
+Francesca Vera: give you know, people who are in the meeting the opportunity to
+
+12
+00:01:06.010 --> 00:01:06.980
+Francesca Vera: talk
+
+13
+00:01:07.140 --> 00:01:09.240
+Francesca Vera: about how they're feeling.
+
+14
+00:01:09.698 --> 00:01:12.490
+Francesca Vera: With regards to the course, so far, so
+
+15
+00:01:13.590 --> 00:01:23.270
+Francesca Vera: feel free to unmute or type in the chat. Just how are you feeling about the course so far, because, as I mentioned, we're on week 9,
+
+16
+00:01:24.380 --> 00:01:28.780
+Francesca Vera: a lot of things have started to
+
+17
+00:01:29.210 --> 00:01:30.410
+Francesca Vera: pile up
+
+18
+00:01:30.610 --> 00:01:35.850
+Francesca Vera: concurrently. You know, you're working through the course material. But you also.
+
+19
+00:01:36.250 --> 00:01:37.859
+Francesca Vera: you know, submitted
+
+20
+00:01:38.566 --> 00:01:41.979
+Francesca Vera: your 1st long assignment. You submitted your capstone
+
+21
+00:01:42.310 --> 00:02:01.249
+Francesca Vera: initial ideas. After that you're getting feedback. You're going to meet with your learning facilitators in a couple of weeks to discuss one on one. Your project. A lot of things are happening at once on top of, of course, everything else that's going on in your life. So just wanna check in, how are we feeling about the course so far.
+
+22
+00:02:06.938 --> 00:02:14.379
+Carmen P.: Hi! This is Carmen. I think the course is going well, but it's a lot of information, especially this last 2 modules.
+
+23
+00:02:14.380 --> 00:02:14.980
+Francesca Vera: Oh!
+
+24
+00:02:14.980 --> 00:02:17.570
+Carmen P.: And yeah, overload.
+
+25
+00:02:17.570 --> 00:02:19.205
+Francesca Vera: Yeah, is there?
+
+26
+00:02:19.850 --> 00:02:22.996
+Francesca Vera: is it? Is it that the there are
+
+27
+00:02:23.710 --> 00:02:25.770
+Francesca Vera: a lot of assignments or.
+
+28
+00:02:25.770 --> 00:02:29.840
+Carmen P.: No, I think it's the technical concepts time trying to understand
+
+29
+00:02:30.575 --> 00:02:32.550
+Carmen P.: the coding component plus the.
+
+30
+00:02:32.550 --> 00:02:33.010
+Francesca Vera: Yeah.
+
+31
+00:02:33.010 --> 00:02:40.499
+Carmen P.: Machine learning component when you're applying this and the training and the tests and the different algos.
+
+32
+00:02:40.500 --> 00:02:41.190
+Francesca Vera: Yeah.
+
+33
+00:02:41.420 --> 00:02:42.100
+Carmen P.: Yeah.
+
+34
+00:02:42.420 --> 00:02:45.059
+Francesca Vera: Yes, that is
+
+35
+00:02:45.800 --> 00:02:47.010
+Francesca Vera: very.
+
+36
+00:02:47.110 --> 00:02:48.790
+Francesca Vera: very fair. There
+
+37
+00:02:49.500 --> 00:02:50.840
+Francesca Vera: are a lot of
+
+38
+00:02:50.880 --> 00:02:52.330
+Francesca Vera: things happening
+
+39
+00:02:52.750 --> 00:03:01.130
+Francesca Vera: at once. And then within each thing there's also just a lot of content. That's and especially because.
+
+40
+00:03:01.880 --> 00:03:19.363
+Francesca Vera: you know, with so many of these techniques, you could really do a deep dive and a deep course on each of the techniques, and we're trying to fit in as many pieces of information as possible. So I totally understand
+
+41
+00:03:20.590 --> 00:03:21.830
+Francesca Vera: anyone else.
+
+42
+00:03:22.160 --> 00:03:31.169
+Francesca Vera: How the course is going for you so far, obviously feel free to put it in the chat, but really wanted to open the space to see. Are we?
+
+43
+00:03:31.190 --> 00:03:34.999
+Francesca Vera: Are we? A thumbs up. Are we in the middle? Are we thumbs down? Are we just
+
+44
+00:03:35.250 --> 00:03:38.219
+Francesca Vera: all over the place? There's just so much to do.
+
+45
+00:03:38.850 --> 00:03:41.159
+shashi: Yeah, Hi, this is Shashi.
+
+46
+00:03:41.160 --> 00:03:42.040
+Francesca Vera: Bye, good.
+
+47
+00:03:42.040 --> 00:03:44.289
+shashi: The course. So far the
+
+48
+00:03:45.330 --> 00:03:51.280
+shashi: the going has been good, I mean, I've been able to complete all the tasks and assignments.
+
+49
+00:03:51.510 --> 00:03:53.730
+shashi: Sometimes I feel the
+
+50
+00:03:55.037 --> 00:03:58.592
+shashi: the quizzes and the Choreo assignments
+
+51
+00:03:59.860 --> 00:04:08.117
+shashi: or sometimes are they? They're way too simple examples to explain the concepts, and probably sometimes we don't have
+
+52
+00:04:08.810 --> 00:04:11.775
+shashi: little bit more of guidance, or
+
+53
+00:04:12.889 --> 00:04:18.829
+shashi: to tackle the like the final submissions. What we do towards the end of this one.
+
+54
+00:04:20.750 --> 00:04:24.720
+shashi: that work! What is involved, and the
+
+55
+00:04:25.950 --> 00:04:28.930
+shashi: these are the quizzes they don't seem to
+
+56
+00:04:29.740 --> 00:04:32.370
+shashi: match with the complexity. I mean.
+
+57
+00:04:32.370 --> 00:04:33.140
+Francesca Vera: It is.
+
+58
+00:04:33.140 --> 00:04:41.860
+shashi: The questions. What they ask in the quiz seems to be very simple. And we think, Okay, we have understood. But when we try to apply that same logic to the
+
+59
+00:04:42.750 --> 00:04:45.190
+shashi: final, bigger task.
+
+60
+00:04:45.470 --> 00:04:45.930
+Francesca Vera: Yeah.
+
+61
+00:04:45.930 --> 00:04:52.890
+shashi: Then it becomes kind of tough. I mean, we have. I have to at least watch videos, multiple times.
+
+62
+00:04:53.310 --> 00:04:56.690
+shashi: To get the concept and sometimes to do the
+
+63
+00:04:57.390 --> 00:05:02.485
+shashi: coding assignments. And also I find that psychic learn, or this one. This examples
+
+64
+00:05:02.980 --> 00:05:05.220
+shashi: the documentation, I mean
+
+65
+00:05:05.300 --> 00:05:10.929
+shashi: from there getting the concepts is stuff, because what happens is
+
+66
+00:05:11.070 --> 00:05:14.741
+shashi: they assume certain kind of competence with
+
+67
+00:05:16.185 --> 00:05:21.304
+shashi: python coding and things like that. And the examples. What they provide is
+
+68
+00:05:21.990 --> 00:05:23.300
+shashi: not
+
+69
+00:05:23.729 --> 00:05:28.340
+shashi: aligning with our levels. What we are at currently probably.
+
+70
+00:05:28.340 --> 00:05:28.740
+Francesca Vera: 6 months.
+
+71
+00:05:28.740 --> 00:05:31.299
+shashi: Down the line. Yes, perhaps we'll be able to.
+
+72
+00:05:31.300 --> 00:05:31.820
+Francesca Vera: I see.
+
+73
+00:05:31.820 --> 00:05:33.789
+shashi: The examples and things like that.
+
+74
+00:05:34.020 --> 00:05:40.803
+shashi: And we have to spend additional more. Research. Do some more research online, like in
+
+75
+00:05:41.370 --> 00:05:44.790
+shashi: Stack exchange or Youtube videos to understand the
+
+76
+00:05:45.280 --> 00:05:51.180
+shashi: individual concepts and how to use it. And some of them, what I found has been quite good. Actually.
+
+77
+00:05:52.310 --> 00:05:59.370
+shashi: So the videos I have to do little more exercises on my own to get the
+
+78
+00:05:59.490 --> 00:06:01.710
+shashi: concepts into the
+
+79
+00:06:02.863 --> 00:06:08.366
+shashi: my understanding level. I wish there were some videos and links from
+
+80
+00:06:09.540 --> 00:06:21.095
+shashi: emeritus itself. So where, whatever the professor says, and to kind of drill down and reinforce that learning, I mean, if there were additional material
+
+81
+00:06:21.750 --> 00:06:27.890
+shashi: this one that would be great. And and only I find that last resources, what they provide
+
+82
+00:06:27.990 --> 00:06:29.720
+shashi: at the end of the
+
+83
+00:06:31.210 --> 00:06:32.240
+shashi: section.
+
+84
+00:06:34.320 --> 00:06:39.814
+shashi: Some of them also they see they're good lot of them are good, and some of them
+
+85
+00:06:40.410 --> 00:06:44.549
+shashi: it's still quite advanced, actually so intermediate. I mean to
+
+86
+00:06:45.090 --> 00:06:46.849
+shashi: match our level of
+
+87
+00:06:47.730 --> 00:06:51.400
+shashi: learning. I think if there were additional resources that would be great.
+
+88
+00:06:52.500 --> 00:06:57.089
+Francesca Vera: Are you talking about additional resources on top of
+
+89
+00:06:57.230 --> 00:07:01.890
+Francesca Vera: the additional resources and further reading provided in the module.
+
+90
+00:07:01.890 --> 00:07:07.709
+shashi: Yeah reading. And if there any other videos or something that is available to reinforce the
+
+91
+00:07:08.242 --> 00:07:13.077
+shashi: whatever the professor teaches during the session and the short videos
+
+92
+00:07:13.970 --> 00:07:27.300
+shashi: so that will kind of help. That's what I was thinking. Cause, anyway, I have to spend in addition to whatever we expect around 15 to 20 HI end up spending another 1520 h
+
+93
+00:07:27.720 --> 00:07:33.800
+shashi: on the Youtube. Facebook. Sorry Stock Exchange, or anything to.
+
+94
+00:07:33.800 --> 00:07:34.320
+Francesca Vera: Yeah.
+
+95
+00:07:34.320 --> 00:07:36.679
+shashi: And learn about the additional this one.
+
+96
+00:07:36.970 --> 00:07:42.709
+Francesca Vera: And and so do. So. This is what's included in the module, and you'd like
+
+97
+00:07:42.800 --> 00:07:44.759
+Francesca Vera: something on top of this list.
+
+98
+00:07:44.760 --> 00:07:45.719
+shashi: Got it? Yeah.
+
+99
+00:07:45.720 --> 00:07:46.289
+Francesca Vera: Got it.
+
+100
+00:07:46.290 --> 00:08:03.850
+shashi: Yeah. And if we get this one, I mean, if we get these links as soon as we complete module, let us say somewhere in along those icons of the sections, subsections on top. So if we get immediately after that, that will kind of help us, I mean.
+
+101
+00:08:03.850 --> 00:08:04.330
+Francesca Vera: Oh, it's.
+
+102
+00:08:04.330 --> 00:08:04.720
+shashi: You know.
+
+103
+00:08:04.720 --> 00:08:07.559
+Francesca Vera: Okay? Haven't right? Okay? Instead of at the end.
+
+104
+00:08:07.680 --> 00:08:09.570
+shashi: Yeah, instead of at the end.
+
+105
+00:08:09.570 --> 00:08:12.579
+Francesca Vera: Got it. Okay, thank you. Thank you for the feedback.
+
+106
+00:08:13.890 --> 00:08:24.730
+Francesca Vera: would it help in general? Maybe I could just get thumbs up or thumbs down on the emojis like, would it help to go over like how to read
+
+107
+00:08:25.760 --> 00:08:34.800
+Francesca Vera: documentation, or how to on Sitekit learn, or how to get extra information in office hours like, would that be a helpful
+
+108
+00:08:34.809 --> 00:08:36.570
+Francesca Vera: session if I covered
+
+109
+00:08:36.659 --> 00:08:40.670
+Francesca Vera: how to do that? Or is it something that you feel
+
+110
+00:08:40.840 --> 00:08:46.280
+Francesca Vera: good about reading the documentation already. You just want the links.
+
+111
+00:08:47.030 --> 00:08:47.920
+shashi: Oh.
+
+112
+00:08:48.160 --> 00:08:56.569
+shashi: yeah, I mean, if we can cover how to go about this one during the office hours also, that will be kind of helpful. Actually.
+
+113
+00:08:56.860 --> 00:08:58.579
+Francesca Vera: Yeah, I I think.
+
+114
+00:08:59.080 --> 00:09:01.709
+Francesca Vera: it's it's definitely a skill
+
+115
+00:09:01.860 --> 00:09:19.819
+Francesca Vera: to read documentation. So if that would be helpful, I am happy to go over that because it is a very, very useful skill. Long term. When you start, you know, learning outside of the program. And you come across.
+
+116
+00:09:19.820 --> 00:09:34.219
+Francesca Vera: you know, maybe something that you've never seen before. But you want to read the documentation. It's really helpful to be able to do that. So thank you for the feedback. All right. And I'll monitor the chat. So if anything comes to mind, let's.
+
+117
+00:09:34.300 --> 00:09:37.280
+Francesca Vera: I'll I'll address that. But let's keep moving along.
+
+118
+00:09:38.280 --> 00:09:43.819
+Francesca Vera: So today. My office hours agenda, is going to be a little bit different from
+
+119
+00:09:43.860 --> 00:09:54.701
+Francesca Vera: previous office hours I've done. If you've been with me before, or maybe office hours of some of the other learning facilitators who did their session. I know there was already a session.
+
+120
+00:09:55.570 --> 00:09:57.440
+Francesca Vera: at the start of the week.
+
+121
+00:09:57.950 --> 00:10:02.790
+Francesca Vera: I really want to go over, maybe very high level
+
+122
+00:10:03.260 --> 00:10:04.940
+Francesca Vera: an AI project
+
+123
+00:10:05.510 --> 00:10:10.750
+Francesca Vera: particularly because this is exactly what you will be doing for your capstone.
+
+124
+00:10:11.180 --> 00:10:27.719
+Francesca Vera: and you're going to be meeting with your learning facilitator, starting November 20, over the next few weeks after that, to really fine tune and get the details right for your final project.
+
+125
+00:10:28.120 --> 00:10:39.529
+Francesca Vera: and because all of the submissions that were, you know, submitted on time were graded, or should be graded. So you would have seen sort of maybe notes from your
+
+126
+00:10:39.630 --> 00:10:43.650
+Francesca Vera: learning facilitator about your idea. I thought it would be useful
+
+127
+00:10:43.750 --> 00:10:50.520
+Francesca Vera: to give you some things to think about, and a few more details on how to go about actually
+
+128
+00:10:50.830 --> 00:10:52.090
+Francesca Vera: building
+
+129
+00:10:52.250 --> 00:10:55.280
+Francesca Vera: an idea for your AI project
+
+130
+00:10:55.300 --> 00:10:57.530
+Francesca Vera: in particular, for your capstone.
+
+131
+00:10:58.690 --> 00:11:02.029
+Francesca Vera: so hopefully, we'll by the end of the session
+
+132
+00:11:02.100 --> 00:11:06.180
+Francesca Vera: have a clearer understanding of the kind of
+
+133
+00:11:06.400 --> 00:11:11.490
+Francesca Vera: project you'll end up submitting, especially if for some
+
+134
+00:11:11.690 --> 00:11:19.297
+Francesca Vera: of the proposed problem statements. I saw very broad ideas, which was great. You know. Some people may be looking at
+
+135
+00:11:19.940 --> 00:11:24.820
+Francesca Vera: detecting insurance fraud or predicting the stock price, but
+
+136
+00:11:25.190 --> 00:11:31.739
+Francesca Vera: by the time you start your project you'll want to get really detailed about what you're going to do.
+
+137
+00:11:31.860 --> 00:11:33.730
+Francesca Vera: So hopefully, this
+
+138
+00:11:33.770 --> 00:11:36.940
+Francesca Vera: office hours today will be helpful for you in that.
+
+139
+00:11:37.620 --> 00:11:47.620
+Francesca Vera: So I'll go over. Maybe some types of AI projects specific details, the machine learning pipeline. And so how
+
+140
+00:11:48.620 --> 00:11:53.570
+Francesca Vera: your project is going to fit into the machine learning pipeline
+
+141
+00:11:54.240 --> 00:12:04.890
+Francesca Vera: how to think about it based on the capstone requirements. And hopefully, we'll do a walkthrough of an example that could look like your project.
+
+142
+00:12:07.380 --> 00:12:15.139
+Francesca Vera: So the 1st question I want to ask and feel free to unmute or just put your answers in the chat.
+
+143
+00:12:15.370 --> 00:12:17.970
+Francesca Vera: You know we use this term machine learning
+
+144
+00:12:18.220 --> 00:12:20.810
+Francesca Vera: all the time, and the word learning
+
+145
+00:12:20.860 --> 00:12:22.200
+Francesca Vera: is in
+
+146
+00:12:22.440 --> 00:12:25.009
+Francesca Vera: that term right? And I want to ask.
+
+147
+00:12:25.320 --> 00:12:29.840
+Francesca Vera: what is learning? How how would you define learning?
+
+148
+00:12:29.990 --> 00:12:31.100
+Francesca Vera: So
+
+149
+00:12:31.330 --> 00:12:36.370
+Francesca Vera: feel free to put it in the chat or unmute, if you have an idea. But how do you define learning.
+
+150
+00:12:39.210 --> 00:12:42.720
+Avinash Gangwal: Based on the historic data, you can
+
+151
+00:12:42.750 --> 00:12:45.020
+Avinash Gangwal: come up and predict
+
+152
+00:12:45.590 --> 00:12:50.110
+Avinash Gangwal: what can happen if we have same kind of scenarios.
+
+153
+00:12:50.850 --> 00:13:05.110
+Francesca Vera: I love that answer. That's a great answer. So you take things, you know. Maybe historic data experiences, you know, if I'm learning how to. If I'm learning how to ride a bike, I'm going to take the last time that
+
+154
+00:13:05.300 --> 00:13:12.559
+Francesca Vera: I rode a bike and everything that I processed, and when I find myself in a similar scenario, as you said.
+
+155
+00:13:13.043 --> 00:13:22.330
+Francesca Vera: You know. Maybe I'm on a bike again. I'm going to take what I experienced last time and use it to help me in this future scenario.
+
+156
+00:13:23.790 --> 00:13:24.960
+Francesca Vera: Anyone else.
+
+157
+00:13:25.350 --> 00:13:27.259
+Francesca Vera: any other parts of learning I missed.
+
+158
+00:13:28.120 --> 00:13:35.549
+Carmen P.: Also maybe risk it like, alright, you do brand new trial and error. Try to risk it. Try to predict.
+
+159
+00:13:35.790 --> 00:13:38.460
+Francesca Vera: Yeah, yes, so it it sounds like.
+
+160
+00:13:38.930 --> 00:13:43.670
+Francesca Vera: you need to have a new experience. It can't just be
+
+161
+00:13:44.310 --> 00:13:54.980
+Francesca Vera: only things in the past. There's something new that you are either learning for or something new that you will use the things you learned in.
+
+162
+00:13:55.450 --> 00:13:56.330
+Francesca Vera: and
+
+163
+00:13:56.910 --> 00:13:57.680
+Francesca Vera: I
+
+164
+00:13:58.550 --> 00:14:02.140
+Francesca Vera: totally agree. Learning is a process.
+
+165
+00:14:02.320 --> 00:14:06.939
+Francesca Vera: It involves gaining new knowledge skills, understanding or values.
+
+166
+00:14:07.120 --> 00:14:10.640
+Francesca Vera: And I think we're already looking
+
+167
+00:14:10.780 --> 00:14:21.660
+Francesca Vera: forward to a few more slides. But it's about taking previous examples and previous data to gain this new knowledge and skills and understanding. So
+
+168
+00:14:22.560 --> 00:14:25.560
+Francesca Vera: when we think of our capstone assignment.
+
+169
+00:14:27.390 --> 00:14:33.170
+Francesca Vera: one, your capstone assignment is supposed to reflect everything that you've learned
+
+170
+00:14:33.300 --> 00:14:36.159
+Francesca Vera: and practiced over the course of the program.
+
+171
+00:14:36.340 --> 00:14:39.539
+Francesca Vera: So it's your final showcase on a real world problem.
+
+172
+00:14:39.820 --> 00:14:45.919
+Francesca Vera: And then there's a double use case of learning, because we're also using machine learning
+
+173
+00:14:46.200 --> 00:14:47.859
+Francesca Vera: to actually
+
+174
+00:14:47.940 --> 00:14:56.310
+Francesca Vera: showcase everything you've learned because you've learned machine learning techniques. So it's a lot of lot of different parts of learning going around.
+
+175
+00:14:57.390 --> 00:15:02.651
+Francesca Vera: But 2 things I wanted to focus on that I think maybe
+
+176
+00:15:03.150 --> 00:15:06.939
+Francesca Vera: could be improved in your problem statement. Firstly.
+
+177
+00:15:07.952 --> 00:15:10.720
+Francesca Vera: per the capstone website.
+
+178
+00:15:11.479 --> 00:15:17.490
+Francesca Vera: on canvas, your capstone project will focus on the application of a predictive model.
+
+179
+00:15:17.800 --> 00:15:22.507
+Francesca Vera: So I did see some projects problem statements.
+
+180
+00:15:23.100 --> 00:15:24.520
+Francesca Vera: that were
+
+181
+00:15:25.139 --> 00:15:39.830
+Francesca Vera: about, you know, maybe doing a really thorough data analysis. Maybe you wanted to really analyze your consumer behavior. You wanted to analyze your website engagement, you know. But
+
+182
+00:15:40.460 --> 00:15:49.000
+Francesca Vera: the capstone needs to also apply a predictive model. So if your problem statement has not considered
+
+183
+00:15:49.380 --> 00:15:53.889
+Francesca Vera: what predictive model you're, you know. What are you going to predict?
+
+184
+00:15:54.190 --> 00:16:08.430
+Francesca Vera: Have a think about that, because that is one of the key aspects that you're going to focus on. I saw some examples that were, you know, maybe you wanted to identify a genre of movie great.
+
+185
+00:16:08.440 --> 00:16:20.330
+Francesca Vera: So you identify genres of movies. And then, you know, are you going to predict maybe a recommendation? Are you going to predict other similar movies? You know. Think about that predictive model.
+
+186
+00:16:20.680 --> 00:16:23.549
+Francesca Vera: And the second thing is, communicate your findings.
+
+187
+00:16:23.800 --> 00:16:30.519
+Francesca Vera: This is really important, because in the real world you're going to have to communicate your findings to different kinds of people.
+
+188
+00:16:30.710 --> 00:16:31.800
+Francesca Vera: So
+
+189
+00:16:31.860 --> 00:16:35.670
+Francesca Vera: pick a problem that you're going to be able to talk about.
+
+190
+00:16:35.710 --> 00:16:38.770
+Francesca Vera: You know, a problem that has a predictive model
+
+191
+00:16:39.810 --> 00:16:41.929
+Francesca Vera: that you can talk about.
+
+192
+00:16:43.261 --> 00:16:46.029
+Francesca Vera: And I see there is a
+
+193
+00:16:46.200 --> 00:16:48.075
+Francesca Vera: comment about grading.
+
+194
+00:16:49.780 --> 00:16:58.240
+Francesca Vera: Did you submit it on time? I know the deadline was a couple of weeks ago. Now, if you had submitted it on time, it should be
+
+195
+00:16:58.260 --> 00:17:01.190
+Francesca Vera: graded with comments.
+
+196
+00:17:01.400 --> 00:17:04.119
+Francesca Vera: And then, okay, let me
+
+197
+00:17:04.270 --> 00:17:06.130
+Francesca Vera: check on that. Then.
+
+198
+00:17:06.420 --> 00:17:08.420
+Francesca Vera: Thank you for
+
+199
+00:17:08.900 --> 00:17:16.682
+Francesca Vera: pointing that out it may have been an oversight in that case, and you should be getting a grade very soon. Thank you for letting me know
+
+200
+00:17:18.869 --> 00:17:21.827
+Francesca Vera: And so if we're thinking about the
+
+201
+00:17:22.270 --> 00:17:24.329
+Francesca Vera: products at the end of the capstone.
+
+202
+00:17:24.829 --> 00:17:33.279
+Francesca Vera: Yes, again, you have to have built a predictive model using supervised or unsupervised learning techniques on a data set.
+
+203
+00:17:33.300 --> 00:17:38.070
+Francesca Vera: So 2 things there already predictive model and an appropriate data set.
+
+204
+00:17:39.050 --> 00:17:42.689
+Francesca Vera: you will have developed a technical write up in
+
+205
+00:17:42.710 --> 00:17:51.770
+Francesca Vera: Jupyter notebook posted on a Github. So the Jupyter notebook, with all your technical write up, and that will be posted on Github.
+
+206
+00:17:53.080 --> 00:17:59.120
+Francesca Vera: And then, 3, rd this part communicating your findings, creating a non-technical report.
+
+207
+00:17:59.330 --> 00:18:02.930
+Francesca Vera: and all of this information is on canvas.
+
+208
+00:18:03.130 --> 00:18:07.170
+Francesca Vera: So if you go to this, I'm not going to spend too much time
+
+209
+00:18:07.180 --> 00:18:13.460
+Francesca Vera: on this page. But if you go here you'll see that module 6. You already drafted your problem statement.
+
+210
+00:18:13.720 --> 00:18:24.609
+Francesca Vera: And then the next thing you're going to look at is a 1 on one session with your program leader. And you're going to refine your problem statement, refine your question.
+
+211
+00:18:24.980 --> 00:18:30.309
+Francesca Vera: Look at where you can get the data and actually talk about the methods you're going to use
+
+212
+00:18:31.820 --> 00:18:33.260
+Francesca Vera: any questions so far.
+
+213
+00:18:34.520 --> 00:18:43.829
+Avinash Gangwal: So if we didn't receive any comments on the capstone problem statement, does it mean that that the statement is correct?
+
+214
+00:18:44.950 --> 00:18:47.237
+Francesca Vera: I wouldn't say
+
+215
+00:18:48.020 --> 00:18:52.230
+Francesca Vera: There's necessarily a correct and not correct
+
+216
+00:18:52.620 --> 00:18:56.809
+Francesca Vera: your problem statement is going to be a work in progress.
+
+217
+00:18:57.650 --> 00:19:06.350
+Francesca Vera: until Module 16, where you can see here. Module 16 is your final submission of the problem statement.
+
+218
+00:19:06.450 --> 00:19:19.300
+Francesca Vera: So right now, your problem statement is a work in progress, and I believe they're graded mostly on. Did you fulfill all the requirements? And so I believe
+
+219
+00:19:19.330 --> 00:19:30.829
+Francesca Vera: it was. Did you provide a question to explore? Did you provide ideas for a data set? And did you provide ideas for techniques? But the actual content of
+
+220
+00:19:31.050 --> 00:19:40.779
+Francesca Vera: how appropriate and what you can do to make it, as you know, appropriate a problem is going to come here in your one-on-one session.
+
+221
+00:19:40.930 --> 00:19:47.519
+Francesca Vera: and then your final version of your problem proposal won't be submitted until Module 16.
+
+222
+00:19:48.340 --> 00:19:52.740
+Francesca Vera: So right now everything is a work in progress until Module 16.
+
+223
+00:19:54.230 --> 00:19:54.970
+Avinash Gangwal: Okay.
+
+224
+00:19:56.690 --> 00:19:57.930
+Francesca Vera: So that means
+
+225
+00:19:58.120 --> 00:20:00.969
+Francesca Vera: you still have time to improve it.
+
+226
+00:20:01.270 --> 00:20:12.700
+Francesca Vera: and you still have time to, you know. Think about what you want to do before you speak with your learning facilitator. And then before you finalize your problem statement.
+
+227
+00:20:15.470 --> 00:20:17.499
+Francesca Vera: And so I'm going to zoom back a bit
+
+228
+00:20:17.780 --> 00:20:23.490
+Francesca Vera: and talk about types of AI systems. Because I think this might have also been
+
+229
+00:20:24.024 --> 00:20:27.170
+Francesca Vera: a little confusing when suggesting problems.
+
+230
+00:20:27.910 --> 00:20:32.250
+Francesca Vera: So we have these ideas. I'm going to put some terms out
+
+231
+00:20:32.300 --> 00:20:47.050
+Francesca Vera: data analysis. So the 1st module or sorry, the 1st part of this whole course was looking at data analysis techniques. And so we were, you know, learning how to review data from past events.
+
+232
+00:20:47.050 --> 00:21:02.320
+Francesca Vera: we were learning how to put that data set into a data frame looking at features of that data set using pandas. We were looking at data visualizations. All of that falls under data analysis which reviews data from past events. Right?
+
+233
+00:21:03.530 --> 00:21:19.209
+Francesca Vera: You can also use predictive analytics. So maybe some of you have encountered this in previous statistic courses. Or maybe you've encountered this in your work. And it's when you you know, you make an assumption, or you make it a hypothesis about your data.
+
+234
+00:21:19.330 --> 00:21:27.809
+Francesca Vera: and then you test this hypotheses on your past data to predict future scenarios. So if you remember the coupon.
+
+235
+00:21:27.950 --> 00:21:39.729
+Francesca Vera: If you remember the coupon data set that you did for your assignment. You know there were some hypotheses that you made right. You made up hypotheses, you might have made a hypothesis like.
+
+236
+00:21:40.060 --> 00:21:42.370
+Francesca Vera: If you are a frequent visitor.
+
+237
+00:21:42.790 --> 00:22:01.349
+Francesca Vera: then you are more likely to accept the coupon, and then you went back and tested that on the data. Okay, was the acceptance rate higher for frequent visitors. Yes. So now I can predict that frequent visitors are more likely. So that's sort of predictive analytics. We've we've done that.
+
+238
+00:22:02.570 --> 00:22:06.519
+Francesca Vera: And then we go into this realm of machine learning.
+
+239
+00:22:06.980 --> 00:22:07.930
+Francesca Vera: And
+
+240
+00:22:08.490 --> 00:22:10.540
+Francesca Vera: this is where the machine
+
+241
+00:22:10.550 --> 00:22:16.199
+Francesca Vera: is able to analyze the data, make assumptions based on this analysis.
+
+242
+00:22:16.280 --> 00:22:26.410
+Francesca Vera: evaluate the hypothesis that it makes the assumptions that it makes on past data, and it learns from it. That's why I wanted to define learning.
+
+243
+00:22:26.510 --> 00:22:32.479
+Francesca Vera: So the machine itself is going through that process of looking at past data
+
+244
+00:22:32.770 --> 00:22:58.200
+Francesca Vera: and gaining new knowledge gaining new understanding so that it can provide predictions at scale and depth. And so this is where we're building from a data analysis to maybe predictive analytics, you know, testing hypotheses to the machine, actually doing the data analysis, making assumptions, learning from the data and then providing predictions.
+
+245
+00:22:58.210 --> 00:23:07.260
+Francesca Vera: And so here is where we're at. Now, we're now at the point where we're starting to learn the different algorithms that allow a machine to do this.
+
+246
+00:23:09.510 --> 00:23:18.069
+Francesca Vera: And so when we look at types of AI systems. You might have heard this in the news a lot recently generative AI or Gen. AI,
+
+247
+00:23:18.990 --> 00:23:23.910
+Francesca Vera: and this is when the machine is able to produce realistic
+
+248
+00:23:23.960 --> 00:23:36.080
+Francesca Vera: and distinctive output. And so maybe when you've interacted with a large language model like Chat Gpt, or maybe when you've interacted with Claude or Gemini. You know, the
+
+249
+00:23:36.360 --> 00:23:42.299
+Francesca Vera: Gen. AI is giving you a very realistic human language output. It's
+
+250
+00:23:42.360 --> 00:23:46.640
+Francesca Vera: producing that. And so that's where the generative AI is.
+
+251
+00:23:46.760 --> 00:23:56.510
+Francesca Vera: And this is a very, very important topic in AI. But we're actually going to be looking at discriminative AI here.
+
+252
+00:23:56.540 --> 00:24:07.840
+Francesca Vera: which is when you have these AI systems or machine learning systems that predict a specific output for a given input, typically if it's given a new example.
+
+253
+00:24:08.010 --> 00:24:16.909
+Francesca Vera: So we're going to be focusing mostly on this realm. But Gen. AI is also something that's really important out there. Yes, I see a hand raised.
+
+254
+00:24:16.910 --> 00:24:25.020
+Carmen P.: Yes. Can you give an example of discriminative AI. Is there like a product, or is Algos, or where exactly is discriminative? AI.
+
+255
+00:24:25.020 --> 00:24:32.200
+Francesca Vera: Yeah, sure. So I think one of the examples could be, if you are ever online shopping.
+
+256
+00:24:32.210 --> 00:24:35.614
+Francesca Vera: like, I am online shopping, you know. I
+
+257
+00:24:37.760 --> 00:24:43.789
+Francesca Vera: have a shopping history with a store, maybe with my grocery store. I have a shopping history.
+
+258
+00:24:43.990 --> 00:24:59.230
+Francesca Vera: and the machine has, you know, understanding of my shopping history, it might have understanding of what's available near me. It might have my address that I ship my groceries to.
+
+259
+00:24:59.510 --> 00:25:04.459
+Francesca Vera: So it has all this data, right? So that's where we're looking at past data.
+
+260
+00:25:04.820 --> 00:25:08.600
+Francesca Vera: And maybe I put something in my cart.
+
+261
+00:25:09.010 --> 00:25:11.650
+Francesca Vera: It might give me recommendations.
+
+262
+00:25:11.830 --> 00:25:14.530
+Francesca Vera: And that's the prediction. It's predicting
+
+263
+00:25:14.700 --> 00:25:20.019
+Francesca Vera: what I might also want to buy, based on this data and recommending it to me.
+
+264
+00:25:20.020 --> 00:25:22.600
+Carmen P.: Okay, got it. So it's a recommendation system.
+
+265
+00:25:22.600 --> 00:25:22.920
+Francesca Vera: Yes.
+
+266
+00:25:22.920 --> 00:25:24.750
+Carmen P.: Like a spotify Netflix.
+
+267
+00:25:24.750 --> 00:25:25.920
+Francesca Vera: Yes, so those are.
+
+268
+00:25:25.920 --> 00:25:26.809
+Carmen P.: Yes. Okay. Thank you.
+
+269
+00:25:26.810 --> 00:25:31.050
+Francesca Vera: Those are examples. Another example would be in healthcare.
+
+270
+00:25:31.060 --> 00:25:52.777
+Francesca Vera: you know. Sometimes doctors see so many scans of, you know, maybe the same part, and a machine learning system might be trained on, you know, various MRI scans, and it might predict, if based on a new patient's scan. If a tumor is
+
+271
+00:25:54.370 --> 00:26:00.559
+Francesca Vera: you know, malignant or benign, right? So it's also making a prediction. So those are some examples.
+
+272
+00:26:00.560 --> 00:26:01.320
+Carmen P.: Thank you.
+
+273
+00:26:01.820 --> 00:26:02.880
+Francesca Vera: Great question.
+
+274
+00:26:04.720 --> 00:26:06.519
+Francesca Vera: And so I
+
+275
+00:26:06.570 --> 00:26:09.379
+Francesca Vera: feel like we already covered this. So I don't need to go
+
+276
+00:26:09.400 --> 00:26:23.392
+Francesca Vera: too much in depth with it, you know. Machine learning then allows machines to learn things without being explicitly programmed with that knowledge. You know I didn't program the machine with every
+
+277
+00:26:23.980 --> 00:26:27.389
+Francesca Vera: You know, every every thing that I've ever
+
+278
+00:26:27.440 --> 00:26:36.240
+Francesca Vera: bought and told it. What I want to buy in the future. It just knows the data of my shopping history. It knows things about the shops near me.
+
+279
+00:26:36.360 --> 00:26:40.189
+Francesca Vera: but I didn't tell it what I wanted in the future. It's predicting
+
+280
+00:26:40.530 --> 00:26:46.529
+Francesca Vera: what I might want in the future when it recommends me, you know. Maybe coffee beans with my milk.
+
+281
+00:26:48.120 --> 00:26:50.060
+Francesca Vera: So how does the machine do this?
+
+282
+00:26:50.070 --> 00:27:00.370
+Francesca Vera: I think you all already guessed it earlier with data. We need to give a machine data so that it can learn from the data and then make predictions about new cases.
+
+283
+00:27:02.580 --> 00:27:07.369
+Francesca Vera: So I'm going to go over the machine learning pipeline. And this is basically
+
+284
+00:27:07.430 --> 00:27:09.550
+Francesca Vera: what you're going to do
+
+285
+00:27:09.570 --> 00:27:17.399
+Francesca Vera: end to end for your capstone. You're 1st going to start with your data. That's why, we've really emphasized making sure you have a good data set.
+
+286
+00:27:18.000 --> 00:27:22.149
+Francesca Vera: We're then going to feed that data into the machine
+
+287
+00:27:22.170 --> 00:27:26.399
+Francesca Vera: that will identify patterns and make some generalizations.
+
+288
+00:27:27.200 --> 00:27:32.990
+Francesca Vera: That machine. Then, after going through this process that we would normally call training.
+
+289
+00:27:33.440 --> 00:27:49.140
+Francesca Vera: that machine is now ready to perform a task. You know the machine has gotten all the data about my grocery history, about my nearest grocery stores, maybe even about the availability of delivery people. And now that machine is ready to perform a task.
+
+290
+00:27:49.190 --> 00:27:50.889
+Francesca Vera: So what's it going to do?
+
+291
+00:27:50.900 --> 00:27:56.890
+Francesca Vera: It's going to get a new example. Maybe today I'm going to log in and say, Hey, I'm out of milk.
+
+292
+00:27:56.950 --> 00:28:02.090
+Francesca Vera: That's the new example. The new example is, Francesca added milk to her cart.
+
+293
+00:28:02.370 --> 00:28:09.030
+Francesca Vera: Now it's going to make a prediction or an outcome. And in this case the prediction might be, well, let's recommend
+
+294
+00:28:09.180 --> 00:28:13.280
+Francesca Vera: that Francesca buy coffee beans because she normally
+
+295
+00:28:13.450 --> 00:28:14.460
+Francesca Vera: drinks.
+
+296
+00:28:14.630 --> 00:28:19.780
+Francesca Vera: or she normally buys milk when she also buys coffee beans.
+
+297
+00:28:19.820 --> 00:28:27.510
+Francesca Vera: And so that is our prediction. So I know that's a really basic example. But you can see how we went all the way from data
+
+298
+00:28:28.250 --> 00:28:31.129
+Francesca Vera: to your prediction all the way to your outcome.
+
+299
+00:28:31.350 --> 00:28:33.419
+Francesca Vera: And everything that happened
+
+300
+00:28:34.000 --> 00:28:44.169
+Francesca Vera: in this process was the machine learning project. Was your machine learning pipeline and something that you will be doing in your own problem statements.
+
+301
+00:28:47.150 --> 00:28:48.910
+Francesca Vera: So back to your capstone.
+
+302
+00:28:49.890 --> 00:28:56.629
+Francesca Vera: your capstone will focus on the application of a predictive model, and you'll have completed all of these things.
+
+303
+00:28:57.540 --> 00:29:06.050
+Francesca Vera: Essentially, we are in this space of discriminative AI, where the systems predict a specific output for a given input
+
+304
+00:29:06.160 --> 00:29:10.129
+Francesca Vera: typically for new examples or new situations that are similar.
+
+305
+00:29:15.190 --> 00:29:19.139
+Francesca Vera: And I'll skip over this because we sort of covered this in
+
+306
+00:29:19.561 --> 00:29:27.590
+Francesca Vera: the earlier part where it's combining, you know, using AI for analysis and then using that analysis to make predictions.
+
+307
+00:29:29.870 --> 00:29:35.500
+Francesca Vera: So now let's look at what you'll have to think about when you're looking at the machine learning pipeline.
+
+308
+00:29:35.930 --> 00:29:40.969
+Francesca Vera: The 1st thing is, and I want to be extremely clear, because I think this is where
+
+309
+00:29:41.522 --> 00:29:46.390
+Francesca Vera: people were maybe a little confused when submitting the problem statement.
+
+310
+00:29:46.680 --> 00:29:50.039
+Francesca Vera: you have to know what you want your model to predict.
+
+311
+00:29:50.900 --> 00:29:56.669
+Francesca Vera: So an example of this is, maybe you have a new movie.
+
+312
+00:29:57.040 --> 00:30:09.730
+Francesca Vera: And you particularly like romantic comedies, I want to predict, based on information about this movie, you know, is it going to be a romantic comedy? So that's movie genres.
+
+313
+00:30:09.870 --> 00:30:27.230
+Francesca Vera: a really simple and everyday example that is used in all of our lives. Spam filters, you know, your spam filter system gets an email. It has data around that email. It's going to predict, is this spam, or is this safe to go into your inbox
+
+314
+00:30:28.540 --> 00:30:34.129
+Francesca Vera: customer retention? I think that's 1 that might be very applicable to some of you.
+
+315
+00:30:34.240 --> 00:30:47.859
+Francesca Vera: Maybe you have all this data about previous customers, their interactions with your business. You want to predict. Given the profile of a new customer. So maybe Francesca given her profile with your grocery store.
+
+316
+00:30:48.130 --> 00:30:51.930
+Francesca Vera: Is she going to be a repeat customer? You're going to predict that.
+
+317
+00:30:52.270 --> 00:31:00.059
+Francesca Vera: And then, same with fraud, you might see a transaction in a credit card statement you might predict, is this fraud? Is this okay?
+
+318
+00:31:00.140 --> 00:31:03.530
+Francesca Vera: So be very clear about what you want your model to predict.
+
+319
+00:31:03.540 --> 00:31:18.569
+Francesca Vera: Because some of the problem statements was very much, you know. Interesting problem spaces, really fascinating problem spaces, you know, some with agriculture, some with stock market, some with insurance fraud. But
+
+320
+00:31:19.370 --> 00:31:25.990
+Francesca Vera: if you're not clear on what exactly you want to predict, you're going to have a really hard time making it through this
+
+321
+00:31:26.060 --> 00:31:31.010
+Francesca Vera: pipeline, and therefore have a hard time completing your capstone project.
+
+322
+00:31:31.030 --> 00:31:34.129
+Francesca Vera: So be very purposeful about what you want to predict.
+
+323
+00:31:34.790 --> 00:31:37.360
+Francesca Vera: And then, once you know what you want to predict.
+
+324
+00:31:38.620 --> 00:31:45.170
+Francesca Vera: you have to ask yourself, what data do I then need to give the model so that it can make this prediction.
+
+325
+00:31:45.870 --> 00:31:59.229
+Francesca Vera: So if I'm looking at fraud, detection, what data might I need? Any ideas, you know, if I want to detect? Is this new transaction, fraud or not fraud any ideas. What kind of data I might need.
+
+326
+00:32:00.610 --> 00:32:06.299
+Avinash Gangwal: Whole transaction similar type of transaction. How many of them are
+
+327
+00:32:06.520 --> 00:32:08.900
+Avinash Gangwal: actually fraud that kind of.
+
+328
+00:32:09.610 --> 00:32:10.090
+Francesca Vera: Yes.
+
+329
+00:32:10.090 --> 00:32:16.839
+Avinash Gangwal: Locations that transaction generated from which locations which kind of stores.
+
+330
+00:32:17.210 --> 00:32:17.620
+Francesca Vera: Perfect.
+
+331
+00:32:17.620 --> 00:32:19.439
+Avinash Gangwal: Which kind of items.
+
+332
+00:32:20.440 --> 00:32:22.819
+Francesca Vera: That sounds like sounds like you might
+
+333
+00:32:22.830 --> 00:32:50.790
+Francesca Vera: be able to do a fraud detection, capstone project. With how many ideas you suggested. Yes, all of those pieces of data are going to be super useful in fraud detection, right where you know all your previous transactions. Maybe your location, the kinds of stores, even the time period, you know. Maybe you haven't used that credit card in a long time. And suddenly you get a charge. You know these are all great ideas. So it sounds like you have a
+
+334
+00:32:50.800 --> 00:32:54.159
+Francesca Vera: a good intuition on what kind of data you need to make
+
+335
+00:32:54.280 --> 00:32:55.460
+Francesca Vera: this prediction.
+
+336
+00:32:56.280 --> 00:32:59.609
+Francesca Vera: And then the part that we're in right now.
+
+337
+00:32:59.740 --> 00:33:01.779
+Francesca Vera: part 2, where you're learning techniques.
+
+338
+00:33:02.320 --> 00:33:24.440
+Francesca Vera: How is your model going to be able to take the data? Maybe your transaction history, maybe your location. How is it going to take this data and then end up with a prediction of fraud or not fraud? And so one example that we already saw was linear regression. Right? Some of your problems are going to be really linear regression is going to be really useful for it.
+
+339
+00:33:24.580 --> 00:33:28.990
+Francesca Vera: So how your model is going to be able to do this. That's
+
+340
+00:33:29.330 --> 00:33:33.439
+Francesca Vera: what you are going. What? You are currently learning in part 2,
+
+341
+00:33:36.630 --> 00:33:41.710
+Francesca Vera: just to double down on data. Actually, if I go back a couple of slides.
+
+342
+00:33:45.170 --> 00:33:46.790
+Francesca Vera: you'll see here
+
+343
+00:33:46.990 --> 00:33:48.220
+Francesca Vera: that
+
+344
+00:33:48.710 --> 00:33:51.329
+Francesca Vera: the capstone says
+
+345
+00:33:51.813 --> 00:33:58.460
+Francesca Vera: predictive model will be used using supervised or unsupervised learning techniques on the data set.
+
+346
+00:33:59.940 --> 00:34:05.510
+Francesca Vera: So before I get into this funny example here.
+
+347
+00:34:06.150 --> 00:34:10.770
+Francesca Vera: does anyone want to define supervised or unsupervised any ideas.
+
+348
+00:34:12.810 --> 00:34:13.610
+Carmen P.: Supervisor.
+
+349
+00:34:13.610 --> 00:34:15.310
+shashi: Supervised oops.
+
+350
+00:34:15.670 --> 00:34:16.400
+Carmen P.: Sorry.
+
+351
+00:34:16.530 --> 00:34:17.170
+shashi: Hoodie.
+
+352
+00:34:18.120 --> 00:34:20.369
+Francesca Vera: I think, Carmen, you were first.st You can go ahead.
+
+353
+00:34:20.370 --> 00:34:22.500
+Carmen P.: I was gonna say that supervise
+
+354
+00:34:22.510 --> 00:34:30.190
+Carmen P.: data is labeled data like tabular data and unsupervised is unlabeled data like images. For example.
+
+355
+00:34:30.560 --> 00:34:32.000
+Francesca Vera: Okay. So
+
+356
+00:34:32.800 --> 00:34:35.189
+Francesca Vera: if I have this data set, you see.
+
+357
+00:34:35.360 --> 00:34:37.929
+Francesca Vera: there are 3 images.
+
+358
+00:34:38.980 --> 00:34:40.549
+Francesca Vera: And then I have
+
+359
+00:34:41.300 --> 00:34:46.820
+Francesca Vera: these labels. So this image is a cat. This image is a cat. This image is not a cat.
+
+360
+00:34:47.639 --> 00:34:52.970
+Francesca Vera: and I want to predict my next image. Does it show me a cat or not a cat?
+
+361
+00:34:53.090 --> 00:34:55.460
+Francesca Vera: Is this supervised or unsupervised.
+
+362
+00:35:01.460 --> 00:35:02.430
+Carmen P.: Supervised.
+
+363
+00:35:02.430 --> 00:35:03.909
+shashi: This will be, super. Yeah.
+
+364
+00:35:03.910 --> 00:35:05.760
+Francesca Vera: Okay and supervised y.
+
+365
+00:35:07.950 --> 00:35:09.930
+shashi: Should be a classification problem.
+
+366
+00:35:10.910 --> 00:35:13.680
+Francesca Vera: Okay. But what? What makes? Yeah, Carmen?
+
+367
+00:35:13.680 --> 00:35:15.220
+Carmen P.: It has the label cut.
+
+368
+00:35:15.420 --> 00:35:21.170
+Francesca Vera: Yes, exactly. So. You are right. It is a classification problem.
+
+369
+00:35:21.890 --> 00:35:26.420
+Francesca Vera: And yes, it is supervised. It is a supervised learning classification problem.
+
+370
+00:35:26.981 --> 00:35:30.269
+Francesca Vera: Supervised because we have our labels, and so
+
+371
+00:35:30.740 --> 00:35:47.150
+Francesca Vera: in your example for images being unsupervised. If you don't have the label there, you know that could be unsupervised. But you can also have images in your supervised learning example. As long as you have the label like here, I know this is a cat. I know this is not a cat.
+
+372
+00:35:47.710 --> 00:35:52.900
+Francesca Vera: so it sounds like we're pretty clear on that. And of course, for your capstone, either.
+
+373
+00:35:53.875 --> 00:35:55.930
+Francesca Vera: Version is fine.
+
+374
+00:35:58.590 --> 00:36:02.610
+Francesca Vera: I did get some questions about this as well, because.
+
+375
+00:36:04.270 --> 00:36:07.930
+Francesca Vera: there are so many different domains that people want to explore.
+
+376
+00:36:08.406 --> 00:36:10.589
+Francesca Vera: We already covered machine learning
+
+377
+00:36:10.790 --> 00:36:18.560
+Francesca Vera: deep learning. So is when you have neural networks with multiple layers.
+
+378
+00:36:18.620 --> 00:36:27.829
+Francesca Vera: And this is a method that is really good for unstructured and complex data like images. So you actually.
+
+379
+00:36:28.268 --> 00:36:33.849
+Francesca Vera: we're a step ahead of me. So something like dealing with images might really.
+
+380
+00:36:34.040 --> 00:36:39.500
+Francesca Vera: you know, rely on deep learning, because this is great for unstructured and complex data.
+
+381
+00:36:40.260 --> 00:36:55.949
+Francesca Vera: natural language processing. I saw a lot of problem statements in it. That's really exciting. I love natural language processing. And so this is when you are understanding, interpreting or generating human language. And so that means if your data set
+
+382
+00:36:56.280 --> 00:37:01.110
+Francesca Vera: is language heavy. So maybe you're looking at restaurant reviews
+
+383
+00:37:01.430 --> 00:37:03.989
+Francesca Vera: that's going to be natural language processing.
+
+384
+00:37:05.540 --> 00:37:10.269
+Francesca Vera: And if your data set is very image heavy or visual heavy.
+
+385
+00:37:10.290 --> 00:37:19.169
+Francesca Vera: then you'll be using computer vision. So that example that I mentioned earlier. Maybe you're looking at a lot of MRI scans, you know.
+
+386
+00:37:19.410 --> 00:37:22.579
+Francesca Vera: That's very image heavy. If you're going to look at the
+
+387
+00:37:22.590 --> 00:37:26.660
+Francesca Vera: images of the scans. So that's going to be using computer vision.
+
+388
+00:37:30.500 --> 00:37:34.380
+Francesca Vera: And so I'll go through a project example.
+
+389
+00:37:34.935 --> 00:37:42.229
+Francesca Vera: Here, something that might be useful to you. Let's say, I want to build a model
+
+390
+00:37:42.380 --> 00:37:43.580
+Francesca Vera: that
+
+391
+00:37:43.600 --> 00:37:52.710
+Francesca Vera: when given a certain medical procedure or a medical visit, I want to predict the amount
+
+392
+00:37:53.200 --> 00:37:55.529
+Francesca Vera: that I'm going to be charged
+
+393
+00:37:55.770 --> 00:38:03.700
+Francesca Vera: by my health insurance, or I want to predict the amount a patient, a new patient, is going to be charged by health insurance.
+
+394
+00:38:04.720 --> 00:38:07.459
+Francesca Vera: What kind of data do you think I would need
+
+395
+00:38:07.470 --> 00:38:08.530
+Francesca Vera: for
+
+396
+00:38:09.010 --> 00:38:10.309
+Francesca Vera: this problem
+
+397
+00:38:14.410 --> 00:38:15.590
+Francesca Vera: any ideas.
+
+398
+00:38:19.080 --> 00:38:23.389
+Carmen P.: Conditions. The patient has cause medication.
+
+399
+00:38:24.030 --> 00:38:26.960
+Carmen P.: labor from physicians probably.
+
+400
+00:38:28.450 --> 00:38:31.680
+Francesca Vera: yeah, I'm going to need a lot of data.
+
+401
+00:38:32.260 --> 00:38:33.330
+Francesca Vera: And
+
+402
+00:38:33.790 --> 00:38:46.309
+Francesca Vera: I'm going to need a lot of information about. You know the medical situation the patient is in. Maybe the kind of insurance they have. But you also mentioned cost. Yeah, I'm going to need the cost
+
+403
+00:38:46.460 --> 00:38:48.160
+Francesca Vera: of the actual
+
+404
+00:38:48.902 --> 00:38:50.350
+Francesca Vera: of the actual
+
+405
+00:38:50.490 --> 00:38:52.319
+Francesca Vera: procedure. So
+
+406
+00:38:52.390 --> 00:38:56.019
+Francesca Vera: what kind of problem is this is this a supervised
+
+407
+00:38:56.420 --> 00:38:58.769
+Francesca Vera: problem or an unsupervised problem?
+
+408
+00:39:00.920 --> 00:39:02.420
+Carmen P.: I think super bias.
+
+409
+00:39:02.760 --> 00:39:03.590
+Francesca Vera: Okay.
+
+410
+00:39:03.700 --> 00:39:04.700
+Francesca Vera: because.
+
+411
+00:39:05.790 --> 00:39:06.915
+Carmen P.: This is that,
+
+412
+00:39:08.330 --> 00:39:15.340
+Carmen P.: probably storing tables that exist already like different variables, numeric, categorical.
+
+413
+00:39:16.880 --> 00:39:17.710
+Francesca Vera: Okay.
+
+414
+00:39:17.710 --> 00:39:18.819
+Carmen P.: That is collected.
+
+415
+00:39:19.150 --> 00:39:25.820
+Francesca Vera: Okay? So when I have supervised learning, I want to make sure my data has a label right?
+
+416
+00:39:25.850 --> 00:39:27.640
+Francesca Vera: Does this data have?
+
+417
+00:39:27.650 --> 00:39:31.000
+Francesca Vera: Does each entry, have a label for this data.
+
+418
+00:39:31.820 --> 00:39:32.730
+Francesca Vera: Do you think
+
+419
+00:39:34.360 --> 00:39:37.390
+Francesca Vera: I can also show you the data set? I have it loaded here.
+
+420
+00:39:37.660 --> 00:39:39.670
+Francesca Vera: It's from Kaggle. This is a real
+
+421
+00:39:39.780 --> 00:39:42.739
+Francesca Vera: real data set medical costs, personal data set.
+
+422
+00:39:43.020 --> 00:39:44.050
+Francesca Vera: And
+
+423
+00:39:44.240 --> 00:39:46.390
+Francesca Vera: you can see here the columns.
+
+424
+00:39:47.840 --> 00:39:49.939
+Francesca Vera: Do you think the labels in the data set.
+
+425
+00:39:52.870 --> 00:39:53.710
+Carmen P.: Yeah.
+
+426
+00:39:54.010 --> 00:39:55.650
+Francesca Vera: Yeah, which one's the label.
+
+427
+00:39:56.550 --> 00:40:02.169
+Carmen P.: The age. Sex. Bmi, children. It has categories already. No.
+
+428
+00:40:02.950 --> 00:40:05.187
+Francesca Vera: It. It does have categories. But
+
+429
+00:40:05.670 --> 00:40:08.530
+Francesca Vera: Do you remember when we used this.
+
+430
+00:40:09.040 --> 00:40:10.220
+Francesca Vera: what was the label.
+
+431
+00:40:10.220 --> 00:40:11.820
+Carmen P.: Oh, they're not cut.
+
+432
+00:40:12.170 --> 00:40:17.570
+Francesca Vera: Yeah, cat or not cat, right? The label was the output. The label was the prediction.
+
+433
+00:40:18.150 --> 00:40:23.610
+Francesca Vera: So if I go back to this is the label here for our prediction problem.
+
+434
+00:40:24.450 --> 00:40:25.270
+Francesca Vera: No.
+
+435
+00:40:25.580 --> 00:40:26.750
+Avinash Gangwal: Not a label pro.
+
+436
+00:40:26.750 --> 00:40:27.450
+Carmen P.: Another.
+
+437
+00:40:27.450 --> 00:40:28.300
+Francesca Vera: It's not.
+
+438
+00:40:29.460 --> 00:40:31.510
+Avinash Gangwal: Because, yeah.
+
+439
+00:40:32.230 --> 00:40:43.610
+Avinash Gangwal: oh, no. I think it is a level cost, because based on whether person smokes, how many children, what sex? We are determining the medical cost.
+
+440
+00:40:44.100 --> 00:40:45.150
+Avinash Gangwal: So
+
+441
+00:40:45.230 --> 00:40:47.680
+Avinash Gangwal: we know that if
+
+442
+00:40:47.780 --> 00:40:58.640
+Avinash Gangwal: a person has, let's say, 2 children 40 years old smoking, the total cost is $100 per month. So that's kind of we put
+
+443
+00:40:59.090 --> 00:41:01.899
+Avinash Gangwal: that person in 100 level category.
+
+444
+00:41:02.750 --> 00:41:06.730
+Francesca Vera: How? How do we know that it's a hundred dollar per month? Or
+
+445
+00:41:06.840 --> 00:41:09.290
+Francesca Vera: how do? How do we know that from this data set.
+
+446
+00:41:10.390 --> 00:41:14.030
+Avinash Gangwal: Based on the past data, how much it cost to them.
+
+447
+00:41:16.460 --> 00:41:20.749
+Francesca Vera: Okay, any any other? I any other thoughts before.
+
+448
+00:41:21.570 --> 00:41:22.480
+Francesca Vera: jump in.
+
+449
+00:41:27.120 --> 00:41:33.549
+Francesca Vera: Okay. So when I look here at my very, very nice pictures.
+
+450
+00:41:35.370 --> 00:41:38.179
+Francesca Vera: And I have these labels. So
+
+451
+00:41:38.280 --> 00:41:41.600
+Francesca Vera: I have these labels for each input right
+
+452
+00:41:41.890 --> 00:41:43.960
+Francesca Vera: cat, cat or not cat.
+
+453
+00:41:44.470 --> 00:41:49.009
+Francesca Vera: The label is the output or the prediction. Right?
+
+454
+00:41:49.190 --> 00:41:53.690
+Francesca Vera: When I see this picture as my input, the output is, yes, it's a cat.
+
+455
+00:41:53.890 --> 00:41:59.579
+Francesca Vera: this one. Yes, it's a cat, this one. No, it's not a cat. That's the output, right?
+
+456
+00:42:00.460 --> 00:42:03.690
+Francesca Vera: And so if I go to my
+
+457
+00:42:05.120 --> 00:42:07.410
+Francesca Vera: nice example here.
+
+458
+00:42:09.380 --> 00:42:10.710
+Francesca Vera: the output
+
+459
+00:42:11.750 --> 00:42:14.399
+Francesca Vera: is the medical cost
+
+460
+00:42:14.720 --> 00:42:20.429
+Francesca Vera: charged by the insurance provider. Right? This is the output. This is what I want to predict.
+
+461
+00:42:21.890 --> 00:42:24.079
+Francesca Vera: If I go back to my data set.
+
+462
+00:42:25.270 --> 00:42:27.400
+Francesca Vera: do we know the medical cost
+
+463
+00:42:27.410 --> 00:42:28.700
+Francesca Vera: charged by
+
+464
+00:42:28.750 --> 00:42:30.170
+Francesca Vera: my health insurance?
+
+465
+00:42:30.710 --> 00:42:31.500
+Avinash Gangwal: No.
+
+466
+00:42:33.850 --> 00:42:34.710
+Francesca Vera: Do we not
+
+467
+00:42:34.890 --> 00:42:35.680
+Francesca Vera: here.
+
+468
+00:42:37.360 --> 00:42:38.009
+Carmen P.: Yeah, I think that.
+
+469
+00:42:38.010 --> 00:42:39.550
+Avinash Gangwal: Yes, yes, yes.
+
+470
+00:42:40.110 --> 00:42:42.270
+Avinash Gangwal: yeah. That's column. Sorry.
+
+471
+00:42:42.270 --> 00:42:44.350
+Francesca Vera: Yes, that is. And it's
+
+472
+00:42:44.690 --> 00:42:53.079
+Francesca Vera: super easy to miss that right? It's 1 right here, tiny at the bottom. And when we have
+
+473
+00:42:53.410 --> 00:42:57.610
+Francesca Vera: some problems that aren't just cat or no cat
+
+474
+00:42:57.640 --> 00:43:01.100
+Francesca Vera: that aren't just win or lose, that aren't just spam or no spam.
+
+475
+00:43:01.130 --> 00:43:09.929
+Francesca Vera: It's really hard, right to think about what the label is. But remember, the label is just the thing that you would want to predict
+
+476
+00:43:10.230 --> 00:43:11.699
+Francesca Vera: or the output.
+
+477
+00:43:12.010 --> 00:43:23.240
+Francesca Vera: And when I look at my problem, what I want to predict is the number in dollars. Right? I want to predict a certain amount. Maybe it's a hundred dollars. Maybe it's a thousand dollars.
+
+478
+00:43:23.550 --> 00:43:27.019
+Francesca Vera: So when I go to my data set, I can see
+
+479
+00:43:27.470 --> 00:43:43.049
+Francesca Vera: the number in dollars billed by health insurance of every example. Right? I get that charge of every example. Which means that I actually have a label for each entry in my data. So it's a supervised problem.
+
+480
+00:43:43.410 --> 00:43:51.899
+Francesca Vera: And so labels can be categories like cat or no cat. But labels can also be individual numbers like the dollar amount.
+
+481
+00:43:53.590 --> 00:43:59.160
+Francesca Vera: Another example that I can think of is, maybe I want to buy a house, right?
+
+482
+00:43:59.300 --> 00:44:05.550
+Francesca Vera: Maybe I want to see how much is. You know the house that I'm looking at going to cost
+
+483
+00:44:05.820 --> 00:44:07.810
+Francesca Vera: based on historical data.
+
+484
+00:44:07.890 --> 00:44:15.730
+Francesca Vera: If my historical data of other houses in the neighborhood has the amount that that house was sold for. That's the label.
+
+485
+00:44:16.370 --> 00:44:20.630
+Francesca Vera: right? Because I want to predict what the price of a house might be.
+
+486
+00:44:22.450 --> 00:44:27.389
+Francesca Vera: And so are there any algorithms? I know, I'm building up to something. But
+
+487
+00:44:27.610 --> 00:44:31.800
+Francesca Vera: are there any algorithms that we already know that might be useful in this
+
+488
+00:44:31.920 --> 00:44:33.430
+Francesca Vera: problem. If I want.
+
+489
+00:44:33.430 --> 00:44:34.320
+shashi: Integration.
+
+490
+00:44:34.710 --> 00:44:35.900
+shashi: linear regression.
+
+491
+00:44:35.900 --> 00:44:37.949
+Francesca Vera: Yep, linear regression exactly.
+
+492
+00:44:38.060 --> 00:44:40.660
+Francesca Vera: I could use linear regression
+
+493
+00:44:40.860 --> 00:44:42.639
+Francesca Vera: on this data set
+
+494
+00:44:43.060 --> 00:44:44.250
+Francesca Vera: to predict
+
+495
+00:44:44.590 --> 00:44:46.190
+Francesca Vera: the dollar amount
+
+496
+00:44:46.260 --> 00:44:48.630
+Francesca Vera: that someone in the future
+
+497
+00:44:48.770 --> 00:44:51.979
+Francesca Vera: will be charged by their health insurance.
+
+498
+00:44:53.260 --> 00:44:55.800
+Francesca Vera: And this is my capstone project, right?
+
+499
+00:44:55.990 --> 00:45:10.950
+Francesca Vera: This is this is what I need to get down to in detail for my problem statement. I have to decide that I want to predict the medical cost in dollars charged by health insurance.
+
+500
+00:45:11.240 --> 00:45:29.710
+Francesca Vera: I have this data set of examples where it had age, sex, if they were a smoker or not smoker, details about a person and the amount that they were charged. So I had a label as well. So I'm going to look at my toolbox, my algorithms. And I'm like linear regression that looks great.
+
+501
+00:45:30.400 --> 00:45:39.539
+Francesca Vera: So this is my project. You know this, I could write this up in a problem statement today and feel good about being able to get it done.
+
+502
+00:45:39.720 --> 00:45:43.750
+Francesca Vera: be focused on what my output is, and have something
+
+503
+00:45:44.150 --> 00:45:45.850
+Francesca Vera: that might actually work.
+
+504
+00:45:46.600 --> 00:45:49.550
+Francesca Vera: Does that make sense to everyone? How I got
+
+505
+00:45:49.680 --> 00:45:50.680
+Francesca Vera: here.
+
+506
+00:45:50.680 --> 00:45:51.280
+Avinash Gangwal: Yep.
+
+507
+00:45:51.880 --> 00:45:53.260
+Francesca Vera: Does. Okay, great.
+
+508
+00:45:53.700 --> 00:45:57.159
+Francesca Vera: So now, we're actually going to do this live.
+
+509
+00:45:58.010 --> 00:46:00.539
+Francesca Vera: And I'm going to show you something.
+
+510
+00:46:01.250 --> 00:46:02.400
+Francesca Vera: So
+
+511
+00:46:03.211 --> 00:46:08.420
+Francesca Vera: like many things, there are problems available
+
+512
+00:46:09.380 --> 00:46:12.709
+Francesca Vera: out there. And so I'm going to show you
+
+513
+00:46:13.330 --> 00:46:15.700
+Francesca Vera: data from the car website
+
+514
+00:46:15.870 --> 00:46:19.380
+Francesca Vera: has information on cars, including the price
+
+515
+00:46:19.450 --> 00:46:20.940
+Francesca Vera: of various cars.
+
+516
+00:46:21.480 --> 00:46:23.229
+Francesca Vera: and what I want to do
+
+517
+00:46:23.330 --> 00:46:27.609
+Francesca Vera: is I want to get a good deal on a new car
+
+518
+00:46:27.850 --> 00:46:45.609
+Francesca Vera: by figuring out how much I should pay. You know I want to be really savvy. I want to outsmart the car salesperson. I want to make sure that I get the best deal possible. So I want to look at the price that I should be paying for the car I want.
+
+519
+00:46:45.930 --> 00:46:53.540
+Francesca Vera: And how can I use the data to find that out? Sorry I have a lot of hypos. It seems I'm going to use linear regression.
+
+520
+00:46:54.000 --> 00:46:57.640
+Francesca Vera: So I've loaded my data set. I put it into my data frame.
+
+521
+00:46:58.430 --> 00:47:00.969
+Francesca Vera: And now I have this.
+
+522
+00:47:01.200 --> 00:47:10.750
+Francesca Vera: Here's my data set right. You can see I have a car name, maybe the age and years. The kilometers driven the fuel type.
+
+523
+00:47:10.830 --> 00:47:15.689
+Francesca Vera: Who the seller is. So maybe it's that, you know ski dealer and
+
+524
+00:47:16.102 --> 00:47:25.769
+Francesca Vera: the transmission. Yes, I think the notebook will go with the slides when the recording is posted. So you will definitely definitely have this.
+
+525
+00:47:30.490 --> 00:47:32.479
+Francesca Vera: So what do I want to do? You know.
+
+526
+00:47:32.810 --> 00:47:34.130
+Francesca Vera: I have this
+
+527
+00:47:34.870 --> 00:47:37.200
+Francesca Vera: problem. Let's fill this in. What
+
+528
+00:47:37.590 --> 00:47:39.839
+Francesca Vera: do I want my model to predict
+
+529
+00:47:40.660 --> 00:47:41.819
+Francesca Vera: any ideas.
+
+530
+00:47:42.120 --> 00:47:44.450
+Avinash Gangwal: Car, price, yep.
+
+531
+00:47:46.810 --> 00:47:51.289
+Francesca Vera: Given a car, I want to predict what the best price would be.
+
+532
+00:47:51.410 --> 00:47:53.130
+Francesca Vera: and what data will I use.
+
+533
+00:47:55.100 --> 00:48:00.629
+Avinash Gangwal: Old transaction car purchase data from the card. That website.
+
+534
+00:48:00.630 --> 00:48:03.630
+Francesca Vera: Yes, exactly the card data set
+
+535
+00:48:03.690 --> 00:48:06.639
+Francesca Vera: with old transaction
+
+536
+00:48:07.020 --> 00:48:11.580
+Francesca Vera: data. And I know we already covered this. But how will my model do this?
+
+537
+00:48:14.413 --> 00:48:15.720
+shashi: Linear ignition.
+
+538
+00:48:15.720 --> 00:48:17.690
+Francesca Vera: Linear regression great.
+
+539
+00:48:17.730 --> 00:48:19.529
+Francesca Vera: So it sounds like.
+
+540
+00:48:19.760 --> 00:48:30.940
+Avinash Gangwal: The 1st statement we need, we can take any data or from that particular website from where we are purchasing it. So that will impact our decision. Right?
+
+541
+00:48:31.090 --> 00:48:36.999
+Avinash Gangwal: So, for example, data can be from anywhere. But we are looking
+
+542
+00:48:37.130 --> 00:48:40.310
+Avinash Gangwal: to buy a car from a particular website.
+
+543
+00:48:40.920 --> 00:48:46.080
+Avinash Gangwal: A particular dealer. So we should take that dealer data or
+
+544
+00:48:46.250 --> 00:48:48.830
+Avinash Gangwal: across the country data.
+
+545
+00:48:49.300 --> 00:48:53.010
+Francesca Vera: It's really up to you. I think that's the beauty of machine learning.
+
+546
+00:48:53.060 --> 00:48:55.160
+Francesca Vera: The beauty of machine learning is that
+
+547
+00:48:55.190 --> 00:49:06.879
+Francesca Vera: it's really creative. You can tackle this. However, you want. So for me, I'm using that data set from that website because
+
+548
+00:49:07.050 --> 00:49:27.150
+Francesca Vera: maybe I want to see how reliable that website is in giving me a fair price. But yes, as you can see in the chat, Shashi said, we can use general data to negotiate. Maybe I'll look at a different website and say, Hey, the prediction from that website is lower than your prices. So I'm going to negotiate down.
+
+549
+00:49:27.160 --> 00:49:30.139
+Francesca Vera: So it's really up to you, and how you use
+
+550
+00:49:30.560 --> 00:49:34.499
+Francesca Vera: your problem and what data you want to
+
+551
+00:49:34.510 --> 00:49:41.610
+Francesca Vera: one to work with. But it's a great point. We could be using data from all car websites right to negotiate
+
+552
+00:49:45.434 --> 00:49:47.860
+Francesca Vera: cool. So we'll dive in here.
+
+553
+00:49:47.980 --> 00:49:52.730
+Francesca Vera: So I've loaded this, and I have these various things, as you can see.
+
+554
+00:49:53.256 --> 00:49:56.519
+Francesca Vera: The data set selling prices in locks.
+
+555
+00:49:57.126 --> 00:50:01.720
+Francesca Vera: So not in dollars. So you'll see. That is why the selling price is not
+
+556
+00:50:01.910 --> 00:50:05.189
+Francesca Vera: $3 for a car. It's in locks.
+
+557
+00:50:05.240 --> 00:50:14.479
+Francesca Vera: which I think is equivalent to some 1,000. I'm not sure how many thousands of dollars. But this is a summary of our
+
+558
+00:50:15.920 --> 00:50:19.299
+Francesca Vera: data set, which column is our label
+
+559
+00:50:21.810 --> 00:50:23.080
+Francesca Vera: is our label here
+
+560
+00:50:24.350 --> 00:50:26.040
+Francesca Vera: 100,000 is one lock.
+
+561
+00:50:26.170 --> 00:50:27.270
+Francesca Vera: Okay, thank you.
+
+562
+00:50:30.720 --> 00:50:32.140
+Francesca Vera: do we have our label?
+
+563
+00:50:32.330 --> 00:50:34.240
+Francesca Vera: Any ideas which
+
+564
+00:50:34.400 --> 00:50:35.979
+Francesca Vera: which column is our label?
+
+565
+00:50:38.210 --> 00:50:39.420
+Shikha: Selling, price.
+
+566
+00:50:39.420 --> 00:50:40.829
+Francesca Vera: Selling price. Exactly.
+
+567
+00:50:41.050 --> 00:50:42.060
+Francesca Vera: This is
+
+568
+00:50:42.460 --> 00:50:43.840
+Francesca Vera: the price they want
+
+569
+00:50:44.420 --> 00:50:48.720
+Francesca Vera: to sell us at. We're trying to predict the price. Selling prices are label wonderful.
+
+570
+00:50:49.965 --> 00:50:50.820
+Francesca Vera: I
+
+571
+00:50:51.490 --> 00:51:12.729
+Francesca Vera: just wanted to see how big our data set is. We have 301 entries in our data frame, that's, you know, 301 cars. I'd rather do this than actually do it by hand, right and price each of them by hand, and I won't spend too much time on this portion. But this will be really important, for when you do your project and you do your write up
+
+572
+00:51:12.840 --> 00:51:13.820
+Francesca Vera: like
+
+573
+00:51:14.330 --> 00:51:18.139
+Francesca Vera: for that 1st big assignment, it's really important to visualize
+
+574
+00:51:18.750 --> 00:51:21.590
+Francesca Vera: your data and get a better understanding of your data.
+
+575
+00:51:22.120 --> 00:51:24.330
+Francesca Vera: So I'm using Seaborne Scatterplot
+
+576
+00:51:25.400 --> 00:51:27.430
+Francesca Vera: to plot
+
+577
+00:51:28.070 --> 00:51:33.060
+Francesca Vera: the age of each of the cars in years against the selling price in locks.
+
+578
+00:51:34.260 --> 00:51:36.049
+Francesca Vera: Does anyone want to tell me
+
+579
+00:51:36.600 --> 00:51:37.920
+Francesca Vera: like a trend?
+
+580
+00:51:37.930 --> 00:51:41.439
+Francesca Vera: Do you? Do you see a trend here about age and selling price.
+
+581
+00:51:43.117 --> 00:51:45.970
+shashi: The newer the car is, the higher the price.
+
+582
+00:51:46.190 --> 00:51:54.819
+Francesca Vera: Yeah, the newer the car is, the higher the price. There's a trend. And so what might that tell me about how useful age is in predicting the price.
+
+583
+00:51:54.950 --> 00:51:56.880
+Francesca Vera: Is it useful? Is it not useful?
+
+584
+00:51:58.610 --> 00:52:01.836
+shashi: If I'm trying to trying to get a
+
+585
+00:52:02.600 --> 00:52:09.120
+shashi: a car which is not heavily used, I should be ready to pay a little higher price for the vehicle. So.
+
+586
+00:52:11.730 --> 00:52:25.009
+Francesca Vera: Yeah. So it's useful, right? Because I know that if I want to buy a young car not heavily used, I'm going to have to pay a price. You know, age, it seems, really affects the price.
+
+587
+00:52:25.030 --> 00:52:29.939
+Francesca Vera: So maybe that's something I want to actually use in my
+
+588
+00:52:30.030 --> 00:52:42.389
+Francesca Vera: linear regression, right? Because we know it's a useful thing. And that's why the data visualization is really useful, right? Because I can see from this one plot that age is something that I should
+
+589
+00:52:42.500 --> 00:52:45.109
+Francesca Vera: consider feeding into my model. Right?
+
+590
+00:52:46.250 --> 00:52:52.269
+Francesca Vera: So let's get into the linear regression part. And so we'll use Sklearn. We've imported
+
+591
+00:52:53.320 --> 00:53:03.430
+Francesca Vera: our necessary linear model. And like, I said, we're going to feed it. Age, because I can see from up here. Age is really useful, right?
+
+592
+00:53:05.000 --> 00:53:06.510
+Francesca Vera: So if I wanted
+
+593
+00:53:06.540 --> 00:53:08.360
+Francesca Vera: to set up our Y,
+
+594
+00:53:08.420 --> 00:53:10.700
+Francesca Vera: so I have. My X is
+
+595
+00:53:10.720 --> 00:53:15.870
+Francesca Vera: the age. What is our why? And please direct me to scroll up.
+
+596
+00:53:15.890 --> 00:53:19.390
+Francesca Vera: if you need to reference anything again.
+
+597
+00:53:20.990 --> 00:53:21.560
+Shikha: Price.
+
+598
+00:53:21.560 --> 00:53:22.650
+shashi: Selling, price.
+
+599
+00:53:22.840 --> 00:53:26.660
+Francesca Vera: Yeah, perfect. I didn't even need to scroll up for that. So I can just
+
+600
+00:53:26.820 --> 00:53:29.799
+Francesca Vera: go into selling price
+
+601
+00:53:29.930 --> 00:53:34.319
+Francesca Vera: because I have the selling price. And I want to get all the values of that right
+
+602
+00:53:35.680 --> 00:53:37.499
+Francesca Vera: now, let's set up our model.
+
+603
+00:53:37.610 --> 00:53:38.490
+Francesca Vera: Okay.
+
+604
+00:53:38.730 --> 00:53:43.210
+Francesca Vera: So again, we're using linear regression. I'm just going to call it
+
+605
+00:53:43.430 --> 00:53:46.319
+Francesca Vera: car linear for the sake of our demo.
+
+606
+00:53:48.000 --> 00:53:49.260
+Francesca Vera: Anything.
+
+607
+00:53:49.930 --> 00:53:52.119
+Francesca Vera: any ideas what I should type next.
+
+608
+00:53:53.160 --> 00:53:54.900
+Francesca Vera: So I want to set up our model.
+
+609
+00:53:57.360 --> 00:53:58.870
+shashi: You can use a pipeline.
+
+610
+00:54:01.530 --> 00:54:04.540
+Francesca Vera: Wanna tell me, tell me what to type. If you have ideas.
+
+611
+00:54:06.450 --> 00:54:10.100
+Francesca Vera: Remember, we've imported from Sk. Learn very nicely.
+
+612
+00:54:10.710 --> 00:54:15.580
+shashi: Instantiate the linear model itself. Just the linear model as a function.
+
+613
+00:54:15.990 --> 00:54:17.050
+shashi: Yeah.
+
+614
+00:54:18.430 --> 00:54:19.390
+shashi: No. I mean,
+
+615
+00:54:19.950 --> 00:54:20.620
+shashi: okay,
+
+616
+00:54:21.480 --> 00:54:23.980
+shashi: linear model function. The
+
+617
+00:54:32.650 --> 00:54:34.190
+shashi: yeah, linear regression. Yeah.
+
+618
+00:54:35.110 --> 00:54:35.770
+Francesca Vera: Nice.
+
+619
+00:54:36.340 --> 00:54:38.699
+Francesca Vera: And it's okay. So we could do.
+
+620
+00:54:39.400 --> 00:54:40.200
+Francesca Vera: yeah.
+
+621
+00:54:40.990 --> 00:54:42.100
+Francesca Vera: are
+
+622
+00:54:42.190 --> 00:54:51.430
+Francesca Vera: linear regression. Okay, we've set up our model. Let's see, does this work so far, are we all good? Okay, we're good so far. Okay, now, we want to train the model.
+
+623
+00:54:52.770 --> 00:54:54.190
+Francesca Vera: What does a
+
+624
+00:54:56.300 --> 00:55:02.149
+Francesca Vera: what I'm actually just going to call slyar. What does what does training the model mean? What? What do we want to do.
+
+625
+00:55:04.940 --> 00:55:08.065
+shashi: Want the model to have a look at the data. And
+
+626
+00:55:09.280 --> 00:55:16.395
+shashi: look how the existing data correlates to the selling price and arrive at a kind of mental map of
+
+627
+00:55:18.350 --> 00:55:19.690
+shashi: the prices to predict.
+
+628
+00:55:20.070 --> 00:55:25.560
+Francesca Vera: Yeah, absolutely. So let's say, I type in linear dot
+
+629
+00:55:25.790 --> 00:55:26.690
+Francesca Vera: fit
+
+630
+00:55:27.540 --> 00:55:28.239
+Francesca Vera: to train them.
+
+631
+00:55:28.240 --> 00:55:34.619
+shashi: We need to split the data for before this one, we need to split the data for training and testing.
+
+632
+00:55:35.810 --> 00:55:37.642
+Francesca Vera: Okay, would you like,
+
+633
+00:55:38.820 --> 00:55:40.549
+Francesca Vera: would you like to
+
+634
+00:55:40.830 --> 00:55:42.219
+Francesca Vera: do that?
+
+635
+00:55:43.870 --> 00:55:44.829
+shashi: Yeah, we can. Alright.
+
+636
+00:55:45.790 --> 00:55:48.540
+shashi: yeah. X train. X. Test.
+
+637
+00:55:48.800 --> 00:55:49.690
+Francesca Vera: Okay.
+
+638
+00:55:52.440 --> 00:55:53.080
+Francesca Vera: it's this.
+
+639
+00:55:53.080 --> 00:55:54.500
+shashi: Wide rain white test.
+
+640
+00:56:01.990 --> 00:56:02.863
+shashi: because that
+
+641
+00:56:03.550 --> 00:56:06.000
+shashi: okay, we need to import the
+
+642
+00:56:06.190 --> 00:56:09.770
+shashi: from the scale and model. We need to import the
+
+643
+00:56:09.840 --> 00:56:11.530
+shashi: linearly at this time. Yeah.
+
+644
+00:56:11.530 --> 00:56:15.351
+Francesca Vera: I was waiting to see if you would catch that. And you
+
+645
+00:56:15.720 --> 00:56:17.980
+Francesca Vera: you foiled me because
+
+646
+00:56:18.000 --> 00:56:21.970
+Francesca Vera: you were able to to catch that. Yes. Do you want to explain
+
+647
+00:56:22.010 --> 00:56:23.890
+Francesca Vera: what it is that I was?
+
+648
+00:56:24.410 --> 00:56:25.819
+Francesca Vera: I'm trying to test.
+
+649
+00:56:25.820 --> 00:56:28.420
+shashi: Train test, split, splitting the data.
+
+650
+00:56:30.240 --> 00:56:32.670
+Francesca Vera: And what what am I missing right now.
+
+651
+00:56:33.960 --> 00:56:37.920
+shashi: Oh, the the import statement! For from the model importing the
+
+652
+00:56:38.130 --> 00:56:40.630
+shashi: train tests are split. Library.
+
+653
+00:56:40.850 --> 00:56:45.320
+Francesca Vera: Yes, wonderful. So I could not have split it without
+
+654
+00:56:45.740 --> 00:56:47.100
+Francesca Vera: sneakily
+
+655
+00:56:47.290 --> 00:56:51.429
+Francesca Vera: importing this first.st So that was a great catch. Okay?
+
+656
+00:56:51.650 --> 00:56:55.680
+Francesca Vera: And so if I do this, then I can go on my
+
+657
+00:56:55.890 --> 00:56:57.079
+Francesca Vera: train test split.
+
+658
+00:56:57.510 --> 00:56:59.069
+Francesca Vera: Does that look good
+
+659
+00:56:59.230 --> 00:57:00.220
+Francesca Vera: so far?
+
+660
+00:57:01.540 --> 00:57:02.220
+Francesca Vera: Yeah.
+
+661
+00:57:02.805 --> 00:57:03.390
+shashi: X
+
+662
+00:57:03.430 --> 00:57:03.975
+shashi: and
+
+663
+00:57:05.560 --> 00:57:06.690
+shashi: come away.
+
+664
+00:57:06.950 --> 00:57:07.740
+Francesca Vera: Okay.
+
+665
+00:57:09.650 --> 00:57:13.040
+shashi: I would probably go with Random of 42 random
+
+666
+00:57:14.320 --> 00:57:16.180
+shashi: state of 42.
+
+667
+00:57:16.180 --> 00:57:16.990
+Francesca Vera: Okay.
+
+668
+00:57:17.210 --> 00:57:17.729
+shashi: Are we missing.
+
+669
+00:57:17.730 --> 00:57:18.460
+Francesca Vera: Anything.
+
+670
+00:57:18.680 --> 00:57:21.520
+shashi: 30% of the size.
+
+671
+00:57:21.820 --> 00:57:23.999
+shashi: Sorry? Yeah, yeah.
+
+672
+00:57:24.580 --> 00:57:25.060
+shashi: it's.
+
+673
+00:57:25.060 --> 00:57:26.400
+Francesca Vera: The size that you wanted.
+
+674
+00:57:26.400 --> 00:57:27.330
+shashi: 3%, yeah.
+
+675
+00:57:27.590 --> 00:57:29.250
+Francesca Vera: 30%. Okay, yeah.
+
+676
+00:57:29.900 --> 00:57:30.990
+Francesca Vera: So I'll.
+
+677
+00:57:30.990 --> 00:57:31.760
+shashi: The.
+
+678
+00:57:34.340 --> 00:57:42.160
+Francesca Vera: So I'll try to run this first, st just to make sure we're all good. Okay, we're all good. And now yes, you want to finish us off with fit.
+
+679
+00:57:42.890 --> 00:57:43.460
+shashi: Yeah.
+
+680
+00:57:43.690 --> 00:57:44.190
+Francesca Vera: On!
+
+681
+00:57:44.190 --> 00:57:45.460
+shashi: X train y train.
+
+682
+00:57:46.190 --> 00:57:48.040
+Francesca Vera: Train wide train.
+
+683
+00:57:50.190 --> 00:57:51.040
+Francesca Vera: All right.
+
+684
+00:57:52.740 --> 00:57:54.479
+Francesca Vera: Is everyone with me so far?
+
+685
+00:57:59.190 --> 00:58:00.030
+Francesca Vera: Okay.
+
+686
+00:58:00.970 --> 00:58:05.589
+Francesca Vera: I didn't see any. No's okay. So then, what would we like to do.
+
+687
+00:58:05.750 --> 00:58:06.930
+Francesca Vera: After this
+
+688
+00:58:07.540 --> 00:58:11.679
+Francesca Vera: you could do a few other things. You could 1st
+
+689
+00:58:11.990 --> 00:58:14.699
+Francesca Vera: figure out how good your model is right.
+
+690
+00:58:14.850 --> 00:58:16.460
+Francesca Vera: which you would then
+
+691
+00:58:16.490 --> 00:58:18.549
+Francesca Vera: use that on your test set.
+
+692
+00:58:18.650 --> 00:58:20.929
+Francesca Vera: But since we only have what minute?
+
+693
+00:58:21.803 --> 00:58:26.459
+Francesca Vera: Let's just say that I go, and I want to buy
+
+694
+00:58:26.630 --> 00:58:27.760
+Francesca Vera: a
+
+695
+00:58:28.340 --> 00:58:29.949
+Francesca Vera: 2020 model.
+
+696
+00:58:30.340 --> 00:58:32.939
+Francesca Vera: a car that was built in 2020.
+
+697
+00:58:33.480 --> 00:58:38.710
+Francesca Vera: So I want it to be saved in this. I want to know what the prediction of my model is.
+
+698
+00:58:38.890 --> 00:58:41.020
+Francesca Vera: How how do I do this?
+
+699
+00:58:47.450 --> 00:58:50.930
+Francesca Vera: You know, I wanna buy a 2020 model I have.
+
+700
+00:58:51.453 --> 00:58:56.760
+Francesca Vera: you know, a 2020 car. I have my model that I trained and everything.
+
+701
+00:58:56.820 --> 00:58:58.780
+Francesca Vera: How can I find out what price
+
+702
+00:58:58.870 --> 00:59:03.199
+Francesca Vera: my linear regression tells me my 2020 car should be.
+
+703
+00:59:07.990 --> 00:59:20.579
+shashi: Then we need to train the model for the year of manufacture. I mean, if the age, if you can look at the columns above. Probably we'll see which column to use, and use it as a variable to train it.
+
+704
+00:59:21.040 --> 00:59:21.870
+Francesca Vera: Yeah, so.
+
+705
+00:59:21.870 --> 00:59:22.660
+shashi: Airways.
+
+706
+00:59:23.210 --> 00:59:30.469
+Francesca Vera: Yes. So you're right. So we need to find the age of this model, because that's what our
+
+707
+00:59:30.540 --> 00:59:32.150
+Francesca Vera: linear regression
+
+708
+00:59:32.910 --> 00:59:38.960
+Francesca Vera: is trained on. Right? So if it's 2020, how old is it? Let's say 4 years. Right?
+
+709
+00:59:39.490 --> 00:59:42.550
+Francesca Vera: So what I'm actually going to do is just
+
+710
+00:59:42.690 --> 00:59:43.780
+Francesca Vera: predict.
+
+711
+00:59:44.350 --> 00:59:47.210
+Francesca Vera: because I'm looking at one car very manually
+
+712
+00:59:47.550 --> 00:59:50.309
+Francesca Vera: for 4 years. This is a 4 year old car.
+
+713
+00:59:50.490 --> 00:59:53.699
+Francesca Vera: and I'm going to just use my
+
+714
+00:59:53.860 --> 00:59:56.279
+Francesca Vera: linear regression model that we fit
+
+715
+00:59:56.310 --> 00:59:57.760
+Francesca Vera: on this training
+
+716
+00:59:57.790 --> 01:00:02.369
+Francesca Vera: on this train set. I'm going to just predict what the price for
+
+717
+01:00:02.460 --> 01:00:04.599
+Francesca Vera: age 4 years is going to be.
+
+718
+01:00:06.380 --> 01:00:13.240
+Francesca Vera: And let's see if this actually gives me an answer for price. Okay, there you go.
+
+719
+01:00:14.460 --> 01:00:16.599
+Francesca Vera: So it's telling me that I
+
+720
+01:00:18.710 --> 01:00:23.779
+Francesca Vera: should buy it at like 5.0 8 lock. Right?
+
+721
+01:00:24.910 --> 01:00:27.779
+Francesca Vera: Do you think this is a good deal? Should I take it from this?
+
+722
+01:00:28.420 --> 01:00:29.050
+Francesca Vera: Oh, that's.
+
+723
+01:00:29.050 --> 01:00:30.295
+shashi: Exactly good deal.
+
+724
+01:00:31.340 --> 01:00:34.170
+Francesca Vera: Did I take the 6.5 from the car? Salesman.
+
+725
+01:00:35.408 --> 01:00:39.230
+shashi: If he's selling 6.5, probably I wouldn't. I mean.
+
+726
+01:00:39.230 --> 01:00:39.610
+Francesca Vera: You wouldn't.
+
+727
+01:00:39.610 --> 01:00:40.443
+shashi: Model predicts
+
+728
+01:00:41.220 --> 01:00:41.580
+Francesca Vera: Bye.
+
+729
+01:00:41.580 --> 01:00:44.907
+shashi: Point 0 7 9. I wouldn't. This one I would.
+
+730
+01:00:45.830 --> 01:00:49.620
+shashi: see, I would. I would need additional variables like.
+
+731
+01:00:52.470 --> 01:00:54.620
+shashi: what is the current mileage, and how.
+
+732
+01:00:54.620 --> 01:00:55.870
+Francesca Vera: How many times has been.
+
+733
+01:00:55.870 --> 01:01:04.830
+shashi: Into the service, and other variables need to make a play it. I will need additional information, for why, he is charging me 6.5 lakhs.
+
+734
+01:01:04.830 --> 01:01:09.579
+Francesca Vera: Great you were way ahead of me. We were out of time, but you can see
+
+735
+01:01:09.640 --> 01:01:13.680
+Francesca Vera: the next thing I was going to do is actually look at the
+
+736
+01:01:14.200 --> 01:01:15.890
+Francesca Vera: mileage, or
+
+737
+01:01:16.110 --> 01:01:20.719
+Francesca Vera: how many Kms were driven, and the type, if it was manual or automatic.
+
+738
+01:01:20.960 --> 01:01:24.289
+Francesca Vera: So you were way ahead of me, but I hope this was a
+
+739
+01:01:24.490 --> 01:01:27.929
+Francesca Vera: a good example of how your project can look.
+
+740
+01:01:27.960 --> 01:01:38.529
+Francesca Vera: You know, if my project is, I want to predict the price of the car. Maybe I start with my data visualization. I start with my simple linear regression here, just looking at age.
+
+741
+01:01:38.680 --> 01:01:43.459
+Francesca Vera: I'm talking about. Okay, well, this is not a good price. I wouldn't take this deal.
+
+742
+01:01:43.550 --> 01:01:45.360
+Francesca Vera: and then I'm going to build
+
+743
+01:01:45.770 --> 01:01:46.880
+Francesca Vera: other
+
+744
+01:01:47.150 --> 01:01:51.870
+Francesca Vera: models using other features in addition to age.
+
+745
+01:01:57.950 --> 01:02:09.859
+Francesca Vera: All right. Well, that brings us to the end. I hope that was somewhat helpful for for everyone. These are just some tips that I put for your capstone assignment number one.
+
+746
+01:02:10.090 --> 01:02:12.450
+Francesca Vera: Please think about what you're trying to predict?
+
+747
+01:02:12.890 --> 01:02:18.040
+Francesca Vera: Number 2, does your data match your problem? Does your problem match the data? You have
+
+748
+01:02:18.790 --> 01:02:27.670
+Francesca Vera: number 3? And this is something you can think about as you go on this part 2. Do you have the right model for the problem? Do you know the right tool.
+
+749
+01:02:27.680 --> 01:02:31.280
+Francesca Vera: You know, linear regression was the right tool for this car
+
+750
+01:02:31.665 --> 01:02:37.079
+Francesca Vera: problem. But would some of the other tools that you've learned been right for this car problem? Maybe not.
+
+751
+01:02:37.730 --> 01:02:48.699
+Francesca Vera: And then tip 4, because you have to communicate your findings. Is this something you'll be able to talk about? Do you have something to communicate. For example, in this car one, I can communicate that
+
+752
+01:02:49.120 --> 01:02:53.330
+Francesca Vera: my model predicted for 2020, it would be
+
+753
+01:02:53.370 --> 01:02:59.890
+Francesca Vera: 5.0 7 9, and if someone tried to sell it to me for 6.5 I wouldn't take it.
+
+754
+01:03:00.170 --> 01:03:04.059
+Francesca Vera: and that might be like a very important thing to communicate
+
+755
+01:03:04.560 --> 01:03:10.822
+Francesca Vera: so hopefully, this has been helpful. The resources, I believe, will be posted with the with the
+
+756
+01:03:11.450 --> 01:03:15.519
+Francesca Vera: slides and the recordings. So thank you very much.
+
+757
+01:03:16.440 --> 01:03:17.840
+shashi: Thanks. Thank you.
+
+758
+01:03:17.970 --> 01:03:19.250
+Francesca Vera: Thank you.

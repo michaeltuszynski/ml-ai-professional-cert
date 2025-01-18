@@ -1,0 +1,2009 @@
+WEBVTT
+
+1
+00:00:09.380 --> 00:00:22.609
+Viviana Márquez: Hi, everyone welcome so one small announcement before we start waiting for people. It's actually not allowed to have AI helpers.
+
+2
+00:00:23.016 --> 00:00:34.130
+Viviana Márquez: So I'm gonna kick out this account. In case you didn't know it's not allowed to have AI helpers during the office hours. So I'm sorry I have to kick out someone.
+
+3
+00:00:34.883 --> 00:00:38.220
+Viviana Márquez: But you can come back just with your normal account.
+
+4
+00:00:42.080 --> 00:00:53.020
+Viviana Márquez: Okay, alright. So let's start with music as usual, and we'll start in a couple of minutes once more. People have joined the call
+
+5
+00:00:54.030 --> 00:00:56.600
+Viviana Márquez: so good that it hurts.
+
+6
+00:01:09.650 --> 00:01:10.590
+Viviana Márquez: hey?
+
+7
+00:01:12.100 --> 00:01:13.870
+Viviana Márquez: You might be
+
+8
+00:01:13.990 --> 00:01:14.990
+Viviana Márquez: me
+
+9
+00:01:15.690 --> 00:01:17.269
+Viviana Márquez: always forget.
+
+10
+00:01:45.490 --> 00:01:46.479
+Viviana Márquez: struck me down.
+
+11
+00:01:49.710 --> 00:01:50.709
+Viviana Márquez: Let it hurt
+
+12
+00:01:53.960 --> 00:01:54.990
+Viviana Márquez: these
+
+13
+00:01:56.180 --> 00:01:57.579
+Viviana Márquez: only for your help.
+
+14
+00:02:01.400 --> 00:02:01.960
+Viviana Márquez: Be!
+
+15
+00:02:02.910 --> 00:02:03.700
+Viviana Márquez: Are you the
+
+16
+00:02:07.720 --> 00:02:08.889
+Viviana Márquez: be a.
+
+17
+00:02:09.169 --> 00:02:13.220
+Viviana Márquez: and my eyes forget to breathe?
+
+18
+00:02:37.820 --> 00:02:56.909
+Viviana Márquez: All right, so it's been a couple of minutes, and I see people are in the call. So welcome, everyone happy. Thursday. Happy, almost Friday. I like to call Thursdays tiny Friday. So happy, tiny Friday. Yeah, let's get started. So if you like, the music
+
+19
+00:02:56.940 --> 00:03:22.239
+Viviana Márquez: shameless plug, my brother is a Dj. And he just released that song. So that's why I was playing it so. I'm happy to hear that some people liked it. I'm going to put it in the chat in case you want to add it to your spotify. But yeah, thank you. Everyone for being here. So now let's get started after my shameless plug. So one quick, logistical announcement.
+
+20
+00:03:22.683 --> 00:03:34.646
+Viviana Márquez: if you are not in the United States, and you're connecting from Europe, or even some other countries that also hold daylight savings. Keep in mind that
+
+21
+00:03:35.190 --> 00:03:54.170
+Viviana Márquez: in Europe. It happens before it happens in the Us. So at some point the usual difference of the time zones is not the same and same for the folks in Arizona, because you guys don't observe daylight savings. So just if you're gonna attend some office hours
+
+22
+00:03:54.518 --> 00:04:14.391
+Viviana Márquez: make sure to go on canvas, check the calendar, or sync it directly to your calendar. So you have all the timings right? Because, depending where you are, nothing will change, or they might change an hour up or an hour down. So so just just to keep in mind, it truly depends on where you are.
+
+23
+00:04:14.910 --> 00:04:24.309
+Viviana Márquez: so yeah, something to keep in mind for all the office hours, not just mine, but all the office hours, including the other learning facilitators.
+
+24
+00:04:24.972 --> 00:04:26.359
+Viviana Márquez: All right, cool.
+
+25
+00:04:26.750 --> 00:04:44.420
+Viviana Márquez: So what do we have for this module? So this module we have a really cool module is one of my favorite modules, which is feature, engineering, and overfeeding. But we also get to talk about linear regression. I love linear regression. So I'm excited that you guys already went through linear regression last week.
+
+26
+00:04:44.420 --> 00:04:57.139
+Viviana Márquez: And now we get to talk about future engineering and overfitting. So, as usual, I have the checklist of the required activities for the module in case you want to have a place to just do check, check.
+
+27
+00:04:57.160 --> 00:04:59.759
+Viviana Márquez: These are all the activities.
+
+28
+00:05:00.260 --> 00:05:21.329
+Viviana Márquez: What else do we have so review for Module 8. So this module is very packed, I mean, all modules are very packed. There's a lot of content. So this is what I prepared what I have in these slides. There's probably not going to be enough time for us to talk about everything.
+
+29
+00:05:21.540 --> 00:05:49.160
+Viviana Márquez: so feel free to put in the chat. If there's a specific topic that you will want to learn about, or that you have questions. So maybe I can focus more on one of those topics. I just kind of want to get a sense of the room, and if not, I can just go through whatever I prepared, and see if there are questions as we go through, so I can start by talking a little bit about linear regression.
+
+30
+00:05:49.560 --> 00:05:53.559
+Viviana Márquez: Then talking about the train test and validation data sets.
+
+31
+00:05:54.215 --> 00:06:02.950
+Viviana Márquez: Then talk about what are the sources of error in a model the famous bias and variance trade-off.
+
+32
+00:06:02.950 --> 00:06:32.639
+Viviana Márquez: This topic, right here is important. All the topics are important, of course, but this one is important from interview perspective. This is a question that always comes up in interviews. They would ask you, Hey, what is the bias variance trade-off? What can you do to reduce variance. What can you do to reduce bias? What can you do to do? You want bias in a model to be high or low? So all those questions related to the bias variance trade-off
+
+33
+00:06:32.690 --> 00:06:37.709
+Viviana Márquez: always show up in job interviews. So something to keep your
+
+34
+00:06:38.230 --> 00:06:45.440
+Viviana Márquez: attention to. If if you're studying for a job interview. And then last, but not least, feature engineering.
+
+35
+00:06:45.986 --> 00:06:49.459
+Viviana Márquez: Yeah. So the chat is a little bit quiet.
+
+36
+00:06:49.630 --> 00:06:51.370
+Viviana Márquez: Maybe I'll take it as
+
+37
+00:06:51.900 --> 00:06:57.181
+Viviana Márquez: okay. So I see a few questions. So is about
+
+38
+00:06:58.874 --> 00:07:08.600
+Viviana Márquez: categorical variable. Okay, so let me read the question. So people watching this recording know what it is. So the question is about linear regression.
+
+39
+00:07:08.950 --> 00:07:12.919
+Viviana Márquez: If you want to analyze 2 variables that are categorical.
+
+40
+00:07:13.717 --> 00:07:29.009
+Viviana Márquez: and the. So, for example, the independent variable or X is smoking, yes or no, and the dependent variable with the Y. What we're trying to predict is
+
+41
+00:07:29.050 --> 00:07:31.910
+Viviana Márquez: heart attack, risk? Yes or no?
+
+42
+00:07:32.220 --> 00:07:37.900
+Viviana Márquez: Is this a classification? How can I make this study a linear regression? So that's a good question. So
+
+43
+00:07:38.040 --> 00:07:51.949
+Viviana Márquez: if your target variable is categorical is a classification problem which we still haven't learned. We have only learned regression techniques. So we will be learning that. So in this case.
+
+44
+00:07:52.070 --> 00:07:55.540
+Viviana Márquez: since you're trying to predict
+
+45
+00:07:55.620 --> 00:07:58.460
+Viviana Márquez: whether someone will have a heart attack
+
+46
+00:07:58.520 --> 00:08:07.870
+Viviana Márquez: or no. So the answer is yes or no. It's 2 categories is a classification problem. So we will be learning classification techniques in a few modules.
+
+47
+00:08:09.540 --> 00:08:31.819
+Viviana Márquez: how can I make this study a linear regression or a regression problem? It doesn't have to be a linear regression, just a regression problem. So that's a good question. Because as a data scientist, you can always reframe the problem such that you're answering a different business question, and you can treat it as a different task. So, for example, for the heart attack risk
+
+48
+00:08:32.271 --> 00:08:34.319
+Viviana Márquez: you can make it a number
+
+49
+00:08:34.718 --> 00:08:45.460
+Viviana Márquez: and you need to know about the domain to be able to make something that it makes sense. So, for example, you could change the target variable to something like
+
+50
+00:08:45.730 --> 00:09:08.350
+Viviana Márquez: how many days, until a person will have a heart attack. I don't know if that makes sense from a medical perspective, because I'm not a doctor, but if that makes sense you could frame it that way. And then it's a regression problem, because you're trying to predict the number of days which is a numerical variable. You could also frame it as
+
+51
+00:09:08.698 --> 00:09:27.150
+Viviana Márquez: maybe give. Instead of saying whether someone or not, whether someone is going to get a heart attack or not, you could frame it as a score. So what amount? How risky is this patient in regards having a heart attack, and you could give it a number from 0 to 100,
+
+52
+00:09:27.600 --> 00:09:55.489
+Viviana Márquez: so that that way you can also make it a regression model, because then you're trying to predict probability. Well, spoilers alert. In that case you wouldn't use linear regression. You would use logistic regression. But yeah, you can always just frame the question differently, such that your target variable is a numerical variable, especially if you have it. But if you have it, just like how you put it in the chat is just a classification problem because you have the 2 categories.
+
+53
+00:09:57.700 --> 00:10:01.550
+Viviana Márquez: all right. I like to hear that people like this module.
+
+54
+00:10:02.790 --> 00:10:15.660
+Viviana Márquez: What is the difference between linear regression and logistic regression? I'll answer that question on the logistic regression module, because that's coming up. And that's how we start that module. Okay, what is the difference between the 2? But
+
+55
+00:10:15.780 --> 00:10:33.570
+Viviana Márquez: just to give you a short answer for now and not go too much on that topic. Linear regression is typically used for regression tasks. So when your target variable is a numerical, variable and logistic regression is typically. And notice that I'm saying, typically because it depends.
+
+56
+00:10:33.570 --> 00:11:00.760
+Viviana Márquez: It depends. But most of the time it's used for classification, even though it has the word regression on it to classify different classes. But the advantage is that it gives you a percentage, a number that is between 0 and one, so you can read it as a percentage, so you can read it as a probability. But it's usually used for classification. But we'll talk more about that once we get to logistic regression.
+
+57
+00:11:02.023 --> 00:11:03.429
+Viviana Márquez: alright cool.
+
+58
+00:11:03.750 --> 00:11:11.659
+Viviana Márquez: So related to those questions, and feel free to keep sending chats, sending chats, sending questions to the chat.
+
+59
+00:11:11.790 --> 00:11:36.799
+Viviana Márquez: So we have established that the whole reason why we're doing machine learning is because we want the computer to be able to learn how to generalize from data. It's not enough to write an explicit rule like, Hey, check for this computer. If this is in my document, then this because you might need some cases. So the idea is that you expose the computer
+
+60
+00:11:36.900 --> 00:11:55.050
+Viviana Márquez: to a lot of data. So it's capable of generalizing the same way, humans do. You don't really teach a kid what a cat is. But given some complex definition of what a cat is. You just show them pictures. And then the kid learns to generalize the concept of a cat. So it's the same thing with machine learning.
+
+61
+00:11:55.470 --> 00:12:05.800
+Viviana Márquez: But machine learning is a very broad topic. So how do you pick the best machine learning model for your specific problem. So that's
+
+62
+00:12:05.800 --> 00:12:33.140
+Viviana Márquez: where we ask the 1st question. So our 1st question is, do we have a target variable? Do we have labels? Do we have something that we're aiming to predict and compare if we got the prediction, right or not. So we don't have labels. It's an unsupervised model. So that's what you guys learned on Module 6 that you're learning about K-means. That's an unsupervised model. Why, you don't have
+
+63
+00:12:33.140 --> 00:12:53.849
+Viviana Márquez: a label you want to somehow see if there's patterns in your data. So this is useful, for example, for companies like Netflix, because each client is not gonna come with a label that you just kind of have to see their behavior and and group them one way or another to be able to make recommendations to them.
+
+64
+00:12:54.180 --> 00:13:12.090
+Viviana Márquez: But if you do have a label, so, for example, you're trying to predict whether someone is going to have a heart attack or not, you're trying to predict what is the price of a house. You have a number that you can compare it to to see. Okay, I got this right. I got this wrong, etc.
+
+65
+00:13:13.130 --> 00:13:14.110
+Viviana Márquez: So
+
+66
+00:13:14.580 --> 00:13:21.560
+Viviana Márquez: the by asking the that 1st question, we split, or
+
+67
+00:13:22.090 --> 00:13:33.399
+Viviana Márquez: selection of models into 2, the unsupervised models and the supervised models. So in supervised learning, you have labels in unsupervised learning, you don't have labels
+
+68
+00:13:34.064 --> 00:13:42.959
+Viviana Márquez: and then, if it's in the world of supervised, we already talked about unsupervised. So now we're focusing on supervised.
+
+69
+00:13:43.070 --> 00:13:53.270
+Viviana Márquez: you would ask a follow up question. So you ask, is my target variable? Is the thing that I'm trying to predict, categorical or numerical.
+
+70
+00:13:53.840 --> 00:14:03.189
+Viviana Márquez: it doesn't matter what the other features are. It doesn't matter what you're using to predict. What you only focus on is in what you're actually
+
+71
+00:14:03.190 --> 00:14:27.190
+Viviana Márquez: are predicting that target variable, that target column that you're using. So, for example, if you're trying to predict the price of houses, it doesn't matter if you have a categorical variable to predict that the price of houses such as I don't know the neighborhood. That's a categorical variable. But that doesn't matter. What matters is that the price of the houses is a numerical variable. And that's why you're trying
+
+72
+00:14:27.190 --> 00:14:28.190
+Viviana Márquez: to predict.
+
+73
+00:14:28.300 --> 00:14:31.800
+Viviana Márquez: So if your target variable is categorical.
+
+74
+00:14:32.260 --> 00:14:42.550
+Viviana Márquez: It's going to be classification models. We still haven't covered those. We will cover them. And if it's a number, it's a numerical variable.
+
+75
+00:14:42.550 --> 00:15:03.219
+Viviana Márquez: it's a regression problem. So that's where we are so far. Last week you got to learn about linear regression is the poster child of regression models. But it's not the only regression. There's laser regression, rich regression, elastic net. You could also use, for example, decision trees.
+
+76
+00:15:03.220 --> 00:15:20.959
+Viviana Márquez: You could use random forest. So you can use a bunch of models for regression. We just learned one so far, which was linear regression. But there's many models that you can use for regression. Regression is just the task to predict a variable that is numerical. So that's where we are.
+
+77
+00:15:21.790 --> 00:15:29.490
+Viviana Márquez: And then well, the difference regression is quantitative. You're trying to predict that quantitative, target variable
+
+78
+00:15:29.570 --> 00:15:38.739
+Viviana Márquez: and classification is qualitative. So you're trying to predict the target variable. That is a category. But it's kind of like the
+
+79
+00:15:38.770 --> 00:15:54.840
+Viviana Márquez: same coin. Just 2 sides of the same coin, because in regression you're trying to find the best line or the best curve that describes your data, the relationship between your dependent and independent variables.
+
+80
+00:15:55.389 --> 00:16:06.380
+Viviana Márquez: By in classification. You're also trying to find a line or a curve, but it's to separate things. So here we use the line itself to make the regressions.
+
+81
+00:16:06.410 --> 00:16:17.240
+Viviana Márquez: But here we use the line just to separate the 2 or more categories that you have. But at the end of the day we're finding a line or a curve
+
+82
+00:16:17.887 --> 00:16:19.590
+Viviana Márquez: in both tasks.
+
+83
+00:16:20.130 --> 00:16:29.359
+Viviana Márquez: So today last last week in Module 7, and today we're focusing for now on regression.
+
+84
+00:16:29.700 --> 00:16:42.460
+Viviana Márquez: So we talked last time. I mean, in the course you saw linear regression. So it's the poster child of the regression models and linear regression actually is not
+
+85
+00:16:42.550 --> 00:17:06.929
+Viviana Márquez: advanced AI from the sense that this is coming from statistics, and it's been known for many decades. You can just do it way faster in using machine learning in Python, because it's just one line of code where before you would have had to run a bunch of math and equations to get the answer. Where here is just like one line of code.
+
+86
+00:17:06.930 --> 00:17:14.029
+Viviana Márquez: So it is supervised because it has labels and is at regression because the labels are numerical values.
+
+87
+00:17:14.707 --> 00:17:23.300
+Viviana Márquez: And the goal is to find that line that models the relationship between a variable and the features.
+
+88
+00:17:24.869 --> 00:17:25.675
+Viviana Márquez: And
+
+89
+00:17:26.730 --> 00:17:42.369
+Viviana Márquez: well, maybe I'm going to skip this, or I don't know. Yeah, because this is just to give you an intuition of why the linear regression works. So from school, you know the line of the equation, which is y equals mx plus b
+
+90
+00:17:42.420 --> 00:17:46.619
+Viviana Márquez: where m is the slope. So how steep my line is?
+
+91
+00:17:47.020 --> 00:17:48.360
+Viviana Márquez: Right.
+
+92
+00:17:48.680 --> 00:17:59.220
+Viviana Márquez: and then b is my y intercept. So this line, where does this line cut the y-axis. In this case it it cuts it at one
+
+93
+00:18:00.203 --> 00:18:05.710
+Viviana Márquez: so if I say that y equals 2 X. So my slope is 2.
+
+94
+00:18:06.110 --> 00:18:09.400
+Viviana Márquez: So that means that you do rise over, run
+
+95
+00:18:10.163 --> 00:18:13.480
+Viviana Márquez: so you rise 2 steps.
+
+96
+00:18:13.510 --> 00:18:19.339
+Viviana Márquez: and then you run one step. So that's where you have these 2. So 2 over one is 2,
+
+97
+00:18:19.490 --> 00:18:20.670
+Viviana Márquez: and then
+
+98
+00:18:20.870 --> 00:18:33.469
+Viviana Márquez: the B is just where it cuts the y-axis. So you have 2 x plus one. And this equation describes this line, no matter what X you put, you will get the correct y, which is this line.
+
+99
+00:18:33.770 --> 00:18:54.501
+Viviana Márquez: So in machine learning, the X would be my input and the Y would be my target variable. So in in machine learning, if you were gonna use this equation, you will have a data set that would look like this is a table, and it probably will have something here like
+
+100
+00:18:55.490 --> 00:18:58.679
+Viviana Márquez: whether someone smokes so smoker.
+
+101
+00:18:58.890 --> 00:19:07.779
+Viviana Márquez: And here you have some people, yes, no, yes, etc. And then a number which is like a long
+
+102
+00:19:07.990 --> 00:19:09.519
+Viviana Márquez: quality I don't know.
+
+103
+00:19:09.730 --> 00:19:13.180
+Viviana Márquez: So this person maybe has 2,
+
+104
+00:19:13.410 --> 00:19:14.640
+Viviana Márquez: 10,
+
+105
+00:19:14.900 --> 00:19:35.889
+Viviana Márquez: 3, and so on. So this is my Y variable, and this is my X variable. And the advantage is that once you have the equation here, you just plug in the value. So, okay, if you want to know what is the lung quality of someone that smokes, then you just plug in this value in here, and you will get a result in your Y,
+
+106
+00:19:36.020 --> 00:19:37.600
+Viviana Márquez: and of course.
+
+107
+00:19:37.790 --> 00:19:48.840
+Viviana Márquez: in that data set, typically, you wouldn't have only 2 columns. You have several columns. That's when you have the multilinear regression problems is just because you have multiple
+
+108
+00:19:49.550 --> 00:20:02.970
+Viviana Márquez: slopes where they're no longer slopes. They're just coefficients of the equation but the the concept comes from there. And the reason why linear regression is the poster child of machine learning is because.
+
+109
+00:20:03.100 --> 00:20:04.850
+Viviana Márquez: although it's very simple.
+
+110
+00:20:05.150 --> 00:20:17.460
+Viviana Márquez: it's very interpretable which you don't always have in machine learning. So, for example, if you had an equation like this, and let's say, the example is to predict monthly rent based on the square footage of an apartment.
+
+111
+00:20:17.660 --> 00:20:23.629
+Viviana Márquez: Your input is the square footage of the apartment, and then you output hopefully, is the rent in dollars.
+
+112
+00:20:23.750 --> 00:20:43.089
+Viviana Márquez: So you could say, Okay, if the slope is 1.5 and the Y intercept is 800. This is what your model told you. You can make an interpretation out of this, which is pretty cool, because then you can say, okay for every additional square foot the rent is going to increase by $1.5.
+
+113
+00:20:43.474 --> 00:21:06.930
+Viviana Márquez: So so it's nice because you have that interpretation. And then what is this? 800? That is the rent of an apartment when the footage. The square footage is 0. So that's the New York experience. You have no rooms, and you still pay rent, but no, realistically speaking, you can think of it as a baseline like, no matter
+
+114
+00:21:06.930 --> 00:21:18.240
+Viviana Márquez: how bad the room is, it's not gonna be free. So this is the baseline. And then depending how much square footage you have in this apartment. The price increases 1.5,
+
+115
+00:21:18.340 --> 00:21:20.930
+Viviana Márquez: and that's this line that we see here.
+
+116
+00:21:22.074 --> 00:21:32.439
+Viviana Márquez: But I kind of just pull these values out of nowhere. So how can we find the best values for that equation that describes the relationship of our specific data set?
+
+117
+00:21:32.610 --> 00:21:35.630
+Viviana Márquez: So, for example, if this is your data set.
+
+118
+00:21:36.250 --> 00:21:45.469
+Viviana Márquez: what? Which one is the best line? He said, this one? No, it's not this one. So here I'm like playing around with the Y intercept, so I can move the Y intercept.
+
+119
+00:21:45.870 --> 00:21:48.640
+Viviana Márquez: But I also need to play around with the slope
+
+120
+00:21:49.020 --> 00:22:03.930
+Viviana Márquez: right until I find a good one. So how do, how do I find this best line? Right? It's almost like moving some knobs, I think about it like like moving some knobs, because you're moving all the knobs of the coefficients.
+
+121
+00:22:03.940 --> 00:22:08.860
+Viviana Márquez: Then the y-intercept until you find the best line that describes your data
+
+122
+00:22:08.870 --> 00:22:13.149
+Viviana Márquez: in higher dimensions is the best hyperplane, but it's the same concept.
+
+123
+00:22:13.635 --> 00:22:17.609
+Viviana Márquez: So how do you find this? So if you do it with math
+
+124
+00:22:18.682 --> 00:22:27.549
+Viviana Márquez: it's you have to do it with something that is called ols, ordinary, least squares. So basically, you're
+
+125
+00:22:27.620 --> 00:22:38.080
+Viviana Márquez: using gradient descent to find the where the error is the minimum. So which line creates the least amount of error, because, for example, this line over here
+
+126
+00:22:38.240 --> 00:22:54.149
+Viviana Márquez: creates a huge amount of error. Look at all this error between these predictions. Right? So we want the least amount of error to find the best line with the least amount of error. So we want it like this, because then this one doesn't have that much error
+
+127
+00:22:54.160 --> 00:23:01.970
+Viviana Márquez: in here, a little bit here, and that's it doesn't have that much error. So how do we find that best align? So with math.
+
+128
+00:23:02.520 --> 00:23:03.929
+Viviana Márquez: You do that widow
+
+129
+00:23:03.940 --> 00:23:05.070
+Viviana Márquez: oil less
+
+130
+00:23:06.269 --> 00:23:16.099
+Viviana Márquez: but encoding is super easy. Encoding is just this line, and it gives you all those coefficients. So that's why, it's pretty cool, and then you can
+
+131
+00:23:16.200 --> 00:23:17.450
+Viviana Márquez: interpret
+
+132
+00:23:18.037 --> 00:23:26.472
+Viviana Márquez: those results. So disadvantage of linear regression is that it's a lower bound on performance.
+
+133
+00:23:27.200 --> 00:23:28.970
+Viviana Márquez: because I,
+
+134
+00:23:28.990 --> 00:23:42.089
+Viviana Márquez: not everything in the world, follows a linear regression. So it's a lower bound. But is the foundation of other more powerful techniques. So that's why it's 1 of the 1st models that you learn.
+
+135
+00:23:42.150 --> 00:24:08.339
+Viviana Márquez: If you do have a linear relationship, it's the best model. You're not going to find anything better. The issue is that most things in the real world don't follow a linear relationship. But if you have a linear relationship, this is just the best one, and if it works for your specific data set, it's usually preferred over something like a random forest, because it's interpretable. You can look at the coefficients and now know exactly how much
+
+136
+00:24:08.470 --> 00:24:14.780
+Viviana Márquez: each variable impacts your target variable, which you don't
+
+137
+00:24:14.960 --> 00:24:22.879
+Viviana Márquez: have that luxury in other methods. And this is like a spoilers alert. But once we get to deep learning.
+
+138
+00:24:23.230 --> 00:24:28.569
+Viviana Márquez: deep learning is basically you put a bunch of linear regressions together
+
+139
+00:24:28.570 --> 00:24:53.259
+Viviana Márquez: and you add a twist. That twist is called an activation function. We will learn that later on. But you add that twist, and then you end up with a neural network. And we all know that neural networks are very useful, very powerful, thanks to neural networks, is that we have stuff like Chat Gpt, and the building blocks of those neural networks are linear regressions with a twist. But the linear regression. So this is a very.
+
+140
+00:24:53.260 --> 00:24:56.850
+Viviana Márquez: very important concept in machine learning.
+
+141
+00:24:57.567 --> 00:25:01.049
+Viviana Márquez: So that was like a very quick
+
+142
+00:25:01.440 --> 00:25:11.369
+Viviana Márquez: run through linear regression. That was the topic for last week. But I wanted to stop for a second and see if there were any questions about linear regression.
+
+143
+00:25:11.440 --> 00:25:12.740
+Viviana Márquez: any doubts.
+
+144
+00:25:27.650 --> 00:25:35.299
+Viviana Márquez: Alright. So and feel free to put questions at any moment in the chat whenever you think of any question.
+
+145
+00:25:35.831 --> 00:25:59.849
+Viviana Márquez: Okay. So the advantage of supervised learning is that you have labels, because last time the we were working with K-means, which is unsupervised, which means we don't have labels, and that can be a problem. Because yes, you do. You groups your data somehow. But you can't really know if the there there's not like a
+
+146
+00:25:59.860 --> 00:26:13.169
+Viviana Márquez: hardcore metric that you could use to say, Okay, these groups are okay. They make sense. You kind of have to just look at the groups and see if they make sense if they don't make sense, but you don't, you can't quantify it as easily
+
+147
+00:26:13.496 --> 00:26:32.759
+Viviana Márquez: where, with supervised learning, you can quantify it because you can look at your model how your model is making the predictions and see, okay, the my model got this prediction right? My model got this prediction wrong. So you can put a number to that. So we can compute performance metrics when you have a supervised learning problem.
+
+148
+00:26:33.010 --> 00:26:51.419
+Viviana Márquez: So that's a question that you're always going to have. So whenever you train a model, you say, is my model. Any good? Is my model actually learning something? And in supervised learning you can actually evaluate that you can evaluate how your model is doing
+
+149
+00:26:51.420 --> 00:27:08.800
+Viviana Márquez: a good model makes useful predictions on unknown future data, because at the end of the day you're going to create this model because you want to use it on real data. So, for example, I don't know, you create the model that predicts whether someone has cancer or not
+
+150
+00:27:08.810 --> 00:27:24.709
+Viviana Márquez: based on some X-ray image, for example. And you're going to use it, not just on the data that you already have, that it already has labels. You're going to use it on new data that is going to come from new patients right? And you're not just going to
+
+151
+00:27:24.790 --> 00:27:51.089
+Viviana Márquez: train your model and give it a blessing and hope that is good. No, you should verify before you release it onto the real world. To use it. To treat real patients, you should test whether that model is good or not, whether that model is capable of making useful predictions on data that has never been seen before. So that's the main purpose of a model that is capable of generalizing. You don't want it to be a memory
+
+152
+00:27:51.090 --> 00:27:59.539
+Viviana Márquez: machine. You don't want it to be a model that just learns very, very well the data that it got exposed to.
+
+153
+00:27:59.920 --> 00:28:26.649
+Viviana Márquez: And then it's not capable of doing that on new data, because that's just a memorization machine. And that's not useful. And you don't want a model that is not even capable of doing that. So model that is just doing random predictions. That's also bad, very bad. So we want the model that is capable of generalizing something to keep in mind is that models might not be very accurate. It's very hard to capture all the complex relationships in the world.
+
+154
+00:28:27.021 --> 00:28:42.029
+Viviana Márquez: So don't expect your model to give you perfect performance. Metrics. That's never the case. And if it's the case usually that's a red flag, it means that you did something wrong, because it's very, very rare that a model would have perfect performance
+
+155
+00:28:42.050 --> 00:28:53.069
+Viviana Márquez: because it just doesn't make sense. It's the same thing like with a human like a human could know so much about a topic and still make a mistake, depending. I don't know, for example.
+
+156
+00:28:53.390 --> 00:29:04.209
+Viviana Márquez: detecting cats, and then, if it's very dark at night, and you look out on your balcony, and you see, like something moving. You think it's a cat.
+
+157
+00:29:04.210 --> 00:29:26.320
+Viviana Márquez: because it's like you have a lot of noise. It's dark. There are some bushes. So you think it's a cat, but you're not 100% sure, because it was hard given the circumstances for you to make that prediction. And then, once you have more information. You realize it wasn't a cat. It was a raccoon or something else. So same thing with models. So if
+
+158
+00:29:26.320 --> 00:29:51.569
+Viviana Márquez: us as humans, we can't make perfect predictions, because there's a lot of noise in the real world. So we can't spec the model to make perfect predictions. So whenever you see the perfect accuracy, perfect performance, metrics. That's a red flag. But in general it should help you guide your decision making. So, of course, the performance metrics have to be
+
+159
+00:29:51.570 --> 00:30:00.139
+Viviana Márquez: not perfect, but they need to be high, and I, and it depends on the field as well. So, for example, if you're creating a marketing campaign.
+
+160
+00:30:00.430 --> 00:30:27.670
+Viviana Márquez: and you need to know which customers are going to buy this product versus which customers are not going to buy this product to focus on those customers and do a marketing campaign. The tolerance of error in there might be higher, because what is the worst thing that it could happen? You just wasted a marketing campaign budget. And that's it. So it's not too terrible. Where in medicine you need higher performance metrics because
+
+161
+00:30:27.890 --> 00:30:36.559
+Viviana Márquez: you're dealing with humans, health. So you don't want to mess it up. So it also depends on the field how good those performance metrics need to be.
+
+162
+00:30:39.180 --> 00:30:45.710
+Viviana Márquez: so so yeah, that's a question that I see in in the chat. So, for example, for regression.
+
+163
+00:30:45.710 --> 00:31:10.579
+Viviana Márquez: because we still haven't seen the performance metrics for classification. So I don't want to talk about them just yet. But for regression you have already been exposed to stuff like root, mean, square error, and the coefficient of the determination r squared. So I'm going to use R squared because R. Squared is easier to talk about. It goes from 0 to one. You want that number to be as close as possible to one, because that number.
+
+164
+00:31:10.580 --> 00:31:22.589
+Viviana Márquez: that one, basically what it means is like a hundred percent of the variation. The variability of my data set is explained by my model. So you want that number to be as close as possible to one.
+
+165
+00:31:22.880 --> 00:31:25.110
+Viviana Márquez: If you're in the world of marketing
+
+166
+00:31:25.390 --> 00:31:30.190
+Viviana Márquez: and you get below 0 point 5 is bad, because that's just like
+
+167
+00:31:30.320 --> 00:31:48.269
+Viviana Márquez: a coin. Flip would have done better. So below 0 point 5 is objectively bad, no matter what. But if you're working on a marketing campaign, and it's a data set that is a little bit difficult because you don't know a lot about your clients, and your model is getting some performance metric that is like 0 point 7 like 70%.
+
+168
+00:31:48.300 --> 00:31:58.229
+Viviana Márquez: That's good enough, like you still have some knowledge that you didn't have before. So that's still good enough. But if you're in medicine.
+
+169
+00:31:58.260 --> 00:32:01.708
+Viviana Márquez: 70% might not be good enough. Then.
+
+170
+00:32:02.190 --> 00:32:21.309
+Viviana Márquez: you want to be able to explain the variability of your data set like 85%, 90%, 95%. So it depends on the field. What is a good metric or not? But if it's below 0 point 5 is bad, no matter what, but what is good. It depends on what type of problem you're working with.
+
+171
+00:32:23.920 --> 00:32:34.039
+Viviana Márquez: and then for the classification. We'll talk about classification. Metrics once we get to classification models. But the the logic is the same.
+
+172
+00:32:34.400 --> 00:32:47.210
+Viviana Márquez: If you have a hundred percent accuracy in classification suspicious. If you have 90% accuracy depends on the field that you're in, it might be acceptable, or it might not be acceptable.
+
+173
+00:32:47.610 --> 00:32:50.330
+Viviana Márquez: Hopefully that answered those questions.
+
+174
+00:32:50.830 --> 00:33:07.050
+Viviana Márquez: Okay, so how do I know if my model is good? And how do I know this before I just release my model into the world, because, of course, you don't want to do that. And then you're messing up with patients, lives, or something like that. How do you test before you release your model into the real world.
+
+175
+00:33:07.260 --> 00:33:19.580
+Viviana Márquez: That's when the train validation and test data sets come in because you want to have a proxy of how the model would behave in the real world. So that's why you split your data set
+
+176
+00:33:19.590 --> 00:33:24.580
+Viviana Márquez: into these 3 different data sets. So you split it onto your training data set.
+
+177
+00:33:25.020 --> 00:33:36.100
+Viviana Márquez: which is what you're going to use for the model to learn stuff. So that's what the model is going to be exposed to. It's usually a bigger chunk than the validation. And the test set
+
+178
+00:33:36.460 --> 00:33:39.349
+Viviana Márquez: the validation data set for. Now you
+
+179
+00:33:39.540 --> 00:33:54.750
+Viviana Márquez: can ignore it because it's used to tune the model hyperparameters. We still haven't talked about hyperparameters. So for now you don't have to do anything explicitly about the validation data set. That's usually when we talk about hyperparameters.
+
+180
+00:33:55.159 --> 00:33:57.820
+Viviana Márquez: So for now you can ignore it.
+
+181
+00:33:57.860 --> 00:34:01.029
+Viviana Márquez: And then you have the test data set. So the test data set
+
+182
+00:34:01.160 --> 00:34:01.980
+Viviana Márquez: is
+
+183
+00:34:02.370 --> 00:34:27.609
+Viviana Márquez: a small portion of the data set that you have that you use to evaluate your model's performance on unseen data. So this is the best proxy on how the model will perform in the real world. So you absolutely do not touch. Do not see. Do not use for anything the test data set until the very end, until you think you have your best model
+
+184
+00:34:28.110 --> 00:34:35.010
+Viviana Márquez: to see how it will perform in the real world. So so you have that
+
+185
+00:34:35.110 --> 00:35:02.160
+Viviana Márquez: one thing that is also maybe obvious. But I'm still going to say it is that you shouldn't have an observation that is in the test set, and also the training set. That's data leakage, they should be mutually exclusive sets of data. Whatever is in the training data set is not in the validation data set, and whatever is not in the validation data set. Whatever is in the validation data set is not in the training set or the test set. They're mutually exclusive.
+
+186
+00:35:03.670 --> 00:35:09.449
+Viviana Márquez: so how do you do this split. Usually you do 80%, 10%, 10%.
+
+187
+00:35:09.570 --> 00:35:21.050
+Viviana Márquez: But it's completely up to you. You want the biggest chunk of the data set to be in the training set. So the model is exposed to more data. But you could also do like 70,
+
+188
+00:35:21.340 --> 00:35:41.499
+Viviana Márquez: 10, and 20, or you could do 60, 20, and 20. It's it's up to you. And also it depends how much data you have. Because if you have millions and millions and millions of rows. Then it's fine. If the training data set is 60% of the data set, because you still have millions and millions of rows in the training data set. But if you have a smaller data set.
+
+189
+00:35:41.970 --> 00:35:49.919
+Viviana Márquez: you want to put a big chunk of data into the training data set, so it gets exposed to more observations.
+
+190
+00:35:50.485 --> 00:36:01.839
+Viviana Márquez: And depends on what you're working with. There are some exceptions, but most of the time this should be split randomly, because you don't want to grab like
+
+191
+00:36:01.950 --> 00:36:15.580
+Viviana Márquez: the 1st 80% rows of my data set, because maybe they're not a random. Maybe they're sorted by. I don't know last name or something like that. So you do want that to be randomly split
+
+192
+00:36:15.620 --> 00:36:20.459
+Viviana Márquez: unless you have, for example, something like time that you gotta respect
+
+193
+00:36:20.610 --> 00:36:27.539
+Viviana Márquez: the relationship between time, then you do a different kind of split. But if it's a normal data set, it should be randomly
+
+194
+00:36:29.120 --> 00:36:31.120
+Viviana Márquez: so you randomly split that
+
+195
+00:36:31.150 --> 00:36:35.519
+Viviana Márquez: super super important, and this is something that if you could
+
+196
+00:36:35.540 --> 00:36:50.520
+Viviana Márquez: tattoo it, you should tattoo it into your head is that this split of the data set has to happen before doing any modeling. So before you train any model, you have to split your data set.
+
+197
+00:36:50.620 --> 00:37:13.000
+Viviana Márquez: And before any feature engineering, so feature, engineering, and modeling happen after the data set has been split. Otherwise, you risk having data leakage. So data leakage is when information from the validation or the test set is used to inform the model during the training phase. And you don't want that
+
+198
+00:37:13.090 --> 00:37:30.950
+Viviana Márquez: because you want to make sure that your model is truly being evaluated on unseen data. So the split has to happen before that. And I brought some code today. So you can see it highlighting. When is it that you need to do this split
+
+199
+00:37:31.400 --> 00:37:46.960
+Viviana Márquez: and absolutely no peeking. The test data set is used only after you think you have the best model, and is the only true measure of generality. So the test set is sacred. You shouldn't touch it until the end.
+
+200
+00:37:47.589 --> 00:37:57.739
+Viviana Márquez: Which brings me to the next topic. So now, talking about the same concept. But let's talk about code. So coding wise, you're going to be using cycle. Learn
+
+201
+00:37:58.207 --> 00:38:02.689
+Viviana Márquez: and in cyclearn you might have seen these methods already fit.
+
+202
+00:38:02.870 --> 00:38:14.249
+Viviana Márquez: fit, transform and transform. So these methods are used for feature engineering, and they're used for modeling as well. And you're going to see them again and again and again.
+
+203
+00:38:14.630 --> 00:38:16.889
+Viviana Márquez: So what is the difference between those models
+
+204
+00:38:17.010 --> 00:38:19.359
+Viviana Márquez: whenever you see the word fit?
+
+205
+00:38:19.580 --> 00:38:35.189
+Viviana Márquez: 5th means that there is some learning happening. So the model is observing your data and learning something, learning a parameter, learning how the model should perform is doing something. So because it's doing learning
+
+206
+00:38:35.580 --> 00:38:51.540
+Viviana Márquez: whenever you see the word fit. It should only be used in the training set so fit. When you have it alone. Just fit. It just learns the blueprint of what that equation should be of what that transformation should be
+
+207
+00:38:51.600 --> 00:38:54.190
+Viviana Márquez: and then transform is.
+
+208
+00:38:54.370 --> 00:39:00.554
+Viviana Márquez: It uses what it learned during fit, and it applies it to the
+
+209
+00:39:01.200 --> 00:39:09.759
+Viviana Márquez: to the data set. So you actually use transform. Actually, now, I just realized that to make this accurate.
+
+210
+00:39:10.300 --> 00:39:12.770
+Viviana Márquez: I should have it like this
+
+211
+00:39:13.970 --> 00:39:20.739
+Viviana Márquez: transform because you can use transform on the training data set as well. So
+
+212
+00:39:21.780 --> 00:39:22.840
+Viviana Márquez: there you go.
+
+213
+00:39:23.740 --> 00:39:24.800
+Viviana Márquez: So
+
+214
+00:39:25.360 --> 00:39:29.049
+Viviana Márquez: transform is just to modify the data
+
+215
+00:39:29.780 --> 00:39:50.190
+Viviana Márquez: or to make predictions. So you can do it on the training data set. You want to know how your model is doing in the training data set. That's fine. And you can also use the transform on the test and validation set. So that's when whatever it was learned here that blueprint, that blueprint gets applied to the data set
+
+216
+00:39:50.230 --> 00:40:02.180
+Viviana Márquez: and then feed transform is that if you're feeling lazy, usually you have to fit on the training data set and then transform on the training data set and transform on the validation and transform on the test set.
+
+217
+00:40:02.220 --> 00:40:20.189
+Viviana Márquez: So most of the time you're going to have to do fit transform on the training data set so you could do it in 2 steps. You could do fit, and you could do transform. But if you want to do it in just one step because you're feeling lazy, you can use fit transform. But using these 2
+
+218
+00:40:20.240 --> 00:40:23.229
+Viviana Márquez: is the same as using this altogether.
+
+219
+00:40:23.950 --> 00:40:34.170
+Viviana Márquez: And yeah, because it has the word fit. It should only be used on the training data set. Never, never use it on the test or the validation set.
+
+220
+00:40:34.940 --> 00:40:38.360
+Viviana Márquez: And that's like a rookie mistake. If if if
+
+221
+00:40:38.660 --> 00:40:54.830
+Viviana Márquez: I'm going through someone's code, I don't know, maybe I'm interviewing someone for a role, and I see that they use fit on any of these sets I'm like, no, this person doesn't know what they're doing. So so pay attention that you do the split
+
+222
+00:40:54.890 --> 00:41:09.250
+Viviana Márquez: of your data set before any feature engineering before any modeling happens. And then, once you have splitted your data set, you're only using fit on the training set. So that's super important.
+
+223
+00:41:10.300 --> 00:41:12.880
+Viviana Márquez: all right. So any questions up to there
+
+224
+00:41:12.970 --> 00:41:14.880
+Viviana Márquez: before I continue
+
+225
+00:41:15.810 --> 00:41:16.800
+Viviana Márquez: talking.
+
+226
+00:41:25.650 --> 00:41:27.110
+Viviana Márquez: Alright cool.
+
+227
+00:41:27.707 --> 00:41:42.349
+Viviana Márquez: So okay, we were talking about error, and we were saying, it's inevitable to have some error in our model. And and it makes sense. Because, for example, if your data set looks like this like, unless you made a curve
+
+228
+00:41:42.360 --> 00:41:43.830
+Viviana Márquez: like this.
+
+229
+00:41:43.900 --> 00:41:55.240
+Viviana Márquez: and we actually don't want that. And I'll talk about that in a bit. You're always going to have a little bit of error in your data like it's not going to be perfect. So you you're always going to have
+
+230
+00:41:55.240 --> 00:42:25.149
+Viviana Márquez: error. And that's not bad. Of course you don't want the error to be too big. But it's fine if you have some error. So there's actually different sources for error. Where is error coming from? So there's error that is like tough cookies. You can't really do anything about the error. It's just irreducible. It's just what it is, and there's reducible. So the one that you can fix. So this reducible error should be as slow as possible. But the irreducible is like
+
+231
+00:42:25.530 --> 00:42:30.630
+Viviana Márquez: tough cookies. You know. What are you gonna do? It's just life happens, you know.
+
+232
+00:42:31.495 --> 00:42:32.290
+Viviana Márquez: So
+
+233
+00:42:32.670 --> 00:42:44.529
+Viviana Márquez: we have a data set, that is, XY, so x is all my features that I want to use to predict my target variable. Y is my target, variable, and we fit the model F of X,
+
+234
+00:42:44.600 --> 00:42:50.990
+Viviana Márquez: whatever it is. And then we compute the error. Here. We're taking the difference of the squares between the
+
+235
+00:42:51.330 --> 00:42:57.430
+Viviana Márquez: prediction and the actual value. But it could be any type of error that you want to calculate.
+
+236
+00:42:58.165 --> 00:43:05.149
+Viviana Márquez: So we are going to calculate the error from a single prediction in the test
+
+237
+00:43:05.230 --> 00:43:06.320
+Viviana Márquez: data set.
+
+238
+00:43:06.932 --> 00:43:09.170
+Viviana Márquez: So there's 3 sources of error.
+
+239
+00:43:09.280 --> 00:43:15.069
+Viviana Márquez: So it could be that there's noise, such that you have an inconsistent
+
+240
+00:43:15.930 --> 00:43:16.730
+Viviana Márquez: prediction.
+
+241
+00:43:16.880 --> 00:43:21.470
+Viviana Márquez: It could be that the model is underfitting and overfitting. So let's start with the 1st one.
+
+242
+00:43:22.471 --> 00:43:31.959
+Viviana Márquez: Well, conceptually, error is noise plus bias plus overfitting, and for those of you that are a little bit more statistical.
+
+243
+00:43:34.173 --> 00:43:41.569
+Viviana Márquez: you, it's just the error is irreducible error plus bias squared plus variance. But anyway.
+
+244
+00:43:42.542 --> 00:43:56.730
+Viviana Márquez: so I see one question in the chat. So the question in the chat is, what is considered a best practice between fit, transform, and fit and transform either one.
+
+245
+00:43:56.790 --> 00:43:58.349
+Viviana Márquez: if maybe they're like
+
+246
+00:43:58.690 --> 00:44:06.539
+Viviana Márquez: fit and transform like next to each other, maybe fit transform is better. But either one, it doesn't really matter. But that's a good question.
+
+247
+00:44:08.497 --> 00:44:15.569
+Viviana Márquez: Okay. So we said, Okay, there's 3 places where you can get error, noise, underfeeding and overfeeding. So let's talk about the noise.
+
+248
+00:44:15.760 --> 00:44:17.729
+Viviana Márquez: So, for example, let's imagine you have
+
+249
+00:44:17.760 --> 00:44:19.089
+Viviana Márquez: 2 data sets.
+
+250
+00:44:19.753 --> 00:44:27.220
+Viviana Márquez: That look like this. So let's say it's predicting how good someone is going to do in a test.
+
+251
+00:44:27.290 --> 00:44:31.230
+Viviana Márquez: So you have 2 people that are both 18 years old.
+
+252
+00:44:31.320 --> 00:44:34.495
+Viviana Márquez: The the 2 of them
+
+253
+00:44:35.610 --> 00:44:50.210
+Viviana Márquez: studied for I don't know are taking one class, and they both studied for 9 h, for example, and one person got 91 and another person got 99 on the exam.
+
+254
+00:44:50.430 --> 00:44:52.600
+Viviana Márquez: So this is a little bit
+
+255
+00:44:52.770 --> 00:44:54.060
+Viviana Márquez: problematic.
+
+256
+00:44:54.490 --> 00:45:06.639
+Viviana Márquez: And the reason why this is problematic is because no model can predict 2 different values of Y for the same. X vector.
+
+257
+00:45:06.710 --> 00:45:07.849
+Viviana Márquez: Yeah. So
+
+258
+00:45:07.970 --> 00:45:27.540
+Viviana Márquez: if I tell you, even as a human, if I tell you, hey, I have 2 students. They both have 18. They both are 18 years old. They are taking one class, and they studied for 9 h, and one guy got more points than the other guy I'd be like, I have no idea, like with the information that you're giving me.
+
+259
+00:45:27.920 --> 00:45:32.030
+Viviana Márquez: They should have gotten the same score because they're the same on paper.
+
+260
+00:45:32.040 --> 00:45:52.809
+Viviana Márquez: so the model will have some amount of error, no matter what. Because if you make the model predict 91 is going to get this one wrong. If you make the model predict 99 is going to get this one wrong. If you make the model predict something like 95 is going to get this one a little bit wrong and a little bit wrong. So no matter what you do, you're always going to have an error here.
+
+261
+00:45:53.120 --> 00:45:56.000
+Viviana Márquez: So this is what we call irreducible error.
+
+262
+00:45:56.180 --> 00:46:00.110
+Viviana Márquez: And how does this happen? It could be that there's
+
+263
+00:46:00.230 --> 00:46:15.499
+Viviana Márquez: faulty sensors if it's like some sensor taking some measurements, they, and they have some error while they are taking the the metrics, the different measurements. Then you know, it is what it is.
+
+264
+00:46:15.500 --> 00:46:31.390
+Viviana Márquez: a faulty sensor. You could have typos. When people are like transcribing data, self-reporting issues. If you're asking a questionnaire, and people are self-reporting what they do like, people are usually bad at self reporting, etc. So
+
+265
+00:46:31.510 --> 00:46:44.909
+Viviana Márquez: nothing you can do about that. So just so you know that it exists. And this would explain why you have some errors, but like tough cookies like nothing you can do about this. So that's unmeasurable variables. That's what it's called.
+
+266
+00:46:45.420 --> 00:46:47.199
+Viviana Márquez: Then, on the other hand.
+
+267
+00:46:47.230 --> 00:46:49.350
+Viviana Márquez: what if you had this.
+
+268
+00:46:49.530 --> 00:46:56.459
+Viviana Márquez: The 2 people are 18. The 2 people are taking one class. The 2 people studied for 9 h.
+
+269
+00:46:56.620 --> 00:47:11.430
+Viviana Márquez: But we were missing. One variable turns out that this guy played video games for 10 h. And this guy played video games for 7 h. So they played video games for a little bit less. So that's why their score is higher.
+
+270
+00:47:11.470 --> 00:47:12.963
+Viviana Márquez: for example.
+
+271
+00:47:13.930 --> 00:47:22.970
+Viviana Márquez: so so it could be that we're just missing a variable. Another example, maybe more relatable, is that 2 apartments
+
+272
+00:47:23.090 --> 00:47:23.910
+Viviana Márquez: have
+
+273
+00:47:24.030 --> 00:47:41.230
+Viviana Márquez: seem identical on paper. They both have 2 bedrooms, one bathroom, same amount of square footage, etcetera. But the different price is that you are lacking a variable saying. It has better views. Of course, an apartment with a very view will be pricier.
+
+274
+00:47:41.649 --> 00:47:54.239
+Viviana Márquez: So so that's just a missing variable. So missing. Variable is called exogenous, variable in case you want to sound fancy, that's what they're called, and those are unmeasured variables.
+
+275
+00:47:55.040 --> 00:47:58.719
+Viviana Márquez: If you have the possibility of measuring that variable.
+
+276
+00:47:58.860 --> 00:48:12.419
+Viviana Márquez: Go for it, and you can, just if you can, measure it like, measure it. And your data set is going to be better. But that's always not possible, because you might not even know what it's missing like here in the case of the students. Maybe you
+
+277
+00:48:12.420 --> 00:48:39.009
+Viviana Márquez: weren't even thinking about the fact that their diet habits might have an impact on this score like you can't even think of that. So that's not being measured, or you can't measure it like, yes, you know that that will have an impact. But you don't really have the resources or the right to ask the student about their diet habits, you know. So sometimes that's just also like chop cookies like
+
+278
+00:48:39.260 --> 00:48:50.230
+Viviana Márquez: unmeasured variables that in theory you could do something about it. But a lot of times. You're just going to have unmeasured variables, and that's what it is. And you have to work with the data that you have.
+
+279
+00:48:51.600 --> 00:49:16.720
+Viviana Márquez: So all of that is irreducible. You should know that it exists. You should know that that accounts for the errors that we see in our data, but it's fine, and you can't really do much about it. Now let's talk about the one that you should be worried about the one that you should be fixing, which is the reducible error, because if you can reduce it, you should reduce it, and you can do that through the modeling that you're doing.
+
+280
+00:49:17.039 --> 00:49:23.419
+Viviana Márquez: So you could have 2 types of problems. One is underfeeding. So under feeding, it means that the model is
+
+281
+00:49:23.420 --> 00:49:33.539
+Viviana Márquez: too simple. It's not learning anything which is bad and overfitting. It means that the model is too specific on the training data set. So instead of
+
+282
+00:49:33.670 --> 00:49:44.640
+Viviana Márquez: being smart is just a memorization machine, and we never want the memorization machine. So it would look something like this. Notice that these observations are the same data
+
+283
+00:49:45.470 --> 00:49:49.389
+Viviana Márquez: and underfit this one is underfitting, because
+
+284
+00:49:49.410 --> 00:49:52.190
+Viviana Márquez: if we are using this line to make the prediction.
+
+285
+00:49:52.600 --> 00:49:56.970
+Viviana Márquez: We have too much error here on this observation. So this is not great.
+
+286
+00:49:57.530 --> 00:49:58.750
+Viviana Márquez: more error.
+
+287
+00:49:59.010 --> 00:50:02.310
+Viviana Márquez: So it's underfitting it's not really learning our data.
+
+288
+00:50:02.470 --> 00:50:12.299
+Viviana Márquez: This one is optimal, because, yes, you have some amount of error, but it's not as big as before. So it kind of has a better understanding of the shape of the data.
+
+289
+00:50:12.350 --> 00:50:14.529
+Viviana Márquez: and then over fit is where
+
+290
+00:50:14.540 --> 00:50:28.689
+Viviana Márquez: it knows very well your data set, and you might be wondering, hey? But don't we want to overfit? That seems great. It knows exactly my data set, don't we want our model to be perfect? And that's an issue, because.
+
+291
+00:50:28.770 --> 00:50:38.919
+Viviana Márquez: 1st of all, we have a reducible error. If you don't have error that's suspicious, like it's very weird. You should always have error. But let's imagine you have an observation.
+
+292
+00:50:38.990 --> 00:50:41.000
+Viviana Márquez: Let me think where?
+
+293
+00:50:41.834 --> 00:50:44.799
+Viviana Márquez: Let's imagine you have an observation
+
+294
+00:50:45.380 --> 00:50:47.230
+Viviana Márquez: over here. Right?
+
+295
+00:50:47.470 --> 00:50:51.159
+Viviana Márquez: So I'm going to dry it everywhere in my data set.
+
+296
+00:50:51.510 --> 00:51:00.560
+Viviana Márquez: This is the same observation. So let's see what happens here. So that's a new observation. Imagine, like a new patient came in from the real world.
+
+297
+00:51:00.750 --> 00:51:06.960
+Viviana Márquez: This one is bad. This one was under feeding. This one wasn't even learning from the training data set. So we can forget about this one.
+
+298
+00:51:07.100 --> 00:51:10.850
+Viviana Márquez: This one has some amount of error, which is okay.
+
+299
+00:51:10.870 --> 00:51:18.810
+Viviana Márquez: And notice that because this one overfit on the training data set so well that when the new observation comes in.
+
+300
+00:51:18.940 --> 00:51:29.906
+Viviana Márquez: you have a huge amount of error. So it's not capable of generalizing. It's just a memorization machine. So you also don't want to overfeed. You want to find this optimal
+
+301
+00:51:30.810 --> 00:51:46.630
+Viviana Márquez: point. Because I remember thinking when I 1st learned machine learning, I was like, Why don't you want to overfit? That sounds fantastic, right? Like you're getting every every observation right? But you don't want to do that because you want your model to be capable of generalizing
+
+302
+00:51:47.240 --> 00:52:05.090
+Viviana Márquez: And the way I remember it is with clothes. You want your clothes to look nice. You don't want them to be super baggy or like you don't want to be the overfit guy, either. You want them to look nicely. But yeah, so so you want to find this optimal.
+
+303
+00:52:06.170 --> 00:52:07.330
+Viviana Márquez: So
+
+304
+00:52:07.400 --> 00:52:20.620
+Viviana Márquez: overly simple models lead to biased models. So it's underfitting. So bias, what is bias? I'm using the word bias. And it's not the like
+
+305
+00:52:20.620 --> 00:52:33.600
+Viviana Márquez: cultural bias. It's it's the mathematical word, not the cultural word. So it's not like biased against certain type of people. No, it's like mathematical bias.
+
+306
+00:52:33.600 --> 00:52:52.960
+Viviana Márquez: So what is this bias in this case in this case is the error rate of your model on the training data set. So basically, you compute how much error you're getting on your training data set. Which would you would expect it to be low because your model was exposed to this data already, and it's still high, which is not great. You don't want that
+
+307
+00:52:53.290 --> 00:53:01.749
+Viviana Márquez: and bias. The bias is how much your model underfits the training data set.
+
+308
+00:53:02.400 --> 00:53:11.600
+Viviana Márquez: So this is how you compute a bias, the math formula. But basically is the expected difference between the predictions and the observations.
+
+309
+00:53:12.675 --> 00:53:13.680
+Viviana Márquez: So
+
+310
+00:53:15.740 --> 00:53:17.039
+Viviana Márquez: a model that has
+
+311
+00:53:17.420 --> 00:53:20.029
+Viviana Márquez: put a different one. Let me put this one
+
+312
+00:53:20.840 --> 00:53:33.849
+Viviana Márquez: a model that has a good ability to fit the training data has what low bias or high bias. Let's see some answers in the chat.
+
+313
+00:53:48.530 --> 00:53:56.709
+Viviana Márquez: All right. So let's see the answer. Let's see, let's see.
+
+314
+00:53:59.170 --> 00:54:04.250
+Viviana Márquez: has low bias. So Russa got it right?
+
+315
+00:54:04.410 --> 00:54:11.639
+Viviana Márquez: So model that has a good ability to feed the training data has low bias.
+
+316
+00:54:11.730 --> 00:54:13.350
+Viviana Márquez: If your model.
+
+317
+00:54:13.660 --> 00:54:18.849
+Viviana Márquez: So bias is how much your model underfits the training data.
+
+318
+00:54:18.940 --> 00:54:48.020
+Viviana Márquez: So if your model didn't learn, your data is going to have high bias, but a model that has a good ability. So it's very good at learning. The training data has low bias, high bias. It means that it didn't learn anything, and that it's underfitting. But but I'm happy that we did this exercise here because this could be an interview question. So now you know, so we always want to minimize bias. Bias is bad. We want to minimize bias
+
+319
+00:54:48.060 --> 00:54:58.629
+Viviana Márquez: models with high bias fail to capture meaningful patterns in data. They're just not doing anything. They can't even do the training data set, let alone the test data. Set.
+
+320
+00:54:58.850 --> 00:55:07.119
+Viviana Márquez: It underfits the training data. And we don't want that. So how do we decrease bias, we make the model more complex. So
+
+321
+00:55:07.783 --> 00:55:16.260
+Viviana Márquez: for now, what that means for you, since you have only learned linear regression, is that you add more terms to that linear equation.
+
+322
+00:55:16.470 --> 00:55:24.130
+Viviana Márquez: and you make it more complex. But you could also just make it more complex by switching to a more complex model and stuff. But for now
+
+323
+00:55:24.140 --> 00:55:35.089
+Viviana Márquez: let's just generalize it and say, you make it more complex. This slide right here. That's an interview question, a model that has good ability to feed the training data has low bias.
+
+324
+00:55:35.230 --> 00:55:46.749
+Viviana Márquez: How do you decrease it? You make the model more complex. Models with high bias are underfitting underfitting the training data. And we want to minimize this bias. So this is like a slide that I would just like.
+
+325
+00:55:47.370 --> 00:55:55.200
+Viviana Márquez: remember for job interviews. And of course for the practice of machine learning as well. But yeah.
+
+326
+00:55:57.850 --> 00:56:09.180
+Viviana Márquez: okay, let's go into the next slide. So overly complex models can overfit the data. So now we have the other problem. So the other problem is that
+
+327
+00:56:09.480 --> 00:56:20.630
+Viviana Márquez: the model learns really, really well the training data. So one problem was that the model didn't learn the training data. Now, the problem is that the model learned really, really well, the training data.
+
+328
+00:56:20.930 --> 00:56:23.439
+Viviana Márquez: So variance. Now let's talk about variance.
+
+329
+00:56:23.470 --> 00:56:29.430
+Viviana Márquez: So variance is the amount of a model's prediction will change if different training data is used.
+
+330
+00:56:29.480 --> 00:56:42.110
+Viviana Márquez: So that's what I was saying with the example right here, like. If we had a new observation here, and we retrained this model, it would change quite a lot, because you would have this curve right here
+
+331
+00:56:42.200 --> 00:56:57.809
+Viviana Márquez: and then here it would just do something like this and like this, I don't know. I don't even know what it would do, but it would change significantly where, when we had the line, it wouldn't change significantly. So small change in the training data
+
+332
+00:56:57.820 --> 00:57:07.630
+Viviana Márquez: can result in a large change in the estimated model. And this is a problem, because then it's just a memorization machine. And it's not capable of generalizing the data.
+
+333
+00:57:08.040 --> 00:57:09.680
+Viviana Márquez: So variance is
+
+334
+00:57:09.830 --> 00:57:10.840
+Viviana Márquez: the
+
+335
+00:57:10.850 --> 00:57:16.539
+Viviana Márquez: how flexible our model is. So what is the
+
+336
+00:57:16.830 --> 00:57:20.930
+Viviana Márquez: ability of the model to learn patterns in the observed data?
+
+337
+00:57:21.435 --> 00:57:26.330
+Viviana Márquez: So variance is how much your model overfits the training data.
+
+338
+00:57:26.470 --> 00:57:37.210
+Viviana Márquez: So now let's go. Well, and this is the equation if you want it. But basically, intuitively, is how much the algorithm will move around its mean.
+
+339
+00:57:37.330 --> 00:57:52.850
+Viviana Márquez: Okay, so now let's go with the next question. So a model that is strongly influenced by the specifics of the training data has low or high variance.
+
+340
+00:57:53.690 --> 00:57:58.060
+Viviana Márquez: And it's okay to make mistakes. That's why we are here in class.
+
+341
+00:58:07.620 --> 00:58:15.120
+Viviana Márquez: So the answer is high variance.
+
+342
+00:58:15.340 --> 00:58:22.859
+Viviana Márquez: I had faith in you, Ressa, because you got the previous question, right? But that's okay. Yeah. So
+
+343
+00:58:23.020 --> 00:58:24.970
+Viviana Márquez: if the model changes
+
+344
+00:58:25.220 --> 00:58:30.199
+Viviana Márquez: only this a slightly bit, no, if the model changes quite a lot.
+
+345
+00:58:30.250 --> 00:58:37.030
+Viviana Márquez: even if the data set changes just slightly bit. It means that it has high variance and high variance
+
+346
+00:58:37.190 --> 00:58:45.759
+Viviana Márquez: is bad. We want to minimize variance. So high bias is bad. High variance is bad. We want to minimize both.
+
+347
+00:58:46.348 --> 00:58:58.360
+Viviana Márquez: So another another interview question. So a model that has a good ability to predict test data so that has that is capable of generalizing has low variance.
+
+348
+00:58:59.640 --> 00:59:16.499
+Viviana Márquez: so the more complex the model is, the more data points it will capture. However, complexity will make the model move more to capture the data points. So the variance will be large.
+
+349
+00:59:16.991 --> 00:59:19.250
+Viviana Márquez: So so, in other words.
+
+350
+00:59:20.450 --> 00:59:31.099
+Viviana Márquez: when we were underfitting this data set is because we made only a line which is very simple. It's very simple to describe just y equals mx plus b
+
+351
+00:59:31.444 --> 00:59:52.819
+Viviana Márquez: this curve is very hard to describe. But it's capturing more data points. But that's a problem. If it's doing that to the training data set because it's a memorization machine. So that's what it means for the model to be more complex because it's not just a line. Is this curve? And to describe that curve mathematically is harder than describing a line.
+
+352
+00:59:53.291 --> 01:00:06.380
+Viviana Márquez: So the more complex it is, the more points is able to capture. But that's that's a problem. If it's very, very complex. So how do we decrease variance?
+
+353
+01:00:07.390 --> 01:00:17.320
+Viviana Márquez: You need to make the model less complex. And yes, absolutely like you're saying in the chat, Reza, you want to minimize the variance.
+
+354
+01:00:17.953 --> 01:00:26.479
+Viviana Márquez: So strategies, you can make the data set the training data set larger that usually helps decrease variance
+
+355
+01:00:26.530 --> 01:00:41.610
+Viviana Márquez: because it reduces the chance of overfitting. If you have a lot of data, it's harder to memorize all of the data. So it increases the chance of generalization in regression. You can use techniques like regularization, etc. So
+
+356
+01:00:41.620 --> 01:00:42.630
+Viviana Márquez: you
+
+357
+01:00:42.810 --> 01:00:47.429
+Viviana Márquez: need to decrease both bias and variance. You always have to decrease both
+
+358
+01:00:47.470 --> 01:00:52.570
+Viviana Márquez: to avoid underfeeding and overfeeding, because if we go back to this
+
+359
+01:00:52.790 --> 01:00:53.810
+Viviana Márquez: image.
+
+360
+01:00:54.860 --> 01:01:03.530
+Viviana Márquez: This model is too simple. This curve is a little bit more complex. So that's why we say, Okay, if our model has high variance. I know high bias.
+
+361
+01:01:03.550 --> 01:01:17.490
+Viviana Márquez: We want to make it a little bit more complex. But if we, our model has high variance, we want to make it a little bit less complex, because this curve is harder to describe than this one. That is, this is just like a
+
+362
+01:01:18.110 --> 01:01:25.239
+Viviana Márquez: parabola. I think. Yeah, so this is just easier to describe where this quarter is very hard to describe.
+
+363
+01:01:25.809 --> 01:01:29.520
+Viviana Márquez: So we know that we want to decrease both bias and variance.
+
+364
+01:01:29.900 --> 01:01:34.040
+Viviana Márquez: to avoid underfeeding and overfeeding. So why don't we do both?
+
+365
+01:01:34.450 --> 01:01:37.083
+Viviana Márquez: And the issue is that
+
+366
+01:01:38.210 --> 01:01:40.189
+Viviana Márquez: we were saying, okay.
+
+367
+01:01:40.340 --> 01:01:44.490
+Viviana Márquez: if we want to decrease bias, we make the model
+
+368
+01:01:44.860 --> 01:01:48.149
+Viviana Márquez: more complex. If we want to decrease
+
+369
+01:01:48.270 --> 01:01:54.599
+Viviana Márquez: variance, we make the model less complex. So now you see the problem, because if you want to decrease both.
+
+370
+01:01:54.680 --> 01:02:16.499
+Viviana Márquez: You need to make the model either more complex or less complex. So if you decrease bias, variance is going to go up. If you decrease variance, bias is going to go up when one is going up, the other one goes down. So it's you can't decrease both. So that's the bias variance trade-off. And that's also an interview question, what is the values? Variance trade-off?
+
+371
+01:02:18.010 --> 01:02:19.100
+Viviana Márquez: so
+
+372
+01:02:19.890 --> 01:02:42.349
+Viviana Márquez: what do you do? You can collect a lot of data engineer, good features, pick a complex algorithm, etc. But basically, you want to find this sweet spot, and I know I'm a little bit over time. So feel free to drop if you need to. And this is getting recorded so you can watch it later on. But yeah.
+
+373
+01:02:43.218 --> 01:02:46.529
+Viviana Márquez: yeah. So you want to fit this sweet balance.
+
+374
+01:02:46.660 --> 01:02:58.429
+Viviana Márquez: So you're going to use the validation data at the validation data set to approximate that complexity typically using cross validation. So
+
+375
+01:02:58.520 --> 01:03:11.190
+Viviana Márquez: once we study cross validation. We'll see this better. But basically, you want to find that sweet spot where balance is not as low as possible, and variance is not as high as possible.
+
+376
+01:03:11.410 --> 01:03:23.179
+Viviana Márquez: But yeah, variance is not as low as possible, and bias is not as low as possible, but they're both like at their lowest as possible. So you want this optimum point in here?
+
+377
+01:03:24.386 --> 01:03:32.460
+Viviana Márquez: So just summary of what I just said, bias is the error rate of your model on the training set. So basically, you compute
+
+378
+01:03:32.550 --> 01:03:40.619
+Viviana Márquez: the performance metric on the training data set. And if it's bad on the training data set, it means that your model is underfitting
+
+379
+01:03:40.690 --> 01:04:00.350
+Viviana Márquez: variance is the amount of the amount of model will change if a different training data is used. So variance is how much your model is overfeeding the training data. So if your performance metrics and the training data set are super close to 100%, they're very high.
+
+380
+01:04:00.750 --> 01:04:24.039
+Viviana Márquez: You probably are overfitting. So that's the red flag overfitting. So you want to minimize both bias and variance. But when one goes down the other one goes up. So that's what the bias variance trade-off is, and you have that in regression. You have that in classification, and you have that in deep learning, once we get to neural networks.
+
+381
+01:04:24.410 --> 01:04:32.119
+Viviana Márquez: So regression, it looks like this. You want it just right, but you don't want it to be super complicated, because then you are overfitting
+
+382
+01:04:32.150 --> 01:04:40.620
+Viviana Márquez: same for classification. Here. The line is just separating the 2 classes. Not very good of a job where this one is better.
+
+383
+01:04:40.700 --> 01:04:41.870
+Viviana Márquez: but this one is
+
+384
+01:04:41.930 --> 01:04:47.089
+Viviana Márquez: too much overfitting, because, for example, if you have a new observation
+
+385
+01:04:47.460 --> 01:04:55.820
+Viviana Márquez: right here, it will predict it as red, even though it should have been blue. So, too complex is bad, and then for the learning
+
+386
+01:04:55.860 --> 01:04:56.970
+Viviana Márquez: remedies
+
+387
+01:04:57.150 --> 01:04:59.939
+Viviana Márquez: for underfitting, make the model more complex.
+
+388
+01:05:00.050 --> 01:05:10.235
+Viviana Márquez: add more features, train for longer, for over feeding, regularize, get more data. So this is also another slide that I would use for
+
+389
+01:05:10.960 --> 01:05:16.340
+Viviana Márquez: like like a screenshot for studying for an interview question, because
+
+390
+01:05:16.630 --> 01:05:23.200
+Viviana Márquez: this, usually the stuff related to the bias variance trade-off comes up in job interviews.
+
+391
+01:05:25.260 --> 01:05:27.139
+Viviana Márquez: all right. Some memes.
+
+392
+01:05:30.087 --> 01:05:51.000
+Viviana Márquez: So train for longer. That is usually related to deep learning. So in deep learning. You can go through the data in different steps. It's called epochs. So you would have longer epochs. It doesn't really have that much meaning right now in the world of machine learning. But yeah, that's a good question.
+
+393
+01:05:51.559 --> 01:05:59.130
+Viviana Márquez: So when we get to deep learning, just train the model for longer in deep learning, because in deep learning it makes sense.
+
+394
+01:06:00.200 --> 01:06:02.929
+Viviana Márquez: So some models about overfitting.
+
+395
+01:06:03.000 --> 01:06:13.529
+Viviana Márquez: I think my favorite one is this one. Whenever I have a good model, am I? Is it good, or am I overfitting? But I also like this one. How about the Simpsons?
+
+396
+01:06:15.540 --> 01:06:24.759
+Viviana Márquez: all right, cool. So I'm going to skip those slides here, but you have them for your reference. It's about the performance metrics for regression models.
+
+397
+01:06:24.800 --> 01:06:27.099
+Viviana Márquez: There's like some explanation of them.
+
+398
+01:06:27.110 --> 01:06:37.449
+Viviana Márquez: But I have a nice bubble for you guys here, this is going to get uploaded on canvas as well on under the live sessions. Tab. But let me share this in the chat.
+
+399
+01:06:37.460 --> 01:06:43.040
+Viviana Márquez: This is a cheat sheet I created with the different performance metrics for the regression models.
+
+400
+01:06:43.913 --> 01:06:52.169
+Viviana Márquez: So here you have the mean, absolute error mean squared error root, mean square error. Well, all of them. I
+
+401
+01:06:52.240 --> 01:06:58.449
+Viviana Márquez: made it bold, the 2 that if you're unsure which ones you should be using, I would use.
+
+402
+01:06:58.500 --> 01:07:05.859
+Viviana Márquez: and I would use the 2 of them at the same time, because they tell you different things about the model, and I think I have this in one slide here.
+
+403
+01:07:06.050 --> 01:07:09.120
+Viviana Márquez: So the root mean square error
+
+404
+01:07:09.400 --> 01:07:19.099
+Viviana Márquez: measures the magnitude of the error in real units, the same units as the target variable. So, for example, if you're trying to predict price of houses
+
+405
+01:07:19.400 --> 01:07:30.109
+Viviana Márquez: and your root mean, square error is a thousand. That means that on average, your prediction is a thousand dollars off, which is not bad if you're predicting the price of a house.
+
+406
+01:07:30.609 --> 01:07:50.750
+Viviana Márquez: So so this one, you want it to be as low as possible super close to 0. But you know, if it's good or not, depending on the magnitude of the target variable. Yeah, there's no good way to just see the number and see if it's good or not. If you don't have context.
+
+407
+01:07:51.245 --> 01:08:15.010
+Viviana Márquez: on the other hand, you have r squared, which tells us how well the model explains the variability in the data. So we want this to be as close as possible to one. So this one, it's easier, because, no matter the data set, you can just look at it, and you know that the value should be from 0 to one closer to one the better where this one. We just want it to be low. But what is low because it depends on the target variable. If you're trying to predict
+
+408
+01:08:15.660 --> 01:08:17.760
+Viviana Márquez: I don't know someone's age.
+
+409
+01:08:17.930 --> 01:08:37.719
+Viviana Márquez: and your 50 is your root, mean, square error. That's very bad, because that means that you're going to predict someone either 50 years older or 50 years younger. But if your target variable is like price of houses, that's only $50. That's pretty great. If your prediction is only $50 off. It's pretty great. So it depends on the target variable.
+
+410
+01:08:37.870 --> 01:09:07.200
+Viviana Márquez: But yeah, here in the cheat sheet I have some good pebbles for you guys. So the formula, the description, the advantages, the disadvantages, and the most important thing the interpretation. Because this is how you bring value to the to the business, because you can say exactly if you tell someone, my root mean, square error of my model is 31,623. Someone that is not technical, is not going to know what that means. But if you give it an interpretation.
+
+411
+01:09:07.319 --> 01:09:17.839
+Viviana Márquez: oh, yeah, that's on average, how our prediction, the prediction of the model is going to be. You give it an interpretation, it makes it better. And then here, whether you want that number to be low or high.
+
+412
+01:09:18.350 --> 01:09:26.400
+Viviana Márquez: And then in python. So yeah, hopefully, that is helpful. Yes, so r squared
+
+413
+01:09:27.100 --> 01:09:28.569
+Viviana Márquez: can be negative.
+
+414
+01:09:28.750 --> 01:09:47.359
+Viviana Márquez: I don't remember if it's r squared or adjusted. R squared. I think it's r squared. One of these 2 can become negative. If you see a negative number, your model is absolute trash. Anything below 0 point 5 is bad, and the minute you see a negative number it means that your model learned nothing.
+
+415
+01:09:47.359 --> 01:09:58.799
+Viviana Márquez: so I don't remember which one it is because I don't see a negative number. So I'm a very good machine learning engineer. No, I'm kidding. But yeah, the negative number is never, never good.
+
+416
+01:10:00.442 --> 01:10:03.240
+Viviana Márquez: Okay, cool. So
+
+417
+01:10:03.420 --> 01:10:06.240
+Viviana Márquez: we have that about the performance metrics.
+
+418
+01:10:06.320 --> 01:10:11.830
+Viviana Márquez: Here. I have some slides about the feature engineering. The feature engineering is basically.
+
+419
+01:10:11.910 --> 01:10:12.920
+Viviana Márquez: how do
+
+420
+01:10:13.130 --> 01:10:34.859
+Viviana Márquez: make your variables ready for the model, because for the model to understand, because most models only accept numbers. So if you have a categorical variable, you have to change that to numbers. So here's I have some cool slides on the different kinds of encodings that you can do with some examples, so you can look at those on your own time.
+
+421
+01:10:36.140 --> 01:10:45.039
+Viviana Márquez: But let me show you the code before we go. And here I have, like some numerical examples of why you should do feature engineering
+
+422
+01:10:46.020 --> 01:10:48.670
+Viviana Márquez: after the split and not before the split
+
+423
+01:10:49.340 --> 01:10:52.279
+Viviana Márquez: but let's go through the code
+
+424
+01:10:52.480 --> 01:10:54.960
+Viviana Márquez: because I know I'm like super over time.
+
+425
+01:10:55.290 --> 01:10:55.970
+Viviana Márquez: Oh.
+
+426
+01:11:00.220 --> 01:11:05.749
+Viviana Márquez: and let me share this in the chat. This is just an example I created for you guys.
+
+427
+01:11:07.220 --> 01:11:26.989
+Viviana Márquez: So this project is called medical Costs is basically this data set that you're going to use to predict how much is going to be someone's charges, medical charges using their age, their sex, their Bmi, their amount of children, whether they're a smoker or not. And the region.
+
+428
+01:11:26.990 --> 01:11:43.469
+Viviana Márquez: And it's a regression problem. Why? Because we are trying to predict a number. So it is a regression model. So if you're creating a project from scratch, you should always put the objective. So someone reading this project know what it is. Instead of just like
+
+429
+01:11:43.630 --> 01:11:50.420
+Viviana Márquez: looking at the data set and trying to figure out, what is it that you're trying to do? So you should always put the objective. So that's what I did here.
+
+430
+01:11:50.440 --> 01:11:53.410
+Viviana Márquez: So you get your data. I just loaded
+
+431
+01:11:53.760 --> 01:12:11.069
+Viviana Márquez: exploratory data. Analysis is always a good idea. So you have a better understanding of the data that you have. So you make good decisions about the modeling once you come to the modeling. So here I have some. Eda. This is usually guided by your curiosity about the data set itself.
+
+432
+01:12:11.290 --> 01:12:13.920
+Viviana Márquez: So here I have some Eda
+
+433
+01:12:14.350 --> 01:12:16.379
+Viviana Márquez: more, Ada. Anyways.
+
+434
+01:12:17.510 --> 01:12:21.699
+Viviana Márquez: What other Eba would you do after you look at this code in more detail.
+
+435
+01:12:21.720 --> 01:12:23.159
+Viviana Márquez: and then here
+
+436
+01:12:24.584 --> 01:12:28.745
+Viviana Márquez: you should be able to open it.
+
+437
+01:12:29.720 --> 01:12:31.539
+Viviana Márquez: but let me copy this
+
+438
+01:12:31.620 --> 01:12:33.729
+Viviana Márquez: link again in the chat
+
+439
+01:12:38.480 --> 01:12:40.940
+Viviana Márquez: now that Link should work.
+
+440
+01:12:41.300 --> 01:12:45.149
+Viviana Márquez: But if not, it's going to get uploaded on canvas as well.
+
+441
+01:12:45.973 --> 01:12:56.809
+Viviana Márquez: Yeah. So here I put it the warning signs that you need to split your data into training and test before any of the feature, engineering or training happens.
+
+442
+01:12:56.890 --> 01:12:58.040
+Viviana Márquez: So
+
+443
+01:12:58.230 --> 01:13:12.440
+Viviana Márquez: here I pick my target variable my features. I split the data set. You don't have to do anything other than calling this function here. I'm saying, okay, put 20% of the data into the test
+
+444
+01:13:12.500 --> 01:13:15.070
+Viviana Márquez: and 80% onto the train.
+
+445
+01:13:15.490 --> 01:13:26.329
+Viviana Márquez: You don't have to worry about the validation data set for now, because we haven't talked about cross validation, hyperparameter tuning. So for now you just do it this way
+
+446
+01:13:26.960 --> 01:13:29.110
+Viviana Márquez: and here well, I have
+
+447
+01:13:29.130 --> 01:13:32.150
+Viviana Márquez: my test and my train.
+
+448
+01:13:32.400 --> 01:13:34.500
+Viviana Márquez: and here I do feature engineering.
+
+449
+01:13:34.730 --> 01:13:53.370
+Viviana Márquez: So for the categorical variables you have to do feature engineering because the model is not going to understand anything that is not numbers. So you need to transform those categories into numbers, for the numerical features is not mandatory, the model will still understand numbers, the issues that if your numbers have
+
+450
+01:13:53.450 --> 01:14:02.079
+Viviana Márquez: significant different magnitudes, the model might think, and one feature is more important than the other one. So, for example, if you had like.
+
+451
+01:14:02.982 --> 01:14:06.480
+Viviana Márquez: number of rooms of a house
+
+452
+01:14:06.590 --> 01:14:21.120
+Viviana Márquez: and average income of people of that neighborhood. The average income could be something like $80,000, which is like a big number 80,000, and the number of rooms of an apartment is like 1, 2, 3 rooms.
+
+453
+01:14:21.120 --> 01:14:46.829
+Viviana Márquez: so in magnitude that number is much smaller, so the model might accidentally think that the income is much more important. The average income of the people in the neighborhood is much more important because that number in magnitude is bigger, like 80,000 versus 3, which is not the case, like people would care probably more about the number of rooms rather than the average income of the neighbors. So that's why you should normalize the numbers. So they're in the same scale
+
+454
+01:14:47.330 --> 01:14:53.060
+Viviana Márquez: and feature engineering for other stuff, like dates, texts, etc.
+
+455
+01:14:53.130 --> 01:14:55.309
+Viviana Márquez: So here I
+
+456
+01:14:55.550 --> 01:15:02.430
+Viviana Márquez: selected my categorical variables, my numerical variables. I standardized, one hot encoded
+
+457
+01:15:02.600 --> 01:15:07.159
+Viviana Márquez: here, another explanation of fit transform and fit transform.
+
+458
+01:15:07.568 --> 01:15:11.179
+Viviana Márquez: So I saw a question in the chat. So the 1st question was like.
+
+459
+01:15:11.890 --> 01:15:13.850
+Viviana Márquez: which one is
+
+460
+01:15:13.920 --> 01:15:43.359
+Viviana Márquez: more appropriate, just, fit, or fit, and then transform or fit, transform, you can do whichever one. So I had already answered that one and the other question was, can I just do fit without the transform? You could. But at some point you're going to have to do the transform, to be able to work on the data so you can do it on its own. It's only going to learn the parameters. But you need to apply back to the data at some point. But it is allowed
+
+461
+01:15:43.460 --> 01:15:47.370
+Viviana Márquez: like the code is not going to throw you an error if you do just fit.
+
+462
+01:15:48.700 --> 01:15:50.060
+Viviana Márquez: And then
+
+463
+01:15:50.190 --> 01:16:12.820
+Viviana Márquez: here we do our modeling, usually for a project. You would train several models. You wouldn't just train one here. I'm only training the linear regression. You would train several models. But for now I'm only using the linear regression because it's the only one that you've learned. I think, so far. But here is where you would train all the different models to see which one is the best one.
+
+464
+01:16:13.190 --> 01:16:17.420
+Viviana Márquez: Then you evaluate the model. So I got the root. Mean square error.
+
+465
+01:16:17.460 --> 01:16:30.949
+Viviana Márquez: Here. Here I put an example of the interpretation. So this is the root mean square error. So $5,000, 7, $5,700 on average, the predictions are wrong.
+
+466
+01:16:31.802 --> 01:16:34.830
+Viviana Márquez: Is that a good number? Is it a bad number?
+
+467
+01:16:35.200 --> 01:16:40.390
+Viviana Márquez: I would say, it's okay, because if we look at the distribution of our charges, which is our target variable.
+
+468
+01:16:41.080 --> 01:16:56.119
+Viviana Márquez: On average, they're $13,000. So it's not great, because if on average, they're $13,000, and your prediction is almost $6,000 off like that's half of it. So it's not super great. You want this number to be lower.
+
+469
+01:16:56.940 --> 01:17:01.419
+Viviana Márquez: and here you have the coefficient of the termination.
+
+470
+01:17:02.000 --> 01:17:14.579
+Viviana Márquez: which is 0 point 7 8. This is not that bad. It's a 78% of the variability of the data is explained by our model. So this is not too terrible. So usually combination of the 2
+
+471
+01:17:14.953 --> 01:17:19.770
+Viviana Márquez: give you an understanding of how your model is doing. Because if you just use this one.
+
+472
+01:17:19.900 --> 01:17:30.949
+Viviana Márquez: you could have a weird scenario where your model has a really low root, mean, square error, because somehow the errors are canceling each other, but it's not very good at explaining
+
+473
+01:17:31.140 --> 01:17:38.780
+Viviana Márquez: the variability of the data. So any small variations you don't know if the model is capable of capturing them or not.
+
+474
+01:17:39.220 --> 01:17:43.110
+Viviana Márquez: So a mix of the 2 is usually
+
+475
+01:17:43.230 --> 01:17:45.920
+Viviana Márquez: good. You would look at the 2 of these metrics.
+
+476
+01:17:46.644 --> 01:17:57.000
+Viviana Márquez: Then you can see the coefficients of the equation. So remember when I, at the beginning of the class, I was saying, like, Y equals mx plus b, and this is like the slope.
+
+477
+01:17:57.840 --> 01:18:00.479
+Viviana Márquez: And this is the Y intercept.
+
+478
+01:18:01.070 --> 01:18:04.040
+Viviana Márquez: And then basically, this is like the baseline.
+
+479
+01:18:04.080 --> 01:18:08.889
+Viviana Márquez: And this is like how much this variable is impacting my y.
+
+480
+01:18:08.980 --> 01:18:15.050
+Viviana Márquez: well, these are the coefficients. So instead of having this single one, you will have, like y equals
+
+481
+01:18:15.170 --> 01:18:22.630
+Viviana Márquez: beta naught, which in this case would be that y intercept beta one x. So this is my M,
+
+482
+01:18:22.960 --> 01:18:24.610
+Viviana Márquez: but you will have more than 2,
+
+483
+01:18:25.710 --> 01:18:26.780
+Viviana Márquez: and so on
+
+484
+01:18:27.250 --> 01:18:31.739
+Viviana Márquez: the equation. So it's the generalization of the equation of the line, basically.
+
+485
+01:18:31.850 --> 01:18:32.880
+Viviana Márquez: And
+
+486
+01:18:33.680 --> 01:18:42.190
+Viviana Márquez: in theory, you could just interpret these numbers right away. But because we did some feature engineering and we standardized our numerical variables, we have to
+
+487
+01:18:42.420 --> 01:18:53.190
+Viviana Márquez: undo that standardization, to be able to interpret those values. So that's what I did here. You can look at the code later. But here I have the unstandarized coefficients for the numerical variables.
+
+488
+01:18:53.210 --> 01:18:56.260
+Viviana Márquez: And then here I put a bunch of examples on how you can
+
+489
+01:18:57.309 --> 01:18:58.629
+Viviana Márquez: ex like.
+
+490
+01:18:58.740 --> 01:19:21.530
+Viviana Márquez: make an interpretation of these coefficients, which is like the most important part for you as a data scientist. So how do you bring this technical knowledge back to the business? So you can say, for example, as people get older, their medical costs are expected to increase $275 per year. This indicates a strong relationship between age and healthcare expenses, and that number came
+
+491
+01:19:21.800 --> 01:19:26.009
+Viviana Márquez: from here which is the age variable.
+
+492
+01:19:26.050 --> 01:19:46.310
+Viviana Márquez: So here you have the interpretation for all the variables. So you have like an idea on what to do. Some recommendations. So, for example, I would say, even though the model has its limitations, actions like smoking cessation programs, weight control initiatives and preventive care for older adults could still possibly impact medical costs.
+
+493
+01:19:46.510 --> 01:20:10.469
+Viviana Márquez: So I always think, who would your be your audience? And what recommendation would you give based on your model? Because that way your model is not just there collecting dust. But people can actually make business actions informed by the model that you just created. And then here I have some optional code. In case you want to deploy it, you know how to create a website. Then you create this function. And then you just deploy it.
+
+494
+01:20:11.029 --> 01:20:16.479
+Viviana Márquez: But yeah, I know that was a little bit fast, and I know that we're 20 min over time. I wanna
+
+495
+01:20:16.590 --> 01:20:19.569
+Viviana Márquez: take a moment and ask if there's any questions.
+
+496
+01:20:23.532 --> 01:20:41.020
+Viviana Márquez: So is this how we need to do or cap some project? Yes. So, for example, this notebook that I just shared you would need to add a few more things. So one would be. You need to add more models than just one. You wouldn't train just one model. You would train several regression models.
+
+497
+01:20:41.040 --> 01:20:45.739
+Viviana Márquez: You will need to do hyperparameter tuning, which we haven't learned yet.
+
+498
+01:20:46.950 --> 01:21:12.659
+Viviana Márquez: and that's it. Pretty much so. This could be very easily a capstone project. So you already have the skills for just linear regression. But you're going to continue learning all the other models. And but this is pretty much the expectation where you do it from beginning the very beginning, which is to load or data set to the very end, which is to make a business recommendation over here.
+
+499
+01:21:15.470 --> 01:21:40.390
+Viviana Márquez: Yeah, I know. I ran out of time to talk about feature engineering. What I'm going to do is that I'm going to talk to the other lead instructor, not lead instructors learning facilitators that have a session this week so they can cover feature engineering during their session since we ran out of time. But hopefully the slides help as well. The slides are going to get posted on canvas. I put a bunch of examples on feature engineering. So, for example.
+
+500
+01:21:40.390 --> 01:21:48.200
+Viviana Márquez: if you're confused on Ordinal encoder versus one hot encoding here, I have some examples so hopefully, that's helpful.
+
+501
+01:21:50.560 --> 01:22:02.210
+Viviana Márquez: Alright, thank you so much. Everyone. I'm sorry I stole 20 min of your time. But I love seeing you all see you next time, and have a great week and a great weekend.
+
+502
+01:22:02.240 --> 01:22:03.420
+Viviana Márquez: Bye, everyone.
