@@ -1,0 +1,29 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://stickcake-cavebonus:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook codio_assignment6.2.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: a69ae58b-02ac-401e-8670-b506e7415460
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel a69ae58b-02ac-401e-8670-b506e7415460) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment6.2.ipynb
+[NotebookApp | WARNING] Trusting notebook /codio_assignment6.2.ipynb
+[NotebookApp | INFO] Starting buffering for a69ae58b-02ac-401e-8670-b506e7415460:e6118ab699b94b4e83971f444b27d036
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel a69ae58b-02ac-401e-8670-b506e7415460) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment6.2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.2.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.2.ipynb
+[NotebookApp | INFO] Starting buffering for a69ae58b-02ac-401e-8670-b506e7415460:d540897bfa4749ce878a76b43a2d04af
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: a69ae58b-02ac-401e-8670-b506e7415460
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://nobodysponsor-elementengine:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
