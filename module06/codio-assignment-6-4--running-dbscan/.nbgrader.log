@@ -1,0 +1,31 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://brazileurope-shinemagnet:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | WARNING] Notebook codio_assignment6.4.ipynb is not trusted
+[NotebookApp | INFO] 302 GET /notebooks/images/eps2.png (192.168.10.226) 2.85ms
+[NotebookApp | INFO] Kernel started: cab4b02b-4901-40bb-ae28-b02b815e96be
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel cab4b02b-4901-40bb-ae28-b02b815e96be) to 5.3 (client).
+[NotebookApp | WARNING] Notebook codio_assignment6.4.ipynb is not trusted
+[NotebookApp | WARNING] Trusting notebook /codio_assignment6.4.ipynb
+[NotebookApp | INFO] Starting buffering for cab4b02b-4901-40bb-ae28-b02b815e96be:4d3e67bdd5984707912bcea37d1a5b2c
+[NotebookApp | INFO] 302 GET /notebooks/images/eps2.png (192.168.10.226) 1.38ms
+[NotebookApp | INFO] Adapting from protocol version 5.1 (kernel cab4b02b-4901-40bb-ae28-b02b815e96be) to 5.3 (client).
+[NotebookApp | INFO] Saving file at /codio_assignment6.4.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.4.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.4.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.4.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.4.ipynb
+[NotebookApp | INFO] Saving file at /codio_assignment6.4.ipynb
+[NotebookApp | INFO] Starting buffering for cab4b02b-4901-40bb-ae28-b02b815e96be:af0ca39de19e4f40923a406f48fd0dc6
+[NotebookApp | CRITICAL] received signal 15, stopping
+[NotebookApp | INFO] Shutting down 1 kernel
+[NotebookApp | INFO] Kernel shutdown: cab4b02b-4901-40bb-ae28-b02b815e96be
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/codio/workspace
+[NotebookApp | INFO] The Jupyter Notebook is running at:
+[NotebookApp | INFO] http://nobodysponsor-elementengine:3000/
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
