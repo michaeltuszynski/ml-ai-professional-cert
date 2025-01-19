@@ -1,0 +1,1314 @@
+WEBVTT
+
+1
+00:00:05.730 --> 00:00:11.010
+Viviana Márquez: Hi, everyone! Happy New Year! I'm excited to see you all.
+
+2
+00:00:11.496 --> 00:00:17.810
+Viviana Márquez: So let's just give it a couple of minutes, as usual for people to join the call, and then we'll get started
+
+3
+00:00:43.580 --> 00:00:52.549
+Viviana Márquez: for those of you just joining the call. We'll get started in a couple of minutes, giving people the chance to connect to get online.
+
+4
+00:00:52.860 --> 00:00:57.769
+Viviana Márquez: Happy New Year's. Did anybody do anything fun for New Years.
+
+5
+00:01:06.017 --> 00:01:11.179
+Raghavan Srinivasan: Happy New Year, Viviana. Nothing. We were chilling at home. I'm from my.
+
+6
+00:01:12.020 --> 00:01:14.557
+Viviana Márquez: That's important to also rest right?
+
+7
+00:01:14.980 --> 00:01:15.500
+Raghavan Srinivasan: Yeah.
+
+8
+00:02:15.230 --> 00:02:45.140
+Viviana Márquez: All right. So it's been a couple of minutes. So let's get started. Good morning, everyone, for most of you in the Pacific coast, and then for the rest, good afternoon. Good evening. Depending where you are. So let's get started. Let's start the year with some AI. So let's talk about support vector, machines. So just doing a little bit of a recap of what has been happening in the program in case you took
+
+9
+00:02:45.190 --> 00:03:06.380
+Viviana Márquez: vacations too seriously. So we completed already section one, which was just foundations. So just a little bit of a statistics, a little bit of probability introduction to machine learning data analysis. And you had your 1st practical application, and you had a little break that happened in October.
+
+10
+00:03:06.380 --> 00:03:22.860
+Viviana Márquez: Then we started section 2. So we're currently on, let's see. So it's January. So we did. Section 2. So we're currently on Section 2. So section 2 is classical machine learning. So
+
+11
+00:03:23.060 --> 00:03:48.030
+Viviana Márquez: everybody when they think about AI, they think about deep learning. They think about cool neural networks, applications like chat, gpt applications like song generators, etc, etc. So we'll get there on section 3. But we're still on classical machine learning when you're working with just tabular data, just tables. And even though it's just like the older way to do. Machine learning is still very
+
+12
+00:03:48.030 --> 00:04:03.129
+Viviana Márquez: useful. Every company has tabular data that needs to be analyzed and that it needs machine learning and AI on it. So this is still super super valuable. And not only that, but we're building the foundations to be able to understand deep learning. So
+
+13
+00:04:03.480 --> 00:04:31.989
+Viviana Márquez: right before the break we were working with grading descent and optimization. Well, a little bit this week, too, because the week got like split off between the break. Then we were also talking about decision trees, logistic regression, Knn's etc. So basically, we covered linear regression and regression models. And now we're covering classification and classification models. So we covered. Knn.
+
+14
+00:04:32.150 --> 00:04:39.870
+Viviana Márquez: we covered logistic regression decision trees. And now we're going to talk about support vector, machines.
+
+15
+00:04:40.630 --> 00:04:45.269
+Viviana Márquez: So as just as a a quick refresher.
+
+16
+00:04:45.410 --> 00:05:04.020
+Viviana Márquez: what happens when you're creating a machine learning model. The 1st thing is that you have a business problem. And to be able to solve this business problem, you need to acquire domain knowledge. You really need to understand. What is it that you're working with? What are your goals to be able to frame it as a machine learning problem.
+
+17
+00:05:04.020 --> 00:05:33.239
+Viviana Márquez: Once you have defined this project typically in the industry, this is going to be defined for you by your boss. Your boss will tell you what you need to work on, but it's also good to have that skill to think about a problem from a business perspective. Then you're going to have to get data in the industry a lot of times. You're just given data and you have access to a big database. And you can get the data there. But sometimes that's not the case. Sometimes you do have to collect the data yourself, but that's
+
+18
+00:05:33.410 --> 00:05:58.249
+Viviana Márquez: not super usual. Usually you are given the data. But once you're given the data, you need to do some exploratory data analysis to understand your data, what is it that you're working with? Is your data healthy? Are you missing any values? Do you need to do some modifications to this data? Just making sure that the data is in a good situation so you can use it for your machine learning, modeling. And then
+
+19
+00:05:58.660 --> 00:06:12.534
+Viviana Márquez: you determine the machine learning task. And this is very important, because once you determine the machine learning task. Then you know what models to apply. For example, if you're trying to determine whether someone will
+
+20
+00:06:13.010 --> 00:06:26.659
+Viviana Márquez: pay a loan or not, that's a classification problem because your target variable is a categorical variable is either yes or no. So that's a classification task. So given that it's a classification task.
+
+21
+00:06:26.660 --> 00:06:52.050
+Viviana Márquez: You can't apply linear regression. You can't apply some of the other regression models. You have to apply classification models. So just determining that machine learning task will allow you to know which models can you apply? You can't just apply all the models you can apply all the models that belong to that specific machine learning task. So that's where we are right now, right now, we're in the world of classification.
+
+22
+00:06:52.371 --> 00:07:13.879
+Viviana Márquez: So you determine this machine learning task. Typically, this is easy to do in the sense that you just look at your target variable. You look at what you want to predict, and if it's a number, it's a regression. If it's a category, then it's classification. And then you build the candidate models based on this task. So this is basically what I was saying earlier.
+
+23
+00:07:13.880 --> 00:07:36.640
+Viviana Márquez: If you don't have a specific target variable, you just want to see what patterns are in there. You're in clustering. If you do have a label, it's supervised and depending on the nature of that label, whether it's discrete or continuous, then you have either classification or regression. So right now we're in the world of classification.
+
+24
+00:07:36.720 --> 00:07:54.489
+Viviana Márquez: and that allows you to build the candidate models. So these are some of the classification models. So you have logistic regression, decision trees, random forests support vector machines, naive base kn neural networks, gbm, adaboost, etc. So
+
+25
+00:07:54.800 --> 00:08:21.649
+Viviana Márquez: even if there's new models that haven't been created and they will be created later on, you can just apply them if they're suited for a classification task. But you already know the world of tools that you need to use. So today, we're going to focus on super vector machines. But if you have a classification task, you can apply any of those. And then, once you have applied these models in every machine learning model, you should try all the models
+
+26
+00:08:21.650 --> 00:08:40.509
+Viviana Márquez: in every machine learning project. You should try several models that are according to the task. And then you select the best model for your specific data based on the performance metrics most of the time. Spoilers alerts most of the time. It's either going to be a random forest or a gradient boosting machine.
+
+27
+00:08:40.510 --> 00:08:53.569
+Viviana Márquez: which we're going to learn sooner than later, actually. But you should always try several of them and see which one is the best one for your data. It's very hard to know, far in advance
+
+28
+00:08:53.570 --> 00:09:16.500
+Viviana Márquez: which one is going to be the best model, unless you specifically know the shape of your data, and you know the math behind the models very well. Maybe you could have an intuition on which model is the best, but the practice is just to the best. Practice is just to try several classification models. If it's a classification task and then pick the best one given on the performance. Metrics.
+
+29
+00:09:16.931 --> 00:09:29.219
+Viviana Márquez: Okay, cool. So that was just just getting back to business. I know that the break was a little bit long. So maybe some things were being forgotten. But now now we're here. So
+
+30
+00:09:29.470 --> 00:09:41.479
+Viviana Márquez: before I start talking about super vector, machines, typically, you use it in classification. However, if you go on cyclearn. So let's do cyclearn
+
+31
+00:09:41.630 --> 00:09:45.180
+Viviana Márquez: support vector machine.
+
+32
+00:09:46.340 --> 00:10:08.210
+Viviana Márquez: you'll notice that there's a support vector classifier and a support vector regression. So there is an adaptation of the model such that you can use the support vector model for regression. So you would just import Svm, I mean, from second, learn Svm import, Svr, and then it works like a regression model. But
+
+33
+00:10:08.540 --> 00:10:17.889
+Viviana Márquez: it's usually not used for regression. So people typically focus on just the classifier. So this is the one that you're going to be using from cycle learn? And then to import.
+
+34
+00:10:18.870 --> 00:10:19.480
+Viviana Márquez: Just
+
+35
+00:10:19.940 --> 00:10:44.459
+Viviana Márquez: here. Yeah, where is it? Just here? So just from cycle. Learn that. Svm import. Svc, so if you're doing a classification task and you want to apply support vector, machine, make sure that you're using this one Svc, not the Svr. Because the Svr is the regression, so that I don't know if it will give you a result. Maybe it would. But if it's a classification task.
+
+36
+00:10:44.460 --> 00:10:55.040
+Viviana Márquez: And you're using the regressor that doesn't really make sense. So even if it gives you a result, it might not be the best one. So yeah, so let's focus on the classification aspect of it.
+
+37
+00:10:55.330 --> 00:11:12.930
+Viviana Márquez: Now, here's where the fun comes, and I'll ask the public and the public being, you guys a question. So how would you separate this one dimensional data into 2 classes? All ideas are valid. So let's hear it.
+
+38
+00:11:17.550 --> 00:11:27.230
+Viviana Márquez: So in case these colors are not color blind, friendly. There are green classes over here, and then orange
+
+39
+00:11:27.380 --> 00:11:40.279
+Viviana Márquez: so green points and orange points here. Each point represents a data point in your data set. So if you needed to classify these 2 classes between and separate them, what would you do? How would you separate them.
+
+40
+00:12:04.000 --> 00:12:05.940
+Raghavan Srinivasan: Based on the color right.
+
+41
+00:12:06.430 --> 00:12:10.199
+Viviana Márquez: Based on the color. But what would you do to the image
+
+42
+00:12:10.510 --> 00:12:12.829
+Viviana Márquez: like? How would you separate it.
+
+43
+00:12:13.820 --> 00:12:19.289
+shashi: Put a line in between the last green and 1st orange.
+
+44
+00:12:19.730 --> 00:12:23.369
+Viviana Márquez: Yeah. So a line is a good idea. So let me pick a line that is a different color.
+
+45
+00:12:23.730 --> 00:12:26.080
+Viviana Márquez: So let me do a line here.
+
+46
+00:12:27.050 --> 00:12:29.570
+Viviana Márquez: Does anyone have another idea?
+
+47
+00:12:38.720 --> 00:12:43.340
+Viviana Márquez: I think I heard 2 people saying lines. So I'm gonna draw another line
+
+48
+00:12:44.400 --> 00:12:46.580
+Viviana Márquez: that also separates the data right?
+
+49
+00:12:57.120 --> 00:12:58.010
+Viviana Márquez: So I know.
+
+50
+00:12:58.010 --> 00:13:01.289
+Raghavan Srinivasan: Try to flip, flip the data.
+
+51
+00:13:03.206 --> 00:13:04.720
+Viviana Márquez: Like Berkeley.
+
+52
+00:13:05.550 --> 00:13:06.250
+Raghavan Srinivasan: Yeah.
+
+53
+00:13:06.730 --> 00:13:07.890
+Viviana Márquez: That could work.
+
+54
+00:13:08.624 --> 00:13:23.879
+Viviana Márquez: That's using more steps so it could work. It will work. Not only it could work, it would definitely work, but it would be just like an additional step. But yes, let's say you could flip the data and then make a horizontal line as well.
+
+55
+00:13:24.320 --> 00:13:35.220
+Viviana Márquez: Sometimes when I ask this question, people say, Well, what about? Instead of a line, a curve? You could use a curve. You could say I'm going to do something crazy, something like
+
+56
+00:13:35.590 --> 00:13:38.920
+Viviana Márquez: like this that would also separate the data.
+
+57
+00:13:39.160 --> 00:13:49.629
+Viviana Márquez: All of those ideas are good, but it's a little bit of an overkill. There's actually an easier way. So it was a tricky question. So thank you for participating the easier way to separate this data.
+
+58
+00:13:49.990 --> 00:14:13.319
+Viviana Márquez: It's a 1 dimensional data. It's always going to be one dimensional data. So all the data is going to be a line. So you could just put a point here, and then you could say anything to the right of this point is orange, and anything to the left of this point is green. So you don't really need to use a line you could use just a point. So it was a little bit of a tricky question. Now, an easy question. The following one is.
+
+59
+00:14:14.733 --> 00:14:20.069
+Viviana Márquez: how would you separate these two-dimensional data into 2 classes?
+
+60
+00:14:27.340 --> 00:14:28.620
+Viviana Márquez: And you guys already said it.
+
+61
+00:14:28.620 --> 00:14:29.420
+shashi: The line. Yeah.
+
+62
+00:14:29.420 --> 00:14:30.170
+Raghavan Srinivasan: Yes, good. To hear.
+
+63
+00:14:30.170 --> 00:14:33.170
+Raghavan Srinivasan: Line would be a better idea. Yeah.
+
+64
+00:14:33.170 --> 00:14:40.069
+Viviana Márquez: Yeah, exactly. So here you do need the line. Because if you do a point, what what do you say like to the
+
+65
+00:14:40.490 --> 00:15:04.379
+Viviana Márquez: up of this point and to the below this point is, it just becomes harder. So in this case, since your data is 2 dimensional, you do need the line and the line we'll talk about which line, but for for now, just the line, the line, you could also expand that concept to a curve. It could be a curve that also works.
+
+66
+00:15:04.580 --> 00:15:16.210
+Viviana Márquez: it could be. Let me do a crazy curve if I do this, this also separates the data so something that resembles a line also works. So a line.
+
+67
+00:15:16.760 --> 00:15:33.229
+Viviana Márquez: And then how do you scale this up? Because, for example, in most data sets, you don't have just 2 columns. So, for example, here could be height of people and then weight of people. And then here you have people
+
+68
+00:15:33.270 --> 00:15:58.099
+Viviana Márquez: that likes Ferraris, and then here you have people that like Lamborghinis. I don't know. I'm making something up, but a lot of times you have more than 2 features. You don't have just 2 features. So your data is not going to be 2. Dimensional is going to be multi-dimensional, and it's going to be in higher dimensions. So how does this scale, the more features you have. So
+
+69
+00:15:58.150 --> 00:16:01.549
+Viviana Márquez: for one dimension a point was more than enough
+
+70
+00:16:02.110 --> 00:16:18.330
+Viviana Márquez: for 2 dimensions, a line or a curve works. You could have also the same way. For one dimension a line would have worked for 2 dimensions. You could do a hyperplane, and that will work a plane, and that will work. But that's an overkill. You just need a line
+
+71
+00:16:18.570 --> 00:16:37.299
+Viviana Márquez: for 3 dimensions which I don't have a visualization of it, but you can think of it as like a room. Imagine that in the room where you are you have a bunch of balls in across the room. You would need a line wouldn't be enough. You would need a plane kind of like a wall to separate the 2 classes.
+
+72
+00:16:37.350 --> 00:16:52.699
+Viviana Márquez: And then, after 3 dimensions, which happens quite often a lot of times. You have more than 3 features in your data set that you're using to predict your variable, your target variable. What do you do? So in higher dimensions, what do you do?
+
+73
+00:16:52.840 --> 00:17:03.070
+Viviana Márquez: You do? A hyperplane? So it's hard to visualize. Because us as humans, we're limited to the 3 dimensions we can't really visualize beyond 3 dimensions.
+
+74
+00:17:03.070 --> 00:17:26.579
+Viviana Márquez: but the math stands so the intuition behind it. You can think of it. Okay, I'm just plotting a line between the points, but in reality in practice. In every day. Since you're working with more than 2 features, you're probably working with 5, 1020 features. What it's happening is a hyperplane. So that's that's how we're separating that data. There, that's just
+
+75
+00:17:26.579 --> 00:17:30.870
+Viviana Márquez: so you have an intuition of what's the support vector machine doing?
+
+76
+00:17:31.240 --> 00:17:41.380
+Viviana Márquez: So now, the next question is, okay, how do we find that line that will separate or classes or 2 classes?
+
+77
+00:17:41.940 --> 00:17:43.500
+Viviana Márquez: Is there a question?
+
+78
+00:17:47.710 --> 00:17:48.300
+Viviana Márquez: Sorry.
+
+79
+00:17:52.390 --> 00:18:01.570
+Raghavan Srinivasan: The key is that we need to have a visualization of data in order for us to better judge which way to go is that right?
+
+80
+00:18:02.398 --> 00:18:10.340
+Viviana Márquez: So no, actually, that's the beauty of machine learning. And Psyche, learn in Python. This is all you need to do.
+
+81
+00:18:10.600 --> 00:18:31.619
+Viviana Márquez: So when you go to python. You just need to do cycle. Learn import my super vector. Machine and that fit. You don't need the visualization at any moment. But this is just so you know what's happening behind doors. So maybe this is the difference between you guys and someone that is just taking a boot camp that is like a 2 day boot camp.
+
+82
+00:18:31.620 --> 00:18:51.599
+Viviana Márquez: They will learn how to do this in python, but they don't have the intuition behind it. So they're like, oh, yeah, the support vector machine works. But why? They don't know. But you guys will know, why is the support vector machine working? And what is doing behind doors. So behind doors, when you're doing that fit, this, that fit on your training data set
+
+83
+00:18:51.600 --> 00:19:03.809
+Viviana Márquez: is just finding that optimal line to separate your 2 classes and a lot of times. It's not even a line. It's just the hyperplane, because you have a lot of features. But that was a good question.
+
+84
+00:19:08.085 --> 00:19:09.555
+Viviana Márquez: So what?
+
+85
+00:19:10.420 --> 00:19:17.290
+Viviana Márquez: As I was saying earlier, you need a line to separate the 2 classes right? So I'm gonna plot the line here.
+
+86
+00:19:17.530 --> 00:19:23.240
+Viviana Márquez: Pretend that's a straight line it doesn't. Yeah. Well, anyway. So
+
+87
+00:19:23.390 --> 00:19:30.679
+Viviana Márquez: we can use this line to separate the 2 classes. And this is our decision boundary line.
+
+88
+00:19:30.800 --> 00:19:33.300
+Viviana Márquez: But now we have an issue, because
+
+89
+00:19:33.400 --> 00:19:40.580
+Viviana Márquez: how do we know which line is the best line? There's an infinite amount of lines that you can plot here, so you could do this.
+
+90
+00:19:41.530 --> 00:19:44.029
+Viviana Márquez: That's 1 option.
+
+91
+00:19:44.270 --> 00:19:46.179
+Viviana Márquez: You could do this.
+
+92
+00:19:46.860 --> 00:20:14.190
+Viviana Márquez: You could do this, you get the point so you could have millions of lines. How do you pick the best one? So, for example, here, if I give you these 3 options, how do you know which one is the best line? Maybe out of intuition. You would say that the middle one. But we're doing data science, we don't operate based on an intuition. We operate based on math. How do you pick the best line? So to pick the best line?
+
+93
+00:20:14.615 --> 00:20:30.680
+Viviana Márquez: What you'll do is that you'll plot the line, the potential candidate. And but when I say you'll plot the line. I mean cyclearn will do this behind doors for you, but you won't have to do this. But what is happening is that cycle learn is okay plotting the line.
+
+94
+00:20:30.810 --> 00:20:39.680
+Viviana Márquez: and then it's expanding the line like creating a margin. So, for example, if let's say, this is my candidate line. So it expands the margin
+
+95
+00:20:39.810 --> 00:20:49.980
+Viviana Márquez: and how far it expands the margin this way until it finds a data point so it can't go beyond the data point. So in this case.
+
+96
+00:20:50.200 --> 00:20:59.380
+Viviana Márquez: the point that stopped this margin was this one. So that's why the margin for this line goes up to there. And same way, if you go this way.
+
+97
+00:20:59.890 --> 00:21:07.719
+Viviana Márquez: It stopped here. The margin and the data point that caused the margin to stop was this one. So these 2
+
+98
+00:21:08.280 --> 00:21:27.710
+Viviana Márquez: and same thing again. So let's say, okay, this is my candidate line. So if this is my candidate line, I expand the margin, start expanding the margin, and then it stopped here because this data point made it stop. It was the 1st one that it reached, and then this way, it expands, it expands, it expands.
+
+99
+00:21:27.830 --> 00:21:42.419
+Viviana Márquez: And then this is how much it was able to expand because it hit this data point. So these data points, actually, the ones that are making the margin stop are called the support vectors. Why? Because.
+
+100
+00:21:42.781 --> 00:21:59.749
+Viviana Márquez: a vector is another way to refer to your data point, a data point is a vector so it's just synonymous. This model could also be called data point support data point machine. But it's called support vector machine. So the data point is called a vector
+
+101
+00:21:59.780 --> 00:22:10.349
+Viviana Márquez: and they're the support vectors because they support this margin. They are the ones making creating this margin.
+
+102
+00:22:10.460 --> 00:22:25.429
+Viviana Márquez: And then machine, just because it sounds cool. So support vector machine. So these are the vectors that support that margin. So based on this, which one is the best line. So the best line in this, in this case.
+
+103
+00:22:25.710 --> 00:22:46.949
+Viviana Márquez: is the line that creates the maximum margin. So out of the infinite amount of lines that were here in this case, if we're only looking at these 3 lines, the most optimal one is this one is this is the one that we will pick because it has the biggest margin.
+
+104
+00:22:47.190 --> 00:22:51.510
+Viviana Márquez: So so this is the one that we would select.
+
+105
+00:22:52.020 --> 00:23:01.379
+Viviana Márquez: and that margin is called that line. If I generalize the word that hyperplane
+
+106
+00:23:01.390 --> 00:23:26.639
+Viviana Márquez: that creates the maximum margin is called the optimal hyperplane. So you want to find that optimal hyperplane. And when I say you want to find I mean, cyclearn will find that for you. You won't have to do this math by hand, but that's what's happening. And then how are you finding this line? I don't know if you guys remember an image I show you, let's see if I can find it here.
+
+107
+00:23:29.200 --> 00:23:33.359
+Viviana Márquez: Let's see in regression to
+
+108
+00:23:34.380 --> 00:23:37.640
+Viviana Márquez: sides of the same point. Let's see.
+
+109
+00:23:42.210 --> 00:23:46.199
+Viviana Márquez: Well, yeah, this this will do it. Let me show you this.
+
+110
+00:23:46.490 --> 00:23:59.489
+Zhujun Wang: I have a question. So so if, like these 2 dimension dot has overlapping, then how do you get a Max margins like
+
+111
+00:24:02.370 --> 00:24:06.259
+Viviana Márquez: If you mean if the data is more complicated.
+
+112
+00:24:06.670 --> 00:24:28.989
+Zhujun Wang: More like green dot and the black dot overlapping. There is some overlapping together, and then, because, as you mentioned, you try to find a Max margin between these 2 colors data. But if there is a overlapping, and how
+
+113
+00:24:29.320 --> 00:24:32.190
+Zhujun Wang: were as Vm work? And how does.
+
+114
+00:24:32.190 --> 00:24:35.389
+Viviana Márquez: So. So, for example, something like this, like, if you had.
+
+115
+00:24:35.710 --> 00:24:43.260
+Zhujun Wang: Something like this. And also also you have black.in the green dot area as well.
+
+116
+00:24:43.260 --> 00:24:45.349
+Viviana Márquez: I don't have a black market, but pretend this.
+
+117
+00:24:45.350 --> 00:24:47.020
+Zhujun Wang: Protect right? Something like.
+
+118
+00:24:47.020 --> 00:25:16.079
+Viviana Márquez: Yeah, right? Yeah, exactly. So that's a great question. We'll talk about it soon. So that's called hard margin versus soft margin. And that's a really really good question. And that's how data scientists need to be thinking, because in the real world you're not going to have 2 classes perfectly separated. That almost never happens there. They're mixed like like the example you just described, so you can't use a hard margin. You have to use something that is called a soft margin, so we'll talk about it in in a few minutes. But.
+
+119
+00:25:16.080 --> 00:25:16.550
+Zhujun Wang: Gotcha.
+
+120
+00:25:16.550 --> 00:25:20.959
+Viviana Márquez: That was a really good question. That's exactly what the data scientist needs to be thinking.
+
+121
+00:25:21.810 --> 00:25:23.120
+Zhujun Wang: Cool thanks.
+
+122
+00:25:23.120 --> 00:25:42.080
+Viviana Márquez: Yeah, of course. So what I was going to say is that so? Okay, we talk about finding this line. And how do we find this line. The process is very similar to regression. And there's a saying in machine learning that basically, I think this image is better.
+
+123
+00:25:42.640 --> 00:26:08.410
+Viviana Márquez: Classification and regression are 2 sides of the same coin, because you're always trying to find the best line, except that for regression you would use the line itself to explain the data and and get the numbers. And in classification, you're just using it to separate the data. But you're finding that best fit line in both classification and regression.
+
+124
+00:26:08.830 --> 00:26:24.040
+Viviana Márquez: So, okay, so we talked about, we need to find this maximum margin and the optimal hyperplane. So you want, notice that these points are exactly the same in the 2 images, but this one creates a better separation
+
+125
+00:26:24.260 --> 00:26:51.760
+Viviana Márquez: than this plane, this, this line creates a better separation than this line. So you want the one with the larger margin. And the way the support vector machine finds that best line is with a mechanism that is called the kernel. So the kernel essentially calculates the distance between 2 observations, and with this the model finds an optimal decision boundary that separates the classes.
+
+126
+00:26:52.180 --> 00:26:58.549
+Viviana Márquez: So one thing to keep in mind is that for support vector machines, you can pick different kernels
+
+127
+00:26:58.660 --> 00:27:17.439
+Viviana Márquez: and the best kernel, the normal kernel. The one that comes by default is a linear kernel, and the disadvantage of the linear kernel is that the result is going to be very similar to logistic regression. So if you don't do any hyperparameter tuning to support vector machine.
+
+128
+00:27:17.440 --> 00:27:34.679
+Viviana Márquez: And you train a support vector machine and you train a logistic regression, you're going to get approximately the same result. So typically the advantage of the support vector machine is that you can use it on nonlinear data if you have linear data, so data that is easily separable with a line
+
+129
+00:27:34.970 --> 00:27:46.440
+Viviana Márquez: might as well just use a logistic regression. But if you have data that is a little bit more complex, the logistic regression will fail. But then you can use a super vector machine with a different kernel.
+
+130
+00:27:47.304 --> 00:27:54.139
+Viviana Márquez: So some core ideas, so far is one is that we have the hyperplane.
+
+131
+00:27:54.250 --> 00:28:15.980
+Viviana Márquez: which I keep saying a line because it's easier to visualize it like this in 2 dimensions. But what you're actually finding is a hyperplane, because you're going to be working with multiple features, not just 2 features. And your goal is to find this optimal hyperplane. What is the optimal hyperplane? The one that creates the maximum margin.
+
+132
+00:28:15.980 --> 00:28:28.469
+Viviana Márquez: And then the support. Vectors are just the data points that are the closest to the hyperplane, basically the ones that influence the hyperplane. So in this case, we have actually 3 support vectors. So in this case.
+
+133
+00:28:28.480 --> 00:28:33.290
+Viviana Márquez: this is a super vector, this is a super. Vector and this is super vector
+
+134
+00:28:33.670 --> 00:28:48.619
+Viviana Márquez: and vector is just another word to refer to data points. They're the same. You could say, this is the model for support data points machine. But it's called support vector machine, but is the the same. So these are the key concepts.
+
+135
+00:28:48.920 --> 00:28:49.710
+Viviana Márquez: And
+
+136
+00:28:50.580 --> 00:28:59.750
+Viviana Márquez: now, we were talking about the kernel. So the kernel. Is that, what allows you to find that best line of separation?
+
+137
+00:28:59.760 --> 00:29:23.019
+Viviana Márquez: The issue is that data most of the time is not linear. And if it was linear. You could use just logistic regression. So the advantage the support vector machine gives you over logistic regression is that you can apply it on more complex data that is not linearly separable. And how is that done? Is with something called the kernel trick.
+
+138
+00:29:23.020 --> 00:29:37.099
+Viviana Márquez: So the kernel trick basically is a math operation that happens behind doors. You could read more about the math about it if you wanted to. But basically, what is happening is that it transforms the input data
+
+139
+00:29:37.190 --> 00:29:41.689
+Viviana Márquez: into a higher dimensional space. So let's imagine this is your input, data.
+
+140
+00:29:42.250 --> 00:29:55.569
+Viviana Márquez: and you got some data set with 2 variables, you have X and Y, and you plot your data. And you have something like this. This is not linearly separable. How come that? It's not linearly separable
+
+141
+00:29:55.760 --> 00:30:09.079
+Viviana Márquez: plot the line that will separate these 2 classes. It will be very difficult, right? Like. I don't know if I plot the line like this. It doesn't separate blue from red. If I plot the line
+
+142
+00:30:09.280 --> 00:30:22.909
+Viviana Márquez: all the way in the middle, it also doesn't separate them. If I plot it like this, it doesn't separate it. So, for the logistic regression. This is going to be impossible to do. I mean, not impossible. But it's going to get really bad results
+
+143
+00:30:23.090 --> 00:30:43.500
+Viviana Márquez: for the support vector machine, using it as it comes from cycle. Learn it uses the linear kernel. It will also not get it right. But the beautiful thing is that you can switch the kernel and the kernel. What it does is that it sends all the data. So all the blue data, the original data is send it to a higher dimension
+
+144
+00:30:43.640 --> 00:31:00.460
+Viviana Márquez: and using a mathematical function, it sent this data to A to a higher dimension, and then it sent this red one to a higher dimension. And then in this higher dimension, it's linearly separable. Because then now you can just make this hyperplane over here.
+
+145
+00:31:00.680 --> 00:31:17.310
+Viviana Márquez: this hyperplane that you're seeing here, and then you can separate the data. So so that's the kernel trick. It's just sending the data from a space where it's not linearly separable to a space, a higher dimensional space where you can linearly separate it in.
+
+146
+00:31:17.480 --> 00:31:23.658
+Viviana Márquez: So some of the common some of the common kernels, for for this
+
+147
+00:31:24.280 --> 00:31:33.139
+Viviana Márquez: is the polynomial kernel. You have the Rbf kernel, the sigmoid kernel. So you have different kernels to choose from.
+
+148
+00:31:34.870 --> 00:31:57.019
+Viviana Márquez: so yeah, that's basically what I did. And also something sweet about the support vector machine is that actually sending all these data points to a higher dimension will be very computationally expensive. But that's what the kernel trick is, it has some optimizations that will help you do this
+
+149
+00:31:57.020 --> 00:32:08.180
+Viviana Márquez: in the same space. So basically, it's not computationally expensive. In other words, it won't take as long as it should take on your computer. So it does it faster.
+
+150
+00:32:08.819 --> 00:32:23.210
+Viviana Márquez: So that's why it's useful. Because while an algorithm like logistic regression will fail in this example. It would succeed in this example if you use a different kernel.
+
+151
+00:32:24.345 --> 00:32:30.559
+Viviana Márquez: So what do you do with the kernel? So the kernel basically is using a math function.
+
+152
+00:32:31.182 --> 00:32:43.019
+Viviana Márquez: The linear one is just basically computing the dot product. So it's not doing anything too fancy. But the other kernels are using these different functions. Which
+
+153
+00:32:43.870 --> 00:32:50.889
+Viviana Márquez: here you have them for your reference. But they don't really matter, because from a coding perspective, let me show you
+
+154
+00:32:51.320 --> 00:32:58.995
+Viviana Márquez: from a coding perspective. Let's see, Cardinal, let's see, Colonel.
+
+155
+00:33:02.330 --> 00:33:05.507
+Viviana Márquez: Oh, wow! There's so many kernel words in here.
+
+156
+00:33:05.980 --> 00:33:13.500
+Viviana Márquez: It's 1 of the hyper parameters here. Here it is. So the kernel for you. When you're going to code it.
+
+157
+00:33:13.610 --> 00:33:24.019
+Viviana Márquez: You have these options, linear Poly, Rbf, sigmoid and pre-computed. So you can just here do hyperparameter tuning. When you
+
+158
+00:33:24.850 --> 00:33:43.290
+Viviana Márquez: load your model, you would specify which kind of kernel or you could treat it as a hyper parameter. So here you have the equations, but in practice, in everyday practice at work, you won't have to compute this math. But just in case you're curious where? Where this is coming from?
+
+159
+00:33:44.141 --> 00:33:46.988
+Viviana Márquez: So you have your
+
+160
+00:33:48.090 --> 00:33:50.410
+Viviana Márquez: Well, these are the the steps.
+
+161
+00:33:50.830 --> 00:33:59.650
+Viviana Márquez: And here this is what I was saying. So here you decide which kernel you want to use now, you might be wondering. Well.
+
+162
+00:33:59.780 --> 00:34:21.259
+Viviana Márquez: how do I know which kernel to use? So if you had something like this like the image I was showing you before. How do you know? Well, if you plotted, you have several issues. The 1st issue is that most of the time. You're not going to have 2 dimensional data. You're going to have high dimensional data so you can't plot the data for starters. But let's say you could plot the data.
+
+163
+00:34:21.260 --> 00:34:43.680
+Viviana Márquez: and if it was something beautiful like this, you could know right away, that is, Rbf, whenever you have this circle structures, the Rbf. Is the best one, the best kernel, but a lot of times it's not going to be so easy to just look at the plot and determine what it is. So in practice, how do you do it? You do it with hyperparameter tuning. So you would train a support vector, machine
+
+164
+00:34:43.850 --> 00:34:50.410
+Viviana Márquez: and hyper parameter tune the kernel. So you will try different kernels.
+
+165
+00:34:52.699 --> 00:35:05.389
+Viviana Márquez: some other hyper parameters. Since I'm talking about hyperparameters in about the support vector machine hyperparameters. So here we have the kernel, we have C, and we have gamma. So what is C, and what is gamma?
+
+166
+00:35:06.247 --> 00:35:10.009
+Viviana Márquez: So C determines the trade-off between achieving
+
+167
+00:35:10.220 --> 00:35:25.500
+Viviana Márquez: low error on the training data and maximizing the margin between the classes. So this is to answer the previous question about what if we have those classes that are not beautifully separated, but they're a little bit more mixed.
+
+168
+00:35:26.170 --> 00:35:37.430
+Viviana Márquez: So C controls the cost of that misclassification. So so how hard do you want to make that margin. So a higher value of c
+
+169
+00:35:37.480 --> 00:35:42.610
+Viviana Márquez: prioritizes minimizing the misclassification of the training examples.
+
+170
+00:35:42.620 --> 00:36:08.999
+Viviana Márquez: So the decision boundary is more complex. And one of the issues is that it can overfit the data if it's too high. So you got to do some hyperparameter tuning to find a sweet spot. On the other hand, if it's too low, it prioritizes maximizing the margin. So what it will do is that it will tolerate some misclassification.
+
+171
+00:36:10.700 --> 00:36:22.249
+Viviana Márquez: especially if it helps in achieving a simpler decision boundary, but it can lead to underfitting. So let me let me say this with a plot. So if you had your plot here.
+
+172
+00:36:22.560 --> 00:36:26.650
+Viviana Márquez: and like in our previous example, we had some
+
+173
+00:36:27.870 --> 00:36:32.790
+Viviana Márquez: orange points here, and then we had some green points here.
+
+174
+00:36:35.680 --> 00:36:40.340
+Viviana Márquez: and then the excellent question that we got was like, what if our data is not
+
+175
+00:36:40.630 --> 00:36:48.269
+Viviana Márquez: like this if our data is a little bit more messy? So, for example, here we have an orange dot. And here, let's say we have
+
+176
+00:36:48.870 --> 00:36:50.740
+Viviana Márquez: a green dot.
+
+177
+00:36:50.960 --> 00:36:53.489
+Viviana Márquez: So with a low value of C.
+
+178
+00:36:54.070 --> 00:37:03.309
+Viviana Márquez: What it will do is that it's going to prioritize, maximizing the margin. So, for example, if you plot the margin, let's say this is the line
+
+179
+00:37:03.730 --> 00:37:10.529
+Viviana Márquez: the margin is going to go instead of going all the way up to here since we have this point here
+
+180
+00:37:10.670 --> 00:37:16.460
+Viviana Márquez: is gonna go all the way up to here because we have this point here, so you'll have
+
+181
+00:37:16.840 --> 00:37:46.300
+Viviana Márquez: a huge margin, and same same way the other way around, so low C can lead to underfitting if it's too low. So you have to find the sweet spot where, for example, in that case that I have just drawn. Maybe it's better to just ignore that the class is not super pure, and you can just sacrifice it so you would need a higher C, not a low C, so, in other words, the C controls how hard your margin is!
+
+182
+00:37:46.790 --> 00:37:53.809
+Viviana Márquez: In other words, how tolerant are you of misclassification? So so you can play around with that. See?
+
+183
+00:37:54.792 --> 00:38:13.349
+Viviana Márquez: Then you have for some of them some of the kernels, not all of them. So, for example, linear kernel doesn't have gamma, but the Rbf. Poly and sigmoid do have gamma. So Gamma defines how far the influence of a single training example reaches
+
+184
+00:38:13.825 --> 00:38:30.100
+Viviana Márquez: to determine the shape of the decision boundary. So a little bit similar, but basically in intuitive terms, the the gamma. What is determining is the shape of the decision boundary. So how curved
+
+185
+00:38:30.250 --> 00:38:33.720
+Viviana Márquez: it is! So, how wiggly it is!
+
+186
+00:38:35.640 --> 00:38:39.830
+Viviana Márquez: And going back to your question the question that we got earlier
+
+187
+00:38:40.390 --> 00:39:01.359
+Viviana Márquez: here. I'm like talking about the details. So you know what support vector machine is doing behind doors when you load it, but in practice you never really have to visualize this. In fact, it will be very difficult, because you will have so many features that it will be impossible to visualize all of them. But this is just so. When you're doing hyperparameter tuning.
+
+188
+00:39:01.360 --> 00:39:10.989
+Viviana Márquez: you don't have like this unknown gamma that is doing something. Now you know what this gamma is doing, and in the hyper in the encode. This is how Gamma
+
+189
+00:39:10.990 --> 00:39:17.249
+Viviana Márquez: looks like, so it won't be the Greek letter you just say, Gamma here?
+
+190
+00:39:20.280 --> 00:39:49.260
+Viviana Márquez: And yeah, here's the idea about the hard margin and the soft margin. But this is controlled by the hyper parameter. C, so if your classes are not perfectly separated, you need to play around with the hyper parameter C to find a sweet spot where maybe you're allowing a little bit of misclassification. Just so. Your model is not underfitting, but you also don't want to.
+
+191
+00:39:49.680 --> 00:39:59.090
+Viviana Márquez: No, to prevent overfeeding, but you don't want to like make the margin so soft and that you're underfitting. So you've got to find that sweet spot
+
+192
+00:40:01.080 --> 00:40:10.880
+Viviana Márquez: so pros and cons of super vector machines, it can model nonlinear relationships. So from that perspective, it's better than a logistic regression.
+
+193
+00:40:11.090 --> 00:40:28.329
+Viviana Márquez: There are many kernels to choose from, so you can try different ones and see which of those kernels happens to be the one that models your data better is good at avoiding overfeeding because you have these different hyper parameters that you can play with
+
+194
+00:40:28.845 --> 00:40:50.109
+Viviana Márquez: this advantage, even though it has the kernel trick that is supposed to make this process not so computationally expensive. It is still computationally expensive, so it could have been worse. But it's not great. So it's intense with memory usage. It's difficult to fine tune from the perspective that
+
+195
+00:40:50.350 --> 00:41:18.130
+Viviana Márquez: you can't just look at the data. And you see, like, your data is just a table. And so you can't just look at the table and be like this is definitely a polynomial kernel. You will never know that unless you're some kind of genius that sees beyond the 5 dimensions. But in general it's very difficult to fine tune and choose the kernel like you won't know this beforehand, but that's why you would do hyperparameter tuning.
+
+196
+00:41:18.140 --> 00:41:45.510
+Viviana Márquez: and it doesn't do well with large data sets. So you have many, many, many data points, since it's computing those distances to find the best line or the best hyperplane not great. But if you have a data set that is not too big, like 100 rows to maybe like 5,000 rows. Super vector machine could be good. But if you have more than several thousands of rows, maybe not the best model.
+
+197
+00:41:46.815 --> 00:41:56.420
+Viviana Márquez: Cool. So before I talk about one more thing, I wanted to stop here for a second and see if there's any questions about support vector machines
+
+198
+00:42:10.830 --> 00:42:12.910
+Viviana Márquez: awesome. So once.
+
+199
+00:42:13.020 --> 00:42:21.040
+shashi: Vivian. I had a question where exactly is commonly used, and what kind of problems this is used.
+
+200
+00:42:22.010 --> 00:42:31.359
+Viviana Márquez: Yeah. So that's a good question. So super vector, machine as I said at the beginning of the class, you can actually use it for regression as well.
+
+201
+00:42:31.360 --> 00:42:54.759
+Viviana Márquez: But most of the time it's used for classification. So if you have a classification task on a tabular data set, you wouldn't apply it to images or something like that. That's deep learning. But on a tabular data set is a classification task. You can use it so you can try it. And typically, you would try several models, not just super vector machines. So you would try if you have a classification task.
+
+202
+00:42:54.760 --> 00:43:00.269
+Viviana Márquez: you would try logistic regression decision trees, random forests support vector machines
+
+203
+00:43:00.270 --> 00:43:25.559
+Viviana Márquez: and then given the performance metrics, you choose the best one. Sometimes it's a logistic regression that is better for your data set. Sometimes it's the support vector machine. So it's a little bit hard to know in advance which model is going to be the best model. So that's why you got to apply all the classification, I mean, not all of them, but several classification models, to see which one suits your data better. So it depends on the data set.
+
+204
+00:43:25.951 --> 00:43:39.890
+Viviana Márquez: One thing where I wouldn't use it is that if you have several thousands of data points, it's it's gonna be very slow, so I wouldn't use it with super large data sets. That would be the only thing. But besides that.
+
+205
+00:43:40.130 --> 00:43:49.339
+Viviana Márquez: you won't know if it's the best model until you try it. So you try several classification models, and then you pick the one that has the best performance metrics.
+
+206
+00:43:50.340 --> 00:44:05.199
+shashi: Okay. I was wondering more from, I mean, you said it doesn't work well with the large data set. So what kind of data sets which are small. And I mean real world example of this where the data set is small and where I need to
+
+207
+00:44:05.300 --> 00:44:07.870
+shashi: classified. That's what I was thinking of.
+
+208
+00:44:08.540 --> 00:44:31.789
+Viviana Márquez: It depends on the company. So, for example, if you're working at a tech company at the forefront of the industry, they probably have immense amounts of data sets. You're probably not going to use the support vector machine in a while. But if you're a data scientist, let's say for a marketing company, and this marketing company has a client that has is like a coffee shop, and the coffee shop only has
+
+209
+00:44:31.790 --> 00:44:46.749
+Viviana Márquez: 5,000 rows of data. Then you could use a support vector machine. So it depends also from company to company, and sometimes even from team to team, like even a different team in a company is dealing with different data than some other team.
+
+210
+00:44:48.030 --> 00:44:49.030
+shashi: Okay. Yeah.
+
+211
+00:44:50.930 --> 00:44:51.770
+Viviana Márquez: Of course.
+
+212
+00:44:53.820 --> 00:44:58.459
+Viviana Márquez: So one thing about the support vector machine is that
+
+213
+00:44:59.110 --> 00:45:08.660
+Viviana Márquez: from nature, not nature, because it's it's a machine, but intrinsically, it's a binary classifier, in other words.
+
+214
+00:45:09.110 --> 00:45:33.750
+Viviana Márquez: by default, is trying to classify between 2 classes. So, for example, is it spam or not spam? Is it going to rain or not rain. So those kind of binary problems. But a lot of times you have more than 2 classes a lot of times, you say, is it going to snow? Is it going to rain? Is it going to be sunny, or is it going to be windy? So you have 4 classes instead of 2 classes.
+
+215
+00:45:34.169 --> 00:45:50.429
+Viviana Márquez: So even though super vector machines are meant, and they're designed to distinguish between 2 classes. If you have had the chance to play around with it. In secondlearn, you might have realized that you can actually use it for more than 2 classes.
+
+216
+00:45:50.782 --> 00:46:09.469
+Viviana Márquez: So how is this happening? How is the support vector machine handling these 2 classes. And what I'm going to talk about next applies for anything that is related to things that are meant to be binary classifiers, but that you can use with more than 2 classes. So there's 2 main strategies.
+
+217
+00:46:09.840 --> 00:46:22.039
+Viviana Márquez: One is one versus one and the other one is one versus all, or one versus rest, OOVO, and ovr
+
+218
+00:46:22.800 --> 00:46:27.730
+Viviana Márquez: So what is one versus one? So in this strategy, let's say you have N classes.
+
+219
+00:46:27.850 --> 00:46:31.170
+Viviana Márquez: So let's say you have rainy.
+
+220
+00:46:31.380 --> 00:46:35.529
+Viviana Márquez: You have snow, and you have Wendy.
+
+221
+00:46:36.636 --> 00:46:39.659
+Viviana Márquez: So you construct a
+
+222
+00:46:39.870 --> 00:46:58.990
+Viviana Márquez: classifier for every pair of classes. So you will have a classifier for rainy versus snow. Then you will have a classifier for rainy versus Windy, and then you would have a classifier for snow versus windy. So here my
+
+223
+00:46:59.290 --> 00:47:06.720
+Viviana Márquez: N. Was 3, because I have 3 classes, and then I ended up with 3 classifiers.
+
+224
+00:47:06.870 --> 00:47:30.100
+Viviana Márquez: and then you pick the one that gives you the most, the highest score. So basically, the formula is this. So if you want to know how many classifiers you're going to end up with. So, for example, in an example, we had 3 classes. And then how many classifiers are we end up with? So 3 times
+
+225
+00:47:30.250 --> 00:47:32.379
+Viviana Márquez: 3, minus one is 2,
+
+226
+00:47:32.640 --> 00:47:49.879
+Viviana Márquez: divided by 2, and then these 2 cancels out, and that's why we had 3 classifiers. But, like, if you have, I don't know 20,000 classes, then you can apply this formula and know how many classifiers you're gonna end up with. And here's basically the same example I gave you.
+
+227
+00:47:50.190 --> 00:48:01.599
+Viviana Márquez: So for a new input so you have a new data point. All classifiers are going to predict the class. So again, in the example that I had before rainy versus
+
+228
+00:48:02.070 --> 00:48:08.920
+Viviana Márquez: Snow, rainy versus windy, and then snow versus windy.
+
+229
+00:48:09.790 --> 00:48:15.607
+Viviana Márquez: you have a new data point. So this is your data point. And maybe this classifier says,
+
+230
+00:48:16.290 --> 00:48:17.700
+Viviana Márquez: it's gonna be rainy.
+
+231
+00:48:18.020 --> 00:48:30.149
+Viviana Márquez: This classifier says, is going to be rainy. And this classifier. It only has 2 options. So it's going to say, it's gonna be windy. So the prediction. The final prediction is going to be rainy because it got the most.
+
+232
+00:48:30.280 --> 00:48:32.720
+Viviana Márquez: It was the most predicted class.
+
+233
+00:48:32.840 --> 00:48:36.669
+Viviana Márquez: If you have a crazy situation where here it? Predicted W.
+
+234
+00:48:37.636 --> 00:48:46.983
+Viviana Márquez: Well, here it would be here. W. And then here is S. It would just pick one class at random. The prediction would be one at random.
+
+235
+00:48:47.750 --> 00:48:51.419
+Viviana Márquez: but a lot of times you're just gonna have like one.
+
+236
+00:48:52.365 --> 00:48:55.340
+Viviana Márquez: Class that has most votes.
+
+237
+00:48:56.188 --> 00:49:17.009
+Viviana Márquez: So an advantage of this approach, one versus one is that each classifier only needs this subset of data for those 2 classes to be distinguished between them. So you're not working with the whole data set. Each classifier is working with that subset of data between the 2 classifiers which could make it faster.
+
+238
+00:49:17.548 --> 00:49:28.669
+Viviana Márquez: The disadvantage is that for a large number of classes. So, for example, the example here I was saying, 2,000. So 20 yeah, 2,000 classes. So 2,000 classes.
+
+239
+00:49:29.850 --> 00:49:36.480
+Viviana Márquez: 2,000 classes, times 1, 9, 9, because that's 2,000 minus one.
+
+240
+00:49:36.820 --> 00:49:39.969
+Viviana Márquez: And then this, divided by 2, it would train
+
+241
+00:49:40.530 --> 00:50:01.770
+Viviana Márquez: almost 2 million classifiers, which is like too many models like running. So so if you have too many classes, this strategy is not great because you don't want to train 2 million classifiers. That's that's crazy, right. But if you have a small number of classes like 3 classes, you only train 3 classifiers, not a big problem.
+
+242
+00:50:02.781 --> 00:50:05.589
+Viviana Márquez: The other strategy is one versus all.
+
+243
+00:50:05.980 --> 00:50:14.189
+Viviana Márquez: So if you had Rainy, you're predicting the weather, and the options are rainy, snowy, and windy.
+
+244
+00:50:14.680 --> 00:50:23.099
+Viviana Márquez: Then you would train Rainy versus all of them snowy versus all of them.
+
+245
+00:50:23.180 --> 00:50:45.379
+Viviana Márquez: and then windy versus all of them. So in this case that we have only 3 classes, is also 3 classifiers, so it didn't really make a difference. But if you're training 2,000 classes, then you would only train 2,000 classifiers where, in the previous example, you're training almost 2 million classifiers.
+
+246
+00:50:45.380 --> 00:51:12.330
+Viviana Márquez: So if you have too many classes, one versus all is better. But if you don't have too many classes, then one versus one is better, because then you, each classifier, is only looking at the subset of the data where this one needs to look at all the data. So this one will be faster if you don't have too many classes. So here, if you have
+
+247
+00:51:12.440 --> 00:51:16.950
+Viviana Márquez: too many classes, is better to use this strategy. So
+
+248
+00:51:17.520 --> 00:51:21.239
+Viviana Márquez: basically for each class. You train everything
+
+249
+00:51:21.810 --> 00:51:27.089
+Viviana Márquez: like the specific classes, the positive class and all the other classes as the negative class.
+
+250
+00:51:28.100 --> 00:51:34.650
+Viviana Márquez: And for a new. Input so, for example, if you have rainy versus all
+
+251
+00:51:34.880 --> 00:51:45.339
+Viviana Márquez: snow versus all, and then windy versus all, the prediction should look something like this. So, for example, it's going to predict rainy.
+
+252
+00:51:45.490 --> 00:51:51.090
+Viviana Márquez: And then it's going to predict all. And then here it should predict all as well.
+
+253
+00:51:52.475 --> 00:51:57.820
+Viviana Márquez: So basically, we're going to predict the one with the highest confidence.
+
+254
+00:51:58.240 --> 00:52:12.980
+Viviana Márquez: So pros only in classifiers are trained. So typically less classifiers than the one versus one strategy. So it makes it more scalable for problems with large number of classes compared to one versus one.
+
+255
+00:52:13.250 --> 00:52:41.530
+Viviana Márquez: and the cons is that it becomes an imbalance problem. Because then you have, for example, rainy versus all, they all becomes very big, so if you have, I don't know 100 rows. No, let's say 90 rows, and then 30 rows are rainy. 30 rows are windy, and then 30 rows are snowy, and then you do rain versus all. You have rain, 30 data samples, and then all is 60 samples. So it's already unbalanced.
+
+256
+00:52:42.118 --> 00:52:44.700
+Viviana Márquez: So that that could become a problem.
+
+257
+00:52:44.880 --> 00:52:53.500
+Viviana Márquez: So so it could cause some issues down the line. You will have to do some things to make sure that that's not the case.
+
+258
+00:52:54.093 --> 00:53:06.120
+Viviana Márquez: So that's also another advantage of using this one versus one by sometimes you do have to use one versus all because this can quickly increase the number of classifiers because of this formula.
+
+259
+00:53:06.677 --> 00:53:08.819
+Viviana Márquez: So you have these 2 options.
+
+260
+00:53:09.030 --> 00:53:09.920
+Viviana Márquez: And
+
+261
+00:53:10.110 --> 00:53:27.020
+Viviana Márquez: this was a good time to talk about it, because the support vector machine, since it's intrinsically binary, it's going to use one of the 2 strategies. But it doesn't really matter that much with a support vector machine when it's going to matter. Even more is when you're dealing with neural networks.
+
+262
+00:53:27.020 --> 00:53:49.179
+Viviana Márquez: You're going to have to pick sometimes between one versus one and one versus all. So now you know the pros and cons, and you can decide which strategy to use. So this is a topic that we're talking about it now because it felt right. Since we're talking about support vector. Machines. But it's a topic that is going to come up in later on, as you learn more machine learning.
+
+263
+00:53:49.890 --> 00:53:54.450
+Viviana Márquez: So how do you choose between one versus one and one versus all
+
+264
+00:53:54.770 --> 00:54:00.179
+Viviana Márquez: the data set size and the class distribution. So if your data set is large
+
+265
+00:54:00.440 --> 00:54:07.889
+Viviana Márquez: or your or you have classes with substantially different sizes, then one versus one might be better.
+
+266
+00:54:08.581 --> 00:54:19.030
+Viviana Márquez: But if you have a lot of number, a huge number of classes, then one versus all might be more efficient because you're training less classifiers.
+
+267
+00:54:19.595 --> 00:54:33.869
+Viviana Márquez: If time is not an issue, you could just do both methods and see which one works better for your data. So you just empirically validate on your data and see which one gives you best results.
+
+268
+00:54:33.970 --> 00:54:58.459
+Viviana Márquez: Because sometimes that, especially with support vector machines, that you're not going to be working with crazy amounts of data might as well just try to 2 of them and see which one gives you the best result. But in deep learning you might not have that luxury, because in deep learning models could take even days to train. So you don't want to just be like, oh, I'm just going to try both and see which one gives me the best result. You have to make a decision. Make that call as the data scientist.
+
+269
+00:54:59.240 --> 00:55:01.880
+Viviana Márquez: So let's talk about code. So
+
+270
+00:55:02.030 --> 00:55:31.690
+Viviana Márquez: if you don't do absolutely anything, and that's probably going to be the case most of the time in the industry, you're just going to apply the super vector machine and not think about it. The default behavior is one versus one. So you don't even have to do anything. It's just you just load your super vector. Machine. And that's what it's going to do. This. This is a variable name that I created. But it could have been just classifier. And this is just the default behavior. If you particularly want to try one versus rest.
+
+271
+00:55:31.750 --> 00:55:44.219
+Viviana Márquez: you have to go out of your way to do it, and you have to use a wrapper. So a wrapper method is anything that wraps any other type of code, which is what's happening here. So you have the support vector machine
+
+272
+00:55:44.580 --> 00:55:49.210
+Viviana Márquez: as usual. And then you have this wrapper to do one versus all.
+
+273
+00:55:49.530 --> 00:55:59.369
+Viviana Márquez: If I'm being honest in my experience in the industry, I just do this. I have never done this, probably because I haven't even thought about it, like I'm just
+
+274
+00:55:59.460 --> 00:56:28.359
+Viviana Márquez: trying different models. And then, as some other model gives me a better performance, and I just go for the other model. But it's good to be aware that these things exist in case you're working with a very, very specific problem from your industry where this would make sense. And and this is where the challenge comes. Because when you're working in the industry, most of your work is going to be pretty straightforward. You're going to know what to do. But every now and then you're going to have a problem that even if you Google it.
+
+275
+00:56:28.360 --> 00:56:38.669
+Viviana Márquez: it's so unique that there's no answers. And you have to start thinking outside of the box and be like, Hmm! What if I do this approach. Hmm, what if I try this thing? So now you know that
+
+276
+00:56:38.700 --> 00:56:40.130
+Viviana Márquez: if you wanted to
+
+277
+00:56:40.540 --> 00:56:58.570
+Viviana Márquez: train the support vector, machine such that it's 1 versus rest. So, for example, you got a very specific data set. That is not that big. So, for example, it has 2 features. But you have many, many classes you're like, well, maybe I should try this one. So so now you know
+
+278
+00:57:00.703 --> 00:57:05.679
+Viviana Márquez: questions about one versus one and one versus all
+
+279
+00:57:22.060 --> 00:57:25.169
+Viviana Márquez: alright cool. So in the 2 min that we have left.
+
+280
+00:57:25.900 --> 00:57:27.620
+Viviana Márquez: how do you choose a kernel?
+
+281
+00:57:28.130 --> 00:57:29.210
+Viviana Márquez: You do
+
+282
+00:57:29.340 --> 00:57:38.140
+Viviana Márquez: hyperparameter tuning, and one way to do hyperparameter tuning is with cross validation. So let me show you in
+
+283
+00:57:38.290 --> 00:57:41.490
+Viviana Márquez: and coding example how to do that
+
+284
+00:57:41.660 --> 00:57:44.299
+Viviana Márquez: cross validation. So let me share this notebook.
+
+285
+00:57:44.460 --> 00:57:51.650
+Viviana Márquez: It's also going to get posted on canvas. But I'm sharing the link in the chat in case you want to access the link
+
+286
+00:57:51.760 --> 00:58:17.960
+Viviana Márquez: right away. But yeah, here, I'll show you. So here, I'm just loading the libraries. You know all these libraries already. The new one is the support vector, machine. But here you have the train test, split grid, search, cross validation, cross validation score. The performance metrics here. I'm adding the one versus rest classifier. So you can see an example of how that works. But same usual here.
+
+287
+00:58:18.080 --> 00:58:37.350
+Viviana Márquez: we're going to load the data. We're going to work with this data of classifying these 3 flowers just because we know this data set very well in a normal machine learning project, you would do exploratory data analysis. I'm not going to do it here because you guys already know this data set. But in a normal project you would do it.
+
+288
+00:58:37.410 --> 00:58:50.248
+Viviana Márquez: You split the data set as usual. And if you needed to do feature engineering, you would do it. This data set doesn't require it. So that's why I'm skipping this step. But in a normal project you would do it. Now, what we
+
+289
+00:58:50.660 --> 00:58:52.940
+Viviana Márquez: have learned today. So this is the new stuff.
+
+290
+00:58:53.270 --> 00:59:02.209
+Viviana Márquez: So you could try how do you select the best kernel so you could try model selection using cross validation.
+
+291
+00:59:02.841 --> 00:59:20.919
+Viviana Márquez: So here I have the different kernels that are available to me. How do I know these are the ones that are available to me. I just read the documentation. So that's why, whenever you have a question, you should always go to the documentation. So here in the question in the documentation. I see one of the parameters is the kernel.
+
+292
+00:59:21.290 --> 00:59:30.950
+Viviana Márquez: And then here you can read more about the kernel if you didn't know what it was. But now you know what it is. So you just know that these are the ones that are available to you. So I'm going to try
+
+293
+00:59:31.130 --> 00:59:39.600
+Viviana Márquez: this view, then I create as many polls as kernels as I have.
+
+294
+00:59:40.090 --> 00:59:52.380
+Viviana Márquez: I train it with that specific kernel on each one of the loop, each one of the loops. No, the iterations of the loop.
+
+295
+00:59:52.560 --> 01:00:06.530
+Viviana Márquez: I compute the cross validation score. In this case I'm using accuracy, but you could use something like recall if you wanted to, if if you want to optimize for recall or precision, or something else. But in this case I'm just using accuracy.
+
+296
+01:00:06.610 --> 01:00:22.800
+Viviana Márquez: And I get this course. And then here I read the result. So it says that the optimal kernel for this specific data set is the polynomial one with a cross validation score of 0 point 9 7, which is pretty good. It's close to a hundred percent.
+
+297
+01:00:23.280 --> 01:00:28.180
+Viviana Márquez: If you wanted to do it. The hyperparameter tuning way using grid search.
+
+298
+01:00:29.880 --> 01:00:34.250
+Viviana Márquez: Oh, well, no, actually, that's not what I'm doing here. So I already selected the kernel.
+
+299
+01:00:34.630 --> 01:00:43.590
+Viviana Márquez: So here I'm using the kernel. But now I'm optimizing C, I'm optimizing Gamma, and I'm deciding which.
+
+300
+01:00:43.890 --> 01:00:47.420
+Viviana Márquez: if use one versus one on one versus rest.
+
+301
+01:00:47.964 --> 01:00:58.039
+Viviana Márquez: How do I know which values to put in here. I read through the documentation which values made more sense. So I probably like clicked on here and started reading more.
+
+302
+01:00:58.702 --> 01:01:10.269
+Viviana Márquez: A lot of times when you see a hyperparameter and you don't know which values to try. You can also just Google, like what values make sense for this hyperparameter. And that's how you determine that hyperparameter.
+
+303
+01:01:10.500 --> 01:01:14.249
+Viviana Márquez: And here I'm doing my grid search.
+
+304
+01:01:15.010 --> 01:01:21.389
+Viviana Márquez: And here it's just like this, took a while. This is doing all these computations.
+
+305
+01:01:21.620 --> 01:01:28.629
+Viviana Márquez: And it found the best parameter hyper parameters, which is C is 0 point 1
+
+306
+01:01:29.392 --> 01:01:33.379
+Viviana Márquez: one versus one. The one versus one strategy is the best one.
+
+307
+01:01:33.780 --> 01:01:47.730
+Viviana Márquez: The gamma. The best one is 0 point 1, and the kernel is the one that we already had selected, which is the polynomial. So now I'm going to use the best model, which is the model. With this hyper parameters to make my predictions here, I'm making my predictions.
+
+308
+01:01:47.820 --> 01:02:11.019
+Viviana Márquez: I make my model evaluation. Of course, I achieve 100%. Because this is a very simple data set a dummy data set. If you're working with a data set from Kaggle, for example or from your company. It's okay. If you don't get 100% here. In fact, if you get 100%, that's a red flag. That means that you're overfeeding somewhere. So so it should be like
+
+309
+01:02:11.100 --> 01:02:22.109
+Viviana Márquez: above, I would say 70% and close to a hundred. But if it shouldn't be exactly a hundred percent. So don't worry if you get it, don't get exactly a hundred percent.
+
+310
+01:02:22.630 --> 01:02:41.540
+Viviana Márquez: And yeah, that's pretty much up to here. If you wanted to pick the best model. So here you can say, Okay, the best model was the polynomial kernel with the one versus one strategy, gamma, 0 point 1 disease is 0 point 1,
+
+311
+01:02:41.830 --> 01:02:45.699
+Viviana Márquez: and he gets a hundred percent performance metrics.
+
+312
+01:02:45.950 --> 01:02:48.250
+Viviana Márquez: Now, the next step, which
+
+313
+01:02:48.680 --> 01:03:13.919
+Viviana Márquez: in the past this will go to the engineers like the software engineer. But nowadays I have seen in the industry. They also have to do it a little bit as a data scientist. So you save the best model that way. You don't have to train the model every time you want to use it. You can just deploy it by saving the model. So I save here this pickle file, and you can create a model function that reads this pickle file and makes a prediction
+
+314
+01:03:13.950 --> 01:03:31.270
+Viviana Márquez: using that pickle file. So you're not retraining the model every time that you need it. So here I put it in the same notebook for your convenience. But this will be like on a separate piece of code running somewhere. I don't know. Maybe in the application of your company or on a website
+
+315
+01:03:31.320 --> 01:03:48.570
+Viviana Márquez: who knows where, but for for the implementation of it. So you have this function. And then in the function, you give it some values. So, my, this is my new data point. Tell me what it is, and then it tells you, okay, the predictive flower is the setosa. And here I just have, like
+
+316
+01:03:48.650 --> 01:04:07.510
+Viviana Márquez: the bones of the code. But of course, like on top of these functions, you could create a web app, a cell phone app and user interface. Maybe I don't know. Like you put this result in an excel, it's up to you how you wanna
+
+317
+01:04:07.750 --> 01:04:14.840
+Viviana Márquez: use that work. And typically this is what the software engineer would do. But in case you also want to do it. This is
+
+318
+01:04:15.100 --> 01:04:17.809
+Viviana Márquez: the base of that code.
+
+319
+01:04:18.130 --> 01:04:24.819
+Viviana Márquez: And then here I added some visualizations for the support vector machine. I had to
+
+320
+01:04:25.080 --> 01:04:47.880
+Viviana Márquez: use only 2 points, because the data set has 4 features, but I used only 2 features to be able to visualize it, because I can't visualize for 4 dimensions. And then here I visualize the decision boundary in case you were curious. So notice that the margin is not super hard, and it couldn't be super hard, because here we have some mixed data like
+
+321
+01:04:47.940 --> 01:05:02.619
+Viviana Márquez: we were talking at the beginning of the class. So the fact that this line over here is not like, let's say here. So you have this pure data here, and all the pink ones here, or
+
+322
+01:05:02.630 --> 01:05:18.890
+Viviana Márquez: a line here, but that is like nicely in the middle is determined by C. So the C. Pretty much determined where this line was. If or C. Had been higher or lower, it would have been either here or here. I don't know where it would have been, but
+
+323
+01:05:18.990 --> 01:05:27.609
+Viviana Márquez: you could pretty much play around with your C and make this visualization, and that will give you an understanding of what that C is doing.
+
+324
+01:05:27.900 --> 01:05:39.329
+Viviana Márquez: And yeah, that's it. That's all I had for today. I know that I'm over time as usual, as our tradition dictated. But I wanted to see if there's any questions
+
+325
+01:05:52.780 --> 01:06:17.139
+Viviana Márquez: all right, fantastic. So if you don't have any questions, or you think of a question later on feel free to use the support button on canvas. There's also another office hour about the same topic with Francesca. There's 2 more, one with Francesca, and what one with Manny on Tuesday and Wednesday. So you can come with more questions to those office hours.
+
+326
+01:06:17.717 --> 01:06:30.219
+Viviana Márquez: So thank you so much. Everyone happy to see all of you. I hadn't seen all of you since last year. Okay, I know bad joke. But anyway, see you next time. Thank you. Everyone.
+
+327
+01:06:32.600 --> 01:06:33.600
+Raghavan Srinivasan: Thanks, bye.
+
+328
+01:06:34.410 --> 01:06:35.160
+Viviana Márquez: Bye.
+
