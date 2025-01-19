@@ -1,0 +1,1154 @@
+WEBVTT
+
+1
+00:00:08.109 --> 00:00:09.219
+Mani K: Lovely one.
+
+2
+00:00:09.590 --> 00:00:14.059
+Mani K: Good evening, Hope, you can hear me.
+
+3
+00:00:19.580 --> 00:00:20.840
+Gopikrishna Putti: Yeah, we can hear you, honey.
+
+4
+00:00:21.160 --> 00:00:22.540
+Mani K: Fantastic.
+
+5
+00:00:23.280 --> 00:00:27.170
+Mani K: So and I guess my screen is also visible. Right? Yeah.
+
+6
+00:00:27.540 --> 00:00:28.210
+shashi: Yeah.
+
+7
+00:00:28.950 --> 00:00:30.015
+Gopikrishna Putti: You find that.
+
+8
+00:00:30.370 --> 00:00:37.979
+Mani K: Hey? Right, I think, let's get started or past the hour. So
+
+9
+00:00:41.640 --> 00:00:46.643
+Mani K: so so for today, I think I was gonna just cover
+
+10
+00:00:48.810 --> 00:00:53.819
+Mani K: things related to this week this week's module. So
+
+11
+00:00:54.640 --> 00:00:56.950
+Mani K: So the agenda is going to be around
+
+12
+00:00:59.141 --> 00:01:01.896
+Mani K: the classifier like which was
+
+13
+00:01:04.335 --> 00:01:28.484
+Mani K: which was in the module so we'll talk about can. And I have a link here for an notebook that I'm sharing, or I'll be working on during the office hour, or it has the data set as well but the most important part is, I wanted to talk more about the model evaluation. The confusion matrix ro, the roc Auc curves. And if there is any
+
+14
+00:01:28.820 --> 00:01:42.071
+Mani K: questions regarding that topic, we can actually talk about that as well. So that's the thing. Okay, so that's going to be my main talking points for today. Apart from that,
+
+15
+00:01:43.040 --> 00:01:56.870
+Mani K: before I start off, I think I wanted to also talk about the capstone again. I'm responsible for the section E, so if you
+
+16
+00:01:57.000 --> 00:02:02.949
+Mani K: want, you can schedule the one on ones with me right now, the 1st one on ones, and
+
+17
+00:02:03.685 --> 00:02:18.628
+Mani K: so we can discuss about your project if there is any any support needed from my side. I can provide my inputs, and then so we have 2 meet, 2, 1 on ones and
+
+18
+00:02:19.837 --> 00:02:20.612
+Mani K: in our
+
+19
+00:02:22.427 --> 00:02:30.926
+Mani K: for the capstone with me, so you can have the second meeting in about 2 weeks after the 1st one. So to to see where you are with.
+
+20
+00:02:31.280 --> 00:02:51.349
+Mani K: the project. Primarily, I always encourage everyone to do a lot of Eda work to begin with, and maybe reconvene after performing the eda. So so that's what I've been telling everyone. So just in. So that's the purpose of the second meeting after you perform the Eda, are you on the right track? Or if you're if you have to adjust the
+
+21
+00:02:51.350 --> 00:03:02.724
+Mani K: the scope of your project, or something like that. We can discuss that. And then and then you can finalize your project after that. So that's wanted to highlight that part. I think. My
+
+22
+00:03:03.050 --> 00:03:11.812
+Mani K: the meeting to schedule with me. It's a calendar, link. I think it's already there on canvas. So you can look at that. Okay? Alright.
+
+23
+00:03:14.370 --> 00:03:33.540
+Mani K: So I'll move on to the 1st part, which is the notebook I'll just talk about how can works. I mean, some important things around there and just show it off with an example. I know in the video. And there is also some a code of work on this, too. But it's a different data set just for
+
+24
+00:03:33.886 --> 00:03:40.739
+Mani K: the sake of you know, trying out a different data set. I'm going to be sharing this. Okay.
+
+25
+00:03:41.064 --> 00:03:47.155
+Mani K: so I'll share my screen this is going to be my Jupyter notebook. So so let me just
+
+26
+00:03:50.230 --> 00:03:54.139
+Mani K: let me just switch my screens to that. Okay.
+
+27
+00:03:54.970 --> 00:03:59.689
+Mani K: alright. So this is my notebook.
+
+28
+00:04:01.340 --> 00:04:06.580
+Mani K: so this is the the link and the data set is already there in the slide deck. I'm gonna
+
+29
+00:04:06.990 --> 00:04:10.859
+Mani K: I'm gonna actually share my slide deck link to in the chat box.
+
+30
+00:04:11.850 --> 00:04:19.250
+Mani K: and if there are any other questions put them in the chat box as well, I'll I'll just keep monitoring and answering as someone that's coming. Okay?
+
+31
+00:04:19.450 --> 00:04:20.079
+Mani K: Alright.
+
+32
+00:04:21.000 --> 00:04:26.053
+Mani K: So so this is a data set of
+
+33
+00:04:26.870 --> 00:04:45.418
+Mani K: I guess, like employee attrition from Ibm, so I I think it's a data set that's on Kaggle that's publicly available to actually so just using that right now, here, okay, so this is how the data set looks like so you can see that like
+
+34
+00:04:46.560 --> 00:05:06.903
+Mani K: the each observation is that of an employee employee has an employee id or an employee number, and then it has information regarding that particular employee with the you know whether the employee is still with the company or with or left the company with the attrition data label, and then
+
+35
+00:05:07.260 --> 00:05:20.510
+Mani K: it has age. What department? How much business travel? I think it's more a classification. I think, how far he that person is living from the home things like that. So basically, a bunch of
+
+36
+00:05:21.198 --> 00:05:44.311
+Mani K: information regarding that particular employee. Okay? So you can see how much years at the company years in the current role or the last role. However, you want to call it a number of companies. This person has worked and things like that. So so this is the kind of information that we have. And the so I guess the problem that we want to solve is like, can we predict?
+
+37
+00:05:44.905 --> 00:05:58.879
+Mani K: If an employee is going to be leaving or not based on the data set that we have. So basically we want to. This is a problem. That someone in the human resources would like to solve like they want to predict if somebody is
+
+38
+00:05:59.369 --> 00:06:08.329
+Mani K: like more likely to leave, and if so, like, you can take some actions to prevent that from happening. So that's that's kind of a high level problem statement here. Okay.
+
+39
+00:06:09.930 --> 00:06:32.920
+Mani K: so so here we are planning to do this classification problem using Knn or K nearest neighbors. Okay, again. I think there's a lot of information already on the module about how Knn works. But again, this is a more simplified version of it. That. I prefer to show. So
+
+40
+00:06:32.980 --> 00:06:49.669
+Mani K: if you already know about it, that's good. If not, I think you can run along with what I'm going to be showing. Okay. So let's say, like we have 2 classes. Like, let's say we have. So I'm just putting a scatter plot with some different data points.
+
+41
+00:06:49.750 --> 00:07:16.710
+Mani K: So let's say, if we have a scatter plot which has, like these red triangles and blue squares. So these are the 2 classifications that we have. Just for example, how do we? And this is the data set that we have. And how does scan and work? If you have a binary classification like this? Okay, so that's that's what we're trying to explain here. So let's say, like, we add a new data point. Okay, so we are trying to predict a new one.
+
+42
+00:07:16.730 --> 00:07:24.830
+Mani K: So let's say that black.is this, okay? So this is the black dot which is the new data point that we are trying to predict. Now.
+
+43
+00:07:24.920 --> 00:07:31.599
+Mani K: how does canon work in this case. If based on the number of neighbors. Okay, so that's the thing.
+
+44
+00:07:32.920 --> 00:07:36.510
+Mani K: So so if
+
+45
+00:07:38.880 --> 00:07:46.012
+Mani K: if you plot the closest neighbor. Okay, so let's say, like, if you want to find what is the closest neighbor to this
+
+46
+00:07:46.370 --> 00:07:53.410
+Mani K: black dot, you will find that this this 1st red Triangle over here is the closest neighbor.
+
+47
+00:07:53.430 --> 00:08:15.516
+Mani K: So if your number of neighbors is set to one, then this new data point that we have as the black circle would be predicted as a red triangle. Okay? So that's okay. So now we can extrapolate this. So we can also try out with different
+
+48
+00:08:16.748 --> 00:08:24.429
+Mani K: neighboring number of neighbors, for example, if K. Equal to. So if if the number of neighbors equal to 3,
+
+49
+00:08:24.500 --> 00:08:34.300
+Mani K: then these are the closest neighbors. So you have these 3 neighbors, of which 2 are red triangles, and one is a blue square.
+
+50
+00:08:34.350 --> 00:08:41.082
+Mani K: So in this case, like again, just a simple majority here. So this this
+
+51
+00:08:42.750 --> 00:09:00.421
+Mani K: black dot would be predicted as a rectangle here again. Okay, so for the number of neighbors. If it is set to 3. Okay, so that's so, the value of K that you determine or that you put matters quite a lot, actually,
+
+52
+00:09:00.990 --> 00:09:20.320
+Mani K: so this is what I think in the lectures was also being explained. Like, if you put K equal to one, it's a very complex one. If you put a very, very high K, it becomes a highly simplistic model, where, like most pretty much like, you're trying to reduce the number of classes to be classified like everything could be classified into one like, if you put
+
+53
+00:09:20.430 --> 00:09:23.850
+Mani K: if you keep on increasing the number of neighbors. Okay, so that's it.
+
+54
+00:09:24.375 --> 00:09:53.310
+Mani K: Just so by default, if you're using the scikit K nearest neighbor function by default, it it puts in number of neighbors as 5. Okay, so just for you to know, so like, let's say, like, we want to predict another new data point. Okay? So we want to predict this new black circle. And let's try to do with different K values. Okay.
+
+55
+00:09:53.918 --> 00:09:58.718
+Mani K: so so for so you can see that
+
+56
+00:09:59.580 --> 00:10:03.789
+Mani K: for K equal to one, this would be the nearest neighbor. Okay.
+
+57
+00:10:04.212 --> 00:10:09.189
+Mani K: so this would be, it would be predicted as a red triangle. Okay?
+
+58
+00:10:09.320 --> 00:10:12.519
+Mani K: So so this would be the
+
+59
+00:10:15.040 --> 00:10:25.520
+Mani K: this would be predicted as a red triangle. But let's say, if K. Equal to 2, then this would be the 1st neighbor. The second neighbor. Closest neighbor is going to be this. Okay?
+
+60
+00:10:25.540 --> 00:10:54.380
+Mani K: So you have a tie here and but the Red Triangle is the one that is closest. So it's going to be predicting as a red triangle here. Okay? So so you can see why like we don't like to use 1st of all, even numbers for number of neighbors. First, st that's another thing usually like, we always put like odd numbers for the number of neighbors to avoid this kind of scenarios, because now you are only giving preference to the just the distance.
+
+61
+00:10:54.380 --> 00:11:14.640
+Mani K: So it's always good to have both. Okay, so that's the thing. So for K, equal to 2 in this particular case, it it would predict it as a red triangle, because that's the one that it's closest to, although there are, although there are 2 classes that are close. Both classes are close for K equal to 2
+
+62
+00:11:15.899 --> 00:11:30.580
+Mani K: and then for k equal to 3 I guess. The 3rd closest neighbor. Is this this blue square again? So so for K, equal to 3. This point would be predicted as a blue square. Okay, so let's think.
+
+63
+00:11:30.690 --> 00:11:52.390
+Mani K: is that clear? So that's the easiest way to explain this. So basically, it's all based on the distance and and and the the features that you're giving, it's going to calculate the distance based on the features and depending upon the number of neighbors of whatever class that is highest. I think it's going to. It'll be predicting to that particular class. Okay?
+
+64
+00:11:52.760 --> 00:12:01.449
+Mani K: So that's how in general Kn works any questions here, before we move on to the data set itself.
+
+65
+00:12:08.400 --> 00:12:17.147
+Mani K: If there aren't any questions I'll move on. So so this is our data set. So for the sake of simplicity, I'm gonna be
+
+66
+00:12:18.270 --> 00:12:35.005
+Mani K: choosing these explanatory variables. Okay? So I want to predict the attrition? The probability. Okay, I want to make sure that given an employee's data, can I predict the attrition is going to be one or 0. So that's what I want to predict. So that's my response.
+
+67
+00:12:35.681 --> 00:12:53.918
+Mani K: my y, or the response variable. And my explanatory variables just for the sake of simplicity, I'm going to be picking these 3. Okay, so the monthly income years in current role and over time are the 3 things that I I want to use. To begin with, based on what?
+
+68
+00:12:54.250 --> 00:13:14.389
+Mani K: I saw in the data set again. You if you are an expert in the human resources. And you have some inherent information about, like, what other could be the important ones you can also include that. But this is a starting point like you can always keep on improving. I I like to start my model with the
+
+69
+00:13:14.698 --> 00:13:26.321
+Mani K: the least number of features to see if that actually like still fits it or not. Okay. So so for this example, I'm starting with these 3. So I'm just setting up my x and y
+
+70
+00:13:27.090 --> 00:13:32.839
+Mani K: so so my x is going to be these 3
+
+71
+00:13:33.340 --> 00:13:56.110
+Mani K: variables that I selected, which is the monthly income years in current role and overtime. Overtime is a Boolean years in current role is a number. Again, numerical number and monthly income is going to be a numerical number as well, and attrition is the whether the person has left the company or still with the company. So that's the that's my output
+
+72
+00:13:56.816 --> 00:14:19.299
+Mani K: splitting the data into ad 20. So usual, nothing different here. And we are importing the function the k nearest or K neighbor classifier, which is the Knn model. So this is the instantiation of the model itself. Again, we're not setting any sending any parameters within the function.
+
+73
+00:14:19.790 --> 00:14:21.630
+Mani K: So in this particular
+
+74
+00:14:21.962 --> 00:14:29.700
+Mani K: example, our number of neighbors is going to be 5, because that's the default number it assigns. If you don't send any parameters. Okay?
+
+75
+00:14:31.390 --> 00:14:41.433
+Mani K: which is a a totally unacceptable assumption to begin with. Unless you have a specific reason to set it as
+
+76
+00:14:41.900 --> 00:14:57.314
+Mani K: 3 or less less than 5, actually, which would be 3 I wouldn't suggest going lower than 3, I think. You don't. You don't want to set Knn as one actually. So so let's say, in typical use cases I've seen like,
+
+77
+00:15:00.042 --> 00:15:12.689
+Mani K: Okay. So, Matt, there is a question I saw in photo 12 point to the the frame data and target. Where when do we use is if if we know the data is formatted as a frame.
+
+78
+00:15:14.630 --> 00:15:29.829
+Mani K: I'm not sure about that. Let me. I'll I'll take this, probably Matt offline. I I need to check what is 1212.2, and then I haven't looked at the codeo that particular codeo exercise. But I can look into that
+
+79
+00:15:32.020 --> 00:15:37.160
+Mani K: while you're bringing it. I'm gonna check that. Yeah.
+
+80
+00:15:37.560 --> 00:15:45.380
+Mani K: I'll look into it. Maybe like we'll we'll check on that right after this.
+
+81
+00:15:46.010 --> 00:15:49.189
+Mani K: So you're talking about 4.3.
+
+82
+00:15:50.580 --> 00:15:51.360
+Mani K: Okay.
+
+83
+00:15:55.260 --> 00:15:57.309
+Mani K: Alright, I'll get it. Okay.
+
+84
+00:15:57.600 --> 00:16:02.299
+Mani K: let me finish this, and then we'll we'll get back to this particular question that you have.
+
+85
+00:16:04.830 --> 00:16:05.710
+Mani K: Alright.
+
+86
+00:16:08.360 --> 00:16:18.969
+Mani K: so so that's the okay? So that's instantiating the model. And then I'm going to be fitting it with the the training data set. Okay, so which is done by using the dot fit.
+
+87
+00:16:19.020 --> 00:16:25.921
+Mani K: and you pass the training data, both the X and Y, and this would fit the model to the
+
+88
+00:16:26.420 --> 00:16:40.570
+Mani K: the instant. So fit the data to the instantiated model. You can make the predictions using the dot predict. So you can pass the test data here. And then you, we can start evaluating after that.
+
+89
+00:16:40.610 --> 00:16:45.409
+Mani K: So this is the predictions based on the test data that I have
+
+90
+00:16:45.440 --> 00:16:54.018
+Mani K: and you can evaluate the model in different ways by default.
+
+91
+00:16:56.685 --> 00:17:05.937
+Mani K: the knn. function itself gives a score so which can be retrieved with the dot score
+
+92
+00:17:07.145 --> 00:17:33.060
+Mani K: method, and this is the score that you get. So this this score is called the accuracy score, and I'll talk about that in a little bit when we go into the evaluation metrics. So what the in short, what the accuracy does is like. among all the test data, how many of it it predicted correctly. So that's what accuracy is all about. Okay? So
+
+93
+00:17:33.060 --> 00:17:50.839
+Mani K: it's looking at like, let's say, if you have 100 data points in your test data, did it care if it got 80% correctly? Again, this is a combination of both classes. Okay? So it's just like trying to understand, like, how many it got right?
+
+94
+00:17:51.372 --> 00:17:57.001
+Mani K: Among the test data. So that's what accuracy is all about and
+
+95
+00:17:58.320 --> 00:18:01.050
+Mani K: typically accuracy will be like
+
+96
+00:18:01.130 --> 00:18:08.555
+Mani K: pretty high because you are looking at the combined classification purpose performance of both.
+
+97
+00:18:09.080 --> 00:18:22.224
+Mani K: I guess both classes. Okay, so that's the thing. You can also do some visualizations here to understand how things work. So I have, I put a couple of scatter plots here to see how things like, for example, the
+
+98
+00:18:24.770 --> 00:18:25.440
+Mani K: the
+
+99
+00:18:26.804 --> 00:18:38.415
+Mani K: the monthly income and years in current role. I just took them and put it in a scatter plot to see like how the attrition and non attrition.
+
+100
+00:18:38.990 --> 00:18:42.809
+Mani K: data points look like I couldn't find a whole lot of
+
+101
+00:18:43.394 --> 00:18:49.620
+Mani K: separation here, like a lot of overlap between. Yeah, it's crowded in the
+
+102
+00:18:50.381 --> 00:19:14.319
+Mani K: low years in current role and monthly income. But but there is a lot of overlap that's something that I couldn't visualize too much from here. But if you do a 3D scatter plot. Maybe in this example you will see that there is some little bit of a separation that you can visualize here like, for example this is over. Time is in the
+
+103
+00:19:14.659 --> 00:19:22.819
+Mani K: in the y-axis now, so you can see that like when overtime is present, there is a little bit more of the overlap
+
+104
+00:19:23.580 --> 00:19:26.877
+Mani K: So basically, what it shows here is like,
+
+105
+00:19:27.893 --> 00:19:35.596
+Mani K: maybe you're in control when when people have just started and they are in
+
+106
+00:19:36.220 --> 00:19:37.993
+Mani K: like relatively
+
+107
+00:19:39.478 --> 00:19:48.240
+Mani K: junior roles and performing over time. That's kind of like a high level. Some takeaway that you can take from this
+
+108
+00:19:48.700 --> 00:19:56.259
+Mani K: scatter plot just it may not work all the time, but it's it's like a just a
+
+109
+00:19:56.280 --> 00:19:59.179
+Mani K: big takeaway just by looking at the day
+
+110
+00:19:59.230 --> 00:20:01.159
+Mani K: plot itself. Okay, so that's the thing.
+
+111
+00:20:02.830 --> 00:20:04.163
+Mani K: So that's
+
+112
+00:20:04.870 --> 00:20:18.700
+Mani K: That's how model I mean can works. And you can quickly do a few other things to here. You can also use other classification algorithms. So it's pretty straightforward.
+
+113
+00:20:19.970 --> 00:20:49.419
+Mani K: in terms of once you have the data prepared. So like, for example, here. I'm importing an Svm model which is called support vector, machine. So you can import it, fit it and get the score immediately the same thing. You can use a random forest classifier, which is also another popular classification algorithm. So you can do some of these things too
+
+114
+00:20:50.630 --> 00:21:17.504
+Mani K: to quickly evaluate how it works with different models. Again, I'm not going to go into the details of how Svm. And Random Forest works here, but just giving you a primer on it that, like you can try out different models quickly and figure out like how it works to to begin with, and then you can fine tune all of these models together as a shot to figure out like which one might be the right
+
+115
+00:21:17.990 --> 00:21:20.780
+Mani K: model that could work for you. Yes, that's the thing.
+
+116
+00:21:21.906 --> 00:21:22.853
+Mani K: Now,
+
+117
+00:21:24.220 --> 00:21:50.529
+Mani K: Now, in this particular example, we also use the test data to make the predictions and and this is where like the model evaluation comes into goes into the next tier. Actually, so beyond accuracy, like, how like, can you understand? Like what is going on within the model. And what is the most important class for you to predict right like for you.
+
+118
+00:21:50.530 --> 00:22:11.290
+Mani K: for example, here, like for me like it's more important, at least like not for me. But I think for our human resources for team. It's more important for them to see like if the predictions for the attrition case is more accurate having less
+
+119
+00:22:11.764 --> 00:22:32.679
+Mani K: I guess, like false, positive, or false negatives would would be of utmost importance than like. If it's if it's performing bad against a non attrition case. Okay, so that is the thing. So this is the thing that we are going to be looking at. In the second part of the
+
+120
+00:22:32.810 --> 00:22:34.640
+Mani K: office hour. Okay.
+
+121
+00:22:35.240 --> 00:22:45.139
+Mani K: so let me just jump into my slide deck and then I'll go over a few things around the model stuff, and then we'll come back to the notebook again. Okay, so
+
+122
+00:22:45.230 --> 00:22:50.269
+Mani K: let me stop my share and go back to my notebook. Sorry. No. Go back to my slide deck.
+
+123
+00:22:53.620 --> 00:22:54.445
+Mani K: So
+
+124
+00:22:57.270 --> 00:23:12.701
+Mani K: okay. So I think I'm hoping, like everyone have has gone through the material so far and understands what a confusion matrix is so High level again, this is for binary.
+
+125
+00:23:13.200 --> 00:23:32.920
+Mani K: so if you have a real basically, it's comparing between the the real or actual data with comparing it to the predicted data. So again. So you can have, like, these 4 different components which within the confusion matrix like, you can have true positives, false negatives.
+
+126
+00:23:33.480 --> 00:23:42.949
+Mani K: false positives and true negatives. Right? So basically from these, you can actually like, calculate the different
+
+127
+00:23:43.890 --> 00:24:10.815
+Mani K: I guess, like evaluation metrics for a model. So the most important things are, in my opinion, are like the precision and recall and this would determine, based on like, what is your most important class going to be? So you can always consider that as your true positive. Okay, so precision is basically the ratio between
+
+128
+00:24:11.677 --> 00:24:36.310
+Mani K: the true positives that the model predicted along with the the actual true positives, the model predicted to the total number of true positives that the model predicted. So basically, it's Tp over Tp over over Tp plus fp, so that's what is the precision. So basically, out of all the predictions. Right like this is all the predictions.
+
+129
+00:24:36.310 --> 00:24:55.999
+Mani K: How much was true? Correctly predicted among the positive class. So that's what precision is all about, and then for recall. It's the other way around here, like you are talking about the true positives that predicted correctly with
+
+130
+00:24:56.000 --> 00:25:22.360
+Mani K: the total number of actual positives that we have right like. So this is the actual positives, which is this sum of Tp plus Fn. So basically, it's the ratio of Tp divided by Tp plus Fn. But basically the total number of actual positives that we have. That's what this is. And so the ratio of the true part predicted positives to the total number of actual positives that we have. So
+
+131
+00:25:22.360 --> 00:25:46.114
+Mani K: so that's called the recall. And then we have few other things specificities goes the other way around. So it's the true negatives divided by Tn plus Fp, which is the the opposite of recall. And then sensitivity is the total number of true positives predicted divided by
+
+132
+00:25:48.885 --> 00:26:07.149
+Mani K: Tp plus fn. I think that's the incorrect thing I think. Here I need to check this. I think there's a formula in correction here, but sensitivity is also looking at reposit. I think it's this one, I think. Tp plus fn. So it's it has to be tn divided by Tp Tn plus fn, so it's going to be the other way around.
+
+133
+00:26:07.320 --> 00:26:31.219
+Mani K: anyway. So the again. You don't have to go into. You don't have to get confused with all those terms that I think the most important one is going to be the precision and recall. So just keep that in mind, basically, because for both. So for both classes, you can have a case that like, okay, this is my true positive like, for example, for for attrition.
+
+134
+00:26:31.300 --> 00:26:58.154
+Mani K: you can say that for attrition as one. I want to consider that as my true positive, and then calculate the precision and recall. And then you can also do the other way around, for, like you can just say, non attrition is going to be my true positive, and then calculate the precision and recall for that use case to actually, which is what we'll be looking at in the data set in the notebook. But that's that's the key thing here. Okay.
+
+135
+00:26:59.364 --> 00:27:26.565
+Mani K: but if you don't want to look at like you know all these different like multiple numbers. The other simplified number is looking at the f 1 score, which is a measure of both the combination of precision and recall. So basically, it's it's twice precision and recall, divided by the sum of precision plus recall. It's a score between 0 and one again closer to one meaning. It's good
+
+136
+00:27:27.060 --> 00:27:47.450
+Mani K: the thing is here for like, for example, for binary classification, you need to look at the f 1 score of both of them. Okay, so how? What is the f 1 score for when attrition is 0? What is the f 1 score for attrition is one like in this particular example. So that's how you will have to look at. Okay, so that's the thing.
+
+137
+00:27:47.510 --> 00:28:05.260
+Mani K: So so this is how evaluation metrics using confusion matrix and f, 1 score is typically done. Okay, and so let's go with this background back to the notebook. And we can, we can see, like, how this works. Actually, okay.
+
+138
+00:28:05.260 --> 00:28:18.899
+Mani K: But I'll be showing only one example but when we calculate the f 1. You will see that like you will have the f 1 for both classes. And and I think that would reveal a lot more information about it.
+
+139
+00:28:20.190 --> 00:28:24.039
+Mani K: Let me just go back to my notebook.
+
+140
+00:28:32.050 --> 00:28:56.500
+Mani K: Okay, so model evaluation. Again. I just talked about the confusion matrix. It's it takes the I the the actual, and then the predicted, and then puts them into into a 2 by 2 matrix in this particular case. Yeah. So like, for example, here. When I send the the test data, the Y test, and then the predictions.
+
+141
+00:28:56.520 --> 00:28:59.391
+Mani K: It's good. It's giving me
+
+142
+00:29:01.112 --> 00:29:10.057
+Mani K: a 2 by 2 matrix that looks like this. Okay? So basically, what this says is, I'll just explain it clearly.
+
+143
+00:29:10.670 --> 00:29:24.040
+Mani K: so there are total 232 plus 6 which is almost like 2 38 non attrition cases. So non attrition with 0
+
+144
+00:29:24.449 --> 00:29:43.269
+Mani K: out of which these are the correctly predicted ones. Okay? So in the second one, which is the attrition cases which is classified as one there are 51 plus 5 which is 56 data points, out of which
+
+145
+00:29:43.300 --> 00:29:52.430
+Mani K: only 5. It predicted correctly and 51 it? Predicted incorrectly. So that's that's 1 thing about 51 was classified as positive.
+
+146
+00:29:52.470 --> 00:29:59.477
+Mani K: So so you can see inherently what the problem is like here itself, like our
+
+147
+00:30:02.300 --> 00:30:19.730
+Mani K: the the class of interest which is attrition is not performing well, just by looking at the confusion matrix. You don't need to do anything more than that. But if you look at the accuracy score 80% looks really really good, which means that like
+
+148
+00:30:21.299 --> 00:30:50.390
+Mani K: which which makes you think that the model is predicting really well. But when you look at closely at the confusion matrix, you'll start to understand like how it is performing for each class, and and what is the goal or the problem that you're trying to solve here, right like, in this particular case we are trying to solve, whether we can predict somebody is going to leave the company or not like which is the attrition case, and in that case the model is performing really poorly. So that's what this
+
+149
+00:30:51.170 --> 00:31:11.152
+Mani K: this one is. giving us at to begin with itself. Okay, so we can go. And mark all of this. So for me like this, I'm going to assume this particular case as the true positive. Okay for me like attrition is the true positive for me. So I'm I'm going to assume all of that based on that like, for example.
+
+150
+00:31:11.590 --> 00:31:17.609
+Mani K: my in the confusion matrix, my 1 1
+
+151
+00:31:18.322 --> 00:31:41.320
+Mani K: this is my true positive. Okay? So I'm assuming that. So so my 1 1 is going to be my true, positive true negative is 0. 0. 1 is false, positive, and 1 0 is false. Negative. Okay? I'm hoping you're trying to understand. You're understanding what I'm trying to get to here. Okay? So for me, like, attrition is more important. So I'm assuming attrition to be the positive class here. Okay?
+
+152
+00:31:41.320 --> 00:31:51.340
+Mani K: And based on that, I'm labeling it accordingly. So again, this is just for explanation. You don't have to do any of this. There are built in functions to do all of this? Clearly, okay.
+
+153
+00:31:51.702 --> 00:32:19.105
+Mani K: so my Tp is 1 1 tn is 0 0 0, 1 is fp, and 1 0 is fn, okay? So so so this from this, like, you can calculate all of this based on the formulas that I already provided. Okay, so the accuracy is pretty much the Tp plus sum of tp plus tn, and divided by all of all of the things in the matrix. So this is the accuracy score, and you can check if this
+
+154
+00:32:19.970 --> 00:32:26.000
+Mani K: if this aligns with the score that we get from the Knn itself. Okay, so that's what I'm trying to print here.
+
+155
+00:32:26.120 --> 00:32:29.710
+Mani K: so you can calculate a recall which is
+
+156
+00:32:30.128 --> 00:32:59.660
+Mani K: the true positives divided by Tp plus fn. So here you can see that the recall is really poor. I mean, obviously both precision and recall. You want to have a higher number. You can see that it's only 0 point 0 8 you can calculate the false positive rate which is the false positives divided by Tn plus Fp, which is, again, you can calculate all of this individually. Precision, is this one?
+
+157
+00:32:59.980 --> 00:33:15.279
+Mani K: Okay? You can see that, like all of these numbers are pretty low when you consider attrition to be positive. Okay, if you redo the same thing where, like non attrition case is considered as a positive class.
+
+158
+00:33:15.280 --> 00:33:31.370
+Mani K: you will get a different set of precision and recall numbers. And you, it might be slightly higher. So okay, so you can. Just for example, you can take you can consider that case and see like how that works like, okay?
+
+159
+00:33:31.927 --> 00:33:46.419
+Mani K: And then you can also pro you can also calculate the f 1 score for this particular class, which is the attrition. And you can see that the f 1 score is pretty low. Okay, so that's nice.
+
+160
+00:33:46.803 --> 00:34:02.140
+Mani K: So always doing this exercise, for both classes would reveal little bit more information, and and depending on that like, you can tune your models accordingly, or try to find out, like, what inherent problem your data set has
+
+161
+00:34:02.140 --> 00:34:14.560
+Mani K: to begin with, and and and you can, you can take appropriate actions. Okay, so that's how these model evaluations work.
+
+162
+00:34:14.904 --> 00:34:42.135
+Mani K: Again, the most important one is precision and recall. I think it's pretty easy to remember from the confusion matrix. How precision and recall are calculated once you know which one is your what is the right notations for your true positives, true negatives, false positives, and false negatives for each of those classes. So but if you want to calculate the f 1 score for both classes like, you can also just use the
+
+163
+00:34:43.179 --> 00:35:05.170
+Mani K: the classification report function. And you can pass even the target class names and all. And it can. It can give you a pretty good summarized value of this. Okay, so here you can see that like, for both classes, for no attrition and attrition. What is the precision and recall for each of those classes.
+
+164
+00:35:05.200 --> 00:35:13.539
+Mani K: and then the f 1 score and then what? How? What is the number of data points that you that you had. For this particular
+
+165
+00:35:14.116 --> 00:35:29.136
+Mani K: a test data set. So for no attrition, you can see that the precision and recall are pretty high, which is 0 point 8 2 and 0 point 9 7, and even their fun score is high, because it's when you have high precision. Recall, you would have a high f 1 score
+
+166
+00:35:29.590 --> 00:35:42.229
+Mani K: and for the attrition case, which is what we manually did the precision is 0 point 4 5. But the recall is even bad, and our f 1 score is only point 1 5 if you have something.
+
+167
+00:35:42.874 --> 00:36:07.119
+Mani K: So if if predicting attrition is the most important thing you can live with, having, like false positives or false negatives for the no attrition case. Then you can start to fine tune, your model to improve the case for the attrition. Okay, so that's 1 thing.
+
+168
+00:36:07.636 --> 00:36:34.310
+Mani K: What are the things that you can do? Okay. So for classification. It's always the case of whether you have a balanced data set or not. Okay, you can see that just in the test data set, like the no attrition is 4 times like more than 4 x data points are there for no attrition compared to the attrition? So 56 data points and you have 200 close to 240.
+
+169
+00:36:34.330 --> 00:37:03.700
+Mani K: So, so you do have an imbalance data set. So for classification, it's always an inherent problem. So you will have to see like what you can do to improve. Balancing the data set. 1st of all, the other thing that you can do is like maybe playing with the threshold itself. You know. Usually the probability or the threshold is set to 50% for most models. You can also play with the thresholds to
+
+170
+00:37:04.406 --> 00:37:12.279
+Mani K: to predict the other class. Higher. So that's that's always the case. So you can also play with that playing with thresholds
+
+171
+00:37:12.360 --> 00:37:26.809
+Mani K: or the other one is to adjust your data set, which is either you under sample or oversample things like that, or you try to get more data points from elsewhere to figure out like how to manage this problem. So that's the thing.
+
+172
+00:37:28.438 --> 00:37:46.020
+Mani K: is that is that clear? I mean, like, how Like model metrics work. And then the inherent problems there and then. I think the key thing is like, what is the problem you're trying to solve. And for that problem is the model working well or not, I think that's the key thing here.
+
+173
+00:37:46.541 --> 00:37:55.179
+Mani K: So so that's that's the the main important thing here or the takeaway in terms of model evaluation.
+
+174
+00:37:56.268 --> 00:37:58.561
+Mani K: Yeah. Just don't go with
+
+175
+00:37:59.490 --> 00:38:14.989
+Mani K: yeah. Just don't go with the the accuracy. Scores, I I know, like a lot of people still continue to use those at least like, you know, like where the red flags are if somebody is just like reporting accuracy scores.
+
+176
+00:38:16.013 --> 00:38:19.376
+Mani K: so that's that's 1 of the most important things.
+
+177
+00:38:20.280 --> 00:38:22.939
+Mani K: alright! Let me go back to
+
+178
+00:38:23.660 --> 00:38:27.088
+Mani K: the notebook. Sorry my presentation again.
+
+179
+00:38:27.840 --> 00:38:30.348
+Mani K: And we can talk about
+
+180
+00:38:31.290 --> 00:38:35.930
+Mani K: the other thing that I wanted to explain which is
+
+181
+00:38:38.200 --> 00:38:50.740
+Mani K: so most of the time, I think. The if you just go with confusion, matrix and and f 1 scores and stuff, I think that would be more than
+
+182
+00:38:51.198 --> 00:38:55.502
+Mani K: sufficient. But I think some people also like to work with this
+
+183
+00:38:56.270 --> 00:38:58.409
+Mani K: auto the au the gov
+
+184
+00:38:59.740 --> 00:39:00.595
+Mani K: So
+
+185
+00:39:02.426 --> 00:39:26.140
+Mani K: so what is this, like Roc stands for receiver operating characteristics or area under the kind of a plot. It's basically a plot between a true positive rate and the false positive rate at various threshold settings. Okay? So basically, you remember, like, your model is predicting at 50% threshold by default.
+
+186
+00:39:26.140 --> 00:39:47.128
+Mani K: But if you adjust the threshold like, how does the true positive rate and false positive rate vary based on that like? The this graph is plotted. That's the thing. So basically, it plots true positive rate on the Y and the false positive rate on the X-axis
+
+187
+00:39:47.800 --> 00:39:50.609
+Mani K: for different classification thresholds. Yeah.
+
+188
+00:39:52.200 --> 00:40:07.179
+Mani K: so from the Roc curve the main thing that is calculated. So again, it's a it's a value between 0 and right, like the y is going to be between 0 and one, and your X is also going to be between 0 and one
+
+189
+00:40:07.681 --> 00:40:23.149
+Mani K: so the if you have a perfect case where, like your your true positive rate is one right at the right when your false positive rate is 0. So
+
+190
+00:40:23.150 --> 00:40:49.050
+Mani K: that means that the area under the curve is going to be one. Okay? So the idea is to get as high as possible in terms of the area under the curve. Okay, the closer to one it's better. And you can also see, like, whether the one is closer to one, how you are getting it like whether there is an elbow or whether there's a sharp turn in your Roc code, and things like that. That that can help with that.
+
+191
+00:40:49.080 --> 00:41:10.679
+Mani K: So how does the Roc curve gets plotted? It's based on the Roc points by varying the threshold. So basically like, let's say, like, if you have a threshold between, like, let's say in this particular example, it's just an example that I just wanted to show like, like, if we have thresholds between 0 point 4 to point to one
+
+192
+00:41:10.680 --> 00:41:19.669
+Mani K: with step cycles of 0 point 2 you can see, like how the true positive and the false positive rate varies between 0 and one.
+
+193
+00:41:19.670 --> 00:41:30.346
+Mani K: And once you have this data point, this, this is used to plot the Roc code again, you don't have to do all of this. All of these are available as functions.
+
+194
+00:41:30.880 --> 00:41:34.151
+Mani K: but in general this is how the
+
+195
+00:41:35.012 --> 00:41:46.257
+Mani K: the for the Roc curve is getting plotted. Okay, so that's the thing like. For example, let's say, just take an example like, let's say, we have
+
+196
+00:41:46.640 --> 00:42:10.589
+Mani K: this spam and non spam for emails. And we have a a confusion matrix that looks like this. Okay, so you have, like, 50 that are marked as actual spam, but out of which 40 are getting predicted correctly, and then, 10 are false negatives. There are 20 false positives and 32 negatives, which is actual, not spam.
+
+197
+00:42:10.640 --> 00:42:26.860
+Mani K: So in this particular case you can calculate the Dpr. Which is a true positive rate, which is 40 over 40 plus 10. So 40 over 50. That's my true positive rate, which is 0 point 8, and my false positive rate is going to be
+
+198
+00:42:27.060 --> 00:42:54.450
+Mani K: 20 over 20 plus 30. So this is the number of false positives that got predicted over all the true negatives. Right? So so if let's say like for this particular example, I don't have the Roc curve, but like assume that like there is an Roc curve, and the area under the curve is 0 point 7 2 for this particular example. Okay.
+
+199
+00:42:54.940 --> 00:43:21.580
+Mani K: and you are fine tuning. This model like, say, I want to improve the false positive rate or reduce the false positive rate. So so let's say you've made some changes, and your confusion matrix now looks like this, which is like you improved the true positives by 5. So now it's 45, and 5, and then you have, less false positives and more true negatives. Now you're
+
+200
+00:43:22.043 --> 00:43:29.469
+Mani K: tpr, or true positive rate is 0 point 9, and my false positive rate has reduced by half 2.2,
+
+201
+00:43:29.490 --> 00:43:30.710
+Mani K: and I'm in.
+
+202
+00:43:30.830 --> 00:43:45.520
+Mani K: Maybe in this case the Auc now improved 2.9. Okay, so that is the thing. So so you keep shifting the well, you keep improving on some of these parameters, and then you can measure how your Auc is
+
+203
+00:43:46.023 --> 00:43:50.765
+Mani K: improving. Okay, so that's the thing. So usually
+
+204
+00:43:53.068 --> 00:43:57.971
+Mani K: let me see if I can. draw something out here.
+
+205
+00:43:58.670 --> 00:44:09.340
+Mani K: so if you have like so this is my Tpr, open my
+
+206
+00:44:09.420 --> 00:44:12.180
+Mani K: thing, and this is my Fpr
+
+207
+00:44:14.240 --> 00:44:20.229
+Mani K: both are with 0 to one right? So it's this is at 0, and both are one here.
+
+208
+00:44:20.290 --> 00:44:25.069
+Mani K: So the ideal thing would be to have a curve that looks like this
+
+209
+00:44:25.320 --> 00:44:32.579
+Mani K: and all the area under the curve. If you have it, it will be like so that's auc equal to one
+
+210
+00:44:34.129 --> 00:44:37.720
+Mani K: but good
+
+211
+00:44:40.910 --> 00:44:43.737
+Mani K: drawings. Okay. So
+
+212
+00:44:45.200 --> 00:45:08.510
+Mani K: maybe, to begin with, like, you might have an Auc curve that looks like this. Okay? Sorry the Roc code that looks like this. And then maybe, like over time, you might be able to improve that to something like this. Okay, the ideal one is to go get to a point where, like the A/C looks like this, but which is almost very hard to achieve.
+
+213
+00:45:08.510 --> 00:45:22.589
+Mani K: But you are trying to get more and more towards an roc that looks like this. Okay, so that's that's the understanding of the way Roc and the Auc or the area under the curve works.
+
+214
+00:45:23.023 --> 00:45:48.046
+Mani K: Some people are good at working with understanding these plots, and how how sharp the elbow turns, and things like that would would also matter but again, you can use this, or you can just go to the f 1 and start working with numbers. Also, I think either one works or a combination of them also works. But
+
+215
+00:45:48.817 --> 00:45:55.169
+Mani K: but that's just how? The roc and aoc work actually in terms of
+
+216
+00:45:55.608 --> 00:46:11.369
+Mani K: model evaluation again. So here you are, working with the the true positive rates and false positive rates with f 1, you are working with precision and recall which would have a number for both classes. So that is the thing. Okay.
+
+217
+00:46:11.824 --> 00:46:24.475
+Mani K: is that clear? I mean. So that's that's how Roc works again. You don't have to worry about how it's getting calculated. I think if you want like, you can go into the math of it. But
+
+218
+00:46:25.153 --> 00:46:43.539
+Mani K: I think most cases, I think all these are built in functions. So you can just like call the respective functions. And you should be able to to get whatever is needed to understand how your model is performing for this particular use case. Okay?
+
+219
+00:46:44.040 --> 00:46:56.682
+Mani K: Alright. Any other questions. I think those are the high level things that I really wanted to cover on this particular office hour. I think we have another
+
+220
+00:46:57.560 --> 00:47:10.440
+Mani K: 1012 min left, so we can. I think I can open the floor for any questions, and then we can also. talk about if anyone has questions regarding their projects also, we can spend some time there.
+
+221
+00:47:19.730 --> 00:47:32.174
+Mani K: Oh, no, I think it's always highly so this is a question from Rajesh. Whether it's required to normalize the data before calling the nearest neighbors. I think it's always good to
+
+222
+00:47:34.985 --> 00:47:40.617
+Mani K: it's always good to normalize the data again, the normalizing. The data is going to be around
+
+223
+00:47:41.070 --> 00:47:44.839
+Mani K: the numerical numbers. So it's always good to do it. Okay?
+
+224
+00:47:44.920 --> 00:47:49.659
+Mani K: So in this particular example, we didn't do it. But it's always good to do it.
+
+225
+00:47:52.010 --> 00:47:57.354
+Mani K: Okay, if I want to. If I wanted a non binary output
+
+226
+00:47:58.290 --> 00:47:59.679
+Mani K: how do I go about it?
+
+227
+00:48:03.200 --> 00:48:09.229
+Mani K: Like? What do you mean by non-binary of you? You want the raw probabilities Sashi.
+
+228
+00:48:09.551 --> 00:48:19.830
+shashi: Yeah, no, I mean, instead of yes, no answer. If I want to predict some of the category like, if it is a dog or a cat or a bird
+
+229
+00:48:19.890 --> 00:48:26.769
+shashi: from image classifier? If there are multiple possibilities how do I go about that?
+
+230
+00:48:27.440 --> 00:48:41.214
+Mani K: Yeah, so you will have a multi-class confusion report. Confusion matrix, like, yeah. In this particular example, we only showed an example of a binary confusion matrix, you will have multiple classes. And
+
+231
+00:48:41.934 --> 00:49:00.780
+Mani K: the the confusion matrix could become a little complex. If you have like a lot of things, but you would still have an f 1 score for each classification. Okay, so I think that's why I said, like f, 1 score is a lot more easier to handle. So like let's say you have. Like 5 classes
+
+232
+00:49:00.860 --> 00:49:17.691
+Mani K: like 5 different classifiers, you can find the f 1 score for each of the classifier to understand it a little bit more easier. You you can have a confusion matrix for the 5 classes, especially like it's very hard to, I guess. it.
+
+233
+00:49:18.582 --> 00:49:22.809
+Mani K: consume that information easily. Okay. So you can still do it. Yeah.
+
+234
+00:49:22.840 --> 00:49:26.200
+Mani K: I mean the confusion. If you give the
+
+235
+00:49:26.650 --> 00:49:31.719
+Mani K: data to the the function. It's it's going to give you the the matrix for that, too.
+
+236
+00:49:34.140 --> 00:49:41.459
+shashi: And are we covering that in our course? In this one multiple classic classifiers.
+
+237
+00:49:42.119 --> 00:50:02.190
+Mani K: I don't think we cover in the material, but it's nothing different than the binary. Okay? So it's basically the same procedure. Nothing changes. Actually. So in your response variable, you will have multiple classes when you pass that to the confusion matrix, you will get the appropriate
+
+238
+00:50:03.010 --> 00:50:03.470
+shashi: Okay.
+
+239
+00:50:03.470 --> 00:50:11.039
+Mani K: Able for that. Okay, so everything. Okay. So nothing changes. Whether it's a binary classification or a multiple classification.
+
+240
+00:50:11.040 --> 00:50:12.900
+shashi: Oh, okay. Then. Okay.
+
+241
+00:50:13.881 --> 00:50:24.138
+Mani K: Okay, where do I schedule one on one, if you don't mind. Can you show me? Okay? So I it's just a calendar Link. Let me see, I think I shared it with
+
+242
+00:50:24.750 --> 00:50:27.940
+Mani K: Give me one moment, and I will do that.
+
+243
+00:50:29.550 --> 00:50:32.159
+Mani K: I believe I sent it to Rachel.
+
+244
+00:50:40.760 --> 00:50:43.280
+Gopikrishna Putti: Matt already shared it. Thanks, money.
+
+245
+00:50:43.410 --> 00:50:44.040
+Gopikrishna Putti: Don't bother.
+
+246
+00:50:44.040 --> 00:50:45.890
+Mani K: Okay. Fantastic. Okay.
+
+247
+00:50:46.060 --> 00:50:46.650
+Gopikrishna Putti: Thank you.
+
+248
+00:50:47.000 --> 00:50:47.880
+Mani K: Alright cool.
+
+249
+00:50:48.050 --> 00:50:49.295
+Mani K: Yeah. So that's
+
+250
+00:50:50.359 --> 00:50:50.950
+Mani K: Yeah.
+
+251
+00:50:51.210 --> 00:50:51.940
+Mani K: Alright
+
+252
+00:50:52.415 --> 00:51:02.838
+Mani K: any other questions. I think this is great. I I think the I think the model evaluation is the most important one, I think. me, like, if we
+
+253
+00:51:03.560 --> 00:51:13.399
+Mani K: like, if you do, multiple exercises around there like how to evaluate the models, I think. It'll give you a lot of information regarding
+
+254
+00:51:13.490 --> 00:51:28.134
+Mani K: well, 2. 1 is like how the model is performing by default. That's that's an important part. And then, like, what are the things that you can do to improve? Right? Like I think those are the those are some of the important things
+
+255
+00:51:29.033 --> 00:51:37.709
+Mani K: going at. Yeah. So still, like I, I still see, like a lot of people just talking at very high level accuracies and stuff. But
+
+256
+00:51:37.730 --> 00:51:55.589
+Mani K: but I think the most important one is looking a little bit deeper into, especially on multi-class specification. Looking at how it performs for each class. And what is the most important class for you? Right? I think that's that's more important.
+
+257
+00:51:57.035 --> 00:51:59.314
+Mani K: I think it's the same like
+
+258
+00:52:01.860 --> 00:52:12.229
+Mani K: like, whether whether you want so I don't know if you I think we've I've mentioned this before, like I think false positives and false negatives are
+
+259
+00:52:12.686 --> 00:52:16.250
+Mani K: like opposite side of the spectrum, like you can't
+
+260
+00:52:16.450 --> 00:52:19.163
+Mani K: get both of them
+
+261
+00:52:20.760 --> 00:52:29.881
+Mani K: to be optimized. So you need to give up. Give one for improving the other. So it depends like, so
+
+262
+00:52:30.810 --> 00:52:43.128
+Mani K: ideally like, if your data is balanced and everything looks good like you will have similar false positives and false negatives. But in normal use cases it may not be the case sometimes like
+
+263
+00:52:43.793 --> 00:53:01.419
+Mani K: so let's say, like your false positives are higher, and your false negatives are lower. But you are you? Maybe your objective is to lower the false positives, which means that, like, when you are trying to do that automatically, the false negatives will go up. Is that something that you can live with and things like that?
+
+264
+00:53:01.722 --> 00:53:21.097
+Mani K: It's also a question, okay? So usually like, so this is why so basically based on the objective of the or the problem that you're trying to solve. Sometimes like you're tuning towards one, which means that you are giving up on the other side, which which you should be able to live with. Okay, so that's the thing you can get.
+
+265
+00:53:21.788 --> 00:53:32.289
+Mani K: both accomplished in some cases. So if that is the case, then what is more important to you, you need to understand that. And based on that, you can tune your models.
+
+266
+00:53:33.040 --> 00:53:36.249
+Mani K: So that's that's another thing. I wanted to highlight there.
+
+267
+00:53:37.540 --> 00:53:53.640
+Mani K: Alright! If there aren't any other. let's see if there are any other questions I'm still worried about 12.3 user frame. Okay, let's just go look into that I'm gonna be sharing my screen. And then we can look into that.
+
+268
+00:53:54.910 --> 00:54:02.390
+Mani K: Give me one moment. I'm gonna be looking at the data set 12.3.
+
+269
+00:54:03.430 --> 00:54:04.190
+Mani K: The
+
+270
+00:54:20.124 --> 00:54:26.145
+Mani K: Matt, can you tell me which section this falls under? I'm just opening up the notebook
+
+271
+00:54:29.260 --> 00:54:34.379
+Mani K: like within the within the notebook, I see. Okay, I see the confusion matrix.
+
+272
+00:55:10.540 --> 00:55:16.549
+Mani K: Just give me a moment. I'm just looking at the exact portion of what you are.
+
+273
+00:56:05.890 --> 00:56:14.629
+Mani K: So basically, yeah, it's basically it's imported that. Yeah, that there, you answered it. So it's basically a built in
+
+274
+00:56:14.957 --> 00:56:22.950
+Mani K: data set. That's part of I guess, like, scal on data set. And it's just like importing directly. That's that's all it is.
+
+275
+00:56:25.440 --> 00:56:27.920
+Mani K: And then you're assigning it to a data frame. Yeah.
+
+276
+00:56:29.170 --> 00:56:30.050
+Mani K: Okay.
+
+277
+00:56:31.800 --> 00:56:32.840
+Mani K: Alright cool.
+
+278
+00:56:34.640 --> 00:56:35.300
+Mani K: Alright
+
+279
+00:56:35.980 --> 00:56:44.803
+Mani K: alright! If there aren't any other questions, then I guess like we'll we'll talk again in a few weeks, and again for
+
+280
+00:56:45.190 --> 00:56:54.102
+Mani K: folks in my section, please. If you haven't scheduled your one on ones with me, please schedule the one on ones. And let's talk about your projects. And
+
+281
+00:56:54.799 --> 00:56:57.249
+Mani K: you know, get them moving. Okay? Alright.
+
+282
+00:56:57.250 --> 00:57:00.560
+shashi: Yeah, I have. I have scheduled mine for tomorrow morning.
+
+283
+00:57:00.590 --> 00:57:02.870
+Mani K: Okay, you would have got the
+
+284
+00:57:02.870 --> 00:57:07.200
+Mani K: yeah, yeah, I have the. Yeah. If you have scheduled it, I have it in my calendar.
+
+285
+00:57:07.780 --> 00:57:08.340
+shashi: Okay.
+
+286
+00:57:08.560 --> 00:57:09.520
+Mani K: Okay, only
+
+287
+00:57:09.520 --> 00:57:19.349
+Mani K: alright, thanks everyone. And everyone have a great Thanksgiving. I think it's a Thanksgiving week. So and we'll catch up in a few weeks. Alright, bye.
+
+288
+00:57:19.660 --> 00:57:21.040
+shashi: Yeah. Bye, bye, everybody.
+

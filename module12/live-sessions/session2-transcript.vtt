@@ -1,0 +1,2090 @@
+WEBVTT
+
+1
+00:00:00.720 --> 00:00:03.950
+Francesca: Right now. I think we're good on the recording.
+
+2
+00:00:05.555 --> 00:00:09.498
+Francesca: Yep, hello to everyone who's just joining us.
+
+3
+00:00:11.200 --> 00:00:16.660
+Francesca: I'll see if we get a few more folks. But I think we can.
+
+4
+00:00:16.890 --> 00:00:22.330
+Francesca: We can get started. How? How is everyone doing today?
+
+5
+00:00:22.330 --> 00:00:24.010
+rahulbhole: Good. I'm good.
+
+6
+00:00:24.730 --> 00:00:28.295
+Francesca: I. I'm okay. I'm doing all right. We were saying it was,
+
+7
+00:00:29.000 --> 00:00:33.965
+Francesca: it's a bit gloomy where I am right now, but otherwise otherwise doing. Okay?
+
+8
+00:00:34.830 --> 00:00:39.999
+Francesca: we're starting to get into one of the parts of the course that I really like.
+
+9
+00:00:40.680 --> 00:00:45.686
+Francesca: So excited to to to the office hours.
+
+10
+00:00:46.440 --> 00:00:53.170
+Francesca: before I jump in with the module. And what I have planned for today.
+
+11
+00:00:53.721 --> 00:01:03.320
+Francesca: Normally, I start with an icebreaker for people. I I recognize that some people have been coming to my office hours. Almost every time I've done it, and
+
+12
+00:01:04.090 --> 00:01:09.469
+Francesca: I normally like to start with an icebreaker. But since it's getting to the
+
+13
+00:01:09.600 --> 00:01:16.149
+Francesca: sort of crunch time of the course, particularly with capstone projects, I wanted to.
+
+14
+00:01:16.440 --> 00:01:20.240
+Michael Smith: Make today's icebreaker about your one-on-one check-ins.
+
+15
+00:01:20.410 --> 00:01:24.749
+Francesca: Could I get a show of hands or thumbs up? Who has
+
+16
+00:01:24.780 --> 00:01:29.250
+Francesca: schedule their one-on-one check-in for their capstone project?
+
+17
+00:01:29.750 --> 00:01:34.490
+Francesca: Okay? So I see, thumbs up. Okay, okay.
+
+18
+00:01:34.890 --> 00:01:45.440
+Francesca: cool. Okay. You have yours tomorrow. Awesome. Okay? Great. So I'm glad that people have scheduled their one on one check ins. I have done a few
+
+19
+00:01:46.102 --> 00:01:54.155
+Francesca: with some folks, and they have been, I think, a really great way to
+
+20
+00:01:55.020 --> 00:02:09.529
+Francesca: Get that one on one time with your learning facilitator that I hear almost every office hours of people would really like, and I have personally found it to be really helpful
+
+21
+00:02:09.590 --> 00:02:17.490
+Francesca: in making sure that the people I've done the one on ones with leave the one on ones knowing exactly what
+
+22
+00:02:18.080 --> 00:02:21.170
+Francesca: at least the problem they're trying to solve is.
+
+23
+00:02:21.310 --> 00:02:42.779
+Francesca: and if I remember, back to the 1st submission of defining the problem statement, I think a lot of people had really general ideas, large ideas, a space they were interested in. So maybe they were interested in something to do with the stock market, or maybe they were interested in something to do with healthcare, and I found that doing these one on ones
+
+24
+00:02:42.780 --> 00:02:52.659
+Francesca: has actually helped narrow down to a specific thing such as, okay, I was able to find this data set from
+
+25
+00:02:53.182 --> 00:03:11.217
+Francesca: you know, fitbits. And I wanted to predict if this person would reach their weekly activity target. And so we went from this large, large healthcare space down to this very specific thing where we've left with a problem statement and a data set
+
+26
+00:03:11.800 --> 00:03:16.800
+Francesca: out of curiosity. Has has anyone here already completed their one on one check in.
+
+27
+00:03:20.070 --> 00:03:20.920
+Francesca: Yes,
+
+28
+00:03:22.680 --> 00:03:32.589
+Francesca: If anyone who's done it, if you want to throw into the chat, or if you want to unmute. And how how did it go? I'm I'm curious how how it went.
+
+29
+00:03:37.240 --> 00:03:38.589
+Michael Smith: I thought it went really well.
+
+30
+00:03:39.350 --> 00:03:42.770
+Francesca: Great, great! I'm glad. I'm glad. That's
+
+31
+00:03:42.900 --> 00:03:50.269
+Francesca: hopefully hopefully the outcome that everyone has. Did you find that it helped you
+
+32
+00:03:50.738 --> 00:03:53.489
+Francesca: make progress on your capstone project.
+
+33
+00:03:54.210 --> 00:03:56.960
+Michael Smith: Yes, it helped validate where I was going with it. So.
+
+34
+00:03:56.960 --> 00:03:58.230
+Francesca: Okay, perfect.
+
+35
+00:03:58.918 --> 00:04:08.339
+Francesca: That is really just such a such a great outcome. And I hope that everyone else gets to experience something
+
+36
+00:04:08.530 --> 00:04:10.674
+Francesca: something positive as well.
+
+37
+00:04:11.690 --> 00:04:19.060
+Francesca: Does anyone already have sort of questions that they have in mind
+
+38
+00:04:19.320 --> 00:04:22.749
+Francesca: before they do their one on one just.
+
+39
+00:04:25.590 --> 00:04:30.429
+rahulbhole: Yeah, I had one in my mind. I have specific use cases.
+
+40
+00:04:30.840 --> 00:04:38.059
+rahulbhole: But I'm not sure whether I will get the data set anywhere online. So I was not sure.
+
+41
+00:04:38.070 --> 00:04:43.020
+rahulbhole: How will I generate the data set? If I don't get, then I will have to just go with
+
+42
+00:04:43.690 --> 00:04:47.200
+rahulbhole: whatever is available on credible or and yeah.
+
+43
+00:04:48.444 --> 00:04:55.125
+Francesca: Have you found some backup data sets in case you aren't able to generate it? Or are you going to.
+
+44
+00:04:55.805 --> 00:05:00.980
+rahulbhole: For that reason I actually came up with 3 different use cases.
+
+45
+00:05:01.130 --> 00:05:02.050
+Francesca: Oh, okay.
+
+46
+00:05:02.408 --> 00:05:07.430
+rahulbhole: So if I and the 1st 2 use cases are more aligned with my
+
+47
+00:05:08.150 --> 00:05:14.760
+rahulbhole: background or work, if I don't get them, then 3rd one is like this, what you said, stock prices that's common. One.
+
+48
+00:05:14.760 --> 00:05:15.870
+Francesca: Oh, nice. Okay.
+
+49
+00:05:15.870 --> 00:05:17.569
+rahulbhole: Easily available data set right.
+
+50
+00:05:18.260 --> 00:05:25.155
+Francesca: Right it. It sounds like you're very prepared. So that's that's good to hear that that will make it very
+
+51
+00:05:25.923 --> 00:05:34.050
+Francesca: easy for your check in when you come in with ideas, and you're you're prepared. Anyone else have any tips that they're
+
+52
+00:05:34.469 --> 00:05:39.269
+Francesca: you know, preparing for when they want to meet their learning. Facilitator.
+
+53
+00:05:42.560 --> 00:05:43.646
+shashi: I have.
+
+54
+00:05:44.540 --> 00:05:49.289
+shashi: So I'm trying to explore the options, whether to go with the
+
+55
+00:05:50.178 --> 00:05:57.050
+shashi: Crop prediction yield prediction of the field crops or disease detection.
+
+56
+00:05:57.110 --> 00:05:59.440
+shashi: Now that we have started with the
+
+57
+00:06:00.210 --> 00:06:11.949
+shashi: classification problems, logistic integration and all using image classifiers. And also the problem with the yield production is
+
+58
+00:06:12.040 --> 00:06:20.130
+shashi: the permission from my customers and clients to use their data in my learning, and as I have to publish it in the public domain.
+
+59
+00:06:20.150 --> 00:06:24.420
+Francesca: So I have to anonymize the data and take it from there.
+
+60
+00:06:24.580 --> 00:06:31.533
+shashi: So. And I need to budget that kind of additional time for anonymizing their data and make it
+
+61
+00:06:33.050 --> 00:06:37.789
+shashi: Nothing is identifiable in their data back to their companies and things like that?
+
+62
+00:06:37.830 --> 00:06:41.426
+shashi: Or should I stick to image recognition
+
+63
+00:06:42.442 --> 00:06:49.507
+shashi: disease detection in plants? So for that, I'm trying to get some images which should be available
+
+64
+00:06:49.970 --> 00:07:00.620
+shashi: for diseased plants and healthy plants, so that that those are the options I want to discuss with my learning facilitator money.
+
+65
+00:07:00.620 --> 00:07:12.599
+Francesca: Great. Yeah, thank you for. Thank you for sharing. And I think you bring up a really really good point that the output of the Capstone project is going to be.
+
+66
+00:07:12.640 --> 00:07:28.709
+Francesca: you know, on Github it will be a public facing repository. It should. Actually, you know, it's exciting that it's a public facing repository. Because that means you have. You know, you're starting to build a portfolio of your work. But you bring up a really great point that.
+
+67
+00:07:28.820 --> 00:07:45.240
+Francesca: you know, if you are using a data set that is not currently public, maybe it's a data set you possess simple, it's good that you're keeping in mind to to check sort of the permissions, and knowing that it's going to be publicly available.
+
+68
+00:07:45.330 --> 00:07:51.550
+Francesca: and I think that's actually a good segue to see if
+
+69
+00:07:52.020 --> 00:08:02.990
+Francesca: I have it here. I'm skipping ahead just because we were on the note and well, and then I'll go back to the Capstone project. But I did
+
+70
+00:08:03.030 --> 00:08:06.890
+Francesca: have a couple of slides about the Github repo.
+
+71
+00:08:08.230 --> 00:08:16.919
+Francesca: I put these together actually, from practical applications. One, if you can remember that far back, which was, I believe, the 1st
+
+72
+00:08:17.010 --> 00:08:20.850
+Francesca: a submission that you had to do with.
+
+73
+00:08:21.620 --> 00:08:45.330
+Francesca: you know, on Github Repo. And I actually have here an example of files that would have been included by you on your Github repo. So if it looks familiar, this prompt python notebook, your read me data, and then maybe images for the visualizations. Remember, you were creating a lot of data visualizations, for if the customer would accept the coupon
+
+74
+00:08:45.510 --> 00:09:07.190
+Francesca: I did want to talk about just the aspects of the Github Repo, because, you know practical assignment 2. You submitted also has that you'll have another practical applications, 3 to submit, and you'll have your capstone project all you know having these key components in your Github repo. So, firstly, is the readme
+
+75
+00:09:10.140 --> 00:09:22.959
+Francesca: Even if the problem statement is in the Python notebook which it has been for the past practical applications. It's really helpful if the readme also contains the problem, statement.
+
+76
+00:09:23.300 --> 00:09:28.939
+Francesca: think of it like like. You're landing on a web page.
+
+77
+00:09:29.570 --> 00:09:43.800
+Francesca: and you want to make sure that the important high level information is right there when you land, and when I open your Github repo, I'm going to see your readme.
+
+78
+00:09:44.210 --> 00:09:51.950
+Francesca: I would like to know what problem your repo is addressing, so make sure you include your problem statement in your Github repo
+
+79
+00:09:53.775 --> 00:09:59.990
+Francesca: for the practical applications. It was helpful to have a link
+
+80
+00:10:00.220 --> 00:10:08.490
+Francesca: to the code. So link to your Jupyter notebook. This can even be a link to the
+
+81
+00:10:09.140 --> 00:10:10.960
+Francesca: place in your repo
+
+82
+00:10:11.000 --> 00:10:20.679
+Francesca: that has the notebook. So if you think of your repo and you've uploaded the notebook you might want to put a link of where in the repo
+
+83
+00:10:20.790 --> 00:10:35.309
+Francesca: to find that notebook? Obviously, you know, when you only have these 4 things listed. It's not that difficult for me to know which one your notebook is, but you'll imagine in the future you might have so many files in your repo so many folders.
+
+84
+00:10:35.350 --> 00:10:43.049
+Francesca: and maybe you want to make sure that the person who's reading your readme has a an easy time finding what they need to find
+
+85
+00:10:45.650 --> 00:11:07.819
+Francesca: a summary of your key findings and your interpretation. So this isn't sort of the, you know, full 3 to 10 page analysis of everything you did, and everything you saw, but like a nice summary for someone again, who's, you know, just going to your repo for the 1st time, wants to know exactly what they're getting. Put that in the read me.
+
+86
+00:11:08.730 --> 00:11:13.474
+Francesca: And as a reminder, it's important to use a markdown just for
+
+87
+00:11:13.890 --> 00:11:29.019
+Francesca: sort of the industry standard and the Github standard. So don't write your summary as a Pdf. And then upload that it's preferred that you have your readme as marked down and named similar to here.
+
+88
+00:11:30.450 --> 00:11:33.299
+Francesca: Next, your Github Repo will
+
+89
+00:11:33.460 --> 00:11:46.109
+Francesca: have a Jupyter notebook file. Make sure that you upload the file into your repo. I know that many of us, myself included. We'll create our notebook files using Google Colab.
+
+90
+00:11:46.310 --> 00:11:48.700
+Francesca: And of course, that has a shareable link.
+
+91
+00:11:48.780 --> 00:11:55.850
+Francesca: But for the purpose of your Github repo upload
+
+92
+00:11:55.910 --> 00:12:08.660
+Francesca: the sort of download the notebook from Google colab and then upload that into your repo so that it has its own file here rather than just a link to Google. Colab.
+
+93
+00:12:11.630 --> 00:12:16.620
+Francesca: Clear the entire thing and then run the entire thing.
+
+94
+00:12:16.770 --> 00:12:23.530
+Francesca: So you can go on edit, clear all outputs, and then, Runtime, run all that way. It is
+
+95
+00:12:23.910 --> 00:12:46.780
+Francesca: in a downloadable format already. Make sure that you just maintain the structure. You'll see very nicely in the practical applications that there have been subheadings and small text paragraphs before each section to explain what each section is. This is a practice you'll want to adopt for your capstone assignment.
+
+96
+00:12:47.440 --> 00:13:07.459
+Francesca: And then for your Github Repo, you can name a data folder. Maybe you have multiple Csvs that you're going to be working with for your capstone so you can create a data folder and then upload your Csv to that, or you can upload your Csv file. If you're only working with one Csv file
+
+97
+00:13:08.840 --> 00:13:23.960
+Francesca: a note for others. As I mentioned that 1st practical applications had so many figures, you know, images because of these data visualizations. If you are going to upload. If you're going to save those images and then upload them into your github.
+
+98
+00:13:24.040 --> 00:13:38.940
+Francesca: I would recommend creating an images folder rather than having 10, you know, dot png files that makes it really clunky to read. You might want to have an images folder and then save your visualizations there. Yes, there is a hand up.
+
+99
+00:13:40.586 --> 00:13:42.210
+Purna: Just an observation. Francisco.
+
+100
+00:13:43.817 --> 00:13:52.320
+Purna: In the last assignment, what I used Google Collab to create my jupyter Python notebook.
+
+101
+00:13:52.380 --> 00:13:59.909
+Purna: What I observed is Google Collab now provides an option to upload your notebook to your Github Repository. Now.
+
+102
+00:14:00.510 --> 00:14:01.040
+Francesca: Sorry.
+
+103
+00:14:01.593 --> 00:14:10.310
+Purna: So you can click on control S, button on your keypad. It will directly save that updates to your Github Repository.
+
+104
+00:14:10.620 --> 00:14:17.679
+Francesca: Wonderful. Thank you so much for sharing. That's a great tip for those of you who had not used that.
+
+105
+00:14:17.900 --> 00:14:20.900
+Francesca: Please explore. Thank you. Thank you for sharing.
+
+106
+00:14:21.030 --> 00:14:29.110
+Purna: And also I found one more thing is in the data folder. When I'm trying to upload the Csv file, the size limit is 25 MB.
+
+107
+00:14:29.590 --> 00:14:46.350
+Purna: What I observed last time is the last assignment the file provided is around 50 MB, so when I'm trying to upload that file to Github Repository. It's complaining that the file size should be 25. So I zipped it and then upload it to the data folder. So that's 1 more observation from my end.
+
+108
+00:14:46.660 --> 00:14:53.000
+Francesca: Perfect. Thank you so much. Thank you. Those are. Those are excellent tips, and I'm glad that
+
+109
+00:14:53.130 --> 00:15:04.729
+Francesca: it's you know there's a lot of familiarity with Github there, because this is going to be really important. And so you know things to keep in mind. Remember, this is a public facing repository.
+
+110
+00:15:04.800 --> 00:15:26.290
+Francesca: So you have to imagine that anyone can see your project who you know. Anyone who searches for your profile and sees this repository can see it so think of it as a very nicely formatted, nicely submitted, nicely edited document. If you have sort of a scratch paper.
+
+111
+00:15:26.930 --> 00:15:28.090
+Francesca: You know.
+
+112
+00:15:29.000 --> 00:15:40.826
+Francesca: make sure that you've already made everything presentable for a public facing repository. When you know, when you create this
+
+113
+00:15:41.570 --> 00:15:42.909
+Francesca: this and submitted.
+
+114
+00:15:48.900 --> 00:15:54.940
+Francesca: So the other thing is the output on Github is all that the person who's reading it gets.
+
+115
+00:15:55.110 --> 00:16:04.840
+Francesca: And so, for example, when I grade the practical applications, I don't know anything that you've done.
+
+116
+00:16:05.130 --> 00:16:09.190
+Francesca: and I don't know anything that you're trying to communicate about your findings
+
+117
+00:16:09.240 --> 00:16:12.340
+Francesca: except for what you put on your github.
+
+118
+00:16:12.380 --> 00:16:16.700
+Francesca: And so that's why it is really important to.
+
+119
+00:16:17.280 --> 00:16:38.900
+Francesca: you know. Make everything clear. If I go back to the read me, make sure that you've included your problem. Statement included your summary of findings and interpretation. You've made sure I know exactly where to find your data, where to find your figures, because I don't know anything unless I am able to chat with you after other than what's on your github.
+
+120
+00:16:40.290 --> 00:16:54.970
+Francesca: and things that are easy to interpret are always preferred. One note that I have, after seeing many readmes in this course, but also in industry, in life.
+
+121
+00:16:56.090 --> 00:16:57.660
+Francesca: Formatting matters
+
+122
+00:16:57.670 --> 00:17:10.080
+Francesca: make use of headings, bullet points. Boldface, you know, section markers. The formatting really really helps someone who has never seen your project before.
+
+123
+00:17:11.480 --> 00:17:30.249
+Francesca: and if you are super keen to see other parts of Github, there is an about section that you can write a summary of the repo. You can see the activity done on the repo, and you can also maybe add a license if you would like to license. Your
+
+124
+00:17:30.400 --> 00:17:38.760
+Francesca: project, and then also a citation file. If you want people to cite your project, so just some some things to keep in mind about Github.
+
+125
+00:17:38.970 --> 00:17:42.179
+Francesca: Are there any questions before I move on to the
+
+126
+00:17:42.240 --> 00:17:44.550
+Francesca: other parts that I had prepared.
+
+127
+00:17:45.360 --> 00:17:46.310
+Manish Goenka: Hey! Francisca.
+
+128
+00:17:46.310 --> 00:17:47.490
+Francesca: Yes, yes.
+
+129
+00:17:47.920 --> 00:17:50.527
+Manish Goenka: Just a question on the the practical
+
+130
+00:17:51.380 --> 00:17:55.110
+Manish Goenka: how much weightage is put on the R square value that you get at the end of your
+
+131
+00:17:55.120 --> 00:17:59.809
+Manish Goenka: assignment, because I'm struggling to get over 50% with all the
+
+132
+00:18:00.010 --> 00:18:01.800
+Manish Goenka: you know, clean up and refactoring.
+
+133
+00:18:02.760 --> 00:18:05.300
+Francesca: I will say that I don't.
+
+134
+00:18:05.650 --> 00:18:12.279
+Francesca: I don't know. I I'd have to double check the grading criteria, but I'm actually not sure that there is a
+
+135
+00:18:12.430 --> 00:18:16.239
+Francesca: minimum threshold that you have to get to.
+
+136
+00:18:16.260 --> 00:18:25.139
+Francesca: you know. You know, get credit or get full marks. I think the emphasis is making sure that you're doing the process correctly.
+
+137
+00:18:25.300 --> 00:18:48.140
+Francesca: And so if you are demonstrating that you're writing code correctly, that your syntax is correctly, that your logic is sound. I don't know that there's that much emphasis on the output itself, and a lot more emphasis on making sure your process is correct. So if you're if you're, you know.
+
+138
+00:18:48.160 --> 00:18:55.373
+Francesca: doing the process correctly, I don't think you'll be necessarily penalized for your
+
+139
+00:18:56.880 --> 00:19:00.750
+Francesca: output. I don't know that there's a threshold. Not that I've seen yet.
+
+140
+00:19:00.860 --> 00:19:08.280
+Francesca: So you know, if you're if you're doing everything correctly, I think you should get the credit for doing things correctly.
+
+141
+00:19:09.110 --> 00:19:10.019
+Manish Goenka: Got it. Thank you.
+
+142
+00:19:11.350 --> 00:19:31.899
+Francesca: And so diving into the capstone, and for those of you who joined late, I hope you've all scheduled your one-on-ones, and got in time to speak with your learning facilitator about ironing out your capstone just as a recap by the end of the capstone you'll have completed building a predictive model.
+
+143
+00:19:32.070 --> 00:19:36.700
+Francesca: developing a technical write-up in a Jupyter notebook posted on Github
+
+144
+00:19:36.730 --> 00:19:41.099
+Francesca: and also creating a non-technical report to describe your findings.
+
+145
+00:19:43.780 --> 00:19:49.459
+Francesca: Just so, you know, if you go to your modules portion
+
+146
+00:19:51.178 --> 00:20:02.749
+Francesca: all the information about your capstone project is up here on program overview. So you'll be able to see the information that I just said, it's right
+
+147
+00:20:03.110 --> 00:20:06.620
+Francesca: here, and then all the timeline of deliverables.
+
+148
+00:20:13.070 --> 00:20:16.300
+Francesca: some tips. Firstly, what are you trying to predict?
+
+149
+00:20:16.570 --> 00:20:28.880
+Francesca: I would highly encourage if you're not clear on this. Use your time with your learning facilitator to really make sure you know exactly what you're trying to predict. That's my number one tip.
+
+150
+00:20:29.330 --> 00:20:43.390
+Francesca: second tip. We've talked about data already. Earlier in the office hours, does the data match the problem you're trying to solve? And does the problem match the data that you have. Make sure that there is a a good fit for that
+
+151
+00:20:43.450 --> 00:21:06.189
+Francesca: tip? 3. Do you have the right model for the problem? That's sort of what we're doing in the course right now. Right? We're building our toolbox with various models we've already learned about and are going to learn even more classification models after our one week break. We've already gotten started with the K nearest neighbors.
+
+152
+00:21:06.320 --> 00:21:12.589
+Francesca: and then tip 4. You will have to submit a report. You will have to, you know. Write your readme
+
+153
+00:21:12.820 --> 00:21:24.480
+Francesca: on your Github. You will have to. Actually, you know, structure your Jupyter notebook nicely. Make sure this is something you can talk about. Make sure it's something that you can explain with clarity what you're trying to predict.
+
+154
+00:21:24.520 --> 00:21:29.679
+Francesca: what is in the data, why, you've chosen this model, and what your findings were
+
+155
+00:21:31.720 --> 00:21:39.039
+Francesca: so upcoming milestones right now. You should be in the midst of scheduling, and maybe having completed your one on one.
+
+156
+00:21:39.390 --> 00:21:45.109
+Francesca: This is to refine your question, identify data for the question and suggest methodologies.
+
+157
+00:21:45.680 --> 00:22:03.329
+Francesca: Week 16. So around 3 weeks from now, you will have to submit a formal problem proposal. And so if you remember week 6, you suggested an idea. You suggested maybe some data sources you could look at. Maybe some methodologies you could
+
+158
+00:22:03.550 --> 00:22:17.789
+Francesca: adopt. Week 16, we'll want to know exactly what your problem is, exactly what data source you're going to use. And by then you would have actually learned quite a few models. So what methodology you're going to
+
+159
+00:22:17.810 --> 00:22:21.100
+Francesca: to actually implement to solve your problem?
+
+160
+00:22:21.200 --> 00:22:32.459
+Francesca: Because on week 20, so just 4 weeks after this you will have to submit basically, a 1st run of your entire project. So this would be a completed notebook that
+
+161
+00:22:32.650 --> 00:22:39.610
+Francesca: identifies your problem statement, looks at your data. Does your data analysis, exploratory data analysis
+
+162
+00:22:39.750 --> 00:22:48.309
+Francesca: has some results and then also showcases the techniques that you probably mentioned in your formal problem proposal it
+
+163
+00:22:48.500 --> 00:22:49.850
+Francesca: that you've used them.
+
+164
+00:22:50.330 --> 00:22:53.080
+Francesca: So this is going to come up really quickly
+
+165
+00:22:53.260 --> 00:23:07.150
+Francesca: from problem statement to essentially the 1st draft of your entire project. So make sure you keep on top of that week 21 to 23. If you go here.
+
+166
+00:23:07.690 --> 00:23:14.969
+Francesca: you're going to have a second one on one with your program leader, based on your initial report.
+
+167
+00:23:15.030 --> 00:23:17.169
+Francesca: So it's really important that you get
+
+168
+00:23:17.240 --> 00:23:27.339
+Francesca: your initial report in that you do as full an exploration as full an implementation as you can, because you get that
+
+169
+00:23:27.970 --> 00:23:31.830
+Francesca: one on one with your program leader and then module 24.
+
+170
+00:23:32.570 --> 00:23:33.480
+Francesca: You submit.
+
+171
+00:23:38.880 --> 00:23:42.880
+Francesca: As I mentioned right now, we're in the sort of
+
+172
+00:23:42.950 --> 00:23:48.140
+Francesca: core core period of learning classification models. It is likely that
+
+173
+00:23:48.150 --> 00:24:05.189
+Francesca: most projects will be some kind of you know classification project. We've already looked at linear regression previously. And and you're, you know, completed that practical applications you'll see here. You'll have another practical applications focused on
+
+174
+00:24:05.659 --> 00:24:09.340
+Francesca: likely classification. Because that's what we're learning right now.
+
+175
+00:24:10.180 --> 00:24:14.290
+Francesca: And week 16, when your formal problem statement is due.
+
+176
+00:24:14.470 --> 00:24:29.830
+Francesca: you'll have already covered K nearest neighbors this week. Logistic regression, decision trees, gradient, descendant optimization and classifying nonlinear features. So you should be covered well enough
+
+177
+00:24:30.340 --> 00:24:39.329
+Francesca: so that by your formal problem statement you can mention some kind of classification methodology. If you are doing a classification task.
+
+178
+00:24:40.600 --> 00:24:42.890
+Francesca: and then by week 20,
+
+179
+00:24:43.360 --> 00:24:47.099
+Francesca: you will have your initial report due for your capstone project.
+
+180
+00:24:47.550 --> 00:24:56.510
+Francesca: The reason why I point out week 20 is because you'll see that there will be 3 more modules after week, 20
+
+181
+00:24:57.310 --> 00:25:01.599
+Francesca: of modules of content. And so this would be for deep neural networks.
+
+182
+00:25:01.670 --> 00:25:03.300
+Francesca: And Gen. AI.
+
+183
+00:25:03.600 --> 00:25:07.957
+Francesca: Now I know that having spoken to some people in the one on ones, I know that
+
+184
+00:25:08.430 --> 00:25:16.250
+Francesca: Some people have tasks that they do want to use deep neural networks or deep learning. 4.
+
+185
+00:25:16.360 --> 00:25:19.360
+Francesca: But I always, you know, caution them that
+
+186
+00:25:19.880 --> 00:25:28.760
+Francesca: you will have to submit your initial report before the formal modules on deep learning. Come up
+
+187
+00:25:29.150 --> 00:25:32.999
+Francesca: so as much as you can think about.
+
+188
+00:25:34.180 --> 00:25:37.990
+Francesca: How you know. Think about how what you've learned
+
+189
+00:25:38.020 --> 00:25:44.359
+Francesca: or what you will learn, fits into these due dates. It's the same for natural language processing.
+
+190
+00:25:44.390 --> 00:25:57.950
+Francesca: So if you're going to submit a problem. Statement week 16. And you'll need natural language processing. You can mention in your methodologies. Module 18 on natural language processing will be useful to me.
+
+191
+00:25:58.280 --> 00:26:03.090
+Francesca: and that means you'll have, you know, to sort of sprint the 2 weeks after that
+
+192
+00:26:03.180 --> 00:26:05.410
+Francesca: to get your initial report in.
+
+193
+00:26:06.570 --> 00:26:08.869
+Francesca: Does anyone have any questions about
+
+194
+00:26:09.180 --> 00:26:14.979
+Francesca: looking at this timeline in terms of upcoming modules, and where the due dates fit in.
+
+195
+00:26:21.870 --> 00:26:23.330
+shashi: I had one question.
+
+196
+00:26:23.460 --> 00:26:23.810
+Francesca: Yeah.
+
+197
+00:26:24.440 --> 00:26:25.070
+shashi: She?
+
+198
+00:26:25.562 --> 00:26:28.698
+shashi: If I if I decide to go with
+
+199
+00:26:29.920 --> 00:26:33.609
+shashi: disease, detection, or image classifier, this one
+
+200
+00:26:35.500 --> 00:26:44.909
+shashi: will I be using extensively the deep neural networks, and all the tools that will be necessary by then will be be covering that, or should I
+
+201
+00:26:46.160 --> 00:26:51.880
+shashi: keep that out of the current purview and see what I can do with the but
+
+202
+00:26:51.940 --> 00:27:00.340
+shashi: week 20 what we cover and what we can achieve with. That limitation. Should I keep that in mind is, I was just thinking.
+
+203
+00:27:00.730 --> 00:27:14.560
+Francesca: Yeah, that's a really, that's a really good question. And that's actually something I've been thinking about as well, because I did have a 1-on-one with a learner who does want to do a computer vision problem.
+
+204
+00:27:15.190 --> 00:27:19.310
+Francesca: Same with you. Sort of an image classification problem.
+
+205
+00:27:19.700 --> 00:27:21.729
+Francesca: And what I did tell them was
+
+206
+00:27:22.158 --> 00:27:27.740
+Francesca: you know, the concept of classification is something that you are already familiar with.
+
+207
+00:27:27.870 --> 00:27:36.032
+Francesca: And you know, this person had already identified an image data set that was labeled
+
+208
+00:27:36.800 --> 00:27:40.920
+Francesca: but it is likely that you'll have to do extra
+
+209
+00:27:41.050 --> 00:27:45.680
+Francesca: a little, you know extra work out of the scope of the course.
+
+210
+00:27:45.820 --> 00:27:52.020
+Francesca: to make sure you can do it, and so a.
+
+211
+00:27:52.480 --> 00:28:01.409
+Francesca: It wouldn't be impossible, Shashi, but it would probably involve taking on a bit more
+
+212
+00:28:02.320 --> 00:28:09.139
+Francesca: learning, because you'll have to sort of learn the techniques to
+
+213
+00:28:11.440 --> 00:28:14.189
+Francesca: in a way, transpose or translate
+
+214
+00:28:14.200 --> 00:28:35.109
+Francesca: the image data into numerical data so that it can be fed into your neural network. So it's not impossible. But that is a technique that you may have to spend extra time on. So if you know that you might not have capacity to take that on right now, because you're a very busy person. You have other things outside this course.
+
+215
+00:28:35.690 --> 00:28:45.290
+Francesca: It is perfectly fine, and you can still get a perfectly great capstone project with any of the other techniques.
+
+216
+00:28:45.710 --> 00:28:50.254
+shashi: Okay, yeah, that is a point to keep in mind when I'm discussing with
+
+217
+00:28:50.510 --> 00:28:51.990
+Francesca: Yeah, absolutely.
+
+218
+00:28:51.990 --> 00:28:52.510
+shashi: Thank you.
+
+219
+00:28:54.481 --> 00:29:08.599
+Francesca: And you've heard me use this term already. Machine learning toolbox. This is how I personally like to think of it. In my in my life as well. When I'm you know, tasked with a problem.
+
+220
+00:29:08.660 --> 00:29:24.919
+Francesca: I like to look back at my machine learning toolbox and look at the different things that I've learned so different things you've learned or will learn, such as you know, data analysis, time series, analysis, linear regression, maybe logistic regression, decision trees, neural networks.
+
+221
+00:29:25.230 --> 00:29:31.240
+Francesca: I think of each of these as tools in my toolbox, but like anything.
+
+222
+00:29:31.530 --> 00:29:37.050
+Francesca: you don't need to necessarily use all your tools for every problem.
+
+223
+00:29:37.090 --> 00:29:44.690
+Francesca: For example, if I want to, you know, hang a painting in my home.
+
+224
+00:29:45.000 --> 00:29:57.730
+Francesca: I'm not going to try to use everything in my toolbox. I'm just going to select the tools that I need. Maybe it's, you know, a leveler. Maybe I need a drill. You know.
+
+225
+00:29:58.300 --> 00:30:02.890
+Francesca: I'm just gonna get the tools that I need to hang the painting.
+
+226
+00:30:02.950 --> 00:30:11.769
+Francesca: and that might mean for your machine learning toolbox. You have a problem like predicting. If a borrower is likely to default on a loan.
+
+227
+00:30:13.790 --> 00:30:17.220
+Francesca: Are you going to need to use time series analysis?
+
+228
+00:30:17.650 --> 00:30:25.109
+Francesca: Is that going to be a tool in your toolbox? You need to, you know, take out to predict if a borrower is likely to default on a loan.
+
+229
+00:30:27.070 --> 00:30:32.399
+Francesca: or are you going to actually need your logistic regression
+
+230
+00:30:32.670 --> 00:30:36.130
+Francesca: tool? Are you going to need your neural networks tool.
+
+231
+00:30:36.320 --> 00:30:39.770
+Francesca: And so, when thinking about your capstone project.
+
+232
+00:30:39.950 --> 00:30:44.229
+Francesca: don't feel like you have to use every tool in the toolbox.
+
+233
+00:30:44.430 --> 00:31:01.679
+Francesca: Make sure you're using the correct tool. And so if I'm going to predict if a borrower is likely to default on a loan, I am almost certainly not going to use linear regression. And I'm almost certainly not going to use my time series analysis, because those are the wrong tools for this problem.
+
+234
+00:31:05.920 --> 00:31:11.329
+Francesca: And so I've already mentioned that we're in the sort of core part of
+
+235
+00:31:11.950 --> 00:31:17.740
+Francesca: trying to get our machine ready to perform a task with new examples, so I'll skip over it.
+
+236
+00:31:18.260 --> 00:31:23.450
+Francesca: And I just wanted to show this when you
+
+237
+00:31:23.900 --> 00:31:26.220
+Francesca: are trying to pick your tools.
+
+238
+00:31:26.480 --> 00:31:33.310
+Francesca: think about what kind of problem you're dealing with. So let's say you have this machine learning problem, as all of you will have for your capstone.
+
+239
+00:31:33.900 --> 00:31:41.419
+Francesca: How can I decide if it's supervised or unsupervised? Does someone want to tell me how I'm able to find out if it's supervisor unsupervised.
+
+240
+00:31:44.080 --> 00:31:45.960
+Michael Smith: Whether or not you provide the labels.
+
+241
+00:31:46.510 --> 00:31:50.309
+Francesca: Yeah, if and if there are labels, which one is that.
+
+242
+00:31:50.920 --> 00:31:52.010
+Zhujun Wang: Supervised.
+
+243
+00:31:52.160 --> 00:31:52.800
+Francesca: Supervisor.
+
+244
+00:31:52.800 --> 00:31:53.860
+Francesca: Exactly.
+
+245
+00:31:54.420 --> 00:31:58.100
+Francesca: And so let's say I have the labels. I go down to my supervised.
+
+246
+00:31:58.860 --> 00:32:02.109
+Francesca: How do I know if I should use classification or regression.
+
+247
+00:32:03.840 --> 00:32:04.320
+Michael Smith: Continue.
+
+248
+00:32:04.320 --> 00:32:04.660
+Zhujun Wang: It's.
+
+249
+00:32:04.660 --> 00:32:05.930
+Michael Smith: Discrete.
+
+250
+00:32:07.110 --> 00:32:09.855
+Zhujun Wang: If it's a binary like were
+
+251
+00:32:10.610 --> 00:32:17.310
+Zhujun Wang: it probably is a classification. But if it's a numeral numeric value, probably.
+
+252
+00:32:17.550 --> 00:32:19.449
+Zhujun Wang: Yeah, it's a regression.
+
+253
+00:32:20.150 --> 00:32:26.800
+rahulbhole: Like a list of values. For if we have specific list of values, then it's a classification.
+
+254
+00:32:27.080 --> 00:32:30.069
+rahulbhole: If it's all numbers, I think, then regression.
+
+255
+00:32:31.220 --> 00:32:34.979
+Francesca: And, Michael, you also had an answer. I'm gonna collect them all.
+
+256
+00:32:34.980 --> 00:32:39.390
+Michael Smith: Yeah, I said, discrete values would be classification. And then.
+
+257
+00:32:39.570 --> 00:32:44.260
+Michael Smith: like continuous values of like num, real numbers would be regression.
+
+258
+00:32:45.310 --> 00:32:48.170
+Francesca: Okay. And Shashi, did you also have a an answer.
+
+259
+00:32:48.170 --> 00:32:51.960
+shashi: Yeah, yeah, what? Michael said. I mean, if we are going to predict a
+
+260
+00:32:52.604 --> 00:32:55.570
+shashi: value numerical value out of the
+
+261
+00:32:55.590 --> 00:33:01.020
+shashi: regression activity. So it's going to be a yeah. It will be a regression if it is
+
+262
+00:33:01.910 --> 00:33:06.028
+shashi: Classification is yes or no kind of output or
+
+263
+00:33:06.500 --> 00:33:11.840
+shashi: plant, or diseased or not diseased. That kind of classification is going to be a classification.
+
+264
+00:33:12.270 --> 00:33:37.699
+Francesca: Yeah, great. Thank you all for answering. So we'll start with the regression. It sounds like, everyone is very familiar, which is good to know, because that's what we just finished covering regression is if you're trying to predict your numerical output, for example, the price of a car, maybe the number of points. A basketball player is going to score, maybe the
+
+265
+00:33:38.040 --> 00:33:40.179
+Francesca: maybe the height of a plant
+
+266
+00:33:40.600 --> 00:33:44.540
+Francesca: that's going to be regression. So great classification.
+
+267
+00:33:44.600 --> 00:33:58.910
+Francesca: It sounds like everyone has similar intuitions, but different ways of explaining it. The 1st thing in classification you're all correct with the examples you gave you are not predicting a number output. You are predicting.
+
+268
+00:33:59.080 --> 00:34:04.307
+Francesca: you know, a category, an outcome that isn't a number output. And so,
+
+269
+00:34:04.770 --> 00:34:10.100
+Francesca: Shashi, you said yes or no. That's that's an outcome right? And then
+
+270
+00:34:10.730 --> 00:34:13.459
+Francesca: you could have other outcomes like
+
+271
+00:34:14.085 --> 00:34:20.650
+Francesca: is, does the crop have disease or not? Disease based on the photo?
+
+272
+00:34:20.860 --> 00:34:30.205
+Francesca: The one thing I will say is, remember, classification does not only have 2 outcomes right? Think of
+
+273
+00:34:31.679 --> 00:34:41.399
+Francesca: Think of. If you were trying to classify problems on an assignment, you could have problems that are easy, medium, and hard. Those are 3 outcomes.
+
+274
+00:34:41.730 --> 00:34:51.660
+Francesca: So remember, classification can have multiple outcomes. Maybe you're trying to look at images of animals, and your categories are cat.
+
+275
+00:34:51.900 --> 00:34:55.839
+Francesca: dog, mouse, and horse that could have 4 outcomes.
+
+276
+00:34:56.020 --> 00:34:58.610
+Francesca: You could then add, lion.
+
+277
+00:34:59.280 --> 00:35:14.619
+Francesca: you know you could add bird, those are 6 outcomes. So classification isn't limited to just 2 outcomes, but it is limited in that. It is, you know, a categorical outcome, not a numerical outcome. So glad we're all there on that.
+
+278
+00:35:14.990 --> 00:35:22.709
+Francesca: And so very quickly. If I'm looking at my problem statement and this is the data that I have.
+
+279
+00:35:23.317 --> 00:35:27.540
+Francesca: Is this a supervised or unsupervised task?
+
+280
+00:35:34.460 --> 00:35:35.800
+Gopikrishna Putti: Supervise, supervise.
+
+281
+00:35:35.800 --> 00:35:36.310
+Purna: Yes.
+
+282
+00:35:36.720 --> 00:35:38.400
+Francesca: Supervised. Okay?
+
+283
+00:35:39.760 --> 00:35:45.879
+Francesca: And since it's supervised now, I'm going to decide classification or regression. Yes, someone said.
+
+284
+00:35:46.340 --> 00:35:47.120
+Purna: Classification.
+
+285
+00:35:47.120 --> 00:35:47.640
+Zhujun Wang: Specification.
+
+286
+00:35:49.310 --> 00:35:52.199
+Francesca: Exactly. So. Now I'm going to go back
+
+287
+00:35:52.370 --> 00:35:58.810
+Francesca: and look at the classification tools in my toolbox. Does anyone want to give me a classification tool that they know of.
+
+288
+00:36:00.340 --> 00:36:01.330
+Zhujun Wang: Yeah.
+
+289
+00:36:01.730 --> 00:36:06.249
+Francesca: Yep. Okay, nearest neighbor. And that's how I'm gonna solve my problem.
+
+290
+00:36:06.550 --> 00:36:13.070
+Francesca: So this is exactly the kind of step-by-step process you could go through for your capstone project.
+
+291
+00:36:13.300 --> 00:36:15.669
+Francesca: Are there any questions about that before I
+
+292
+00:36:16.171 --> 00:36:20.349
+Francesca: start start to dive into other things?
+
+293
+00:36:24.250 --> 00:36:25.090
+Francesca: All good?
+
+294
+00:36:26.670 --> 00:36:34.760
+Francesca: Alright so. And there's something in the chat, I believe all good, perfect.
+
+295
+00:36:35.480 --> 00:36:39.560
+Francesca: And so I already went over the Github repo. So we'll skip through this
+
+296
+00:36:40.470 --> 00:36:46.523
+Francesca: and get into classification and k nearest neighbors.
+
+297
+00:36:48.310 --> 00:37:06.909
+Francesca: these are the required activities. You'll notice that the learning outcomes for this module are extremely extremely useful for the Capstone project. That's why I started with it. One is identify the best Ml, model to solve a problem, ie. What is the right tool for my problem.
+
+298
+00:37:08.240 --> 00:37:22.519
+Francesca: In fact, the learning outcomes actually mentions the word tool. So applying real world tools to model and analyze real world data, that's also going to be what you're doing in your capstin project and then drawing useful conclusions.
+
+299
+00:37:23.620 --> 00:37:31.829
+Francesca: So this module was thematically split into just an intro and classification. It sounds like everyone here is quite
+
+300
+00:37:32.440 --> 00:37:39.120
+Francesca: familiar with sort of what kind of a problem is a classification problem.
+
+301
+00:37:39.230 --> 00:37:55.660
+Francesca: I asked you if we've already learned a tool for classification? Yes, we have you all, said K. Nearest neighbors. We also learned about decision boundaries and evaluation, which is really really important because we want to know how well our model is doing.
+
+302
+00:37:58.290 --> 00:38:04.840
+Francesca: So let's say, we're building intuition on K, nearest neighbors.
+
+303
+00:38:05.310 --> 00:38:09.027
+Francesca: Essentially, I like to think of K nearest neighbors.
+
+304
+00:38:09.590 --> 00:38:13.379
+Francesca: one very intuitive because of the the name itself. But
+
+305
+00:38:13.490 --> 00:38:21.779
+Francesca: when we see a new example, when we get a new example, let's say we get this new image of this thing, and I don't know what it is.
+
+306
+00:38:22.090 --> 00:38:28.070
+Francesca: I want to look at what it is closest to, and guess that
+
+307
+00:38:28.530 --> 00:38:34.300
+Francesca: this unknown image is the same thing as the thing that it's closest to.
+
+308
+00:38:34.920 --> 00:38:39.770
+Francesca: So I might have these 3 neighbors.
+
+309
+00:38:40.340 --> 00:38:50.390
+Francesca: and want to measure some sort of distance of similarity to my unknown thing visually. In this case.
+
+310
+00:38:51.700 --> 00:39:00.629
+Francesca: what does this unknown image. Look the most like based on these 3 things.
+
+311
+00:39:06.560 --> 00:39:14.070
+Francesca: Does it look similar? Okay, yes, I see in the chat. Yes, exactly. So. It's intuitive in that
+
+312
+00:39:14.080 --> 00:39:18.660
+Francesca: I'm looking at this unknown thing, and then I'm looking around it.
+
+313
+00:39:19.140 --> 00:39:25.200
+Francesca: Does it look like this? Does it look like this, or does it look like this. I'm going to say it looks like this one.
+
+314
+00:39:25.410 --> 00:39:28.960
+Francesca: So that's what I'm going to guess that it is.
+
+315
+00:39:29.270 --> 00:39:31.889
+Francesca: So it's actually a pretty intuitive
+
+316
+00:39:32.140 --> 00:39:34.956
+Francesca: way of thinking about problems.
+
+317
+00:39:36.430 --> 00:39:40.930
+Francesca: and can actually be, you know, implemented for a classification task. Right?
+
+318
+00:39:43.440 --> 00:39:48.960
+Francesca: So step one. Define. K. How many neighbors will you look at.
+
+319
+00:39:51.280 --> 00:39:53.529
+Manish Goenka: Anyone know how big can K be.
+
+320
+00:39:54.320 --> 00:39:58.480
+Francesca: If I have this problem, how how big? What is the biggest K.
+
+321
+00:39:58.650 --> 00:39:59.030
+Gopikrishna Putti: 3.
+
+322
+00:39:59.030 --> 00:40:00.680
+Francesca: That I sorry.
+
+323
+00:40:01.520 --> 00:40:02.660
+Gopikrishna Putti: 3!
+
+324
+00:40:02.850 --> 00:40:04.760
+Francesca: 3. Okay. How? Come? 3.
+
+325
+00:40:05.691 --> 00:40:07.499
+Gopikrishna Putti: There are only 3 available right?
+
+326
+00:40:07.500 --> 00:40:14.359
+Francesca: Yes, exactly. The most your neighbors can be is all the neighbors. You might just want to look at everything.
+
+327
+00:40:16.420 --> 00:40:22.669
+Francesca: Then you want to calculate the distance between your unknown item and its neighbors.
+
+328
+00:40:23.470 --> 00:40:35.039
+Francesca: identify the K amount of nearest neighbors so nearest neighbors, meaning the shortest distance after you've calculated that distance, the K amount being how many neighbors you will look at?
+
+329
+00:40:35.280 --> 00:40:37.329
+Francesca: Then you'll make your prediction based on that.
+
+330
+00:40:38.230 --> 00:40:47.360
+Francesca: So let's say we want to classify fruits, and we have this distribution of various fruits, and
+
+331
+00:40:48.920 --> 00:40:52.170
+Francesca: in weight or water density.
+
+332
+00:40:55.050 --> 00:40:59.549
+Francesca: And let's say, I have this new, this new fruit.
+
+333
+00:41:02.390 --> 00:41:04.730
+Francesca: Is it an apple or an orange, right?
+
+334
+00:41:05.020 --> 00:41:10.020
+Francesca: So I have oranges here, so you can see this one has a weight of
+
+335
+00:41:10.060 --> 00:41:21.650
+Francesca: 146 grams, maybe a point 4 9 ratio. This one, this apple, 135 grams with a point 6 ratio, and I want to know what
+
+336
+00:41:22.210 --> 00:41:27.080
+Francesca: this fruit is using one nearest neighbor.
+
+337
+00:41:27.610 --> 00:41:33.870
+Francesca: Does someone want to tell me using one nearest neighbor? Orange? Okay? Why, why in orange.
+
+338
+00:41:36.596 --> 00:41:41.183
+shashi: Because the weight is also on the x-axis weight is
+
+339
+00:41:41.670 --> 00:41:48.849
+shashi: to between 1 40 and 1 50, and the water density is also high around point 6.
+
+340
+00:41:49.830 --> 00:41:53.179
+Francesca: Okay. Anyone else, anyone else think orange.
+
+341
+00:41:54.150 --> 00:41:55.960
+Purna: Because the nearest neighbor is.
+
+342
+00:41:55.960 --> 00:41:57.620
+Zhujun Wang: Nearest labor.
+
+343
+00:41:59.990 --> 00:42:02.750
+Francesca: Anyone anyone else. Anyone think it's an apple?
+
+344
+00:42:05.050 --> 00:42:09.669
+Francesca: No? Okay, yes. So remember, we 1st step
+
+345
+00:42:09.840 --> 00:42:17.369
+Francesca: define your K. We're looking at one nearest neighbor. That means I'm just going to look at what thing in my data set
+
+346
+00:42:17.460 --> 00:42:20.920
+Francesca: is nearest to my unknown fruit.
+
+347
+00:42:21.180 --> 00:42:27.120
+Francesca: And it so happens that the nearest thing is this right? That's why it's highlighted in green.
+
+348
+00:42:27.390 --> 00:42:29.579
+Francesca: And this nearest thing is an orange.
+
+349
+00:42:29.680 --> 00:42:34.549
+Francesca: So that means my unknown fruit is an orange.
+
+350
+00:42:36.140 --> 00:42:39.500
+Francesca: Now, what if we look at the 3 nearest neighbors.
+
+351
+00:42:43.090 --> 00:42:44.279
+Purna: It could be an apple.
+
+352
+00:42:45.100 --> 00:42:48.770
+Francesca: Okay, you think it's an apple? Why do you think it's an apple?
+
+353
+00:42:49.350 --> 00:42:57.070
+Purna: Because the leftmost dots, which are apples, are the next 2 neighbors.
+
+354
+00:42:57.170 --> 00:43:01.339
+Francesca: So out of 3 1 orange is neighbor.
+
+355
+00:43:01.370 --> 00:43:03.959
+Purna: The next 2 are 2 red apples.
+
+356
+00:43:04.050 --> 00:43:05.179
+Purna: So because
+
+357
+00:43:05.360 --> 00:43:12.200
+Purna: 2 are greater than one, I'm assuming that point will be apple if if we consider 3 nearest neighbors.
+
+358
+00:43:12.620 --> 00:43:16.920
+Francesca: Okay, anyone disagree anyone think it's an orange?
+
+359
+00:43:20.820 --> 00:43:26.680
+Francesca: Okay? So now we've we've we all think it's apples. If we switch it to 3 nearest neighbors.
+
+360
+00:43:26.970 --> 00:43:33.110
+Francesca: And you're right for 3 nearest neighbors. Remember, you're going to look
+
+361
+00:43:33.170 --> 00:43:36.429
+Francesca: for at the 3 nearest things.
+
+362
+00:43:38.240 --> 00:43:43.410
+Francesca: So these are the 3 nearest things to my unknown fruit right?
+
+363
+00:43:44.500 --> 00:43:48.159
+Francesca: And then I have one and 2 apples.
+
+364
+00:43:48.650 --> 00:43:55.349
+Francesca: and I only have one orange, so that must mean it's an apple right?
+
+365
+00:43:57.970 --> 00:44:02.079
+Francesca: Any questions about that, how we how we got there.
+
+366
+00:44:04.070 --> 00:44:07.070
+Francesca: So what does that tell you about K. Nearest neighbors?
+
+367
+00:44:07.220 --> 00:44:13.600
+Francesca: If, when we did one nearest neighbor, it was an orange right.
+
+368
+00:44:13.960 --> 00:44:19.100
+Francesca: and when we did 3 nearest neighbors it was an apple. What what does that tell you about K. Nearest neighbors
+
+369
+00:44:19.590 --> 00:44:22.740
+Francesca: as as as a model as an algorithm.
+
+370
+00:44:33.490 --> 00:44:43.389
+Francesca: Okay? Yes. So if they're yes, usually choose an odd number of K's, so that votes can decide exactly. That is what happened in this case it's a great observation.
+
+371
+00:44:43.500 --> 00:44:45.740
+Francesca: any any other observations?
+
+372
+00:44:49.410 --> 00:44:53.890
+Francesca: My observation is, it really matters what K. Is right?
+
+373
+00:44:53.950 --> 00:44:57.100
+Francesca: Because when K. Was one, it was orange.
+
+374
+00:44:57.450 --> 00:44:59.950
+Francesca: and when Kay was 3 it was apple.
+
+375
+00:45:00.130 --> 00:45:05.129
+Francesca: So actually even just changing the number of K from one to 3
+
+376
+00:45:05.200 --> 00:45:09.729
+Francesca: can change the entire prediction from orange to apples, right?
+
+377
+00:45:09.910 --> 00:45:14.430
+Francesca: So that's 1 thing that I notice about K. Nearest neighbors
+
+378
+00:45:14.480 --> 00:45:21.279
+Francesca: that a lot of it can ride on making sure you pick the correct K, or the most appropriate K for your problem.
+
+379
+00:45:23.280 --> 00:45:30.520
+Francesca: And then, of course, as Chassis said in the chat, usually use an odd number of K's so that votes can decide.
+
+380
+00:45:32.060 --> 00:45:35.460
+Francesca: So when is K nearest neighbors useful? Firstly.
+
+381
+00:45:35.880 --> 00:45:39.220
+Francesca: does your data have labels? We've already said that
+
+382
+00:45:39.350 --> 00:45:53.470
+Francesca: when you go down the tree, it's machine learning problem, supervised classification. K, nearest neighbors is a classification tool. So supervised means does your data have labels, ie. Do you know apples and oranges? We did.
+
+383
+00:45:53.960 --> 00:45:56.700
+Francesca: Are there many instances in this case?
+
+384
+00:45:56.870 --> 00:46:04.410
+Francesca: We have. You know enough instances that this is gonna gonna work. If we had only had 2 instances
+
+385
+00:46:04.710 --> 00:46:08.669
+Francesca: that probably would not have worked as well.
+
+386
+00:46:09.800 --> 00:46:16.290
+Francesca: Are there a few features, or maybe not enough information for other classification models?
+
+387
+00:46:16.420 --> 00:46:28.019
+Francesca: So we are going to learn about more classification models in the upcoming modules, and you'll see that some of these classification module models can
+
+388
+00:46:28.220 --> 00:46:33.650
+Francesca: just interpret features of your data set of each entry in your data set, really.
+
+389
+00:46:33.730 --> 00:46:36.255
+Francesca: in a really sophisticated way.
+
+390
+00:46:37.550 --> 00:46:40.160
+Francesca: This one is looking at
+
+391
+00:46:40.340 --> 00:46:45.949
+Francesca: just a few features, right? We were just looking at the distribution across weight and water density.
+
+392
+00:46:46.010 --> 00:46:47.399
+Francesca: So it worked.
+
+393
+00:46:48.580 --> 00:46:53.340
+Francesca: And is it unstructured data? Or is the decision boundary irregular?
+
+394
+00:46:54.670 --> 00:47:08.299
+Francesca: Another pro you know, when it's useful, it's that these update really quickly. You might have found that when working on your you know, assignments, your Codeo assignments
+
+395
+00:47:08.340 --> 00:47:12.600
+Francesca: and looking at the notebooks and the and the demos and the triads.
+
+396
+00:47:12.880 --> 00:47:25.360
+Francesca: you can do this. You can implement this really quickly. It doesn't take, you know, hours or days to train a new model to, then evaluate. You can update your model with different K's like pretty pretty quickly.
+
+397
+00:47:26.250 --> 00:47:30.620
+Francesca: And I think it's really intuitive to explain and understand
+
+398
+00:47:30.640 --> 00:47:35.829
+Francesca: right? You have a new entry. You look at the 3 closest neighbors.
+
+399
+00:47:36.280 --> 00:47:41.530
+Francesca: the one that has majority wins, and that's what it is. You look at the 3 closest neighbors here.
+
+400
+00:47:41.590 --> 00:47:46.850
+Francesca: Majority was Apple. So it's an apple, and that's pretty intuitive to explain and understand right.
+
+401
+00:47:47.590 --> 00:47:53.210
+Francesca: But K, nearest neighbors means that
+
+402
+00:47:53.420 --> 00:47:58.990
+Francesca: you're going to be sensitive to features that may be irrelevant
+
+403
+00:47:59.510 --> 00:48:05.566
+Francesca: because you're simply looking at whatever is near in
+
+404
+00:48:06.610 --> 00:48:09.740
+Francesca: and sort of the distribution of your data, so that may
+
+405
+00:48:10.181 --> 00:48:13.880
+Francesca: you know, increased sensitivity to features that might be
+
+406
+00:48:14.240 --> 00:48:23.439
+Francesca: irrelevant. You know. What if one of the features was sort of like the producer.
+
+407
+00:48:24.220 --> 00:48:34.770
+Francesca: the producer of these apples or oranges the farm. But maybe most farms that you're looking at make both. So then
+
+408
+00:48:34.890 --> 00:48:37.470
+Francesca: it might be very sensitive to that. But
+
+409
+00:48:37.790 --> 00:48:43.219
+Francesca: see that feature may not really matter in your determination of if a specific fruit is a
+
+410
+00:48:43.440 --> 00:48:48.060
+Francesca: is an apple or orange, you might even look at price. And maybe that's not that.
+
+411
+00:48:48.413 --> 00:48:52.289
+Francesca: You know, relevant to the physical features of an apple or orange.
+
+412
+00:48:52.390 --> 00:48:55.689
+Francesca: so it'll it'll be sensitive to that if you use K nearest neighbors.
+
+413
+00:48:58.020 --> 00:49:01.710
+Francesca: What if you have a massive amount of training data.
+
+414
+00:49:02.650 --> 00:49:03.340
+Francesca: That
+
+415
+00:49:03.370 --> 00:49:14.639
+Francesca: could be a downside. Of course, that's not really an issue for what we're working with right now, but definitely something to think about. If you're ever in a situation where you have to store a massive amount of training data
+
+416
+00:49:15.500 --> 00:49:25.230
+Francesca: and overall, once we learn some of the other classification model. Models like, I said. Some of them are just a lot more sophisticated
+
+417
+00:49:25.250 --> 00:49:38.350
+Francesca: than K nearest neighbors. So the pro of K nearest neighbors is sort of the ease of use, ease of implementation, ease of understanding. But of course it may not be appropriate for very sophisticated tasks.
+
+418
+00:49:40.360 --> 00:49:48.159
+Manish Goenka: Francisco a couple of questions. Is there a guideline for the number of instances or minimum number of instances for K, and then to work effectively.
+
+419
+00:49:49.440 --> 00:49:53.519
+Francesca: There isn't necessarily a guideline
+
+420
+00:49:54.770 --> 00:49:59.396
+Francesca: I mean other than you definitely would like to
+
+421
+00:50:01.080 --> 00:50:07.360
+Francesca: Make sure that you have instances of both classes.
+
+422
+00:50:07.922 --> 00:50:13.249
+Francesca: And so let's say you know what would happen if I only had one orange.
+
+423
+00:50:13.810 --> 00:50:14.390
+Manish Goenka: Yeah.
+
+424
+00:50:14.390 --> 00:50:17.980
+Francesca: And the rest were apples that would mean
+
+425
+00:50:18.040 --> 00:50:21.400
+Francesca: anything over one, for K. Would just
+
+426
+00:50:21.470 --> 00:50:25.270
+Francesca: give me an apple almost, you know, by default
+
+427
+00:50:25.460 --> 00:50:32.360
+Francesca: so definitely the distribution matters. And, you wouldn't want
+
+428
+00:50:32.480 --> 00:50:42.799
+Francesca: to have so few k, so few instances that the number K would sort of overstate.
+
+429
+00:50:44.368 --> 00:50:46.241
+Francesca: Sort of overstate the
+
+430
+00:50:47.230 --> 00:50:49.679
+Francesca: the outcome. And by that I mean.
+
+431
+00:50:49.950 --> 00:50:54.370
+Francesca: if you imagine that, let's say we didn't have any of these.
+
+432
+00:50:56.510 --> 00:50:59.230
+Francesca: let's see. Sorry I'm just crossing them out.
+
+433
+00:50:59.820 --> 00:51:04.570
+Francesca: And so let's say, I had 1, 2, 3, 4, 5, 6, 7,
+
+434
+00:51:04.640 --> 00:51:11.430
+Francesca: you know, when K is 3, and then one K is
+
+435
+00:51:12.310 --> 00:51:17.650
+Francesca: 4 that looks like 4 to me, and then K is
+
+436
+00:51:17.710 --> 00:51:22.569
+Francesca: 5. Maybe that's 5, you know. This is not
+
+437
+00:51:23.550 --> 00:51:31.375
+Francesca: ideal in terms of number of instances, because you're sort of overstating the
+
+438
+00:51:36.060 --> 00:51:52.360
+Francesca: You're you're getting to the point where your K. Is going to equal the number of instances, and I know that we said you could do maximum k. But that isn't actually the right reflection, or maybe the truest reflection of your problem at hand. Does does that make sense.
+
+439
+00:51:52.730 --> 00:52:02.759
+Manish Goenka: Yeah. I was wondering if you had a data set with very few data points like example, you're you crossed out a few. Would that then would it be beneficial to use lower values of K, meaning K, equal to one or.
+
+440
+00:52:03.100 --> 00:52:15.009
+Francesca: It. It could. I. I did realize that in my in my data set with cross that values, I did realize that I ended up also, only including.
+
+441
+00:52:16.020 --> 00:52:16.910
+Manish Goenka: Yeah.
+
+442
+00:52:17.030 --> 00:52:20.102
+Francesca: 2 oranges, which is what I said not to do.
+
+443
+00:52:20.820 --> 00:52:26.304
+Francesca: It would then if you wanted to use K nearest neighbors, it would then
+
+444
+00:52:27.640 --> 00:52:38.590
+Francesca: be helpful to use a lower value of KI would also say, you may want to not use K nearest neighbors. It really depends on the
+
+445
+00:52:38.630 --> 00:52:47.579
+Francesca: the problem, the problem at hand. But, you may not want to use K nearest neighbors. If you do not have many instances, you might want to use something else.
+
+446
+00:52:47.580 --> 00:52:56.949
+Deep: So, Francisco, so it will be good idea like to use the Knn when the classes are balanced in the data set.
+
+447
+00:52:57.360 --> 00:53:07.679
+Francesca: Yeah, if you have you know a a pretty even distribution of your various classes, if you have many instances, and then also just to highlight
+
+448
+00:53:08.040 --> 00:53:09.300
+Francesca: this one
+
+449
+00:53:10.160 --> 00:53:16.830
+Francesca: few features, and so here we only had 2 features right. We only had this feature and this feature.
+
+450
+00:53:17.070 --> 00:53:21.478
+Francesca: so we had many instances with few features.
+
+451
+00:53:22.470 --> 00:53:27.896
+Francesca: so that is what helped make it appropriate for this problem.
+
+452
+00:53:28.590 --> 00:53:37.680
+Francesca: and relatively balanced in the data as well. So essentially, you want to make sure that you're kind of ticking off all of these things.
+
+453
+00:53:38.390 --> 00:53:44.149
+Francesca: And this is going back to my earlier point about making sure you have the right tool.
+
+454
+00:53:44.640 --> 00:53:51.390
+Francesca: For your problem, your problem, you know, or your data, the data for your problem
+
+455
+00:53:51.640 --> 00:53:56.810
+Francesca: has to capture all those things, to make it sort of the right tool. Right?
+
+456
+00:53:57.340 --> 00:54:04.569
+Francesca: So in this example, this was the right tool, because we ticked off all of these things.
+
+457
+00:54:06.100 --> 00:54:07.969
+Francesca: Does that answer your question?
+
+458
+00:54:10.690 --> 00:54:11.220
+Francesca: Said.
+
+459
+00:54:11.220 --> 00:54:12.130
+Manish Goenka: Oh, yeah, yes, it is.
+
+460
+00:54:12.130 --> 00:54:12.560
+Deep: Yes.
+
+461
+00:54:12.560 --> 00:54:13.410
+Deep: Yeah. Yeah. Okay.
+
+462
+00:54:13.540 --> 00:54:41.039
+Zhujun Wang: May I have a quick question? So you mean the maybe use our use can. Maybe it's better for the case, like data is balanced. But what do you mean? Is balanced means like bound. This feature, like like boundary or boundary, maybe left side and right hand side, mostly like apple and orange almost a similar amount, but or the balance means total number of
+
+463
+00:54:41.270 --> 00:54:57.499
+Zhujun Wang: roughly like total number of apple, and the orange will be total number will be similar, because, if, like a total number is similar, but the orange and the apple mixed together, and there's no no way to find a clear boundary. In such case
+
+464
+00:54:57.580 --> 00:55:01.880
+Zhujun Wang: it's not a which means it's not a good use case to use. Knn.
+
+465
+00:55:03.160 --> 00:55:07.690
+Francesca: Great. Okay? So that's that's a good question. I? So if I understood your
+
+466
+00:55:07.920 --> 00:55:15.580
+Francesca: question correctly right now, you can see that it's pretty easy to draw draw the line right. Exactly lovely.
+
+467
+00:55:15.580 --> 00:55:20.000
+Zhujun Wang: Yeah. But what if? Yeah, both both mix together. But the total number
+
+468
+00:55:20.120 --> 00:55:24.920
+Zhujun Wang: is re, pretty much almost the same. So is that a yeah.
+
+469
+00:55:24.920 --> 00:55:27.170
+Francesca: So like if it was like this, right?
+
+470
+00:55:27.170 --> 00:55:28.210
+Zhujun Wang: Right, exactly.
+
+471
+00:55:29.385 --> 00:55:33.620
+Francesca: You might so let's say I have a 3rd farm
+
+472
+00:55:33.640 --> 00:55:40.980
+Francesca: that produces oranges. So I have farm 1, 2, and then 3
+
+473
+00:55:44.790 --> 00:55:47.450
+Francesca: And let's say it's dispersed like that. Yeah.
+
+474
+00:55:47.580 --> 00:55:50.048
+Zhujun Wang: I I could. I could use
+
+475
+00:55:51.210 --> 00:55:53.149
+Francesca: Pay nearest neighbors for this.
+
+476
+00:55:53.180 --> 00:56:05.639
+Francesca: So when I said Balance, I meant more. Just the number of samples for each class. Yes, not about the balance visually for the boundary, so.
+
+477
+00:56:05.640 --> 00:56:06.160
+Zhujun Wang: Job.
+
+478
+00:56:06.160 --> 00:56:12.269
+Francesca: So let's say I had this farm right, and I wanted to look at you know the
+
+479
+00:56:13.180 --> 00:56:15.659
+Francesca: 4 4 nearest neighbors.
+
+480
+00:56:17.660 --> 00:56:24.230
+Francesca: Let me quickly. Draw that, then right like 4 near oops.
+
+481
+00:56:24.600 --> 00:56:27.610
+Francesca: Sorry if I wanted to do
+
+482
+00:56:28.509 --> 00:56:36.250
+Francesca: for nearest neighbors. That might be this right?
+
+483
+00:56:36.790 --> 00:56:39.619
+Francesca: So that would still be okay, and I would still end up
+
+484
+00:56:40.240 --> 00:56:46.341
+Francesca: with an apple. I know I picked an even number just for the purpose of the demo. But
+
+485
+00:56:46.700 --> 00:56:52.880
+Francesca: yes, that that was a great question. I meant balanced in terms of the number of samples for each class.
+
+486
+00:56:53.630 --> 00:56:54.220
+Zhujun Wang: Okay.
+
+487
+00:56:56.756 --> 00:56:59.693
+Francesca: The last thing that I did want to do
+
+488
+00:57:00.700 --> 00:57:10.638
+Francesca: very quickly was I don't think we'll have time to go through necessarily the implementation, although we can try. But
+
+489
+00:57:12.300 --> 00:57:24.239
+Francesca: This is from the practical applications, too. I loaded the car. Df, and I wanted to show you know what if you have a data set like the car.
+
+490
+00:57:25.224 --> 00:57:27.530
+Francesca: data frame the vehicle's data frame?
+
+491
+00:57:28.280 --> 00:57:32.720
+Francesca: And what if you wanted to turn this regression problem
+
+492
+00:57:33.200 --> 00:57:35.160
+Francesca: of predicting the price of a car.
+
+493
+00:57:35.920 --> 00:57:39.480
+Francesca: What if I wanted to turn this into a classification problem?
+
+494
+00:57:39.700 --> 00:57:42.770
+Francesca: Does anyone have any ideas? How I might turn.
+
+495
+00:57:42.810 --> 00:57:50.349
+Francesca: you know. Looking at this data set, I have, you know, Price was the thing I was trying to predict with my linear regression.
+
+496
+00:57:50.670 --> 00:57:58.829
+Francesca: Does anyone have any ideas how I might be able to turn this problem into a classification problem instead of a regression problem.
+
+497
+00:58:00.070 --> 00:58:04.700
+Gopikrishna Putti: You can bucketize the price, and then, treat it as a classification.
+
+498
+00:58:05.060 --> 00:58:07.310
+Francesca: Perfect. Exactly so.
+
+499
+00:58:07.570 --> 00:58:15.829
+Francesca: Think about it, you know. Maybe for a price. You don't want to do it, but think about it. If you were looking at restaurant reviews
+
+500
+00:58:16.190 --> 00:58:26.369
+Francesca: and restaurant reviews. You know, it's out of 5 stars. So every review has 1, 2, 3, 4, 5 stars. But maybe I want to just classify. Is it good or bad?
+
+501
+00:58:26.700 --> 00:58:31.730
+Francesca: How would I do that for 5 Star Review buckets?
+
+502
+00:58:35.880 --> 00:58:40.400
+Francesca: I might want to do anything that's 3 stars or up. That's good, right?
+
+503
+00:58:40.520 --> 00:58:45.389
+Francesca: And anything that's less than 3 stars that's not good.
+
+504
+00:58:45.530 --> 00:58:57.889
+Francesca: So you can do the same with Price here. And so I had written a function anything over
+
+505
+00:58:58.310 --> 00:59:01.850
+Francesca: 50,000, I'm going to say 2, as in the highest.
+
+506
+00:59:01.940 --> 00:59:04.440
+Francesca: you know. Maybe that's too expensive for me.
+
+507
+00:59:05.090 --> 00:59:11.679
+Francesca: 25,000 maybe it's a bit on the luxurious side, and then everything else
+
+508
+00:59:11.840 --> 00:59:14.550
+Francesca: will be, you know, lower priced.
+
+509
+00:59:15.460 --> 00:59:23.479
+Francesca: And so once I've actually defined the way I want to put my price buckets. I might just
+
+510
+00:59:25.010 --> 00:59:37.590
+Francesca: apply it to my price column on my data frame here and now you can see.
+
+511
+00:59:37.870 --> 00:59:39.365
+Francesca: Oh, well, they're all.
+
+512
+00:59:40.546 --> 00:59:45.436
+Francesca: Some of the let's just do like 35 to see.
+
+513
+00:59:45.910 --> 00:59:49.119
+Francesca: you can see now I have various price buckets.
+
+514
+00:59:49.700 --> 00:59:57.510
+Francesca: So this one is number 2. I can anticipate. It'll be pretty expensive indeed. It's almost 73,000.
+
+515
+00:59:57.640 --> 01:00:09.510
+Francesca: So if you did have a data set where it was a regression task, but you wanted to change it into a classification task. You can define a function with buckets and then apply it
+
+516
+01:00:09.540 --> 01:00:11.720
+Francesca: to your data frame.
+
+517
+01:00:12.640 --> 01:00:15.460
+Francesca: And then you can start predicting
+
+518
+01:00:15.780 --> 01:00:18.090
+Francesca: which price bucket it's going to fall under.
+
+519
+01:00:19.770 --> 01:00:22.100
+Francesca: That is it for me today?
+
+520
+01:00:22.130 --> 01:00:25.206
+Francesca: Thank you so much for joining
+
+521
+01:00:26.380 --> 01:00:28.940
+Francesca: and I hope to see you next time. Good luck with your projects.
+
+522
+01:00:30.330 --> 01:00:31.100
+shashi: Thank you.
+

@@ -1,0 +1,1618 @@
+WEBVTT
+
+1
+00:00:04.690 --> 00:00:06.150
+Viviana Márquez: Hi! Everyone
+
+2
+00:00:06.190 --> 00:00:31.329
+Viviana Márquez: welcome. Hi! Everyone! I see people still joining the call. So let's just give it a couple of minutes, and then we'll get started
+
+3
+00:00:38.240 --> 00:00:43.700
+Viviana Márquez: much last night. Got bills to pay. My head. Just feels in pain.
+
+4
+00:00:44.250 --> 00:00:49.489
+Viviana Márquez: Person, navy, hell today, late for work again.
+
+5
+00:00:49.700 --> 00:00:52.969
+Viviana Márquez: Even if I'm there they'll all imply
+
+6
+00:00:53.240 --> 00:01:05.010
+Viviana Márquez: for those of you that just joined the call. We're just waiting one more minute for people to join the call, and then we'll get started.
+
+7
+00:01:05.780 --> 00:01:07.900
+Viviana Márquez: They're giving me their best day.
+
+8
+00:01:12.740 --> 00:01:16.660
+Viviana Márquez: Oh, just to be with you!
+
+9
+00:01:18.720 --> 00:01:20.430
+Viviana Márquez: I'll stay.
+
+10
+00:01:20.430 --> 00:01:22.209
+Anu.Arun: Hi! Vivian!
+
+11
+00:01:22.770 --> 00:01:23.620
+Viviana Márquez: Hi.
+
+12
+00:01:24.200 --> 00:01:26.070
+Anu.Arun: Hi! Viviana! Hi! How are you?
+
+13
+00:01:26.070 --> 00:01:27.550
+Viviana Márquez: Good! How are you?
+
+14
+00:01:27.550 --> 00:01:29.050
+Anu.Arun: Very good, thank you.
+
+15
+00:01:30.310 --> 00:01:39.240
+Viviana Márquez: Alright. I I think we had a 1 on one like an hour ago. So I'm not sure if
+
+16
+00:01:39.290 --> 00:01:45.211
+Viviana Márquez: maybe you got the Times mess missed up. But you're welcome to stay to the office hour.
+
+17
+00:01:47.500 --> 00:01:52.400
+Anu.Arun: Oh, what time is so okay, I have it for 8 Am. On my calendar.
+
+18
+00:01:52.610 --> 00:02:05.880
+Viviana Márquez: So the one on one was 7 Am. Pacific time. But you're welcome to stay here. But yeah, just so. You know, this is the office hour where everyone is joins here.
+
+19
+00:02:05.880 --> 00:02:10.630
+Viviana Márquez: Oh, okay. I think it's a daylight saving thing that messed up. Oh, okay, my bad. Okay.
+
+20
+00:02:10.639 --> 00:02:17.969
+Viviana Márquez: no worries, no worries that happens. So feel free to just reschedule the one on one using the calendly link.
+
+21
+00:02:20.269 --> 00:02:21.669
+Viviana Márquez: No problem.
+
+22
+00:02:22.059 --> 00:02:33.549
+Viviana Márquez: Alright. So it's been a couple of minutes. So let's get started with the office hours. I see that people have joined the call. So let's get started.
+
+23
+00:02:35.429 --> 00:02:48.429
+Viviana Márquez: all right, cool. So what do we have today for the agenda. So we are going to talk about classification models. So first, st we're going to talk about, how do we know
+
+24
+00:02:48.429 --> 00:03:08.769
+Viviana Márquez: what is the main difference between regression models and classification models, because the the way of thinking about classification problems is a little bit different. And then we're going to go with our 1st example of a classification model which is Knns. So feel free to put any questions in the chat. If you have any questions
+
+25
+00:03:08.769 --> 00:03:19.079
+Viviana Márquez: otherwise, I'm going to go through the different topics to see if that sparks some questions, and then we can take it from there.
+
+26
+00:03:19.441 --> 00:03:44.399
+Viviana Márquez: So the 1st thing is just a review of what the machine learning pipeline is supposed to be. And as I'm saying this, think about the practical application that you probably had to do for the last module. But if you haven't done it yet, this is helpful, for you. Think about the capstone project and think about just the classification models that we're doing any machine learning project.
+
+27
+00:03:44.409 --> 00:04:09.079
+Viviana Márquez: You're going to have to use the machine learning pipeline. So basically, these are the suggested steps in your machine Learning Project journey that you should follow. So you complete your project successfully. You don't have to exactly those steps. You don't have to do them in this order. This is just a guideline. So you know where to start. But of course, depending on your data, depending exactly on your
+
+28
+00:04:09.079 --> 00:04:18.949
+Viviana Márquez: project and your goals. Sometimes you have to go back and repeat some of the steps, or you have to add an additional step. So this is just a guideline. So
+
+29
+00:04:19.319 --> 00:04:22.189
+Viviana Márquez: usually you would define
+
+30
+00:04:22.209 --> 00:04:29.419
+Viviana Márquez: a project. So typically, if you're working, this will come from management, they will give you a project
+
+31
+00:04:29.884 --> 00:04:35.219
+Viviana Márquez: but if if you're working on your own, or maybe you want.
+
+32
+00:05:26.140 --> 00:05:33.439
+Viviana Márquez: Hey, guys? Sorry about that. My zoom kicked me out. But let me share my screen once again.
+
+33
+00:05:34.190 --> 00:05:42.260
+Viviana Márquez: and I see the screen is here. I think everyone is able to see everything. And can you hear me now?
+
+34
+00:05:42.490 --> 00:05:45.780
+Viviana Márquez: I see some people saying in the chat that you can't hear me.
+
+35
+00:05:45.780 --> 00:05:47.530
+Raghavan Srinivasan: Yes, we can hear you right now.
+
+36
+00:05:47.530 --> 00:05:49.709
+Viviana Márquez: Awesome. Thank you for confirming.
+
+37
+00:05:50.072 --> 00:06:14.270
+Viviana Márquez: Okay, cool. So what I was saying, sorry about that. I don't know why Zoom kicked me out, but I guess 2024, right? Yeah. So before the call dropped, I was saying, Okay, so you do, Eva, that's pretty much what you did in practical application number one. So you want to understand your data set very well, so you can make good decisions about the modeling. The modeling is not
+
+38
+00:06:14.340 --> 00:06:29.030
+Viviana Márquez: the model is not any smarter than you. It's just doing things faster than you. But you need to be making good decisions. And how do you make good decisions by understanding your data set very well. So that's the reason why you do, Eda. Then
+
+39
+00:06:29.050 --> 00:06:50.260
+Viviana Márquez: it comes the part where you have to model the data. So how do you model the data? The very 1st thing you have to do is that you have to determine the machine learning task. And so far in this course, we're only talking about machine learning. That means that we're using structured data. In other words, we're using data that comes in a table format
+
+40
+00:06:50.270 --> 00:07:15.539
+Viviana Márquez: later in the course. Once we start with section number 3, I think that's Module 18. Then we're going to go on deep learning, and then we're going to go work with unstructured data. So we're going to work with images, audio video text. But in this part of the course, we're only working with structured data. So just tables. So in the world of machine learning, if you have a table, a problem with a table
+
+41
+00:07:15.870 --> 00:07:20.489
+Viviana Márquez: you should determine the machine learning task. And how do you do this? First, st
+
+42
+00:07:20.990 --> 00:07:45.839
+Viviana Márquez: you determine what is your target variable? So you should know, do I have a target variable? Or are you just searching for patterns. So if you're just searching for patterns, it's an unsupervised problem. So you can use a clustering algorithm like K-means. But if it is supervised, and you have a label, and you're showing your model a bunch of examples. So then it's able to predict
+
+43
+00:07:46.222 --> 00:07:59.620
+Viviana Márquez: on a new instance is able to predict. Using those labels, then, is supervised. And then what are those labels? So if those labels are numerical in nature, you're trying to predict the number like.
+
+44
+00:07:59.720 --> 00:08:10.149
+Viviana Márquez: how much is a house? That's a number, right is in dollars. But it's a number. So that will be a regression problem. Now, we're going to learn how to deal with models
+
+45
+00:08:10.150 --> 00:08:32.920
+Viviana Márquez: or what kind of models to pick when it's a classification problem. So when our target variable is a categorical variable. So, for example, let's say we're trying to predict whether an email is spam or not. It's a category. It's not a number. You're not trying to predict the number you're trying to predict a category. So if you're trying to predict a category, you have the world of classification problems.
+
+46
+00:08:32.940 --> 00:08:46.180
+Viviana Márquez: So so that's what you do you determine the machine learning task. And once you determine the machine learning task, things are much easier, because then you can build different candidate models. So this is what I was saying here.
+
+47
+00:08:46.560 --> 00:08:54.480
+Viviana Márquez: So once, you know, you have a classification problem, you can literally just Google, if you wanted to, you could Google, something like
+
+48
+00:08:54.740 --> 00:08:58.970
+Viviana Márquez: classification models like you learn.
+
+49
+00:08:59.860 --> 00:09:06.490
+Viviana Márquez: And let's see, let's see classifier comprehension comparation, let's say.
+
+50
+00:09:06.490 --> 00:09:29.950
+Viviana Márquez: and here it shows you all the different models that exist some models. You may know from this course that we're going to continue learning so far, you've learned just once one which is Knn, which we're going to learn today. But you're going to learn many more. So you can just try different classification problems because they all will help you classify different categories.
+
+51
+00:09:30.060 --> 00:09:52.010
+Viviana Márquez: So you can just build many classification models. You should build more than one because you should build several and see which one works better for your specific data set, and then out of those candidate models that you build, you pick the best one using performance metrics. And then, once you have picked the best model is, you just have to
+
+52
+00:09:52.620 --> 00:10:22.539
+Viviana Márquez: understand what the model is doing. So you can communicate the model insights and then implement and maintain. But first, st for now we're just going to focus here on the modeling part. Specifically in the classification, you already learned unsupervised learning. You already learned from the supervised World regression tasks. Now, we're going to learn from the supervised world classification tasks. So I wanted to stop there for a small second and see if there's any questions. Doubts.
+
+53
+00:10:34.910 --> 00:10:43.499
+Viviana Márquez: All right? Okay? So when we were working with regression models talked about performance metrics. Because.
+
+54
+00:10:43.620 --> 00:10:45.640
+Viviana Márquez: 1st of all, you don't want to just
+
+55
+00:10:46.240 --> 00:11:03.879
+Viviana Márquez: create a model and use it. You should. You want to know if your model is good or not right. So how do you know if your model is good or not? You use performance metrics. And there's several things we want to accomplish with the performance metrics. We want to know whether our model is capable of
+
+56
+00:11:03.880 --> 00:11:28.629
+Viviana Márquez: making predictions in the same data that it has seen already, because otherwise it means that it didn't learn anything. But also we want to be able to know if our model will do well on unseen data, because we want our model to not be a memorization machine that it memorized the data that it saw, but that is capable of generalizing, because that's the goal of machine learning. We want to be able to generalize.
+
+57
+00:11:28.820 --> 00:11:33.157
+Viviana Márquez: So we can make new predictions on new data.
+
+58
+00:11:33.840 --> 00:11:57.909
+Viviana Márquez: So in regression, we we learned, okay. So if I get a number, my prediction is a number, and my label is a number, I just subtract the difference, and we learn different ways of subtracting this difference, maybe elevating to the power of 2, they taking the root of that number based on the different needs for the performance metric. But basically we wanted to see that difference.
+
+59
+00:11:57.910 --> 00:12:05.540
+Viviana Márquez: But what happens when you have a classification? How do you do it? You don't have 2 numbers, so you can't like subtract the numbers.
+
+60
+00:12:05.550 --> 00:12:34.089
+Viviana Márquez: So in classification, it's actually easier because you just look at the prediction, compare it against the actual label, and you see, if you got it right or you got it wrong. So you don't have to do any subtraction. You just see, either you got the prediction right, or you got it wrong. And then you want to see, on average, for all the observations that you have. How many did you get right. How many do you get wrong? So that's the main intuition behind the performance metrics for classification models.
+
+61
+00:12:34.200 --> 00:12:57.030
+Viviana Márquez: And the same way, as it happened, with regression models where you have a bunch of different metrics, performance metrics. The most used ones are usually root, mean square error, and adjusted r squared, but depending on your needs, you might use one of the other ones, and there's so many of them. Same thing with classification models.
+
+62
+00:12:57.030 --> 00:13:20.569
+Viviana Márquez: Typically the most popular ones are accuracy. Recall precision f, 1 Roc Auc. But there's many more depending on the specific thing, the specific task that you're trying to achieve. So one really good place for all the different classification. Metrics is actually the Wikipedia. So let me just send you this link in the chat.
+
+63
+00:13:21.020 --> 00:13:23.780
+Viviana Márquez: So this Wikipedia article just
+
+64
+00:13:23.790 --> 00:13:31.979
+Viviana Márquez: it talks about, for example, the common ones, which is let's see, where is precision and recall. Let's see
+
+65
+00:13:32.590 --> 00:13:39.390
+Viviana Márquez: precision and recall. So here you have recall, etcetera. But you also have
+
+66
+00:13:39.470 --> 00:13:53.629
+Viviana Márquez: some other metrics. Yeah. So so I think this is pretty comprehensive. But of course, today we will go over the most popular ones, which is accuracy. Recall precision of one.
+
+67
+00:13:54.848 --> 00:14:00.590
+Viviana Márquez: So yeah, as I was telling you before the in classification.
+
+68
+00:14:00.740 --> 00:14:12.820
+Viviana Márquez: how do you compute performance metrics by looking at the observation, and see if your model got it right or not. If you got it. If you got the label right, or if we got the label wrong?
+
+69
+00:14:13.781 --> 00:14:17.470
+Viviana Márquez: So there are 3 types of classification models
+
+70
+00:14:17.590 --> 00:14:35.480
+Viviana Márquez: you have, I would say, 2 types, I would say multi-class and multi-label. But, I added, the binary type of classification models just because it's so popular. But the binary is basically a sub sample of multi-class. So I'll get that to that in a second.
+
+71
+00:14:35.861 --> 00:14:48.830
+Viviana Márquez: So binary classification is super easy, is you just have to classify 2 classes. So, for example, you have pictures of animals, and you want to classify whether it's a dog or a cat.
+
+72
+00:14:48.980 --> 00:15:10.360
+Viviana Márquez: Binary classification happens quite a lot, especially when it's something that is either yes or no. So, for example, is it spam? Yes or no. Is this patient Covid positive? Yes or no. So so binary classification is super super popular. So that's why I included it. But then you have multi-class
+
+73
+00:15:10.360 --> 00:15:21.879
+Viviana Márquez: classification, which is, you're trying to classify more than 2 classes. So, for example, dog, cat and duck, or maybe you're trying to classify
+
+74
+00:15:23.060 --> 00:15:25.619
+Viviana Márquez: different types of customers.
+
+75
+00:15:25.630 --> 00:15:34.060
+Viviana Márquez: loyal, normal customers, and customers that appear only once in a blue moon. Something like that. So
+
+76
+00:15:34.160 --> 00:15:55.250
+Viviana Márquez: a binary classification is a multi-class classification where you have 2 classes, and then multiclass is, you have any number of classes, but they're pretty much the same thing. Just binary classification is this specific case when you only have 2 classes, but it is a multi-class classification.
+
+77
+00:15:55.390 --> 00:16:22.280
+Viviana Márquez: and then you have multi-label. So multi-label is when a single observation has more than one label. So a common example of this would be classifying news articles, because a single news article could be several topics. So, for example, let's say, some news article talking about the developments of technology to fight
+
+78
+00:16:22.280 --> 00:16:46.360
+Viviana Márquez: Covid, let's say so. That would be health. And that would also be technology or something that says how the Government is going to make some cuts to the Educational Department, the Education Department something like that. So that's politics and education. So you can have several labels. You can have one or more labels. So that's multi-label.
+
+79
+00:16:46.700 --> 00:16:55.689
+Viviana Márquez: We're not really going to cover multi-label. But in case you're curious, one of the most powerful models for that is latent.
+
+80
+00:16:56.300 --> 00:17:03.349
+Viviana Márquez: latent derelict, a location. So you can just read more about it
+
+81
+00:17:03.590 --> 00:17:16.520
+Viviana Márquez: or in worst case scenario, you could also just train multiple binary classification models. Where you predict is this article, health? Yes or no.
+
+82
+00:17:16.540 --> 00:17:32.170
+Viviana Márquez: Is this article economy? Yes or no? And then you give it all the labels that ended up being yes, I don't know if that was super clear, but let me know. Otherwise I can give you a different example. But yeah.
+
+83
+00:17:32.534 --> 00:17:34.890
+Viviana Márquez: so I see a question in the chat.
+
+84
+00:17:36.051 --> 00:17:44.950
+Viviana Márquez: So with practical applications, I'm assuming maybe the one from last module.
+
+85
+00:17:45.010 --> 00:17:51.409
+Viviana Márquez: I tried building a cannon for predicting the condition of the car.
+
+86
+00:17:52.350 --> 00:17:54.510
+Viviana Márquez: Yeah. So so
+
+87
+00:17:54.980 --> 00:18:02.850
+Viviana Márquez: basically for those of you that are watching this recording later on, and don't have access to the question. The question in the chat is, I tried Kn
+
+88
+00:18:03.000 --> 00:18:11.170
+Viviana Márquez: for the practical application. Number 2. So practical number 2 is this regression task that you have to complete.
+
+89
+00:18:11.240 --> 00:18:36.229
+Viviana Márquez: and you can apply Knn, because, as we will learn in a few moments, Knn, you can apply for regression and classification. Tasks is a versatile model that you can apply for either. So yeah, you're more than welcome to to apply it on any regression task as well like the practical application if you didn't get a high score. That's okay. Sometimes some models are better than others, depending on the specific structure of your data
+
+90
+00:18:36.230 --> 00:18:42.119
+Viviana Márquez: set. So that's why it's important to try different models and see which one gives you the best performance. Metric.
+
+91
+00:18:42.530 --> 00:18:50.320
+Viviana Márquez: But yeah, it's good to be connecting the different pieces that you're learning. And and seeing that general map.
+
+92
+00:18:51.125 --> 00:18:52.640
+Viviana Márquez: Okay, cool. So
+
+93
+00:18:53.310 --> 00:19:10.619
+Viviana Márquez: let's now only focus on the multi-class classification where you're trying to classify. Actually, I'm going to just focus on the binary classification because you can extend this knowledge onto multi-class classification. So let's imagine we have 2 classes. So when you have 2 classes.
+
+94
+00:19:10.800 --> 00:19:17.930
+Viviana Márquez: and you're using a model to make predictions. You can get 4 results. So you can get
+
+95
+00:19:18.130 --> 00:19:20.710
+Viviana Márquez: class number one, you can get it right.
+
+96
+00:19:20.980 --> 00:19:24.219
+Viviana Márquez: You can get class number 2, and you can get it right.
+
+97
+00:19:24.665 --> 00:19:49.719
+Viviana Márquez: You can get class number 2, and you can get it wrong. And you can get class number one and get it wrong. So basically, let's say, we have a model with pictures of cats and dogs. And these are the labels. So this one. He got it right because it's a dog, this one. He got it right because it's a cat, this one. He got it wrong because it's a dog, and this one is, get it wrong because it's a dog. But it got classified as a cat.
+
+98
+00:19:50.990 --> 00:19:52.850
+Viviana Márquez: So typically.
+
+99
+00:19:53.730 --> 00:20:20.469
+Viviana Márquez: you would call one of the classes, the true positive, and the other class the true negative. How do you decide this? So, for example, in this case, with the dogs and the cats. It's kind of arbitrary. I just picked one to be my class number one. But in the real world, usually you pick as class number one as the class that you care the most about getting right. So, for example, when I used to work at cyber security
+
+100
+00:20:20.840 --> 00:20:26.389
+Viviana Márquez: in the cybersecurity industry, once I had to create a model to detect malware names.
+
+101
+00:20:26.390 --> 00:20:46.950
+Viviana Márquez: so my possible outcomes were. It was a malware, and I classified as a malware. It was a malware, and I didn't classify it as a malware, or it was not a malware, and I classified it as not a malware, or it was not a malware, and I classified it as a malware. So I had those 4 scenarios.
+
+102
+00:20:47.320 --> 00:20:56.810
+Viviana Márquez: and what I cared the most about was about correctly predicting whether something was a malware or not. I didn't really care that much if I got wrong
+
+103
+00:20:56.990 --> 00:21:05.000
+Viviana Márquez: and not not a malware one. The thing that I was concerned about was about malware, because I want to be able to predict
+
+104
+00:21:05.190 --> 00:21:16.950
+Viviana Márquez: whether something was a malware or not. So then I made that my class number one, so that yes, I made it the number one. So, for example.
+
+105
+00:21:16.950 --> 00:21:39.989
+Viviana Márquez: thinking of this example of the dogs and the cats, imagine that you work for a veterinary, and maybe dogs are more important to you because you work more with dogs, so you don't care if your model is a little bit off with cats, because you don't see that many cats, for example. And I'm just just coming up with an example. But yeah, that's how you decided. If there's no
+
+106
+00:21:40.060 --> 00:21:46.510
+Viviana Márquez: no clear decision on which class is the most important one. Then you just select it randomly.
+
+107
+00:21:47.220 --> 00:21:52.079
+Viviana Márquez: So when you get Class One number one, correct.
+
+108
+00:21:52.130 --> 00:21:56.569
+Viviana Márquez: that's a true positive. When you get class number 2,
+
+109
+00:21:56.700 --> 00:21:59.890
+Viviana Márquez: the right? That's a true negative.
+
+110
+00:22:00.490 --> 00:22:12.309
+Viviana Márquez: When you get a class number 2 incorrect. That's a false positive. Why is it a false positive, because the result seems like it's the positive class.
+
+111
+00:22:12.340 --> 00:22:35.240
+Viviana Márquez: But it's not so. It's a false positive, which maybe this is a term that you heard during. I don't know why I keep talking about Covid today, but during Covid you might have heard it a lot when people said, Oh, you got a false, positive result. Test, result. It told you that you had Covid, but you didn't have Covid. So that's where the false positive comes from. Same with, for example.
+
+112
+00:22:35.500 --> 00:22:38.399
+Viviana Márquez: I don't know. Like a pregnancy test, it could say
+
+113
+00:22:38.750 --> 00:22:46.489
+Viviana Márquez: false, positive. It tells you that you're pregnant, but you're not really pregnant. So that's a false positive. And then, on the other hand, you have the false negative.
+
+114
+00:22:46.520 --> 00:23:15.489
+Viviana Márquez: So this class is the positive class, and I predicted as negative. So that's a false negative. So same thing. It applies with both the covid test and the pregnancy test. It says, Okay, no, you're not pregnant. But you were actually pregnant. That's a false negative. So it's pretty self-intuitive, the terminology. Just if you're ever confused, think about either the Covid case or the pregnancy test. And then it should be pretty obvious.
+
+115
+00:23:19.040 --> 00:23:26.110
+Viviana Márquez: So I see a question in the chat. So are there public models out there for identifying things
+
+116
+00:23:26.180 --> 00:23:48.609
+Viviana Márquez: like dogs versus cats. In this instance, I'm guessing the community wants to keep building on what has been learned previously. Absolutely. Yes, that's actually a really good question that's called transfer learning. So you can just like read more about it. When like just Google transfer learning, once we get to deep neural networks and we're working with images
+
+117
+00:23:48.610 --> 00:24:12.550
+Viviana Márquez: that's super super useful, and it's called transfer learning. And I'll bring some examples. Then it's a little bit too early to be talking about transfer learning. But yes, you do that a lot in AI, you use something that someone built already, and you leverage that knowledge. And then you fine tune it to your specific data set. So if you want to read more about it until we get
+
+118
+00:24:12.750 --> 00:24:18.060
+Viviana Márquez: to that module, it's called transfer learning. And it's used all the time.
+
+119
+00:24:19.370 --> 00:24:20.989
+Viviana Márquez: Yeah, cool. So.
+
+120
+00:24:21.270 --> 00:24:30.059
+Viviana Márquez: okay, now, we know that our model can get it right or can get it wrong. And if we have 2 classes, we have 4 possible options. It gets
+
+121
+00:24:30.140 --> 00:24:34.910
+Viviana Márquez: this class right, this class right or this class wrong or this one wrong.
+
+122
+00:24:35.000 --> 00:24:55.509
+Viviana Márquez: So the most natural way of how you would measure how your model is doing is with accuracy. Even if you didn't know anything about AI, anything about statistics, I think this is the most natural thing that you would think of doing, which is, you see, all the
+
+123
+00:24:55.520 --> 00:24:57.589
+Viviana Márquez: predictions that were made.
+
+124
+00:24:57.610 --> 00:25:15.360
+Viviana Márquez: and then you see how many got right, and you divide it by the total number of predictions is the most intuitive one. So, for example, in this case it will be 70% accuracy. Why? Because you have 1, 2, 3, 4, 5, not this. One's 7,
+
+125
+00:25:15.520 --> 00:25:19.840
+Viviana Márquez: 6, 7. So it got 7. Correct
+
+126
+00:25:19.960 --> 00:25:24.639
+Viviana Márquez: over how many? 12345678910.
+
+127
+00:25:25.500 --> 00:25:28.810
+Viviana Márquez: So you got 70% correct.
+
+128
+00:25:29.120 --> 00:25:35.840
+Viviana Márquez: and the terminology is accuracy. It's called accuracy. So what is the accuracy of your model is this?
+
+129
+00:25:36.080 --> 00:25:55.470
+Viviana Márquez: And that's it. And you might be wondering. Well, why do we need more performance metrics? Accuracy seems pretty good, right? This is doing what it's meant to do. It's telling you how many predictions. You got correct. Well, turns out that it's not so easy. So we actually need more performance metrics.
+
+130
+00:25:55.490 --> 00:26:00.309
+Viviana Márquez: So the issue with accuracy is that it needs a balanced data set
+
+131
+00:26:00.340 --> 00:26:04.619
+Viviana Márquez: and a lot of times, that's not the case. So, for example, imagine that you have
+
+132
+00:26:05.000 --> 00:26:12.430
+Viviana Márquez: cat cat cat cat, cat, you have 90% of your data is cats. Only 10% of your data is dogs.
+
+133
+00:26:12.530 --> 00:26:15.379
+Viviana Márquez: So if your model always predicts cat.
+
+134
+00:26:15.590 --> 00:26:34.660
+Viviana Márquez: it will say it has a 90% accuracy which seems very high. Right? That's super close to 100. But that but that's an issue, because, even though you don't have a lot of instances of the dog. You want to get it right. You don't want to get it wrong all the time, so accuracy might be misleading because it might
+
+135
+00:26:34.730 --> 00:26:47.770
+Viviana Márquez: make you feel like your model is doing well, but it's not really doing well, and the best example I can give you is with like bank transactions. You have some fraudulent transactions. If you work for a bank, there's
+
+136
+00:26:47.770 --> 00:27:13.729
+Viviana Márquez: some number of transactions that are going to be fraudulent, but they're probably going to be the minority. Most transactions are going to be valid transactions. So you don't want to predict. Always valid, valid, valid. Your model is going to say 90% accuracy. But then you're saying valid to even the the fraudulent transactions. So that's a problem. You want to be able to detect those fraudulent transactions and correctly predict them as
+
+137
+00:27:13.760 --> 00:27:18.109
+Viviana Márquez: fraudulent transactions. You don't want to be misceving, misleading, and
+
+138
+00:27:18.280 --> 00:27:28.960
+Viviana Márquez: and say, Oh, our model has 90% accuracy. But it's not doing anything. It's not really doing anything, because it's not correctly predicting the minority class.
+
+139
+00:27:29.545 --> 00:27:43.469
+Viviana Márquez: So that's why we need more performance metrics. You could, as an alternative, balanced out the data set. So you have the same number of positive
+
+140
+00:27:44.070 --> 00:28:04.549
+Viviana Márquez: classes and negative classes. So that's called resampling. That's 1 option. But a lot of times that's not really an option. If you don't have that many samples from the minority class, it's hard to rebalance. So that's why you need other performance metrics to have a more accurate view of the panorama.
+
+141
+00:28:04.550 --> 00:28:18.410
+Viviana Márquez: So that's why we use something like recall. So recall is one of the other performance. Metrics that you can look at, so recall is the ability of the model to retrieve all the relevant cases within a data set.
+
+142
+00:28:19.830 --> 00:28:26.740
+Viviana Márquez: So if we say that the dog is true, positive, and the cat is true. Negative. How do we compute it here?
+
+143
+00:28:27.050 --> 00:28:42.720
+Viviana Márquez: So the way I think about it is completely up to you. People have different ways of learning. Some people prefer the formula, so the formula will be true, positive, over true, positive, plus negative. And if you learn the formula, and that works for you. That's fantastic
+
+144
+00:28:42.800 --> 00:28:48.199
+Viviana Márquez: for me. I like to think about it in a way that is a little bit more intuitive.
+
+145
+00:28:48.746 --> 00:29:01.880
+Viviana Márquez: So I think of it as true, positive over everything that is actually positive. So what is everything that is actually positive? So everything that is actually positive is, of course, the true positives
+
+146
+00:29:02.450 --> 00:29:06.710
+Viviana Márquez: and the things that got predicted as a false
+
+147
+00:29:06.810 --> 00:29:13.160
+Viviana Márquez: negative, because if the prediction was negative, but that was wrong, that means that they were positive.
+
+148
+00:29:13.745 --> 00:29:35.189
+Viviana Márquez: So actually in a job interview. And this has happened to me like a couple of times. They tell me what is the formula for recall. And I think for me at least, memorizing. The formula is a little bit difficult. So I just say, Okay, so recall is true positives over everything that was actually positive. And what is that? That is the true positives, of course.
+
+149
+00:29:35.190 --> 00:29:50.579
+Viviana Márquez: And then things that were positive but got predicted wrong. So those are the false negatives. And then, just remembering this, allows me to extract the formula, and then I get it right in the job interview. So in this case, okay, what are the true positives?
+
+150
+00:29:50.970 --> 00:29:56.469
+Viviana Márquez: So the dogs that what got predicted as dogs. So that's where this 2 is coming from.
+
+151
+00:29:56.790 --> 00:30:07.529
+Viviana Márquez: And then everything that is actually a positive, actually positive. So everything that is actually a dog. So you have 1, 2, and 3. That's where this 3 is coming from.
+
+152
+00:30:07.720 --> 00:30:16.380
+Viviana Márquez: And then if you wanted with the formula, the true positives is the 2 dogs that actually got predicted as a dog.
+
+153
+00:30:16.490 --> 00:30:23.179
+Viviana Márquez: and then the false negative is the dog that didn't get predicted as a dog. So that's the false negative.
+
+154
+00:30:23.330 --> 00:30:27.520
+Viviana Márquez: So 2, over 3, 67% recall
+
+155
+00:30:28.063 --> 00:30:52.020
+Viviana Márquez: so when would you use something like recall. So, for example, when I used to work in cybersecurity, we would use recall a lot because you want to be able to your model to be able to retrieve all the relevant cases within a data set. So I don't care at the expense of
+
+156
+00:30:52.020 --> 00:31:05.670
+Viviana Márquez: maybe misclassifying some cats to get all the dogs right. So in cybersecurity that was important for me, because I wanted to be able to detect all the malware names correctly as malware.
+
+157
+00:31:05.830 --> 00:31:08.239
+Viviana Márquez: even at the expense of maybe
+
+158
+00:31:08.250 --> 00:31:23.640
+Viviana Márquez: misclassifying some things that were not a malware as a malware, because I'd rather tell a client just kidding that was not a malware you're safe than telling the client you're safe when it was actually a malware name. That would have been a problem. So in in that industry.
+
+159
+00:31:23.870 --> 00:31:26.949
+Viviana Márquez: a lot of times, we wanted to focus on recall.
+
+160
+00:31:27.160 --> 00:31:48.120
+Viviana Márquez: So we would use recall. But sometimes you have the opposite problem. So you would use precision. So precision is the ability of the model to find only the relevant cases within a data set. So basically in this case is that even if you miss some of the positive classes
+
+161
+00:31:48.210 --> 00:32:02.359
+Viviana Márquez: whatever gets predicted as positive, you feel very sure that it's positive. So here's the formula. In case you want the formula, I think of it as the true positives over everything that got classified as positive.
+
+162
+00:32:02.500 --> 00:32:03.500
+Viviana Márquez: So
+
+163
+00:32:03.620 --> 00:32:16.210
+Viviana Márquez: again, here the true positives are the dog classified as a dog. Oops. That was not very not doesn't look like a circle. But anyway, so that's the true positive.
+
+164
+00:32:17.590 --> 00:32:27.690
+Viviana Márquez: And what is everything that got classified? Positive. So everything that got classified as a dog. So this got classified as a dog dog
+
+165
+00:32:27.850 --> 00:32:35.630
+Viviana Márquez: dog, and that's it. So that's where I get before. So everything that got classified as positive
+
+166
+00:32:36.173 --> 00:32:42.310
+Viviana Márquez: if you wanted to do it with the formula. So you have the true positives, the 2 dogs, plus
+
+167
+00:32:42.640 --> 00:32:50.379
+Viviana Márquez: the false positives, which are the things that got predicted as the positive class incorrectly. So you have these 2 in there.
+
+168
+00:32:50.400 --> 00:32:52.660
+Viviana Márquez: so you can either do it with the formula
+
+169
+00:32:52.730 --> 00:33:01.969
+Viviana Márquez: or the intuition which is over everything that got classified as positive. When would you use this precision?
+
+170
+00:33:02.000 --> 00:33:04.830
+Viviana Márquez: Typically, you would use it in something like healthcare.
+
+171
+00:33:05.080 --> 00:33:23.989
+Viviana Márquez: So there's an example with like tuberculosis. So if someone has tuberculosis, it's pretty serious. You could die from tuberculosis, and one of the medicines to attack tuberculosis is very strong, very effective. But the issue is that you might go blind
+
+172
+00:33:23.990 --> 00:33:45.160
+Viviana Márquez: with that medicine. If you have the medicine, and if you're very sure someone has tuberculosis, you would still give it to them, because even if they go blind they would still be alive. But you don't want to give that medicine to someone that doesn't have tuberculosis, and they didn't need it and ended up blind. So that's when you need
+
+173
+00:33:45.160 --> 00:34:02.509
+Viviana Márquez: precision. You want to extract everything that got classified positive. Even if you miss some positives you want to make sure that what you got was actually positive. So that's the precision. That's the difference between precision and recall. So in recall.
+
+174
+00:34:02.840 --> 00:34:10.419
+Viviana Márquez: you want to be able to extract everything that is actually positive, even at the expense of having some.
+
+175
+00:34:10.449 --> 00:34:14.340
+Viviana Márquez: some, some things that were not positive in there were
+
+176
+00:34:14.420 --> 00:34:19.060
+Viviana Márquez: for precision. You want to make sure that if you classify something as
+
+177
+00:34:19.270 --> 00:34:25.350
+Viviana Márquez: positive, you're sure that that's positive, even at the expense of not catching some of the cases.
+
+178
+00:34:25.963 --> 00:34:43.199
+Viviana Márquez: and sometimes in some industries. It's not super clear whether you want precision or recall. Maybe you want a balance between the 2. So that's when you use f 1 score. So f. 1 score is to find an optimal balance between precision and recall. So if you don't know, you should use f 1
+
+179
+00:34:43.719 --> 00:34:57.770
+Viviana Márquez: better way better than accuracy, because accuracy has the issue, that it might give you a misleading picture of your data of your model. So it's better to use just f 1 score. So typically, what you would do in the industry is that you compute
+
+180
+00:34:57.790 --> 00:34:59.420
+Viviana Márquez: the 4 of them.
+
+181
+00:34:59.600 --> 00:35:06.510
+Viviana Márquez: the 5 of them, because typically, you would also compute Roc, a Uc, but yeah. And then you get a
+
+182
+00:35:06.690 --> 00:35:10.239
+Viviana Márquez: good general picture of your model. But then
+
+183
+00:35:10.290 --> 00:35:23.960
+Viviana Márquez: to select the model out of your candidate models. Then you focus on one of those metrics and you have to make that decision based on your domain knowledge. So this is the formula. I don't really have an intuitive way of
+
+184
+00:35:24.000 --> 00:35:43.980
+Viviana Márquez: thinking about this formula, but I think it's a little bit easier than the one for precision recall, because it's just 2 times time, 2 times precision recall over precision plus recall. And then you plug in the numbers and you get that value. And of course, for all these performance metrics, you want them to be as close as possible to 100%.
+
+185
+00:35:45.470 --> 00:35:50.730
+Viviana Márquez: So yeah, everything should be as close as possible to a hundred percent and
+
+186
+00:35:50.790 --> 00:36:00.699
+Viviana Márquez: depending on the industry. For example, if you're working for a marketing agency, and you just want to understand better your clients to develop some marketing campaigns.
+
+187
+00:36:00.980 --> 00:36:23.520
+Viviana Márquez: Anything above 50% is okay, because it's more knowledge than random guessing. So even if I have something low as 65%. It's okay, in something like marketing. But if you're working in like healthcare or cyber security, you want those performance metrics to be very close to a hundred percent, because is very sensitive data.
+
+188
+00:36:25.370 --> 00:36:49.050
+Viviana Márquez: and then you have the confusion matrix, the confusion matrix allows you to visualize the performance of a classification model. So you don't have to do the confusion matrix. It's not mandatory, but it just allows you to visualize the results of your data in an easier way. Actually, the name comes from seeing how much your model is confusing the classes.
+
+189
+00:36:49.050 --> 00:37:04.535
+Viviana Márquez: So in an ideal world you will get, you will get only true positives and true negatives. So everything got classified correctly, and then 0 false negatives and 0 false positives. So you can quickly see the diagonals and see how your model is doing.
+
+190
+00:37:04.920 --> 00:37:11.219
+Viviana Márquez: of course, most of the time this is not going to be completely 0, but it should be lower values than in this diagonal
+
+191
+00:37:11.750 --> 00:37:23.520
+Viviana Márquez: and from a business perspective, once you're presenting your findings from your model. This is a little bit better in the sense that
+
+192
+00:37:23.810 --> 00:37:45.400
+Viviana Márquez: instead of just showing just numbers and numbers and numbers, you have a visualization that you can talk about your results using the visualization. But it's not mandatory. The confusion matrix is something optional for you to use. So I wanted to stop there for a second. I'll give. I'm going to give you an example of a confusion matrix. But I wanted to see if there's any
+
+193
+00:37:45.530 --> 00:37:51.580
+Viviana Márquez: questions about recall precision f 1, or accuracy. So far.
+
+194
+00:38:12.850 --> 00:38:14.190
+Viviana Márquez: All right.
+
+195
+00:38:15.020 --> 00:38:21.889
+Viviana Márquez: so let's let's do an example. So I'm gonna do this example. So in this example.
+
+196
+00:38:22.340 --> 00:38:27.449
+Viviana Márquez: these are, this is our data. The images pretend the images are our data.
+
+197
+00:38:27.510 --> 00:38:39.799
+Viviana Márquez: And then the labels at the bottom are or predictions. So how do you use this confusion? Matrix? So here you have the actual values. And here you have the predicted values.
+
+198
+00:38:40.269 --> 00:38:53.200
+Viviana Márquez: Notice that in some places this could be flipped. I've seen it both ways where they have here the predicted values, and here the actual values. It doesn't matter. The numbers are just flipped, just like
+
+199
+00:38:53.350 --> 00:39:03.870
+Viviana Márquez: pay attention to which notation you're using it. It doesn't really matter. It's going to show you the same information, but just something to be aware of.
+
+200
+00:39:04.532 --> 00:39:08.030
+Viviana Márquez: So let's fill out this matrix.
+
+201
+00:39:08.100 --> 00:39:22.450
+Viviana Márquez: So let's start with the actual value. So things that were actually a dog and got predicted as a dog. So let me move this here, can I move this here? Okay, so let me move this here, so you can see it better.
+
+202
+00:39:23.020 --> 00:39:24.979
+Viviana Márquez: Let's do this. Okay?
+
+203
+00:39:27.830 --> 00:39:31.459
+Viviana Márquez: So things that were actually a dog. So this
+
+204
+00:39:31.940 --> 00:39:37.540
+Viviana Márquez: and this and that's it that we're actually a dog and got predicted as a dog. So that's
+
+205
+00:39:37.560 --> 00:39:41.330
+Viviana Márquez: 2 right there. And that's the true positive.
+
+206
+00:39:41.800 --> 00:39:45.040
+Viviana Márquez: Now let's go with the things that were a cat.
+
+207
+00:39:45.360 --> 00:39:51.380
+Viviana Márquez: and got predicted as a cat. So 1, 2, 3, 4,
+
+208
+00:39:51.510 --> 00:39:56.950
+Viviana Márquez: and 5. So that goes here. And that will be my true negative.
+
+209
+00:39:57.690 --> 00:40:02.829
+Viviana Márquez: And now let's see, okay, things that were a dog but got predicted as a cat.
+
+210
+00:40:03.500 --> 00:40:07.930
+Viviana Márquez: So just this guy. So that's 1 that's my
+
+211
+00:40:08.100 --> 00:40:16.729
+Viviana Márquez: false. What is my false? It's my false negative, because it was something that was the positive class. So I guess I could say, here, this is the positive class.
+
+212
+00:40:16.920 --> 00:40:18.869
+Viviana Márquez: This is a negative class.
+
+213
+00:40:19.060 --> 00:40:25.710
+Viviana Márquez: So it's something that was the positive class and got the negative label. So it's a false negative.
+
+214
+00:40:26.870 --> 00:40:32.409
+Viviana Márquez: and let's go with the next one. So the next one is things that were actually a cat
+
+215
+00:40:32.610 --> 00:40:41.039
+Viviana Márquez: and got predicted as a dog. So we have 2, and those are all false positives. Why is it the false positive because
+
+216
+00:40:41.070 --> 00:40:48.209
+Viviana Márquez: we had a cat, but it got predicted with the positive label, so that's
+
+217
+00:40:48.840 --> 00:40:56.979
+Viviana Márquez: like that. So up to there you have the confusion matrix. But the cool thing is that you can start doing things with this.
+
+218
+00:40:57.100 --> 00:41:02.429
+Viviana Márquez: So, for example, let's start with precision. So let's say, precision
+
+219
+00:41:03.460 --> 00:41:14.189
+Viviana Márquez: precision. So precision is true, positive over everything, over everything that got classified as positive.
+
+220
+00:41:15.650 --> 00:41:23.630
+Viviana Márquez: So true positives is just 2, these 2, and everything that got classified as positive. So everything
+
+221
+00:41:23.980 --> 00:41:26.809
+Viviana Márquez: that got classified as positive.
+
+222
+00:41:27.500 --> 00:41:30.290
+Viviana Márquez: It's these over here.
+
+223
+00:41:31.110 --> 00:41:46.149
+Viviana Márquez: So this would be 2 plus 2, which, in fact, is true positives over false positives. So even even the confusion matrix itself will give you the formula. So that's 2 over 4, which is 50%.
+
+224
+00:41:47.290 --> 00:41:49.840
+Viviana Márquez: And then let's use red.
+
+225
+00:41:50.130 --> 00:41:55.479
+Viviana Márquez: Then you could compute oops you could compute recall.
+
+226
+00:41:55.830 --> 00:42:01.849
+Viviana Márquez: So we recall it will be true positives over everything that is actually positive.
+
+227
+00:42:03.470 --> 00:42:08.380
+Viviana Márquez: So so everything that is actually positive
+
+228
+00:42:08.830 --> 00:42:11.310
+Viviana Márquez: is everything that is in here.
+
+229
+00:42:12.750 --> 00:42:20.140
+Viviana Márquez: So that would be okay. True positives is 2 over everything that is actually positive is 2 plus one equals, 2 over 3.
+
+230
+00:42:21.296 --> 00:42:27.590
+Viviana Márquez: So that's our recall. So that's true positives plus false negatives.
+
+231
+00:42:27.810 --> 00:42:41.310
+Viviana Márquez: So the confusion matrix allows you to get the performance metrics and the formulas. If you know how to use it. And then for the accuracy, the accuracy is just everything.
+
+232
+00:42:41.790 --> 00:42:49.120
+Viviana Márquez: So everything is 2 plus one plus 2 plus 5 over this diagonal.
+
+233
+00:42:49.400 --> 00:42:55.269
+Viviana Márquez: So this diagonal is 2 plus 5. So everything that got classified correctly.
+
+234
+00:42:55.410 --> 00:42:59.260
+Viviana Márquez: and that is 7 over 10, which is 70%.
+
+235
+00:42:59.440 --> 00:43:02.059
+Viviana Márquez: So that's how you use the confusion matrix
+
+236
+00:43:02.416 --> 00:43:11.290
+Viviana Márquez: and I wanted to stop here for a second and see if people have questions, doubts.
+
+237
+00:43:24.600 --> 00:43:32.410
+Viviana Márquez: All right. So it seems like there's no questions, though I'm happy to hear that awesome.
+
+238
+00:43:32.490 --> 00:43:53.189
+Viviana Márquez: So in the next slide I have the same Doodles in case you want them for reference later on. If anybody is interviewing anytime soon my recommendation would be as one of the exercises of the many things that you should know for the interview. Just
+
+239
+00:43:53.620 --> 00:44:02.399
+Viviana Márquez: create a random example like this, and try to do the the confusion matrix on your own, just like I did it right now. Because
+
+240
+00:44:02.660 --> 00:44:29.359
+Viviana Márquez: you probably understood what I just said now, but the fact of doing it yourself. It just kinda helps you memorize it. And then I just, I'm really bad at memorizing formulas. But for precision, and recall during my brain forever, because I I just did them. And now I see them from a practical standpoint rather than a formula. So that will be my recommendation.
+
+241
+00:44:29.949 --> 00:44:53.220
+Viviana Márquez: So the main purpose of the confusion matrix is to obtain measures to compare the predicted values with the true values. So the advantage is that you can quickly see here the diagonal, and see if you have bigger numbers here in this diagonal than in this diagonal. You always want this diagonal to have bigger numbers, because those are the correct predictions.
+
+242
+00:44:53.680 --> 00:45:01.240
+Viviana Márquez: and what constitutes a good measure is going to depend on the situation. So, as I was telling you before. If you work for marketing.
+
+243
+00:45:01.370 --> 00:45:17.730
+Viviana Márquez: if you have 60%, that's better than random guessing. So you can just use that information, even if it's not great. But if you're working in healthcare, maybe you don't want to use that model because you're dealing with people's bodies and health, so you want something that is really close to a hundred percent.
+
+244
+00:45:18.296 --> 00:45:36.319
+Viviana Márquez: And yeah, so so what is a good measure depends on the situation depends on the field, and whether you're going to pay more attention to recall or to precision, or just, you're going to use a balance like f, 1 is also going to depend on the industry that you're in
+
+245
+00:45:38.130 --> 00:45:41.430
+Viviana Márquez: So there's more performance metrics.
+
+246
+00:45:41.980 --> 00:46:07.440
+Viviana Márquez: Oh, this this Wikipedia article is better than the one that I shared earlier, because it shows a bunch of different examples. It also shows examples for other performance metrics that we didn't cover. I covered the most popular ones. I covered the ones that they would typically ask in a job interview. But if you are curious, or maybe if you're ever in your professional life, you come across a problem that you're like. Hmm.
+
+247
+00:46:07.530 --> 00:46:29.679
+Viviana Márquez: I feel like I need a different performance metric to truly represent this problem. I would just go on this Wikipedia and see which performance metric makes most sense, the other one that is very common and that people use, and that people you might get a question on this on a job injury is Roc Auc. So here are some.
+
+248
+00:46:29.680 --> 00:46:49.639
+Viviana Márquez: Here's a video that I think is pretty good. I'm not going to cover it because I want to talk a little bit about Knn before we go. But the video I shared in the chat is very good. Also. All these slides are going to be posted on canvas. So you have that for your reference as well.
+
+249
+00:46:49.670 --> 00:46:54.339
+Viviana Márquez: And here I have the cheat sheet of all the different performance metrics.
+
+250
+00:46:54.430 --> 00:47:04.730
+Viviana Márquez: So I had shared this with you guys already when we were talking about regression. And now we're just going to look at the classification tab. But I'm going to share this in the chat as well, so you can.
+
+251
+00:47:05.120 --> 00:47:07.230
+Viviana Márquez: so you can have it for your reference.
+
+252
+00:47:09.100 --> 00:47:16.839
+Viviana Márquez: So there you go. Yeah. So here, pretty much the same things I talked about.
+
+253
+00:47:16.840 --> 00:47:45.259
+Viviana Márquez: So the formula, the description, the advantages, the disadvantages, how to do that interpretation. So this is kind of this is important, because, especially when you're doing a job interview, people want to know that you're not just a data scientist that is good at regurgitating the formula. But also you know how to interpret the results. So I put an example here, and how it would look like from Python. So you have that for your reference.
+
+254
+00:47:46.100 --> 00:47:53.210
+Viviana Márquez: Alright cool. So before I jump onto Knn. Are there any questions about performance? Metrics?
+
+255
+00:48:06.720 --> 00:48:09.360
+Viviana Márquez: Alright cool. So it seems like there's no questions.
+
+256
+00:48:09.730 --> 00:48:10.820
+Viviana Márquez: So now
+
+257
+00:48:10.900 --> 00:48:33.829
+Viviana Márquez: you're empowered to use any classification model. Why? Because you can, just from python import cycle, learn, and then just import whatever model that fit on your X train Y train and then compute the performance. Metrics to compute the accuracy, compute the recall, compute the precision, and so on.
+
+258
+00:48:34.260 --> 00:48:35.870
+Viviana Márquez: and based on that
+
+259
+00:48:35.950 --> 00:48:43.800
+Viviana Márquez: pick the best model. Do you know what the model is doing? Not so far we haven't learned any classification model, but at least you could
+
+260
+00:48:44.020 --> 00:48:58.770
+Viviana Márquez: from a coding perspective, you could try any classification model all the classification models and pick the best one use using the performance metrics. And this is something that you would actually do a work, because
+
+261
+00:48:58.770 --> 00:49:04.820
+Viviana Márquez: no course will teach you every single classification model that exists.
+
+262
+00:49:04.820 --> 00:49:29.050
+Viviana Márquez: especially when there are so many new models coming out every day. So you just apply a model, and if it gives you good performance metrics, you read about it, and you learn more about it. So you know, why is it good and why you're using it. So so now you're equipped to use any classification model. Of course we're going to cover some of the most popular classification models. So you're not
+
+263
+00:49:29.170 --> 00:49:34.789
+Viviana Márquez: completely lost. But in theory you could use any classification model now.
+
+264
+00:49:34.840 --> 00:49:46.579
+Viviana Márquez: So the 1st classification model that we're going to see is Knn and through the throughout the next week. So we're going to see different classification models. But this is the 1st one we're going to see.
+
+265
+00:49:47.050 --> 00:50:00.790
+Viviana Márquez: And the 1st thing that I wanted to say is that Knn is not the same thing as K. Means. You might be tempted, but the only thing that Knn and K-means have in common is the letter K in their names. K. Means is unsupervised.
+
+266
+00:50:00.800 --> 00:50:10.070
+Viviana Márquez: clustering model Knn is supervised. You can use it for regression or classification, but it's supervised. So they're completely different models.
+
+267
+00:50:10.080 --> 00:50:16.289
+Viviana Márquez: The only thing that they have in common is that in their names there's a k, just just so, you know, there's 2 different things.
+
+268
+00:50:17.055 --> 00:50:19.129
+Viviana Márquez: So K and N works
+
+269
+00:50:19.490 --> 00:50:23.150
+Viviana Márquez: exactly how you would do things in real life.
+
+270
+00:50:23.230 --> 00:50:48.700
+Viviana Márquez: What I mean by this is that people before they study AI. They think that AI is this like wonderful, mysterious, magical thing. And it's not a lot of times. It's just a computer implementation of things, how that you would do just in normal life. So let me explain. Let's imagine you're creating a model to predict rent prices in San Francisco.
+
+271
+00:50:48.790 --> 00:51:02.910
+Viviana Márquez: So if you're creating a model to predict rent prices in San Francisco. What would you do? You see an apartment? You you fell in love with the apartment. You don't have the rent price of that apartment.
+
+272
+00:51:02.960 --> 00:51:07.620
+Viviana Márquez: What do you do? If you want to make a guess of how much is that apartment
+
+273
+00:51:08.860 --> 00:51:14.110
+Viviana Márquez: you find a few apartments that are kind of similar.
+
+274
+00:51:14.250 --> 00:51:25.640
+Viviana Márquez: and you compute the average price rent price of those apartments. And that's your prediction of how much is the rent for that specific apartment that you don't have the information, but that you really liked
+
+275
+00:51:25.680 --> 00:51:41.749
+Viviana Márquez: just by saying, like, Okay, apartments in this neighborhood with the same number of bedrooms and the same number of bathrooms are approximately are these prices? I'm going to take the average, and that's probably approximately how much. The rent is of that specific apartment.
+
+276
+00:51:41.850 --> 00:51:51.259
+Viviana Márquez: So that's exactly what Knn does. Knn is just the computer implementation of that logic. So you probably have been doing Knn
+
+277
+00:51:51.370 --> 00:51:57.339
+Viviana Márquez: without even knowing. And now you're just going to learn how to do it in using the computer.
+
+278
+00:51:57.480 --> 00:52:11.099
+Viviana Márquez: So it's a nonparametric, supervised machine learning model. What do I mean by non-parametric is that it doesn't assume a specific mathematical form. So, for example, in regression, you would have this
+
+279
+00:52:11.100 --> 00:52:38.999
+Viviana Márquez: mathematical formula, like B, naught but plus b 1 x one plus b, 2 x 2, and so on. And then you just plug in the values and you get the prediction here. You don't have a mathematical formula. You just learn directly from the data. So you you don't end up with a formula that you can just plug in some values. You just use the data directly. So that's what it means by nonparametric and supervised because we have labels.
+
+280
+00:52:40.532 --> 00:52:44.640
+Viviana Márquez: So the structure of the model is determined directly from the data
+
+281
+00:52:44.840 --> 00:52:58.810
+Viviana Márquez: is a versatile algorithm, because you can use it for classification and regression. We're learning about it now under the classification module, but it as as I think it was Sashi that mentioned. Let's see.
+
+282
+00:52:58.990 --> 00:53:12.810
+Viviana Márquez: yeah, as Sashi said, that you can use it for regression. But we're learning about it from a classification perspective. But you can use it the same way for regression tasks.
+
+283
+00:53:13.190 --> 00:53:19.760
+Viviana Márquez: It's a nice model, because it's very simple, easy to explain, and it's very useful.
+
+284
+00:53:20.400 --> 00:53:23.040
+Viviana Márquez: So these steps are very easy.
+
+285
+00:53:23.280 --> 00:53:26.379
+Viviana Márquez: You define the number of neighbors.
+
+286
+00:53:26.680 --> 00:53:37.909
+Viviana Márquez: So we'll talk about that later. But let's say, Okay, you want to look at the 3 closest observations to your new observation. So here this yellow block represents the new
+
+287
+00:53:37.930 --> 00:53:39.760
+Viviana Márquez: thing that you want to classify.
+
+288
+00:53:40.000 --> 00:53:45.119
+Viviana Márquez: and then you compute the distance from this to every single other observation.
+
+289
+00:53:45.170 --> 00:53:51.660
+Viviana Márquez: Typically, you would use something like decoding distance. But you can try with some other fancy distances.
+
+290
+00:53:52.290 --> 00:54:03.900
+Viviana Márquez: And since you're using distances, it's sensitive to magnitude. So you should normalize your data. But yeah, you're just going to compute the distance to all the different observations.
+
+291
+00:54:04.200 --> 00:54:11.260
+Viviana Márquez: and then you find the K closest observations. In this case, if we said K. Equals 3,
+
+292
+00:54:11.510 --> 00:54:32.460
+Viviana Márquez: and you make the prediction. So if you have classification. It's just voting. So in this case it will be the green triangle, because it's the most popular class among these 3 closest neighbors. If it's regression. You just take the average of the other observations, and that's the class, the result that you're going to give
+
+293
+00:54:34.460 --> 00:54:40.179
+Viviana Márquez: So, as I just said, if K. Equals 3. It would be a green square.
+
+294
+00:54:40.260 --> 00:54:42.919
+Viviana Márquez: What about if K. Equals 7?
+
+295
+00:54:43.000 --> 00:54:48.210
+Viviana Márquez: Is it going to be a red star or a green triangle? The prediction.
+
+296
+00:54:59.260 --> 00:55:01.550
+Raghavan Srinivasan: Viviana. Can you repeat that question? Please.
+
+297
+00:55:02.280 --> 00:55:07.020
+Viviana Márquez: Yeah. So if K equals 7. And we're looking at this graphic.
+
+298
+00:55:07.370 --> 00:55:11.690
+Viviana Márquez: what is going to be the prediction for this new instance here.
+
+299
+00:55:13.540 --> 00:55:17.780
+Viviana Márquez: So we have 2 votes for Red Star.
+
+300
+00:55:20.690 --> 00:55:22.610
+Viviana Márquez: 3 votes. 4 votes.
+
+301
+00:55:22.780 --> 00:55:30.119
+Viviana Márquez: Okay? Yes. So it's Red Star. Why? Because out of the 7 closest neighbors we have 4 red stars
+
+302
+00:55:30.290 --> 00:55:32.050
+Viviana Márquez: and 3 green triangles.
+
+303
+00:55:32.070 --> 00:55:34.849
+Viviana Márquez: So this is the majority. So it wins.
+
+304
+00:55:35.587 --> 00:55:37.200
+Viviana Márquez: What happens if
+
+305
+00:55:37.765 --> 00:55:46.659
+Viviana Márquez: I mean, it will be better to pick a an even, I mean an odd case. So you don't have the situation where you have
+
+306
+00:55:46.970 --> 00:56:06.639
+Viviana Márquez: like, if K. Equals 4, and then you have 2 and 2, so it's better to pick an odd one. But if you pick an even number it will just, and you have like 2 and 2, then it will just pick a random class. But so it's better to pick an even odd number rather than an even number for K.
+
+307
+00:56:07.770 --> 00:56:15.640
+Viviana Márquez: So what is the lowest and highest possible values of K lowest K equals one. You have to compare it at least to one neighbor
+
+308
+00:56:15.930 --> 00:56:22.639
+Viviana Márquez: and highest K. Equals NN. Being the number of observations. So you just compare it to everyone.
+
+309
+00:56:22.760 --> 00:56:38.140
+Viviana Márquez: not really a good idea to compare it to everyone, because then the majority class is always going to be chosen. So that means that your model is underfitting it has high bias, low variance. So you don't want that. But in theory you could. So you can pick K
+
+310
+00:56:38.190 --> 00:56:42.449
+Viviana Márquez: as a value anywhere between one and n.
+
+311
+00:56:43.160 --> 00:56:47.090
+Viviana Márquez: so when you should use Knn
+
+312
+00:56:47.170 --> 00:56:54.630
+Viviana Márquez: when you have labels, because it's a supervised model, you have many instances, so you have many neighbors that you can compare to.
+
+313
+00:56:54.720 --> 00:57:17.039
+Viviana Márquez: You have few features, so few columns. If you have a lot of columns, then you have the dimensionality problem. Everything is too sparse. So this tense starts to lose meaning. So if you have a few columns, it will be a better candidate. So, for example, to answer your question, Sashi, or I mean it was not a question, but it was like a remark of
+
+314
+00:57:17.180 --> 00:57:26.919
+Viviana Márquez: why, for the practical application came and wasn't very good. If I'm if I remember correctly, that practical application has several columns.
+
+315
+00:57:27.000 --> 00:57:33.180
+Viviana Márquez: So that's why Knn is not very powerful. If you have a few columns, it performs better.
+
+316
+00:57:33.370 --> 00:57:46.590
+Viviana Márquez: It's useful for situations where the data doesn't really follow a known distribution. So it's hard to get like a mathematical formula. So it's better to use Knn because it just looks at the data
+
+317
+00:57:48.550 --> 00:57:49.610
+Viviana Márquez: Id
+
+318
+00:57:49.870 --> 00:58:00.070
+Viviana Márquez: needs. If you need past model updates and you get new data, then this is a good candidate as well, because you just look at the data that you have
+
+319
+00:58:01.350 --> 00:58:08.949
+Viviana Márquez: and if you can store inquiry, the data easily, then, is a good candidate.
+
+320
+00:58:10.700 --> 00:58:15.700
+Viviana Márquez: Advantage. Advantages of Knn is simple to understand and to explain.
+
+321
+00:58:15.840 --> 00:58:27.360
+Viviana Márquez: It can be used for classification and regression is successful when the decision boundary is very regular. So when you have a very, very messy data set, Kn tends to perform very well
+
+322
+00:58:28.413 --> 00:58:30.160
+Viviana Márquez: disadvantages, you
+
+323
+00:58:30.180 --> 00:58:47.489
+Viviana Márquez: always need to carry all your training data with the model. So if you have a lot of training, data might not be the best model, it's better to pick a parametric model where you end up with a math equation, and you just keep the math equation instead of all the data. So that's 1 disadvantage.
+
+324
+00:58:47.610 --> 00:58:57.799
+Viviana Márquez: And why do you need all the data? Because you're computing the distance every single time you get a new observation, you're computing the distance to all the different observations. So you do need all the data.
+
+325
+00:58:59.220 --> 00:59:14.890
+Viviana Márquez: it can be very slow when K you pick when N is large, because if you have to compute the distance. With all those neighbors it can be very slow. So if you have a lot of instances, a lot of observations, maybe not the best model.
+
+326
+00:59:15.620 --> 00:59:23.119
+Viviana Márquez: and it's sensitive to irrelevant features and the scale of the data. So that's why I said, you have to normalize the data.
+
+327
+00:59:23.860 --> 00:59:30.360
+Viviana Márquez: It's usually not as good as other supervised learning methods. And typically, what you do is that
+
+328
+00:59:30.630 --> 00:59:46.130
+Viviana Márquez: you try several models here I'm mentioning, like some things to consider. But in the industry. When you're working, you just try different models, and you see which one it works. And then, if you're curious, like Sashi, that said like, Oh.
+
+329
+00:59:46.130 --> 01:00:08.190
+Viviana Márquez: came and didn't really do that very well with this specific data set. Then you can think about like, Oh, yeah, maybe it's because I had a lot of columns, or many neighbors, or, for example, if it's running very slow, you can say, Oh, it's because I have many observations. So maybe I would just pick a different model. So it's not so slow. So these are considerations. Once you have tried a lot of models.
+
+330
+01:00:08.200 --> 01:00:10.150
+Viviana Márquez: I don't really go
+
+331
+01:00:10.550 --> 01:00:25.400
+Viviana Márquez: axing models before I use them. I just try a lot of models and see which ones they work. But this intuition, and why? What are the advantages? Disadvantages? It will allow you to make decisions on?
+
+332
+01:00:25.470 --> 01:00:39.179
+Viviana Márquez: Why like, understand? Why is it not doing that? Very well, and or why? It's doing very well, on the other hand, and also decisions. When you have, for example, 2 models like you have, let's say, a logistic regression
+
+333
+01:00:39.290 --> 01:00:42.719
+Viviana Márquez: and a K and N, and both have equal performances.
+
+334
+01:00:42.890 --> 01:00:53.390
+Viviana Márquez: it's better to go for the logistic regression, because the logistic regression will give you just an equation where they came in. You have to always carry all that data, especially if you have a lot of observations.
+
+335
+01:00:53.420 --> 01:00:56.449
+Viviana Márquez: is going to be very slow. So if they has
+
+336
+01:00:56.550 --> 01:01:03.259
+Viviana Márquez: similar comparable performance metrics, you go for the other one. So it allows you to make those decisions.
+
+337
+01:01:04.622 --> 01:01:11.507
+Viviana Márquez: So how do you pick the best K, and I know I'm over time. Feel free to drop if you need to.
+
+338
+01:01:12.505 --> 01:01:20.549
+Viviana Márquez: but so how do you pick the best kn the best strategy is with cross validation.
+
+339
+01:01:21.025 --> 01:01:33.810
+Viviana Márquez: So here I have some resources on on that. So before we go, I want to show you the code. So let me copy these links here in the chat. So you have them for your
+
+340
+01:01:33.820 --> 01:01:35.260
+Viviana Márquez: reference.
+
+341
+01:01:36.048 --> 01:01:39.440
+Viviana Márquez: But yeah, let me show you the code before we go.
+
+342
+01:01:40.150 --> 01:01:44.800
+Viviana Márquez: So let me share this notebook in the chat. So you have it for your reference.
+
+343
+01:01:45.400 --> 01:01:47.699
+Viviana Márquez: So here I'm doing K and N
+
+344
+01:01:47.730 --> 01:01:57.209
+Viviana Márquez: with the Iris data set. So you guys already know the Iris data set, which is the flowers we're trying to predict the flowers based on petal and sepul.
+
+345
+01:01:57.812 --> 01:02:04.450
+Viviana Márquez: It's a classification problem because you have the categories. You have setosa versicolor and Virginica.
+
+346
+01:02:05.346 --> 01:02:08.440
+Viviana Márquez: Yeah. So here, I'm just loading the data
+
+347
+01:02:08.710 --> 01:02:16.510
+Viviana Márquez: here. I'm doing some. Eva, you should always do, Eva. So you understand the data set that you're working with, and
+
+348
+01:02:16.600 --> 01:02:24.879
+Viviana Márquez: same as with regression in classification. You also have to split from train and test, so you can get an accurate
+
+349
+01:02:25.388 --> 01:02:30.069
+Viviana Márquez: measure of how your model is doing on unseen data.
+
+350
+01:02:30.690 --> 01:02:36.860
+Viviana Márquez: Then you do feature engineering. If you need to with Knn, you need to, because your data should be normalized.
+
+351
+01:02:36.870 --> 01:02:39.519
+Viviana Márquez: So here I standardized my data.
+
+352
+01:02:40.614 --> 01:02:51.539
+Viviana Márquez: And why do I need to standardize it for Knn? Because it's sensitive to distance? So the magnitude of the features should be approximately the same. So if you have
+
+353
+01:02:51.610 --> 01:02:56.110
+Viviana Márquez: features with different magnitudes, then it's not going to perform as well.
+
+354
+01:02:56.120 --> 01:03:01.580
+Viviana Márquez: and then you do the modeling. So, for example, here, to pick decay, I I trained
+
+355
+01:03:01.680 --> 01:03:06.539
+Viviana Márquez: all the models with K. So I trained here the Kn
+
+356
+01:03:06.780 --> 01:03:21.629
+Viviana Márquez: with different values of K from one to 20. I computed the cross validation score. You could have computed just a performance metric. But usually the cross validation is a little bit more robust than just the normal one.
+
+357
+01:03:21.740 --> 01:03:28.629
+Viviana Márquez: And here I just did a plot of the accuracy versus decay that I picked
+
+358
+01:03:29.447 --> 01:03:40.919
+Viviana Márquez: and I see that a lot of case have high performance. So I just pick the least number of neighbors as possible. Right? Because why would you compute the distance? Why would you use
+
+359
+01:03:41.250 --> 01:03:50.060
+Viviana Márquez: 16 neighbors when you can just use 5 neighbors. That's more practical. So I picked 5 because of that reason.
+
+360
+01:03:50.620 --> 01:04:12.880
+Viviana Márquez: So K equals 5. I train my classifier, and then I run my model evaluation. So instead of doing root mean square error. Now, I'm doing the confusion matrix. So here, this is what I was saying, that you want this diagonal to be as high as possible, and this diagonal to be as low as possible here. So here we got this.
+
+361
+01:04:13.080 --> 01:04:25.619
+Viviana Márquez: and I left an example of Roc, which I didn't really have the time to cover. But here you have the code for your reference. And then I added some extra code in case you wanted the interpretation.
+
+362
+01:04:25.650 --> 01:04:33.009
+Viviana Márquez: Here, I plotted the decision boundary created by the cannon. So you have the code in there for your reference.
+
+363
+01:04:33.230 --> 01:04:34.300
+Viviana Márquez: And
+
+364
+01:04:35.000 --> 01:04:52.610
+Viviana Márquez: that's it. Yeah. So I see a question in the chat and feel free to ask more questions if you have questions. So the question in the chat says sounds like it's not actually good for the Cucane, and it's not good for the dogs versus cat example.
+
+365
+01:04:52.880 --> 01:04:57.910
+Viviana Márquez: What are some actual real life uses for Canaan. So that's a really good question.
+
+366
+01:04:58.360 --> 01:05:13.239
+Viviana Márquez: So Knn is one of the weakest models is the 1st model that we see, because it's very easy to understand. So it's a gentle introduction to classification models to supervised models, because you can also use it for regression.
+
+367
+01:05:14.720 --> 01:05:16.900
+Viviana Márquez: Real life examples.
+
+368
+01:05:17.090 --> 01:05:23.469
+Viviana Márquez: Most of the time you're going to end up using Random forest or xgboost, but we haven't gotten there yet.
+
+369
+01:05:23.998 --> 01:05:36.359
+Viviana Márquez: But in a few instances where canon would be good is when your data is very complex, very messy. So, for example, let me draw something here so like something like.
+
+370
+01:05:36.620 --> 01:05:42.180
+Viviana Márquez: let's say, this is Class One and class 2.
+
+371
+01:05:43.110 --> 01:05:48.749
+Viviana Márquez: And in here you can't really trace a decision boundary, because it's very complex.
+
+372
+01:05:48.760 --> 01:05:52.849
+Viviana Márquez: So your best chance is to just look at what is
+
+373
+01:05:52.900 --> 01:05:59.659
+Viviana Márquez: closer to you to make that prediction. So if you have a very, very, very messy data set.
+
+374
+01:05:59.920 --> 01:06:05.329
+Viviana Márquez: maybe you can't learn anything from there, because to be able to model
+
+375
+01:06:05.360 --> 01:06:17.680
+Viviana Márquez: a data set. It needs to have some type of coherence, and if it's just very messy, maybe you can't model it. But the last instance will be to try something like Knn. But yeah, that was a good question.
+
+376
+01:06:22.300 --> 01:06:28.909
+Viviana Márquez: Another question. So for this case in the cats versus dogs, in reality a matrix would be stored
+
+377
+01:06:29.240 --> 01:06:31.959
+Viviana Márquez: instead of data or something.
+
+378
+01:06:31.990 --> 01:06:40.690
+Viviana Márquez: I'm not sure I understand the question. Because, regardless of the data set, you can always compute
+
+379
+01:06:40.750 --> 01:06:44.690
+Viviana Márquez: the confusion matrix for
+
+380
+01:06:44.900 --> 01:06:53.319
+Viviana Márquez: like visualization purposes. So you can talk about the project when you're presenting your results. It's easier to talk about this
+
+381
+01:06:53.360 --> 01:07:23.099
+Viviana Márquez: rather than saying the precision for versicolor is 0 point 9 2. The precision for Virginica is one. The recall for versicolor is this, and that. It's a little bit harder to talk about with the numbers. The confusion matrix is a visual aid, but the confusion matrix is basically telling you the same results as the precision and the recall, and the accuracy and all the different things. Let me know if I misunderstood your question.
+
+382
+01:07:29.740 --> 01:07:36.740
+Viviana Márquez: How is the decision made? If not referring to tons of data.
+
+383
+01:07:39.140 --> 01:07:42.669
+Viviana Márquez: I'm still not sure I'm understanding the question
+
+384
+01:07:42.780 --> 01:07:52.019
+Viviana Márquez: because the decision is made by the model. So the decision will be made by the model by just looking at the neighbors.
+
+385
+01:07:52.340 --> 01:07:55.360
+Viviana Márquez: The confusion matrix is just, you know.
+
+386
+01:07:55.420 --> 01:08:09.049
+Viviana Márquez: if your model is making good decisions. So so, for example, for regression, we were using root mean, square error. R adjusted, R squared to know if our model was doing good or not.
+
+387
+01:08:09.100 --> 01:08:10.930
+Viviana Márquez: The confusion matrix
+
+388
+01:08:11.030 --> 01:08:33.479
+Viviana Márquez: is doing that in the classification case. So it's just to know if your model is doing good or not. But the decision will happen regardless. Even if you have a really bad model, the model will make a decision regardless the confusion matrix is more to help you visualize. If the decisions are good or not so ideally. If your model is learning something.
+
+389
+01:08:33.720 --> 01:08:41.449
+Viviana Márquez: This diagonal should contain the most of the numbers, and this diagonal should have really low numbers.
+
+390
+01:08:47.160 --> 01:08:54.849
+Viviana Márquez: Oh, oh, I see your question. So the question is regarding the the parametric models.
+
+391
+01:08:54.880 --> 01:09:06.340
+Viviana Márquez: So this is a good question. So what math is asking is okay. So Knn uses the data itself to make the decision. It quite literally looks at the data to be able to make the decision.
+
+392
+01:09:06.450 --> 01:09:08.130
+Viviana Márquez: How do the other models
+
+393
+01:09:08.930 --> 01:09:20.090
+Viviana Márquez: don't need the data. How are the other models able to just make the prediction. So so if it uses the data is nonparametric. So Knn is nonparametric.
+
+394
+01:09:20.170 --> 01:09:26.299
+Viviana Márquez: If it doesn't use the data is parametric. So parametric, you can just
+
+395
+01:09:26.630 --> 01:09:36.399
+Viviana Márquez: say, Okay, if it's parametric, parametric is equals to uses a math function.
+
+396
+01:09:37.180 --> 01:09:51.499
+Viviana Márquez: So during the training phase, the model has to use the data to be able to learn. But then to make the prediction, it doesn't need to use the data anymore, because it learns a math equation. So for example, for linear regression.
+
+397
+01:09:51.529 --> 01:09:57.269
+Viviana Márquez: After the model looked at the data, it learned how to fit these parameters.
+
+398
+01:09:57.900 --> 01:09:59.580
+Viviana Márquez: x, 1 plus
+
+399
+01:09:59.670 --> 01:10:12.260
+Viviana Márquez: B, 2 x 2. So you learn how to what are the best values of B, naught. Beta one beta, 2. So then you can plug in the values. So after the training has happened, you end up with a math equation.
+
+400
+01:10:12.340 --> 01:10:20.409
+Viviana Márquez: And once you get any observation, you just plug in the values onto the math equation and you get the prediction. So after the training has happened.
+
+401
+01:10:20.650 --> 01:10:39.140
+Viviana Márquez: you are left with a math equation, and you can just use the math equation. So you don't need to always use the training data set once the learning has happened. But in nonparametric models like Knn, then you do have to use the data because there's no math equation. You're literally using the data to make the prediction.
+
+402
+01:10:40.420 --> 01:10:44.950
+Viviana Márquez: I'm happy that that cleared up that answer that question
+
+403
+01:10:46.170 --> 01:10:56.189
+Viviana Márquez: alright, cool, fantastic. So we are over time as usual. So I'm gonna let you go. Don't forget that you can book your one on ones.
+
+404
+01:10:56.240 --> 01:11:08.220
+Viviana Márquez: So go on canvas and find the links and book those one on ones. But yeah, it was great seeing, all of you, and then I'll see you next time. Thank you so much. Everyone for being here have a nice day.
+
