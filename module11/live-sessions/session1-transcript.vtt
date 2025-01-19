@@ -1,0 +1,2494 @@
+WEBVTT
+
+1
+00:00:02.100 --> 00:00:03.100
+Vikesh K: Okay, welcome.
+
+2
+00:00:03.650 --> 00:00:13.179
+Vikesh K: I'm not sure how many more people will join. There are a couple of people joining just a reminder. This is more of a, you know, informal mentorship session, which we have
+
+3
+00:00:13.670 --> 00:00:26.480
+Vikesh K: rather than you know, an office hour session. So, the idea being, we will keep it. I try to keep it more open, ended. There are some. There's a deck, as you can see. This is on industry guidance, but I would rather maybe
+
+4
+00:00:26.510 --> 00:00:31.929
+Vikesh K: I believe many of you, many of the things that we cover in this deck you would already know, because all of you have been
+
+5
+00:00:32.299 --> 00:00:37.360
+Vikesh K: working or have some work experience, right? But I can talk specifically
+
+6
+00:00:37.480 --> 00:00:39.769
+Vikesh K: on something around data science.
+
+7
+00:00:40.240 --> 00:00:42.309
+Vikesh K: which is which is covered here.
+
+8
+00:00:42.820 --> 00:00:43.440
+Vikesh K: And
+
+9
+00:00:44.360 --> 00:00:48.660
+Vikesh K: mainly, I'm not sure how many of you are interested in switching
+
+10
+00:00:49.046 --> 00:00:52.250
+Vikesh K: in case you're not. So maybe this won't be
+
+11
+00:00:52.440 --> 00:00:55.250
+Vikesh K: super relevant. But we can still talk about it.
+
+12
+00:00:55.590 --> 00:00:58.249
+Vikesh K: There are a couple of more people in the
+
+13
+00:00:59.340 --> 00:01:03.259
+Vikesh K: in the waiting room. Okay, now we have all of
+
+14
+00:01:03.860 --> 00:01:06.230
+Vikesh K: of all the folks. Okay.
+
+15
+00:01:06.870 --> 00:01:12.302
+Vikesh K: we avinash Deepak Karen. Okay, I think for Preeti. It might be useful.
+
+16
+00:01:12.950 --> 00:01:14.689
+Vikesh K: Oh, there's 1 more person joining.
+
+17
+00:01:16.620 --> 00:01:29.040
+Vikesh K: Okay. So folks who just joined this is more of an informal session. We would just talk about sort of the data science and industry and might be more useful for those of you looking for a job in the
+
+18
+00:01:29.816 --> 00:01:32.850
+Vikesh K: field. Okay, this is
+
+19
+00:01:33.700 --> 00:01:44.549
+Vikesh K: all like couple of other stuff. But I would want to focus maybe more on the data science stuff. Right? Some of the thing which which keeps floating around.
+
+20
+00:01:44.740 --> 00:01:50.269
+Vikesh K: And you know the material which is prepared here, as you can see, there's some myth
+
+21
+00:01:50.850 --> 00:01:56.659
+Vikesh K: and some gold States, right? You know what exactly happens in the industry.
+
+22
+00:01:56.770 --> 00:02:04.709
+Vikesh K: but what I would say from my personal experience, and also what I've seen in my colleagues and seniors and juniors is.
+
+23
+00:02:04.980 --> 00:02:09.220
+Vikesh K: yeah, the it's a very hyped up field. That's that's for sure.
+
+24
+00:02:09.300 --> 00:02:16.190
+Vikesh K: I sometimes now think there's also a good amount of supply of people in data, science and machine learning. Because you.
+
+25
+00:02:16.280 --> 00:02:20.660
+Vikesh K: even when we open up an opening, there are too many applications.
+
+26
+00:02:20.760 --> 00:02:38.429
+Vikesh K: And I believe that would be the same case, if you're already working in this, everyone wants to enter into this. This is hyped up. This is very hot field. That's also another reason you would be doing this course. But there's also a lot of interesting stuff which happens in this field. Hence
+
+27
+00:02:38.430 --> 00:02:52.499
+Vikesh K: it's all worth it. Because if you if you like numbers. How I think about it being in a data science role, or a data analyst or a machine learning role, you try to develop a systematic and a quantitative understanding of your business.
+
+28
+00:02:52.940 --> 00:03:08.870
+Vikesh K: You know you understand your customers in a mathematical sense. You know how they're behaving. When are they returning back? So everything you you try to understand those particularly in numbers, and and try to then model them. What's their behavior like? So
+
+29
+00:03:10.910 --> 00:03:34.159
+Vikesh K: compared to other fields? For example, let's say, a software developer. There is. The learning curve is definitely way more steep because you also have to do a good amount of in addition to coding. You also need to know good amount of math statistics which can be challenging sometimes, you know, essentially, you have the whole base of probability, linear algebra calculus there and then you have the python
+
+30
+00:03:34.210 --> 00:03:35.749
+Vikesh K: and and then
+
+31
+00:03:35.940 --> 00:03:57.160
+Vikesh K: advanced algorithms on top of that. So that definitely makes it challenging. But that doesn't mean you really have to do a Phd. In maths and stats to do that? It would be good at least how I approach my officers, and how I would like to learn is, 1st you figure out how to drive a car, and then you start peeking into the engine because that works much better.
+
+32
+00:03:57.746 --> 00:04:02.630
+Vikesh K: On the Internet. You will find all kinds of advice, I believe.
+
+33
+00:04:02.960 --> 00:04:07.489
+Vikesh K: but you have to pick and choose. If you have the luxury and time to go back and learn
+
+34
+00:04:07.510 --> 00:04:19.519
+Vikesh K: lean algebra calculus from scratch. That would be great. But I understand many of you can't do that. You would have some job or some other commitments. But the best way is, you learn you pick up stuff
+
+35
+00:04:20.149 --> 00:04:30.099
+Vikesh K: while solving it through projects, and then, if you don't understand something, then you go deep into it and try to understand it. Further, it's more like just in time learning.
+
+36
+00:04:30.740 --> 00:04:48.199
+Vikesh K: because I think that often works better. And then if you map it to a project. You will also retain the information for much longer time. Right? So, for example, you do 5. Classification project, 5, regression project, 5 time series project, and then you go to Nlp. And all you know you can think of your whole
+
+37
+00:04:48.280 --> 00:04:57.060
+Vikesh K: journey in terms of, let's say, 5 5 projects. So you know you do 2025 projects. That would be a better way to retain information. Go deep into the
+
+38
+00:04:57.080 --> 00:05:04.809
+Vikesh K: specific nuances, and that could also be good for your portfolio if you want to build a portfolio projects
+
+39
+00:05:06.240 --> 00:05:20.450
+Vikesh K: other than that. Yeah, this is like high level. I think many of you would already know about this stuff. There's 1 topic which I wanted to talk about, which is interview. How interview happens. It can vary across industries, across companies.
+
+40
+00:05:20.510 --> 00:05:34.099
+Vikesh K: But typically there would be a coding round. For example, you know we often send out a hacker rank link. You have to do some coding there. It might vary or be differ for a different company.
+
+41
+00:05:35.180 --> 00:05:38.629
+Vikesh K: and after that, often in face to face rounds.
+
+42
+00:05:38.700 --> 00:06:00.959
+Vikesh K: many of which happen over Zoom. Now you're given a business case or a situation, and you are, and and they don't really ask you, hey? Tell us the assumptions of linear regression, for example, or, you know, is linear regression. Sometimes they might ask, but at a junior level, but at a slightly advanced intermediate level, they would often give you situations or problem statements
+
+43
+00:06:01.550 --> 00:06:13.800
+Vikesh K: rather than you know, typical cases. Okay, so it's it's good to practice with projects that that's 1 of the things I would highly encourage. And I will talk about, maybe where you can get some projects. I've already talked about it.
+
+44
+00:06:13.960 --> 00:06:15.450
+Vikesh K: but now, as we
+
+45
+00:06:15.530 --> 00:06:17.950
+Vikesh K: are entering into the
+
+46
+00:06:18.380 --> 00:06:23.119
+Vikesh K: phase 3 slowly, you would have to do the capstone. So it's good
+
+47
+00:06:23.290 --> 00:06:27.629
+Vikesh K: to, you know. Get an idea of all the different sources out there.
+
+48
+00:06:28.500 --> 00:06:37.100
+Vikesh K: And the 3rd one is the personal activity, right, which, in any case, which is more of a behavioral round which all of you would have faced across the organizations.
+
+49
+00:06:37.550 --> 00:06:44.714
+Vikesh K: Okay, I will take a pause here. See if you have any questions for me which which maybe you think I can help. But other than that
+
+50
+00:06:45.010 --> 00:06:48.490
+Vikesh K: many of the things around this are pretty generic. Now.
+
+51
+00:06:49.420 --> 00:06:53.900
+Vikesh K: domain knowledge deepak, I think, in some specific sectors it's quite crucial.
+
+52
+00:06:54.110 --> 00:07:00.169
+Vikesh K: For example, let's say you want to do analytics or data science in supply chain
+
+53
+00:07:00.230 --> 00:07:09.020
+Vikesh K: supply chain behaves very differently compared to let's say what you're doing in for a sas business, or for let's say what you're doing in
+
+54
+00:07:09.630 --> 00:07:10.809
+Vikesh K: you know.
+
+55
+00:07:10.940 --> 00:07:12.040
+Vikesh K: for booking.
+
+56
+00:07:12.180 --> 00:07:19.519
+Vikesh K: So, for example, let's say, and within also, there are a couple of other things you need to know, for example, in if you are in supply chain analytics.
+
+57
+00:07:19.970 --> 00:07:21.860
+Vikesh K: doing forecasting well
+
+58
+00:07:22.310 --> 00:07:24.360
+Vikesh K: will become an important skill.
+
+59
+00:07:24.460 --> 00:07:30.700
+Vikesh K: because you need to stock different products. So you need to know when to stock them and how much to stock them
+
+60
+00:07:30.950 --> 00:07:34.099
+Vikesh K: to solve. Problems like that time series becomes very important.
+
+61
+00:07:34.270 --> 00:07:55.450
+Vikesh K: But let's say, if you are doing something like customer lifetime value. Maybe time series is not very important, right? So so it depends on which particular what it will help you is to narrow down which skills you need to focus on right. So, for example, in this course, we devote
+
+62
+00:07:55.470 --> 00:08:04.609
+Vikesh K: one chapter, one module time series. But if you're interested in a role or in an industry where Time series is very important. Maybe you might have to focus more on that.
+
+63
+00:08:06.830 --> 00:08:17.199
+Vikesh K: I hope that answers your question deepak so. And again, a lot of it will depend on specific roles as you go, for example, deep into marketing. Also.
+
+64
+00:08:18.000 --> 00:08:19.389
+Vikesh K: sometimes the rule.
+
+65
+00:08:19.520 --> 00:08:26.869
+Vikesh K: ask and require that. You know, for example, how to model customer lifetime value. Right? So you need domain knowledge for that.
+
+66
+00:08:27.660 --> 00:08:30.800
+Vikesh K: Okay, Carmen, you have raised your hand. Let's say, let's.
+
+67
+00:08:30.800 --> 00:08:40.350
+Carmen P.: Yes, hey? Yes, I have 2 questions I posted in the chat. But my 1st question is like, What is the role of data science, especially in Gen. AI.
+
+68
+00:08:40.679 --> 00:08:45.049
+Carmen P.: And the second question is, if you are not good at coding.
+
+69
+00:08:46.020 --> 00:08:49.999
+Carmen P.: how can you break into artificial intelligence, product, management.
+
+70
+00:08:51.630 --> 00:08:54.702
+Vikesh K: Okay. I, I can tell you from my experience
+
+71
+00:08:55.470 --> 00:08:56.230
+Vikesh K: of
+
+72
+00:08:57.330 --> 00:08:59.755
+Vikesh K: right now. There, there are,
+
+73
+00:09:00.400 --> 00:09:06.050
+Vikesh K: some Gen. AI stuff happening at booking as well. There are a couple of things how we are doing it.
+
+74
+00:09:06.140 --> 00:09:07.370
+Vikesh K: One is
+
+75
+00:09:07.440 --> 00:09:10.870
+Vikesh K: we we want to do it. And let me do one thing.
+
+76
+00:09:12.230 --> 00:09:24.431
+Ravi Duvvuri: I can read a book like the thing the things you suggested long back. So that's the one way. But showing off the credential if you think is a good way to, you know.
+
+77
+00:09:24.780 --> 00:09:30.180
+Ravi Duvvuri: again. I don't want to spend money, you know, on that. So. But you know anything.
+
+78
+00:09:30.180 --> 00:09:34.810
+Vikesh K: No make sense makes sense. So I I think one good course would be on Coursera. There is a
+
+79
+00:09:34.900 --> 00:09:46.110
+Vikesh K: course by a statistics, Professor. I think it's called introduction to statistics, and that's quite good. And then, you know, you're doing a Berkeley course, and then you do a Stanford course. It looks good complementary, in a way.
+
+80
+00:09:46.190 --> 00:09:48.300
+Vikesh K: So that's another course. You can do.
+
+81
+00:09:49.320 --> 00:09:51.109
+Ravi Duvvuri: Introduction to statistics. That's what he.
+
+82
+00:09:51.110 --> 00:09:51.770
+Vikesh K: Yeah.
+
+83
+00:09:52.860 --> 00:09:59.880
+Vikesh K: I think it's an Intro level. And that guy teaches really, well, he's a Stats professor at Stanford, so that could be a good course.
+
+84
+00:10:00.070 --> 00:10:01.550
+Vikesh K: and then
+
+85
+00:10:02.100 --> 00:10:03.450
+Vikesh K: yes, Shashi, please.
+
+86
+00:10:03.860 --> 00:10:12.770
+shashi: Yeah, Ravi, I can share. Have another link for introduction to statistics, which is a good course. I will share you the link directly.
+
+87
+00:10:13.140 --> 00:10:14.199
+Ravi Duvvuri: Oh, sure. Yeah, thank you.
+
+88
+00:10:14.200 --> 00:10:16.530
+Vikesh K: If you have the link, you can share it here, maybe others will.
+
+89
+00:10:16.530 --> 00:10:19.120
+shashi: Okay. Okay. Then I'll share it. Here.
+
+90
+00:10:19.800 --> 00:10:20.789
+Ravi Duvvuri: Sounds good. Thank you.
+
+91
+00:10:20.790 --> 00:10:27.259
+Vikesh K: The other. With respect to experimentation, I think on at least on coursera. There's 1 by
+
+92
+00:10:29.130 --> 00:10:41.929
+Vikesh K: University of San Diego. I think it's called designing experiments. So if someone is interested just in a B testing, that would be much more relevant that way. But if you want a general understanding of statistics. This
+
+93
+00:10:42.030 --> 00:10:44.630
+Vikesh K: introduction to statistics course would be good.
+
+94
+00:10:46.200 --> 00:10:47.829
+Vikesh K: cool Ravi. Yep.
+
+95
+00:10:47.830 --> 00:10:48.490
+Ravi Duvvuri: Thank you.
+
+96
+00:10:50.020 --> 00:10:52.210
+Vikesh K: Okay, so she.
+
+97
+00:10:52.880 --> 00:10:56.519
+Ravi Duvvuri: Because can you put that San Diego one also on the chat like it's.
+
+98
+00:10:56.680 --> 00:10:57.590
+Vikesh K: Yes.
+
+99
+00:11:01.090 --> 00:11:04.669
+Vikesh K: I think it's called design of experiments. If I remember this correctly.
+
+100
+00:11:05.290 --> 00:11:07.920
+Vikesh K: I think. Sushi! Oh, you! You replied to that
+
+101
+00:11:08.170 --> 00:11:09.700
+Vikesh K: Carmen's question.
+
+102
+00:11:09.870 --> 00:11:10.590
+Vikesh K: Okay.
+
+103
+00:11:10.950 --> 00:11:11.700
+Vikesh K: cool.
+
+104
+00:11:12.700 --> 00:11:16.340
+Vikesh K: Oh, this guy, yeah, this guy also has nice videos.
+
+105
+00:11:18.030 --> 00:11:19.789
+Vikesh K: By the way, there's this one more guy called.
+
+106
+00:11:19.790 --> 00:11:22.310
+shashi: Josh Starmer also does a good job.
+
+107
+00:11:22.310 --> 00:11:25.460
+Vikesh K: Oh, yes, yes, that's what I was typing. Start quest.
+
+108
+00:11:26.124 --> 00:11:34.029
+Vikesh K: It's amazing. Sometimes I think about it. There's so much material to learn that, you know. Now you will get confused with what should I proceed.
+
+109
+00:11:34.730 --> 00:11:35.563
+Ravi Duvvuri: Yeah, exactly.
+
+110
+00:11:35.980 --> 00:11:53.939
+Vikesh K: 10 years back. I think I remember when I think 1015 years back, when Khan Academy started, I was like, Wow, this is amazing how come this guy is putting up all this information. And then, after that, coursera came in 2011, and then things just you know, there was a full explosion of material after that.
+
+111
+00:11:54.410 --> 00:12:12.500
+Vikesh K: But I think, yeah, even for starts. In fact, in one of the I think office hours, I will focus on a B testing. I will, because the professors talk about experimentation. They don't, really. We don't. Don't really go deep into that.
+
+112
+00:12:12.650 --> 00:12:22.269
+Vikesh K: But I think I would. I would like to focus one case, study around that because I think that's quite useful. If if you pick up any of the
+
+113
+00:12:22.380 --> 00:12:30.060
+Vikesh K: usual job descriptions, you will see that involves some amount of experimentation in the tech company, especially if you're developing around product
+
+114
+00:12:30.100 --> 00:12:34.690
+Vikesh K: right? Which is customer facing. You need some.
+
+115
+00:12:34.740 --> 00:12:38.840
+Vikesh K: A B testing some statistics, information around that
+
+116
+00:12:39.890 --> 00:12:43.959
+Vikesh K: cool any other questions or doubts on that.
+
+117
+00:12:47.760 --> 00:12:50.160
+Vikesh K: Okay, this is more or less the
+
+118
+00:12:50.720 --> 00:12:53.056
+Vikesh K: places where you can get some practice.
+
+119
+00:12:53.540 --> 00:13:19.909
+Vikesh K: you know, you have algorithmic practice. You have lead code project toilet. But I think lead code might be very helpful. If you want to go. It depends. Again, it depends company to companies. If you're looking for a machine learning engineer role, they expect you to. It's more like a software engineer. So they would give you lead code. But if it's more like a data scientist which is heavy on stats rather than heavy on coding, you don't have to put things in production.
+
+120
+00:13:19.910 --> 00:13:44.589
+Vikesh K: The interview would be around some. Maybe, you know, statistics or basic python rather than lead code level questions. That's often the distinction. So if you're preparing for a data scientist or data analyst role don't really go. And you know, do all these coding exercises on lead code? And again, please make a list of the companies that you're applying for
+
+121
+00:13:44.690 --> 00:13:48.009
+Vikesh K: and understand what's their process like? Because.
+
+122
+00:13:48.668 --> 00:13:51.360
+Vikesh K: the the challenge with data sciences.
+
+123
+00:13:51.530 --> 00:13:58.569
+Vikesh K: every company has their own process more or less. Some companies focus on SQL, some companies focus on python.
+
+124
+00:13:58.830 --> 00:14:01.416
+Vikesh K: And yes, in fact, in fact, one more
+
+125
+00:14:02.060 --> 00:14:03.530
+Vikesh K: advice would be
+
+126
+00:14:03.750 --> 00:14:12.810
+Vikesh K: to focus on SQL. We don't cover SQL. In this course, but just having an understanding of databases and how it works would be quite helpful for you.
+
+127
+00:14:13.060 --> 00:14:21.589
+Vikesh K: In fact, even the you know, the fancy tech companies like Open AI right now. Openai, I remember, had a data scientist opening.
+
+128
+00:14:21.790 --> 00:14:28.739
+Vikesh K: I think, couple of months back. Only thing they asked essentially, was 5 years of experience. And then python and SQL,
+
+129
+00:14:28.830 --> 00:14:33.110
+Vikesh K: and some, I think, A. B testing because they were developing, improving their product.
+
+130
+00:14:33.180 --> 00:14:49.239
+Vikesh K: So some product knowledge. So even the company which makes Llm. Which has Llm. As a business, not necessarily wants you to know. Llm. You know, when you apply to that company. So the challenge with the Llm. Is, it's all over the place now. It's much hyped.
+
+131
+00:14:49.500 --> 00:14:56.069
+Vikesh K: Everyone wants to talk about Llm. But the companies are still not mature enough to use Llms.
+
+132
+00:14:57.440 --> 00:15:05.309
+Vikesh K: one thing where one application which we have started using very recently, and maybe maybe I'm not sure how many of you know about it? It's called Glean
+
+133
+00:15:06.658 --> 00:15:13.289
+Vikesh K: It started by ex software engineer, or from
+
+134
+00:15:13.430 --> 00:15:16.210
+Vikesh K: from Google. He used to work on the search there.
+
+135
+00:15:16.350 --> 00:15:21.590
+Vikesh K: and he started another company after leaving Google, and then he realized his.
+
+136
+00:15:21.610 --> 00:15:24.960
+Vikesh K: And you know the internal documentation of the company is a mess.
+
+137
+00:15:25.000 --> 00:15:27.600
+Vikesh K: So he started a company glean
+
+138
+00:15:27.620 --> 00:15:39.520
+Vikesh K: which actually does Llms quite well. So, for example, we have so many docs floating around, you can ask it to summarize, and the key takeaways and everything that does it very well
+
+139
+00:15:39.680 --> 00:15:47.759
+Vikesh K: now, so it's think about it as Chat gpt. But for your internal company documents, and that that's that can be very useful.
+
+140
+00:15:47.890 --> 00:15:48.920
+Vikesh K: So
+
+141
+00:15:49.500 --> 00:15:56.710
+Vikesh K: yeah, that's that's 1 1 space where I think. Llms have made my life easy but other than that.
+
+142
+00:15:57.250 --> 00:16:04.379
+Kiran: Glenn is coming up with another Llm. Or they were using Llms to do their documentation perfect.
+
+143
+00:16:04.380 --> 00:16:07.270
+Vikesh K: They do 2 things very well. First, st they
+
+144
+00:16:07.460 --> 00:16:11.230
+Vikesh K: any. I don't know how they have managed it in the back end, but
+
+145
+00:16:12.260 --> 00:16:37.219
+Vikesh K: anything which any document which is linked inside the company, you can actually source it very easily. It's like Google, search on your internal company's database. So if there is a Jira ticket. If there is a file in Google Docs, is there any email? Is there any presentation? You put the topic? You will get it? And it's amazing. So that's the 1st step. The second thing what it can do is.
+
+146
+00:16:37.230 --> 00:16:46.820
+Vikesh K: you know, you tag a particular document, and you ask, Hey, summarize the key points for me and tell me the next action items. I actually did it. Recently we had a meeting with one of my directors.
+
+147
+00:16:46.850 --> 00:17:00.290
+Vikesh K: What I did. I had presented some document to him, and I asked the glean to, you know, tell me the action points based on it which, which, as a data team we should do, and it gives some incredible insights.
+
+148
+00:17:00.570 --> 00:17:01.680
+Vikesh K: So
+
+149
+00:17:01.880 --> 00:17:05.760
+Vikesh K: so glean is quite so glean is a combination of 2, 1. It it
+
+150
+00:17:06.040 --> 00:17:16.670
+Vikesh K: does what Google does for you. You know it crawls it, it indexes all your documents, and then, you know, then it works like a chat Gpt, so it's a combination of 2 for both, for us
+
+151
+00:17:16.880 --> 00:17:18.402
+Vikesh K: very, very useful.
+
+152
+00:17:19.160 --> 00:17:25.879
+Kiran: And another question. Maybe I missed when you explain about what is a big testing I didn't get
+
+153
+00:17:26.200 --> 00:17:29.646
+Vikesh K: Okay? Sure. Okay. So so I I can show you within
+
+154
+00:17:30.300 --> 00:17:30.800
+Vikesh K: But
+
+155
+00:17:32.070 --> 00:17:32.980
+Vikesh K: chart.
+
+156
+00:17:34.010 --> 00:17:37.950
+Vikesh K: Or maybe I can also send you a case show you with the case today.
+
+157
+00:17:38.450 --> 00:17:41.330
+Vikesh K: Just give me one second. Let me
+
+158
+00:17:44.600 --> 00:17:46.260
+Vikesh K: let me think of a
+
+159
+00:17:47.960 --> 00:17:49.430
+Vikesh K: which I can share.
+
+160
+00:17:52.080 --> 00:17:59.870
+Kiran: In in house. We are doing some A B testing what we're our Ab testing is comparing release a release. B, and what is the.
+
+161
+00:17:59.870 --> 00:18:00.529
+Vikesh K: That's different.
+
+162
+00:18:00.530 --> 00:18:01.780
+Kiran: In any Clna.
+
+163
+00:18:01.810 --> 00:18:02.683
+Kiran: So I
+
+164
+00:18:03.300 --> 00:18:09.380
+Kiran: it's it's correlate to what I'm doing some. But I'm I don't know what you are talking about. with regards to Ab testing.
+
+165
+00:18:09.570 --> 00:18:17.310
+Vikesh K: Okay, let me. So I've I will also share this case study with all of you. So you know, later on, if you want to practice, you can do it. This is
+
+166
+00:18:17.670 --> 00:18:21.400
+Vikesh K: similar to the officer case studies. But
+
+167
+00:18:21.750 --> 00:18:27.660
+Vikesh K: okay, so often, what happens? Let's say you want to make a improvement to a product. Okay, so
+
+168
+00:18:28.350 --> 00:18:41.279
+Vikesh K: in this case, this, this simple image, you can see this is one layout. And this is one layout, right? And someone, let's say they change the color in the bottom. You know of some certain sections in the website.
+
+169
+00:18:41.420 --> 00:18:42.270
+Vikesh K: Now.
+
+170
+00:18:42.420 --> 00:18:47.540
+Vikesh K: as a designer or as a you know, you have to figure out which version works the best for you.
+
+171
+00:18:48.330 --> 00:18:49.909
+Vikesh K: And what you do.
+
+172
+00:18:49.930 --> 00:18:57.839
+Vikesh K: you basically, let's say, 100 people are coming to a website. 50 people would be shown version A, 50 people would be shown version B,
+
+173
+00:18:57.970 --> 00:19:11.390
+Vikesh K: and then you've observed their behavior and see how they actually, you know, behave on your website, how they interact with your website and the version which has better metrics, you roll it out.
+
+174
+00:19:11.880 --> 00:19:19.700
+Vikesh K: So most of the product decisions that companies are taken like this, especially if you have a front end. If you have a customer facing website. So whether it's an apps
+
+175
+00:19:19.810 --> 00:19:21.630
+Vikesh K: or it's a.
+
+176
+00:19:22.240 --> 00:19:27.520
+Vikesh K: it's a website decisions are taken via A, B testing.
+
+177
+00:19:28.220 --> 00:19:37.929
+Avinash Gangwal: Hey, Vikesh, I have a question. And it's it's a problem or challenge. I'm facing right now. I'm starting my own company.
+
+178
+00:19:38.170 --> 00:19:39.210
+Avinash Gangwal: So
+
+179
+00:19:39.888 --> 00:19:42.530
+Avinash Gangwal: basically, we need to do.
+
+180
+00:19:42.640 --> 00:19:44.609
+Avinash Gangwal: we need to decide
+
+181
+00:19:44.840 --> 00:19:50.419
+Avinash Gangwal: which kind of prototype Mvp, we should build either web
+
+182
+00:19:50.430 --> 00:19:53.870
+Avinash Gangwal: or the mobile app and do the Ib testing.
+
+183
+00:19:53.960 --> 00:19:55.865
+Avinash Gangwal: The purpose is
+
+184
+00:19:56.730 --> 00:20:01.010
+Avinash Gangwal: basically, we need to make sure that what we are building
+
+185
+00:20:01.100 --> 00:20:07.919
+Avinash Gangwal: is what user like, right? So how do I decide whether I should go for web.
+
+186
+00:20:08.330 --> 00:20:13.589
+Avinash Gangwal: I should go for mobile app. I know that web building web is faster and easy.
+
+187
+00:20:13.770 --> 00:20:19.619
+Avinash Gangwal: but I same time I know that most of my user will be the mobile app user.
+
+188
+00:20:21.620 --> 00:20:22.819
+Vikesh K: Okay, interesting.
+
+189
+00:20:23.060 --> 00:20:42.759
+Vikesh K: So avinash, I don't think I'm like the best position to answer. This is more of a high level product level question. But having if if I were at your position, what I how I will approach it is, obviously you won't have any data for customers right now, right? Because you don't have anything launched. So the best thing is, you design something.
+
+190
+00:20:42.830 --> 00:20:49.710
+Vikesh K: and with the best you know, let's say you have a designer who knows who has worked in some other company, and he knows he or she knows the best principles
+
+191
+00:20:49.740 --> 00:21:11.149
+Vikesh K: you design around that, and sometimes you can even copy. You know some other website and see how it works. For you. You know, design elements from some other website which you really like. Copy those elements and test it. And then you start iterating because without any data, you can't do any ab testing, you need to have good amount of data. And also the challenge with a B testing is.
+
+192
+00:21:12.400 --> 00:21:13.830
+Vikesh K: you need enough
+
+193
+00:21:13.930 --> 00:21:15.530
+Vikesh K: sample size?
+
+194
+00:21:16.497 --> 00:21:18.369
+Vikesh K: You know, your sample should be in.
+
+195
+00:21:18.480 --> 00:21:30.560
+Vikesh K: For example, Google can do it very easily. Google has lots of traffic. So even if they run an experiment for one day, they might have sufficient data for it. But for us we might have to do it for a week.
+
+196
+00:21:30.630 --> 00:21:32.720
+Vikesh K: You might have to do it for 2, 3 months.
+
+197
+00:21:33.140 --> 00:21:45.989
+Vikesh K: So the initial part, I don't think you need to focus on Ab testing right now at all, it's it's more like you develop what you think is the best design principles. And then, later on, you optimize it, at least, so within booking.
+
+198
+00:21:46.090 --> 00:21:47.400
+Vikesh K: Okay, let me.
+
+199
+00:21:47.870 --> 00:21:50.600
+Vikesh K: But this was good and all the best for your startup.
+
+200
+00:21:51.430 --> 00:21:59.920
+Avinash Gangwal: Thank you. Yeah. I worked in big tech firm for 20 years. Apple Gs, and finally I decided to quit
+
+201
+00:22:00.050 --> 00:22:01.539
+Avinash Gangwal: 2, 3 months back.
+
+202
+00:22:02.483 --> 00:22:05.660
+Avinash Gangwal: And I thought, I'll just do something my own.
+
+203
+00:22:05.950 --> 00:22:06.830
+Avinash Gangwal: So.
+
+204
+00:22:07.260 --> 00:22:17.170
+Vikesh K: Well, that takes a lot of courage, lovely and all the best. Hopefully. Maybe tomorrow, when things become big, you can. All the peers who are in this course, you know, if they require a job you can.
+
+205
+00:22:17.260 --> 00:22:18.689
+Vikesh K: You can do it. You can.
+
+206
+00:22:18.690 --> 00:22:21.819
+Avinash Gangwal: I wish. I wish that it happens.
+
+207
+00:22:22.840 --> 00:22:24.560
+Vikesh K: And that's that's luxurious.
+
+208
+00:22:24.560 --> 00:22:29.299
+Avinash Gangwal: But yeah, it's a long journey. It's just beginning, and we'll see.
+
+209
+00:22:29.650 --> 00:22:30.299
+Vikesh K: Okay. Okay.
+
+210
+00:22:30.300 --> 00:22:35.610
+Avinash Gangwal: That's why this course is helping me a lot in thinking more in terms of.
+
+211
+00:22:35.760 --> 00:22:41.679
+Avinash Gangwal: because my product has a aiml flavor to it. And this is helping me
+
+212
+00:22:41.770 --> 00:22:45.550
+Avinash Gangwal: to understand, though I'll not do coding as such.
+
+213
+00:22:45.600 --> 00:22:48.850
+Avinash Gangwal: But it is giving me good idea that
+
+214
+00:22:49.200 --> 00:22:51.839
+Avinash Gangwal: I should do, and how I should do it.
+
+215
+00:22:52.440 --> 00:23:00.490
+Vikesh K: Okay, okay, well, that's lovely. That's good to know. So, Avina, just one book which I would recommend for that is something called lean analytics. That's a very good book.
+
+216
+00:23:01.110 --> 00:23:06.109
+Vikesh K: If you have heard of all this lean series, it was written in the same
+
+217
+00:23:06.360 --> 00:23:13.660
+Vikesh K: manner. But it's a very good book. It's, it's basically how you can use the customer data to make some actionable impacts, you know, especially at the start.
+
+218
+00:23:14.030 --> 00:23:15.439
+Vikesh K: So this might be useful.
+
+219
+00:23:19.450 --> 00:23:21.129
+Avinash Gangwal: Okay. Lean analytics.
+
+220
+00:23:21.130 --> 00:23:23.350
+Vikesh K: Yes, I put it in the chat as well. The name
+
+221
+00:23:23.460 --> 00:23:28.730
+Vikesh K: it's written by 2 folks, and they have a couple of Youtube videos. So even if you don't have time to go through the whole book.
+
+222
+00:23:29.535 --> 00:23:31.900
+Vikesh K: Youtube videos would be good enough starting point
+
+223
+00:23:33.220 --> 00:23:41.662
+Vikesh K: alright. So, by the way, this is this is I've I've sent this. If you're curious about Ab testing, you can attempt this
+
+224
+00:23:42.340 --> 00:23:53.120
+Vikesh K: assignment. And, for example, what this is, what this talks about. There's a 2 different kind of landing pages, old landing page, and a new landing page, and you. They would have given you data on for both of them.
+
+225
+00:23:53.170 --> 00:24:02.509
+Vikesh K: and what they want to understand is how so, for example, this is the main metric. There are 2 main metrics, but one of the main metrics is how many people got converted.
+
+226
+00:24:02.850 --> 00:24:05.100
+Vikesh K: So you care about conversion a lot.
+
+227
+00:24:05.340 --> 00:24:16.270
+Vikesh K: And you know conversion can mean different things at different companies. But you care about conversion. And then you see which version leads to a higher conversion.
+
+228
+00:24:16.470 --> 00:24:22.340
+Vikesh K: Right? So that's how you be testing is done, or you can maybe focus on the time spent on the web page.
+
+229
+00:24:22.780 --> 00:24:25.000
+Vikesh K: All right, that could be another component.
+
+230
+00:24:25.050 --> 00:24:29.740
+Vikesh K: So these are the business decisions which you will take day in, day out.
+
+231
+00:24:30.070 --> 00:24:47.910
+Vikesh K: especially if you're working in a tech company. Now, how interestingly, for example, how machine learning gets integrated with this is, let's say, tomorrow you come up with a new ranking algorithm or a new recommendation system. Algorithm customer comes to your website. You recommend them something.
+
+232
+00:24:47.980 --> 00:25:04.579
+Vikesh K: And how do you figure out which recommendation system works best for the customers, and that's where Ab testing comes into picture. So you have one status quo recommendation. Then you let's say you come up with a new algorithms. And you think it does a better job.
+
+233
+00:25:04.790 --> 00:25:09.400
+Vikesh K: So you A B test both the versions and see which version works the best.
+
+234
+00:25:09.930 --> 00:25:15.160
+Vikesh K: And this requires more statistics, you know, knowing your tea test, Anova.
+
+235
+00:25:15.210 --> 00:25:33.960
+Vikesh K: that would be much more helpful in this domain which we don't really cover a lot in this course because the focus is on machine learning. It's a field in itself. But I would say, especially if you're looking for jobs, or if you want to work for a tech company is good to have understanding of basics of a B testing and experimentation.
+
+236
+00:25:35.220 --> 00:25:36.030
+Vikesh K: Okay?
+
+237
+00:25:36.350 --> 00:25:37.290
+Vikesh K: And
+
+238
+00:25:37.920 --> 00:25:42.419
+Vikesh K: the main, just one more point. The main guy who talks a little
+
+239
+00:25:43.370 --> 00:25:57.599
+Vikesh K: very nicely about this is called is his name is Ron Cohavi. I I hope I pronounce it correctly. He used to work with Amazon, then Microsoft, then Airbnb, and now he leads independent. He's he works like a consultant now.
+
+240
+00:25:57.870 --> 00:26:02.170
+Vikesh K: but he has good stuff around A B testing. So that might be useful.
+
+241
+00:26:03.610 --> 00:26:04.500
+Vikesh K: Okay.
+
+242
+00:26:05.030 --> 00:26:22.479
+Vikesh K: any other questions or doubts around this. I want to keep it free, open ended, or have all of you. I know this is still very start. Many of you may not have looked at the practical application, but this practical application is slightly tricky. Like Shashi already said there would be some data cleaning you would require to do.
+
+243
+00:26:22.980 --> 00:26:24.310
+Vikesh K: And then
+
+244
+00:26:24.330 --> 00:26:35.019
+Vikesh K: you feel free to use other algorithm which you haven't covered in the course, but I believe right now the expectation is you will use mostly linear regression and polynomial, and
+
+245
+00:26:35.150 --> 00:26:38.049
+Vikesh K: I think the last vendor reach. That's the
+
+246
+00:26:38.170 --> 00:26:46.779
+Vikesh K: sort of expectation as of now, because we haven't covered other advanced algorithms which we are going to cover in the course.
+
+247
+00:26:48.577 --> 00:27:00.200
+Zhujun Wang: I have a question. So I'm a software engineer before, mostly working for the infra. But just recently, we, we use the chat. Gpt.
+
+248
+00:27:00.200 --> 00:27:19.629
+Zhujun Wang: mostly Api. But build a use, use a launching to build a AI agent. So so I actually say, I'm thinking right now, if you want to switch to more like machine learning engineer like you say, for the prepare for the like, coding for the for the like machine learning engineer like, say, what's the
+
+249
+00:27:20.060 --> 00:27:48.799
+Zhujun Wang: The decoding difficulty level does it require? And also just for my experience as being software engineer for many like, roughly like 10 years. And then recently, my projects heavily related to AI agent. So in in my case, may I like like, I say, maybe next year I want to switch the job. May I directly apply for the machine learning engineer, or after complete this course and any suggestion.
+
+250
+00:27:50.450 --> 00:28:17.029
+Vikesh K: Okay. So regarding, I believe, you know, for the software engineer level, the kind of lead code you would be preparing, I think that should suffice. Usually it's at the same level or below it. I don't think you it's it's harder than that, but depends on the company as well. Right machine learning. I would also say, Check out Jane Street. Jane Street pays very well for a machine learning engineer, if you're interested in that. But if you are focused on.
+
+251
+00:28:17.060 --> 00:28:24.100
+Vikesh K: But if you're focused on the consumer side, for example, you know, companies like Airbnb booking expedia.
+
+252
+00:28:24.600 --> 00:28:25.260
+Vikesh K: No.
+
+253
+00:28:25.860 --> 00:28:35.380
+Vikesh K: the second to talk thing you talked about is what what additional should you do? I think one thing you can look into this is again a course developed by
+
+254
+00:28:36.014 --> 00:28:36.884
+Vikesh K: Berkeley guys
+
+255
+00:28:37.570 --> 00:28:40.059
+Vikesh K: it's called full stack. Deep learning.
+
+256
+00:28:41.409 --> 00:28:42.000
+Zhujun Wang: Okay.
+
+257
+00:28:42.000 --> 00:28:48.210
+Vikesh K: Why this is helpful is because the whole focus is on using deep learning
+
+258
+00:28:48.430 --> 00:28:49.569
+Vikesh K: to make a product.
+
+259
+00:28:50.100 --> 00:29:00.010
+Vikesh K: So maybe that might give you a better. And and you know, then it's all about deployment Mlops couple of those things they touch upon. So I think that would be way more helpful.
+
+260
+00:29:00.160 --> 00:29:13.030
+Vikesh K: This course is more of a theoretical understanding. So many companies. They also have machine learning scientist role and machine learning engineers, role machine learning engineers need to know all this machine learning, but their focus is main on the deployment part.
+
+261
+00:29:13.280 --> 00:29:13.840
+Vikesh K: So.
+
+262
+00:29:13.840 --> 00:29:14.410
+Zhujun Wang: Gotcha.
+
+263
+00:29:14.410 --> 00:29:22.509
+Vikesh K: So. So I think this course would be good enough for you to understand what's happening in the world, but I think you might have to supplement it with some
+
+264
+00:29:22.820 --> 00:29:24.890
+Vikesh K: Mlops course, so.
+
+265
+00:29:24.890 --> 00:29:25.640
+Zhujun Wang: Got y'all.
+
+266
+00:29:25.640 --> 00:29:31.700
+Vikesh K: So there is a lady called Chip Hugh Wayne. I I'm not sure if I pronounce her name correctly.
+
+267
+00:29:31.750 --> 00:29:39.499
+Vikesh K: She has written a very good book on machine learning operations. Maybe you can refer to that. That would be a good complement to the course.
+
+268
+00:29:39.800 --> 00:29:45.069
+Vikesh K: and she used to teach at Stanford. So her materials available online.
+
+269
+00:29:45.800 --> 00:29:48.609
+Vikesh K: And that's that's pretty good material, I think.
+
+270
+00:29:49.440 --> 00:29:56.300
+Vikesh K: in terms of doing machine learning. Mlops Stanford has one of the best material out there. The
+
+271
+00:29:56.500 --> 00:30:03.869
+Vikesh K: and I think Cmu might have some material online. Cmu has one course around that. But I'm not sure of others.
+
+272
+00:30:04.090 --> 00:30:05.510
+Vikesh K: This could be helpful, but.
+
+273
+00:30:06.990 --> 00:30:07.470
+Zhujun Wang: Gotcha.
+
+274
+00:30:07.470 --> 00:30:08.270
+Vikesh K: Same question.
+
+275
+00:30:09.450 --> 00:30:10.959
+Vikash: Yeah, I had one question.
+
+276
+00:30:11.180 --> 00:30:12.000
+Vikash: Yes, we.
+
+277
+00:30:12.300 --> 00:30:18.780
+Vikash: So I. My question was like, I have lot of customer experience. But I've been working with customer on customer side.
+
+278
+00:30:18.850 --> 00:30:30.269
+Vikash: So in AI feel like a lot of product, companies are there, but the are there roles for, like customer architect who is knowledgeable on AI, but wants to work with customers.
+
+279
+00:30:32.523 --> 00:30:35.200
+Vikesh K: At least, because this is I have no clue on that.
+
+280
+00:30:35.500 --> 00:30:44.869
+Vikesh K: I won't be able to. I I'm not sure I'm at least in booking. So my my exposures to couple of companies there I haven't heard, and also because
+
+281
+00:30:44.920 --> 00:30:48.579
+Vikesh K: I've never explored this kind of role or checked about it.
+
+282
+00:30:48.720 --> 00:30:52.300
+Vikesh K: So I don't think I would be the best person to answer this.
+
+283
+00:30:52.630 --> 00:30:53.170
+Vikesh K: Sorry.
+
+284
+00:30:54.770 --> 00:31:00.087
+Vikesh K: but I'm guessing there would be some companies who required, especially maybe, in consulting, and all
+
+285
+00:31:00.420 --> 00:31:11.509
+Vikash: No, actually for Saas companies. All the Sas companies have this kind of roles because this their customers are enterprise clients, so they need somebody who who can communicate with the customers and can
+
+286
+00:31:12.043 --> 00:31:15.929
+Vikash: all these Saas companies has customer outcomes as one of their
+
+287
+00:31:16.778 --> 00:31:23.481
+Vikash: teams, and that's where I was looking. That does. AI companies also has this kind of
+
+288
+00:31:24.070 --> 00:31:24.990
+Vikash: teams.
+
+289
+00:31:26.140 --> 00:31:29.352
+Vikesh K: They might, they definitely would have something like that.
+
+290
+00:31:29.820 --> 00:31:34.882
+Vikesh K: I think maybe you know the the new companies like anthropic they have. They have all these.
+
+291
+00:31:35.310 --> 00:31:41.689
+Vikesh K: you know, they are also tying up with clients. For example, glean I mentioned, maybe glean has something a role like that.
+
+292
+00:31:42.168 --> 00:31:46.949
+Vikesh K: I've never worked with a Saas company. Hence, maybe that's why I wasn't aware of it.
+
+293
+00:31:47.540 --> 00:31:55.539
+Vikesh K: But I'm pretty sure companies like glean. I will just put the name again, glean might have a role like this. And it's us based.
+
+294
+00:31:57.200 --> 00:32:00.259
+Vikesh K: Yeah, other than that. My information is very limited in this.
+
+295
+00:32:01.650 --> 00:32:03.719
+Vikesh K: Thanks. Well, thank you for your question.
+
+296
+00:32:05.655 --> 00:32:18.450
+Zhujun Wang: Vikash, I just quick ask quick, quick! Like, follow up question. So for the machine learning engineer, because when I working as a software engineer. I'm also helping the scientist
+
+297
+00:32:18.630 --> 00:32:24.519
+Zhujun Wang: like a applied scientist team to build a like a data ingestion pipeline
+
+298
+00:32:24.610 --> 00:32:29.710
+Zhujun Wang: for for that. I'm just wondering does like those like ingestion
+
+299
+00:32:29.790 --> 00:32:40.860
+Zhujun Wang: machine learning. Pipeline is the kind of one major job is major job responsibility for the machine learning engineer. Well, actually, machine machine learning engineers
+
+300
+00:32:40.890 --> 00:32:54.129
+Zhujun Wang: will do more more role. Like, for example, just like our assignment, analyze the data, apply for the right, maybe algorithm or right machine learning tool to deal with it. Not just
+
+301
+00:32:54.290 --> 00:33:08.209
+Zhujun Wang: not just like building the machine, learning pipeline that that could be could be complete done by the software engineer. Right? I just want to see what's the kind of what's the major difference between a software engineer role and the machine learning engineer.
+
+302
+00:33:09.670 --> 00:33:10.430
+Vikesh K: I think.
+
+303
+00:33:10.700 --> 00:33:38.930
+Vikesh K: at least on I can. I can tell you from my booking experience a. We have very specialized role then. You know. Obviously, within your work, for example, you will. Sometimes you might have to do some data exploration, or you might have to develop a model. But the role is sort of a little defined. Yeah, that's that's the advantage of working with big companies. You can focus on one particular domain right in startups, they will make you do everything.
+
+304
+00:33:39.030 --> 00:33:47.139
+Vikesh K: So the smaller the company they will make you do everything, but the bigger the company, the rules become, much more specialized and they become narrow.
+
+305
+00:33:47.240 --> 00:33:48.560
+Vikesh K: So
+
+306
+00:33:49.650 --> 00:33:56.904
+Vikesh K: for us, specifically, I think the machine learning engineers are in teams like ranking. They are team in teams like recommendation
+
+307
+00:33:57.370 --> 00:33:58.800
+Vikesh K: engine team.
+
+308
+00:33:58.900 --> 00:34:02.309
+Vikesh K: That's where most of the Ml. Engineers are, or fraud detection.
+
+309
+00:34:02.460 --> 00:34:13.440
+Vikesh K: These 3 are the major places where we at least we have machine learning engineers, at least for us. Software engineers are in everything because you have a at least in booking. You have a
+
+310
+00:34:13.699 --> 00:34:20.930
+Vikesh K: front end guy and a back end guy, and sometimes those full stack guys. So all of them are in everything.
+
+311
+00:34:21.330 --> 00:34:30.659
+Vikesh K: And I usually think this is like a pyramid. So the base, which is all the not pyramid, not in terms of hierarchy, but in terms of how roles are there software engineers the big
+
+312
+00:34:30.699 --> 00:34:56.519
+Vikesh K: base, because every company requires many software engineers. Then you have some of these, let's say data scientists. Pm's also become narrow machine learning engineers are also a little narrow, right? Because if you are developing 4 or 5 models. You just maybe need one machine learning engineers to deploy that depending on the scale of your organization. Obviously. But for companies like Google. I'm pretty sure this would be very big for us. Also, it's a big team, like.
+
+313
+00:34:56.530 --> 00:34:58.340
+Vikesh K: I think our data team is around
+
+314
+00:34:58.480 --> 00:34:59.939
+Vikesh K: 2 to 300 people
+
+315
+00:35:00.130 --> 00:35:05.090
+Vikesh K: like all the data. And I think then, if if we include data engineers, it might become
+
+316
+00:35:05.160 --> 00:35:09.389
+Vikesh K: 3, 50, or something, right? But but that's required because you have different components.
+
+317
+00:35:09.630 --> 00:35:13.540
+Vikesh K: And then that role focuses on one particular aspect.
+
+318
+00:35:14.290 --> 00:35:39.220
+Zhujun Wang: Gotcha gotcha. Then last question from interview perspective, like, say, for the software engineer. Usually we do the coding and assistant design. It's our major interview. However, if a if for the machine learning engineer like say for for the interview, like, do we have a like, maybe, like additional around. Say, like a machine learning knowledge, deep dive, or something like that, yeah.
+
+319
+00:35:39.220 --> 00:35:44.840
+Vikesh K: I'm pretty sure. Yeah, that that usually gets added. And also system design becomes a part of it.
+
+320
+00:35:44.930 --> 00:35:49.420
+Vikesh K: By the way, the the guy, the byte byte code. The guy who runs that.
+
+321
+00:35:50.170 --> 00:35:51.370
+Vikesh K: I think that's the
+
+322
+00:35:52.090 --> 00:35:54.650
+Vikesh K: bite. Byte. Go, I believe that's the website.
+
+323
+00:35:54.910 --> 00:36:02.599
+Vikesh K: Yes, this this guy has the whole team have have produced a book on machine learning engineering interviews.
+
+324
+00:36:02.860 --> 00:36:04.860
+Vikesh K: Okay, let me quickly.
+
+325
+00:36:06.580 --> 00:36:07.990
+Vikesh K: That could be a.
+
+326
+00:36:08.970 --> 00:36:11.410
+Vikesh K: This is a system design. Ml.
+
+327
+00:36:11.880 --> 00:36:14.109
+Zhujun Wang: I'm now system design, gotcha.
+
+328
+00:36:14.110 --> 00:36:17.379
+Vikesh K: Yes, they have a good book on this. Yes, I think
+
+329
+00:36:18.800 --> 00:36:21.999
+Vikesh K: maybe this is something which can be more helpful for you.
+
+330
+00:36:22.290 --> 00:36:22.760
+Zhujun Wang: Gotcha.
+
+331
+00:36:22.760 --> 00:36:35.370
+Vikesh K: Want to focus on this thing because he talks about different kind of problem statements out there, you know where machine engineering is required. And then the whole book is around those. But like this is a good way to learn. You know how.
+
+332
+00:36:35.370 --> 00:36:36.100
+Zhujun Wang: Gotcha.
+
+333
+00:36:36.100 --> 00:36:37.330
+Vikesh K: How do you deploy it?
+
+334
+00:36:37.660 --> 00:36:38.430
+Vikesh K: Right?
+
+335
+00:36:38.770 --> 00:36:45.320
+Vikesh K: I think we have one chapter for free. So I think you can get that one chapter for free or somewhere, and then you can purchase this.
+
+336
+00:36:45.740 --> 00:36:48.650
+Zhujun Wang: Gotcha sounds good. We appreciate it. Cool.
+
+337
+00:36:48.840 --> 00:36:49.550
+Vikesh K: Lovely.
+
+338
+00:36:50.310 --> 00:36:51.200
+Vikesh K: Okay.
+
+339
+00:36:51.610 --> 00:36:54.010
+Vikesh K: Deepak, you have raised your hand.
+
+340
+00:36:54.010 --> 00:36:56.050
+Deepak: Hi! Vacation. Can you hear me?
+
+341
+00:36:56.050 --> 00:36:57.970
+Vikesh K: Yes, yes, I can.
+
+342
+00:36:57.970 --> 00:37:11.509
+Deepak: So no like considering. Like I'm for example, I'm a system engineer for last whatever 15 years, working mostly in the big Telco companies. Designing the wireless system 4G. And 5G. System.
+
+343
+00:37:11.550 --> 00:37:27.569
+Deepak: Now for me like work around Nokia Samsung, and so on. Right for me. Somebody like me, I mean, what do you suggest from? So of course, the takeaway from this course is definitely working on the data. And networks do have a lot of data, right?
+
+344
+00:37:27.590 --> 00:37:34.332
+Deepak: Real time data that comes from from the all the users across the nation and across the world. But
+
+345
+00:37:34.720 --> 00:37:41.510
+Deepak: so just purely working on data is one thing. But what do you suggest me to go in terms of as a mentor, to go
+
+346
+00:37:41.770 --> 00:37:49.900
+Deepak: like either? Look for the same telecom role domain role. But in with respect to working with the machine learning
+
+347
+00:37:50.457 --> 00:37:52.409
+Deepak: or or should the
+
+348
+00:37:52.430 --> 00:37:58.550
+Deepak: completely go as a machine learning data, data, scientist kind of role which is irrespective of domain.
+
+349
+00:37:59.600 --> 00:38:17.819
+Vikesh K: Okay, Deepak, I would say, that's a tough question. Primarily, because you have a very Ni, like, you have a very specific and niche domain knowledge which I have no clue about, so I won't be able to talk about whether like, you know. Let's say there's a telecom company where has a machine learning engineer role or data scientist role
+
+350
+00:38:18.240 --> 00:38:32.860
+Vikesh K: on paper? Definitely, that would be better fit for you. For example, let's say you and me apply for that. I'm pretty sure you will get selected. I won't get selected because I don't have the domain knowledge. I don't understand industry. Well, right? So you have a clear advantage there.
+
+351
+00:38:35.320 --> 00:38:44.180
+Vikesh K: but I'm not sure how me, how the industry looks like, which are the key players, and I believe you're in us which are the key players in us. What kind of roles they have?
+
+352
+00:38:44.300 --> 00:38:45.420
+Vikesh K: So
+
+353
+00:38:45.620 --> 00:38:46.240
+Vikesh K: that's my.
+
+354
+00:38:46.240 --> 00:38:59.370
+Deepak: Sure. Yeah, okay, my, my question is mostly, of course, I mean not in terms of the domain, but mainly to like what should be your suggestion. Should I look at within my domain, or should I look at in a general.
+
+355
+00:38:59.370 --> 00:39:05.629
+Vikesh K: I think, within domain it would be easy. Because, yeah, why? I'm telling you, because right now the market is bit brutal.
+
+356
+00:39:05.850 --> 00:39:06.190
+Deepak: -
+
+357
+00:39:06.501 --> 00:39:26.420
+Vikesh K: Whether it's in us, whether it's in Europe. I have folks. Friends in us. Market is brutal everywhere right now, so it might be better to take advantage of your domain knowledge. Because if you let's say you try to get into a company which is focused on marketing analytics, right? So let's say, I'm showing you different kind of problem statements here
+
+358
+00:39:26.480 --> 00:39:35.649
+Vikesh K: in this website. So let's say, want you want to do add click or something. So they might prefer someone or go for someone who already has a background in it
+
+359
+00:39:35.830 --> 00:39:41.770
+Vikesh K: have have worked on these kind of problems. That's that that will be some advantage which these people bring in.
+
+360
+00:39:42.160 --> 00:39:43.150
+Vikesh K: So
+
+361
+00:39:43.680 --> 00:39:47.959
+Vikesh K: I think the most. Whenever, especially, you're changing your, you know track.
+
+362
+00:39:48.400 --> 00:39:51.999
+Vikesh K: So within telecom moving to
+
+363
+00:39:52.380 --> 00:39:58.770
+Vikesh K: data, science would be much more easier rather than you know, just outright changing companies and changing your domain completely.
+
+364
+00:39:59.610 --> 00:40:07.670
+Vikesh K: So you have to move adjacently, and especially this becomes even more tough, as you gain more experience, because then people start bucketing you in one particular domain.
+
+365
+00:40:07.800 --> 00:40:28.680
+Vikesh K: and sometimes they're not very, you know. It all depends on companies. And right now it's an employer market right now. Companies have too many applications, so they can pick and choose very easily. If you ever asked me. Maybe this 2, 3 years back things would have been different. Things were different previously. But now it's the market is very brutal.
+
+366
+00:40:29.210 --> 00:40:30.420
+Vikesh K: so.
+
+367
+00:40:30.420 --> 00:40:32.590
+Deepak: Makes sense. Thank you. Thanks. Rikesh.
+
+368
+00:40:32.810 --> 00:40:33.620
+Vikesh K: Thank you.
+
+369
+00:40:34.800 --> 00:40:39.479
+Vikesh K: Preeti. Coming to your question, you know again I have limited.
+
+370
+00:40:40.150 --> 00:40:42.416
+Vikesh K: I I started by the way I started.
+
+371
+00:40:42.970 --> 00:40:51.430
+Vikesh K: you know my 1st job was in finance, and then I used to focus on Pharma, and especially healthcare. I was in investment banking before I went for my master's
+
+372
+00:40:52.186 --> 00:40:53.893
+Vikesh K: but I don't.
+
+373
+00:40:54.410 --> 00:41:00.249
+Vikesh K: I have other than that. I don't have much exposure on this. I had one friend working for Novartis.
+
+374
+00:41:00.730 --> 00:41:18.609
+Vikesh K: but he was, was it? Noatis? No, no, not this, no, not this. No company which make that which made that drug. And it's it's a big company now, I think Danish company, but I think he usually worked on some. You know more on the data analytics side
+
+375
+00:41:19.424 --> 00:41:26.160
+Vikesh K: so I am not really sure of aiml roles. I know some specialized companies who are working on.
+
+376
+00:41:26.720 --> 00:41:30.569
+Vikesh K: you know, one of the guys who wrote this transformer paper
+
+377
+00:41:31.570 --> 00:41:37.199
+Vikesh K: attention is all you need. He started his own Biochemistry company.
+
+378
+00:41:37.210 --> 00:41:39.449
+Vikesh K: and they are working at the Rna level.
+
+379
+00:41:39.570 --> 00:41:42.920
+Vikesh K: So but again, that's a domain I have no clue about, so I won't be able to.
+
+380
+00:41:42.920 --> 00:41:43.990
+Preeti Dubey: No make sense.
+
+381
+00:41:43.990 --> 00:41:47.519
+Vikesh K: Genomic. Yeah, yeah. So usually, that's where a lot of em will get supplied.
+
+382
+00:41:47.520 --> 00:41:47.920
+Preeti Dubey: Yes.
+
+383
+00:41:47.920 --> 00:41:54.999
+Vikesh K: At a company level what I know it's more of a if if you're if there's a good amount of biostatistics, or you know people.
+
+384
+00:41:55.170 --> 00:41:58.979
+Vikesh K: those clinical trials. You need a good amount of stats there.
+
+385
+00:41:59.250 --> 00:42:00.190
+Vikesh K: Yes.
+
+386
+00:42:00.340 --> 00:42:07.810
+Vikesh K: So I've come across Cvs where people used to work in as a statistician or Biostatistician in a Pharma company.
+
+387
+00:42:07.850 --> 00:42:16.220
+Vikesh K: So these are the but but aiml specifically, I don't have, I think, traditionally traditional companies don't still have a lot of openings, I believe.
+
+388
+00:42:16.280 --> 00:42:21.190
+Vikesh K: But the new, this companies, like, you know, working on genomics who are working
+
+389
+00:42:21.270 --> 00:42:34.700
+Vikesh K: on something really cool on the at a DNA level, they might use a lot of aim, for example, what Deepmind did right? They figured out the protein structures, and that's what they used deep learning, or, you know, to figure out the protein structure.
+
+390
+00:42:34.930 --> 00:42:37.650
+Vikesh K: but those are niche companies. I believe.
+
+391
+00:42:38.880 --> 00:42:43.309
+Preeti Dubey: Okay, yeah. But there is a lot of using of AI right now in.
+
+392
+00:42:43.310 --> 00:42:52.660
+Vikesh K: Yeah, definitely. Yeah, I just that again, limited domain. And this is a very, you know, very specialized domain where you need to understand pharma healthcare.
+
+393
+00:42:52.840 --> 00:42:53.430
+Preeti Dubey: Yes.
+
+394
+00:42:53.430 --> 00:42:57.930
+Vikesh K: Really well, so I have no clue on that other than this generic information. Sorry.
+
+395
+00:42:57.930 --> 00:42:59.039
+Preeti Dubey: No, thank you.
+
+396
+00:42:59.570 --> 00:43:16.329
+Vikesh K: But I think one advantage we have, at least in tech is, you know, you can do a lot of experiments, because at the end of the day. You're not making a decision on which life is based. But in Pharma things are a little serious, so you can't really do experiments as you wish.
+
+397
+00:43:16.470 --> 00:43:24.529
+Vikesh K: Here, 1 1 good thing which I like about tech is, you know you think about, hey? You know, we're changing this message or changing the website design may
+
+398
+00:43:24.550 --> 00:43:30.899
+Vikesh K: improve how your customer is responding to you, and you can go and you easily launch the experiment.
+
+399
+00:43:31.050 --> 00:43:33.270
+Vikesh K: I don't think Pharma Year that's allowed. So
+
+400
+00:43:33.500 --> 00:43:39.890
+Vikesh K: this is, I wouldn't. I would find it very tough to work in Pharma. It's a very difficult role. By the way, that's what I.
+
+401
+00:43:39.890 --> 00:43:54.670
+Preeti Dubey: Yeah, it's nowadays they are using midd, that is called model informed drug development. So before going to human or animals, they are trying to use AI to drug to drug development.
+
+402
+00:43:54.670 --> 00:43:56.910
+Vikesh K: Oh, lovely! Okay, that's that's cool.
+
+403
+00:43:56.910 --> 00:44:02.920
+Preeti Dubey: It's all now. It is approved, I think, in 2016, very recently.
+
+404
+00:44:02.920 --> 00:44:03.990
+Vikesh K: Okay. Okay.
+
+405
+00:44:04.820 --> 00:44:10.800
+Vikesh K: See, this is this is what I'm talking about, domain knowledge. I have no clue about this thing. I I did not hear this thing. So
+
+406
+00:44:10.920 --> 00:44:15.670
+Vikesh K: so that that's where you will shine right if there is a farmer role and all
+
+407
+00:44:16.880 --> 00:44:24.809
+Vikesh K: okay, others who are silent, or any questions or doubts, or if you have anything about the course per se. Any questions around the course.
+
+408
+00:44:29.730 --> 00:44:30.890
+Ravi Duvvuri: I know.
+
+409
+00:44:30.910 --> 00:44:35.520
+Ravi Duvvuri: No, not the course the assignment so my understanding is
+
+410
+00:44:36.050 --> 00:44:45.319
+Ravi Duvvuri: we will be using anything after the 1st assignment. Got covered right, especially the regression Pca polynomal
+
+411
+00:44:45.570 --> 00:44:49.800
+Ravi Duvvuri: stats models. Those are the things we should be using to do the
+
+412
+00:44:49.990 --> 00:44:51.139
+Ravi Duvvuri: assignment correct.
+
+413
+00:44:51.140 --> 00:44:54.360
+Vikesh K: Yes, yes, that's that's the expectation. Yeah.
+
+414
+00:44:55.490 --> 00:45:09.840
+Vikesh K: Previously, many people what they have done because they had exposure to, let's say, Decision tree, Random Forest. They also use decision tree, Random forest to solve this assignment. But that's up to you. We don't really expect you to know those things right now.
+
+415
+00:45:09.950 --> 00:45:17.619
+Vikesh K: and even if you don't use it, that's fine, maybe you can just stick to your regression and other topics, lasso and ridge.
+
+416
+00:45:17.970 --> 00:45:19.339
+Vikesh K: That should be good enough.
+
+417
+00:45:20.370 --> 00:45:20.950
+Ravi Duvvuri: Thank you.
+
+418
+00:45:21.950 --> 00:45:22.480
+Vikesh K: Yeah.
+
+419
+00:45:23.390 --> 00:45:26.679
+Vikesh K: okay. Any other questions or doubts.
+
+420
+00:45:27.200 --> 00:45:30.049
+shashi: I had one question on the data dish.
+
+421
+00:45:30.790 --> 00:45:34.489
+shashi: the project, what the assignment, what we are working on.
+
+422
+00:45:34.730 --> 00:45:41.210
+shashi: some of the items like cylinders and all they're missing. Nearly 50% of the values are missing.
+
+423
+00:45:41.350 --> 00:45:45.530
+shashi: So pro. Probably I can ignore those for any of the
+
+424
+00:45:45.790 --> 00:45:48.489
+shashi: what do you call feature for
+
+425
+00:45:48.900 --> 00:45:53.649
+shashi: training the model right? I mean, if I'm losing 50% of the information on
+
+426
+00:45:53.930 --> 00:45:55.440
+shashi: some of this
+
+427
+00:45:55.750 --> 00:46:02.910
+shashi: fields, I don't have to use them for so, I think, because it will be just if, even if I impute certain values, it will all be
+
+428
+00:46:04.820 --> 00:46:13.040
+shashi: fake values which I would have by random this one I would have given so probably I I don't want to use that. So that should be fine. I think right.
+
+429
+00:46:13.040 --> 00:46:22.730
+Vikesh K: Yeah, no, that should be fine, although I would say, just because you know, the best way to learn in machine learning is doing some experimentation. Right? So I would say, maybe use Knn, imputer.
+
+430
+00:46:23.580 --> 00:46:25.020
+Vikesh K: fill those values.
+
+431
+00:46:25.400 --> 00:46:29.739
+Vikesh K: and then see if your model gives you a you know the accuracy jumps up.
+
+432
+00:46:30.600 --> 00:46:55.640
+Vikesh K: That could be one way to, because because yes, either you drop the whole thing, which is but but cylinder might give you some interesting info or important information. So the other, once you've built your basic model, I would always say, start with the basic model. Whatever data. It's too complicated. Right now. Just chuck it, you know. Let's say you have 5 clean columns. Make a model with 5 clean columns, make a baseline, see how it works.
+
+433
+00:46:55.640 --> 00:47:06.800
+Vikesh K: and then, as a part of next step. So you record your observation. Okay? I got. Let's say, this is a regression problem. Right? All of your doing. Yeah. So let's say yes. So you let's say you go.
+
+434
+00:47:07.630 --> 00:47:20.050
+Vikesh K: you you got a Rmc value of let's say 100. Okay? Then you next step is you impute the missing values. And then, you see, can you reduce that root mean square value from 100 to 80? Is that possible?
+
+435
+00:47:20.530 --> 00:47:22.880
+Vikesh K: And a couple of other things? So that would be useful.
+
+436
+00:47:23.740 --> 00:47:26.430
+Vikesh K: Yeah. I think.
+
+437
+00:47:26.430 --> 00:47:27.759
+shashi: So once I could
+
+438
+00:47:27.850 --> 00:47:28.320
+shashi: like
+
+439
+00:47:29.450 --> 00:47:35.970
+shashi: some there were some 120,000 columns missing for condition, whether it was new or whatever
+
+440
+00:47:36.340 --> 00:47:37.050
+shashi: so
+
+441
+00:47:37.420 --> 00:47:45.659
+shashi: and like just counting the number of unique, this one, whatever was missing, I apportioned in the same proportion. I apportioned it.
+
+442
+00:47:45.770 --> 00:47:49.549
+shashi: and then made it non-normal, so that
+
+443
+00:47:49.820 --> 00:47:51.540
+shashi: the condition
+
+444
+00:47:51.940 --> 00:47:58.089
+shashi: I'll have the same bias to all the vehicles in the same ratio. So that kind of logic I used, and I
+
+445
+00:47:58.300 --> 00:48:23.280
+shashi: need that. So at least one column. I could use it, because condition is one of the detrimental factors when I'm purchasing a used car. So whether it is a new or because cylinder. It is not such an important factor for me to decide whether it has got 4 cylinders and gives me 5 miles per gallon, and if it has got 8 cylinders and gives me 12 miles per gallon, I would rather choose that one, so cylinder may not be important, so
+
+446
+00:48:23.430 --> 00:48:35.430
+shashi: probably the condition of the vehicle year make. Those are the deciding factors. So I'm trying to clean up those 5 6 columns which are detrimental for determining a used car price
+
+447
+00:48:35.450 --> 00:48:40.924
+shashi: which normal people will use it. I mean, win missing win number or
+
+448
+00:48:41.724 --> 00:48:49.555
+shashi: size of our paint, color and all probably may not make much of a difference. So that is what I am assuming for this one. And the last 2 days I've been
+
+449
+00:48:49.820 --> 00:49:06.440
+shashi: mentally doing and cleaning slowly the data and building a full data, I think, from 426. Now it has come to 337,000. So I've dropped so many of the outliers, and some of them had put 999 million dollars as the rise of a car and things like.
+
+450
+00:49:06.650 --> 00:49:09.830
+shashi: So all those cleaning up, I have done so I have to start
+
+451
+00:49:10.240 --> 00:49:17.279
+shashi: documenting it for the final submission, and then build the model, and then again, do that. So that's what I've been thinking.
+
+452
+00:49:18.020 --> 00:49:28.740
+Vikesh K: 1 1 interesting thing you said, which maybe can be helpful for others. Let's say yes. If your cylinder data is missing. And, for example. You see, there's a good proximation correlation with the mileage.
+
+453
+00:49:28.980 --> 00:49:35.260
+Vikesh K: Then maybe you don't even need that cylinder information right? Your mileage information can act as a proxy, because
+
+454
+00:49:35.612 --> 00:49:42.419
+Vikesh K: usually the case is the more cylinders you have. The the car is much more powerful, I believe. Suv car. But then the mileage decreases.
+
+455
+00:49:42.682 --> 00:49:43.469
+shashi: Is coming. Okay.
+
+456
+00:49:43.470 --> 00:49:49.830
+Vikesh K: Yes, so they would have an inverse relationship. So in a way, it's a proxy information in mileage about cylinders.
+
+457
+00:49:49.930 --> 00:49:57.319
+Vikesh K: So there's a there. I'm pretty sure there might be some good correlation there, so that and linear regression. In any case, the assumption is.
+
+458
+00:49:57.560 --> 00:50:06.369
+Vikesh K: if you have multi collinarity, it might not give you the best output. So so that's that. Then you may not even you don't even have to do that.
+
+459
+00:50:07.330 --> 00:50:09.540
+Vikesh K: The imputation you don't have to go through that
+
+460
+00:50:09.980 --> 00:50:17.669
+Vikesh K: for others as well. Please keep this in mind. Please like, look into, especially when you're doing linear regression. Please look into the correlations and everything
+
+461
+00:50:17.830 --> 00:50:26.257
+Vikesh K: and and see what makes sense. You would do Pca. To do check collinearity. Yes, you can do that your 1st of all. Maybe you see.
+
+462
+00:50:28.150 --> 00:50:29.980
+Vikesh K: if you can reduce it.
+
+463
+00:50:30.560 --> 00:50:38.849
+Vikesh K: And you know, let's say to couple of components. And then you see, maybe in terms of prediction, how good or bad your predictions are.
+
+464
+00:50:40.190 --> 00:50:43.270
+Vikesh K: that's that's 1 thing, Matt, you can try. Yeah, that's a good point.
+
+465
+00:50:45.230 --> 00:50:48.129
+Vikesh K: But usually the basic, very basic check
+
+466
+00:50:48.510 --> 00:50:51.319
+Vikesh K: which we do for correlation is called
+
+467
+00:50:51.350 --> 00:50:58.749
+Vikesh K: Vif test. This is what you use. And I think the Vif value. If it's more than 5,
+
+468
+00:50:59.020 --> 00:51:03.600
+Vikesh K: it's too high a correlation for the linear regression model.
+
+469
+00:51:04.210 --> 00:51:04.920
+Vikesh K: Okay.
+
+470
+00:51:05.800 --> 00:51:09.670
+Vikesh K: that's a more. At least, the house statisticians approach it.
+
+471
+00:51:13.180 --> 00:51:20.370
+Vikesh K: Cylinders to float. Yes, I think. I, I need to look at the data again just to you know. Remember it correctly.
+
+472
+00:51:20.870 --> 00:51:25.720
+Vikesh K: but I believe yes, cylinders would be float data correct.
+
+473
+00:51:27.510 --> 00:51:28.678
+shashi: Here where there is.
+
+474
+00:51:29.740 --> 00:51:35.390
+shashi: in the data, what we have, it's a 6 cylinder, 4 cylinder. It has been typed. It's a text. So we need to.
+
+475
+00:51:35.390 --> 00:51:36.469
+Vikesh K: Oh, it's a day. Yeah, yeah.
+
+476
+00:51:36.470 --> 00:51:38.319
+shashi: We need to do a
+
+477
+00:51:38.610 --> 00:51:40.470
+shashi: we're not encoding vendor.
+
+478
+00:51:41.800 --> 00:51:51.356
+Vikesh K: So if it's let's say only 4, 5, 6, you can actually clean it and convert that into a number. Right? You don't even need to do one hot encoding for that, because it's essentially
+
+479
+00:51:53.290 --> 00:52:00.180
+Vikesh K: the numbers make sense there. It's it's essentially numerical data, right? Because if you have cylinders or 4 cylinders.
+
+480
+00:52:00.280 --> 00:52:01.320
+Vikesh K: Then you can.
+
+481
+00:52:01.320 --> 00:52:08.909
+shashi: Inversely correlated to the fuel. There is no mileage here. It's just the kilometer driven.
+
+482
+00:52:09.040 --> 00:52:17.590
+shashi: So few type of fuel and type of transmission, and there is no mileage. That is the fuel efficiency. So that one is not the
+
+483
+00:52:17.910 --> 00:52:24.939
+shashi: the what mileage we call in India, and what here the people call mileage is totally opposite.
+
+484
+00:52:25.556 --> 00:52:26.450
+Vikesh K: Okay, okay.
+
+485
+00:52:26.720 --> 00:52:30.460
+Vikesh K: I'm also, I'm also opening this data set.
+
+486
+00:52:31.140 --> 00:52:33.270
+Vikesh K: So that in case someone has any.
+
+487
+00:52:36.030 --> 00:52:45.739
+Vikesh K: I think, yes, this is a cylinder 1. 0, yes, this you can. Yeah. You can actually clean this like, you can convert this into numbers. Essentially.
+
+488
+00:52:47.220 --> 00:52:52.219
+Vikesh K: that would be a better approach than maybe you know encoding it.
+
+489
+00:52:52.310 --> 00:52:53.610
+Vikesh K: not encoding it.
+
+490
+00:52:54.400 --> 00:52:59.430
+Vikesh K: Okay? And be careful. For example, let's say, if you're using brand
+
+491
+00:53:00.786 --> 00:53:07.409
+Vikesh K: be careful there, because you need to see how many individual unique categories are there. If you are creating, let's say you end up.
+
+492
+00:53:07.410 --> 00:53:08.620
+shashi: 9, or something like that.
+
+493
+00:53:08.620 --> 00:53:09.060
+Vikesh K: Yeah.
+
+494
+00:53:09.060 --> 00:53:10.440
+shashi: Today is 43.
+
+495
+00:53:10.440 --> 00:53:16.470
+Vikesh K: Yeah, so this will create 48 new columns, right? So that can be quite messy too much of information there.
+
+496
+00:53:16.600 --> 00:53:18.139
+Vikesh K: So you have to be careful there
+
+497
+00:53:20.530 --> 00:53:22.570
+Vikesh K: autometers, mileage.
+
+498
+00:53:24.470 --> 00:53:25.930
+shashi: That is the
+
+499
+00:53:26.000 --> 00:53:27.090
+shashi: other column.
+
+500
+00:53:27.340 --> 00:53:31.549
+shashi: The drive is the sorry, not the drive. It is. The odometer is the
+
+501
+00:53:31.630 --> 00:53:33.140
+shashi: what the current reading.
+
+502
+00:53:34.210 --> 00:53:34.730
+Vikesh K: Yeah.
+
+503
+00:53:34.730 --> 00:53:36.279
+shashi: There are some very
+
+504
+00:53:36.650 --> 00:53:39.199
+shashi: crazy outliers on that. So
+
+505
+00:53:39.270 --> 00:53:40.739
+shashi: so all those had to go.
+
+506
+00:53:42.660 --> 00:53:49.489
+Vikesh K: Mac to your code. This is good code, although I what I would also suggest, if you have to write little more
+
+507
+00:53:50.040 --> 00:53:57.740
+Vikesh K: concisely. You will see the pattern is number space cylinder. So actually, you can put that as a.
+
+508
+00:53:57.740 --> 00:53:58.160
+shashi: Correct. Yeah.
+
+509
+00:53:58.160 --> 00:54:03.490
+Vikesh K: Numbers like a space cylinders, and replace all of that with blank.
+
+510
+00:54:03.610 --> 00:54:08.920
+Vikesh K: So you will just get the number. So you don't have to individually. Write it cylinder by cylinder.
+
+511
+00:54:09.040 --> 00:54:13.259
+Vikesh K: and then, for whatever is other, you make it missing you. You
+
+512
+00:54:13.270 --> 00:54:14.960
+Vikesh K: put it. Na, that's correct.
+
+513
+00:54:15.370 --> 00:54:17.570
+Vikesh K: but you can actually put a pattern there.
+
+514
+00:54:20.450 --> 00:54:21.970
+shashi: 0 cylinders for that.
+
+515
+00:54:23.710 --> 00:54:28.440
+shashi: but that 0 has a different connotation here, so we can't use 0. There.
+
+516
+00:54:29.310 --> 00:54:30.530
+Vikesh K: Oh, that's true. Yeah.
+
+517
+00:54:31.400 --> 00:54:35.039
+Vikesh K: do. Are the columns only this much or.
+
+518
+00:54:35.040 --> 00:54:36.989
+shashi: Yeah, these are the meeting columns.
+
+519
+00:54:36.990 --> 00:54:39.050
+Vikesh K: Okay, okay, 18 columns correct?
+
+520
+00:54:39.890 --> 00:54:45.960
+Vikesh K: Because, they sometimes keep changing. Sometimes they update. And also I just wanted to be sure, okay.
+
+521
+00:54:47.670 --> 00:55:02.230
+Vikesh K: so you have region price. It's a it's a good problem. It's a painful problem. But remember, that's how most of the real live data set is. It's quite messy. And you 1st need to focus on the messy part. Bring it to shape before you can start working on it.
+
+522
+00:55:02.550 --> 00:55:06.198
+Vikesh K: Yeah. So that's that's where most of the learning would be
+
+523
+00:55:07.440 --> 00:55:08.989
+Vikesh K: and then go home as well.
+
+524
+00:55:12.042 --> 00:55:16.269
+Vikesh K: Matt, yes, for the timing. Yes, that could be a good approach.
+
+525
+00:55:18.070 --> 00:55:27.869
+Vikesh K: You start with that. And that's why I start with the basics make a good baseline model see what the output looks like. And then in the next part, you know you keep iterating it.
+
+526
+00:55:27.920 --> 00:55:30.719
+Vikesh K: Don't try to do everything in one. Go maybe have
+
+527
+00:55:30.750 --> 00:55:45.380
+Vikesh K: multiple runs at it, multiple goals at it. That will. That also would be good for learning. You know. What is that? Sometimes what happens? For example, in. And this is very important from a business context. Let's say, I'm presenting to a management
+
+528
+00:55:46.150 --> 00:55:58.719
+Vikesh K: I have got 90% accuracy. Okay. But to go from, and maybe that 90% accuracy wasn't very difficult to achieve. But to go from 90% accuracy. To, let's say, 95% accuracy. I have to really boil the ocean.
+
+529
+00:55:59.120 --> 00:56:07.950
+Vikesh K: That might take 2 weeks additional 3 weeks additional. So if the business, if the your machine learning model, the output is not very critical.
+
+530
+00:56:08.310 --> 00:56:13.449
+Vikesh K: okay? Or it's it's just one of the steps in business decision making.
+
+531
+00:56:13.470 --> 00:56:14.599
+Vikesh K: Then it's fine.
+
+532
+00:56:14.790 --> 00:56:18.520
+Vikesh K: You don't really have to boil the ocean to go from 90% accuracy
+
+533
+00:56:18.600 --> 00:56:25.180
+Vikesh K: to 95% accuracy. Okay? Because it might take you 3 more weeks or one more month to do.
+
+534
+00:56:25.290 --> 00:56:31.519
+Vikesh K: and business is not able to take decision during that time. You know your let's say your director. Your Vp is not able to take decision that time.
+
+535
+00:56:31.690 --> 00:56:33.989
+Vikesh K: So sometimes it does, it's not worth it.
+
+536
+00:56:34.770 --> 00:56:51.510
+Vikesh K: Okay, just be. This is, I'm telling more of a practitioner perspective like this is becomes some philosophical question. Obviously, when when we do a course, you're taught to get as much accuracy as possible. But often in business. It's not easy, because, remember, here, the data set is ready for you
+
+537
+00:56:51.690 --> 00:57:01.869
+Vikesh K: there in real life, to get from 90% accuracy, for example, to get 96% accuracy. You need some additional data sets or columns which you don't have available easily
+
+538
+00:57:01.970 --> 00:57:08.169
+Vikesh K: and sometimes in big companies, it can be challenging to get the relevant data at the right level. So
+
+539
+00:57:08.290 --> 00:57:09.760
+Vikesh K: be careful about that.
+
+540
+00:57:09.820 --> 00:57:21.709
+Vikesh K: That's why I say, you 1st make a baseline model. See what's the output, what the output you got? What is the Rmsc. You got? And then, you know, and also please document it just for your own learning. You know how you improved it.
+
+541
+00:57:21.780 --> 00:57:29.870
+Vikesh K: because this is the same approach you will take with your capstone. There's nothing different. Only thing which will change is the data set, but the approach
+
+542
+00:57:30.330 --> 00:57:31.460
+Vikesh K: will be the same.
+
+543
+00:57:31.740 --> 00:57:32.490
+Vikesh K: Okay.
+
+544
+00:57:37.030 --> 00:57:48.829
+Vikesh K: okay, we also have reached towards the end. So if you have any other questions, please let me know. I will just look at the other question, Matt, does it make sense to have correlation with price and one column, for instance, there are too many manufacture.
+
+545
+00:57:49.190 --> 00:57:51.470
+Vikesh K: but a single coefficient is doable.
+
+546
+00:57:53.830 --> 00:58:02.039
+Vikesh K: I I didn't understand that exactly, Matt. So you want to. You want to drop the manufacturer column, or do you want to like use just one.
+
+547
+00:58:02.220 --> 00:58:05.479
+Vikesh K: I'm not really sure if I understood that correctly.
+
+548
+00:58:08.860 --> 00:58:12.240
+Vikesh K: you want to isolate manner. So so what I would say
+
+549
+00:58:12.430 --> 00:58:16.979
+Vikesh K: maybe right now, just drop the manufacturing column. Don't use it in your model.
+
+550
+00:58:17.350 --> 00:58:25.109
+Vikesh K: and then then you may be. By the way, where you can't do one hot encoding you. You can do other kinds of encoding there.
+
+551
+00:58:25.270 --> 00:58:34.730
+Vikesh K: So maybe research about it a bit. But there, there are also other encoding techniques. For example, there's something called, I think it's called ordinal encoding
+
+552
+00:58:35.350 --> 00:58:40.209
+Vikesh K: some. The names can be confusing sometimes, but look for other encoding techniques
+
+553
+00:58:40.780 --> 00:58:42.549
+Vikesh K: which can be helpful when you have
+
+554
+00:58:43.130 --> 00:58:44.719
+Vikesh K: too much cardinality.
+
+555
+00:58:45.580 --> 00:58:48.280
+Vikesh K: Okay? And that that can be another approach.
+
+556
+00:58:53.530 --> 00:59:04.540
+Vikesh K: But I'm I'm happy. You're actually moving very fast on this. You and Shashi. I've already. I think it's. It's only since one or 2 days this module has been launched. You guys have already made a lot of progress.
+
+557
+00:59:05.150 --> 00:59:06.140
+Vikesh K: but that's cool.
+
+558
+00:59:06.820 --> 00:59:07.350
+Vikesh K: So other.
+
+559
+00:59:07.350 --> 00:59:23.970
+shashi: I have to finish before Monday. I'm trying to finish it before Monday, because Monday and Tuesday I have doctor appointment, and it takes me literally half 2, half days to go and come back, and so I don't want last minute treasure for some patients.
+
+560
+00:59:23.970 --> 00:59:25.079
+Vikesh K: Sure makes sense.
+
+561
+00:59:25.170 --> 00:59:26.870
+Vikesh K: Okay, okay, cool.
+
+562
+00:59:29.730 --> 00:59:31.829
+Vikesh K: Oh, last time it took you 2 weeks
+
+563
+00:59:32.304 --> 00:59:40.250
+Vikesh K: no, I can understand. Matt. But that's the fun that that's the main thing in them. You know, when you're doing some practical assignments.
+
+564
+00:59:40.320 --> 00:59:46.200
+Vikesh K: That's where most of the learning happens when you bang your head against the wall because it can become little challenging.
+
+565
+00:59:46.600 --> 00:59:48.629
+Vikesh K: That's where the main learning happens.
+
+566
+00:59:48.900 --> 00:59:54.394
+shashi: And that's when the best output also comes. I think you know, when last is on fire. Everything
+
+567
+00:59:54.700 --> 00:59:55.869
+Vikesh K: That comes up.
+
+568
+00:59:56.720 --> 01:00:08.359
+shashi: And I did the last assignment I mean, I worked, I think, 26 h straight. I didn't even yawn once. I mean all the food was coming to the table. I sat in front of the computer and finished it in one day.
+
+569
+01:00:08.360 --> 01:00:09.250
+Vikesh K: Oh, wow!
+
+570
+01:00:09.480 --> 01:00:10.590
+Vikesh K: Oh, lovely!
+
+571
+01:00:11.390 --> 01:00:14.149
+Vikesh K: But but I won't advise that for long run.
+
+572
+01:00:14.150 --> 01:00:17.055
+shashi: I know it's not a sustainable model.
+
+573
+01:00:17.470 --> 01:00:17.820
+Vikesh K: That's true.
+
+574
+01:00:18.445 --> 01:00:19.070
+shashi: Yeah.
+
+575
+01:00:19.650 --> 01:00:22.180
+shashi: cool. It took me 3 days to recover from that.
+
+576
+01:00:22.618 --> 01:00:24.810
+Vikesh K: Okay, no, I can imagine.
+
+577
+01:00:24.960 --> 01:00:26.480
+Vikesh K: Now that happens.
+
+578
+01:00:27.230 --> 01:00:29.139
+Vikesh K: Others who have been very silent.
+
+579
+01:00:29.460 --> 01:00:31.490
+Vikesh K: Mike Shika
+
+580
+01:00:32.880 --> 01:00:37.980
+Vikesh K: iphone 13 pro max. Any questions or doubts before we call it a day.
+
+581
+01:00:39.940 --> 01:00:42.585
+Vikesh K: I hope the course is going well at your end.
+
+582
+01:00:46.040 --> 01:00:50.959
+Vikesh K: like I as a holiday period is coming. I know there might be some temptation to.
+
+583
+01:00:51.502 --> 01:00:54.410
+Vikesh K: you know. Take it a little lightly, but just hang in there.
+
+584
+01:00:54.970 --> 01:01:00.609
+Vikesh K: because now now the course will also becoming more interesting, right? So just hang it! There.
+
+585
+01:01:00.610 --> 01:01:03.210
+shashi: I had one more question
+
+586
+01:01:03.260 --> 01:01:08.220
+shashi: on time series this one. There are so many materials available, but
+
+587
+01:01:08.230 --> 01:01:18.879
+shashi: some of them are pretty confusing. Are there any good this one? Or should I explore any additional courses for times? Because it's a very, very interesting topic, and
+
+588
+01:01:19.713 --> 01:01:20.840
+shashi: looks very.
+
+589
+01:01:21.550 --> 01:01:30.010
+shashi: It's in English. It sounds very easy, but mathematically it is so involved, and it takes a lot of understanding and deep involvement in that.
+
+590
+01:01:30.590 --> 01:01:36.719
+Vikesh K: Yeah, I would say, one of the one of the good guys who who does a pretty good job in time series called Rob Hinman.
+
+591
+01:01:36.890 --> 01:01:47.100
+Vikesh K: but he has. He has a very good book, but that book is in R, so that that can be one challenging, although there are many people who have put up a github, a python version on Github.
+
+592
+01:01:47.310 --> 01:01:54.330
+Vikesh K: So like the same R code, they have already translated it, and also you can use Chat Gpt, now, you know, to take the help.
+
+593
+01:01:54.550 --> 01:02:01.440
+Vikesh K: But Rob Hindman does a very good job. He's considered as sort of a guru in this time series. Space
+
+594
+01:02:02.535 --> 01:02:05.869
+Vikesh K: there's 1 more Lady Gallet, shumely.
+
+595
+01:02:09.000 --> 01:02:11.308
+Vikesh K: I I forgot her galit.
+
+596
+01:02:11.850 --> 01:02:12.860
+Vikesh K: yes.
+
+597
+01:02:13.390 --> 01:02:14.590
+Vikesh K: so
+
+598
+01:02:14.720 --> 01:02:21.080
+Vikesh K: she teaches in Taiwan. She's also focuses on time series, so she can be a good teacher.
+
+599
+01:02:21.480 --> 01:02:31.580
+Vikesh K: She has written one or 2 books. I believe one of them is in Python. Maybe if I get that correctly, but both both of them usually are. R, based.
+
+600
+01:02:33.000 --> 01:02:33.920
+Vikesh K: Yeah. But
+
+601
+01:02:34.420 --> 01:02:35.879
+Vikesh K: there might be some.
+
+602
+01:02:35.990 --> 01:02:38.839
+Vikesh K: I don't remember any good python book for stats.
+
+603
+01:02:39.230 --> 01:02:40.190
+Vikesh K: as of now.
+
+604
+01:02:41.580 --> 01:02:43.359
+Vikesh K: It will. Yeah, it will update.
+
+605
+01:02:43.920 --> 01:02:44.640
+Vikesh K: Yeah.
+
+606
+01:02:45.850 --> 01:03:00.969
+Vikesh K: cool. If there are no more questions we can call it a day. Thank you for your time. I hope this was helpful. This was informal session more unstructured. But I hope this was a good use of your time. No, Mac, don't learn. Our python is fine. Yeah.
+
+607
+01:03:01.230 --> 01:03:10.100
+Vikesh K: don't kill yourself. Yeah, this is python is fine. Python is in any case becoming quite popular all over the place, so
+
+608
+01:03:11.310 --> 01:03:16.759
+Vikesh K: I would say, rather, go deep in Python and and and the applications of Python.
+
+609
+01:03:17.800 --> 01:03:24.229
+shashi: Also, I think pytorch is has more traction than tensorflow. If I'm not mistaken, right? Yeah.
+
+610
+01:03:24.230 --> 01:03:24.650
+Vikesh K: Yes, yes.
+
+611
+01:03:24.650 --> 01:03:36.039
+shashi: So that's what once I build these models during I mean, or just after the course I want to redo all these things in using pytorch also, so that way it can
+
+612
+01:03:36.250 --> 01:03:36.840
+shashi: use of.
+
+613
+01:03:37.179 --> 01:03:44.639
+Vikesh K: Although the new tire tensorflow, the the in terms of syntax and in terms of approach, is not dramatically different from pytorch.
+
+614
+01:03:44.640 --> 01:03:45.300
+shashi: Yeah.
+
+615
+01:03:45.300 --> 01:03:49.480
+Vikesh K: But Pytorch, it has sort of taken a lead now over tensor.
+
+616
+01:03:50.070 --> 01:03:51.080
+Vikesh K: So that's true.
+
+617
+01:03:51.410 --> 01:03:56.100
+Vikesh K: So by. But but having said that, we in this course, we focus on tensorflow.
+
+618
+01:03:56.100 --> 01:03:56.670
+shashi: Sfty, yeah.
+
+619
+01:03:56.670 --> 01:04:01.540
+Vikesh K: But it's not a big jump moving from the concepts. Remain the same.
+
+620
+01:04:02.160 --> 01:04:02.970
+Vikesh K: Yeah.
+
+621
+01:04:03.310 --> 01:04:10.239
+Vikesh K: yeah, cool. Thank you, then, and we'll meet you next week. Then, right where we talk about practical assignment
+
+622
+01:04:10.530 --> 01:04:13.230
+Vikesh K: cheers bye, everyone, bye.
+
+623
+01:04:13.860 --> 01:04:14.810
+shashi: Bye, everybody!
+

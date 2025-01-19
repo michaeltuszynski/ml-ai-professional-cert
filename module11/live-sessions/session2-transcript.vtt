@@ -1,0 +1,622 @@
+WEBVTT
+
+1
+00:01:44.390 --> 00:01:50.910
+Jessica: Alright! Hello, everybody! And welcome to the module. 11 office hour
+
+2
+00:01:50.950 --> 00:01:55.519
+Jessica: for the professional certificate in machine learning. And AI
+
+3
+00:01:56.044 --> 00:02:11.380
+Jessica: so 1st of all apologies for rescheduling. Yesterday I was traveling, and the office hour was conflicting with my flight. But I am happy that we're here today, so as you probably imagine
+
+4
+00:02:11.410 --> 00:02:21.580
+Jessica: the office hour today is going to be very brief, because module 11 is another one of the practical application modules. So
+
+5
+00:02:21.690 --> 00:02:27.758
+Jessica: there isn't really much new content. But there is the
+
+6
+00:02:28.660 --> 00:02:54.440
+Jessica: the second practical application assignment that you will have to complete to complete the module. So I do have, you know, 2 slides that are very, very short. So I am actually gonna share this with you today. But really, I want to switch right away and go on canvas
+
+7
+00:02:54.540 --> 00:03:06.530
+Jessica: to talk about the practical application assignment and the expectations. Hello, everybody. Thank you for joining. Yeah. So let me share my screen here.
+
+8
+00:03:07.150 --> 00:03:22.680
+Jessica: And again, this is gonna be a probably 20 min office hour, maybe even less. But yeah, I just wanted to. Talk about the expectations for the this practical application assignment. So
+
+9
+00:03:22.710 --> 00:03:29.050
+Jessica: you went through the 1st practical application in Module 5.
+
+10
+00:03:29.120 --> 00:03:40.320
+Jessica: This is a similar format. It's a different assignment. It's a different data set. You're gonna have to use different techniques for this assignment. But essentially.
+
+11
+00:03:40.360 --> 00:03:45.210
+Jessica: you are what you are. You are giving a
+
+12
+00:03:45.680 --> 00:04:00.959
+Jessica: data set with over 400,000 rows. That contains information about vehicles. And you want to try and predict the price of a vehicle based on the data set that's given.
+
+13
+00:04:01.120 --> 00:04:02.180
+Jessica: So
+
+14
+00:04:02.812 --> 00:04:15.500
+Jessica: this is going to be a regression type of problem. Okay? So you're given some information about the vehicles. And you are. Your goal is to predict the price.
+
+15
+00:04:15.730 --> 00:04:20.371
+Jessica: Okay, the data set
+
+16
+00:04:21.930 --> 00:04:28.920
+Jessica: I am gonna download it now, it's quite large. So it's gonna take a second to open.
+
+17
+00:04:42.508 --> 00:04:44.400
+vbudhiraja: I have a question, Jessica.
+
+18
+00:04:44.620 --> 00:04:45.290
+Jessica: Yes.
+
+19
+00:04:45.620 --> 00:05:00.460
+vbudhiraja: So my! The way I was reading it was saying that what affects the value of the car as compared to predict the price, like, what features gonna be more important that gonna influence of the car.
+
+20
+00:05:01.110 --> 00:05:23.800
+Jessica: Yeah, so well, like an approach to do that would be to you know, like, run a model with some of the variables inside this data set and try and see which ones give you the more accurate price prediction. So you have the price here.
+
+21
+00:05:23.930 --> 00:05:42.799
+Jessica: and you have this these other variables that you can use as input okay, there are some missing values. Okay, it's part of the homework is to clean this data set. But, like you can. For example, in order to determine which ones are more important, an approach would be to.
+
+22
+00:05:42.890 --> 00:06:05.059
+Jessica: you know, like, try different regression models. Okay? So like linear regression, lasso regression and ridge regression. And see if you can figure out using those machine learning methods which ones which variables are more important and can give you the more accurate price which you have.
+
+23
+00:06:07.010 --> 00:06:09.870
+Jessica: because otherwise, like, how are you gonna just
+
+24
+00:06:10.200 --> 00:06:20.139
+Jessica: like, based on like, what are you gonna use to predict the the price of the house. You have to use the tools that you've learned in the course, in order
+
+25
+00:06:20.340 --> 00:06:41.710
+Jessica: to to understand which variables are more important, and you can do that by using linear regression to predict the price of a car. And then the variables that give you the most accurate result based on the real values that you have here is going to help you determine which variables are more important.
+
+26
+00:06:42.410 --> 00:06:43.739
+vbudhiraja: Makes sense. Thank you.
+
+27
+00:06:44.010 --> 00:06:54.520
+Jessica: So, yeah, so obviously, this data set is quite large. There are missing values. Okay, so careful with that, spend time cleaning your data. Set
+
+28
+00:06:54.970 --> 00:07:02.810
+Jessica: again, whether you want to drop rows or columns, or you want to try and impute the missing values. That's all. Up to you.
+
+29
+00:07:02.820 --> 00:07:12.709
+Jessica: the practical application don't have a unique solution. So if you know, do whatever you think, it's right to clean this data
+
+30
+00:07:12.810 --> 00:07:14.762
+Jessica: and then try and
+
+31
+00:07:15.750 --> 00:07:21.270
+Jessica: understand which variables are more important when predicting the price of a car. Now.
+
+32
+00:07:21.970 --> 00:07:29.880
+Jessica: you know, when we were we when we were talking about data, cleaning and variables, and you know which ones to pick.
+
+33
+00:07:30.090 --> 00:07:53.300
+Jessica: you know. Use a little bit of common sense. The win of a car is not going to impact the price. Okay, so there are some obvious variables here that are not useful for prediction that really don't impact the price of a car based on common sense. So you know, you can definitely restrict the subset of input variable
+
+34
+00:07:53.470 --> 00:08:08.070
+Jessica: for your prediction. But among the ones that are important, so like the ear, the manufacturer, the model, the condition, the cylinders fuel, the odometer, perhaps. You know which ones are more important.
+
+35
+00:08:08.230 --> 00:08:12.360
+Jessica: That is up to you to determine with this exercise.
+
+36
+00:08:13.130 --> 00:08:17.870
+Jessica: So essentially, take what you've learned so far in the course.
+
+37
+00:08:18.300 --> 00:08:22.479
+Jessica: Okay, from module one to module 10 and
+
+38
+00:08:22.490 --> 00:08:34.073
+Jessica: implement and apply it to the practical application assignment to see if you can find a good solution. Now, part of the
+
+39
+00:08:35.770 --> 00:08:41.060
+Jessica: challenge when it comes to this type of assignment is also
+
+40
+00:08:41.159 --> 00:08:51.520
+Jessica: deciding which techniques to use. So I give you a hint. This is a regression problem. Okay, so you're going to have to use like the regression algorithms that we've learned
+
+41
+00:08:51.780 --> 00:09:01.160
+Jessica: like this is not a classification problem. So some of the things that you've learned in the previous modules you won't be using. But, you know, go back and
+
+42
+00:09:01.320 --> 00:09:08.509
+Jessica: see if you can find any other technique or algorithms that can help you with this assignment.
+
+43
+00:09:10.373 --> 00:09:12.060
+Jessica: Regarding the
+
+44
+00:09:14.830 --> 00:09:26.749
+Jessica: the the format for submission is the same as Module 5. So you have to upload your practical application to a Github Repository.
+
+45
+00:09:26.840 --> 00:09:39.419
+Jessica: Make sure that all necessary files are there. Write to the readme file and submit the link to your public Github Repository for grading so nothing new there.
+
+46
+00:09:39.710 --> 00:09:48.500
+Jessica: And the of course, I want to spend a little bit of time. Oh, this should be a readme file again.
+
+47
+00:09:52.840 --> 00:09:54.130
+Jessica: yeah.
+
+48
+00:09:56.130 --> 00:09:57.470
+Jessica: this
+
+49
+00:09:58.250 --> 00:10:12.529
+Jessica: ignoring this part of the rubric, this should be a read me the same as module. 5. Okay, this is an error in design. I'm gonna communicate that after this office hour but
+
+50
+00:10:12.530 --> 00:10:30.439
+Jessica: before submitting the assignment, please, please, please look at the rubric. Okay, it's the only thing that we use to grade the assignment beside looking at your code and see if it makes sense. But if you hit all the points, all the like sections in the rubric.
+
+51
+00:10:30.470 --> 00:10:36.430
+Jessica: and your assignment makes sense, and your solution makes sense, you're likely going to get a very, very high grade.
+
+52
+00:10:36.610 --> 00:10:50.549
+Jessica: the points start being taken away when you don't look at the rubric, and your submission doesn't match the rubric. Okay, if I don't want to be mean. But if you don't have a
+
+53
+00:10:50.850 --> 00:11:05.079
+Jessica: you know, like the data set, or you don't have the the link to the notebook in your readme file. I know it's, you know, a small thing. But I I we are basing our
+
+54
+00:11:05.460 --> 00:11:21.250
+Jessica: basing, our grading on the rubric. Okay. So before submitting, I really hate taking away 2 points because you forgot to insert the link in the readme file, it's a small thing. Okay, you can have the perfect analysis.
+
+55
+00:11:21.604 --> 00:11:26.440
+Jessica: And I really really dislike doing that. But I have to do it if it's not there.
+
+56
+00:11:27.110 --> 00:11:28.190
+Jessica: So
+
+57
+00:11:28.860 --> 00:11:53.209
+Jessica: make sure that you know, like you check the rubric. The rubric is very similar to the module 5. There is a new section, though, so we have the project organization, the syntax and code quality, the visualizations. The new part is the modeling. Okay? So for the module 5 assignment, you didn't have a modeling part because you didn't know any algorithms. There.
+
+58
+00:11:53.290 --> 00:12:08.979
+Jessica: now you do. So you have to use multiple regression model and cross validation grid search the hyper parameters, interpret the coefficient look at the error. You know all the things that we've learned about how to use
+
+59
+00:12:09.543 --> 00:12:13.280
+Jessica: the regression algorithms that we've seen in the course. Okay?
+
+60
+00:12:13.540 --> 00:12:32.730
+Jessica: And then, of course, the findings where the findings are. We don't care. Some of you put them in the readme. Some of you put them in the notebook. That doesn't matter as long as there is a clear section that states in, not in technical terms, what the results are. We don't care where you put that.
+
+61
+00:12:33.526 --> 00:12:35.040
+Jessica: That information!
+
+62
+00:12:35.813 --> 00:12:38.529
+Jessica: But it's important that you
+
+63
+00:12:39.510 --> 00:12:40.480
+Jessica: excuse me
+
+64
+00:12:42.620 --> 00:13:09.779
+Jessica: that you write your findings out, because it's very important to practice being able to communicate the results with the client. Right? If you're given a problem as a data scientist, it's most likely because somebody doesn't know how to solve it. So after solving the problem. It's important that you are able to communicate to people that don't know data. Science don't know algorithms in, you know.
+
+65
+00:13:09.780 --> 00:13:17.210
+Jessica: normal terms. Okay, non-scientifical terms what your results are and what your recommendations are, which is why
+
+66
+00:13:17.310 --> 00:13:18.740
+Jessica: their findings is
+
+67
+00:13:18.970 --> 00:13:22.459
+Jessica: often overlooked. But it is very, very important.
+
+68
+00:13:22.610 --> 00:13:23.460
+Jessica: Okay.
+
+69
+00:13:24.010 --> 00:13:27.050
+Jessica: do you guys have any questions on this.
+
+70
+00:13:35.980 --> 00:13:36.650
+Ravi Duvvuri: No.
+
+71
+00:13:36.840 --> 00:13:44.519
+Jessica: Okay. Great. Sorry. Okay. So that is everything for the practical application assignment.
+
+72
+00:13:44.740 --> 00:14:05.899
+Jessica: The other thing that I want to flag is that in the next few weeks, or maybe you already received an announcement about this. You are invited to book your one on one consultation about the capstone project. Okay? So now that you guys are starting to having a
+
+73
+00:14:05.900 --> 00:14:19.359
+Jessica: collection or a portfolio of techniques and algorithms available that you're learning. And hopefully, you're getting a good idea of what solving a machine learning problem means.
+
+74
+00:14:19.380 --> 00:14:26.270
+Jessica: It's time to start thinking a little bit more seriously about your capstone project.
+
+75
+00:14:26.440 --> 00:14:32.010
+Jessica: So in the over you should have received a link. Let me see if I can find it.
+
+76
+00:14:37.310 --> 00:14:38.670
+Jessica: Oh.
+
+77
+00:14:44.830 --> 00:14:50.040
+Kiran: Can we? Can we change the problem statement for Capstone project now or.
+
+78
+00:14:50.040 --> 00:14:50.599
+Jessica: You can.
+
+79
+00:14:50.600 --> 00:14:51.330
+Kiran: Okay.
+
+80
+00:14:51.330 --> 00:14:55.820
+Jessica: Yeah, so you should have received this announcement.
+
+81
+00:14:56.160 --> 00:15:19.430
+Jessica: So you are invited to book your 1st one-on-one consultation with the learning facilitator of your section. Okay, it's very important that if you are in Section A, you book with Vikash, if you're in Section B, you book with me and so on. This is to keep things straight and to keep our load work balanced among the 5 of us.
+
+82
+00:15:19.879 --> 00:15:27.250
+Jessica: So you we we are inviting you to click on the link of your learning facilitator
+
+83
+00:15:27.440 --> 00:15:29.840
+Jessica: book, a time that works for you.
+
+84
+00:15:29.990 --> 00:15:50.949
+Jessica: And essentially, during this 30 min consultation, you're going to meet with your learning facilitator. We do recommend that you have an idea of what you want to do, for the Capstone project doesn't have to be final. But don't come absolutely unprepared.
+
+85
+00:15:51.307 --> 00:16:17.050
+Jessica: I'm prepared, if you, if you, we cannot tell you what topic to pick for the capstone project, we're not gonna do that. So if you come to us and say, I don't know what to do for the Capstone project, we're gonna tell you. Okay, go think about it. And book another call next week. Because it's your capstone project. And you want, you have to pick the topic. Okay.
+
+86
+00:16:17.090 --> 00:16:25.189
+Jessica: we can help you choose a data set. We can help you with the techniques. We can guide you through it. But we're not going to pick one for you.
+
+87
+00:16:25.360 --> 00:16:31.709
+Jessica: So once you have an idea of what you want to do or what you would like to do.
+
+88
+00:16:32.260 --> 00:17:00.839
+Jessica: Book your consultations. You can book these from now until the end of module 13. So you have 2 weeks to do that. You have lots of time slots. And during this 30 min consultation it's very informal. Okay, nothing to be scared about. And we're just going to talk about your ideas, and we're going to give you suggestions. See if we think that your project is good, or maybe we recommend a different approach. So it's really like your chance to talk
+
+89
+00:17:01.080 --> 00:17:05.580
+Jessica: one on one with your learning facilitator and really like
+
+90
+00:17:06.569 --> 00:17:19.450
+Jessica: start start working on the Capstone project. Okay, we are gonna recommend to work on the Capstone project a bit at a time. Okay, we don't want you to leave it until the end of the course.
+
+91
+00:17:20.136 --> 00:17:21.490
+Jessica: So yeah.
+
+92
+00:17:21.630 --> 00:17:26.802
+Jessica: go on. You know, for example, these are, this is my calendar. Okay?
+
+93
+00:17:27.780 --> 00:17:28.970
+Jessica: you know, there is.
+
+94
+00:17:29.190 --> 00:17:39.840
+Jessica: You can click on the dates. You can pick the time. And I also have some dates all throughout December. And actually some of January, too.
+
+95
+00:17:40.960 --> 00:17:48.099
+Jessica: I think I need to correct this because I don't want to work on Christmas Day. But you know, like
+
+96
+00:17:48.390 --> 00:18:05.959
+Jessica: pick a day and a time that works for you, and if no time works okay, if you don't see any time that works for you, open a ticket with your learning facilitator, explain the situation. And we can, you know, find another time, I'm sure. Okay.
+
+97
+00:18:06.170 --> 00:18:20.940
+Jessica: But it's these one-on-ones are very, very important. Okay, they can really talking one on one for 30 min with your learning facilitator about the capstone project can give you a lot of insight about it, and you are going to feel
+
+98
+00:18:20.940 --> 00:18:39.310
+Jessica: a lot more relaxed after that, because some of you are probably feeling a little bit anxious about the capstone, and I don't blame you. So now it's the time to, you know, get in contact and get to know each other better as well, and then have a conversation about this this capsule. Okay?
+
+99
+00:18:40.450 --> 00:18:43.869
+Jessica: Any questions concerns.
+
+100
+00:18:49.090 --> 00:18:57.859
+Jessica: That is all I had for today, because this was a module 11 office hour. By the way, I think I did an office hour
+
+101
+00:18:57.920 --> 00:19:22.289
+Jessica: on linear regression where I used a car data set to predict the price of a car. So the data set, it's not the same as the practical application assignment. The problem is a little bit different. Okay, but if you want a refresh before you start the capstone, the practical application assignment, you can go back and watch that office hour and look at the code. And
+
+102
+00:19:22.616 --> 00:19:29.200
+Jessica: you know. Take a little bit of inspiration. It's obviously not the same one. Yes, I think it was the week 7.
+
+103
+00:19:29.250 --> 00:19:46.030
+Jessica: It's my office hour about linear regression. So it's obviously a different data set. But you know, if you just want to see, like some of the steps and the approach you can. You can go there and take, you know. Take a look before you get your hands dirty with the practical application assignment.
+
+104
+00:19:50.500 --> 00:19:51.659
+Jessica: Okay?
+
+105
+00:19:53.190 --> 00:19:54.140
+vbudhiraja: Question.
+
+106
+00:19:54.360 --> 00:19:55.040
+Jessica: Yeah.
+
+107
+00:19:55.350 --> 00:20:19.010
+vbudhiraja: So like, we are doing this project here for car data prediction. How the how big of effort capstone project gonna be as compared to this one. And how much we need to do in the capstone project. Obviously, here we are getting one week to do it. There we're gonna have a month and a half or 2 months to do that. What's the difference?
+
+108
+00:20:19.010 --> 00:20:20.620
+Jessica: Well.
+
+109
+00:20:21.240 --> 00:20:43.360
+Jessica: so time wise we project. So for a practical application assignment, we aim at 15 h on average, each of you should dedicate 15 h to the practical application assignment. Some of you take more, some of you take less for the Capstone project. We do project, I think, 25 h.
+
+110
+00:20:43.460 --> 00:20:47.734
+Jessica: Okay, so it's a little bit more complex. But
+
+111
+00:20:49.100 --> 00:20:58.140
+Jessica: you have to consider that for the Capstone project you have to find a data set and often finding a data set. It's not just a simple Google search.
+
+112
+00:20:58.190 --> 00:21:09.060
+Jessica: Often your data is gonna come very like not clean. And you're gonna have to spend a lot of time cleaning the data so like when it comes to the capstone project
+
+113
+00:21:09.090 --> 00:21:13.299
+Jessica: it, it's definitely a little bit more intense
+
+114
+00:21:13.320 --> 00:21:17.567
+Jessica: than the practical application assignment. It has more components.
+
+115
+00:21:18.300 --> 00:21:19.490
+Jessica: but it's
+
+116
+00:21:19.660 --> 00:21:29.259
+Jessica: very similar. It's just a it's just like a more complex version of a practical application assignment with a topic
+
+117
+00:21:29.290 --> 00:21:30.920
+Jessica: that you pick yourself.
+
+118
+00:21:31.342 --> 00:21:38.849
+Jessica: So yeah, like 25 to 30 h for the capstone project. It's what we expect for you to spend on it on average.
+
+119
+00:21:39.934 --> 00:21:49.935
+Jessica: It really depends, though, like some of you spend 50 HI had. I had a learner, one spending 6 months on it, you know which was extremely
+
+120
+00:21:50.810 --> 00:22:05.439
+Jessica: you know, it was a little bit too much. Let's just say that. But some of you spend less time, and at the end of the day, like, we just want you to pick a topic that you like and apply the concept that you've learned in the course.
+
+121
+00:22:05.550 --> 00:22:28.899
+Jessica: Okay, and we want you to being able to select the techniques and algorithms that you've learned from the course that work best for your capstone project. Okay, some of you are gonna pick a regression problem. Some of you are going to pick a classification problem. Some of you are gonna pick a natural language processing problem.
+
+122
+00:22:28.990 --> 00:22:40.219
+Jessica: Okay? So depending on the type of project that you want to solve the techniques and algorithms that each one use is going to be different, and that is part of the capstone.
+
+123
+00:22:42.450 --> 00:22:43.690
+Jessica: Does that help.
+
+124
+00:22:43.980 --> 00:22:45.560
+vbudhiraja: Yep, thank you.
+
+125
+00:22:45.670 --> 00:22:56.559
+vbudhiraja: So we can focus on the capstone project to be more learning focus as compared to trying to do something specific. Because then you are limited by the
+
+126
+00:22:56.580 --> 00:23:08.760
+vbudhiraja: your thought process what you're trying to achieve but achieve. But if you go with the learning model, you can have a broader project, and you try to accommodate as much as you can what you learn.
+
+127
+00:23:09.250 --> 00:23:12.659
+Jessica: Yeah, well, you have to be careful with that, because.
+
+128
+00:23:12.900 --> 00:23:22.599
+Jessica: you know, like, it's really easy to get lost that way. So the way I would go about. This is that I would try and think about something that you guys are interested in
+
+129
+00:23:22.690 --> 00:23:28.669
+Jessica: hobby work, anything. I had projects on spotify playlists
+
+130
+00:23:29.284 --> 00:23:43.830
+Jessica: crypto or straight up work. I've seen it all okay, and or, you know, predict who's gonna win the Fifa World Cup, and the next 2026, or whenever it is so, pick a topic that you like, and then
+
+131
+00:23:44.160 --> 00:23:56.170
+Jessica: ask yourself, Okay, what would I like to know? What? What am I interesting in predicting about this topic. And then you can find a data set that hopefully accommodates that and has the correct information.
+
+132
+00:23:56.680 --> 00:23:58.879
+Jessica: And then you can
+
+133
+00:23:59.820 --> 00:24:15.910
+Jessica: and then you can apply the correct techniques to solve that problem. Don't try and jam as many algorithms as you can in the capstone project because some of them are just not going to work. You cannot apply logistic regression and linear or
+
+134
+00:24:16.340 --> 00:24:20.550
+Jessica: linear regression to the same problem. Those are 2 separate techniques
+
+135
+00:24:21.045 --> 00:24:24.689
+Jessica: that are used to predict different things. Right? So
+
+136
+00:24:25.321 --> 00:24:51.719
+Jessica: it's have a clear idea of what you want to predict. And then, as you progress through the course, and as you learn more work on your capstone project, and try and incorporate ideally module by module what you learned. So if you work ideally, you would work on the Capstone project a little bit each week, and as you learn more, you incorporate more and more in the capstone project.
+
+137
+00:24:53.530 --> 00:24:54.030
+vbudhiraja: Thank you.
+
+138
+00:24:54.530 --> 00:24:55.120
+Jessica: Yeah.
+
+139
+00:24:57.180 --> 00:25:05.350
+Ravi Duvvuri: And Jessica. Sorry I missed it. When do we need to schedule appointments with the facilitators one on ones.
+
+140
+00:25:06.065 --> 00:25:10.430
+Jessica: Yeah, you can go on this announcement page.
+
+141
+00:25:10.840 --> 00:25:12.439
+Jessica: I put it in the chat
+
+142
+00:25:12.480 --> 00:25:20.560
+Jessica: and based on the section you're in, you can just click on this calendar links and you will be able to book with us.
+
+143
+00:25:22.150 --> 00:25:25.110
+Ravi Duvvuri: Okay, and how soon we have to do it.
+
+144
+00:25:26.322 --> 00:25:28.879
+Jessica: The consultation open.
+
+145
+00:25:34.540 --> 00:25:38.079
+Jessica: Between modules 12 and 15. So
+
+146
+00:25:38.730 --> 00:25:42.119
+Jessica: once Module 12 gets released
+
+147
+00:25:42.517 --> 00:25:58.292
+Jessica: and you will see in the calendar the the dates that are available right you. The 1st day is the 1st day of Module 12, and the last day is the last day of module 15 I need to fix my calendar because I don't wanna work during the Christmas break
+
+148
+00:25:58.650 --> 00:26:17.049
+Jessica: But and I'm sure you don't want either. But essentially week 1213, 14, and 15. So you have 4 modules to to book a time, and it doesn't matter when you do it. You know if you're ready. Just book it early, and if you need a little bit extra time, do it
+
+149
+00:26:17.240 --> 00:26:19.330
+Jessica: a little bit later. It's fine.
+
+150
+00:26:20.460 --> 00:26:30.989
+Ravi Duvvuri: Okay? So we already submitted the project, right? Like what we want to work on it. So we are going to review the same? Or do we need to work on it anything before we schedule it?
+
+151
+00:26:31.450 --> 00:26:32.370
+Jessica: I mean.
+
+152
+00:26:32.570 --> 00:26:55.240
+Jessica: if you want to use that as your capstone project. We can, we can totally discuss that. But if you this was in Module 6. So now we are in Module 11, and you know a lot more now. So if you want to change your mind, we can also discuss that. And that's totally possible. Yeah, no worries.
+
+153
+00:27:01.430 --> 00:27:14.839
+Jessica: Alright, okay. So I think that's all for today. I'll give you guys a little bit of your time back, I think next week it's a break week, so I won't see you for
+
+154
+00:27:15.180 --> 00:27:32.160
+Jessica: a couple of weeks. I think so. Good luck with your practical application assignment book the one on one consultation. Okay, you want to do it today. You can book it today and then even move it. Okay, you can reschedule it if that day doesn't end up working for you. But don't forget. Okay.
+
+155
+00:27:32.200 --> 00:27:40.299
+Jessica: And yeah, good luck with module 11. And I will see you in a couple of weeks bye, and have a good rest of your day and a good weekend.
+

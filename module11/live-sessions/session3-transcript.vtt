@@ -1,0 +1,3198 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:01.910
+Raghavan Srinivasan: From the similar background.
+
+2
+00:00:02.540 --> 00:00:05.089
+Raghavan Srinivasan: Right we are. We are
+
+3
+00:00:05.110 --> 00:00:09.421
+Raghavan Srinivasan: perfectly fine with the logic, and we know what needs to be done. And
+
+4
+00:00:10.060 --> 00:00:16.090
+Raghavan Srinivasan: but the coding wise. We are not expert in python, or you know we don't have that.
+
+5
+00:00:16.100 --> 00:00:24.969
+Raghavan Srinivasan: because at the highest level I don't do coding for the last 20 years right? But I know where I come from. So the coding I'm doing with the help of
+
+6
+00:00:25.450 --> 00:00:32.389
+Raghavan Srinivasan: Chat Gbt. With the help of an agenda. You know all those things that is perfectly fine, right. As long as I get that
+
+7
+00:00:33.494 --> 00:00:38.139
+Raghavan Srinivasan: logic from myself and the syntax on how to do it.
+
+8
+00:00:38.640 --> 00:00:44.190
+Raghavan Srinivasan: That should be okay, right? Because that's where I'm struggling. I'm trying to do on my own.
+
+9
+00:00:44.470 --> 00:00:46.800
+Raghavan Srinivasan: That's that's taking a lot of time.
+
+10
+00:00:46.910 --> 00:00:53.180
+Raghavan Srinivasan: whereas I can go to chat Gbt or anaconda to get the syntax easily.
+
+11
+00:00:54.620 --> 00:01:02.489
+Vikesh K: Okay. So, Raghan, just a clarification. You're saying you take the help of Chat Gpt, or you avoid using chat. Gpt.
+
+12
+00:01:02.490 --> 00:01:24.150
+Raghavan Srinivasan: No, initially, I did avoid using Chatgpt. It took a lot of time to research and find out the syntax and do. But then I realized, even with the with my team in my organization. They are all using anaganda assistant assistant to do the code generation to help them to complete the project quickly. So I I turned into that
+
+13
+00:01:24.470 --> 00:01:26.350
+Raghavan Srinivasan: is, that is perfectly fine. Right?
+
+14
+00:01:26.350 --> 00:01:34.893
+Vikesh K: Yeah, no, no, I think it should be good. That's why what I would broadly suggest, especially, you know, if you're using Chatgpt as an assistant
+
+15
+00:01:35.760 --> 00:01:45.900
+Vikesh K: figure out the process. Figure out the you know the how, you, how you're going to approach the problem on your own and maybe spend more time there and do some research there.
+
+16
+00:01:46.200 --> 00:01:49.960
+Vikesh K: And once you move into the execution part, the code part.
+
+17
+00:01:49.980 --> 00:01:56.769
+Vikesh K: That's where maybe yes, you can use chatgpity just to make life easy and do it fast, because I understand all of you are
+
+18
+00:01:56.900 --> 00:02:05.339
+Vikesh K: doing this along with your personal professional life, and if yes, if there is a chat Gpt involved. Maybe it will make your life easy.
+
+19
+00:02:06.450 --> 00:02:20.429
+Vikesh K: And, Ragan, you already said to 20 years of experience or more. So I don't think you're really going to change track at this point of time? Maybe you're developing more knowledge into the AI and Ml space. So I think that that's perfectly fine
+
+20
+00:02:20.900 --> 00:02:22.689
+Vikesh K: that that should do.
+
+21
+00:02:23.410 --> 00:02:39.340
+Vikesh K: And having said that what I would also recommend is maybe one goal you can set for yourself is okay. Maybe in the practical applications. I'm going to take more help of chatgpity. But as soon as we move to the capstone, which is still.
+
+22
+00:02:39.931 --> 00:02:52.698
+Vikesh K: maybe you know, 10 weeks away. Maybe then I won't take a lot of help of Chatgpt. That could be a personal goal right in terms of learning. Here. I'm using more of Chatgpt, but what I aim to do is by the end of the
+
+23
+00:02:53.150 --> 00:02:59.490
+Vikesh K: course, and by the end of the charge. Gpt, I don't have to rely on it as much as I'm relying on it right now.
+
+24
+00:02:59.710 --> 00:03:00.230
+Vikesh K: So.
+
+25
+00:03:00.230 --> 00:03:05.680
+Raghavan Srinivasan: Only for the coding, meaning only for the syntax, and how to use the functions.
+
+26
+00:03:05.680 --> 00:03:24.330
+Vikesh K: Yeah. And that's fine. Yeah, yes, yes, no. Also, because, see what many other people in any case used to do is search a lot on Google and do stack overflow right chat Gpt had just turbocharged it, and it has become even more smooth experience. Only the drawback in the long run is because when you sort of
+
+27
+00:03:24.640 --> 00:03:28.380
+Vikesh K: ask Chatgp to do it, and then you know.
+
+28
+00:03:28.380 --> 00:03:31.290
+Raghavan Srinivasan: No, yeah, I'm not using for that. Yeah.
+
+29
+00:03:31.290 --> 00:03:31.660
+Vikesh K: Good.
+
+30
+00:03:32.080 --> 00:03:54.569
+Raghavan Srinivasan: But I realized it, the the multiple regression techniques I need to try. So I tried. You know, the linear and ridge and polynomial. And then I realized that by my experience polynomial will not work on this practical application because lot of you know, categorical features and variables are available.
+
+31
+00:03:54.570 --> 00:04:08.340
+Raghavan Srinivasan: whereas, you know, just a cubing and squaring. The year doesn't going to make any sense for me. Right? So that kind of things are definitely. We are learning from the course, only to use the polynomial features. I need the code syntax.
+
+32
+00:04:08.650 --> 00:04:11.620
+Raghavan Srinivasan: I I that is where I'm going. That's what I said.
+
+33
+00:04:11.660 --> 00:04:19.370
+Raghavan Srinivasan: sorry I took too much time, but try to make sure that I'm not feeling guilty after putting all this effort so.
+
+34
+00:04:19.910 --> 00:04:28.987
+Vikesh K: No, no, I'm I'm pretty sure. And this this question would be in this people, mind as well. So that's what I'm saying. See, we are not going to really
+
+35
+00:04:29.655 --> 00:04:41.330
+Vikesh K: as long as you have written a well structured code. That's what matters. We have understood the whole process. And remember, this is more of a professional certificate course. Right? We are not doing a
+
+36
+00:04:41.765 --> 00:04:49.430
+Vikesh K: live checking of, maybe who has written the all the plagiarism code and all those things plagiarism checks.
+
+37
+00:04:49.450 --> 00:05:00.549
+Vikesh K: The main intention is that you understand this field. You know how to figure out your way in it, and then maybe, you know hopefully, take this and apply it at your own work. Or maybe you change your track.
+
+38
+00:05:01.077 --> 00:05:05.859
+Vikesh K: So if someone wants to change the track, I would say, yes, maybe
+
+39
+00:05:06.680 --> 00:05:17.277
+Vikesh K: keep chat, gpt as away as possible. But if you have to just overall broadly, understand, and then figure out some of the problems. It's fine to use it right? Obviously, all of you are.
+
+40
+00:05:19.310 --> 00:05:24.130
+Vikesh K: you have your own goals so based on that, maybe you can tweak it.
+
+41
+00:05:24.260 --> 00:05:25.510
+Vikesh K: But yeah.
+
+42
+00:05:25.570 --> 00:05:30.829
+Vikesh K: as long as you're not making chargeability to the whole coding and all you should. That should be fine.
+
+43
+00:05:31.750 --> 00:05:33.250
+Raghavan Srinivasan: Thank you. Thank you. Vikesh.
+
+44
+00:05:33.420 --> 00:05:34.160
+Vikesh K: Thanks for everyone.
+
+45
+00:05:34.350 --> 00:05:40.140
+Ravi Duvvuri: Hey, Vikesh? I have a couple of questions on the project itself, so
+
+46
+00:05:40.430 --> 00:05:45.989
+Ravi Duvvuri: I'm not sure if I'm doing it all the things correctly, but you know, maybe I will
+
+47
+00:05:46.020 --> 00:05:52.559
+Ravi Duvvuri: give a a minute of what I'm doing, and you know, maybe you can correct me, or maybe the folks who have done it.
+
+48
+00:05:52.560 --> 00:05:57.319
+Vikesh K: Should we do? Should we do one thing? What one thing which I was thinking is, what we can do is
+
+49
+00:05:57.400 --> 00:06:00.770
+Vikesh K: broadly at an overall level, discuss the whole approach.
+
+50
+00:06:00.950 --> 00:06:01.500
+Ravi Duvvuri: Okay.
+
+51
+00:06:01.500 --> 00:06:06.942
+Vikesh K: Right. And I, because this is all of yours sort of a project. I want all of you to pitch in
+
+52
+00:06:07.300 --> 00:06:15.639
+Vikesh K: the task, which I will do right now is to sort of put it together. So I have. So I've shared a Jupyter notebook with all of you.
+
+53
+00:06:15.950 --> 00:06:33.850
+Vikesh K: and the main thing which I've put here right now is different sections, you know. Data quality, Eda, preprocessing feature, selection modeling. Right? The idea being I, we can list down the different approaches that you know what what's there in your mind. We will put all of that together. I want to hear inputs from all of you.
+
+54
+00:06:33.930 --> 00:06:38.200
+Vikesh K: and then the coding part, you know you can.
+
+55
+00:06:38.320 --> 00:06:41.150
+Vikesh K: I think that would be slightly easier
+
+56
+00:06:41.549 --> 00:06:57.180
+Vikesh K: to figure out after that. The main thing is, we take this big problem, and then we break it down into pieces. Okay, into the different components. And where I just want all of you to give you inputs. And then maybe we can talk about if there are any specific problems. But hopefully,
+
+57
+00:06:58.060 --> 00:07:03.930
+Vikesh K: in the when we are discussing all these different steps, maybe some of the problems get covered which you might have
+
+58
+00:07:04.130 --> 00:07:07.189
+Vikesh K: sounds good. So that would be a comprehensive way of doing it.
+
+59
+00:07:08.270 --> 00:07:17.679
+Vikesh K: Yeah. Okay, so so essentially, what you have is a data set from Kaggle with 3 million used car prices. And you have to figure out
+
+60
+00:07:17.820 --> 00:07:23.459
+Vikesh K: what makes a car expensive or cheap right? And what would be the ideal price to charge
+
+61
+00:07:23.610 --> 00:07:26.156
+Vikesh K: correct? So this is a problem statement.
+
+62
+00:07:26.740 --> 00:07:31.679
+Vikesh K: I have the notebook which I've shared. Maybe some of you joined late, so I will reshare it
+
+63
+00:07:31.880 --> 00:07:33.770
+Vikesh K: so you can download it there.
+
+64
+00:07:34.110 --> 00:07:38.200
+Vikesh K: So this is how the data set looks like. All right, you have.
+
+65
+00:07:39.390 --> 00:07:44.630
+Vikesh K: And and let me know if if so, this this link is
+
+66
+00:07:45.140 --> 00:07:54.879
+Vikesh K: me. I'm not sure. Sometimes. You know, emeritus updates their data sets just to make it simple sometimes, but I hope this is the same. I will just tell you how many rows and
+
+67
+00:07:56.560 --> 00:08:01.520
+Vikesh K: I have 4, 2, 6, 4, 26 K rows. I hope you have the same
+
+68
+00:08:01.740 --> 00:08:07.629
+Vikesh K: number. So we have the same data set. So we have couple of them. I just want to go through the
+
+69
+00:08:07.940 --> 00:08:12.899
+Vikesh K: columns quickly. We have an Id, which I believe is a car. Id.
+
+70
+00:08:13.110 --> 00:08:19.020
+Vikesh K: Then you have a region right? You have a price. I believe this is what we have to predict.
+
+71
+00:08:19.060 --> 00:08:22.080
+Vikesh K: Then you have a year manufacturer.
+
+72
+00:08:22.240 --> 00:08:26.069
+Vikesh K: There is a model. There is a condition. 6 cylinders.
+
+73
+00:08:27.110 --> 00:08:27.700
+Vikesh K: Fuel!
+
+74
+00:08:28.080 --> 00:08:36.919
+Vikesh K: What kind of car is this gas hybrid right cylinders. We discussed odometer readings, title, status.
+
+75
+00:08:37.080 --> 00:08:42.490
+Vikesh K: all right. This, this is more of a legal thing, I believe, transmission. What kind of transmission?
+
+76
+00:08:42.570 --> 00:08:46.469
+Vikesh K: VIN, which is a vehicle identification number.
+
+77
+00:08:46.780 --> 00:08:54.840
+Vikesh K: Then there is a drive size type Inker state. Okay, you can see there's a good bunch of categorical and
+
+78
+00:08:55.130 --> 00:08:59.559
+Vikesh K: numerical data in this mostly, and it's on the categorical side, I believe.
+
+79
+00:08:59.680 --> 00:09:05.180
+Vikesh K: So. There are 14 categoricals and 4 numerically.
+
+80
+00:09:05.370 --> 00:09:18.840
+Vikesh K: and all of that one numerical is what you have to predict. So you're left with 3. And but I believe also your cylinder will become a numerical if you do that data transformation right? So this will again shift
+
+81
+00:09:19.110 --> 00:09:20.160
+Vikesh K: data sets.
+
+82
+00:09:20.160 --> 00:09:28.980
+Ravi Duvvuri: That that has a the cylindrical. It has the value like other. So that's why I did not convert it. So I kept it as categorical.
+
+83
+00:09:29.450 --> 00:09:30.380
+Vikesh K: Okay.
+
+84
+00:09:31.590 --> 00:09:34.729
+Chintan Gandhi: It has both na and other. Both of them are there.
+
+85
+00:09:35.800 --> 00:09:46.720
+Vikesh K: Okay. So we will look into that. Okay, so let's talk about the 1st step, which is when you you know, you start working on this data set. What are the data quality checks? Will you do
+
+86
+00:09:46.950 --> 00:09:49.629
+Vikesh K: the basics ones right? The standard ones.
+
+87
+00:09:50.480 --> 00:09:53.290
+Vijay Chaganti: Like missing data duplicate data.
+
+88
+00:09:54.140 --> 00:09:57.949
+Vikesh K: Yes, missing data, I hope.
+
+89
+00:09:58.380 --> 00:10:03.599
+Vikesh K: And I'm pretty sure there would be missing values duplicate data. I think we briefly.
+
+90
+00:10:03.600 --> 00:10:07.729
+Vijay Chaganti: Yeah, yeah, 0 duplicates we found. And a lot of missing data.
+
+91
+00:10:07.970 --> 00:10:08.770
+Vikesh K: Yes.
+
+92
+00:10:09.520 --> 00:10:11.090
+Vikesh K: Okay. Outliers.
+
+93
+00:10:11.290 --> 00:10:11.940
+Vikesh K: Someone wrote.
+
+94
+00:10:13.350 --> 00:10:14.530
+shashi: Find out, less.
+
+95
+00:10:14.800 --> 00:10:16.640
+Vikesh K: Yeah, okay.
+
+96
+00:10:16.640 --> 00:10:19.319
+Ravi Duvvuri: And 0 values. Also, there is some.
+
+97
+00:10:20.444 --> 00:10:22.920
+Vijay Chaganti: Infinite value and.
+
+98
+00:10:22.920 --> 00:10:28.989
+Ravi Duvvuri: This was 0 for a few of them. So you know, I ended up realizing and removing that so.
+
+99
+00:10:29.000 --> 00:10:30.679
+Vikesh K: Yeah, that's cool, lovely.
+
+100
+00:10:32.687 --> 00:10:37.599
+Vijay Chaganti: I think new data point like inf or infinite value in some of the cells.
+
+101
+00:10:38.130 --> 00:10:38.820
+Vikesh K: Okay.
+
+102
+00:10:41.990 --> 00:10:42.660
+Vikesh K: Food.
+
+103
+00:10:46.400 --> 00:10:48.080
+Vikesh K: Anything else. Yet.
+
+104
+00:10:51.868 --> 00:10:58.680
+shashi: Nikesh. I noticed one thing. So when I did a unique value of the win numbers
+
+105
+00:10:59.983 --> 00:11:05.850
+shashi: I got around 120,000 unique numbers given
+
+106
+00:11:05.910 --> 00:11:11.714
+shashi: it could be sold multiple times at different price points. I did a query on
+
+107
+00:11:12.280 --> 00:11:15.229
+shashi: price year as well as the win numbers.
+
+108
+00:11:15.400 --> 00:11:25.089
+shashi: Still, there are only 120,000 approximately that much unique to this one. Should I go ahead and keep only that much, and delete the rest.
+
+109
+00:11:26.280 --> 00:11:34.350
+Vikesh K: So see, it depends. This is like, you know, one of the things you would have to understand is whether, 1st of all, win number is even important.
+
+110
+00:11:37.580 --> 00:11:39.219
+Vikesh K: Like, maybe the
+
+111
+00:11:39.480 --> 00:12:07.860
+Vikesh K: if, if you obviously I'm not expert in the how things work in us. But if you ask me, on the face of it. I think maybe it's not important, right? But maybe you know someone who is a secondhand car dealer and has some. If if they can extract some relevant information from win number maybe win number becomes very interesting. So one of the ways to figure it out is in data. If you think there is some valuable information which correlates with price.
+
+112
+00:12:08.250 --> 00:12:12.709
+Vikesh K: then maybe win number has a use case, and you can, you know, delve deep into it.
+
+113
+00:12:12.710 --> 00:12:15.119
+Manish Goenka: I think the question. Maybe you're asking.
+
+114
+00:12:15.120 --> 00:12:36.589
+shashi: What I was trying to say is, this 120,000 unique win numbers that has been replicated multiple times. So the price year as well as win number, are duplicated across. I think they've just copied across and change the other features to make it. 500,000 records kind of thing. So how will that? I was wondering, how will that impact the
+
+115
+00:12:36.968 --> 00:12:45.619
+shashi: model quality because it will be duplicate records. So I was just thinking along those lines, not a win number per se. Finally I dropped the win number
+
+116
+00:12:46.679 --> 00:12:54.609
+shashi: but I didn't delete the unique this one. So I think my quality of the data is bad in that way.
+
+117
+00:12:57.270 --> 00:13:01.079
+Raghavan Srinivasan: It, regardless of it. You are 100% right?
+
+118
+00:13:01.130 --> 00:13:11.780
+Raghavan Srinivasan: What you're saying, Shashi. I face the same thing also. What I have done is, I have selected only few columns like that that really matters to the price
+
+119
+00:13:11.820 --> 00:13:17.500
+Raghavan Srinivasan: which is like you know, the automated reading year model.
+
+120
+00:13:17.952 --> 00:13:27.669
+Raghavan Srinivasan: That kind of stuff. I picked a handful of columns, and only that features are the only thing we are doing other things. It is not making any sense. So that why include it in the model?
+
+121
+00:13:27.700 --> 00:13:30.040
+Raghavan Srinivasan: It's not going to influence the price so
+
+122
+00:13:30.580 --> 00:13:34.999
+Raghavan Srinivasan: correct. So that is, that is where we had the data.
+
+123
+00:13:35.363 --> 00:13:40.070
+Raghavan Srinivasan: The feature selection process, you know. Go through all the data and figure it out.
+
+124
+00:13:40.730 --> 00:13:42.060
+Raghavan Srinivasan: All those stuff. Okay?
+
+125
+00:13:42.390 --> 00:13:45.140
+Raghavan Srinivasan: Thanks. Sheshi. That's a good point. Your opinions.
+
+126
+00:13:45.470 --> 00:13:45.785
+shashi: Yeah.
+
+127
+00:13:46.100 --> 00:13:53.379
+Vikesh K: Okay, I see this. What you have been highlighting is that you have multiple win numbers, and all of them have the same price.
+
+128
+00:13:54.980 --> 00:14:00.430
+Vikesh K: Many of the values also are the same, but the region is different. Right.
+
+129
+00:14:00.430 --> 00:14:00.880
+shashi: Correct.
+
+130
+00:14:00.880 --> 00:14:09.160
+Vikesh K: So is this the case. The vin number is given by. So maybe what I understand this win number is given by a company.
+
+131
+00:14:09.250 --> 00:14:14.549
+Vikesh K: for example, Ford, and maybe they are selling this in different regions for the same price
+
+132
+00:14:14.580 --> 00:14:17.050
+Vikesh K: is, would that be a sensible way.
+
+133
+00:14:17.050 --> 00:14:22.590
+shashi: Vin number is unique. Id. It's a globally unique Id, for every vehicle has that number.
+
+134
+00:14:23.480 --> 00:14:30.499
+Vikesh K: Okay? So then, yeah, so then, this is an issue in the data, right?
+
+135
+00:14:33.400 --> 00:14:37.359
+Vikesh K: for example, I checked one, I will check another quickly.
+
+136
+00:14:37.700 --> 00:14:41.350
+Vikesh K: So in this one all of them have the same price. Right.
+
+137
+00:14:41.350 --> 00:14:42.020
+shashi: Yeah.
+
+138
+00:14:42.512 --> 00:14:44.479
+Vikesh K: Let's check another one.
+
+139
+00:14:52.910 --> 00:14:56.279
+Vikesh K: This is all the same same model.
+
+140
+00:15:04.830 --> 00:15:07.167
+Vikesh K: So one thing you can also do, then,
+
+141
+00:15:09.650 --> 00:15:17.030
+Vikesh K: so, for example, if you drop the vin number, I believe then there would be. It will show Lot many duplicates in the data set. Then.
+
+142
+00:15:17.650 --> 00:15:18.190
+shashi: Yeah.
+
+143
+00:15:18.330 --> 00:15:31.720
+Vikesh K: Right. Let's try this. No, but it won't show duplicates, because region is different for all of them. So if I drop win, and if I drop a region, then ideally, if it's duplicate, then maybe we can drop some of these rows.
+
+144
+00:15:32.580 --> 00:15:44.630
+Vikesh K: That could be one way of dealing with this. Obviously we have a you know this. I'm I'm just having a glance at it. But I would need to check this, for let's say some top of them, and how many of them have
+
+145
+00:15:44.920 --> 00:15:48.780
+Vikesh K: value which is getting repeated across of
+
+146
+00:15:49.240 --> 00:15:51.259
+Vikesh K: one second? There are people in the waiting room.
+
+147
+00:15:52.080 --> 00:15:59.439
+Vijay Chaganti: Shouldn't we treat the duplicate if all the cells in 2 different rows are equal.
+
+148
+00:16:01.200 --> 00:16:04.530
+shashi: If we drop the id column, then around
+
+149
+00:16:05.500 --> 00:16:10.030
+shashi: 70,000 rows gets knocked out. If I delete the id column
+
+150
+00:16:10.180 --> 00:16:15.100
+shashi: so duplicate across all the columns. Roughly, 70,000 goes off.
+
+151
+00:16:15.890 --> 00:16:23.249
+Vikesh K: Yeah, so see, Id, in any case, could be randomly generated right? Just one row. And then you adding, giving it a name.
+
+152
+00:16:23.290 --> 00:16:29.590
+Vikesh K: So so you, when in any case, when you look at the duplicates, you have to ideally drop
+
+153
+00:16:29.650 --> 00:16:40.780
+Vikesh K: id. And then now, for example, Sashi also highlighted this win number. So maybe that's another aspect. What you need to look into before you, you know, really conclude.
+
+154
+00:16:40.790 --> 00:16:42.830
+Vikesh K: do you have duplicates or not?
+
+155
+00:16:43.350 --> 00:16:46.299
+Vikesh K: Right? So that's important. I will add this.
+
+156
+00:16:52.050 --> 00:16:53.500
+Vikesh K: okay, and
+
+157
+00:17:04.839 --> 00:17:05.550
+Vikesh K: food.
+
+158
+00:17:05.960 --> 00:17:09.559
+Vikesh K: This is good. At least all of you are putting in
+
+159
+00:17:09.619 --> 00:17:31.139
+Vikesh K: going deep into the data set and trying to understand what you know, what problems it could have. But essentially, if you think about it, the same data set. This is just a repetition of information, then right. If I drop the win, and if I drop the region, because only thing which is different is region and id which maybe is not very important.
+
+160
+00:17:31.350 --> 00:17:39.480
+Vikesh K: All of them have the same price, and every other detail is the same. So maybe you can effectively reduce your data set.
+
+161
+00:17:42.620 --> 00:17:46.240
+Vikesh K: I think maybe one row in this you have 235 rows here.
+
+162
+00:17:46.730 --> 00:17:50.699
+Vikesh K: I think this can be reduced to one row. Yeah, 235.
+
+163
+00:17:52.280 --> 00:17:54.482
+Vikesh K: So please look into these cases.
+
+164
+00:17:55.040 --> 00:17:57.568
+Vikesh K: how many unique win you said.
+
+165
+00:17:59.760 --> 00:18:03.170
+shashi: Roughly 120 K. Vikesh.
+
+166
+00:18:03.510 --> 00:18:04.180
+Vikesh K: Okay.
+
+167
+00:18:05.680 --> 00:18:06.380
+shashi: Yeah.
+
+168
+00:18:06.690 --> 00:18:10.620
+Chintan Gandhi: There are multiple Nas also. So null values are many.
+
+169
+00:18:11.020 --> 00:18:12.100
+Vikesh K: Okay. Oh.
+
+170
+00:18:13.930 --> 00:18:16.680
+Vikesh K: Yeah, there's a good amount of repetition at a win level.
+
+171
+00:18:17.130 --> 00:18:17.660
+shashi: Yeah.
+
+172
+00:18:18.810 --> 00:18:27.289
+Vijay Chaganti: Yeah, in this scenario, right? Whether I mean what? What would be our target to clean up every duplicate, you know.
+
+173
+00:18:27.660 --> 00:18:36.699
+Vijay Chaganti: and missing data, if you, if you clean up everything right, this entire data set is becoming almost 20% of the given data set.
+
+174
+00:18:36.930 --> 00:18:41.450
+Vijay Chaganti: should we? Should we try with that? Or should we keep all these duplicate.
+
+175
+00:18:41.450 --> 00:18:44.502
+Vikesh K: So that could be one way. See again, it depends on
+
+176
+00:18:46.870 --> 00:18:51.352
+Vikesh K: the main element, which is different. Here is the region. Alright.
+
+177
+00:18:52.070 --> 00:18:56.430
+Vikesh K: when, in any case I don't think it should be used in the model
+
+178
+00:18:57.036 --> 00:19:12.659
+Vikesh K: but region can be used. For example, sometimes, you know, if you're selling a car, let's say, in San Francisco, or I believe that's what the region stands here for. So the selling your you're selling a car in San Francisco versus, let's say, somewhere in Michigan these things might matter.
+
+179
+00:19:14.320 --> 00:19:15.830
+Vikesh K: but this.
+
+180
+00:19:17.100 --> 00:19:24.109
+Chintan Gandhi: There are even 2526,000 distinct regions are there? I think we should focus on state.
+
+181
+00:19:27.710 --> 00:19:30.039
+Vikesh K: One second, let's check this.
+
+182
+00:19:32.050 --> 00:19:37.670
+Vikesh K: I will check the state and region.
+
+183
+00:19:37.730 --> 00:19:40.460
+Vikesh K: And we can be show there.
+
+184
+00:19:50.610 --> 00:19:51.330
+Vikesh K: Okay.
+
+185
+00:19:56.880 --> 00:20:04.969
+Vikesh K: yeah, I think it's for example. Just for this, you have 2 states.
+
+186
+00:20:05.900 --> 00:20:15.050
+Vikesh K: 2 or 3 states, I believe. And then, yeah, essentially, that's the only information which keeps changing rest of the information, I believe, remains the same. So if I add
+
+187
+00:20:15.410 --> 00:20:16.650
+Vikesh K: price to it.
+
+188
+00:20:17.694 --> 00:20:33.899
+Vikesh K: Yeah, the information there remains the same, and state and region are different. So okay. So how? How? I would say in, let's say, if this was a company data set, you know, you know, you're part of a company. And this was a company data set. You had the
+
+189
+00:20:34.384 --> 00:20:42.010
+Vikesh K: luxury of reaching out to the team who generated this data for you, and then you could have asked them. You know why, at the data is in this case
+
+190
+00:20:42.230 --> 00:20:48.989
+Vikesh K: here, what you can treat this as a scenario of a bad data, and you can actually drop it
+
+191
+00:20:49.100 --> 00:20:53.120
+Vikesh K: so as long as you state those assumptions and do it accordingly.
+
+192
+00:20:53.476 --> 00:21:09.500
+Vikesh K: I think at least I would be fine with that. There's no right or wrong in this case, maybe. But it's it's like, you know, these are the assumptions you have taken about the data. This is the problem which you have figured out. And then you're reducing those the complete data set which you have
+
+193
+00:21:09.530 --> 00:21:15.630
+Vikesh K: to a unique data set right and building a model on top of it, because otherwise.
+
+194
+00:21:15.910 --> 00:21:28.580
+Ravi Duvvuri: I think another point is if this maybe they didn't put the sale information, sale, date or something. But if the vehicle is sold in multiple states, you can very well have a duplicate records of win number
+
+195
+00:21:28.870 --> 00:21:31.620
+Ravi Duvvuri: all those things. So if you end up dropping
+
+196
+00:21:31.750 --> 00:21:41.080
+Ravi Duvvuri: like region or state, then you end up having more duplicates, and then you'll clean up more duplicates. Then your data size is going to be like gone right?
+
+197
+00:21:41.280 --> 00:21:53.770
+Ravi Duvvuri: So in my scenario, like I didn't remove those ones, because for the same reason that they are important. So that's just my point of view. There, dropping region and state.
+
+198
+00:21:54.850 --> 00:22:04.239
+Vikesh K: Okay, yeah, I I need to that that check. I would also need to do if if we drop all these things, whether how many duplicates we are left with.
+
+199
+00:22:04.290 --> 00:22:08.680
+Vikesh K: It can be the case, maybe 3. And
+
+200
+00:22:09.260 --> 00:22:27.890
+Vikesh K: but this is bit weird that the win number is being repeated across multiple levels. Right? If it's like Shashi said, this is like a very unique identity. I thought, maybe this is given at a manufacturer level. Hence, maybe there is a repetition. But if every car that a company makes that has a unique win number.
+
+201
+00:22:28.390 --> 00:22:30.680
+Vikesh K: then yeah, this looks like.
+
+202
+00:22:30.680 --> 00:22:42.180
+Manish Goenka: Also, this is used car sales data, right? It's not like new car. A new car was created, and it could have been sold in so many states it's really used car. It could be only sold in its life 3 or 4 times.
+
+203
+00:22:42.430 --> 00:22:42.840
+Vijay Chaganti: Yep.
+
+204
+00:22:42.840 --> 00:22:46.300
+Manish Goenka: Right? So it seems definitely duplicate.
+
+205
+00:22:47.390 --> 00:22:50.000
+Ravi Duvvuri: Yeah, when I agree, I I removed that.
+
+206
+00:22:50.790 --> 00:22:58.859
+shashi: Also the odometer reading is the same across all the instances. So it it is. If the odometer has changed, you know it has run for certain time.
+
+207
+00:22:58.980 --> 00:23:02.810
+shashi: and then there is a mileage increase or something like that, but it doesn't show that.
+
+208
+00:23:03.610 --> 00:23:05.000
+Manish Goenka: It's a good catch. Yeah.
+
+209
+00:23:05.250 --> 00:23:12.070
+Raghavan Srinivasan: No, the what I saw is that like Vignesh? Said, Sashi and Hari.
+
+210
+00:23:12.120 --> 00:23:32.849
+Raghavan Srinivasan: what I said that this is a practical application. It is a are we using? Drop drop in a, are we using duplicates? Are we using the The features that are taught in the class that how you should prepare your data, how you should prepare your modeling, and how you should calculate the accuracy.
+
+211
+00:23:32.850 --> 00:23:47.400
+Raghavan Srinivasan: That is what is more important in this to show them than the results. That's why I took this approach. I looked at it several times. I went through. That's where it took me 2 days to understand the data, to say that. Oh, you know what?
+
+212
+00:23:47.510 --> 00:23:53.250
+Raghavan Srinivasan: They don't want us to really figure out a true model here they are asking us to see whether
+
+213
+00:23:53.470 --> 00:23:56.940
+Raghavan Srinivasan: show us what you learned. That's the approach I have taken so.
+
+214
+00:23:57.510 --> 00:24:00.372
+shashi: Yeah, same here. Even. I was actually started
+
+215
+00:24:01.500 --> 00:24:08.019
+shashi: generating the charts and read that. Read me that. Md, I started preparing. Otherwise I will not be able to submit in time.
+
+216
+00:24:08.200 --> 00:24:18.370
+shashi: So I I thought, I'll start doing that one at least, cause I know. This, we have to draw some line somewhere and stop working on the project model building and then
+
+217
+00:24:18.780 --> 00:24:23.780
+shashi: go trying to improve the accuracy and kind of suggested
+
+218
+00:24:24.510 --> 00:24:26.880
+shashi: model. And now I'm putting the things together.
+
+219
+00:24:27.330 --> 00:24:35.050
+shashi: But I would like I wanted to understand the dynamics of the data and get some additional insights so that it's nice chatting with you all.
+
+220
+00:24:35.950 --> 00:24:45.719
+Manish Goenka: Nikesh a couple. There are fields like condition and cylinders and size of the car that have, like 40 70% data missing
+
+221
+00:24:45.750 --> 00:24:52.880
+Manish Goenka: in the columns. What would it be? The general guidance when you have such a big percentage of data that's missing.
+
+222
+00:24:54.840 --> 00:24:58.176
+Vikesh K: Wow! There are so many duplicates. Okay, so for that,
+
+223
+00:25:00.802 --> 00:25:06.439
+Manish Goenka: 40% of the, you know, rows don't have any value in those cells.
+
+224
+00:25:06.720 --> 00:25:21.379
+Vikesh K: Yeah. Yeah. So 1 1. So what I would say, maybe make 1st make a baseline model not including those columns. Right? You you use the other columns, which there are not any missing values, and make a baseline model and see what your results look like. What is your Rmsc.
+
+225
+00:25:21.450 --> 00:25:26.510
+Vikesh K: The next step. What I can suggest is, you know, you use a computer.
+
+226
+00:25:26.680 --> 00:25:42.020
+Vikesh K: which is you impute those values. Now, 40% is missing, which is a good number. So if you, you know, drop all the rows. That means you're already losing 40% of your data, which is quite dangerous. So then, what you can do is, for example, use imputers like Knn imputed.
+
+227
+00:25:42.230 --> 00:25:45.529
+Vikesh K: which are slightly more sophisticated than.
+
+228
+00:25:45.660 --> 00:25:49.759
+Vikesh K: for example, your Median imputation or your mean imputation.
+
+229
+00:25:50.230 --> 00:25:52.770
+Vikesh K: and see if that improves your results.
+
+230
+00:25:53.402 --> 00:26:03.389
+Vikesh K: So I, what I would suggest in this case is, you know, this is more of a like hidden experimentation. You have to make a baseline. 1st thing is make a baseline.
+
+231
+00:26:03.700 --> 00:26:11.320
+Vikesh K: then you start doing one. You know you do all these feature engineering imputed. Then you again make a baseline and see how the needle moves.
+
+232
+00:26:11.440 --> 00:26:15.150
+Vikesh K: Right? Maybe if it doesn't move a lot
+
+233
+00:26:15.830 --> 00:26:20.309
+Vikesh K: you don't need to go very sophisticated, you know. Go for very sophisticated
+
+234
+00:26:21.760 --> 00:26:24.229
+Vikesh K: feature imputation techniques than there.
+
+235
+00:26:25.610 --> 00:26:27.499
+Chintan Gandhi: Vikesh? I had one question.
+
+236
+00:26:27.500 --> 00:26:35.010
+Vikesh K: Just one second, one second. Denali has raised his hand for a very long time. I just want to cover. Go to him. Then we can go to others. Denali.
+
+237
+00:26:35.010 --> 00:26:35.740
+Denali Carpenter: Thank you.
+
+238
+00:26:35.870 --> 00:26:42.890
+Denali Carpenter: Yeah. So I was just gonna say, since each id was unique, like, if you keep it in the data set, each id is unique. I treated it
+
+239
+00:26:43.100 --> 00:26:52.679
+Denali Carpenter: as an experiment. So each id is a unique case. So if the variables are the same, it's just like you had an experiment where the result was the same.
+
+240
+00:26:52.710 --> 00:26:59.469
+Denali Carpenter: The reason, I think, that the vin is duplicated is this, is probably a simulated data set from that 3 million rows
+
+241
+00:26:59.480 --> 00:27:01.229
+Denali Carpenter: right? So Vin probably got
+
+242
+00:27:01.666 --> 00:27:10.120
+Denali Carpenter: it was probably like sample with replacement. So it probably got jumped draw to dropped in there a bunch of times, so I wouldn't worry about. Then I would just drop it
+
+243
+00:27:10.240 --> 00:27:15.780
+Denali Carpenter: because I think that it's a function of the sample of the larger data set.
+
+244
+00:27:16.960 --> 00:27:20.132
+Vikesh K: Could be. Yeah, that's a good point. That could be
+
+245
+00:27:20.960 --> 00:27:28.009
+Vikesh K: That's why I would say, because we don't have the we don't really know about what has happened with the data.
+
+246
+00:27:28.070 --> 00:27:39.449
+Vikesh K: So if you take a sort of a logical assumption here, either, you know, let's say you think, for example, I when I drop id when and region, and then I check for duplicates.
+
+247
+00:27:39.470 --> 00:27:51.890
+Vikesh K: I find 1, 27 k duplicates at least in this. Maybe if I start digging deep more. There can be other scenarios, but at least 1 27 out of, and we had 480 k. Right.
+
+248
+00:27:51.890 --> 00:27:52.810
+Manish Goenka: 4, 20.
+
+249
+00:27:53.010 --> 00:27:57.439
+Vikesh K: 4 20. So so this is already a big chunk here. So
+
+250
+00:27:58.030 --> 00:28:18.609
+Vikesh K: we will drop that. And I think that's also fair enough. Right you. You make this assumption that the information is wrong. It's unnecessarily being repeated, and it's not useful. And you want to make a model with the rest of it, or Denali. How you how you said, maybe you approach it like this, I think either way is fine. There's no like someone said.
+
+251
+00:28:18.700 --> 00:28:24.399
+Vikesh K: It's more about the approach. It's more about making a mental model of how you would approach these problems
+
+252
+00:28:24.500 --> 00:28:31.459
+Vikesh K: rather than you know, getting the best accuracy result at this stage. That's not the main purpose at this stage.
+
+253
+00:28:31.620 --> 00:28:41.000
+Vikesh K: What we want is, you have figured out part one. How do you do data analysis data cleaning, then part 2, you learn some of the basic algorithms.
+
+254
+00:28:41.080 --> 00:28:43.969
+Vikesh K: How do you take these 2 steps and put it together?
+
+255
+00:28:44.370 --> 00:29:08.079
+Vikesh K: Okay, before we move to the rest of the course, which is you start using sophisticated algorithms. Okay, so that will come later. But what professors want is at this stage, can you figure out these things. Because that's where, by the way, in real life also, that's where most of the discussion and debate happens. You know how, why the data is messy. How should you clean it? You know nobody will give you a clean data set. You
+
+256
+00:29:08.090 --> 00:29:10.639
+Vikesh K: often have a messy data set in real life.
+
+257
+00:29:10.710 --> 00:29:25.829
+Vikesh K: and I believe that's 1 of the reasons Professor has given such a messy data set here. But then it's up to you. How do you want to do it and assume it like, approach it as long as you follow some logical steps, and you have some, you know, sound assumptions. It should be fine.
+
+258
+00:29:27.070 --> 00:29:31.839
+Vikesh K: Yeah, cool, I think, Chintan. Yes.
+
+259
+00:29:32.174 --> 00:29:39.869
+Chintan Gandhi: I think I had. One question is in the pre-processing. I remember that sometimes we do this logarithm of a numerical value.
+
+260
+00:29:39.950 --> 00:29:55.359
+Chintan Gandhi: but also there is one option of doing the normalization or the scalar normalization, something so which also shrinks the value between 0 and one sort of thing. So which is the one that we need to do first? st And what when can we pick one over the other?
+
+261
+00:29:56.510 --> 00:30:04.730
+Vikesh K: Okay? So the log one often we do it for the Via value which you're trying to predict right to just to make it normalized.
+
+262
+00:30:05.530 --> 00:30:16.910
+Vikesh K: You know, if it has a skewed distribution, we often try to normalize it. And so that maybe linear regression methods work better. The standardization often happens at a
+
+263
+00:30:17.820 --> 00:30:22.890
+Vikesh K: XY, the basically your independent values right? You want to.
+
+264
+00:30:22.940 --> 00:30:27.669
+Vikesh K: although what what I understand and what I see, what I've seen, is it? It won't.
+
+265
+00:30:27.880 --> 00:30:32.860
+Vikesh K: I don't think it will produce a dramatic difference when you're doing linear regression.
+
+266
+00:30:34.150 --> 00:30:44.249
+Vikesh K: but what it will do it will reduce the computation time. Often it will reduce the computation time, and then it's done because some of the models do require it.
+
+267
+00:30:44.470 --> 00:30:48.910
+Vikesh K: especially if you are using a model which is distance based, which I think
+
+268
+00:30:49.130 --> 00:31:06.860
+Vikesh K: Knn is one, and we will learn some of more of them which is support vector, machine. All of those are distance based, and they require you to do the standardization, you know, be at the equal space, like in the equal dimension.
+
+269
+00:31:07.230 --> 00:31:07.820
+Vikesh K: That's when.
+
+270
+00:31:07.820 --> 00:31:08.340
+Chintan Gandhi: Got it.
+
+271
+00:31:08.340 --> 00:31:09.000
+Vikesh K: Important.
+
+272
+00:31:09.000 --> 00:31:27.649
+Chintan Gandhi: Got it. So just in case if I if I understand correctly, like right now, we are trying to predict the price of the change so the price can be we can do, and log log on price. But for the others, like the odometer or the number of cylinders, I'm just giving an example. We can do the scalar values.
+
+273
+00:31:29.220 --> 00:31:30.020
+Vikesh K: Yes.
+
+274
+00:31:30.160 --> 00:31:30.900
+Vikesh K: Yeah.
+
+275
+00:31:31.960 --> 00:31:33.439
+Chintan Gandhi: Got it. Okay, thanks.
+
+276
+00:31:33.620 --> 00:31:39.129
+Vikesh K: Yeah. And if you what you can, you can also try is, let's say your autometer values are skewed.
+
+277
+00:31:39.360 --> 00:31:45.750
+Vikesh K: Do a lock transformation and see if that improves your output, your predictions
+
+278
+00:31:46.100 --> 00:31:53.370
+Vikesh K: right? That that's more of a that's like you're you're doing some feature engineering there. And it's more of an experimentation. Because, remember.
+
+279
+00:31:53.570 --> 00:31:59.890
+Vikesh K: theory gives you, at least in machine learning. Theory gives you some broad guidelines on how things should be done.
+
+280
+00:31:59.920 --> 00:32:06.730
+Vikesh K: But each data set is unique. The like this data set has got. How many row columns are there? Once
+
+281
+00:32:08.740 --> 00:32:27.259
+Vikesh K: you have 18 columns? Right? So you know, if you think in terms of matrix. This is a huge hyperplane in which there are 18 dimensions or 17 dimension, one dimension. One thing you have to figure out how these send 17 dimensions. The numbers interact with each other. You don't really know
+
+282
+00:32:27.530 --> 00:32:33.730
+Vikesh K: unless you try it out. So so I don't think.
+
+283
+00:32:33.730 --> 00:32:46.499
+Chintan Gandhi: In case, even if we do the logarithm of odometer, then we are. Are we supposed to even do it? The scalar value of it later, if if we want to, or once it's logged and no scalar.
+
+284
+00:32:49.610 --> 00:32:58.039
+Vikesh K: I think if you see 1, 1 beautiful thing which happens with the standardization is this, out? The broad outline and shape won't change.
+
+285
+00:32:58.590 --> 00:33:05.202
+Vikesh K: Okay, but with the when you do the log, the shape changes. So let's say, if you're
+
+286
+00:33:05.590 --> 00:33:10.230
+Vikesh K: data set is like this, all right, it will remain like this
+
+287
+00:33:10.320 --> 00:33:17.459
+Vikesh K: when you do it as standardization, only the numbers will change. Right? Let's say this is from 100 to 300.
+
+288
+00:33:17.560 --> 00:33:25.040
+Vikesh K: This might be, let's say from one to 5 units. Okay, this is the scaling will change, but the shape broadly remains the same.
+
+289
+00:33:25.130 --> 00:33:26.700
+Vikesh K: What log does?
+
+290
+00:33:26.930 --> 00:33:35.629
+Vikesh K: If this is your data set, it might turn into this after doing the log transformation, you know, it will become a normal, normally distributed.
+
+291
+00:33:35.730 --> 00:33:38.589
+Chintan Gandhi: So that can be helpful. Right? So.
+
+292
+00:33:39.230 --> 00:33:41.280
+Vikesh K: If you have done log
+
+293
+00:33:41.400 --> 00:33:48.090
+Vikesh K: right, and then you want to do standardization. I think that so it will just remain the same. So you can do that.
+
+294
+00:33:48.580 --> 00:33:50.129
+Vikesh K: There's no harm in that.
+
+295
+00:33:50.330 --> 00:33:51.520
+Chintan Gandhi: Got it makes sense. Okay.
+
+296
+00:33:51.520 --> 00:33:53.929
+Vikesh K: If you want to bring all of them on the same scale.
+
+297
+00:33:55.960 --> 00:33:56.560
+Chintan Gandhi: Thanks, Sukesh.
+
+298
+00:33:56.560 --> 00:34:00.509
+Denali Carpenter: If if we transform our Y variable.
+
+299
+00:34:00.710 --> 00:34:06.720
+Denali Carpenter: can we? Do we want to use that in the Eda, or do we want to? Primarily. Just look at why.
+
+300
+00:34:07.690 --> 00:34:18.600
+Vikesh K: Ideally first, st especially when you are trying to interpret it, especially for the business. Right? So I would say, do your normal Eda with the
+
+301
+00:34:19.181 --> 00:34:25.759
+Vikesh K: normal numbers, and then, because the log is mainly done for the modeling purposes to fit.
+
+302
+00:34:25.760 --> 00:34:26.270
+Denali Carpenter: Gotcha.
+
+303
+00:34:26.510 --> 00:34:39.620
+Vikesh K: You know, to fit the data set properly to fit them all properly to a data set. So these 2 serve different purposes, because even if you do a log, and then you try to explain it to your business stakeholders, that would be a very difficult.
+
+304
+00:34:39.620 --> 00:34:41.439
+Denali Carpenter: Yeah, that's that's fair.
+
+305
+00:34:41.710 --> 00:34:42.360
+Vikesh K: Yeah.
+
+306
+00:34:42.360 --> 00:34:43.030
+Denali Carpenter: Thank you.
+
+307
+00:34:43.969 --> 00:34:48.266
+Vikesh K: Okay, cool. So we we jumped little ahead. But
+
+308
+00:34:48.839 --> 00:34:55.629
+Vikesh K: Sashi and others. Thank you for highlighting these things. I will. Just so you know where I've added all these points here.
+
+309
+00:34:55.749 --> 00:34:58.379
+Vikesh K: I think the spelling is wrong. I will correct it
+
+310
+00:34:58.849 --> 00:35:03.579
+Vikesh K: on the Eda part. So let's if any other point on the data quality which you want to highlight.
+
+311
+00:35:07.440 --> 00:35:15.529
+Ravi Duvvuri: We need to make the year as integers, because that's showing us quote, right? So that's what.
+
+312
+00:35:16.140 --> 00:35:22.986
+Ravi Duvvuri: And same thing another variable I found as float, I believe.
+
+313
+00:35:24.790 --> 00:35:30.589
+Ravi Duvvuri: I think it's the yeah. I think that's the one here was showing up as
+
+314
+00:35:30.940 --> 00:35:33.019
+Ravi Duvvuri: float. So I changed it to integer.
+
+315
+00:35:33.760 --> 00:35:41.060
+Vikesh K: Okay. So here is as float and change to integer. Okay, I don't think it will make a dramatic difference, but we can do that.
+
+316
+00:35:41.340 --> 00:35:42.170
+Vikesh K: Yes.
+
+317
+00:35:42.910 --> 00:35:48.390
+Vikesh K: so unique, vin number, and all those things you have to. You have to look any any other thing.
+
+318
+00:35:52.370 --> 00:35:54.275
+shashi: Or drive, and
+
+319
+00:35:55.170 --> 00:36:00.430
+shashi: size of the vehicle, so that also we can drop. I think too many missing values in that.
+
+320
+00:36:01.810 --> 00:36:06.520
+Vikesh K: Drive and size as missing values.
+
+321
+00:36:08.140 --> 00:36:14.310
+shashi: Going, even though drive and size may have a Oh.
+
+322
+00:36:14.450 --> 00:36:22.170
+shashi: what do you call the import important features for price prediction? Normally you would consider them as part of your
+
+323
+00:36:22.290 --> 00:36:27.578
+shashi: pricing this one. But randomly, updating the size and
+
+324
+00:36:29.050 --> 00:36:36.200
+shashi: type of the vehicle, whether it is a Suv or a compact sedan, or whatever, so it may not be appropriate.
+
+325
+00:36:37.020 --> 00:36:40.430
+Vikesh K: Okay, okay, cool. So pointed it out.
+
+326
+00:36:40.640 --> 00:36:46.319
+Manish Goenka: Another. vikesh, would it make sense to convert the year to
+
+327
+00:36:46.790 --> 00:36:58.339
+Manish Goenka: age of the car? Because seems like it's you know it's a 2,008 model and data sets goes from 2,008 to 2,022 in terms of years, 2,009 to 22.
+
+328
+00:36:58.390 --> 00:37:03.330
+Manish Goenka: So if something is 2,009, would that should we just consider that as a 13 year old car? Because that'll
+
+329
+00:37:03.810 --> 00:37:06.559
+Manish Goenka: that will then determine, you know, have an impact on the price.
+
+330
+00:37:06.780 --> 00:37:08.680
+Vikesh K: Yeah, so that's very good point.
+
+331
+00:37:08.780 --> 00:37:16.599
+Vikesh K: Only doubt which I have. I don't remember whether this year is year of manufacturing or a year of selling the car.
+
+332
+00:37:17.816 --> 00:37:20.099
+Manish Goenka: Does anyone know about that?
+
+333
+00:37:20.900 --> 00:37:22.850
+Manish Goenka: It just says, Here.
+
+334
+00:37:22.850 --> 00:37:24.010
+Raghavan Srinivasan: It is not a sales day.
+
+335
+00:37:24.010 --> 00:37:25.990
+Manish Goenka: Your manufacturer model.
+
+336
+00:37:26.110 --> 00:37:29.188
+Manish Goenka: So I thought, it's going to be that year.
+
+337
+00:37:29.790 --> 00:37:32.650
+shashi: Yeah, even I assumed a year of manufacture.
+
+338
+00:37:34.920 --> 00:37:41.119
+Vijay Chaganti: Doesn't that act as a bias to the data like here? How it is going to be treated here.
+
+339
+00:37:41.120 --> 00:37:50.521
+shashi: No, because there are certain year. I mean, if you look at the older data, there are cars which are from 1,91922, I think, if I'm not mistaken, there are
+
+340
+00:37:50.800 --> 00:37:57.890
+shashi: old vintage cars also, where the price is high, even though they are old, some of them manufactured in 19 forties they have a higher price.
+
+341
+00:37:58.640 --> 00:38:03.449
+shashi: So the year, I think, 1949 will be the year of manufacture. I would assume.
+
+342
+00:38:04.440 --> 00:38:07.294
+Manish Goenka: And 20 year old car right
+
+343
+00:38:08.570 --> 00:38:16.099
+Vikesh K: Yeah. So this I even, I believe then what Shashi says, because there's minimum is 1,900 maximum is 2,022.
+
+344
+00:38:16.290 --> 00:38:20.639
+Vikesh K: I believe this would be yeah, year of manufacturing then.
+
+345
+00:38:20.730 --> 00:38:40.649
+Vikesh K: rather than selling. So yes, you can. You can use that to calculate an average age column. Right? You can do feature, engineering, use age and fit that. Put that in the model and see how what kind of results it gives you. Right that that can be one experiment, one feature engineering, all of you can do that.
+
+346
+00:38:40.950 --> 00:38:43.390
+Ravi Duvvuri: But if we do, the outlier
+
+347
+00:38:43.430 --> 00:38:49.880
+Ravi Duvvuri: the analysis right, we can get rid of those outliers right? We don't need to change thing right.
+
+348
+00:38:50.540 --> 00:38:51.750
+Vikesh K: Yes, yes.
+
+349
+00:38:51.900 --> 00:38:52.770
+Ravi Duvvuri: Yeah.
+
+350
+00:38:52.770 --> 00:38:53.980
+Ravi Duvvuri: That's how I approached it.
+
+351
+00:38:54.110 --> 00:39:06.140
+Vikesh K: 1,900 can be. Yes, it can be an outlier, right? So so you know, maybe you drop it where you you know, you figure out the outliers of multiple columns. And maybe this 1 1 of this column gets dropped out.
+
+352
+00:39:06.270 --> 00:39:11.239
+Vikesh K: That can happen as well right you, because suddenly you have some around 100 years old car.
+
+353
+00:39:11.900 --> 00:39:18.420
+Vikesh K: and that may be because all the linear models get distorted by it. So that's something you need to be careful about.
+
+354
+00:39:19.230 --> 00:39:20.100
+Vikesh K: That'll be interesting.
+
+355
+00:39:20.100 --> 00:39:28.840
+Anu.Arun: Changing the year to age, does it add any value? Because if you scale that, it should look the same right, and the model will scale that.
+
+356
+00:39:29.970 --> 00:39:42.130
+Vikesh K: So what happens? You know, like I said you let's say you have a outlier in your data sets. Even when you scale it, the outliers will remain. Scaling doesn't really change whether they're out.
+
+357
+00:39:42.130 --> 00:39:46.069
+Anu.Arun: No, no, not about outliers. I'm just talking about converting year to age.
+
+358
+00:39:47.400 --> 00:39:51.231
+Anu.Arun: That that shouldn't matter right. We keep it as mathematically. It's
+
+359
+00:39:51.670 --> 00:39:56.240
+Anu.Arun: it's going to scale it, anyway, and in both cases you should see the same thing.
+
+360
+00:39:56.830 --> 00:39:57.729
+Anu.Arun: What's that.
+
+361
+00:39:58.220 --> 00:40:01.030
+Vikesh K: So sometimes what happens? You know.
+
+362
+00:40:01.520 --> 00:40:07.889
+Vikesh K: it just makes it more explicit. So, for example, let's say, you know, this is like a
+
+363
+00:40:08.000 --> 00:40:14.170
+Vikesh K: the price data which you have. It's also a behavioral data. Right? If I tell you it's a 20 years old car.
+
+364
+00:40:14.640 --> 00:40:42.380
+Vikesh K: or if I tell you, maybe it was built in 2020, or it was built in 2,000. Maybe the way you price it in your mind is different, right? And then the one way you can do this experiment is you convert this year into age, and then see if that helps your model. In any case, because you're explicitly calling out, because ultimately, that's what the calculation is about. Right? 2022, 2023. Maybe it's random. But when you look
+
+365
+00:40:42.430 --> 00:40:52.499
+Vikesh K: back, okay, I'm doing this analysis in 2024, and then this car is 20 years old. This car is 15 years old, so I would accordingly discount the price.
+
+366
+00:40:52.680 --> 00:40:55.409
+Vikesh K: So you're just making it much more explicit
+
+367
+00:40:55.530 --> 00:41:01.019
+Vikesh K: so that can work in your model it it can. You know, I'm saying this is more of a
+
+368
+00:41:02.200 --> 00:41:04.699
+Vikesh K: good hypothesis which you should test out
+
+369
+00:41:04.960 --> 00:41:09.169
+Vikesh K: feature engineering is, that's where maybe, you know, you try out all these things.
+
+370
+00:41:09.320 --> 00:41:13.009
+Vikesh K: You have to experiment and then see works out or not
+
+371
+00:41:13.050 --> 00:41:21.810
+Vikesh K: what you're saying. It's correct, Anu. You know. The information is in any case implicitly there, in the year of manufacturing you're just making it more explicit.
+
+372
+00:41:22.490 --> 00:41:25.240
+Vikesh K: Does that help answer your question?
+
+373
+00:41:26.301 --> 00:41:35.869
+Anu.Arun: Yeah, I guess. Yeah, I understand humanly, like, how we can relate to it better. But for the machine, I thought it should be the same. Yeah, yeah, I guess I see your point.
+
+374
+00:41:35.870 --> 00:41:37.640
+Vijay Chaganti: Vikash. I have one quick question.
+
+375
+00:41:37.840 --> 00:42:00.149
+Vijay Chaganti: If you assume that the year is 2024, and if you convert that into years, it will become 0 2023, and then it is in the descending order. But the A's will be in ascending order. How the model will treat if we keep the year as is, and use the model, and if you convert that into years and use it in model, one is descending and the other one is ascending order right?
+
+376
+00:42:01.600 --> 00:42:04.039
+Vikesh K: Yeah. So model that we will figure out right
+
+377
+00:42:05.176 --> 00:42:09.120
+Vikesh K: Obviously, you have to keep one of them. You don't. You don't keep both of them.
+
+378
+00:42:09.280 --> 00:42:18.769
+Vikesh K: Either you keep here. Either you keep H. Right, because essentially it's the same information, but the model will figure out if if it's in the case of age.
+
+379
+00:42:18.940 --> 00:42:22.090
+Vijay Chaganti: It knows, the larger the number.
+
+380
+00:42:22.550 --> 00:42:26.149
+Vikesh K: More discount you should give to the price, because it's a very old car then.
+
+381
+00:42:26.440 --> 00:42:34.400
+Vikesh K: but it it will figure out that if you have a year, which is 2,022, which is a big number compared to, let's say, 1,900.
+
+382
+00:42:34.510 --> 00:42:41.960
+Vijay Chaganti: The model will figure out, then it's an inverse relationship. When you have 2,022, you don't have to give so much discount to pricing.
+
+383
+00:42:42.290 --> 00:42:43.250
+Vikesh K: Compared to 20.
+
+384
+00:42:43.250 --> 00:42:49.300
+Vijay Chaganti: Is that if you take A's right, will it give more weightage to 0 A's, or will it give more weightage to
+
+385
+00:42:49.610 --> 00:42:50.570
+Vijay Chaganti: 10 years?
+
+386
+00:42:50.840 --> 00:42:53.119
+Vijay Chaganti: It should give more weightage to 0 right.
+
+387
+00:42:53.960 --> 00:42:59.100
+Vikesh K: No, see, that will depend on how. See, this is in relation with couple of other variables, as well.
+
+388
+00:42:59.100 --> 00:42:59.710
+Vijay Chaganti: Right.
+
+389
+00:42:59.890 --> 00:43:12.890
+Vikesh K: And the best way I can say theory in terms of theory, it should more or less be same. Maybe there is some certain advantage of having a price that, like, you know, age as 0. The car is brand new.
+
+390
+00:43:13.290 --> 00:43:29.610
+Vikesh K: but the best way is to validate it with the you know you fit the model, and then you see how the model reacts to it. You know what the model, the weightage it gives to it. But in theory, I think, at least for linear regression. It should treat it the same.
+
+391
+00:43:30.690 --> 00:43:36.770
+shashi: Yeah, when I plotted the scatter plot, it just shifts the it mirrors the image, I mean, if I plot it against the
+
+392
+00:43:36.790 --> 00:43:40.380
+shashi: price increases as the car ages
+
+393
+00:43:40.961 --> 00:43:49.248
+shashi: reducing, and if I scale it to age, as the age is younger, the price increases, so that's that will be the only difference. Otherwise,
+
+394
+00:43:49.940 --> 00:43:52.269
+shashi: it shouldn't make much of a difference.
+
+395
+00:43:52.950 --> 00:43:55.100
+Vikesh K: Okay, that's.
+
+396
+00:43:55.377 --> 00:43:57.872
+Manish Goenka: If I can ask one more just to clarify.
+
+397
+00:43:58.260 --> 00:44:13.060
+Manish Goenka: So we clean up all the data and then we do the train test split, and then we do feature engineering and imputation is that, did I get that right, that any feature, engineering and imputation should happen after the split is done with train test split.
+
+398
+00:44:14.910 --> 00:44:24.209
+Vikesh K: So it depends. So, for example, let's say you have to figure out the this year thing year. You're trying to calculate. You know you. You're using the year column to do the age
+
+399
+00:44:24.410 --> 00:44:27.219
+Vikesh K: that can happen before the split right.
+
+400
+00:44:27.431 --> 00:44:30.609
+Manish Goenka: Sorry. I mean more on filling missing values where you have to do like impute.
+
+401
+00:44:30.610 --> 00:44:36.330
+Vikesh K: Filling. Yeah, yes. Good point. Filling. Missing values should be done after the split.
+
+402
+00:44:36.680 --> 00:44:37.310
+Manish Goenka: Okay. Good.
+
+403
+00:44:38.540 --> 00:44:39.150
+Vikesh K: Okay.
+
+404
+00:44:39.460 --> 00:44:40.519
+Manish Goenka: Oh, my God! Thanks.
+
+405
+00:44:41.610 --> 00:44:44.369
+Vikesh K: So I will also. Now that we are discussing, I will.
+
+406
+00:44:45.170 --> 00:44:49.939
+Vikesh K: and and all of you are clear with why it ideally should happen after the split.
+
+407
+00:44:54.560 --> 00:44:55.879
+Denali Carpenter: Are you asking why
+
+408
+00:44:56.317 --> 00:45:02.929
+Denali Carpenter: we have to use the train to do the fit transform? Because we don't want to introduce bias into the validation or test.
+
+409
+00:45:03.480 --> 00:45:08.149
+Vikesh K: Correct. Yeah, we you don't want data leakages, right? So you do it after that, or.
+
+410
+00:45:13.390 --> 00:45:14.020
+shashi: Oh.
+
+411
+00:45:14.270 --> 00:45:24.930
+shashi: for filling missing values, like, if I'm calculating whether it's a 2 cylinder or a 4 cylinder for for the missing values. That also should be done after splitting the data.
+
+412
+00:45:28.170 --> 00:45:29.760
+Vikesh K: Like, would you?
+
+413
+00:45:30.440 --> 00:45:34.870
+Vikesh K: You're, for example, let's say you want to use a canon imputation to do it.
+
+414
+00:45:35.560 --> 00:45:44.207
+shashi: No. What I did was, see, 150,000 of cylinders were missing. So I took the percentage of all the other.
+
+415
+00:45:45.292 --> 00:45:48.739
+shashi: cylinders, what is the ratio of them? And I
+
+416
+00:45:48.770 --> 00:45:52.697
+shashi: imputed the same percentage. So if 30% was in
+
+417
+00:45:53.100 --> 00:45:58.430
+shashi: 4 cylinders, so missing of 40, 30%. I put it as 4 cylinders
+
+418
+00:45:58.560 --> 00:46:01.539
+shashi: and remaining in that way, I apportioned it
+
+419
+00:46:02.330 --> 00:46:04.679
+shashi: so at least cylinder. I mean.
+
+420
+00:46:05.440 --> 00:46:09.989
+shashi: I don't know how much impact it will have on the price. So I thought, let me just fill it up so that
+
+421
+00:46:10.170 --> 00:46:14.220
+shashi: any missing values will get at least 3. That's what I did.
+
+422
+00:46:17.530 --> 00:46:22.620
+Vikesh K: See idly. For example, let's say I'm using if I'm using a rule, a rule based system.
+
+423
+00:46:24.700 --> 00:46:26.519
+Vikesh K: you know a simple rule, then
+
+424
+00:46:27.450 --> 00:46:35.179
+Vikesh K: that will. That rule will remain the same before train test split and after train test split right? You're using. Let's say you're you're using some fixed rule.
+
+425
+00:46:35.190 --> 00:46:40.790
+Vikesh K: But if you're using a technique, let's say maybe mean imputation or a knn imputation.
+
+426
+00:46:41.626 --> 00:46:43.979
+Vikesh K: Then, ideally, you 1st split the data.
+
+427
+00:46:44.140 --> 00:46:46.650
+Vikesh K: then you do the imputation part.
+
+428
+00:46:46.800 --> 00:46:47.370
+shashi: Oh!
+
+429
+00:46:47.580 --> 00:46:55.890
+Vikesh K: Right? So so you have. 1st train data, you figure out the imputation from train, and you use that to put it in the test data.
+
+430
+00:46:57.500 --> 00:46:58.780
+Vikesh K: Does that make sense?
+
+431
+00:47:00.240 --> 00:47:06.249
+Vikesh K: Because ideally, what you want to avoid is a data leakage and Knn imputation uses other columns.
+
+432
+00:47:07.271 --> 00:47:12.900
+Vikesh K: Because it's essentially building a machine learning model to predict the missing value. So you.
+
+433
+00:47:12.900 --> 00:47:13.380
+shashi: Exactly.
+
+434
+00:47:13.380 --> 00:47:16.000
+Vikesh K: It should not get affected by your test values
+
+435
+00:47:16.400 --> 00:47:18.920
+Vikesh K: that that's a data leakage which can happen.
+
+436
+00:47:21.360 --> 00:47:24.520
+Vikesh K: Yeah, others making sense any questions.
+
+437
+00:47:24.890 --> 00:47:31.130
+Vikesh K: People who have been silent. Shikha preeti namruta, I think.
+
+438
+00:47:31.270 --> 00:47:32.920
+Vikesh K: Avinash. Yeah.
+
+439
+00:47:34.730 --> 00:47:36.380
+Ravi Duvvuri: And we can out to.
+
+440
+00:47:36.380 --> 00:47:38.400
+Namrata Baid: Questions, we have, yeah.
+
+441
+00:47:38.790 --> 00:47:42.899
+Vikesh K: Yeah, okay. So I heard couple of people can. Can you please repeat.
+
+442
+00:47:44.370 --> 00:47:52.540
+Vikesh K: I think in the chat also, there's something. And yes, sorry can.
+
+443
+00:47:52.710 --> 00:47:54.830
+Vikesh K: Who spoke last? If you can repeat.
+
+444
+00:47:56.280 --> 00:47:57.814
+Ravi Duvvuri: No, I was trying to talk.
+
+445
+00:47:58.180 --> 00:48:07.619
+Ravi Duvvuri: it would be. Yeah, if you can cover the outlining modeling outline that would be helpful, because there are so many techniques. I'm not sure I'm doing it right. So
+
+446
+00:48:07.730 --> 00:48:10.870
+Ravi Duvvuri: just want to make sure I follow the.
+
+447
+00:48:10.870 --> 00:48:15.999
+Vikesh K: No. So right now, I would say, you just have to do the basic ones right. There's a linear regression.
+
+448
+00:48:16.190 --> 00:48:18.379
+Vikesh K: Then you can do region that.
+
+449
+00:48:21.740 --> 00:48:24.039
+Vikesh K: And then you have the lasso
+
+450
+00:48:24.720 --> 00:48:29.160
+Vikesh K: right? The may, the major 3 techniques that you have studied till now.
+
+451
+00:48:30.490 --> 00:48:35.950
+Vikesh K: You don't really have to worry about other techniques as of now, which we haven't covered in the course.
+
+452
+00:48:36.510 --> 00:48:44.249
+Ravi Duvvuri: Okay. So this is like, my question is more like, we have numerical thing, right? Data and then we have categorical.
+
+453
+00:48:44.290 --> 00:48:51.680
+Ravi Duvvuri: So the way I'm approaching is I removed the. I didn't put the categorical first.st I just isolated automator
+
+454
+00:48:51.890 --> 00:49:03.080
+Ravi Duvvuri: price and the year and then try to predict the linear regression as a basic one. So without layers, I got some success. I can see the trend for those 2.
+
+455
+00:49:03.190 --> 00:49:14.259
+Ravi Duvvuri: Then I I found the videos, one of the class sessions is convert that into get them is right. Convert the categorical and then
+
+456
+00:49:14.340 --> 00:49:20.090
+Ravi Duvvuri: doing it together like separately each and category, and see if it is impacting the price.
+
+457
+00:49:20.430 --> 00:49:28.030
+Ravi Duvvuri: and then add all categories and see, and then put everything together like numerical as well as the
+
+458
+00:49:28.140 --> 00:49:33.089
+Ravi Duvvuri: a categorical, with, get dummies and then try to predict it.
+
+459
+00:49:33.400 --> 00:49:37.660
+Ravi Duvvuri: I think I'm I'm at there right now, so I wasn't sure
+
+460
+00:49:38.070 --> 00:49:40.659
+Ravi Duvvuri: you know what next? Right, you know.
+
+461
+00:49:41.065 --> 00:49:53.759
+Ravi Duvvuri: So there are so many things going on there like you know. I didn't even come to the train set part yet. So you know, I was wondering thoughts from other people also, like how you guys are approaching. So.
+
+462
+00:49:54.790 --> 00:50:01.109
+Vijay Chaganti: I just use the title status and the condition of vehicle along with the odometer, and if I run
+
+463
+00:50:01.650 --> 00:50:24.169
+Vijay Chaganti: one hot substitution, I took almost 2 h to get loss or regression output. I kept my laptop up and running, and it took 2 h to give that data, and if you consider all the columns with one hot approach in every categorical data it is going to be, you know, longer than that.
+
+464
+00:50:26.890 --> 00:50:33.490
+Vikesh K: So let's let's see the categorical ones. just quickly.
+
+465
+00:50:34.110 --> 00:50:40.880
+Vikesh K: Yeah. So for example, right now, in the existing data, you have 404 regions
+
+466
+00:50:41.240 --> 00:50:44.409
+Vikesh K: you have 42 manufactured, you have model.
+
+467
+00:50:44.540 --> 00:50:48.599
+Vikesh K: And, for example, here you also have win. So
+
+468
+00:50:49.120 --> 00:50:57.099
+Vikesh K: just if you do, one hot encoding of model and manufacturing region. It's gonna be a huge addition to your data set.
+
+469
+00:50:57.270 --> 00:51:01.460
+Vikesh K: you know, huge number of columns. Hence one of the reasons you have.
+
+470
+00:51:01.620 --> 00:51:03.559
+Vikesh K: the the model ran for so long.
+
+471
+00:51:04.080 --> 00:51:16.699
+Vikesh K: So for starters, maybe what you can do is you pick up the cylinder. I believe you will convert this into a integer, right? So maybe you don't have it here when you will drop
+
+472
+00:51:17.320 --> 00:51:23.830
+Vikesh K: state, maybe you drop as well. So all the numbers, maybe, which which are more than 10 for starters. You can drop all of them
+
+473
+00:51:24.260 --> 00:51:30.760
+Vikesh K: in categories and build a model with that. So you have the numerical columns which Ravi 1st said, and he used.
+
+474
+00:51:30.820 --> 00:51:38.109
+Vikesh K: Then you use the simple categorical columns, and then see how the how the output looks like.
+
+475
+00:51:38.360 --> 00:51:40.980
+Vikesh K: Then the other thing which you can try is.
+
+476
+00:51:41.230 --> 00:51:48.910
+Vikesh K: even in encoding. There are different kind of encoding techniques which you can, which you have. So I believe there's something called original
+
+477
+00:51:49.050 --> 00:51:49.570
+Vikesh K: and cool.
+
+478
+00:51:49.570 --> 00:52:04.409
+Ravi Duvvuri: Yeah, no, that's what my question is, like, I started with, get dummies. That's the 1st one. So looks like there are other options. Can we jump ahead and use the the highest one or the latest one that was got covered and ignore the other basic ones?
+
+479
+00:52:04.430 --> 00:52:11.459
+Ravi Duvvuri: Or do we need to just demonstrate everything right like, Hey for get dummies. This is output
+
+480
+00:52:11.930 --> 00:52:16.630
+Ravi Duvvuri: for 1, 1 hot quarter. This is the one. How do we approach that part?
+
+481
+00:52:16.810 --> 00:52:23.789
+Ravi Duvvuri: And, by the way, I'm only considering 5 columns fuel, tidal status, transmission, condition cylinders that makes sense.
+
+482
+00:52:23.820 --> 00:52:28.939
+Ravi Duvvuri: And I did some fill in as well with that. So those are the 5 columns I'm considering for
+
+483
+00:52:29.310 --> 00:52:33.470
+Ravi Duvvuri: categorical, and only 2 columns for the numerical total. 7. So.
+
+484
+00:52:35.380 --> 00:52:42.740
+Ravi Duvvuri: and the results are running faster. You know I it couple of not even minutes. It's few seconds. I'm getting back the everything so.
+
+485
+00:52:44.230 --> 00:52:50.400
+Vikesh K: Okay. So how I would say, this is, you know, Ravi, the same thing which you said. I will just put it like this. I will do. Numerical.
+
+486
+00:52:50.510 --> 00:52:54.930
+Vikesh K: then numerical, plus simple categorical.
+
+487
+00:52:56.120 --> 00:52:56.689
+Vikesh K: All right.
+
+488
+00:52:56.690 --> 00:52:59.399
+Ravi Duvvuri: Using. Get dummys or something, or some other method.
+
+489
+00:52:59.400 --> 00:53:05.949
+Vikesh K: Yeah, so that at that stage, one hot encoding, okay, one hot encoding.
+
+490
+00:53:06.090 --> 00:53:22.679
+Vikesh K: So this, this, these are the 2 baselines which you can get right. And then this is also to sort of understand and appreciate how once you start complicating your data set, how how that will lead to a superior predictions. Mostly. Then you have a step. 2. Here you
+
+491
+00:53:23.060 --> 00:53:27.039
+Vikesh K: you have. Step one, you have. Step 2. You have step 3,
+
+492
+00:53:27.100 --> 00:53:34.380
+Vikesh K: step 3 would be step 2 plus the known.
+
+493
+00:53:34.530 --> 00:53:37.410
+Vikesh K: I will. I will call that non-trivial categories.
+
+494
+00:53:37.620 --> 00:53:39.940
+Vikesh K: Okay, which is, maybe your region.
+
+495
+00:53:40.750 --> 00:53:41.530
+Vikesh K: Oh, shit
+
+496
+00:53:46.070 --> 00:53:49.239
+Vikesh K: no to do it like this. Just click one second.
+
+497
+00:53:54.930 --> 00:53:59.720
+Vikesh K: So if you do this, that should be enough for the time being.
+
+498
+00:54:02.570 --> 00:54:11.579
+Vikesh K: Does that make sense here? What you can do? Maybe you try different encoding techniques. Right? Maybe you can try an ordinal encoding in this case
+
+499
+00:54:11.590 --> 00:54:18.129
+Vikesh K: and see how it this would be complete. Step 2, and then the ordinal encoding. And maybe that
+
+500
+00:54:18.340 --> 00:54:24.380
+Vikesh K: that improves your modeling output data set combinations.
+
+501
+00:54:26.930 --> 00:54:32.350
+Vikesh K: any other others. Do you? Do you understand this, or is it.
+
+502
+00:54:32.350 --> 00:54:40.169
+shashi: Ordinal encoding can be used for a condition, whether it is new or at a salvage state, or whatever. So there we can use an ordinal encoder.
+
+503
+00:54:41.490 --> 00:54:43.410
+Vikesh K: Yeah, so usually,
+
+504
+00:54:46.710 --> 00:54:58.300
+Vikesh K: when you have. You know, a categorical feature which has too many values. This is this is one way which which you can use, and convert this into some kind of information.
+
+505
+00:54:58.340 --> 00:55:06.670
+Vikesh K: especially when you have too many categories. So what I, what I want you to try is try this with ordinal encoding.
+
+506
+00:55:06.720 --> 00:55:10.809
+Vikesh K: You can use it on others as well. These one as well.
+
+507
+00:55:11.060 --> 00:55:18.169
+Vikesh K: and but mainly maybe try it with manufacture or with state, and see how it gives you the kind of output it gives you.
+
+508
+00:55:19.210 --> 00:55:30.410
+Vikesh K: Okay, this is more of a like, an you have to do this exploration. See how it improves. Or maybe, if it deteriorates or it doesn't change, your final prediction values the quality of your predictions.
+
+509
+00:55:31.510 --> 00:55:41.820
+Vikesh K: But if you do this, I think that would be at least for this project. This should be sufficient. I just want you to that at least. The idea is you get exposed to different
+
+510
+00:55:41.900 --> 00:55:46.220
+Vikesh K: problems by cleaning the data. And then how do you put them together with this?
+
+511
+00:55:46.650 --> 00:55:52.519
+Vikesh K: And remember each stage? Let's say you have numerical. You will fit these 3 model on it.
+
+512
+00:55:52.730 --> 00:55:59.913
+Vikesh K: and then, when you have numerical plus simple categorically, you will fit all these 3 models, then the next step could be
+
+513
+00:56:00.360 --> 00:56:04.509
+Vikesh K: once. Let's say you have established this is you. Do the hyperparameter tuning.
+
+514
+00:56:05.280 --> 00:56:06.759
+Denali Carpenter: That's a wrap for today.
+
+515
+00:56:11.520 --> 00:56:16.090
+Vikesh K: But there was this some is this?
+
+516
+00:56:16.760 --> 00:56:20.350
+Vikesh K: Oh, wow! Oh, this is the automatic notification.
+
+517
+00:56:20.580 --> 00:56:22.813
+Denali Carpenter: Yeah, sorry. That was me.
+
+518
+00:56:23.260 --> 00:56:26.050
+Vikesh K: Oh, okay. Oh, I thought, Zoom has some inbuilt in.
+
+519
+00:56:26.050 --> 00:56:29.025
+Denali Carpenter: No, no, that's my Google home.
+
+520
+00:56:29.450 --> 00:56:31.310
+Vikesh K: Okay? Oh, lovely. Okay.
+
+521
+00:56:31.500 --> 00:56:36.639
+Vikesh K: So then, the next thing is what what you can try is the hyperparameter tuning.
+
+522
+00:56:38.210 --> 00:56:40.050
+Vikesh K: Do you know what you will try? There.
+
+523
+00:56:42.700 --> 00:56:47.279
+shashi: Oh, they claim to.
+
+524
+00:56:48.760 --> 00:56:54.319
+Denali Carpenter: The different alpha values for Ridge right, and Blosso, as well.
+
+525
+00:56:55.140 --> 00:57:02.760
+Vikesh K: Yes, Alpha values or rich and lasso, because, linear regression typically doesn't have any
+
+526
+00:57:03.730 --> 00:57:10.760
+Vikesh K: feature engineering. Sorry hyper parameter. You need to do so this is when you go to your
+
+527
+00:57:13.620 --> 00:57:15.390
+Vikesh K: ridge and lasso models.
+
+528
+00:57:15.530 --> 00:57:17.860
+Vikesh K: Okay, support that.
+
+529
+00:57:17.860 --> 00:57:22.610
+shashi: Cross validation. Let's see. 5 fold cross validation.
+
+530
+00:57:22.610 --> 00:57:25.499
+Vikesh K: Yeah, so all those things. Yeah, yeah, essentially.
+
+531
+00:57:28.140 --> 00:57:37.600
+Denali Carpenter: We recode one of the categorical variables. Do we need to like? Say, I wanted to recode state into something a bit more informative to me.
+
+532
+00:57:38.108 --> 00:57:42.990
+Denali Carpenter: Would I have to cite the resources for that, or could I do that?
+
+533
+00:57:43.710 --> 00:57:47.939
+Denali Carpenter: I guess I'm wondering if I need to like, cite the sites that I'm getting that information for recoding off of.
+
+534
+00:57:49.080 --> 00:57:59.880
+Vikesh K: Yeah, no, no, it's not really mandatory for this. You're not doing academic paper or something right, just for your own reference. If you put that that would be helpful for you in the future.
+
+535
+00:58:00.260 --> 00:58:07.129
+Vikesh K: See? Remember everything you know what you're doing, learning here. There's a retention curve it it work. It will work like this.
+
+536
+00:58:07.280 --> 00:58:12.779
+Vikesh K: You will keep. You will forget this stuff, I'm pretty sure, after a month or one and a half month. Right?
+
+537
+00:58:13.070 --> 00:58:17.200
+Vikesh K: So if you have everything consolidated at one place.
+
+538
+00:58:17.210 --> 00:58:25.650
+Vikesh K: your future self will thank you because you know all the resources, all the blogs that you use, that you know, because right now you're going down the rabbit hole.
+
+539
+00:58:26.220 --> 00:58:35.539
+Vikesh K: Put all that things in a structure format at one place that would be helpful for you. Yeah, I we don't require it. But essentially for you.
+
+540
+00:58:36.200 --> 00:58:36.800
+Denali Carpenter: Thank you.
+
+541
+00:58:37.420 --> 00:58:58.969
+Vikesh K: Yeah, that's why. Also, it's better to maybe use perplexity rather than chat. Gpt, chat Gpt can give you usually directly gives you the solution. Perplexity can also do that, but it will also give you the sources of it. So you know, it would be good to visit the source website once. Just understand what the whole context is about. So
+
+542
+00:58:59.240 --> 00:59:05.880
+Vikesh K: yeah, I would say, maybe you know, it's it's better to use publicity there rather than chatgpity, right?
+
+543
+00:59:06.060 --> 00:59:09.309
+Vikesh K: Just to get an understanding of where that's coming from.
+
+544
+00:59:10.270 --> 00:59:20.899
+Vikesh K: By the way, nobody spoke about Eda, and this is something which often people ignore. And then they do a very bad job even in capstone, not focusing on the Eda.
+
+545
+00:59:21.160 --> 00:59:22.970
+Vikesh K: Do you have any plans? How you.
+
+546
+00:59:23.130 --> 00:59:24.740
+Vikesh K: what you want to cover here?
+
+547
+00:59:28.870 --> 00:59:30.390
+Vikesh K: How would you approach this.
+
+548
+00:59:34.020 --> 00:59:35.769
+Anu.Arun: Cody, what is the media?
+
+549
+00:59:36.690 --> 00:59:43.760
+Vikesh K: this is your data visualization understanding, exploratory data analysis.
+
+550
+00:59:43.760 --> 00:59:48.819
+Vikash: Take some his plot, some histograms to see like which models have the highest prices.
+
+551
+00:59:49.800 --> 00:59:50.580
+Vikesh K: Okay.
+
+552
+00:59:50.900 --> 00:59:53.480
+Vikesh K: Histogram cool.
+
+553
+00:59:54.270 --> 00:59:59.460
+Vikesh K: Okay. Maybe how I will do it is how I will do it, distinguish it as univariate, and.
+
+554
+01:00:00.030 --> 01:00:02.310
+shashi: Price. Yeah, that's what.
+
+555
+01:00:02.310 --> 01:00:09.029
+Vikesh K: Universities. You focus on one column, and then you have different columns here, one column at a time.
+
+556
+01:00:09.670 --> 01:00:10.130
+Avinash Gangwal: Hello, Red.
+
+557
+01:00:10.870 --> 01:00:21.770
+Avinash Gangwal: this concept you were saying after one month, because you were saying after one month, I already forgot that I read about all this.
+
+558
+01:00:22.030 --> 01:00:28.366
+Vikash: Yeah, that is one problem, because we are having that as we grew as we go deep into this
+
+559
+01:00:28.860 --> 01:00:33.699
+Vikash: into this learnings, we are forgetting what we have learned in the like. Second week, 3rd week, 4th week.
+
+560
+01:00:33.890 --> 01:00:38.556
+Vikesh K: Yeah, no, that that's a very natural thing. That's a very normal thing to face.
+
+561
+01:00:39.270 --> 01:01:03.910
+Vikesh K: you know, you have these retention curves. So only ways you maybe you can do some space repetition. Or maybe you make some notes when you're going through the videos. It's have a dedicated notebook for this course. Maybe I know we are already in week 11, but but it's as you go, especially into the machine learning part. It's good to have a dedicated small notebook. So even when the course ends after 6 months, you can come back. Come back.
+
+562
+01:01:04.040 --> 01:01:13.130
+Vikesh K: just revise your notes. That would be a good way to, you know. Refresh. But you have to do constant repetition. I would say, maybe in your calendar
+
+563
+01:01:14.090 --> 01:01:19.600
+Vikesh K: set a deadline for yeah. Set a reminder for Saturday, Sunday, and you know where you refresh all the contents
+
+564
+01:01:19.660 --> 01:01:31.180
+Vikesh K: that could be one way. The other. Reason also is practical. Assignments are comes after these blocks is because you are forced to go back and look into those things and put it in practice.
+
+565
+01:01:31.500 --> 01:01:36.969
+Vikesh K: So that that's a good way to sort of reinforce the lessons that we have learned in the previous weeks.
+
+566
+01:01:37.390 --> 01:01:40.700
+Vikesh K: But don't yes.
+
+567
+01:01:40.960 --> 01:01:48.288
+Avinash Gangwal: Do you think this all this Arima and all it really comes in the practical work means
+
+568
+01:01:48.750 --> 01:02:14.739
+Avinash Gangwal: like I was doing? I'm still behind. I'm in the week 10 videos. So I'm still learning Arima and all that. But I understand the 1st 6 module that you clean up the data. You use the regression, you use the model linear regression and lotso, and all that. But now, when week 10, to be honest, most of the things
+
+569
+01:02:15.200 --> 01:02:30.239
+Avinash Gangwal: I am able to do it after seeing the video a little bit, but not much. And so just thinking all this processes like Arima and all that, do we use practically in day to day, work.
+
+570
+01:02:31.030 --> 01:02:49.359
+Vikesh K: Yeah, if you have a forecasting problem, Arima is a good place to get started with right. And Denali just put that he has used Arima. So if you have a time series problem, Arima is one of the very reliable method to use. Obviously it has some certain assumptions and all those things.
+
+571
+01:02:49.440 --> 01:02:52.070
+Vikesh K: But Arima is a good method to use.
+
+572
+01:02:55.230 --> 01:03:05.329
+Vikesh K: I mean as does that. So if but but on the other hand, let's say, if you're not working on a forecasting problem. Let's say your problem is classification problem. Then yeah, Arima would be useless for you.
+
+573
+01:03:05.690 --> 01:03:07.700
+Vikesh K: At least, you know, if it's not the time.
+
+574
+01:03:07.700 --> 01:03:09.560
+Avinash Gangwal: No. But yeah, the
+
+575
+01:03:09.830 --> 01:03:17.860
+Avinash Gangwal: advantage I'm seeing right now is that I know there is. This kind of process exists. So when this kind of problem comes.
+
+576
+01:03:17.940 --> 01:03:19.760
+Avinash Gangwal: I will go back and
+
+577
+01:03:19.990 --> 01:03:29.340
+Avinash Gangwal: check what I need to look for before this program I had no idea what to do, and now I know that there is a process called Arima.
+
+578
+01:03:29.520 --> 01:03:35.749
+Avinash Gangwal: So if this kind of problem comes, I will look more in detail and maybe use it.
+
+579
+01:03:36.650 --> 01:03:41.074
+Vikesh K: But that's good. Yeah, that that's 1 of the motivation of the course to expose you. Because, see,
+
+580
+01:03:41.810 --> 01:03:47.060
+Vikesh K: Arima can time series in itself is a usually a full semester program
+
+581
+01:03:47.160 --> 01:03:50.330
+Vikesh K: in at many universities at master's level.
+
+582
+01:03:50.360 --> 01:04:05.969
+Vikesh K: But if you try to do all those things, this won't be a 26 weeks course, but a proper one year course? Right? So what we try to do is at least give you exposure to all these concepts out there. So let's say, one year down the line. If you have to use some time series problem.
+
+583
+01:04:06.200 --> 01:04:10.030
+Vikesh K: you at least have a reference point, and you know you can start from there.
+
+584
+01:04:11.180 --> 01:04:18.600
+Vikesh K: That's the whole aim, you know, just introducing all these concepts to you, making sense.
+
+585
+01:04:19.290 --> 01:04:25.410
+Vikesh K: Okay, I just want to focus finish all these things before then, if you you know, some of you might want to drop off.
+
+586
+01:04:25.600 --> 01:04:33.370
+Vikesh K: So please focus on some univariate relationship bivariate. And when you do Bivariate. Remember the main thing which.
+
+587
+01:04:33.430 --> 01:04:39.729
+Vikesh K: for example, if you're presenting it to your stakeholder, this would be price should be the main focus
+
+588
+01:04:39.980 --> 01:04:47.280
+Vikesh K: right. For example, I would like to understand how cylinders and prices move together.
+
+589
+01:04:51.530 --> 01:04:52.920
+Vikesh K: Focus columns.
+
+590
+01:04:53.260 --> 01:04:54.924
+Vikesh K: Right? You should.
+
+591
+01:04:55.804 --> 01:05:01.139
+Vikesh K: you know. Figure out all these visual element, like, you know, some stories which you can tell about the data set.
+
+592
+01:05:01.160 --> 01:05:05.560
+Vikesh K: I would say around 5 to 6 insights which you can share. That would be very helpful.
+
+593
+01:05:05.590 --> 01:05:09.140
+Vikesh K: And this is also what you would be evaluated on.
+
+594
+01:05:09.190 --> 01:05:23.190
+Vikesh K: So please ensure that you focus on it many times. People just focus on the modeling, part of which is good, but along with it please also focus on some key insights, because here I see, most of the major challenges. People don't know how to reduce the information which you have
+
+595
+01:05:23.470 --> 01:05:26.230
+Vikesh K: into, let's say, 5 or 6 key takeaways.
+
+596
+01:05:26.240 --> 01:05:33.429
+Vikesh K: What people often do is they will give all the bar charts, all the scatter plots without even saying Why, it's important.
+
+597
+01:05:34.130 --> 01:05:47.269
+Vikesh K: And this happened in previous practical assignment as well, even though I said, you know each chart had should have a talking header, you know a headline. Why, that chart is important. I think hardly any people, hardly. Very few people did that.
+
+598
+01:05:47.680 --> 01:05:52.409
+Vikesh K: So I just saw a bunch of bar charts without even knowing what you.
+
+599
+01:05:52.460 --> 01:05:55.699
+Vikesh K: What's your interpretation of those bar charts?
+
+600
+01:05:55.960 --> 01:06:04.320
+Vikesh K: Right? Many people did, because, yeah, it's easy to build a bar chart. But please include those points which you think are important
+
+601
+01:06:04.360 --> 01:06:07.080
+Vikesh K: which you can pass on to your stakeholder.
+
+602
+01:06:07.290 --> 01:06:11.789
+Vikesh K: That's the main point. Producing bar charts is easy. Chatgpt can give you that.
+
+603
+01:06:11.900 --> 01:06:23.239
+Vikesh K: But if you can generate some good insights about the data about prices and its relationship, let's say, with cylinders, or maybe with year of manufacturing. That would be the interesting point.
+
+604
+01:06:23.810 --> 01:06:25.100
+Vikesh K: does that make sense?
+
+605
+01:06:26.440 --> 01:06:31.700
+Vikesh K: Yeah, that's the main thing. Not the charts itself. But what insight you can share from that.
+
+606
+01:06:32.890 --> 01:06:39.410
+Vikesh K: Okay, please. Yes, someone was okay.
+
+607
+01:06:41.080 --> 01:06:42.849
+Vikesh K: So I will leave it like this.
+
+608
+01:06:43.150 --> 01:06:45.429
+Vikesh K: Then you can also do correlations here.
+
+609
+01:06:51.250 --> 01:06:56.260
+Vikesh K: I have written this, how price is connected to different components. Pre-processing.
+
+610
+01:06:56.940 --> 01:06:59.910
+Vikesh K: I can put the normal thing standardization.
+
+611
+01:07:03.950 --> 01:07:08.789
+Vikesh K: Okay? Broadly, at least. All of you are clear with the
+
+612
+01:07:08.860 --> 01:07:14.870
+Vikesh K: the different kind of things you have to do here before you drop off
+
+613
+01:07:17.310 --> 01:07:21.489
+Vikesh K: right? So ideally, if possible. 3 models at least.
+
+614
+01:07:21.700 --> 01:07:24.400
+Vikesh K: and try to use this data set combination.
+
+615
+01:07:24.700 --> 01:07:26.839
+Vikesh K: you know, make it keep it simple. 1st
+
+616
+01:07:27.050 --> 01:07:29.680
+Vikesh K: do it with numerical, develop the whole thing.
+
+617
+01:07:30.310 --> 01:07:34.649
+Vikesh K: and then you write the second one. Then you try the 3rd thing
+
+618
+01:07:34.690 --> 01:07:56.530
+Vikesh K: to make it slightly more effective. You can actually make a function out of these, you know, sometimes this is. But I won't worry about it in the 1st go 1st go. You can write, you know, you can repeat your code, but you can actually make a functions which is which for each of these modeling techniques. And then you just change your data set and the functions will give you the whole output.
+
+619
+01:07:57.220 --> 01:08:14.859
+Vikesh K: But that that the optimization code optimization should be the worry of the second, you know. Second or 3, rd try not your 1st try 1st try is you fit all these models? See if you can do some hyperparameter tuning and get your results, and and maybe somewhere tabulate it, you know. Have an excel
+
+620
+01:08:15.210 --> 01:08:20.489
+Vikesh K: do it in a structured format and tablet. What, how your numbers change or look like?
+
+621
+01:08:22.319 --> 01:08:23.140
+Vikesh K: Right?
+
+622
+01:08:24.680 --> 01:08:26.540
+Ravi Duvvuri: And Vikesh question there.
+
+623
+01:08:26.649 --> 01:08:35.290
+Ravi Duvvuri: I use the entire data set when I did the numerical part. So we need to split that before and then resolve the prediction for the
+
+624
+01:08:35.520 --> 01:08:36.930
+Ravi Duvvuri: test. One right.
+
+625
+01:08:36.939 --> 01:08:42.269
+Vikesh K: Oh, yeah, otherwise. Otherwise, what you did is a blasphemy in the machine learning world.
+
+626
+01:08:43.140 --> 01:08:44.010
+shashi: Right.
+
+627
+01:08:47.210 --> 01:08:52.200
+Vikesh K: So so you need to split it in. You know, you have need to have 2 separate sets
+
+628
+01:08:52.370 --> 01:08:57.789
+Vikesh K: and then build your model using train and test it on the test data set.
+
+629
+01:08:58.700 --> 01:08:59.560
+Ravi Duvvuri: Sounds good.
+
+630
+01:09:03.700 --> 01:09:05.929
+Denali Carpenter: A question about the format.
+
+631
+01:09:07.120 --> 01:09:08.410
+Vikesh K: For the phone.
+
+632
+01:09:08.770 --> 01:09:09.450
+Vikesh K: Yeah.
+
+633
+01:09:09.450 --> 01:09:16.780
+Denali Carpenter: Yeah. So the format for submitting. So I have one worksheet that I'm working on that's separate from the prompt worksheet.
+
+634
+01:09:16.899 --> 01:09:23.610
+Denali Carpenter: Do I want to put all that work into the prompt worksheet and then put together my, read me, or can I upload both of those.
+
+635
+01:09:24.786 --> 01:09:37.379
+Vikesh K: No upload one, which is, which is your final work. It's fine like. If you if you have a sections like this, it's it's good to navigate it right? So maybe if you just have to add these sections to your existing notebook.
+
+636
+01:09:37.800 --> 01:09:38.380
+Denali Carpenter: Okay.
+
+637
+01:09:38.450 --> 01:09:39.350
+Vikesh K: Yeah, but yeah.
+
+638
+01:09:39.350 --> 01:09:40.970
+Denali Carpenter: So, for the from the prompt.
+
+639
+01:09:40.979 --> 01:09:42.119
+Vikesh K: Yeah, please
+
+640
+01:09:42.379 --> 01:09:56.479
+Vikesh K: right, see? Treat it as as like a proper project which you might do at work right? So if you're generating some insights. Keep a business person which you know in your company, keep that him or her in mind, and then write down those insights.
+
+641
+01:09:56.619 --> 01:10:10.279
+Vikesh K: and when you submit the code. Keep some coder in your team in mind and write down those codes, because, let's say you share a github with us. We wouldn't know which one to refer to right many times. It's confusing. Many people don't really
+
+642
+01:10:10.379 --> 01:10:13.989
+Vikesh K: sometimes clean up their repository, so it's quite messy
+
+643
+01:10:14.409 --> 01:10:26.229
+Vikesh K: there were there. I believe there are 1 50 of you in this course. Right? So everyone has a different style. So that's why I emphasize on these things, because this will make the life of your program leader. Also easy just to figure out
+
+644
+01:10:26.783 --> 01:10:33.536
+Vikesh K: you know what you have done there and then they can give you pointed feedback. If if there is a requirement for it.
+
+645
+01:10:33.879 --> 01:10:37.019
+Vikesh K: in that case, okay. But
+
+646
+01:10:38.389 --> 01:10:56.789
+Vikesh K: the main thing which I what what I want to be assured at that all of you understand the strategy. What you can apply? Yes, obviously, then you go deep into it, and then you figure out. You know whether you want to keep those win numbers, or you want to drop all those things. So then you just state down your assumptions right? You drop all those things.
+
+647
+01:10:57.039 --> 01:11:03.289
+Vikesh K: and then you build a model with what is left, you know you split it and train and test, and then you build model with what is left.
+
+648
+01:11:03.469 --> 01:11:16.779
+Vikesh K: That's also perfectly fine the main thing which is which matters is, whatever you do it, you do it in a structured manner. So the same thing you can pick up. And then, once you have a capstone project or have any other problem, you can just apply it directly. There
+
+649
+01:11:19.609 --> 01:11:20.529
+Vikesh K: sounds good.
+
+650
+01:11:21.730 --> 01:11:27.969
+Ravi Duvvuri: And Vikesh. One last thing we have to submit by tomorrow only, or we have time, because.
+
+651
+01:11:27.970 --> 01:11:30.029
+Vikesh K: No, you can ask for extension. Yeah.
+
+652
+01:11:31.340 --> 01:11:39.319
+Vikesh K: yeah, don't. Don't. Don't take stress about that. I know some of you might are little behind, so it's fine to ask for extension, and you submit later.
+
+653
+01:11:39.950 --> 01:11:40.570
+Ravi Duvvuri: Okay.
+
+654
+01:11:41.740 --> 01:11:42.320
+Manish Goenka: Can you share this.
+
+655
+01:11:42.320 --> 01:11:44.700
+Ravi Duvvuri: One of the key module. I think
+
+656
+01:11:44.740 --> 01:11:48.440
+Ravi Duvvuri: lot of learning and application is the main thing, right? Like, I think.
+
+657
+01:11:48.670 --> 01:11:51.078
+Ravi Duvvuri: yeah, in my case, at least.
+
+658
+01:11:52.540 --> 01:11:54.060
+Vikesh K: No, that's fine, I understand.
+
+659
+01:11:54.340 --> 01:11:57.679
+shashi: I think most of us are going for extension
+
+660
+01:11:58.520 --> 01:12:02.360
+Vikesh K: So, yeah, that's fine. Yeah, please go ahead for it. Yeah, that that should be fine
+
+661
+01:12:02.650 --> 01:12:04.719
+Vikesh K: manish. I think you also had a question.
+
+662
+01:12:04.720 --> 01:12:05.569
+Manish Goenka: This is still.
+
+663
+01:12:05.570 --> 01:12:08.140
+Avinash Gangwal: Feel better. I haven't started.
+
+664
+01:12:13.720 --> 01:12:14.270
+Vikesh K: Cool.
+
+665
+01:12:15.168 --> 01:12:18.460
+Manish Goenka: These notes you're making with them.
+
+666
+01:12:18.850 --> 01:12:20.420
+Vikesh K: Oh, yeah, yes, yes.
+
+667
+01:12:20.480 --> 01:12:24.270
+Vikesh K: In any case I will upload it. I will quickly do it as well right now.
+
+668
+01:12:27.790 --> 01:12:30.160
+Vikesh K: Yes, any other questions or doubts.
+
+669
+01:12:31.320 --> 01:12:36.219
+Vikesh K: I I know it's working time. So I don't want to take much of more of your time.
+
+670
+01:12:37.080 --> 01:12:40.300
+Vikesh K: Yes, Preeti, I shared this. Okay, thank you.
+
+671
+01:12:40.660 --> 01:12:42.619
+Vikesh K: I think, yeah, this is the lead.
+
+672
+01:12:45.330 --> 01:12:47.350
+Vikesh K: Oh, no, this 1 1 second.
+
+673
+01:12:50.830 --> 01:12:59.430
+Vikesh K: Now, if there are no more questions, we can also please feel free to drop off. If you have any questions I will stay back. If there are none, you can feel free to drop off.
+
+674
+01:13:00.790 --> 01:13:01.210
+Vikesh K: and
+
+675
+01:13:02.490 --> 01:13:04.590
+Manish Goenka: I have one quick question. Vikesh.
+
+676
+01:13:04.590 --> 01:13:05.290
+Vikesh K: Yes, please.
+
+677
+01:13:05.290 --> 01:13:10.209
+Vijay Chaganti: If we submit the project and we got low grade, can we resubmit or.
+
+678
+01:13:10.210 --> 01:13:10.929
+Vikesh K: Yeah. Yes. Yeah.
+
+679
+01:13:10.930 --> 01:13:11.919
+Vijay Chaganti: And it will be.
+
+680
+01:13:12.550 --> 01:13:18.209
+Vikesh K: Yeah, you can resubmit. Yeah, the main idea is that you that, you you know, basically.
+
+681
+01:13:18.660 --> 01:13:26.159
+Vikesh K: Learn and improve. So yeah, I have, even in the last practical assignment I asked many people to resubmit
+
+682
+01:13:27.150 --> 01:13:32.150
+Vikesh K: who who had not done. Maybe you know, up to the mark thing.
+
+683
+01:13:32.360 --> 01:13:36.689
+Vikesh K: So there was a opportunity given to resummit, so that that should be fine.
+
+684
+01:13:37.840 --> 01:13:38.660
+Vijay Chaganti: Yep, thank you.
+
+685
+01:13:40.030 --> 01:13:42.600
+Vikesh K: Cool I have. Yes, I think so.
+
+686
+01:13:42.600 --> 01:13:55.329
+Ravi Duvvuri: You know, I'm my question. I just followed the videos for and I did. Pca analysis, you know, for the numerical part, we we only do Pca numericals right? Not on the categorical right?
+
+687
+01:13:55.620 --> 01:14:09.609
+Ravi Duvvuri: So I did that. I don't know why I need it, but I just followed and did it. So again, there are 2 columns there, so both are important, I know, like, you know, I don't need a Pca. But you know I did it so
+
+688
+01:14:10.060 --> 01:14:14.459
+Ravi Duvvuri: I don't know what I got out of it, but I just performed it. So
+
+689
+01:14:14.670 --> 01:14:19.100
+Ravi Duvvuri: I'm I'm putting it in in the thing. It matters or not. I don't know.
+
+690
+01:14:19.510 --> 01:14:47.100
+Vikesh K: Okay, no, I would. Sometimes I would say, you know, how do you get the best results by sometimes subtracting rather than adding, if you don't require PC. In this case, because it's not a complicated numerical data set. Don't do Pca. For your learning. Yes. But then, if you think it's not giving any. Add on to your model and all. It's not improving your results. No need to include it, because sometimes what happens, then? I go through the code, I will say, oh, this code is all over the place, right? There's a PC. Done. Then the PC. Is not used, and all those things
+
+691
+01:14:47.120 --> 01:14:51.139
+Vikesh K: you, you try multiple iterations. But the final jupyternal notebook which you do
+
+692
+01:14:51.605 --> 01:15:02.240
+Vikesh K: just to just try to keep it clean. If you think, let's say, if there were at least 10 columns of numerical, and then you did. PC, it's fine, but I don't think you really require PC. In this stage.
+
+693
+01:15:02.700 --> 01:15:08.249
+Ravi Duvvuri: Okay, you know what I figured it out is, when I did the PC. One, I only want one column.
+
+694
+01:15:08.520 --> 01:15:29.249
+Ravi Duvvuri: The year came up as like Pca as point 8 7, which is positive correlation, right? And the autometer it came as my minus something like 8 8 or something. So, and at least I make it out that hey? The price is like in inversely going with our autometer and the year it is positive. So
+
+695
+01:15:29.420 --> 01:15:31.609
+Ravi Duvvuri: I think that's the only thing I got it
+
+696
+01:15:31.960 --> 01:15:36.709
+Ravi Duvvuri: other than that. I don't need readily to your point with this small data set.
+
+697
+01:15:38.110 --> 01:15:50.240
+Vikesh K: Okay, cool. Yeah, no, I I think you don't require it. But yeah, if you think that, that's something which is useful and you can that helps you improve your model? Yes, maybe you put it there. I'll just quickly check one thing, this df.
+
+698
+01:15:51.150 --> 01:15:53.810
+Vikesh K: you have age, and then you have
+
+699
+01:15:54.460 --> 01:16:00.210
+Vikesh K: price. Right? If I check these 2, let's see, I might have to drop missing values.
+
+700
+01:16:01.430 --> 01:16:05.290
+Vikesh K: at least on face of it. The correlation is very less.
+
+701
+01:16:05.920 --> 01:16:06.700
+Vikesh K: Okay.
+
+702
+01:16:10.650 --> 01:16:16.850
+Vikesh K: so I'm not sure if it if it would be any useful addition. And let's say, if I do the same with year.
+
+703
+01:16:18.530 --> 01:16:29.539
+Vikesh K: it's the same number. But obviously the sign is negative, right? So someone had a question, what if we do it in year and age? So the the learnings from either column is the same.
+
+704
+01:16:29.910 --> 01:16:31.590
+Vikesh K: only the sign will change.
+
+705
+01:16:31.730 --> 01:16:43.690
+Vikesh K: So I don't think, even if you do. Feature engineering. I don't think it like, you know the point which Anu had made. I don't think it will dramatically make any difference. It's worth a try, but I don't think it will make any dramatic difference.
+
+706
+01:16:46.240 --> 01:16:47.000
+Vikesh K: Yeah.
+
+707
+01:16:47.450 --> 01:17:00.180
+Vikesh K: So this is one way to just quickly do a sense check of what what it can do for your model, because the especially when you're doing a linear regression. Linear regression very closely follows the correlation. So if your correlation is very, very low.
+
+708
+01:17:00.350 --> 01:17:05.739
+Vikesh K: mostly even your linear regression will give you the same output. Same story. The story won't really dramatically change
+
+709
+01:17:06.200 --> 01:17:12.256
+Vikesh K: where things can get interesting. Let's say, if there is a nonlinear pattern then
+
+710
+01:17:12.930 --> 01:17:16.370
+Vikesh K: then, in any case, renal regression can't
+
+711
+01:17:17.030 --> 01:17:20.740
+Vikesh K: do that job. Well, and then you need models like.
+
+712
+01:17:22.371 --> 01:17:27.500
+Vikesh K: what is that decision tree there, that can give you those insights? What's happening there?
+
+713
+01:17:30.840 --> 01:17:33.640
+Vikesh K: Does that make sense? Or I've confused you?
+
+714
+01:17:36.380 --> 01:17:44.119
+Vikesh K: Yeah, yeah, see, it's mostly, although it's it's in the scientific notation. But
+
+715
+01:17:44.210 --> 01:17:50.000
+Vikesh K: there's you definitely have to remove these outliers. You can see there are some big outliers there in the data set.
+
+716
+01:17:50.330 --> 01:17:55.940
+Vikesh K: You would need to really remove them before you yeah, build your model.
+
+717
+01:17:56.240 --> 01:17:58.360
+Vikesh K: Maybe that's distorting the picture.
+
+718
+01:17:58.860 --> 01:18:08.360
+Vikesh K: That can also be the case right? Because your correlation and your linear regression, both of them get affected by outliers. So you have to remove those outliers, and then maybe
+
+719
+01:18:08.950 --> 01:18:10.379
+Vikesh K: the story changes.
+
+720
+01:18:10.460 --> 01:18:11.980
+Vikesh K: So be careful about that.
+
+721
+01:18:14.417 --> 01:18:20.990
+shashi: One more question we were discussing about using the
+
+722
+01:18:21.140 --> 01:18:23.879
+shashi: log. I mean, the price has got a
+
+723
+01:18:24.400 --> 01:18:27.591
+shashi: positive skew right? I mean, all the way
+
+724
+01:18:28.690 --> 01:18:34.219
+shashi: price of a newer vehicle high, and as the age this one, the price drops, we have that right?
+
+725
+01:18:34.400 --> 01:18:44.460
+shashi: So if I have to use that log for prediction. How do I do that? I mean at what stage I take the log and use it for building model building.
+
+726
+01:18:51.180 --> 01:18:56.920
+Vikesh K: Yes, you can take log even before train test. It doesn't matter, because it's a mathematical transformation that you're doing.
+
+727
+01:18:57.354 --> 01:19:02.575
+Vikesh K: So. You can do it before it, and then your train and test both of them would be log
+
+728
+01:19:02.850 --> 01:19:07.560
+shashi: Okay. So instead of using the price column, I use the log of the price column.
+
+729
+01:19:07.560 --> 01:19:11.270
+Vikesh K: Yeah, yes, you can try that and see if maybe that improves your predictions.
+
+730
+01:19:12.380 --> 01:19:16.072
+shashi: And output do I need? I mean, I know that it's
+
+731
+01:19:16.670 --> 01:19:25.489
+shashi: it will correlate with the price. Only right? I mean, I think it will be, both of them will be correlate. Price and price log will be correlated with almost at one only same level.
+
+732
+01:19:25.900 --> 01:19:30.480
+Vikesh K: Yes, yes, so you know again again. The the good thing is, we can quickly try.
+
+733
+01:19:30.660 --> 01:19:33.299
+Vikesh K: I will. Let's say I do this.
+
+734
+01:19:35.690 --> 01:19:36.660
+Vikesh K: Have to do
+
+735
+01:19:38.000 --> 01:19:47.900
+Vikesh K: folks. Please feel free to drop off, because I know it's it's your daytime. So if you have other commitments, yes, thank you. Don't. Don't worry about that.
+
+736
+01:19:48.090 --> 01:19:52.969
+Vikesh K: I will just quickly explore these things with all of you.
+
+737
+01:19:53.530 --> 01:19:55.019
+Vikesh K: Those who can stay back.
+
+738
+01:19:57.720 --> 01:19:59.140
+Vikesh K: Price log.
+
+739
+01:19:59.550 --> 01:20:06.900
+Vikesh K: Okay? So then you have. Bf, you have price underscore log.
+
+740
+01:20:07.320 --> 01:20:10.910
+Vikesh K: and then you have price. Right? You have 2 columns.
+
+741
+01:20:11.200 --> 01:20:12.630
+shashi: And then, if you do.
+
+742
+01:20:12.730 --> 01:20:13.910
+Vikesh K: Correlation.
+
+743
+01:20:14.360 --> 01:20:17.240
+Vikesh K: Wow! Even this is very different.
+
+744
+01:20:19.540 --> 01:20:23.240
+Vikesh K: Why, that's the case. Let me check the Kd plot of this.
+
+745
+01:20:34.120 --> 01:20:38.090
+Vikesh K: Oh, I didn't expect this to be this bad. This is actually surprising for me.
+
+746
+01:20:39.070 --> 01:20:41.790
+Vikesh K: I'm sorry I have to do upload.
+
+747
+01:20:41.790 --> 01:20:42.749
+shashi: And then kind of.
+
+748
+01:20:43.270 --> 01:20:50.220
+Ravi Duvvuri: Yeah, I could not understand. There was no relation, so you know, for a long time I wasted half a day like finding the relation.
+
+749
+01:20:50.860 --> 01:20:51.980
+Ravi Duvvuri: you know.
+
+750
+01:20:53.380 --> 01:20:54.570
+Vikesh K: What did I?
+
+751
+01:20:56.270 --> 01:20:58.880
+Vikesh K: Or there should not be any missing values
+
+752
+01:21:18.270 --> 01:21:26.790
+Vikesh K: this right down the infinity in man. I okay, I need to check for that as well.
+
+753
+01:21:29.990 --> 01:21:36.179
+Vikesh K: Oh, because there is a oh, there's Price 0 also as well. Right? So.
+
+754
+01:21:36.180 --> 01:21:36.940
+shashi: Yeah, I, clean.
+
+755
+01:21:37.323 --> 01:21:39.239
+Vikesh K: 0 doesn't make. Yeah, okay.
+
+756
+01:21:39.240 --> 01:21:40.100
+Ravi Duvvuri: 0 price here.
+
+757
+01:21:40.100 --> 01:21:45.399
+Vikesh K: That's that's why there is infinity. And Nan, okay, yeah. So there's a lot of data cleaning in this.
+
+758
+01:21:48.060 --> 01:21:52.890
+Vikesh K: So I will do it later, then, or like you have to do it. Then tell me how how it
+
+759
+01:21:53.110 --> 01:21:58.710
+shashi: I got this I pasted the picture. This is the picture I got for log density plot.
+
+760
+01:21:59.180 --> 01:22:02.770
+Vikesh K: Okay, yeah, it looks bit normal. And this is after cleaning by for the.
+
+761
+01:22:02.770 --> 01:22:03.529
+shashi: Yeah, yeah.
+
+762
+01:22:03.530 --> 01:22:04.209
+Vikesh K: Or the 0.
+
+763
+01:22:04.210 --> 01:22:07.330
+shashi: After deleting the 0 less than 0 and
+
+764
+01:22:07.780 --> 01:22:11.450
+shashi: higher than 350 K dollars, I removed the data.
+
+765
+01:22:11.450 --> 01:22:12.280
+Vikesh K: Oh, okay. Yeah.
+
+766
+01:22:12.280 --> 01:22:13.350
+shashi: And then.
+
+767
+01:22:13.350 --> 01:22:16.300
+Vikesh K: This is fairly normal. Yes, that's cool
+
+768
+01:22:17.010 --> 01:22:19.749
+Vikesh K: and otherwise it's a big rights queue, correct.
+
+769
+01:22:19.750 --> 01:22:20.470
+shashi: Yeah.
+
+770
+01:22:21.000 --> 01:22:21.810
+Vikesh K: Yeah, which?
+
+771
+01:22:21.810 --> 01:22:24.270
+shashi: I'll I'll plot that also.
+
+772
+01:22:25.070 --> 01:22:26.930
+Vikesh K: Okay, this is.
+
+773
+01:22:28.130 --> 01:22:37.400
+shashi: Yeah, I got this diagram first.st What you have now, the 55, th the line number. So I got that one. And after cleaning and running. This I got
+
+774
+01:22:38.370 --> 01:22:40.730
+Vikesh K: Oh, okay, okay, okay, that's cool.
+
+775
+01:22:41.180 --> 01:22:41.910
+Vikesh K: Good.
+
+776
+01:22:44.080 --> 01:22:45.780
+Vikesh K: Any other questions or doubts.
+
+777
+01:22:48.490 --> 01:22:50.310
+Manish Goenka: Very helpful. Thank you, Jeff.
+
+778
+01:22:50.570 --> 01:22:51.040
+Vikesh K: Yeah, it could.
+
+779
+01:22:51.040 --> 01:22:52.690
+Vikesh K: I appreciate all of you?
+
+780
+01:22:52.690 --> 01:22:53.200
+shashi: Because.
+
+781
+01:22:53.200 --> 01:22:54.060
+Vikesh K: Take all the time.
+
+782
+01:22:54.060 --> 01:22:54.900
+shashi: Thank you.
+
+783
+01:22:55.400 --> 01:23:11.260
+Vikesh K: No, you were great. I hardly did anything. All of you were discussing asking questions that we just discussed this. So thank you for pitching in. And that's you. You guys make it very interactive. So thank you for doing that, especially, you know, spending extra efforts extra time here. So I hope. This was helpful. The discussion.
+
+784
+01:23:12.180 --> 01:23:13.489
+shashi: Definitely. It is great.
+
+785
+01:23:13.720 --> 01:23:16.730
+Raghavan Srinivasan: Your class is the one I try not to miss it very.
+
+786
+01:23:16.730 --> 01:23:21.464
+shashi: Yeah, same here, even if I miss it, I try to watch the video. And
+
+787
+01:23:21.780 --> 01:23:24.949
+Raghavan Srinivasan: I'm I'm not in your section, but I'm.
+
+788
+01:23:24.950 --> 01:23:26.029
+shashi: Even I'm not.
+
+789
+01:23:26.030 --> 01:23:26.990
+Raghavan Srinivasan: Honest feedback.
+
+790
+01:23:27.370 --> 01:23:30.899
+Vikesh K: Oh, thank you, that's very kind. That's very kind. Thank you. Thanks a lot.
+
+791
+01:23:31.400 --> 01:23:36.599
+Vikesh K: and we'll see you after 2 weeks, I believe. No, I think, after 3 weeks, because there's there's a break week next.
+
+792
+01:23:36.600 --> 01:23:39.399
+shashi: There's a break week, I think. After next week there is a break. I think.
+
+793
+01:23:39.400 --> 01:23:45.779
+Vikesh K: Yeah, so there is a break week. Then there is a week 12. So then week 13. So I think I will. We will meet after 2, 3 weeks, now.
+
+794
+01:23:47.452 --> 01:23:48.089
+Vijay Chaganti: Great. Thank you.
+
+795
+01:23:48.090 --> 01:23:49.000
+Vijay Chaganti: Happy holidays.
+
+796
+01:23:49.230 --> 01:23:50.229
+Vikesh K: Thank you. Thanks a lot.
+
+797
+01:23:50.230 --> 01:23:51.909
+Vikesh K: Thank you. Thank you. Thank you.
+
+798
+01:23:51.910 --> 01:23:52.910
+Raghavan Srinivasan: Thank you all. Bye.
+
+799
+01:23:52.910 --> 01:23:53.530
+shashi: Right.
+
