@@ -1,0 +1,1882 @@
+WEBVTT
+
+1
+00:00:06.320 --> 00:00:07.910
+Viviana Márquez: Christmas tree.
+
+2
+00:00:08.370 --> 00:00:15.539
+Viviana Márquez: Everyone welcome to office hours. We'll get started in a couple of minutes. Give people a chance to join the call.
+
+3
+00:00:17.170 --> 00:00:18.659
+Viviana Márquez: Make my wish. Come.
+
+4
+00:00:22.540 --> 00:00:23.240
+Viviana Márquez: Lord!
+
+5
+00:00:25.170 --> 00:00:26.170
+Viviana Márquez: Oh.
+
+6
+00:00:29.380 --> 00:00:33.210
+Viviana Márquez: EA.
+
+7
+00:00:33.370 --> 00:00:34.120
+Viviana Márquez: You
+
+8
+00:01:17.710 --> 00:01:18.460
+Viviana Márquez: goodbye!
+
+9
+00:01:22.560 --> 00:01:31.539
+Viviana Márquez: Oh, oh, must be come, even whisper snow!
+
+10
+00:01:33.750 --> 00:01:34.440
+Viviana Márquez: Go away
+
+11
+00:01:41.460 --> 00:01:43.210
+Viviana Márquez: to the north of
+
+12
+00:02:08.759 --> 00:02:09.850
+Viviana Márquez: Amen.
+
+13
+00:02:13.990 --> 00:02:33.089
+Viviana Márquez: All right. So it's been a couple of minutes. So let's get started. Welcome everyone to module 14. So before I forget, just so, you know, there's gonna be a holiday break coming up. So this week is Module 14.
+
+14
+00:02:33.570 --> 00:02:47.969
+Viviana Márquez: You still have the office hours for next week. Let me double check that last comment I just made. So you have my office hours today. Let's see.
+
+15
+00:02:47.970 --> 00:03:16.280
+Viviana Márquez: you have Francesca's office hours on Monday, then Manny's ones on Tuesday, and then the last office hours of the year are gonna be on Thursday with Jessica, and then we go on a holiday break. Just so, you know, if you're sending questions through the platform, if you need support from the team, know that the answers might be delayed because we're going on that holiday break.
+
+16
+00:03:16.280 --> 00:03:31.999
+Viviana Márquez: and there's not going to be any new content as well. So if you want to use that time to fully relax and go on vacation, you can do that if you want to use that time to catch up on previous assignments. You can do it, and then we'll be back on January 5.th
+
+17
+00:03:32.140 --> 00:03:47.020
+Viviana Márquez: So this is the last time. I'm gonna see you guys this year. But there's still the office hours next week, so don't forget about them. But after that it's holiday break, so I hope everyone has a fantastic holiday break.
+
+18
+00:03:47.447 --> 00:04:14.569
+Viviana Márquez: So let's go with Module 14. So module 14 is decision trees, which is one of my favorite topics. And so we're gonna do a quick, content review. Then I'll show you some code that I brought, and then we'll open up for questions. But also, if you think of any questions during the office hour, feel free to type it in the chat, and we can talk about that.
+
+19
+00:04:15.071 --> 00:04:26.560
+Viviana Márquez: So I want to play a game to start. So this is a very popular game. But in case you didn't know it's called 20 questions.
+
+20
+00:04:26.570 --> 00:04:45.129
+Viviana Márquez: So I'm going to think of something, and everyone has to participate for this to work. So I'm going to think of something. It can be anything. And then I can only answer yes and no questions. And your goal is that within 20 questions you'll figure out, what is it that I'm thinking about?
+
+21
+00:04:45.474 --> 00:04:57.409
+Viviana Márquez: If you don't, if you have to use more than 20 questions you lose. If you have to use less than 20 questions, you win. So I'm going to think of something I'm going to play some music
+
+22
+00:04:59.650 --> 00:05:07.290
+Viviana Márquez: alright. So I just thought of something, feel free to put in the chat or open the microphone
+
+23
+00:05:07.310 --> 00:05:13.370
+Viviana Márquez: and ask a question, and then you only have 20 questions. I can only say yes and no. So I already thought about.
+
+24
+00:05:15.020 --> 00:05:19.939
+Viviana Márquez: Okay. So 1st question is, are you thinking of the holidays. No, I'm not.
+
+25
+00:05:21.050 --> 00:05:23.250
+Viviana Márquez: It's a food. No.
+
+26
+00:05:28.950 --> 00:05:30.330
+Viviana Márquez: Is it a place?
+
+27
+00:05:30.430 --> 00:05:32.140
+Viviana Márquez: It's not a place.
+
+28
+00:05:32.400 --> 00:05:34.550
+Viviana Márquez: Is it a movie? No.
+
+29
+00:05:34.590 --> 00:05:41.540
+Viviana Márquez: Is it adventure? No, yeah. 15 questions.
+
+30
+00:05:43.300 --> 00:05:45.790
+Viviana Márquez: Is it shopping? No.
+
+31
+00:05:45.960 --> 00:05:48.950
+Viviana Márquez: Is it dancing? No. Is it a concert? No.
+
+32
+00:05:49.320 --> 00:05:51.820
+Viviana Márquez: So now that you're almost
+
+33
+00:05:53.310 --> 00:05:57.050
+Viviana Márquez: to the 10 questions, try thinking of a strategy.
+
+34
+00:05:57.140 --> 00:05:59.079
+Viviana Márquez: What questions can you ask?
+
+35
+00:05:59.280 --> 00:06:02.309
+Viviana Márquez: So then you have more information.
+
+36
+00:06:04.040 --> 00:06:05.510
+Viviana Márquez: Is it a tool?
+
+37
+00:06:05.810 --> 00:06:06.630
+Viviana Márquez: No.
+
+38
+00:06:12.290 --> 00:06:15.240
+Viviana Márquez: it's related to the class. That's why we're playing.
+
+39
+00:06:16.410 --> 00:06:18.920
+Viviana Márquez: Is it a topic for the class. No.
+
+40
+00:06:21.580 --> 00:06:23.630
+Viviana Márquez: Do you have 10 questions left?
+
+41
+00:06:26.380 --> 00:06:28.330
+Viviana Márquez: Is that AI? No.
+
+42
+00:06:40.740 --> 00:06:43.449
+Viviana Márquez: you have 9 more questions.
+
+43
+00:06:54.100 --> 00:07:05.389
+Viviana Márquez: So Sashi has a question. But that's not a yes or no question. I'm going to change it into a yes or no question. So is it an animal? Sorry?
+
+44
+00:07:06.396 --> 00:07:07.709
+Viviana Márquez: Hi, everybody.
+
+45
+00:07:08.100 --> 00:07:16.080
+Viviana Márquez: Okay. So is it an animal? Yes, so it is an animal
+
+46
+00:07:20.120 --> 00:07:22.730
+Viviana Márquez: you said a dog. No, it's not a dog.
+
+47
+00:07:27.410 --> 00:07:34.109
+Viviana Márquez: So for those of you that just joined, we're playing 20 questions. The group has already asked 13 questions.
+
+48
+00:07:34.130 --> 00:07:39.129
+Viviana Márquez: and you have to guess what I'm thinking, using only yes and no questions.
+
+49
+00:07:39.970 --> 00:07:44.010
+Viviana Márquez: Is it a cat is not a cat, is it? A reindeer? Is not a reindeer?
+
+50
+00:07:44.890 --> 00:07:57.379
+Viviana Márquez: So the last question for those of you that just joined the chat that unlocked this line of questioning was, Is it an animal? And I said, Yes, is it a snake? It's not a snake.
+
+51
+00:08:11.770 --> 00:08:14.329
+Viviana Márquez: is it a deer? It's not a deer.
+
+52
+00:08:18.210 --> 00:08:19.550
+Viviana Márquez: 3 more.
+
+53
+00:08:19.620 --> 00:08:22.370
+Viviana Márquez: Is there a bird? Isn't that a bird?
+
+54
+00:08:22.860 --> 00:08:26.320
+Viviana Márquez: So I'm gonna win. You only have 2 more questions.
+
+55
+00:08:34.030 --> 00:08:39.919
+Viviana Márquez: Is it a cartoon? It's not a cartoon. And one last question.
+
+56
+00:08:45.940 --> 00:09:15.280
+Viviana Márquez: is that a rat? It's not a rat. So I won. You guys lost. That was 20 questions. So the what I was thinking about was a rabbit. So I have a rabbit in front of me. So that's why I thought about it. So why I was playing this game. So there's actually a strategy behind this game that will allow you to answer, to figure out what it is in less than 20 questions, and is by asking questions that will allow you to
+
+57
+00:09:15.280 --> 00:09:27.329
+Viviana Márquez: separate the possible options. In in a better way. So, for example, if your 1st question is, is it a
+
+58
+00:09:27.650 --> 00:09:28.990
+Viviana Márquez: is it a watch?
+
+59
+00:09:29.020 --> 00:09:51.839
+Viviana Márquez: It's a bad 1st question, because if I answer no, then you still have a world of possibilities. So it's better to ask bigger questions. So, for example, is it a live thing, or is it an animated thing or not animated? So I could say, Yes, it's a live thing. Then you could say, Is it a human?
+
+60
+00:09:51.880 --> 00:10:10.480
+Viviana Márquez: And then I say, no, it's not a human. Then someone could say, Is it an animal? Then I say yes. So in 3 questions. You already figure out that it's an animal where? Here in the group, it took like 12 questions to figure out that it was an animal. But if you ask this specific animal, if you say, Is it a cat?
+
+61
+00:10:10.480 --> 00:10:31.019
+Viviana Márquez: Then I'm going to say no, but you haven't figured out that it's an animal so asking those questions that crosses all the other options are better at the beginning. So, for example, is it an animal you could have asked something like, is it a mammal? So I would have said, yes. So now you know that you won't guess something that is not a mammal, and then you would have guessed
+
+62
+00:10:31.020 --> 00:10:42.320
+Viviana Márquez: you could have said, Does it have 4 legs? And I would have said Yes, and then, now you can start with the little question, so is it a cat? Is it a dog? Is it a bunny, etc?
+
+63
+00:10:42.490 --> 00:10:52.090
+Viviana Márquez: So if you ask very specific questions at the beginning, you're not going to get to the answer you have to ask broader, generic questions.
+
+64
+00:10:52.120 --> 00:11:20.809
+Viviana Márquez: So the reason why I brought this game is because that's the model we're going to learn today. That's decision trees. That's exactly what a decision tree does. So a decision tree to make a decision. So let's say, we're going to try to classify emails. Let's say, we're going to try to classify emails between work friends and family.
+
+65
+00:11:20.810 --> 00:11:48.499
+Viviana Márquez: And you have those 3 labels. So the email has to start. So the model has to start asking questions about the email. So does it contain the word meeting. So then, it probably is a work related thing. So that's a decision tree. A decision tree is asking questions to figure out that label. So now that we played and had a little bit of fun.
+
+66
+00:11:48.770 --> 00:11:49.724
+Viviana Márquez: Let's
+
+67
+00:11:50.690 --> 00:12:03.019
+Viviana Márquez: talk about the actual model. So collectively, we should have gotten 160 guesses for the 8 people. That's a good point. That's a good point. But yeah.
+
+68
+00:12:03.230 --> 00:12:18.420
+Viviana Márquez: so what is a decision tree? So decision tree is a model, a machine learning model. Typically, you think about decision trees for classifications, but you can actually use it for classifications and regressions. It's a very versatile model.
+
+69
+00:12:18.420 --> 00:12:34.220
+Viviana Márquez: So it's a non-parametric. So here's some terminology for all of you. In case you get asked this in a job interview, what is a nonparametric model? So decision tree is an example of a nonparametric model. So a non-parametric model. What it means is that
+
+70
+00:12:34.220 --> 00:12:48.049
+Viviana Márquez: instead of having a formula at the end of the day, so, for example, in linear regression, you will have a formula that to predict y, you will have a coefficient, and then another coefficient, and x 1
+
+71
+00:12:48.060 --> 00:13:01.970
+Viviana Márquez: b. 2 x, 2, and so on. So you have this math formula. So to make predictions in the future. Once you learn that math formula from the training data, you can just use that math formula. So that's a parametric model.
+
+72
+00:13:03.160 --> 00:13:25.149
+Viviana Márquez: But indecision tree is non-parametric. You're not going to have a math formula. The the model is going to learn directly from the data, and it's always going to need the data to make the decision. So non-parametric models because they don't have this math formula. They're a little bit
+
+73
+00:13:25.230 --> 00:13:53.349
+Viviana Márquez: more complex. So it means that they're more flexible and better at modeling complex data that don't follow a linear pattern, for example, but that also has a disadvantage. So the advantage is that since they're more complex, they're better at modeling complex relationships. But the disadvantage is that they're so good at modeling complex relationships that they might overfeed most of the time they overfeed the non-parametric models.
+
+74
+00:13:53.370 --> 00:14:11.520
+Viviana Márquez: So decision tree is one of them. There's many non-parametric models. Decision trees is one of them. But basically long story short, non-parametric. It means that at the end of the day to be able to make a prediction, you're not going to get a math formula. You're just going to have to use the data to make the decision.
+
+75
+00:14:11.900 --> 00:14:24.829
+Viviana Márquez: It's supervised. You apply it in problems where you have labels. So, for example, you have the label of the email. If, whether it's spam or not, or you have the label of the
+
+76
+00:14:25.430 --> 00:14:32.230
+Viviana Márquez: and price of the house. So so it's a supervised model. And well, it's a machine learning model, because that's what we're doing in this course.
+
+77
+00:14:32.728 --> 00:14:38.850
+Viviana Márquez: It's versatile. As I said it, you can use it for regression and classification problems.
+
+78
+00:14:39.000 --> 00:14:44.500
+Viviana Márquez: And it looks something like this. So, for example, let's say, you work for Hr.
+
+79
+00:14:44.550 --> 00:15:09.569
+Viviana Márquez: And in Hr. You have your hiring people, let's say, and you're hiring people. And you have a table like this with the different candidates. So candidate number so candidate number one, number 2, number 3, maybe their name, maybe their salary preference their snacks in the office preference, their commute preference.
+
+80
+00:15:09.580 --> 00:15:16.039
+Viviana Márquez: And you have information about them in here, and you want to predict whether this person is going to accept
+
+81
+00:15:16.290 --> 00:15:21.960
+Viviana Márquez: an offer or not? Let's say you're a data scientist that works for an Hr department.
+
+82
+00:15:22.010 --> 00:15:29.550
+Viviana Márquez: So if you run a decision tree, the decision tree will learn how to ask this question. So, for example, the 1st question will be.
+
+83
+00:15:29.960 --> 00:15:46.310
+Viviana Márquez: is the salary at least 50 k. So if it's not, then they're going to decline the offer. The prediction is that they're going to decline the offer. If yes, then you ask a follow up question, so is the commute more than 1 h. So if yes, they're going to decline the offer.
+
+84
+00:15:46.430 --> 00:16:07.960
+Viviana Márquez: Do they offer free coffee? So if the answer is no, then they claim the offer, and if the answer is yes, then they accept the offer. So you have questions that are not disjointed? These questions are a follow up of the previous questions. So by the time you get a candidate here, it means that
+
+85
+00:16:09.050 --> 00:16:25.199
+Viviana Márquez: They would accept the offer if the company offers free coffee, if the commute is less than 1 h, and if the salary is at least 50 k. So it's follow ups questions in there. So that's how the decision tree works.
+
+86
+00:16:26.680 --> 00:16:42.669
+Viviana Márquez: so basically in this technique, what you do is that you split the population in 2 sets based on the most significant splitter differentiator in the input variables. So you're going to ask questions based on the columns, on your data set.
+
+87
+00:16:43.336 --> 00:16:48.913
+Viviana Márquez: and you want to ask the question that allows you to
+
+88
+00:16:49.440 --> 00:16:56.779
+Viviana Márquez: separate the 2 classes the most you can. So in back thinking about the game
+
+89
+00:16:56.780 --> 00:17:25.449
+Viviana Márquez: out of all the possibilities. There was like 2 classes you could say so, wrong answers and right answers. So you wanted to ask questions that you could quickly determine what were the group of wrong answers. So if you ask a very specific question, it's not going to allow you to do this classification super quickly. So that's why, it's better to ask that more significant question that is capable of separating the 2 sets more easily.
+
+90
+00:17:26.134 --> 00:17:27.949
+Viviana Márquez: So just some terminology.
+
+91
+00:17:29.039 --> 00:17:55.250
+Viviana Márquez: So for some terminology. So root node is the 1st very 1st node. So so these little bubbles in this decision tree. So this this is called a decision tree. Whenever you have a diagram with questions that it splits off. There's a decision tree. So the root node is this one right here, the 1st one, the very 1st node. So all these bubbles are nodes, but the very 1st one is called root.
+
+92
+00:17:55.310 --> 00:18:03.030
+Viviana Márquez: and in the root you have the entire population. So in here is when you have all your original data, it's still not classified.
+
+93
+00:18:03.678 --> 00:18:18.739
+Viviana Márquez: Then, splitting is just the process of dividing the node into 2. You could divide it into more than 2. But typically in machine learning, you divide it into 2. So you divide it into this group of people. So you divide
+
+94
+00:18:19.030 --> 00:18:24.950
+Viviana Márquez: all the data that you had in this case, you divided into this group of people and this group of people
+
+95
+00:18:25.380 --> 00:18:35.899
+Viviana Márquez: then in here, for example, once you were here you divided it into the people that answer no. And the people that answer, yes. So that's just the splitting. When you're dividing a node.
+
+96
+00:18:36.454 --> 00:18:41.559
+Viviana Márquez: A branch is just this line that connects the nodes. So that's a branch.
+
+97
+00:18:42.040 --> 00:18:45.109
+Viviana Márquez: a decision node is a sub node
+
+98
+00:18:45.120 --> 00:19:00.240
+Viviana Márquez: that when it it doesn't like, if it doesn't split into anything else is a decision node. So all the green ones, this one, this one, this one and this one are decision nodes because
+
+99
+00:19:00.250 --> 00:19:09.909
+Viviana Márquez: you're already saying what the output is. You're not splitting the data any further. You're not asking any. Follow up questions. So that's a decision. Node.
+
+100
+00:19:11.410 --> 00:19:19.930
+Viviana Márquez: oh, no, no, no! I misspoke a decision. Notice when you ask a question. So these ones are the decision notes, and then the leaf notes.
+
+101
+00:19:20.450 --> 00:19:24.769
+Viviana Márquez: The leaf nodes are the ones that already have the final output.
+
+102
+00:19:24.900 --> 00:19:35.210
+Viviana Márquez: And then pruning is when you, if you ask too many questions and it got too complicated, is when you cut some of those questions. So, for example, let's say, if in this tree
+
+103
+00:19:35.300 --> 00:19:41.699
+Viviana Márquez: you realize that your model is overfitting, you would say, Okay, I'm going to prune my tree and get rid.
+
+104
+00:20:08.000 --> 00:20:08.970
+Viviana Márquez: We know.
+
+105
+00:20:12.140 --> 00:20:13.150
+Viviana Márquez: Hey, guys.
+
+106
+00:20:13.350 --> 00:20:14.560
+Carmen P.: Yes, I hear you.
+
+107
+00:20:15.000 --> 00:20:18.110
+Viviana Márquez: Awesome. Sorry about that. I don't know why I froze for a second, but.
+
+108
+00:20:18.110 --> 00:20:18.849
+Harish: I can hear you.
+
+109
+00:20:19.720 --> 00:20:24.499
+Viviana Márquez: Awesome. Awesome. I'm glad. Yeah. So I was saying that pruning is just
+
+110
+00:20:24.600 --> 00:20:29.400
+Viviana Márquez: cutting some of the nodes. If your tree is overfitting.
+
+111
+00:20:30.027 --> 00:20:32.769
+Viviana Márquez: So that's some terminology in there.
+
+112
+00:20:33.100 --> 00:20:36.349
+Viviana Márquez: So what are the advantages of the decision tree?
+
+113
+00:20:36.450 --> 00:21:03.219
+Viviana Márquez: It's very interpretable. You always want interpretable things in machine learning. So you can. I mean, not always, but a lot of times. You want to understand why the model is making a decision you need beyond the decision you need to understand why the model is making that decision. So the decision tree is very interpretable, because you can literally just look at the tree and see why a decision was made, because you can see the questions
+
+114
+00:21:03.730 --> 00:21:12.660
+Viviana Márquez: disadvantages is prone to overfitting, is prone to the tree, asking too many questions where you end up with.
+
+115
+00:21:12.920 --> 00:21:25.020
+Viviana Márquez: you could have some extreme tree that is very big, such that you have very specific questions for each observation in your data set, which is not ideal, because then
+
+116
+00:21:25.100 --> 00:21:41.089
+Viviana Márquez: you're you're not capable of generalizing. Remember that the goal with machine learning is to generalize. So that's not very good. However, here's some spoiler alert. So we're not going to do this today. But in the future we're going to fix this overfeeding
+
+117
+00:21:41.090 --> 00:22:04.789
+Viviana Márquez: by putting several decision trees together. So if you put several decision trees together, that's called a random forest. So maybe some of you have heard of this term before. A random forest is one of the most popular machine learning models. We're going to learn about them. But it's basically just putting several decision trees together. They're most of the time better than just a single truth, because it takes care of the problem with overfitting. But
+
+118
+00:22:04.990 --> 00:22:14.199
+Viviana Márquez: just keep that in mind for the lesson on ensemble models. You're going to be like, Oh, yeah, we we talked a little bit about this in the week of decision trees.
+
+119
+00:22:14.795 --> 00:22:39.640
+Viviana Márquez: All right, cool. So before I continue, let me answer one question in the chat. So earlier, we were talking about nonparametric models, and there was a question about linear regression and logistic regression. So linear regression and logistic regression are parametric models. Why? Because at the end of the day you end up with a math formula that you're going to use to make the prediction.
+
+120
+00:22:39.640 --> 00:23:04.710
+Viviana Márquez: So linear regression is the poster child of parametric models, because you end up with that clear formula that you can look at the coefficients and understand what is the impact of the independent variables on the target. Variable and logistic regression is pretty much like a linear regression. You just modify it with the Sigma function. So it's also a parametric model. But yeah, that was a good question.
+
+121
+00:23:05.670 --> 00:23:22.519
+Viviana Márquez: All right. So that's everything about decision trees. Now, maybe the question that you're thinking is okay. We saw that the game was hard, right? Like, you guys were not able to figure out about what I was thinking, using only 20 questions.
+
+122
+00:23:22.520 --> 00:23:33.299
+Viviana Márquez: So how do you know what's the best question to ask at the beginning? Using your data? What's that smart question that you should ask at the beginning, so you arrive to the answer faster.
+
+123
+00:23:33.300 --> 00:23:58.979
+Viviana Márquez: So if you're doing it through code, the code will do it yourself for you. So you don't have to worry about that. So in practice, when you're running a decision tree, you just do from cycle, learn import decision, tree decision tree that fit onto your X and y, and then that's it. So you don't have to worry about that. And then you can visualize the decision tree and see what it's doing. But of course.
+
+124
+00:23:59.020 --> 00:24:08.510
+Viviana Márquez: now that you're a student, you should learn the theory behind it. So how does the model arrive to that conclusion? To to know which question is the best question.
+
+125
+00:24:09.020 --> 00:24:13.179
+Viviana Márquez: So now we're going to talk about splits in a decision tree.
+
+126
+00:24:13.330 --> 00:24:15.420
+Viviana Márquez: So let's imagine you had a table
+
+127
+00:24:16.090 --> 00:24:21.219
+Viviana Márquez: and this table is to classify lemons and oranges.
+
+128
+00:24:21.280 --> 00:24:31.610
+Viviana Márquez: So here's a lemon, and here's an orange. So your data set will probably look something like this. So it has
+
+129
+00:24:32.050 --> 00:24:40.380
+Viviana Márquez: with so with in centimeters. It has height in centimeters, height.
+
+130
+00:24:40.510 --> 00:24:47.180
+Viviana Márquez: and let me do this. Better. So it would have with it would have height.
+
+131
+00:24:48.110 --> 00:24:50.700
+Viviana Márquez: and it will have a label. Right?
+
+132
+00:24:51.390 --> 00:24:57.930
+Viviana Márquez: So your data set. Let's look at this one. So this will be, let's say, fruit.
+
+133
+00:24:57.970 --> 00:25:07.160
+Viviana Márquez: So fruit number one has a width, let's say, of 4 cm, and let's say, a height of 5 cm, and this is an orange.
+
+134
+00:25:08.017 --> 00:25:18.700
+Viviana Márquez: Then you have this one. Let's say this one is number 2. It has a width of 10 cm and a height of 8 cm.
+
+135
+00:25:18.880 --> 00:25:27.799
+Viviana Márquez: and that's an orange as well. And this one. Let's say it's number 3, that's 10 as well. But this one has 10
+
+136
+00:25:27.870 --> 00:25:31.040
+Viviana Márquez: for height, that's a lemon
+
+137
+00:25:31.230 --> 00:25:41.705
+Viviana Márquez: or a lime. I always confuse them. But anyway. So number 4, and this is going to be 4 and 10. And this is also a lemon. So
+
+138
+00:25:42.510 --> 00:25:53.120
+Viviana Márquez: when you have your data set, you get something like this. You get a table, and it's kind of hard from looking at this table to know what question you should be asking right
+
+139
+00:25:53.220 --> 00:26:04.170
+Viviana Márquez: like, if if you just give me that table, I would say, I have no idea what is the smart question to ask like with less than 10, what is what is a good question to ask.
+
+140
+00:26:04.190 --> 00:26:16.179
+Viviana Márquez: and and here we have some other observations like notice. These blue dots are more lemons, and the orange dots are more oranges, oranges and lemons.
+
+141
+00:26:16.751 --> 00:26:23.409
+Viviana Márquez: So if you visualize it. So let me remove all this. So if you visualize your data.
+
+142
+00:26:23.600 --> 00:26:26.779
+Viviana Márquez: maybe you could say, okay, I can make a partition
+
+143
+00:26:26.860 --> 00:26:50.019
+Viviana Márquez: this way and then here, if I made this partition this way this way. But but it's it's hard like if you try to just do it out of intuition is not going to be easy, but somehow the model is able to determine that these are the best questions. So the best question is, is the width less than 6.5 cm? So that's why we have this line. This partition.
+
+144
+00:26:50.470 --> 00:26:51.919
+Viviana Márquez: So if the answer is
+
+145
+00:26:52.401 --> 00:26:57.980
+Viviana Márquez: yes, so it's the width more than that. So this is this first? st Yes, here
+
+146
+00:26:58.430 --> 00:27:03.760
+Viviana Márquez: then it asks the follow-up question, so the follow-up question is, is the height?
+
+147
+00:27:04.100 --> 00:27:09.379
+Viviana Márquez: More than 9.5 cm. So that's the split. So if the answer is, Yes.
+
+148
+00:27:09.640 --> 00:27:15.430
+Viviana Márquez: that's here. So that's what we have here. If the answer is no, that's what we have in here.
+
+149
+00:27:15.670 --> 00:27:22.220
+Viviana Márquez: If the answer, if, on the other hand, the width is less than 6.5 cm is here, they know.
+
+150
+00:27:22.590 --> 00:27:23.770
+Viviana Márquez: So there's no.
+
+151
+00:27:23.900 --> 00:27:28.430
+Viviana Márquez: And then you ask the follow up question is the height
+
+152
+00:27:28.460 --> 00:27:32.829
+Viviana Márquez: more than 6 cm. That's what we have in here. So if it's more.
+
+153
+00:27:33.260 --> 00:27:35.880
+Viviana Márquez: it's this one in here. So it's this, yes.
+
+154
+00:27:35.970 --> 00:27:42.890
+Viviana Márquez: and if everything else goes wrong, it's this, no. So this, no over here.
+
+155
+00:27:43.280 --> 00:27:57.719
+Viviana Márquez: So so yeah, you have to figure out what is the best partition? Because, like, I think, someone could have said, Okay, no. But I I disagree with this. I think the best partition is maybe somewhere in here
+
+156
+00:27:57.780 --> 00:28:04.680
+Viviana Márquez: and then in here, and then some other partition in here, something like that. So how do we know which one is the best partition.
+
+157
+00:28:05.530 --> 00:28:20.209
+Viviana Márquez: So you determine that with a number that number is called the information gain, so the information gain is how much better a decision tree is
+
+158
+00:28:22.120 --> 00:28:26.610
+Viviana Márquez: how? How is that decision tree compared to the other decision trees
+
+159
+00:28:26.640 --> 00:28:34.932
+Viviana Márquez: classifying the data. So is the split. Better. So the data separated. More.
+
+160
+00:28:35.830 --> 00:28:42.229
+Viviana Márquez: So, for example, someone could have said, Well, actually, you could just do
+
+161
+00:28:42.610 --> 00:28:55.230
+Viviana Márquez: one split here. And this question would have separated this 2 in here and this 2 in here. So maybe that question would have been better, because only with one question you would have separated the 2 classes
+
+162
+00:28:55.300 --> 00:29:08.979
+Viviana Márquez: where here you had to ask this question, and then this follow-up question, and then this follow-up question. So maybe just separating it in here. If this was your 1st question. Is the height more than 10 cm?
+
+163
+00:29:09.150 --> 00:29:37.470
+Viviana Márquez: Then you only would have needed one question instead of 3 questions that we have in here. So how do you quantify that? How do you quantify? That is with this formula that is called information gain. So that formula is going to give you a number. And you want that number to be as high as possible. Typically, you want this number to be higher. So if you compare several decision trees, that's basically what's going to happen. You're going to compare several decision trees.
+
+164
+00:29:37.500 --> 00:29:44.230
+Viviana Márquez: You're going to choose the one that has the higher information gain. So let me give you a little bit more of detail. So
+
+165
+00:29:44.970 --> 00:29:48.060
+Viviana Márquez: you repeat this process
+
+166
+00:29:48.180 --> 00:29:55.549
+Viviana Márquez: so a lot of times, you're not going to be able to answer that with just one question. So you're going to have to ask some follow up questions.
+
+167
+00:29:56.100 --> 00:30:07.370
+Viviana Márquez: So the way you determine that follow up questions is through computing the information gain with the new questions, with the follow up questions.
+
+168
+00:30:07.410 --> 00:30:26.699
+Viviana Márquez: And when do you stop asking questions when a criteria is met? So, for example, when there's no further information gain. So, for example, when the classes are no longer separated, so information gain is basically asking, Do I have nodes that are pure? Do I have nodes that only have one class on them?
+
+169
+00:30:27.546 --> 00:30:29.120
+Viviana Márquez: Or if
+
+170
+00:30:29.250 --> 00:30:43.959
+Viviana Márquez: it's getting too deep, you can determine a number and say, Okay, I don't want my my decision tree to be deeper than 20. So deeper than 20 is like this level. So here, this one is, 1, 2 levels deep.
+
+171
+00:30:43.970 --> 00:30:47.329
+Viviana Márquez: So you don't want to ask more than 20 follow-up questions.
+
+172
+00:30:49.140 --> 00:30:50.480
+Viviana Márquez: So
+
+173
+00:30:51.440 --> 00:31:00.340
+Viviana Márquez: each flow chart of the 3 corresponds to a partition of the feature of this space. So in this case, because you only have 2 features.
+
+174
+00:31:00.430 --> 00:31:04.780
+Viviana Márquez: It's kinda easy to visualize the the
+
+175
+00:31:04.820 --> 00:31:17.620
+Viviana Márquez: the partition. You can plot it, but if you have more than 2 features, it will be harder to visualize it. So this is a small example, but if you have a lot of features, it will be hard to visualize it. So you have to rely only on the flow chart.
+
+176
+00:31:18.683 --> 00:31:20.390
+Viviana Márquez: Cool. So
+
+177
+00:31:20.900 --> 00:31:29.910
+Viviana Márquez: before I go on to explain the math behind the information gain, I wanted to stop for a second and see if there's any questions.
+
+178
+00:31:33.618 --> 00:31:39.680
+Zhujun Wang: I have a quick question. So so regarding you say the good separation. For example.
+
+179
+00:31:39.880 --> 00:31:48.389
+Zhujun Wang: if I have a like high at 9, and which means the the above want. All the blue dots
+
+180
+00:31:48.430 --> 00:31:53.859
+Zhujun Wang: compare with the like, say, the separation around like 8, which means
+
+181
+00:31:54.320 --> 00:32:04.609
+Zhujun Wang: separation around a separate, around a looks like I cover all the all the blue dots, but I have some little bit red dots. So compare these 2 separation, which one is good.
+
+182
+00:32:05.020 --> 00:32:09.350
+Zhujun Wang: Oh, yeah, so. So I pretty much have a. This is my question, how do you define? Yeah.
+
+183
+00:32:09.350 --> 00:32:11.160
+Viviana Márquez: So that's a really good question.
+
+184
+00:32:11.170 --> 00:32:37.160
+Viviana Márquez: So let's start with the one with the separation at 9. So let's say, this will be the separation at 9. So this this node is pure because it only has triangles. So this one is pure. So this one is done. You're not going to ask any, follow up questions, and then, on this side, you might have to ask a follow up question because you still have some mix, so maybe you would ask a question like somewhere around here to try to separate it.
+
+185
+00:32:37.160 --> 00:32:50.200
+Viviana Márquez: So now let's look at the other one. So the other one was, what if I do it here. So if you do it here, you have to ask a follow up question here, because you still have 2 classes, so maybe you have to separate it here.
+
+186
+00:32:50.440 --> 00:32:54.209
+Viviana Márquez: and this one you would also have to ask a follow up question.
+
+187
+00:32:54.510 --> 00:32:57.629
+Viviana Márquez: and maybe another follow-up question, because you still have this too.
+
+188
+00:32:58.550 --> 00:32:59.290
+Zhujun Wang: I see.
+
+189
+00:32:59.530 --> 00:33:02.239
+Viviana Márquez: But but I know that right now. It sounds like
+
+190
+00:33:02.870 --> 00:33:28.350
+Viviana Márquez: that. I'm only not putting a number. So how do you put a number into that. How do you quantify? That is with the information? Gain formula. So I'll just show you the information gain formula in a second. But the intuition behind it is that you want to create separations such that ideally, for example, the one in the in the drawing here. This is a pure class here. This is a pure class. This one is a pure class, sometimes it's not completely possible.
+
+191
+00:33:28.370 --> 00:33:32.020
+Viviana Márquez: So then, for example, this one you have this guy in here.
+
+192
+00:33:32.220 --> 00:33:42.620
+Viviana Márquez: But you kind of just have to accept it. It's very hard to get very pure notes without overfitting because you, I guess you could make another separation and say something like, Okay, I'm gonna
+
+193
+00:33:42.750 --> 00:34:01.538
+Viviana Márquez: make. I don't know this separation here. And then this separation here. But then that's that's overfitting. Once you start getting. And that's a sign overfitting. Actually, if if there's a node with only one observation that's overfitting, typically, you want several observations in a in a node,
+
+194
+00:34:02.070 --> 00:34:04.360
+Viviana Márquez: so I don't know if that answer your question.
+
+195
+00:34:04.570 --> 00:34:05.890
+Zhujun Wang: Yeah. Thanks.
+
+196
+00:34:06.710 --> 00:34:07.550
+Viviana Márquez: Awesome.
+
+197
+00:34:07.720 --> 00:34:19.419
+Viviana Márquez: So I see some questions in the chat. Can the source data be textual multimodal? Okay, so that's a great question. So in this example
+
+198
+00:34:19.489 --> 00:34:29.390
+Viviana Márquez: you have numbers, so the features are numbers. Can the features be a category? So, instead of saying width and height, they will be like
+
+199
+00:34:29.389 --> 00:34:50.580
+Viviana Márquez: color and shape. Yes, they can. So you would still ask the question. It will be difficult to plot, but you can still ask the questions instead of is height, 6.5 cm, you would ask, is the color orange, for example? So in this example, actually, here, we have a numerical variable.
+
+200
+00:34:50.850 --> 00:35:02.849
+Viviana Márquez: This is numerical, but this one is categorical, which is like, does it offer coffee? Yes or no? So it would still make the decision tree. It will be hard to visualize like you can't really plot it, but you can have categories.
+
+201
+00:35:03.656 --> 00:35:05.170
+Viviana Márquez: With text.
+
+202
+00:35:05.230 --> 00:35:09.739
+Viviana Márquez: Let me think of text with text. You have.
+
+203
+00:35:10.180 --> 00:35:36.899
+Viviana Márquez: I'll say I'll be better. I'll be able to answer that question better once we go through the Nlp module, because with text you have to, it's not just as easy as just give it number to the words because you have to consider context. So you capture the meaning of the text. But basically, once you do the pre-processing and the feature engineering, you will be able to do it as well.
+
+204
+00:35:40.270 --> 00:35:53.659
+Viviana Márquez: yeah. Yeah. Text. So anything that is text like something that someone wrote, you have to preprocess that because remember that the models only take numbers as inputs. So when you have a category.
+
+205
+00:35:53.660 --> 00:35:59.269
+Viviana Márquez: so far we have only worked with categories. It's easy because you can do one hot encoding. For example.
+
+206
+00:35:59.270 --> 00:36:24.059
+Viviana Márquez: for text, you have to do a special type of embedding. You can't just do one hot encoding because it wouldn't capture the meaning of the text. But we're going to learn that on Module 18, so Module 18 is going to be focused on Nlp. How to deal with those columns that are text rather than a category or a number. But once you do that pre-processing that I'm not going to go too much into detail, because we're going to cover that in Module 18.
+
+207
+00:36:24.528 --> 00:36:27.570
+Viviana Márquez: Yes, you can use it as a normal feature.
+
+208
+00:36:28.486 --> 00:36:37.100
+Viviana Márquez: Another question, so is there a maximum number of trees that are combined to do the Ig
+
+209
+00:36:37.320 --> 00:36:47.300
+Viviana Márquez: only 3 decision trees can be compared. So you can compare as many decision trees as you want. So, for example, you could ask a question.
+
+210
+00:36:47.360 --> 00:36:49.889
+Viviana Márquez: You could have this decision tree in here.
+
+211
+00:36:50.180 --> 00:36:53.930
+Viviana Márquez: You could have another decision tree that asks, is the width
+
+212
+00:36:53.970 --> 00:37:02.820
+Viviana Márquez: less than 7.5? You could have another decision. Tree that asks, is the width less than 8.5
+
+213
+00:37:02.910 --> 00:37:24.060
+Viviana Márquez: another one that is asks instead, is the height less than 3.5. So you can have as many decision trees. The algorithm is going to do this for you is going to compare several decision trees for you, so you can obtain that result in there. I don't know if that was the question. Let me know if that was not the question.
+
+214
+00:37:24.606 --> 00:37:36.189
+Viviana Márquez: But yeah, the model behind doors is going to compare several decision trees and use the information gained to decide which one of the decision trees ask the better questions.
+
+215
+00:37:36.750 --> 00:37:39.330
+Viviana Márquez: So.
+
+216
+00:37:39.370 --> 00:37:58.990
+Viviana Márquez: okay, so we talked about information gain. We want to pick the decision tree that has the largest information gain. So the information gain is the biggest number. But how do we compute that? We compute that using something that is called impurity measures, so impurity measures.
+
+217
+00:37:59.020 --> 00:38:02.750
+Viviana Márquez: it quantifies. It gives a number to each node
+
+218
+00:38:02.890 --> 00:38:24.480
+Viviana Márquez: to know how pure it is. So, for example, the 1st node is never going to be pure, because that's where you have all your data. So this node is not pure at all. Where this node here is pure, because most of the data in this node belongs to this category. And then you have one little guy Button. It's pure. It's definitely purer than this one
+
+219
+00:38:24.530 --> 00:38:34.180
+Viviana Márquez: in here. It's also purer than this one, because most of the observations are stars and a few of them. And if you want to chew.
+
+220
+00:38:34.570 --> 00:38:50.570
+Viviana Márquez: you could ask a follow-up question here to get even a pure node where you only have stars. And then here you would only have dots. So so yeah, the imperial measure gives you a number of how pure this is.
+
+221
+00:38:50.630 --> 00:39:09.289
+Viviana Márquez: So there's 2. 1 is Gini. We're not really going to cover genie, because they're very similar to each other. So we're only going to cover entropy. So this is the formula for the entropy one. So what is the entropy? Entropy is an impurity measure. So how messy is my node?
+
+222
+00:39:09.789 --> 00:39:18.170
+Viviana Márquez: It ranges from 0 to one. So you want this number to be as close as possible to 0. So if I go back.
+
+223
+00:39:20.340 --> 00:39:37.750
+Viviana Márquez: This one is probably going to have a number close to one, because it's not pure at all, and this one is going to have a number that is close to 0 because it's very pure. So we want these final notes to be as close as possible to 0. And this one, I don't know the exact one.
+
+224
+00:39:37.830 --> 00:40:05.040
+Viviana Márquez: So this one is going to be. I don't know 0 point. Let's say 0 point 3, because this it's definitely pure than this one, but not very pure. So 0 point 3. But yeah, so so that's entropy. And the higher the entropy, it means that the distribution of your data set. If you like to think of distributions is almost like a uniform distribution, because you have
+
+225
+00:40:05.080 --> 00:40:11.010
+Viviana Márquez: many classes and many instances of each one of the classes.
+
+226
+00:40:11.130 --> 00:40:15.899
+Viviana Márquez: Lower entropy means that this, the distribution has a peak.
+
+227
+00:40:16.474 --> 00:40:21.100
+Viviana Márquez: But, in other words, higher entropy, lower entropy is
+
+228
+00:40:21.670 --> 00:40:28.869
+Viviana Márquez: how messy the node is. So. This one is very messy, so it has a higher entropy. This one has a low entropy because it's not as messy.
+
+229
+00:40:30.736 --> 00:40:38.843
+Viviana Márquez: So the formula is this one. So don't be scared by the formula. So this one is.
+
+230
+00:40:39.744 --> 00:40:41.400
+Viviana Márquez: here you're gonna sum
+
+231
+00:40:41.480 --> 00:40:51.480
+Viviana Márquez: for the number of classes. So so if you have 2 classes. You're going to have this term 2 times, and then this pi is the probability of that class
+
+232
+00:40:51.760 --> 00:40:59.569
+Viviana Márquez: times the log 2 of that probability. So let me give you an example. I know that math formulas are scary.
+
+233
+00:40:59.820 --> 00:41:04.349
+Viviana Márquez: but let's say you had a hundred data points.
+
+234
+00:41:04.530 --> 00:41:07.590
+Viviana Márquez: And out of those 100 data points
+
+235
+00:41:07.750 --> 00:41:10.679
+Viviana Márquez: 30 points belong to one class.
+
+236
+00:41:10.780 --> 00:41:15.780
+Viviana Márquez: and 70 points belong to the other class. So how do you apply this formula?
+
+237
+00:41:15.820 --> 00:41:23.029
+Viviana Márquez: So you take the 1st class. So let's say, okay, let's start with the positive class, the 1st class. So it's going to be
+
+238
+00:41:23.170 --> 00:41:29.209
+Viviana Márquez: 30 over a hundred times log 2 of 30 over a hundred
+
+239
+00:41:29.700 --> 00:41:36.480
+Viviana Márquez: and minus, because we have this minus and then minus the next class, which is 70 over a hundred
+
+240
+00:41:36.900 --> 00:41:40.160
+Viviana Márquez: times the log of 2 of 70 over a hundred.
+
+241
+00:41:40.170 --> 00:41:56.289
+Viviana Márquez: So at the beginning, my data has an entropy of 0 point 8 8. So it's very close to one, because it's at the beginning. We haven't done any classification. So so that's probably how it's going to be here at the beginning. You have different classes.
+
+242
+00:41:56.650 --> 00:42:02.600
+Viviana Márquez: Here, it just they just simplify the numbers, but that's where this 3 over 10 is coming, 30
+
+243
+00:42:02.840 --> 00:42:09.049
+Viviana Márquez: and a hundred, and then this 7, over 10 is 70 or 10. So these numbers
+
+244
+00:42:09.140 --> 00:42:21.450
+Viviana Márquez: are extracted from using this formula, and then this is just an example. If you had 100 points, 30 belonging to one class and 70 belonging to the other class. This is how you will write the formula.
+
+245
+00:42:22.760 --> 00:42:27.909
+Viviana Márquez: so the information. So this is the entropy. So entropy.
+
+246
+00:42:28.050 --> 00:42:39.611
+Viviana Márquez: The entropy at the beginning is 0 point 8 8. We want this number to be as low as possible. The information gain is the the
+
+247
+00:42:40.280 --> 00:42:45.969
+Viviana Márquez: The information gain is based on how much entropy is decreased.
+
+248
+00:42:46.140 --> 00:42:51.049
+Viviana Márquez: So basically, how much entropy have we removed?
+
+249
+00:42:51.090 --> 00:42:58.090
+Viviana Márquez: So the formula for entropy? Let me see here.
+
+250
+00:42:59.720 --> 00:43:05.510
+Viviana Márquez: Well, it's a recursive formula. So you start with 0 point 8 8,
+
+251
+00:43:05.700 --> 00:43:28.070
+Viviana Márquez: and then let's say you ask a question. So once you ask a question, you compute the entropy again. So you subtract that, and then you get the results. So I'll give you a quick example of how to compute that information. Gain on a full example. But for now I want to stop and see if there's any questions about the entropy formula. So this formula, if if there's any questions here.
+
+252
+00:43:36.890 --> 00:43:39.440
+Viviana Márquez: So in the meantime I see a question in the chat.
+
+253
+00:43:40.051 --> 00:43:52.199
+Viviana Márquez: So the question is, can we use precision and recall instead of information? Gain? No, because it's 2 separate things. So precision and recall is, once you have your decision tree.
+
+254
+00:43:52.490 --> 00:44:12.120
+Viviana Márquez: you want to know if it's a good model or a bad model, because you probably want to compare your decision tree to a Knn to a logistic regression. So how do you compare those models with precision and recall? So it's a performance metric. So you do that after you have created your model. But how do you come up with those questions to ask
+
+255
+00:44:12.130 --> 00:44:32.863
+Viviana Márquez: in the decision tree is through the information gain. Using either entropy or genie. So. And and genie is spelled this way in case you're curious. But yeah, and we're only covering entropy. So this is just so. If someone asks you about genie, you say, Oh, yeah, this is just like a
+
+256
+00:44:33.877 --> 00:44:37.629
+Viviana Márquez: measure similar to the entropy, but they're very similar.
+
+257
+00:44:39.835 --> 00:44:53.879
+Viviana Márquez: Why, log of 2? That's a great question. I never really stopped to think about the formula. But yeah, it probably has something related to the fact that it's a binary question.
+
+258
+00:44:54.382 --> 00:44:59.460
+Viviana Márquez: But I don't know for sure. I never stopped to think about the formula. It's a great question.
+
+259
+00:45:00.335 --> 00:45:12.659
+Viviana Márquez: So a good decision tree. So yes. So if you have a good decision tree, the entropy should drop quickly. So if you're asking good questions. The entropy is gonna go down.
+
+260
+00:45:13.206 --> 00:45:31.919
+Viviana Márquez: So here's here are some other examples of entropy. So this is an example where all your data. So let's say all your data only had one label. So let's say you're trying to classify cats and dogs. But all the training data that you have is for cats. You don't have any dogs.
+
+261
+00:45:32.420 --> 00:45:36.429
+Viviana Márquez: You will plug in the values so it will be
+
+262
+00:45:37.140 --> 00:46:04.660
+Viviana Márquez: minus one times log of 2. This is log of 2 log of 2 log of 2 log, 2 of one minus 0 times log 0. So it is 0 if you like. Put it in the calculator. This is going to give you 0, which makes sense. The entropy is going to be 0. If there's only one class, and then here you have the opposite. What is, if you have only of the other class, it will give you also 0.
+
+263
+00:46:05.180 --> 00:46:12.720
+Viviana Márquez: If you have 50 50, which is this case, you have 50 instances of one class and 50 instances of the other class.
+
+264
+00:46:12.770 --> 00:46:18.290
+Viviana Márquez: The entropy is going to give you one, because it's very messy. That's the messiest you can have where you have
+
+265
+00:46:18.310 --> 00:46:28.299
+Viviana Márquez: half of the like half and a half. You you don't have a little bit more. You don't have a majority class. All the classes are equally represented. You're gonna get a 1.
+
+266
+00:46:29.013 --> 00:46:41.549
+Viviana Márquez: If you have, for example, something like 75 and 25, you just plug in the values. And you get these numbers, you plug in the values and you get this number. So here's an example of the entropy.
+
+267
+00:46:41.780 --> 00:46:46.590
+Viviana Márquez: But and well, I'll share this link
+
+268
+00:46:46.670 --> 00:46:55.899
+Viviana Márquez: for reference here they have more examples. If you want to look at more examples later on, I put it in the chat, but this is also shared on canvas.
+
+269
+00:46:56.444 --> 00:47:00.899
+Viviana Márquez: So, okay, we know how to compute entropy now.
+
+270
+00:47:00.960 --> 00:47:09.920
+Viviana Márquez: So what is the entropy of this data set? So this data set has weekday or weekend. So what type of day is it
+
+271
+00:47:10.070 --> 00:47:12.510
+Viviana Márquez: if it's sunny, or if it's rainy
+
+272
+00:47:13.064 --> 00:47:17.459
+Viviana Márquez: the time of the day? And yes or no labels. This is like.
+
+273
+00:47:17.470 --> 00:47:29.889
+Viviana Márquez: is there going to be traffic? So if it's a weekday, it's sunny. It was at one Pm. And you registered no traffic. So then you want to know, based on these conditions, whether there's going to be traffic or not. So this is the label.
+
+274
+00:47:30.040 --> 00:47:35.369
+Viviana Márquez: So on this data set this data set. There's 25 rows in here
+
+275
+00:47:36.220 --> 00:47:43.410
+Viviana Márquez: out of these 25 rows. I counted them for you, but you can count them. You have 11 yeses and 14 no's.
+
+276
+00:47:43.570 --> 00:47:47.239
+Viviana Márquez: So the entropy of this data set is
+
+277
+00:47:47.640 --> 00:47:59.229
+Viviana Márquez: minus. So let me write that formula again for you of the entropy. Just so you have it. So it's the sum of minus the probability of each one of the classes.
+
+278
+00:47:59.280 --> 00:48:02.629
+Viviana Márquez: Times the log. 2 of the probability.
+
+279
+00:48:03.160 --> 00:48:15.549
+Viviana Márquez: So here, what is the probability that you're going to get a yes. So the probability that you're going to get a yes is 11 over 25, because you have these 25 rows.
+
+280
+00:48:15.710 --> 00:48:19.210
+Viviana Márquez: So you plug in that value in here and that value in here.
+
+281
+00:48:19.260 --> 00:48:40.989
+Viviana Márquez: and then you subtract the next class. So the next class is 14 no's so 14, divided by 2514, divided by 25. That's the probability of getting a no. So the entropy of this data set is very messy. It's very close to one, because, you have almost 50 50 split here. So so that makes sense.
+
+282
+00:48:41.430 --> 00:48:46.260
+Viviana Márquez: So now that you have the entropy, how do you compute the information gain. So the information gain.
+
+283
+00:48:46.554 --> 00:49:07.660
+Viviana Márquez: You ask questions. So then you ask us a follow up question. So let's say I don't know which one is the best. Follow up question. Should I ask, is it a weekday or a weekend? Is it sunny, or is it rainy? Is it one Pm. Or 8 Am. I don't know which follow up question to ask, so I'm going to start with the day. Follow up questions. Is it a weekday or a weekend.
+
+284
+00:49:07.920 --> 00:49:09.720
+Viviana Márquez: So in here.
+
+285
+00:49:10.310 --> 00:49:13.020
+Viviana Márquez: How does this work? So you have
+
+286
+00:49:13.230 --> 00:49:17.399
+Viviana Márquez: the original entropy. So this is the original entropy.
+
+287
+00:49:18.113 --> 00:49:21.079
+Viviana Márquez: So that's 0 regional entropy in here.
+
+288
+00:49:21.450 --> 00:49:44.230
+Viviana Márquez: and then you subtract the entropy of the follow-up questions. So the entropy of the follow-up questions is okay, if it's a weekday, so if you only select the ones that are a weekday. So weekday, weekday, weekday, weekday, weekday, weekday, weekday weekday, one more, one more, one more.
+
+289
+00:49:44.650 --> 00:49:50.220
+Viviana Márquez: one more, another one another one another, one another one, this one and this one and this one. So
+
+290
+00:49:50.250 --> 00:49:56.160
+Viviana Márquez: all these instances where it's a weekday, how many yeses do you have? So if it's a weekday, you have
+
+291
+00:49:56.330 --> 00:50:04.999
+Viviana Márquez: 7 yeses and 13 nos, and then you have. If it's a weekend, you have one. No, and one yes, so that's the split I created.
+
+292
+00:50:06.400 --> 00:50:08.359
+Viviana Márquez: So out of.
+
+293
+00:50:09.340 --> 00:50:16.669
+Viviana Márquez: And and here you have 13 plus 7. So 13 plus 7, it's 20.
+
+294
+00:50:16.880 --> 00:50:24.650
+Viviana Márquez: So you have 20 weekdays, and then, for the weekend you have 5 weekends.
+
+295
+00:50:25.280 --> 00:50:48.029
+Viviana Márquez: So here you're putting the ratio of the days. So, for example, okay, if it is, a weekday is 20 over 25. So what is your chance that you're going to get a weekday? So it's 20 over 25. There's 25 days in the data. Set your chance of getting a weekday is 20 out of 25, because there's 20 week
+
+296
+00:50:48.120 --> 00:50:49.160
+Viviana Márquez: days.
+
+297
+00:50:49.706 --> 00:50:57.539
+Viviana Márquez: Then you plug in the entropy for that question. So the entropy for that question is, once you have it, if it's a weekday.
+
+298
+00:50:57.912 --> 00:51:09.479
+Viviana Márquez: Okay, what is the chance that you get? A? No. So it's 13 over 20. So that's the 0 6.2 5. So you're using the entropy formula here. So that's why you get in here.
+
+299
+00:51:09.540 --> 00:51:16.327
+Viviana Márquez: And then if it's if it's gonna rain if it's
+
+300
+00:51:17.436 --> 00:51:20.530
+Viviana Márquez: Yes. So if it's there's gonna be. Traffic
+
+301
+00:51:20.570 --> 00:51:25.820
+Viviana Márquez: is 7 over 20, which is the 0 turn point 5. So that's where this number is coming from.
+
+302
+00:51:25.940 --> 00:51:28.350
+Viviana Márquez: and then you
+
+303
+00:51:28.490 --> 00:51:40.009
+Viviana Márquez: subtract. But because of the 2 negatives they become positive. So you add the week the weekends. So for the weekends you have 5 weekends. So that's this 5
+
+304
+00:51:40.070 --> 00:51:43.819
+Viviana Márquez: over 25. So the probability of you getting a weekend is this.
+
+305
+00:51:43.920 --> 00:51:47.850
+Viviana Márquez: and then you, you multiply by the entropy.
+
+306
+00:51:48.220 --> 00:51:52.359
+Viviana Márquez: So once you do this, the information gain
+
+307
+00:51:52.540 --> 00:52:00.840
+Viviana Márquez: by day. If you compute the day, variable information gain is 0 point 9 7,
+
+308
+00:52:01.300 --> 00:52:11.690
+Viviana Márquez: and then you repeat this process. In practice you won't have to do this. This is just so, you know the theory. But in practice the code is going to do it for you. But if you were going to do it by hand.
+
+309
+00:52:12.161 --> 00:52:19.210
+Viviana Márquez: if you say, Okay, this was with day, now with weather, I'm going to repeat the same operation.
+
+310
+00:52:19.220 --> 00:52:37.119
+Viviana Márquez: So I'm going to know, okay, if I say, Okay, it's sunny. How many yeses and no I get, and I plug in all the values my information gain is your point 2 1. And then if, instead of looking at whether I look at time, this is my information gain. So now I have these 3 potential decision trees.
+
+311
+00:52:37.190 --> 00:52:48.360
+Viviana Márquez: Should my 1st question be, what day is it? Should my 1st question be, what kind of weather is it? Should my 1st question be, what time of the day is it so? How do I decide?
+
+312
+00:52:48.520 --> 00:52:52.509
+Viviana Márquez: So the information gain while the entropy you want to reduce.
+
+313
+00:52:52.970 --> 00:52:57.239
+Viviana Márquez: So let me write this here. So while you want to reduce the entropy.
+
+314
+00:52:58.100 --> 00:53:05.949
+Viviana Márquez: you want to increase the information gain. So these are information gain. So information gain, information, gain and information gain.
+
+315
+00:53:06.210 --> 00:53:11.000
+Viviana Márquez: So since you wanna increase the information gain.
+
+316
+00:53:11.050 --> 00:53:17.550
+Viviana Márquez: this is the biggest number. So the 1st question that you should ask is, What is the weather?
+
+317
+00:53:17.750 --> 00:53:34.849
+Viviana Márquez: And then you do the same process. So if you wanted to know what is the best, follow up question to ask whether it's the week day or the weekend. Then you do this, follow up so it's a very tedious calculation, because you have to plug in all those values, and eventually you will be able to determine that by hand.
+
+318
+00:53:35.505 --> 00:53:38.689
+Viviana Márquez: But yeah, that's that's very tedious. But
+
+319
+00:53:38.740 --> 00:53:49.859
+Viviana Márquez: unless you're learning the theory like we're doing here? Because, of course, you don't want to just know. Oh, the decision tree magically works. You want to know, how does it arrive to the questions that it asks.
+
+320
+00:53:50.338 --> 00:53:55.630
+Viviana Márquez: is through this process. But the code is just does it instantaneously for you?
+
+321
+00:53:56.433 --> 00:54:02.380
+Viviana Márquez: So before I show you code, I wanted to stop for a second and see if there's any questions.
+
+322
+00:54:16.900 --> 00:54:29.610
+Viviana Márquez: All right. So there's 1 question. So in real world scenarios, we have very complex data, right? So it's not nicely that you have something like the.
+
+323
+00:54:30.040 --> 00:54:32.609
+Viviana Márquez: Let's see that you have the
+
+324
+00:54:33.020 --> 00:54:55.820
+Viviana Márquez: oranges all over here, and then the lines all over here and you can just do. The split data is very complicated. So that's why we have to use something more sophisticated than a logistic regression. A logistic regression wouldn't be able to separate a very complex data set. So that's why you use decision trees, because decision trees are able to
+
+325
+00:54:55.820 --> 00:55:05.219
+Viviana Márquez: model more complex data. So you're always have this goal of reducing entropy. But the question in the chat is very good, that what
+
+326
+00:55:05.580 --> 00:55:11.870
+Viviana Márquez: is there a trade-off to trying to reduce that entropy. So if you reduce that entropy way too much.
+
+327
+00:55:11.950 --> 00:55:29.070
+Viviana Márquez: then you're overfeeding. Because yes, you will have super pure nodes. That's why your entropy will be reduced. But then you have the issue. Where, if you have a new data point coming in is not going to be able to generalize. So that's the problem that we had in here.
+
+328
+00:55:31.640 --> 00:55:40.409
+Viviana Márquez: So, for example, in here, you could reduce the entropy by, if this is your split, you could ask a follow-up question like this.
+
+329
+00:55:40.470 --> 00:55:44.509
+Viviana Márquez: And then another follow up question like this to separate
+
+330
+00:55:44.530 --> 00:55:53.739
+Viviana Márquez: this triangle over here. But that's a problem. Because then here we're overfeeding, because if we can add a new observation. Let's say we get a new observation here.
+
+331
+00:55:54.030 --> 00:55:55.810
+Viviana Márquez: This new observation.
+
+332
+00:55:56.160 --> 00:56:04.989
+Viviana Márquez: most likely, is going to be an orange right? Because it's it will make sense that most likely will be an orange, but because we did.
+
+333
+00:56:05.110 --> 00:56:21.889
+Viviana Márquez: we reduced all the entropy. Then it's going to overfit, and it's going to say that it's a lemon. So you don't want to do that. And that's a known problem of decision trees that might overfit on the data too much. So what can you do to avoid this in the case of decision trees
+
+334
+00:56:21.890 --> 00:56:40.009
+Viviana Márquez: to prune them so to not let it get very deep and ask too many questions. But the best way to fix that overfeeding is by doing this that we're going to cover during the Ensemble Models week, which is Module 18. You just put several decision trees together. And even if
+
+335
+00:56:40.250 --> 00:56:50.920
+Viviana Márquez: each one of these decision trees are overfitting to your data by putting several of them together, it will allow you to not overfit to your data, which is pretty cool, and we'll talk
+
+336
+00:56:51.030 --> 00:56:56.610
+Viviana Márquez: and give more details about that once we reach that module. But yeah, that was a really good question.
+
+337
+00:56:59.380 --> 00:57:13.420
+Viviana Márquez: So that's another really good question. So the other question is, in real life scenarios. Do you even try regression? Or you just start with a decision tree. So if you have linear data, so data that you can
+
+338
+00:57:13.420 --> 00:57:41.899
+Viviana Márquez: clearly separate using a line, the linear model is going to be the best one. So you should always try the 2 of them. You should try a decision tree and a linear regression or a logistic regression. If you're working with classification. So you try several models because a lot of the times you don't know if your data is linearly separable, you just look at a table, and it will be very hard to know if the data is linearly separable. So you just try all the models and see which one performs best for your data
+
+339
+00:57:42.150 --> 00:57:57.470
+Viviana Márquez: a lot of times. What happens is that you end up using a random forest or another ensembled model. They're more robust, and we're building towards that, because to be able to talk about ensemble learning, we have to learn each one of the models 1st
+
+340
+00:57:57.470 --> 00:58:17.509
+Viviana Márquez: and then know how to put them together to work together. So we're building towards that a lot of times. You're just going to pick an ensemble model there most of the time, like 95% of the time. They're better than just a decision tree or a logistic regression, or any other kind of model ensemble. Models are usually better in real life.
+
+341
+00:58:17.510 --> 00:58:20.260
+Viviana Márquez: That being said, it's always good practice to
+
+342
+00:58:20.370 --> 00:58:41.629
+Viviana Márquez: try several models, because also from a business communication perspective, you can say, Okay, my baseline was this decision tree or this linear regression model? And it had this performance. And now that I tried the ensemble model, it improved this much. So it allows you to talk a little bit better about your modeling, but a lot of times it ends up being an ensemble model.
+
+343
+00:58:42.970 --> 00:58:51.499
+Viviana Márquez: alright cool. Let me know if there's more questions. But let me start sharing the code I had for today. So I had 2 notebooks.
+
+344
+00:58:52.102 --> 00:58:54.759
+Viviana Márquez: So let me open this one.
+
+345
+00:58:55.040 --> 00:59:09.579
+Viviana Márquez: and this one I'm going to share those links into the chat. I know that I'm running out of time, so feel free to drop if you need. But I'm going to put these links in the chat in case you need them before
+
+346
+00:59:10.180 --> 00:59:17.509
+Viviana Márquez: before the time is over. Okay, so this is the decision tree.
+
+347
+00:59:19.180 --> 00:59:37.169
+Viviana Márquez: if you're working locally, if you're not working on Google Colab, because on Google colab, you don't have to do anything graphvis works. So we're going to use cyclearn as usual, the same stuff as usual. But the only new one is this graph, this library. This one is specific for decision trees.
+
+348
+00:59:37.170 --> 01:00:04.280
+Viviana Márquez: It allows you to visualize the decision tree. If you're working locally, you might need to install it. Sometimes it doesn't come pre-installed. So you have to do this install graph base. But if you're working in colab it should be there already. And this library fun fact was created by Terrence Parr. He was one of my professors when I was studying data science. So I don't know. I feel like proud of that fact that I learned directly from him. But anyway, that doesn't matter.
+
+349
+01:00:04.430 --> 01:00:21.320
+Viviana Márquez: Anyway. If you want to read more about the documentation of this library, you can go on this link. I'll put it in the chat in case you want to put it and like check it out later. Here it gives you a bunch of examples on how to use this library, which is very powerful. It allows you to visualize a lot of
+
+350
+01:00:21.690 --> 01:00:26.060
+Viviana Márquez: things. But today we're only going to focus on the decision tree.
+
+351
+01:00:26.230 --> 01:00:34.920
+Viviana Márquez: So you load your data set as usual. This is the Iris data set. So you have your 2 features to determine what kind of flower it is.
+
+352
+01:00:36.310 --> 01:00:52.070
+Viviana Márquez: you would do your exploratory data analysis here. I just skipped it because you know this data set already. But you should do your exploratory data analysis. You split your data set into test and train, and you do your modeling. So here you do decision tree classifier.
+
+353
+01:00:52.100 --> 01:00:59.920
+Viviana Márquez: and you specify the criteria to be entropy. If you wanted to do the same calculations that we just did.
+
+354
+01:00:59.940 --> 01:01:08.649
+Viviana Márquez: If you leave it empty, I don't know which one is the default one, maybe. Here, if I look at the documentation would tell me.
+
+355
+01:01:08.810 --> 01:01:10.240
+Viviana Márquez: I need to run this.
+
+356
+01:01:13.693 --> 01:01:17.260
+Viviana Márquez: Just give it a second here.
+
+357
+01:01:17.550 --> 01:01:18.210
+Viviana Márquez: Okay.
+
+358
+01:01:20.910 --> 01:01:29.569
+Viviana Márquez: it always takes a while the 1st time. The 1st time. Okay, so fun. Fact, if you import a library.
+
+359
+01:01:29.610 --> 01:01:41.050
+Viviana Márquez: And so in this case I imported this decision tree classifier and you write a question mark. It will pull up the documentation here on this side, and then you can just exit. And then
+
+360
+01:01:41.160 --> 01:01:54.239
+Viviana Márquez: here again. So this is super useful in job interviews. If you get a job interview that you can't use Google, you can look at the documentation this way. So here, when you call the model.
+
+361
+01:01:54.310 --> 01:01:59.160
+Viviana Márquez: you could just not say anything. But if you wanted to specify something.
+
+362
+01:01:59.180 --> 01:02:03.669
+Viviana Márquez: these are the things that the model accepts. So it accepts criteria
+
+363
+01:02:03.690 --> 01:02:29.380
+Viviana Márquez: criterion, and it accepts entropy. No, wait. Yeah, no criterion splitter, etcetera. So for criterion you could say genie entropy or log loss, the default one is genie. So if you want to see the same results as the exercises you will have to put here entropy in real life. This could be a hyperparameter. You try genie entropy and log loss, and which one gives you the best results for your data.
+
+364
+01:02:32.230 --> 01:02:41.160
+Viviana Márquez: so here you train your model business as usual, like just that fit, just like with any other model. You make your predictions
+
+365
+01:02:41.330 --> 01:02:50.789
+Viviana Márquez: and you compute your performance metrics. So going back to your question, the question that Deep asked.
+
+366
+01:02:50.940 --> 01:02:53.860
+Viviana Márquez: So you did your decision tree.
+
+367
+01:02:53.920 --> 01:03:11.349
+Viviana Márquez: And after the decision tree you computed the precision and the recall to know if the decision tree was good. In this case it was perfect. It gave us a hundred percent everywhere. But the information gain. The entropy happened behind doors. So all this terrible math in here
+
+368
+01:03:11.560 --> 01:03:21.590
+Viviana Márquez: you don't have to do it. So that's the good news. In practice you'll never have to do it. But it's good to know the theory. So this is what is happening behind doors when you call this line of code.
+
+369
+01:03:21.790 --> 01:03:26.969
+Viviana Márquez: This math is that the math that is happening behind doors?
+
+370
+01:03:27.600 --> 01:03:36.869
+Viviana Márquez: but but yeah, here we don't see it. But now you know, why is it that the decision tree makes the decision that it makes? But yeah.
+
+371
+01:03:37.040 --> 01:03:43.020
+Viviana Márquez: And then here you get your target variables. And this is how you plot the decision tree.
+
+372
+01:03:43.220 --> 01:03:51.179
+Viviana Márquez: So this is how you look at the decision tree. So here, what what do you have in here. So here it says, Okay.
+
+373
+01:03:51.280 --> 01:03:57.790
+Viviana Márquez: I have 120 samples in this node, which is all the data that we have. So if we look at this data.
+
+374
+01:03:57.890 --> 01:04:00.819
+Viviana Márquez: So let's look at X. So
+
+375
+01:04:00.870 --> 01:04:03.000
+Viviana Márquez: I didn't think I have loaded this.
+
+376
+01:04:03.140 --> 01:04:05.079
+Viviana Márquez: So so let me do this.
+
+377
+01:04:05.090 --> 01:04:07.459
+Viviana Márquez: So X that shape.
+
+378
+01:04:09.050 --> 01:04:17.269
+Viviana Márquez: it's a hundred 50 that makes sense. But it's it's on the training data. I have to run everything again.
+
+379
+01:04:18.310 --> 01:04:27.589
+Viviana Márquez: So it's in the training data. So the training data. If I do X train extrane that head.
+
+380
+01:04:29.160 --> 01:04:32.250
+Viviana Márquez: it's no, that had not. That shape
+
+381
+01:04:34.160 --> 01:04:44.540
+Viviana Márquez: is 120. So that's where that 120 comes from is what the model got exposed to. So the model got exposed to 120 samples.
+
+382
+01:04:44.590 --> 01:04:49.160
+Viviana Márquez: The entropy is 1.5 84.
+
+383
+01:04:49.480 --> 01:04:54.909
+Viviana Márquez: And how do you interpret these values in here? So these values in here? It means that
+
+384
+01:04:55.390 --> 01:04:57.090
+Viviana Márquez: here you have the target
+
+385
+01:04:57.520 --> 01:05:05.340
+Viviana Márquez: labels. So you have Setosa versicola and Virginica. So this 44, one, and 39. What it means is that there's 40
+
+386
+01:05:05.540 --> 01:05:15.170
+Viviana Márquez: set those as there's 41 versi colors, and there's 39 virginicus.
+
+387
+01:05:17.040 --> 01:05:23.509
+Viviana Márquez: And so the entropy, if you apply the formula, so the formula is minus
+
+388
+01:05:23.660 --> 01:05:33.350
+Viviana Márquez: the probability of each one of the classes times the log, 2 of the probabilities of each one of the classes. So if you apply it to this is going to be
+
+389
+01:05:34.340 --> 01:05:40.489
+Viviana Márquez: minus 40, over 120. So that's the probability of this. Etosa
+
+390
+01:05:41.030 --> 01:05:46.170
+Viviana Márquez: times. Log, 2 of 40, over 2120, minus
+
+391
+01:05:46.180 --> 01:05:52.240
+Viviana Márquez: 41, over 120. So that's the probability of the versicolor.
+
+392
+01:05:52.570 --> 01:05:58.940
+Viviana Márquez: or a 1 over 1, 20, minus 39, over 1, 20
+
+393
+01:05:59.200 --> 01:06:02.169
+Viviana Márquez: log of 2, over 39,
+
+394
+01:06:02.210 --> 01:06:09.470
+Viviana Márquez: over 120. And if you do this in the calculator, it's going to give you this number. And I tried it myself. So it works.
+
+395
+01:06:09.580 --> 01:06:12.675
+Viviana Márquez: So it gives you this number and
+
+396
+01:06:13.740 --> 01:06:20.680
+Viviana Márquez: so that's the original entropy. So this is the starting entropy.
+
+397
+01:06:21.440 --> 01:06:37.000
+Viviana Márquez: And then the model internally tried a bunch of questions. So it tried the pedal width at 0 point 8, the pedal width at 0 point 5 at 0 point 7, so it tries a bunch of combinations, and not only the pedal width, but also the pedal height.
+
+398
+01:06:37.160 --> 01:06:43.149
+Viviana Márquez: and by computing that entropy and that information gain it, decided that the best split is this, to ask
+
+399
+01:06:43.480 --> 01:06:46.590
+Viviana Márquez: if the pedal width is less than 0 point 8,
+
+400
+01:06:46.760 --> 01:06:51.800
+Viviana Márquez: and it goes this way and this way at this time.
+
+401
+01:06:52.473 --> 01:07:06.079
+Viviana Márquez: If you were going to make a prediction without any asking any questions. It would just predict the majority class, which is this 41. Which is this versicolor? So that's why it says, class versus color at this moment. In time.
+
+402
+01:07:06.120 --> 01:07:10.109
+Viviana Márquez: if we had to make a prediction, it would just predict the majority of the node.
+
+403
+01:07:10.630 --> 01:07:13.289
+Viviana Márquez: and then it goes on to the next node.
+
+404
+01:07:13.510 --> 01:07:15.649
+Viviana Márquez: So the next node is this one.
+
+405
+01:07:15.730 --> 01:07:24.309
+Viviana Márquez: So the next node is basically okay. So if the paddle width is less than 0 point 8
+
+406
+01:07:24.898 --> 01:07:35.729
+Viviana Márquez: the entropy is going to be 0. Because all these samples you would have 40 samples, and all the 40 samples would be cetosa. And that's why the class here is Ketosa.
+
+407
+01:07:35.760 --> 01:07:42.369
+Viviana Márquez: So it's a pure note. So you're not going to ask a follow up question here. It determined that the best follow up question is this one?
+
+408
+01:07:42.690 --> 01:07:49.150
+Viviana Márquez: And then the entropy is one which is really bad because it's almost a 50 50 split
+
+409
+01:07:49.210 --> 01:07:51.340
+Viviana Márquez: here, 41 and 39.
+
+410
+01:07:51.701 --> 01:08:00.979
+Viviana Márquez: So so the entropy is really bad. But like the follow up question here. But this was still an improvement, because we got fully rid of one class.
+
+411
+01:08:00.990 --> 01:08:08.270
+Viviana Márquez: And then here's the next class. So here you have 41 versicolors versus 39 Virginicas.
+
+412
+01:08:08.840 --> 01:08:24.359
+Viviana Márquez: and you once you compute the formula, you get this value, this entropy, which is one, you have 80 samples and the majority class here is versicolor.
+
+413
+01:08:24.390 --> 01:08:30.370
+Viviana Márquez: and so on. So this is how you interpret. So it's it's pretty neat, because
+
+414
+01:08:30.540 --> 01:08:40.269
+Viviana Márquez: if this was back in the day before Cycle learn existed, you have to do all this math, and this is just like the root node when we did this.
+
+415
+01:08:40.569 --> 01:09:04.589
+Viviana Márquez: since all that math would be just for this root node, and imagine, if you had to do all the math. For all of this it would be absolutely terrible. So yeah, that's pretty neat that you see it, and then you can. If you're going to use this model in real life. You can just see what were the questions that were asked to be able to make a prediction.
+
+416
+01:09:05.761 --> 01:09:09.870
+Viviana Márquez: So any questions about this.
+
+417
+01:09:14.870 --> 01:09:29.480
+Viviana Márquez: So a question is, why is the entropy at the node 1.5 8 5? Shouldn't it be between 0 and one?
+
+418
+01:09:29.540 --> 01:09:34.571
+Viviana Márquez: So I had said that I had said this.
+
+419
+01:09:35.220 --> 01:09:51.039
+Viviana Márquez: so I I have to double check because I don't remember. It's been a while, but I think is this is only when you have 2 classes. When you have 2 classes, you will get this beautiful 0 and one. But here, since you have 3 classes.
+
+420
+01:09:51.420 --> 01:10:06.589
+Viviana Márquez: it does, it no longer holds true. So so yeah, that's a good catch. I'll I'll improve this slides to the note that it's only for 2 classes. Once you have more classes, then you would get a different number. But
+
+421
+01:10:06.640 --> 01:10:07.730
+Viviana Márquez: nice catch
+
+422
+01:10:08.820 --> 01:10:19.160
+Viviana Márquez: and the last notebook the other notebook I shared here is just to show you how to do hyperparameter tuning. You have already been exposed a little bit to hyperparameter tuning.
+
+423
+01:10:19.768 --> 01:10:23.760
+Viviana Márquez: So here, once you have the decision tree.
+
+424
+01:10:24.330 --> 01:10:44.619
+Viviana Márquez: Well, here in a real machine learning project. Let's say you want to predict what kind of flower is it? You wouldn't try just one model. You would try several models. So you would try linear logistic regression Knn, decision tree support vector machine naive base and a bunch of classification models.
+
+425
+01:10:44.690 --> 01:10:48.889
+Viviana Márquez: And then you see the performance metrics over these classification models.
+
+426
+01:10:49.330 --> 01:10:59.979
+Viviana Márquez: You could do hyper parameter tuning on each one of these models. That's completely up to you. Usually, what I do is that out of these models I do hyperparameter tuning on the best one.
+
+427
+01:11:00.020 --> 01:11:03.440
+Viviana Márquez: And yes, I realized that by doing that I might miss
+
+428
+01:11:03.500 --> 01:11:29.729
+Viviana Márquez: the best combination somewhere. But if if I'm getting good enough results, I decide to take that sacrifice. So I'm not spending too much time on the project. But of course, if it's a project that is very sensitive, I don't know, like medical data or something like that, then I would do hyperparameter tuning on all these models. But if it's something not super sensitive, like classifying flowers, the world is not going to end. If I classify one flower incorrectly, then I
+
+429
+01:11:29.730 --> 01:11:36.709
+Viviana Márquez: train several models, and then I do hyperparameter tuning on the bus model. So in this case the bus model was logistic regression.
+
+430
+01:11:36.990 --> 01:11:40.679
+Viviana Márquez: And here's an example on how do you run
+
+431
+01:11:40.730 --> 01:11:45.549
+Viviana Márquez: hyperparameter tuning on that logistic regression.
+
+432
+01:11:45.660 --> 01:11:51.820
+Viviana Márquez: And yeah, so this code is just for your reference, and more.
+
+433
+01:11:52.000 --> 01:12:13.900
+Viviana Márquez: a little bit outside of the scope of this course. But let's say you wanted to deploy the results of this model into an application here. I left some code on how to save those results, so you can then create a web app and use those results without retraining the model. Again, yeah, so this code is more like for your reference. But the main topic for today. Was this decision tree
+
+434
+01:12:14.210 --> 01:12:19.720
+Viviana Márquez: any last questions before we call it a day?
+
+435
+01:12:28.340 --> 01:12:35.660
+Zhujun Wang: So. So the decision tree is always a binary tree, no way to be entry right.
+
+436
+01:12:36.180 --> 01:12:57.200
+Viviana Márquez: There is a way you could make it, not binary. You could make it bigger, but usually doesn't have very good results. So people just keep it binary, and the default is binary. But I think if you look at the documentation, there's a way here that you could change that to not be binary, but typically it's done binary.
+
+437
+01:12:57.560 --> 01:13:16.549
+Zhujun Wang: Gotcha. Yeah, because I can see. Especially I use the entropy to evaluate that. You'll be on unbalanced binary tree and the trees depth gonna be very deep, but underly, probably you have a less depth. But I have a multiple notes. Right? So, okay.
+
+438
+01:13:16.720 --> 01:13:36.769
+Viviana Márquez: Yeah, so that's a good observation. But also it depends on the amount of follow up questions, because here in this case, we had this number of follow up questions, and I could have just said, You know what I don't want any more. Follow up questions, just classify this as versicolor and classify this as Virginica. I'm going to get 5 wrong.
+
+439
+01:13:36.830 --> 01:13:57.889
+Viviana Márquez: Yes, in the training data set I might get this 5 wrong. But maybe it's better at generalizing. So that's actually a hyperparameter on how deep you want your decision tree. It's hard to know in advance how deep you want it. So you would find that optimal number with hyperparameter tuning.
+
+440
+01:13:59.560 --> 01:14:14.080
+Zhujun Wang: Okay, gotcha gotcha. And also is my understanding correctly. If if I can see the trees more deep from from the graph perspective. You you actually divide the whole whole graph into a into
+
+441
+01:14:14.510 --> 01:14:19.030
+Zhujun Wang: more, more like small groups. Because that's why the the
+
+442
+01:14:19.680 --> 01:14:21.460
+Zhujun Wang: the tree is very deep, right.
+
+443
+01:14:21.460 --> 01:14:35.360
+Viviana Márquez: Absolutely. Yes. So for example, here, if you have your data and I'm gonna say, let's say, here you have Setosa, let's say, here you have versicolor. And here you have Virginica making this up?
+
+444
+01:14:36.002 --> 01:14:43.080
+Viviana Márquez: So this 1st question, it asks, okay, the width is less than 0 point a 5.
+
+445
+01:14:43.280 --> 01:15:00.069
+Viviana Márquez: So here you have this 1st split, and this one is fine. But here, because you have so many, follow up questions. Basically, what you're doing is exactly what you said. So you're adding more splits onto the data. So you're having the more questions, the more small rectangles you have.
+
+446
+01:15:00.130 --> 01:15:21.019
+Viviana Márquez: And here as well, yeah. So that's what's happening in here. You're you're splitting that data even more and more and more and more. So you can decide. Okay, I don't want to split my data that much, and then you don't ask these. Follow up questions. You leave it up here, and you could have this small tree, and that's also valued. How do you.
+
+447
+01:15:21.020 --> 01:15:21.600
+Zhujun Wang: No, it's all.
+
+448
+01:15:21.600 --> 01:15:27.729
+Viviana Márquez: How many questions you should ask? Does the hyperparameter tuning on how deep the tree should be.
+
+449
+01:15:28.250 --> 01:15:33.700
+Zhujun Wang: Gotcha gotcha, and also so which means the default. One that the one
+
+450
+01:15:33.800 --> 01:15:37.990
+Zhujun Wang: show here actually is might have overfitting issue. Right?
+
+451
+01:15:37.990 --> 01:15:46.490
+Zhujun Wang: Yes, even they have a best entropy performance, but also it's a overfeeding case, because right.
+
+452
+01:15:46.490 --> 01:15:51.450
+Viviana Márquez: Yes, and that's a really good question. And how do you know that it's overfeeding? So, for example, here
+
+453
+01:15:51.590 --> 01:16:02.120
+Viviana Márquez: I, this is a symptom of overfitting when you have a node with only one class, because that means that there was somewhere in there that you did a split that was so little that it captured.
+
+454
+01:16:02.120 --> 01:16:02.500
+Zhujun Wang: Sure.
+
+455
+01:16:02.500 --> 01:16:09.890
+Viviana Márquez: Single thing. So this is a sign of overfeeding. So I just looking at this tree, I already know that there's overfeeding in there. And then
+
+456
+01:16:10.260 --> 01:16:33.250
+Viviana Márquez: the other symptom is actually up here. It's very strange, especially in real life. When you have a real data set, it's very strange to get 100% in the performance metrics. So whenever I see a confusion matrix like this, I know that there's over fading right away. So a rookie data scientist will be like, Oh, yes, I got 100%. But an experienced data scientist will be like.
+
+457
+01:16:33.250 --> 01:16:44.089
+Viviana Márquez: there's something wrong in there. There has to be overfeeding. So so that's a good point. So I think one of the parameters. Let me see, let me look at the documentation.
+
+458
+01:16:44.130 --> 01:16:47.700
+Viviana Márquez: The the one of the parameters. Here is Max Def.
+
+459
+01:16:47.700 --> 01:16:48.030
+Viviana Márquez: So
+
+460
+01:16:48.030 --> 01:17:00.189
+Viviana Márquez: how many questions, how many levels of questions do you want to ask? So you would. You would fix it here, so you would say, comma max depth. And let's say you want only
+
+461
+01:17:00.260 --> 01:17:02.990
+Viviana Márquez: 3 levels. So 3 levels would be
+
+462
+01:17:03.630 --> 01:17:20.250
+Viviana Márquez: 1, 2, 3. You don't ask these questions. So 1, 2, 3. But now the question is, how do you know which one is the best one? So you do this with hyperparameter tuning? So you treat this with a as a hyperparameter. You try different depths, and then you pick the best one.
+
+463
+01:17:20.510 --> 01:17:24.369
+Zhujun Wang: Gotcha. Cool. Thanks, awesome. Great questions.
+
+464
+01:17:27.349 --> 01:17:30.499
+Viviana Márquez: And answering the question in the chat.
+
+465
+01:17:30.600 --> 01:17:59.139
+Viviana Márquez: Yeah, so entropy, if you have more than one class entropy that is not necessarily bounded between 0 and one. But what it still holds true is that you always want that entropy to go down to decrease. So look that in this case you had only 2 classes already, like, yeah, 2 classes, and that's why the entropy here is one. But if you have more than 2 classes, the entropy might go above. But what you do want to do is always decrease that entropy.
+
+466
+01:18:01.920 --> 01:18:03.410
+Viviana Márquez: All right.
+
+467
+01:18:03.980 --> 01:18:23.979
+Viviana Márquez: cool. So I know I'm over time. I'm sorry I went over time. But hopefully this was very useful. Thank you so much. Everyone. Again. Reminder. There's gonna be a holiday break starting on the 22. So if you ask a question and you don't get an answer, don't you worry. You'll get an answer on January 6, th
+
+468
+01:18:24.020 --> 01:18:38.799
+Viviana Márquez: and yeah, I'll see you next year. There's still some other office hours next week, so it's not the last office hour of the year, but last office hour of the year with me. So happy holidays, everyone, and then see you next year.
+
+469
+01:18:41.470 --> 01:18:43.580
+Viviana Márquez: Thank you. Everyone. Bye.
+
+470
+01:18:44.570 --> 01:18:45.660
+Zhujun Wang: Thank you. Bye.
+

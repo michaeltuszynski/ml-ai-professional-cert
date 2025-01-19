@@ -1,0 +1,1678 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.610
+Francesca Vera: Just, you know, starting the recording just so that people have this resource, as always after the session.
+
+2
+00:00:09.750 --> 00:00:21.555
+Francesca Vera: and Matt, said Brb. But then when he comes back, I actually have an update for him that might be relevant to other people
+
+3
+00:00:22.240 --> 00:00:31.229
+Francesca Vera: and let me already just start sharing my screen so that we can hop in on these.
+
+4
+00:00:32.166 --> 00:00:43.603
+Francesca Vera: You know, opening questions and icebreakers, and if it ends up just being the 3 of us. Then we'll have just a really in depth discussion, the 3 of us. In that case.
+
+5
+00:00:44.800 --> 00:00:49.670
+Francesca Vera: I'll actually start a little bit here.
+
+6
+00:00:51.150 --> 00:01:08.074
+Francesca Vera: normally, I do an icebreaker, as you know, since I see you almost every time that we I have my office hours, and today I wanted to, you know, open the discussion and hear about what you know. What are you going to do? Your capstone project on
+
+7
+00:01:08.540 --> 00:01:15.300
+Francesca Vera: by now? I think most people would have met with their learning facilitators done their one on ones. And
+
+8
+00:01:15.560 --> 00:01:27.376
+Francesca Vera: you know, hopefully, the outcome of those one on ones is that you know better what you're going to do your capstone project on so? Oh, and I'm at back
+
+9
+00:01:28.000 --> 00:01:37.320
+Francesca Vera: So shashi! Do! Do you want to share a bit about? If you've done your one on one, and what you're gonna be working on.
+
+10
+00:01:37.320 --> 00:01:41.310
+shashi: Yeah, I had one on one with money last week.
+
+11
+00:01:41.993 --> 00:01:51.600
+shashi: Primarily, I have 2 ideas to work on so one is image classifier for deceased plants
+
+12
+00:01:51.750 --> 00:02:02.759
+shashi: in the vegetables or field crops or plantations, or something like that. So I'm trying to get the resources of that, and also based on the
+
+13
+00:02:03.645 --> 00:02:11.430
+shashi: pheno phenotypical data. That is what is observed in plants like, if you take a Oh.
+
+14
+00:02:11.820 --> 00:02:12.170
+Francesca Vera: Right.
+
+15
+00:02:12.180 --> 00:02:30.942
+shashi: Crop of tomato. From that time it is sown, and various stages of its growth usually measure the characteristics. It is done by the field associates and research scientists, they measure them. And finally, after whole
+
+16
+00:02:31.990 --> 00:02:32.800
+shashi: the
+
+17
+00:02:32.910 --> 00:02:39.230
+shashi: the growth cycle of typically 90 to 120 days. So what happens? You get the yield
+
+18
+00:02:39.330 --> 00:02:42.192
+shashi: so based on the recording of
+
+19
+00:02:43.410 --> 00:02:59.630
+shashi: physical traits what we call as phenotypical characteristics of a crop. So we start measuring that and see what is the impact? Can we know earlier itself by looking at these characteristics? Can we predict what is the yield is going to be.
+
+20
+00:02:59.920 --> 00:03:00.240
+Francesca Vera: Oh!
+
+21
+00:03:00.240 --> 00:03:09.250
+shashi: So I'm trying to. There are almost 50 60 traits which are captured. But I'm trying to take about 10 to 12 traits.
+
+22
+00:03:09.250 --> 00:03:09.710
+Francesca Vera: Got it.
+
+23
+00:03:09.710 --> 00:03:16.409
+shashi: And see some of them categorical. Some of them are yes, no, and some of them are numerical. And see.
+
+24
+00:03:16.410 --> 00:03:16.840
+Francesca Vera: Okay.
+
+25
+00:03:16.840 --> 00:03:28.530
+shashi: How close we can come to predicting the yield, because there are both phenotypical and genotypical information which contributes to the yield of a crop.
+
+26
+00:03:28.720 --> 00:03:32.000
+shashi: And of course, the environmental factors.
+
+27
+00:03:32.140 --> 00:03:35.277
+shashi: So I want to see what is the
+
+28
+00:03:35.810 --> 00:03:47.099
+shashi: contribution of the phenotypical features to the crop yield. That is one and based on the data. I'm trying to collect the data. So I should be getting it. By that, during the
+
+29
+00:03:47.250 --> 00:03:48.299
+shashi: break I'll be working.
+
+30
+00:03:48.300 --> 00:03:49.330
+Francesca Vera: Oh, that's great!
+
+31
+00:03:49.640 --> 00:04:03.536
+shashi: And see, I mean, if there is a good sense to make a project out of that, and see if you are able to come up with the prediction model. That's what the money is saying. Get the data. We will do the Eda. And then,
+
+32
+00:04:04.158 --> 00:04:22.350
+shashi: see how it goes, what kind of correlation exists between all these characteristics, and then see where it goes. If not, then I'll have disease plants to rely on, so I'll be collecting the data for that. Then, at least, if this one doesn't show a good promise, then at least I can build a image classifier module also.
+
+33
+00:04:22.350 --> 00:04:51.290
+Francesca Vera: Yeah, and welcome to the people who just joined. I actually glad you brought up the image classifier because I wanted to give an update on that that might be relevant to people here and was going to be covered in my initial slides before the icebreaker. Then we'll get back to the icebreaker just wanted to remind people of the holiday schedule. There will be a holiday break starting December 22
+
+34
+00:04:51.320 --> 00:05:10.749
+Francesca Vera: until January 5, so you'll get that 2 week holiday period break. It's a good opportunity for you to, you know. Take some rest, relax chill, maybe. Reflect on the course so far, and catch up on anything if you need.
+
+35
+00:05:10.870 --> 00:05:32.559
+Francesca Vera: you know, to catch up on some things. I also flagged that right now here we are on Module 14 wrapping up this week, and right after the break will be when your capstone problem statement is due. So you know, those 2 weeks you could also use to really fine tune your problem. I'm glad, Shashi, that you brought up
+
+36
+00:05:33.019 --> 00:05:47.709
+Francesca Vera: you know, potentially doing an image classifier. I've gotten this question in a number of my one-on-ones and also previous office hours, people who are interested in projects that might require later
+
+37
+00:05:48.161 --> 00:05:54.919
+Francesca Vera: lessons. And so I pulled those up for you looking forward. Of course, this is where your problem statement is due.
+
+38
+00:05:55.280 --> 00:06:08.440
+Francesca Vera: and you'll have to submit. Your initial report here on Module 20, as you can see after you submit your initial report. There's a break week, but there are also
+
+39
+00:06:08.930 --> 00:06:21.369
+Francesca Vera: topics covered further deep neural networks and Rnns and Gans. So image classification for deep learning is going to be covered, I believe, on Module 22.
+
+40
+00:06:21.700 --> 00:06:45.580
+Francesca Vera: So I just wanted to say that since you were working on image classifiers. And Matt. I know you were working on image classifiers, too, that you know you will be most likely using some kind of Cnn. Which is a type of neural network used in deep learning, and that, I believe, is the
+
+41
+00:06:45.850 --> 00:07:01.349
+Francesca Vera: I believe this is going to be where it's covered. And yes, I I see in the chat, Matt. You asked if modules could be unlocked early? But that is not the case, so I would do bring this up so that you can think about
+
+42
+00:07:01.580 --> 00:07:02.840
+Francesca Vera: a sort of
+
+43
+00:07:03.180 --> 00:07:25.969
+Francesca Vera: planning your you know, milestones. So you have your problem statement due here, and you have your initial report due here and say you are, you know, very determined to use an image classifier. If either of you, Matt or Shashi, you want to make sure that by the time you submit your initial report you have done probably as much as you possibly could with
+
+44
+00:07:26.030 --> 00:07:42.340
+Francesca Vera: all the exploratory data analysis, and even maybe a lot of the write up of the final report. Maybe the write up explaining what the problem statement is and the write up explaining the data acquisition, and even your predictions. So that once we hit week
+
+45
+00:07:42.910 --> 00:07:44.190
+Francesca Vera: 22,
+
+46
+00:07:44.320 --> 00:07:57.760
+Francesca Vera: you can dedicate all your time from Module 22 up until 24. So you know those those 2 weeks on just the image classifier on just the Cnn.
+
+47
+00:07:57.920 --> 00:08:10.489
+Francesca Vera: So if you do all your you know other work by this initial report that gives you a lot of you know the rest of your time after that is covered in Module 22.
+
+48
+00:08:10.600 --> 00:08:18.790
+Francesca Vera: To work on your image classifier so just flagging that the same for people who are really interested in
+
+49
+00:08:18.990 --> 00:08:32.099
+Francesca Vera: language. So if you're working with a bit of text data. Natural language. I believe that should have said processing, natural language processing and Nlp is going to be covered here on week 18.
+
+50
+00:08:32.299 --> 00:08:54.399
+Francesca Vera: So when you do your capstone problem statement. You might want to, you know. Write that you are going to use some Nlp covered in Module 18, and you'll have 2 weeks to do, maybe some initial natural language processing until the initial report. And then you'll really want to dedicate everything from
+
+51
+00:08:54.793 --> 00:09:02.786
+Francesca Vera: you know, weeks 21 to 24 working on your Nlp techniques to get a working model. So just flagging that
+
+52
+00:09:03.390 --> 00:09:11.400
+Francesca Vera: likely module 22 will be when you can actually start creating your Cnn's. But
+
+53
+00:09:11.750 --> 00:09:15.260
+Francesca Vera: that doesn't mean you can't do all the work around
+
+54
+00:09:15.550 --> 00:09:21.869
+Francesca Vera: your capstone project, including writing up your non-technical report before we hit
+
+55
+00:09:22.160 --> 00:09:33.049
+Francesca Vera: module 22, so that by the time we get to Cnn, you can dedicate the last 2 weeks. You know, full on trying to create your computer vision model.
+
+56
+00:09:33.616 --> 00:09:36.690
+Francesca Vera: So just wanted to flag that. Yes. Do you have a question.
+
+57
+00:09:36.690 --> 00:09:39.969
+shashi: Yeah, that's what what I'm planning to do during the break is.
+
+58
+00:09:39.970 --> 00:09:40.450
+Francesca Vera: Yes.
+
+59
+00:09:40.814 --> 00:10:00.119
+shashi: Sort my images, and see how how to group them separately. The the close-ups of their images and the wide angle shots, and those kind of things of all the disease plants, and how the features of a disease looks like at a close up and resize the images to the same standards.
+
+60
+00:10:00.630 --> 00:10:09.900
+shashi: all of them. And because the editing photos and things like that, even if I'm using a good PC. It takes quite a bit of time to get them all sized up the proper time, and things like that.
+
+61
+00:10:10.260 --> 00:10:28.489
+Francesca Vera: Exactly like. Remember, you're going to have to submit your notebook on your Github repo. But you're also going to have to submit your probably data set in your Github repo and your non-technical report and creating a nice data set and cleaning it and doing your exploratory data analysis
+
+62
+00:10:28.490 --> 00:10:40.940
+Francesca Vera: and writing up your problem statement, your data acquisition, your predictions, even the explanation of your methods, like all of that, takes time. So you're going to want to use as much of this time as you can
+
+63
+00:10:41.040 --> 00:11:00.599
+Francesca Vera: on top of actually just getting your computer vision model to work right? So my recommendation is if you can do as much as possible before we hit Module 22 for you computer vision folks so that you can spend the last 2 weeks really just focusing on getting your results from from that model.
+
+64
+00:11:01.530 --> 00:11:03.300
+shashi: Yeah, sounds good.
+
+65
+00:11:03.610 --> 00:11:04.420
+Francesca Vera: Great.
+
+66
+00:11:05.510 --> 00:11:17.229
+Francesca Vera: So here I flagged capstone projects dealing with text Nlp, here, and then after your initial report, you'll also meet with your learning facilitators again.
+
+67
+00:11:17.520 --> 00:11:26.269
+Francesca Vera: and of course, the more that you are able to do by your initial report, the more you'll have to discuss with your learning facilitators after
+
+68
+00:11:28.553 --> 00:11:40.476
+Francesca Vera: so I I pitched this earlier. But I think we've gotten into a pretty good discussion. So just, you know, if you want to share what you're going to do your capstone project on. I see that Matt, in the chat has
+
+69
+00:11:41.040 --> 00:12:04.080
+Francesca Vera: solicited Chashi. If you have some useful Youtube videos, you could share with each other, feel free to share your capstone project idea in the chat, because other people in the course and other people in the group online right now might actually have some ideas that could help you. And of course you can always share resources among yourselves.
+
+70
+00:12:07.210 --> 00:12:10.200
+Francesca Vera: So today, my my agenda is
+
+71
+00:12:11.860 --> 00:12:20.440
+Francesca Vera: spending just a little bit a short bit of time talking about how to come up with your problem statement in particular, how to get creative. If you don't
+
+72
+00:12:20.570 --> 00:12:47.329
+Francesca Vera: have, you know, a straightforward project idea. Yet this was mostly inspired by the one on ones that I did with a bunch of your fellow learners and some sort of Aha moments that I experienced with them and trying to come up with, you know, creative ways of framing the problem statement or the capstone project. Then we'll just dive into decision trees and do an example. Walkthrough.
+
+73
+00:12:49.940 --> 00:12:53.459
+Francesca Vera: So I 1st wanted to start with this recap.
+
+74
+00:12:54.052 --> 00:13:04.640
+Francesca Vera: You'll have heard me say, a lot already. You know, machine learning toolbox. And I just wanted to kind of quickly fill in with everyone.
+
+75
+00:13:05.310 --> 00:13:13.919
+Francesca Vera: just to, you know, jog your memory. What are the tools that you already have in your toolbox? So I'm gonna start with one.
+
+76
+00:13:14.300 --> 00:13:21.770
+Francesca Vera: If we know how to do you know data analysis or exploratory
+
+77
+00:13:21.970 --> 00:13:35.579
+Francesca Vera: data analysis. Right? So that's that's 1 thing in our toolbox that we've already got done. Does anyone want to? You know, either unmute or write in the chat. What's another tool that we've already tackled that you have in your toolkit?
+
+78
+00:13:41.310 --> 00:13:42.750
+Francesca Vera: You can jog your.
+
+79
+00:13:42.750 --> 00:13:45.970
+shashi: Can you say the repeat the question.
+
+80
+00:13:45.970 --> 00:14:12.940
+Francesca Vera: Yeah, sure. So I just want to recap so that you know, we're moving so quickly. And sometimes it's easy to forget how much we've already learned. So I'm just asking what are other things in your toolbox? And I see in the chat quite a few answers already. So we have time series. Yes, and I see. Knn, what is knn a beer or anyone else.
+
+81
+00:14:13.730 --> 00:14:14.299
+Francesca Vera: Just a minute.
+
+82
+00:14:15.140 --> 00:14:16.030
+shashi: Nearest database.
+
+83
+00:14:16.030 --> 00:14:25.059
+Francesca Vera: Yep, K. Nearest neighbors. Great. We have regression models. Okay, can someone give me an example of a regression technique that we've learned.
+
+84
+00:14:26.290 --> 00:14:27.240
+shashi: A linear physics.
+
+85
+00:14:27.240 --> 00:14:28.970
+Namrata Baid: Clean up, stick.
+
+86
+00:14:28.970 --> 00:14:37.859
+Francesca Vera: Perfect. Okay, so linear regression is, is, what about? I heard someone say, Logistic regression, what is logistic regression for.
+
+87
+00:14:38.850 --> 00:14:40.890
+shashi: That is, for classifying
+
+88
+00:14:41.400 --> 00:14:41.810
+Francesca Vera: Yes.
+
+89
+00:14:41.810 --> 00:14:44.790
+shashi: Classification addressing the classification problems.
+
+90
+00:14:44.790 --> 00:14:54.360
+Francesca Vera: Yup. Exactly. So. I'll put here logistic regression as a separate one, because it's for classifying. And what's the last one? What are we working on this week.
+
+91
+00:14:55.140 --> 00:14:56.960
+Francesca Vera: Decision tree. Yeah, exactly.
+
+92
+00:14:56.960 --> 00:15:05.499
+Francesca Vera: You decision trees. So look, we've already got a full, a full toolbox going on, don't we? So
+
+93
+00:15:06.162 --> 00:15:26.909
+Francesca Vera: it's, you know. Sometimes we we move on so quickly. But since we're coming up on a quite a long break, it's nice to look back and see how much we've learned. We actually already have a full toolbox, right? Like, if we started doing our capstone projects today and had to submit it. You know, in 3 weeks and use, you know, the various things in our toolbox. We'd already have a pretty good.
+
+94
+00:15:26.970 --> 00:15:39.309
+Francesca Vera: pretty good project going on. So I just wanted to remind us that we're we're plugging along. We're moving fast, but we're on the right track and adding more and more tools into our toolbox. So good good job. Everyone so far.
+
+95
+00:15:40.910 --> 00:15:47.309
+shashi: I tried actually to convert the coupon assignment, the assignment at Module 5 to.
+
+96
+00:15:48.106 --> 00:15:50.720
+shashi: Logistic regression. I got around 72, 70.
+
+97
+00:15:50.720 --> 00:15:55.380
+shashi: Oh, nice, I see, that's all that's great. So I need to still fine tune it.
+
+98
+00:15:55.570 --> 00:16:03.290
+Francesca Vera: No, but that that's such a good way to practice, you know. So I think some of the feedback was that the
+
+99
+00:16:03.380 --> 00:16:26.180
+Francesca Vera: you know the jump between like codeo assignment to practical applications was a big jump, and if you wanted to get more practice you could always go back to previous things like the coupon assignment and use the new tools that you've learned to extend that coupon assignment. Right? So that's that's great. Thank you for sharing. That's awesome.
+
+100
+00:16:28.210 --> 00:16:31.552
+Francesca Vera: And so when we're thinking about our
+
+101
+00:16:32.590 --> 00:16:55.380
+Francesca Vera: our problem statement, it is most likely that majority of people in the course are going to be looking more in this realm of supervised learning and likely going to just end up with a data set that is already labeled right. That's how we characterize supervised learning. And then it's just a matter of
+
+102
+00:16:55.390 --> 00:17:06.049
+Francesca Vera: figuring out, are they going to use classification algorithms? Regression algorithms? Is their problem statement actually going to allow them to do both. And so that's where I'm
+
+103
+00:17:06.079 --> 00:17:09.490
+Francesca Vera: moving into trying to creatively
+
+104
+00:17:10.329 --> 00:17:30.860
+Francesca Vera: turn a real life scenario into a machine learning project for your capstone. So let's start with case one. Let's say I have this data set, and this data set is available on Kaggle. So if, after the you know office hours. You are more interested in this data set. This
+
+105
+00:17:31.240 --> 00:17:36.689
+Francesca Vera: slideshow is going to get posted in canvas so you can click on this link.
+
+106
+00:17:36.810 --> 00:17:48.749
+Francesca Vera: So let's say, I am interested in identifying. If movie reviews are positive or negative, I want to look and use my you know, nlp, that I'm going to learn about in a month or so.
+
+107
+00:17:48.930 --> 00:18:15.519
+Francesca Vera: But what if my data set has no positive or negative labels? As you can see, I have this movie Id. I have a review. Id creation, date even the critic name. What kind of critic they are the numerical score this was from rotten tomatoes. So for those of you who know rotten tomatoes, it's either fresh or rotten. And then I've got review text. So you can see this one.
+
+108
+00:18:16.240 --> 00:18:29.690
+Francesca Vera: This 1st one says, emotionless reaction shots, 0 characterization, etc. Etc. Here, if you're not a fan of garbage cinema, even for the fun of it. So
+
+109
+00:18:29.990 --> 00:18:37.740
+Francesca Vera: let's say, I really want to use this data set because I love movies. And I really want to practice my natural language processing.
+
+110
+00:18:38.640 --> 00:18:46.780
+Francesca Vera: But say, I don't have labels right? I want to have some labels for positive or negative.
+
+111
+00:18:49.020 --> 00:18:54.659
+Francesca Vera: What could I use to label this? You know.
+
+112
+00:18:55.500 --> 00:19:03.830
+Francesca Vera: this data set, you know, label label the movie. As as you know I thought it was good. I thought it was bad, and then use that for my
+
+113
+00:19:04.080 --> 00:19:06.740
+Francesca Vera: for my review text. Any any ideas.
+
+114
+00:19:09.328 --> 00:19:17.091
+shashi: We can have something like boring dull, or a few few more classes of reviewing a movie. And
+
+115
+00:19:17.650 --> 00:19:22.799
+shashi: out of what of 3? 4 stars? So let's say, on a
+
+116
+00:19:23.620 --> 00:19:29.350
+shashi: something similar to what rotten tomatoes use the freshness score itself as a measure.
+
+117
+00:19:30.520 --> 00:19:42.060
+Francesca Vera: Okay. So I I heard you say a few things. I I heard you say score using a score rating and then I heard you say something like 3 or 4 stars. Or
+
+118
+00:19:42.910 --> 00:19:56.449
+Francesca Vera: let's say, this is just my data set right. I collected this from Kaggle. It is a complete data set that I am able to use, and, you know, attribute to the original people who collected it.
+
+119
+00:19:57.290 --> 00:20:03.919
+Francesca Vera: Does my data set already have a score? Does it already have some kind of rating, as you mentioned.
+
+120
+00:20:04.823 --> 00:20:13.260
+shashi: Yeah, it does have it, but it doesn't show the what do you call the strength of the emotions or the
+
+121
+00:20:13.930 --> 00:20:15.400
+shashi: what do you call?
+
+122
+00:20:16.400 --> 00:20:22.239
+shashi: How strongly you feel that whether it is fresh or whether it is rotten, probably that cannot be very evident.
+
+123
+00:20:22.740 --> 00:20:29.340
+shashi: Basically, the sentiment is not 100% represented.
+
+124
+00:20:31.700 --> 00:20:36.939
+Francesca Vera: In what? In what way would you? Oh, sorry! A beer, I think you.
+
+125
+00:20:37.500 --> 00:20:39.930
+ABEER HASAN: Sorry I thought. There is a score. Isn't there a column saying.
+
+126
+00:20:39.930 --> 00:20:42.649
+shashi: Oh, yeah. Oh, yeah, there is a scope. Sorry. Yeah.
+
+127
+00:20:42.870 --> 00:20:44.650
+Francesca Vera: Yes, yes, exactly.
+
+128
+00:20:44.650 --> 00:20:45.690
+shashi: What is this? Yeah.
+
+129
+00:20:45.690 --> 00:21:00.290
+Francesca Vera: It's actually a really fun data set, because it has this fresh and rotten rotten rotten which you could also just convert. Right? You could convert fresh to positive, rotten to negative. But
+
+130
+00:21:00.480 --> 00:21:02.510
+Francesca Vera: there is also an original score.
+
+131
+00:21:02.510 --> 00:21:03.170
+shashi: That is, yeah.
+
+132
+00:21:03.170 --> 00:21:12.670
+Francesca Vera: Which you could do. You know, if if the score is above you know 5 out of 10, then it's positive, or, you know, above 2 out of 4, it's positive.
+
+133
+00:21:12.960 --> 00:21:19.420
+Francesca Vera: So it's interesting. Because if I have this data set, I actually have a lot of ways that I can
+
+134
+00:21:19.540 --> 00:21:25.263
+Francesca Vera: create a positive or negative. You know, opinion on
+
+135
+00:21:26.220 --> 00:21:36.623
+Francesca Vera: the either review state fresh or rotten. I could just map positive, negative, or I could use this original score, and I see in the chat that you could also,
+
+136
+00:21:37.200 --> 00:21:53.400
+Francesca Vera: you know, create a new column that splits good and bad, based on the median of you know the the score. So already in this discussion, we've had suggestions from 3 people for 3 different ways that I could, you know, create
+
+137
+00:21:53.640 --> 00:21:57.690
+Francesca Vera: a label and then use all the tools that I've already learned
+
+138
+00:21:57.980 --> 00:22:01.370
+Francesca Vera: into a supervised learning machine learning project.
+
+139
+00:22:01.500 --> 00:22:02.510
+Francesca Vera: So
+
+140
+00:22:02.630 --> 00:22:17.780
+Francesca Vera: even if you encounter a data set where the label isn't explicitly written, as like good or bad, or positive or negative. Sometimes there's an indicator somewhere else in the data set like an original score where you can.
+
+141
+00:22:18.817 --> 00:22:26.750
+Francesca Vera: Get your label by saying, Okay, if my original score is 4 or 5 stars, then it's positive. Right?
+
+142
+00:22:27.370 --> 00:22:31.070
+Francesca Vera: So that's my 1st case of being creative.
+
+143
+00:22:32.920 --> 00:22:41.449
+Francesca Vera: How about case number 2? So let's say, I am interested in predicting the winners of the upcoming Nfl games. Nfl games. Most of them are
+
+144
+00:22:41.690 --> 00:22:49.309
+Francesca Vera: played every Sunday, and I just want to predict the winner of, you know, next Sunday's games. But I'm worried. My project is too simple.
+
+145
+00:22:49.560 --> 00:22:50.630
+Francesca Vera: So
+
+146
+00:22:51.370 --> 00:22:59.559
+Francesca Vera: I've got us started. Firstly, I'm thinking, okay, maybe I want to predict the winner of the games. So that's a classification task, right? Win or lose.
+
+147
+00:22:59.780 --> 00:23:02.509
+Francesca Vera: And I know I want to use logistic regression.
+
+148
+00:23:02.700 --> 00:23:09.979
+Francesca Vera: What are other ways that I can make my project more complex if I'm worried that my project is too simple.
+
+149
+00:23:10.120 --> 00:23:12.800
+Francesca Vera: Any any ideas for over here?
+
+150
+00:23:14.030 --> 00:23:17.799
+Francesca Vera: Sort of how can I? How can I, you know.
+
+151
+00:23:18.290 --> 00:23:24.650
+Francesca Vera: add to my project to make it more complex and make it. You know a capstone project.
+
+152
+00:23:28.360 --> 00:23:31.529
+shashi: Probably use the decision to analyze the
+
+153
+00:23:31.770 --> 00:23:36.280
+shashi: various stages of scoring. I mean, how many previously they have one yesterday.
+
+154
+00:23:36.410 --> 00:23:42.710
+shashi: Take a decision. 3. Approach and see the analyze the previous results.
+
+155
+00:23:43.050 --> 00:23:51.980
+Francesca Vera: Right? Okay? So I could. In addition to my logistic regression, as you said, I could use decision trees right
+
+156
+00:23:52.120 --> 00:24:03.469
+Francesca Vera: that that works. And then I could do in depth analysis of the decision trees.
+
+157
+00:24:04.360 --> 00:24:07.390
+Francesca Vera: maybe, compared to logistic regression, right?
+
+158
+00:24:07.680 --> 00:24:17.910
+Francesca Vera: How else can I make my classification model more complex? What are ways that I can, you know, do more experiments on this classification model?
+
+159
+00:24:23.660 --> 00:24:24.597
+Francesca Vera: What if I
+
+160
+00:24:24.910 --> 00:24:31.189
+shashi: Increase the features. So yes, so increase the features. So what you use for arriving at the decision.
+
+161
+00:24:31.420 --> 00:24:39.010
+Francesca Vera: Yes, exactly. That is what I was about to say actually increase or use different features
+
+162
+00:24:40.220 --> 00:24:46.539
+Francesca Vera: and compare. So, for example, I might use only the team ranking.
+
+163
+00:24:47.070 --> 00:24:54.320
+Francesca Vera: but then I could also. Yeah, here Matt's got me got me covered strength of schedule.
+
+164
+00:24:56.560 --> 00:25:10.549
+Francesca Vera: injured players, factors, weather, etc. We can compare. You know, how much does the weather actually matter right? How much does the team's previous season record actually matter? All right. So
+
+165
+00:25:10.840 --> 00:25:14.890
+Francesca Vera: that's it. Seems like we, we've got an idea for classification
+
+166
+00:25:15.000 --> 00:25:31.869
+Francesca Vera: problem. What if I am looking at a regression problem? What if I'm trying to predict the scores of the games scores predicting a number. So we're going to probably be using regression techniques. And let's say, I want to use linear regression to predict the score of
+
+167
+00:25:32.070 --> 00:25:34.070
+Francesca Vera: the you know, each team.
+
+168
+00:25:34.860 --> 00:25:41.719
+Francesca Vera: How could I relate this to the 1st part where I did all this classification.
+
+169
+00:25:47.540 --> 00:25:53.559
+ABEER HASAN: So identify important features to include as predictors in the regression model.
+
+170
+00:25:53.560 --> 00:26:03.570
+Francesca Vera: Okay, okay, I can use what were important features here, right to to use in regression
+
+171
+00:26:07.500 --> 00:26:09.239
+Francesca Vera: any other ideas.
+
+172
+00:26:14.620 --> 00:26:17.830
+Francesca Vera: So let's say, yeah, Shashi, go ahead.
+
+173
+00:26:19.495 --> 00:26:25.499
+shashi: Probably use different polynomial levels.
+
+174
+00:26:25.700 --> 00:26:31.930
+Francesca Vera: Okay, I could use different polynomial levels.
+
+175
+00:26:32.210 --> 00:26:36.760
+Francesca Vera: What if I just want to validate? You know?
+
+176
+00:26:36.970 --> 00:26:41.129
+Francesca Vera: What if? What if, when I run the regression on one team.
+
+177
+00:26:42.310 --> 00:26:46.760
+Francesca Vera: Let's say I have San Francisco versus LA.
+
+178
+00:26:46.870 --> 00:26:54.880
+Francesca Vera: What if my classifier says San Francisco is going to win?
+
+179
+00:26:55.010 --> 00:26:59.260
+Francesca Vera: But my regression has it 13 to 17?
+
+180
+00:26:59.540 --> 00:27:01.700
+Francesca Vera: What does 13 to 17 mean?
+
+181
+00:27:03.070 --> 00:27:03.950
+shashi: The odds
+
+182
+00:27:04.540 --> 00:27:07.349
+Francesca Vera: Or sorry, the score of 13
+
+183
+00:27:08.050 --> 00:27:12.049
+Francesca Vera: to 17. What if that's what they predict? The score is, what does that mean?
+
+184
+00:27:16.620 --> 00:27:21.639
+Francesca Vera: If the score of one team is higher than the other. That means that's the team that wins right?
+
+185
+00:27:23.240 --> 00:27:25.649
+Francesca Vera: So what if my regression model
+
+186
+00:27:26.130 --> 00:27:31.449
+Francesca Vera: shows that La is going to win. But my classifier said, Sf. Is going to win.
+
+187
+00:27:34.520 --> 00:27:37.489
+Francesca Vera: That's you know. That's that's odd, right? Like.
+
+188
+00:27:37.490 --> 00:27:38.100
+shashi: Yeah.
+
+189
+00:27:38.100 --> 00:27:52.970
+Francesca Vera: That isn't really what you would want to happen. So one way you could also maybe be creative about it is, does your regression model match your classification model right?
+
+190
+00:27:53.960 --> 00:28:04.869
+Francesca Vera: You, because that is exactly what you would want it to do. So that's 1 of the other ways that you might want to add complexity. Maybe it's not just about, you know.
+
+191
+00:28:05.080 --> 00:28:12.990
+Francesca Vera: predicting the winner correctly, but also making sure that different kinds of models are predicting in the same
+
+192
+00:28:13.150 --> 00:28:14.159
+Francesca Vera: kind of way.
+
+193
+00:28:15.710 --> 00:28:37.219
+Francesca Vera: And the last thing I'm going to do is actually, I'm going to give an example from a project that I did. My background is in natural language processing. So I was looking at tweets when it was still twitter, and I did a project that was looking at various tweets that were labeled
+
+194
+00:28:37.550 --> 00:28:38.670
+Francesca Vera: and
+
+195
+00:28:39.080 --> 00:28:55.419
+Francesca Vera: trying to detect sort of hate speech on Twitter, which is a perennial problem on, on Twitter and Twitter. Actually has a bunch of you know, detectors built into its platform for for something like this.
+
+196
+00:28:56.720 --> 00:28:59.750
+Francesca Vera: So I ended up with
+
+197
+00:29:00.210 --> 00:29:09.949
+Francesca Vera: quite a few data sets. And you'll see here that there was one data set where the labels were for neither.
+
+198
+00:29:10.170 --> 00:29:12.660
+Francesca Vera: So neither sexism nor racism.
+
+199
+00:29:13.180 --> 00:29:16.410
+Francesca Vera: So maybe not containing hate. Speech of that kind
+
+200
+00:29:16.650 --> 00:29:22.730
+Francesca Vera: label for sexist hate, speech label for racist hate, speech and a label for both.
+
+201
+00:29:23.380 --> 00:29:25.559
+Francesca Vera: And then I had a
+
+202
+00:29:26.090 --> 00:29:40.409
+Francesca Vera: data set here that was labeled for sexism. I don't love the word they use benevolent. But what they really mean was not explicit, so implicit. And then there was another data set here for hostile.
+
+203
+00:29:41.480 --> 00:29:42.440
+Francesca Vera: So
+
+204
+00:29:42.610 --> 00:29:50.059
+Francesca Vera: I had these data sets that were, you know, labeled in various different ways for you know.
+
+205
+00:29:50.660 --> 00:29:52.640
+Francesca Vera: thousands of tweets.
+
+206
+00:29:53.210 --> 00:30:05.900
+Francesca Vera: And I wanted to create some kind of creative project to combine all of these data sets and actually make it make sense for an application to the real world.
+
+207
+00:30:06.310 --> 00:30:11.190
+Francesca Vera: So what I ended up actually doing was a two-step classification.
+
+208
+00:30:11.320 --> 00:30:24.940
+Francesca Vera: and this is one of probably you know, one of my favorite ways to make to suggest making your capstone project if it's appropriate. More complex is.
+
+209
+00:30:25.170 --> 00:30:45.669
+Francesca Vera: you can very well do your project and just have one model predicting, you know, one thing and really try to, you know, experiment with the model different features, different kinds of models, and get different results, and compare those results. And you would. That would be a great capstone project. But sometimes you know, with
+
+210
+00:30:46.040 --> 00:30:58.659
+Francesca Vera: the space that you're looking at, it might make sense to actually look at multiple models in multiple steps. And so in this case, I actually did a two-step classification
+
+211
+00:30:58.760 --> 00:31:18.650
+Francesca Vera: where the 1st classifier that I implemented was just classifying, based on sexist or not sexist. So you can see here that there were labels for sexism, and then, you know, labels for both. So that would be
+
+212
+00:31:18.880 --> 00:31:23.260
+Francesca Vera: sexist. But if it was labeled as racist or neither, then it wouldn't.
+
+213
+00:31:23.450 --> 00:31:31.230
+Francesca Vera: And so that would be the 1st classification. And then the second step would be to take
+
+214
+00:31:32.050 --> 00:31:47.443
+Francesca Vera: those tweets and actually create a new classifier to characterize it as either hostile or implicit, hostile or explicit, or benevolent and implicit. And so you can actually see in this
+
+215
+00:31:48.850 --> 00:31:57.240
+Francesca Vera: In this example you have classification one and then classification 2.
+
+216
+00:31:58.180 --> 00:32:17.900
+Francesca Vera: And this is another way that you can add complexity to your problem. If your problem lends itself to classifying in 2 steps. So, Shashi, if I take your example, I don't know anything about a disease detection, but I'm just coming up with an idea. Here you could do step. One
+
+217
+00:32:18.080 --> 00:32:28.690
+Francesca Vera: is this plant? You know, based on this image? Does it have a disease? And then your step? 2 could be for all the plants that are classified. Yes, to have a disease
+
+218
+00:32:28.870 --> 00:32:33.800
+Francesca Vera: is the disease. Could it? Can it be remedied or not?
+
+219
+00:32:33.960 --> 00:32:48.469
+Francesca Vera: And those could be 2 classifiers, and that would be a two-step classification, and that's another way. You could, you know, make your project a little more complex and a little more interesting, and give you more opportunities to show off what you've learned.
+
+220
+00:32:48.710 --> 00:32:59.770
+shashi: Yeah, that that even. That's what I was. This one, because I can say classify it 1st as a healthy or a disease, and then identify the disease in the next stage. That's what exactly.
+
+221
+00:32:59.770 --> 00:33:02.539
+shashi: perfectly thank you about when you are saying that.
+
+222
+00:33:02.540 --> 00:33:15.089
+Francesca Vera: Yeah, exactly. And so there's nothing to stop you if it makes logical sense for your application for your project to actually do things in multiple steps. This can. I could actually do this for
+
+223
+00:33:15.687 --> 00:33:42.519
+Francesca Vera: the predicting the winner of the games. Right? I could do step one. I'm going to predict the winner of the game, San Francisco or La, and then step 2. I'm going to predict the scores of the game right? So don't feel like you're just limited to one model, one prediction problem. If it makes sense to do it in multiple steps, like for plant disease, detection, or for detecting hate, speech and tweets.
+
+224
+00:33:42.760 --> 00:33:49.219
+Francesca Vera: you can use a two-step classification approach, and that could be the discussion for your project.
+
+225
+00:33:52.130 --> 00:34:10.190
+Francesca Vera: So I'm done with my project section and going to move on to decision. Trees? Are there any questions or thoughts that have come up before I move on about sort of your capstone project, or how to make things creative.
+
+226
+00:34:14.420 --> 00:34:21.621
+shashi: I would love to know what kind of projects everybody else. Other people who are in the call, what kind of ideas they are having.
+
+227
+00:34:23.710 --> 00:34:34.769
+Francesca Vera: Yeah, I I'll pause here in case anyone wants to quickly unmute to share what they're working on or you know what? Yeah.
+
+228
+00:34:35.330 --> 00:34:47.569
+Zhujun’s iPhone 14: Oh, I have a quick question about the 2 2 step verification. So sounds like, for example, you 1st predict who gonna win a game, and secondly, predicted score, then the performance really
+
+229
+00:34:47.570 --> 00:35:14.010
+Zhujun’s iPhone 14: matter like 1st evaluation. So so 1st classification even you, we have a, for example, like a bad performance and predict most like, win or lose wrong. And then the secondly, then we go ahead to predict the score. So yeah, we're just wondering like, for the 2 step multiple step and sounds like, then the the kind of like sequences is really important is that
+
+230
+00:35:14.070 --> 00:35:20.149
+Zhujun’s iPhone 14: 2 or like, you know how to evaluate, how how important, for each steps.
+
+231
+00:35:20.500 --> 00:35:30.349
+Francesca Vera: Yeah, that that's a great question. So for this case we're predicting the winner of the game and predicting the score.
+
+232
+00:35:31.200 --> 00:35:43.140
+Francesca Vera: what? So this is actually a project that I did. We did this in the context of you know, sports gambling, because for those of you who are, maybe, you know, aware of sort of how
+
+233
+00:35:43.200 --> 00:36:09.193
+Francesca Vera: sports betting works. You can bet on the outcome of the game, or you can bet on the you know, score line so for this project, you could do it just separately, and you could just predict the winner of the game and just predict the score, and then see which one is more accurate. See which one is better. So you could do it without any sequence. You could also do sequence.
+
+234
+00:36:10.660 --> 00:36:22.889
+Francesca Vera: and in that case, yes, it would matter that your 1st classification is, you know, a good model like you don't. The sequence doesn't really work. If step one classifier is
+
+235
+00:36:23.030 --> 00:36:25.549
+Francesca Vera: only getting 40% accuracy.
+
+236
+00:36:26.020 --> 00:36:28.900
+Zhujun’s iPhone 14: So step 2 is not going to be so reliable.
+
+237
+00:36:29.672 --> 00:36:36.709
+Francesca Vera: I'll I'll use this as the example. So if you have sort of let's say this is
+
+238
+00:36:37.620 --> 00:36:43.809
+Francesca Vera: sorry my annotation. So let's say, this is step one, right?
+
+239
+00:36:44.762 --> 00:36:51.280
+Francesca Vera: You wanna make sure that it's a pretty good classifier in itself. So let's just say it's
+
+240
+00:36:51.850 --> 00:36:54.110
+Francesca Vera: 80% accuracy.
+
+241
+00:36:54.260 --> 00:36:57.310
+Francesca Vera: Then I feel good about
+
+242
+00:36:58.870 --> 00:37:07.490
+Francesca Vera: doing this part right? Then I feel good about doing this. But remember, the data set actually
+
+243
+00:37:08.580 --> 00:37:16.560
+Francesca Vera: doesn't do it in step in two-step classification. So I'll I'm talking about these 2 data sets.
+
+244
+00:37:17.870 --> 00:37:21.270
+Francesca Vera: These 2 data sets are not labeled with
+
+245
+00:37:21.440 --> 00:37:28.150
+Francesca Vera: 2 step classification. Right? These data sets are just labeled you know.
+
+246
+00:37:28.800 --> 00:37:37.743
+Francesca Vera: benevolent or implicit sexism and hostile or explicit sexism. So that means, when I do my
+
+247
+00:37:38.490 --> 00:37:50.700
+Francesca Vera: 2 step, I can actually valid. I can actually compare to that original data. Set where
+
+248
+00:37:51.080 --> 00:38:03.490
+Francesca Vera: you check. If these or let me let me take a step back. You can check if
+
+249
+00:38:07.520 --> 00:38:13.230
+Francesca Vera: these tweets would be labeled as sexist by your 1st classifier.
+
+250
+00:38:14.500 --> 00:38:15.889
+Francesca Vera: Does that make sense?
+
+251
+00:38:16.150 --> 00:38:20.160
+Francesca Vera: Because we know that these ones are sexist?
+
+252
+00:38:20.720 --> 00:38:23.842
+Francesca Vera: And then, if you
+
+253
+00:38:24.960 --> 00:38:35.229
+Francesca Vera: go into this data set, you would just be doing the second classifier. So what we actually did for our experiments was, we did
+
+254
+00:38:36.540 --> 00:38:46.390
+Francesca Vera: sorry to be hopping back and forth, but we actually did classifier one as experiment, one, classifier, 2
+
+255
+00:38:47.050 --> 00:38:51.000
+Francesca Vera: as Experiment 2. And then we did the whole thing.
+
+256
+00:38:53.820 --> 00:38:56.379
+Francesca Vera: Sorry about that drawing as experiment 3.
+
+257
+00:38:56.380 --> 00:38:57.840
+Zhujun’s iPhone 14: 3, okay.
+
+258
+00:38:58.120 --> 00:39:12.939
+Francesca Vera: So so we kind of did it. Building on each other. Where we 1st wanted to see is classifier, one. A good classifier is classifier 2, a good classifier. Since we already had these 2 data sets.
+
+259
+00:39:13.560 --> 00:39:26.170
+Francesca Vera: Available to do classifier 2. And then we were like, okay, let's see, does putting them together in this two-step classification. Improve our model in any way.
+
+260
+00:39:27.110 --> 00:39:27.500
+Francesca Vera: Okay.
+
+261
+00:39:27.500 --> 00:39:38.969
+Francesca Vera: makes sense. So if you were doing a project in 2 step classification, you could also do it. Similarly, where experiment one is, step one, and then experiment 2 is just
+
+262
+00:39:39.790 --> 00:39:44.789
+Francesca Vera: the step, 2 with no step, one, then experiment 3 is, put them together.
+
+263
+00:39:44.790 --> 00:39:46.830
+Zhujun’s iPhone 14: You're gonna okay. Gotcha.
+
+264
+00:39:47.530 --> 00:39:55.440
+Francesca Vera: Yeah, that's that's a great question. Because, of course, if step one, you know, if this 1st classifier is no good, then it's going to be really hard for
+
+265
+00:39:55.620 --> 00:39:59.769
+Francesca Vera: Classifier to to be meaningful. That's so. That's a that's a great question.
+
+266
+00:40:00.080 --> 00:40:01.550
+Zhujun’s iPhone 14: Okay. Gotcha.
+
+267
+00:40:03.690 --> 00:40:21.510
+Francesca Vera: Great, and so for the remainder of the time let me dive into decision trees. There were a lot of learning outcomes, so I only put some on this slide. But of course, articulating the correct inputs, how to build them, visualize them, evaluate them
+
+268
+00:40:21.640 --> 00:40:24.090
+Francesca Vera: and actually implement it.
+
+269
+00:40:26.260 --> 00:40:32.200
+Francesca Vera: So decision trees. What is it? When do you use it? It is a supervised learning algorithm.
+
+270
+00:40:33.167 --> 00:40:38.090
+Francesca Vera: Could be used for classification and regression tasks. So
+
+271
+00:40:38.923 --> 00:40:46.349
+Francesca Vera: this is, you know this could be nice for many of your projects, regardless of. If you're doing classification or regression.
+
+272
+00:40:46.430 --> 00:41:05.940
+Francesca Vera: it's also very intuitive. It works like a flow chart where each node represents questions or decisions. Branches then represent the outcome based on those nodes. And then the leaves are the final predictions or outputs. So it's really intuitive
+
+273
+00:41:06.316 --> 00:41:27.890
+Francesca Vera: you know, not just in computation and machine learning, but just in real life you could kind of make a decision tree about what to do for your holiday. You could make a decision tree, even what to do with your project? Right? You could say, Do I have a good data set? Yes. Is it labeled? Yes, no. You could really use these very intuitively.
+
+274
+00:41:28.620 --> 00:41:29.800
+Francesca Vera: So some
+
+275
+00:41:29.960 --> 00:41:43.360
+Francesca Vera: applications of where decision trees are used. Healthcare could be a really nice project to use decision trees where you are going to find some kind of diagnosis based on symptoms
+
+276
+00:41:43.970 --> 00:41:59.390
+Francesca Vera: finance, predicting loan approvals. So you'll see a lot of even just, you know, human, readable decision. Trees going, you know. Does this person have a credit score over this? Has this person ever defaulted on a loan? Does this person make? You know, a certain amount of income?
+
+277
+00:41:59.490 --> 00:42:23.999
+Francesca Vera: So that's a really, you know, classic way to use decision trees retail. So customer segmentation or recommendation systems for anyone interested in retail. I I was speaking with someone who kind of gave the example of if you know, if you're going to buy a suit. Typically, you're also going to search for a certain type of shirt to go with the suit or a certain kind of tie
+
+278
+00:42:25.890 --> 00:42:45.120
+Francesca Vera: and then education, you might predict student performance for your class like, did this student complete their homework? Did this student revise for the exam? Did this student show up with notes for the exam, so lots of various applications for decision trees in real life.
+
+279
+00:42:46.665 --> 00:42:57.339
+Francesca Vera: So I'm not gonna go too much into detail about the process, because it seems like it's pretty intuitive one demonstration of just how intuitive
+
+280
+00:42:57.490 --> 00:43:04.706
+Francesca Vera: it is is. I can show you this decision tree. I made this very, very, very quick decision tree myself.
+
+281
+00:43:06.010 --> 00:43:19.420
+Francesca Vera: typically, you can read a decision tree. And even if you're not told what the overall question was, or what the decision tree's use was for, you can probably guess. So. Does anyone want to guess what this decision tree
+
+282
+00:43:20.280 --> 00:43:26.529
+Francesca Vera: was created for? What? What am I trying to decide with this decision tree that I made.
+
+283
+00:43:33.130 --> 00:43:34.770
+shashi: To play outside or not.
+
+284
+00:43:35.870 --> 00:43:36.480
+Francesca Vera: Yep.
+
+285
+00:43:36.810 --> 00:43:50.199
+Francesca Vera: to play outside or not. Yeah, exactly. So I'm a big tennis fan. It's been raining a lot in San Francisco. I haven't been able to play, so I was inspired by that. If it's raining, I'm not going to play.
+
+286
+00:43:50.310 --> 00:43:52.840
+Francesca Vera: if it's not raining, but it's cold. I'm not going to play
+
+287
+00:43:53.190 --> 00:43:57.299
+Francesca Vera: if it's raining, but not cold, but it's dark.
+
+288
+00:43:57.470 --> 00:44:09.980
+Francesca Vera: Then I'm not going to play, and you were able to do that without being told what the question is just by seeing what the various considerations were. And that's just how interpretable a decision tree is. Right?
+
+289
+00:44:11.050 --> 00:44:30.929
+Francesca Vera: So why is the decision tree algorithm useful a decision tree. It's easy to understand and interpret. Why is that useful? Because it's easy to communicate. Remember, you're going to have to communicate your project. Your models, maybe even talk about why one model works over the other
+
+290
+00:44:30.930 --> 00:44:41.200
+Francesca Vera: decision trees make it really easy to do that. It's also great that it can be used for classification or regression. It can handle both numerical and categorical data
+
+291
+00:44:41.740 --> 00:44:51.889
+Francesca Vera: and interpretability is key. It can be used to identify important features. Earlier, we said. For the football example.
+
+292
+00:44:52.080 --> 00:45:04.430
+Francesca Vera: one of the ways we can make our problem more complex is by using different features and trying to identify which ones are important decision. Trees help us! Help us do that.
+
+293
+00:45:06.060 --> 00:45:16.929
+Francesca Vera: Another side of it, though there are cons prone to overfitting. If the tree is too complex or too deep. This was covered in the modules overfitting
+
+294
+00:45:17.110 --> 00:45:26.679
+Francesca Vera: small changes in data can lead to very different trees, and you can imagine that in the real world you will be getting so many.
+
+295
+00:45:26.780 --> 00:45:31.349
+Francesca Vera: you know so many data points quickly. And
+
+296
+00:45:31.620 --> 00:45:38.510
+Francesca Vera: you know, maybe with some inconsistencies and decision. Trees are so sensitive to that.
+
+297
+00:45:38.860 --> 00:45:48.039
+Francesca Vera: Maybe you don't really want to use an algorithm that is so sensitive to small changes in data or with imbalanced data.
+
+298
+00:45:48.850 --> 00:46:12.899
+Francesca Vera: And I have a colab notebook. But before I get into the colab notebook I'll just quickly go over comparing decision trees with logistic regression. Some of the main ones are that logistic regression is used for classification, decision trees for classification or regression. Logistic regression wants numerical data as opposed to categorical data
+
+299
+00:46:13.561 --> 00:46:22.999
+Francesca Vera: linear boundary, and then parametric versus non-parametric here, and then also comparing it with K nearest neighbors. So
+
+300
+00:46:23.350 --> 00:46:41.679
+Francesca Vera: these are included just because when you are doing your project and you want to do different classification models. You might want to think of the various trade-offs between decision trees and the other models we've learned so far, like K, nearest neighbors or logistic regression
+
+301
+00:46:43.480 --> 00:46:47.389
+Francesca Vera: great. And so I am going to actually put this link
+
+302
+00:46:47.510 --> 00:46:54.520
+Francesca Vera: in the chat for anyone who is interested in you know, following along.
+
+303
+00:46:55.780 --> 00:46:57.540
+Francesca Vera: If you are
+
+304
+00:46:57.790 --> 00:47:09.050
+Francesca Vera: able to. You know, open this, remember to just save a copy into your drive. So that you can actually edit it yourself.
+
+305
+00:47:09.250 --> 00:47:14.010
+Francesca Vera: And the data set can also be downloaded on.
+
+306
+00:47:14.430 --> 00:47:20.899
+Francesca Vera: You know, from Kaggle. So that is the data set. This example is looking at. And
+
+307
+00:47:21.180 --> 00:47:23.810
+Francesca Vera: in that case I'm just going to get
+
+308
+00:47:24.120 --> 00:47:27.910
+Francesca Vera: started and load my data set already.
+
+309
+00:47:28.070 --> 00:47:42.060
+Francesca Vera: So, as I mentioned earlier decision trees pretty useful for healthcare applications, this data set is looking at breast cancer data set, and the diagnosis
+
+310
+00:47:42.500 --> 00:47:49.819
+Francesca Vera: indicates the type of cancer M for malignant and B for benign.
+
+311
+00:47:50.390 --> 00:48:01.020
+Francesca Vera: And we have various you know, values for the actual characteristics.
+
+312
+00:48:02.810 --> 00:48:16.959
+Francesca Vera: So I've loaded my data set. I have this data frame cancer data. And in the interest of time. I am just going to go ahead and already reduce my data set. As you can see, there are many, many columns.
+
+313
+00:48:17.140 --> 00:48:23.909
+Francesca Vera: and for the purposes of today. I am going to look mostly at
+
+314
+00:48:24.040 --> 00:48:38.250
+Francesca Vera: just these, you know, visual features based on the sort of average smoothness, average radius, average concavity, etc, plus, of course, my diagnosis. So let me
+
+315
+00:48:38.430 --> 00:48:40.520
+Francesca Vera: run that there and
+
+316
+00:48:42.540 --> 00:48:47.829
+Francesca Vera: I was going to spend some time actually doing some of the
+
+317
+00:48:48.040 --> 00:48:59.729
+Francesca Vera: exploration of features. But since I want to get to the since I want to get to the decision tree I am just going to
+
+318
+00:48:59.910 --> 00:49:07.040
+Francesca Vera: demonstrate the visual of one feature, if it loads.
+
+319
+00:49:09.300 --> 00:49:11.475
+Francesca Vera: does it? No, it doesn't.
+
+320
+00:49:15.310 --> 00:49:20.760
+Francesca Vera: Oh, this is my mistake.
+
+321
+00:49:39.540 --> 00:49:50.176
+Francesca Vera: I actually am going to just skip over this, for now, since we are running out of time and then go back to this. Essentially, I wanted to show the
+
+322
+00:49:50.720 --> 00:50:01.320
+Francesca Vera: difference in sort of radius mean and how that affects the diagnosis. But I believe that I
+
+323
+00:50:02.067 --> 00:50:06.040
+Francesca Vera: had loaded an older version of the
+
+324
+00:50:08.330 --> 00:50:11.629
+Francesca Vera: of the data set. So let's see if
+
+325
+00:50:11.910 --> 00:50:20.114
+Francesca Vera: this works, and if not, then I will have to go back to it. Oh, it works apologies for the color lack of color
+
+326
+00:50:20.580 --> 00:50:23.931
+Francesca Vera: differentiation. But, as you can see here
+
+327
+00:50:24.510 --> 00:50:29.409
+Francesca Vera: well, what can you see here? How does the radius mean? Affect the diagnosis?
+
+328
+00:50:35.160 --> 00:50:38.420
+Francesca Vera: So we have M here and B here. Yes, yashi.
+
+329
+00:50:44.550 --> 00:50:49.890
+Francesca Vera: Any ideas on how the radius mean affects the diagnosis.
+
+330
+00:50:52.120 --> 00:50:55.830
+shashi: As the radius is if the radius is small, it is
+
+331
+00:50:57.327 --> 00:51:01.979
+shashi: benign, and as the radius increases it becomes malignant.
+
+332
+00:51:01.980 --> 00:51:16.709
+Francesca Vera: Exactly so. Here we see, you know. Obviously it's not a 1 to one case, but generally trending. If the radius mean is on the smaller side. You know, all of these are capped at about, you know, 18
+
+333
+00:51:17.120 --> 00:51:33.780
+Francesca Vera: for this data set, and then, if it is over, that all of them are characterized as malignant. And so that tells me it might be an important feature, right that I want to use in my model. So I'm going to plug along then and use this.
+
+334
+00:51:33.940 --> 00:51:40.540
+Francesca Vera: I'm actually going to use this radius mean as as my feature for my decision tree model.
+
+335
+00:51:40.760 --> 00:52:00.609
+Francesca Vera: So I'm 1st going to split my train and test set according to this test size of 15%. And just to see how many rows have in each set. So I have 483 rows in my
+
+336
+00:52:00.790 --> 00:52:07.120
+Francesca Vera: training set, and 86 rows in my test. Set. So for X and Y.
+
+337
+00:52:08.000 --> 00:52:13.582
+Francesca Vera: Why, I put my diagnosis, because, of course, that is
+
+338
+00:52:14.440 --> 00:52:16.608
+Francesca Vera: that is what I want. My
+
+339
+00:52:18.530 --> 00:52:24.250
+Francesca Vera: that is what I want to predict. And then what do I put for my ex.
+
+340
+00:52:24.450 --> 00:52:27.089
+Francesca Vera: What? What, what would go go in here?
+
+341
+00:52:28.610 --> 00:52:32.230
+Francesca Vera: What kind of what feature did I say? I wanted to to use.
+
+342
+00:52:34.350 --> 00:52:35.400
+shashi: Radius, mean.
+
+343
+00:52:35.720 --> 00:52:46.219
+Francesca Vera: Yes, exactly. So. Here I'm going to put just for this model I want to see. Can my radius mean already, you know. Provide me with a pretty good
+
+344
+00:52:46.380 --> 00:52:56.540
+Francesca Vera: good decision. Tree classifier. So let me just run that and get my X train, y train X test and y test. So all good and
+
+345
+00:52:56.670 --> 00:53:02.454
+Francesca Vera: importing all the important things for decision. Tree classifier great. So
+
+346
+00:53:03.610 --> 00:53:08.590
+Francesca Vera: how do I go about building this, then? So let's say I want to define my model.
+
+347
+00:53:10.680 --> 00:53:24.770
+Francesca Vera: Decision tree classifier. Let's say I want to use entropy and a Max depth of any suggestions. Anyone.
+
+348
+00:53:25.230 --> 00:53:30.009
+Francesca Vera: What? Max? 3. Let's use 3. Okay, great. So
+
+349
+00:53:30.300 --> 00:53:41.529
+Francesca Vera: we're going to run that cool. What do I do next? So I've got my classifier. I've got my train test set. Anyone want to give me an idea. Yeah, Shashi.
+
+350
+00:53:43.030 --> 00:53:43.930
+shashi: We can
+
+351
+00:53:46.430 --> 00:53:51.639
+shashi: do, multiple and you can run it in a grid search. If you want to
+
+352
+00:53:52.130 --> 00:53:53.790
+shashi: do cross validations.
+
+353
+00:53:54.340 --> 00:54:05.100
+Francesca Vera: Okay, let's let's say, I just want to get my 1st result. Maybe this is my 1st experiment. What what do I do after I've defined my model. How how do I get my.
+
+354
+00:54:05.100 --> 00:54:06.680
+shashi: You fit the.
+
+355
+00:54:07.640 --> 00:54:11.040
+Francesca Vera: Okay, I fit. What do I fit it on?
+
+356
+00:54:12.577 --> 00:54:16.430
+shashi: Extreme. And one thing.
+
+357
+00:54:16.590 --> 00:54:27.944
+Francesca Vera: Yup X train and y train. Let's see, does that work? Yup, that that work for me? Great? Okay. Now I fit my. I fit my model?
+
+358
+00:54:29.230 --> 00:54:33.560
+Francesca Vera: I want to. I want to see some results, you know. How do I?
+
+359
+00:54:37.480 --> 00:54:39.810
+Francesca Vera: How do I get my predictions?
+
+360
+00:54:40.630 --> 00:54:42.340
+shashi: Dt, dot predict.
+
+361
+00:54:42.710 --> 00:54:44.660
+Francesca Vera: Tt, dot predict on.
+
+362
+00:54:45.010 --> 00:54:47.249
+shashi: Test, extra test.
+
+363
+00:54:47.590 --> 00:54:55.730
+Francesca Vera: Perfect excessed. And so then I have all my predictions, and you'll notice that up here I've already imported.
+
+364
+00:54:55.730 --> 00:54:56.370
+shashi: Okay. Yeah.
+
+365
+00:54:56.370 --> 00:54:59.459
+Francesca Vera: Classification report. Yeah, you're one step ahead of me.
+
+366
+00:54:59.600 --> 00:55:05.490
+Francesca Vera: So if I wanted to print my classification report, what am I.
+
+367
+00:55:05.770 --> 00:55:06.600
+shashi: Like this.
+
+368
+00:55:06.980 --> 00:55:08.449
+Francesca Vera: Y test and.
+
+369
+00:55:08.450 --> 00:55:09.520
+shashi: Vibrant.
+
+370
+00:55:09.720 --> 00:55:12.499
+Francesca Vera: Why, pride, wow! Everyone here is
+
+371
+00:55:12.740 --> 00:55:16.540
+Francesca Vera: clearly a pro. At this. You're speeding way ahead of me.
+
+372
+00:55:16.650 --> 00:55:21.250
+Francesca Vera: And here that's what I've got. What do we think?
+
+373
+00:55:22.160 --> 00:55:25.499
+Francesca Vera: Can you? Can someone interpret this for me? What!
+
+374
+00:55:25.620 --> 00:55:26.220
+Francesca Vera: What?
+
+375
+00:55:27.780 --> 00:55:29.649
+Francesca Vera: You know? What? What are?
+
+376
+00:55:29.960 --> 00:55:35.270
+Francesca Vera: What do these numbers mean? What do these words mean, do you think our model is doing well?
+
+377
+00:55:41.170 --> 00:55:42.330
+Francesca Vera: Any ideas.
+
+378
+00:55:45.290 --> 00:55:49.509
+shashi: Accuracy is good, but I think the precision it can be
+
+379
+00:55:51.010 --> 00:55:56.059
+shashi: malignant. It is finding almost all the malignant. It is finding.
+
+380
+00:55:56.350 --> 00:55:57.830
+Francesca Vera: Recall.
+
+381
+00:55:59.080 --> 00:56:01.570
+shashi: It's point 7 4. So.
+
+382
+00:56:04.830 --> 00:56:05.600
+Francesca Vera: Okay?
+
+383
+00:56:05.720 --> 00:56:09.619
+Francesca Vera: Yeah, well, so accuracy. You see, here is pretty good
+
+384
+00:56:09.790 --> 00:56:14.580
+Francesca Vera: 90%. That's quite. That's very good. Are we? Are we surprised by that. Remember.
+
+385
+00:56:15.840 --> 00:56:20.980
+Francesca Vera: we're only using one feature. Are we surprised that one feature produced 90%.
+
+386
+00:56:27.820 --> 00:56:31.545
+shashi: I would think so, because because the smaller
+
+387
+00:56:32.230 --> 00:56:35.204
+shashi: even the benign ones were
+
+388
+00:56:36.020 --> 00:56:40.749
+shashi: overlapping the malignant ones. So I'm kind of curious. Why.
+
+389
+00:56:41.390 --> 00:56:45.950
+shashi: the number size, even when they were malignant, the size was as
+
+390
+00:56:46.680 --> 00:56:51.434
+shashi: same size as the benign ones. So how did it classify them as
+
+391
+00:56:52.850 --> 00:56:57.749
+shashi: malignant every time I mean. The precision, I think, was
+
+392
+00:56:58.080 --> 00:57:05.560
+shashi: for allegant was one. I think so. It was capturing every time all the samples as correct right.
+
+393
+00:57:05.860 --> 00:57:07.550
+Francesca Vera: Right? Yeah, I mean.
+
+394
+00:57:07.700 --> 00:57:20.719
+Francesca Vera: it's visually easy to see that radius mean will determine a lot. But yeah, I get what you're saying. 90% is pretty high. Abir, did you? What did you think of this? 90%.
+
+395
+00:57:21.624 --> 00:57:42.639
+ABEER HASAN: Maybe we got lucky in this exercise. It's hard to tell when you look@the.plot, whether this is a good reflection of what's happening or not, because some points might be might be overlaid. So I don't necessarily guarantee that my, I see reflects what's happening with the data, but we got lucky that we found a good strong predictor from the from the 1st attempt.
+
+396
+00:57:42.950 --> 00:57:53.439
+Francesca Vera: Right? Yeah. One thing that I'm curious about is as you said, maybe we did get lucky. I mean, can we plot what our data looks in our test data frame.
+
+397
+00:57:54.350 --> 00:58:00.680
+Francesca Vera: Maybe we can if if we are able to see all right. So this is what our test data frame looks like.
+
+398
+00:58:01.920 --> 00:58:06.020
+Francesca Vera: So not so much overlap. Right?
+
+399
+00:58:06.820 --> 00:58:09.690
+Francesca Vera: Like, I think, looking at our test data frame.
+
+400
+00:58:10.130 --> 00:58:17.169
+Francesca Vera: I'm now not so surprised that it got 90% because there's not a ton of overlap here, right?
+
+401
+00:58:18.310 --> 00:58:27.580
+Francesca Vera: So that that makes that makes a lot of sense. You mentioned precision and recall any ideas which one we might care about more
+
+402
+00:58:27.820 --> 00:58:33.909
+Francesca Vera: for for this one. What the dis you know? What's the difference between precision and recall.
+
+403
+00:58:36.072 --> 00:58:42.360
+shashi: Precision is for avoiding the false negatives.
+
+404
+00:58:45.280 --> 00:58:49.230
+shashi: That is, we do when it is the. When the case is malignant.
+
+405
+00:58:50.680 --> 00:59:05.150
+shashi: we actually have to get it is as malignant, and even if it is benign, and if we catch it as a malignant, it is fine. But we can further down the line. In other tests we can rule it out. We want to be 100% sure. We catch all the
+
+406
+00:59:05.360 --> 00:59:07.320
+shashi: malignant cells.
+
+407
+00:59:09.230 --> 00:59:19.680
+Francesca Vera: So. Do you think it is more important in this case to have a false, positive, or false negative? Which one do we care about more.
+
+408
+00:59:21.705 --> 00:59:23.380
+shashi: We don't want false positives.
+
+409
+00:59:23.790 --> 00:59:24.380
+Francesca Vera: We don't want.
+
+410
+00:59:24.380 --> 00:59:26.290
+shashi: Sorry. I mean false negatives.
+
+411
+00:59:26.290 --> 00:59:34.599
+Francesca Vera: Don't want false negatives. Yeah, we want to make sure that if it's positive we're getting getting it positive. And I know we're at time. So I'm just going to try to.
+
+412
+00:59:35.231 --> 00:59:37.539
+Francesca Vera: You know, show the visualization.
+
+413
+00:59:37.870 --> 00:59:42.579
+Francesca Vera: So this is just a visualization using our radius mean?
+
+414
+00:59:43.430 --> 00:59:47.869
+Francesca Vera: and of course, this. You know, the
+
+415
+00:59:48.050 --> 00:59:54.889
+Francesca Vera: Google colab was linked in the chat, and the data said, Feel free to explore more.
+
+416
+00:59:55.220 --> 01:00:15.559
+Francesca Vera: but otherwise I'm glad that we got to at least some good result. You're all very speedy with getting your your prediction. It seems like everyone's had a lot of practice fitting and testing and printing their classification report. So thank you. Thank you all for the the session.
+
+417
+01:00:19.460 --> 01:00:19.900
+shashi: Thank you.
+
+418
+01:00:19.900 --> 01:00:20.630
+Francesca Vera: Thank you.
+
+419
+01:00:21.760 --> 01:00:22.840
+Namrata Baid: Thank you.
+
