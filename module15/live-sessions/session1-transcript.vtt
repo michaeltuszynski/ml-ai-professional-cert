@@ -1,0 +1,1022 @@
+WEBVTT
+
+1
+00:00:01.760 --> 00:00:28.710
+Jessica: All right. Hello, everybody, and welcome to the module. 15 office hour for the professional certificate in machine learning. And AI, so, yeah, so this is our last office hour before the holiday break. So I'm looking forward to some holidays, and I'm sure you all do as well. So before we start with today's topic, which is gradient descent.
+
+2
+00:00:29.221 --> 00:00:42.018
+Jessica: I just want to remind you that. You know, like emeritus and sort of like everybody here goes on a vacation or holiday from
+
+3
+00:00:42.960 --> 00:01:10.940
+Jessica: from December 24th until January first.st So you won't be able to book any one on one consultation for the ones of you who haven't booked it yet. Please book them. It's very important for you to discuss with your learning facilitator whether your project makes sense or not before you start working on the Capstone project. It's very helpful and useful for you to present them the idea.
+
+4
+00:01:11.340 --> 00:01:37.590
+Jessica: So again, I know I said this 2 weeks ago, and I keep saying it. But it's very, very important that you do that. It's not mandatory, and I cannot force you to book your one on one consultation, but it's important that you do so just to get a green light, and you can. So you can work on your capstone project at peace. We are already in Module 15. We're going to start Module 16
+
+5
+00:01:37.950 --> 00:01:50.500
+Jessica: in the new Year, which means we only have 2 months and a half left in this course, and trust me, time flies when you are learning and when you're busy. So the capstone project is going to come up very quickly.
+
+6
+00:01:53.060 --> 00:02:15.500
+Jessica: Anything else? I don't think so. You know, like, during the holiday we also go on holiday. So there is no program support. There is no tickets. There is no office hours, none of that. So you can choose to take a break from the course, or you can. You know, like, in case you're falling a little bit behind.
+
+7
+00:02:15.650 --> 00:02:21.130
+Jessica: Maybe you can try to catch up a little bit, but it's not necessary.
+
+8
+00:02:21.940 --> 00:02:45.770
+Jessica: Alright, so that was everything for I guess housekeeping and announcements. And I'm happy. I did that because I see some people joining. And yeah. So let's start today office hour with the topic of gradient descent. So gradient descent is perhaps something you already heard about. Okay.
+
+9
+00:02:45.770 --> 00:03:00.349
+Jessica: it's a optimization technique that is extremely popular in not just in machine learning, but in many, many fields. Sorry.
+
+10
+00:03:00.470 --> 00:03:25.159
+Jessica: And as you can, as you can see here on this 1st slide, it's probably the most famous and popular optimization strategy. And the reason why it's so popular. It's because it's simple, it's efficient. It can work on complicated functions. And essentially, it's very good at finding the
+
+11
+00:03:25.160 --> 00:03:35.650
+Jessica: good parameters. Okay, in order to minimize a certain error. Okay, so before I explain, the plan for today
+
+12
+00:03:35.900 --> 00:04:01.970
+Jessica: is for me to try and explain to you how gradient descent works? By using words essentially. And then I have a quick jupyter notebook where I show you where we're gonna play a little bit with some functions and with gradient descent. And I'm gonna show you how powerful it can be to find to optimize a function. Okay?
+
+13
+00:04:01.970 --> 00:04:07.260
+Jessica: So before we start. What do I mean by optimizing a function? So
+
+14
+00:04:07.410 --> 00:04:32.289
+Jessica: you may have solved a lot of optimizations problems in your life. I'm sure that you have solved optimization problems without knowing you were doing that in the past and essentially optimizing a problem means finding the best solution to that problem. Okay, often, you're given a function or a set of function that depends on multiple parameters.
+
+15
+00:04:32.290 --> 00:04:50.319
+Jessica: And because they do depend on multiple parameters, there are multiple solutions available. Okay? The question is, well, which one is the best solution for your problem. Okay? A very easy optimization problem that is often presented to
+
+16
+00:04:50.430 --> 00:05:06.950
+Jessica: learners. And this is not about machine learning. But, for example, you imagine you have a factory and you are producing 5 different products. Okay, you want to basically figure out, okay, how?
+
+17
+00:05:06.950 --> 00:05:29.070
+Jessica: How much of each product to produce in order to, for example, maximize your profit. Okay, obviously, this is going to depend on some constraint on some conditions depending on your how much money you have, how much time you have, how much supply of material you have. Okay. But finding that specific solution
+
+18
+00:05:29.150 --> 00:05:55.179
+Jessica: that tells you. Well, if you produce X quantity of product, a y quantity of product B, and so on. To get the maximum profit is solving an optimization problem. Okay, there are many techniques to solve optimization problems. You can do the simple ones by hand. You can use linear and nonlinear solvers. Okay, depending on the form of your equation. But
+
+19
+00:05:55.180 --> 00:06:19.740
+Jessica: when things become a bit more complicated and solutions are not so easy to find, gradient descent is where it shines. Okay, gradient descent is essentially a technique that can be used in machine learning to minimize the cost function that is associated with an algorithm.
+
+20
+00:06:19.740 --> 00:06:26.489
+Jessica: Okay, so essentially, you can chain gradient descent. For example, with our regression algorithm
+
+21
+00:06:26.650 --> 00:06:38.260
+Jessica: in order to to regularize the regression algorithm and to minimize the cost function to minimize the error. Okay.
+
+22
+00:06:40.350 --> 00:06:41.525
+Jessica: the
+
+23
+00:06:44.620 --> 00:07:13.090
+Jessica: for today. I am not going, however, to. I'm not going to explain gradient descent in connection with machine learning. Okay, I'm going to leave this for the next office hour, because today is Thursday and the module just started. I thought I'd keep things a little bit simple and give you a general introduction to gradient descent just to get you used to the idea of how this algorithm works, because.
+
+24
+00:07:13.090 --> 00:07:29.820
+Jessica: although it is implemented in scikit-learn, and it's, you know, very easy for you to use. It's so important. This algorithm is so important that it's useful for you to sort of like to understand the basics of it. And to understand how it works. Okay.
+
+25
+00:07:29.890 --> 00:07:33.950
+Jessica: so suppose that you have a
+
+26
+00:07:37.620 --> 00:08:01.650
+Jessica: parabola. Okay, a 2D function. Okay? And I know that you know this. Okay? Or at least I hope that a lot of you know how to find the minimum of this function. Okay? So the lowest point of the parabola. Okay? So if you imagine that this parabola is describing some type of loss or some type of cost, okay for your problem.
+
+27
+00:08:02.025 --> 00:08:08.409
+Jessica: You may be interested in finding. Okay, well, what are the values of my problem that minimize
+
+28
+00:08:08.410 --> 00:08:29.169
+Jessica: my function? Okay, so where is the bottom of it? Essentially, okay. So for a simple case like the parabola, there are formulas that can do that. Okay, you are given the equation of the parabola, and you can find the coordinates of the vertex, and it's pretty easy to do. But let's pretend, for now that we don't know how to do that
+
+29
+00:08:29.370 --> 00:08:40.769
+Jessica: instead, let's try to understand how gradient descent works. So gradient descent is essentially an approximate optimization technique
+
+30
+00:08:40.950 --> 00:08:47.619
+Jessica: where you are given a function. Okay? And a function can be as complicated as you want.
+
+31
+00:08:47.890 --> 00:09:05.500
+Jessica: you choose a starting point on the function. You choose a step. Okay? And you use the derivative of the function to essentially take steps. Okay.
+
+32
+00:09:06.208 --> 00:09:13.991
+Jessica: towards what you're hoping is the minimum. Okay? I mentioned the
+
+33
+00:09:14.650 --> 00:09:29.000
+Jessica: the derivative of the function. And you may ask, Well, why are we talking derivative? Why are we doing calculus here? Well, if you have ever taken calculus, or you know a little bit about functions, you know that the value
+
+34
+00:09:29.000 --> 00:09:53.090
+Jessica: of the derivative of the function at any point is equal to the slope of the tangent line to the function at that point. Okay, so essentially, the derivative of the function tells you how fast you're moving along the shape of your function of the curve in order to reach the minimum. Okay.
+
+35
+00:09:53.240 --> 00:09:53.890
+Jessica: now.
+
+36
+00:09:55.470 --> 00:10:09.199
+Jessica: things are a little bit more complicated than that. Okay? 1st of all, why is it if we're using derivatives, why is it called gradient descent? And where does this all come from? Well.
+
+37
+00:10:09.370 --> 00:10:27.399
+Jessica: the derivative is essentially the slope of the well, as I just said, is the slope of the tangent line at evaluated at some point on the function. Okay, if your function has one
+
+38
+00:10:28.129 --> 00:10:34.060
+Jessica: variable in it, then you're just speaking derivatives. Okay.
+
+39
+00:10:34.060 --> 00:10:43.880
+Jessica: when your function becomes a little bit more complicated. And you're starting having a function of XYZ. Multiple variables. In general.
+
+40
+00:10:43.880 --> 00:11:08.299
+Jessica: you, the gradient okay, or the derivative. Okay, it's not just depending on one variable. But it's going to depend on all the variable that constitute the function. Okay? So the gradient is nothing but an array that collects the derivatives with respect to each variable of the function.
+
+41
+00:11:08.480 --> 00:11:23.049
+Jessica: Okay, so let's see if I can find a quick example on the Internet gradient of X squared plus
+
+42
+00:11:23.390 --> 00:11:25.330
+Jessica: y squared.
+
+43
+00:11:29.430 --> 00:11:32.310
+Jessica: Okay, so
+
+44
+00:11:34.550 --> 00:11:59.360
+Jessica: I should have put this on this slide. I don't know why I didn't. But the Internet is helpful. So because the function X squared plus y squared depends on 2 variables. Okay, when you're taking the derivative of this function. Okay, you need to take the derivative with respect of X, and with respect to y, okay.
+
+45
+00:12:00.200 --> 00:12:26.920
+Jessica: each derivatives gives you a component of the gradient of the original function, which is going to be 2 x, which is the derivative with respect to x and 2 y, which is the derivative with respect to y, okay. So the gradient, which is where gradient descent takes its name from is essentially just an array of partial derivatives of the function. Okay.
+
+46
+00:12:28.000 --> 00:12:45.389
+Jessica: why is it called gradient descent? Well, because the idea is that you're using this evaluation of derivatives of your function to descend or to move okay towards the minimum of the function. Okay.
+
+47
+00:12:45.900 --> 00:12:56.360
+Jessica: so essentially, this gradient descent process is nothing but an iterative process. Okay, where you take a function, you calculate its derivatives.
+
+48
+00:12:56.360 --> 00:13:17.559
+Jessica: You pick a starting point on your function, and you choose a time step, and you use the derivative. So the slope of the function at that point to move towards what is hopefully a optimal point. So either a minimum or a maximum depending on the type of problem that you're solving. Okay?
+
+49
+00:13:18.090 --> 00:13:32.090
+Jessica: Any questions. So far, you know, guys, I'm a mathematician. So I get excited when we talk about calculus, and I hope I didn't bore you today. But it's important for you to understand a little bit how this all works. Okay.
+
+50
+00:13:35.050 --> 00:13:58.790
+Jessica: so the goal of gradient descent is simply to minimize the cost function. Okay, in this is in this is in relation with machine learning. Okay, so you can use gradient descent with your, for example, regression algorithms. Okay, to minimize the error between the predicted and the actual. Y, okay.
+
+51
+00:13:59.730 --> 00:14:05.820
+Jessica: so there are 2 things that. So the
+
+52
+00:14:06.760 --> 00:14:26.940
+Jessica: there are advantages and disadvantages to this. Okay, so the advantage is that now you have this new tool called gradient descent, that can help you reduce the error of your algorithm. Awesome. Okay. What are the drawbacks of this problem? Well, the drawback is that
+
+53
+00:14:27.030 --> 00:14:52.009
+Jessica: with new algorithms come new hyperparameters to choose. Okay? So if you thought you were done with linear regression, you picked all your variables and you did the recursive feature, elimination, or feature selection. And you optimize that algorithm. And it's still not good enough. Okay? You can say, well, I can use gradient descent to optimize my algorithm. But now you
+
+54
+00:14:52.010 --> 00:14:59.830
+Jessica: have some more hyper parameters to choose from. Okay, and these 2 hyper parameters are the starting point
+
+55
+00:15:00.140 --> 00:15:01.870
+Jessica: and the learning rate.
+
+56
+00:15:02.090 --> 00:15:09.280
+Jessica: So the starting point is essentially a the initial point where you want to start your iteration for gradient descent.
+
+57
+00:15:09.530 --> 00:15:31.690
+Jessica: The learning rate also referred to as step, size, or alpha is the size of the steps that are taken to reach the minimum. In other words, how big are these arrows? Okay? If you so when you're speaking about learning rate or things like that. It's easy for you to see that if
+
+58
+00:15:32.040 --> 00:15:41.910
+Jessica: you have 2 options, okay, you have 2 2 different cases. You have the case where you choose a time step, or an alpha, that is little.
+
+59
+00:15:42.040 --> 00:15:45.480
+Jessica: and that is typically a safe choice.
+
+60
+00:15:45.640 --> 00:16:01.139
+Jessica: But the problem with that is that it can take you a lot of iterations in order to reach the minimum. Okay? In fact, you may set your number of iteration too low compared to the step size, and you may never find the minimum. Okay.
+
+61
+00:16:01.550 --> 00:16:09.470
+Jessica: the other thing that can happen is that, well, if you choose a step size that is too big.
+
+62
+00:16:10.360 --> 00:16:14.340
+Jessica: This can actually overshoot
+
+63
+00:16:14.470 --> 00:16:30.000
+Jessica: and never reach the minimum. Okay, doesn't matter where your starting point is. If you, for example, choose a time step that's too big for the function that you're using and for its derivative, you may actually completely miss the minimum. So again.
+
+64
+00:16:30.000 --> 00:16:49.409
+Jessica: as in many cases in machine learning, these are hyper parameters that you sort of have to play with with gradient descent, and I would love to be able to tell you what are good numbers for it, but it's nearly impossible to do so. But in the Jupyter notebook that I have, I'm going to show you a couple of
+
+65
+00:16:49.410 --> 00:16:54.380
+Jessica: cases where things go south. And when things work out, okay,
+
+66
+00:16:57.120 --> 00:17:01.159
+Jessica: there are a few different types of gradient descent.
+
+67
+00:17:01.878 --> 00:17:12.630
+Jessica: So the one that I described right now, it's the simplest one. Okay, you essentially find the minimum of a function when you're talking when you're
+
+68
+00:17:12.970 --> 00:17:19.449
+Jessica: using gradient descent in conjunction with machine learning.
+
+69
+00:17:20.009 --> 00:17:27.790
+Jessica: You come up with different types for it. Okay? So the 1st type is called the batch gradient descent.
+
+70
+00:17:27.930 --> 00:17:44.470
+Jessica: So this batch gradient descent essentially takes the average of the gradients of all the training examples, and then uses that mean gradient to update the parameters. So what happens is that it?
+
+71
+00:17:45.970 --> 00:17:46.980
+Jessica: It
+
+72
+00:17:47.530 --> 00:18:13.059
+Jessica: looks at all the training samples and regularizes the parameters of the algorithm has the training happens. Okay, batch gradient descent is a very good technique for simple functions. Okay? So if you have a simple or more convex or relatively smooth cost function
+
+73
+00:18:13.260 --> 00:18:35.380
+Jessica: batch gradient descent works pretty good, and because it works well on. It's the simplest type of gradient descent. It works well on simpler function because it's efficient. However, it does have long processing time for large training data sets as it still needed to store all the data into memory.
+
+74
+00:18:35.380 --> 00:18:47.590
+Jessica: Okay, the other type of gradient descent, which is probably more famous, is called stochastic gradient descent which also called Sgd
+
+75
+00:18:48.667 --> 00:19:00.200
+Jessica: what happens with Sgd is that it runs a training epoch for each example within the data set, and it Updates each training example parameter, one at a time.
+
+76
+00:19:00.856 --> 00:19:16.669
+Jessica: This is more computationally efficient. Why? Well, because it only trains one parameter at a time. Okay, it doesn't need to hold memory for all the training samples, but it only holds memory for one at a time.
+
+77
+00:19:17.384 --> 00:19:32.580
+Jessica: However, while frequent updates can offer more detail and speed. Okay, so more accurate results. And it may be faster. It can result in losses in computational efficiency when compared to batch gradient descent. Okay.
+
+78
+00:19:32.860 --> 00:19:39.960
+Jessica: Sgd can be used for larger data set as it converges faster.
+
+79
+00:19:40.220 --> 00:20:04.440
+Jessica: The last type of gradient descent is Mini batch, gradient descent, which is essentially a combination of batch, gradient descent and stochastic gradient descent. What happens with Mini batch gradient descent is that it splits the training data set into small batch sizes and performs update on each of those batches.
+
+80
+00:20:04.510 --> 00:20:26.430
+Jessica: This approach strikes a balance between the computational efficiency of batch gradient descent and the speed of stochastic gradient descent. Okay, so I'm not going to go too much into the details of each one of these techniques, because I want to show you an example or a code that I think it's going to
+
+81
+00:20:27.610 --> 00:20:41.050
+Jessica: make you understand a little bit bigger, a little bit better. I'm sorry what is going on with this? With this algorithm. Okay, keep in mind that gradient descent is
+
+82
+00:20:41.320 --> 00:20:43.060
+Jessica: used
+
+83
+00:20:43.280 --> 00:20:51.700
+Jessica: in many fields. Okay, I have. I have used the gradient descent, probably my 1st year of university when
+
+84
+00:20:52.260 --> 00:20:59.140
+Jessica: data. Science was a baby. Okay? And I didn't even know what data science was. So
+
+85
+00:20:59.700 --> 00:21:26.600
+Jessica: you know, this was 15 years ago or 18 years ago. So keep in mind that gradient descent is an extremely powerful technique. And it can you can really benefit from from optimization outside, from machine learning as well. Okay. So before we go into the well, actually, let's go into the examples here.
+
+86
+00:21:26.930 --> 00:21:36.720
+Jessica: So here I have 3 objective functions. Okay, the objective functions in optimizations are what I want to
+
+87
+00:21:36.880 --> 00:21:52.887
+Jessica: optimize, whether we want to find the minimum or the maximum doesn't matter. Okay, imagine that these are cost functions for machine learning algorithms, okay? Or they can be your profit function for your for your
+
+88
+00:21:53.980 --> 00:21:57.370
+Jessica: factory or and so on. Okay.
+
+89
+00:21:58.030 --> 00:22:08.849
+Jessica: so we have f, 1, 2 x minus 20 square plus 10 y plus 30 squared, plus 10 f, 2 and F 3. Okay.
+
+90
+00:22:09.080 --> 00:22:13.040
+Jessica: alright. So the 1st thing that I'm doing is
+
+91
+00:22:14.070 --> 00:22:31.039
+Jessica: defining these functions in python. Okay, it's easy. And I can do this pretty straightforward using by with a user defined function. Okay, they're all functions of X and Y, and I am just defining them as they are.
+
+92
+00:22:31.590 --> 00:22:32.430
+Jessica: Okay.
+
+93
+00:22:33.860 --> 00:22:39.059
+Jessica: Also up here. I do have some libraries. Okay, nothing.
+
+94
+00:22:39.330 --> 00:22:43.980
+Jessica: Nothing crazy. Just some matplots live in numpy, because I want to show you pretty plots.
+
+95
+00:22:46.240 --> 00:22:54.632
+Jessica: Now, the next important piece that we need in order to
+
+96
+00:22:55.370 --> 00:23:06.849
+Jessica: implement gradient descent on these functions are the gradients. Okay? So those arrays of partial derivatives for the functions that we have.
+
+97
+00:23:06.980 --> 00:23:22.499
+Jessica: Now, I'm going to save you from the algebra and the calculus and the math. But here I already have calculated the gradient for each of the function that I've given you. Okay, so I have the gradient of the 1st function.
+
+98
+00:23:23.050 --> 00:23:24.020
+Jessica: this one.
+
+99
+00:23:24.600 --> 00:23:32.910
+Jessica: which is a function of x and y, so the gradient is going to have 2 components, the derivative with respect to x and the derivative with respect to y.
+
+100
+00:23:33.040 --> 00:23:58.310
+Jessica: Now trust me on this, this is the derivative of f. 1. With respect to X, and this is the derivative of f 1 with respect to y, okay, so I have the X component of the gradient and the Y component. Why? Because gradient descent needs that to know in what direction to move. Okay? Because that movement, it's defined by the gradient.
+
+101
+00:23:59.420 --> 00:24:08.439
+Jessica: Same thing for F, 2, and for F, 3. Okay, so all of them have X
+
+102
+00:24:08.620 --> 00:24:15.649
+Jessica: derivative and a Y derivative. There are rays with 2 elements in it.
+
+103
+00:24:15.870 --> 00:24:25.209
+Jessica: and this is the one for F 3. It's horrible because F. 3. It's horrible. And so it's derivative. It's even worse. Okay.
+
+104
+00:24:27.650 --> 00:24:29.579
+Jessica: all right. So.
+
+105
+00:24:29.690 --> 00:24:36.074
+Jessica: But the nice thing about grid and descent is that once you have defined the
+
+106
+00:24:36.830 --> 00:24:46.970
+Jessica: gradient and the function. Okay, this is for an implementation by hand of gradient descent. By the way, if you, this is what we're doing today.
+
+107
+00:24:47.140 --> 00:25:15.339
+Jessica: If you want to do like. If you want to do gradient descent by hand or by simple python, I guess all you have to do is write the derivative. That is the hardest thing you need to do the rest. It's easy, but thankfully scikit-learn does have gradient descent in it, and so most times you don't even have to worry about calculating the derivative. Okay, but the math in me. But the mathematician in me today decided to show you derivatives and functions.
+
+108
+00:25:15.880 --> 00:25:26.110
+Jessica: All right. So let's play around with some of the function that I've given you, and see how to implement gradient descent on these guys.
+
+109
+00:25:26.680 --> 00:25:41.569
+Jessica: So let's start with F 2. Okay, so this guy, if you can plot your functions. Okay, it's going to be very rare that you can. Okay, especially when you're dealing with machine learning, because you have too many parameters. Okay?
+
+110
+00:25:41.680 --> 00:25:48.480
+Jessica: But since we're dealing with a function of X and Y, we can do that today. And so here I have.
+
+111
+00:25:49.366 --> 00:25:56.350
+Jessica: essentially defined a, the 3D version of my function. Okay, over by using mesh grid.
+
+112
+00:25:57.640 --> 00:26:04.409
+Jessica: And this is what F 2 looks like, okay, so it's this.
+
+113
+00:26:05.380 --> 00:26:29.589
+Jessica: essentially a piece of paper that's been fold. That's been that we're folding upwards. Okay? And you have the 4 corners. It's pretty symmetrical. Okay, it's not perfectly symmetrical, but it looks pretty symmetrical. And by looking at this plot, okay, we can take a wild guess. Okay, and say that the minimum is somewhere here.
+
+114
+00:26:29.910 --> 00:26:30.880
+Jessica: Okay.
+
+115
+00:26:31.750 --> 00:26:38.899
+Jessica: this is why plotting function is very helpful, because if I can visualize at least where the minimum is
+
+116
+00:26:39.790 --> 00:26:53.280
+Jessica: taking a good guess for the starting point. It's going to be fairly easy. It may not be obvious, but it can facilitate your life quite a bit. Okay, so very useful to take a look at it.
+
+117
+00:26:53.280 --> 00:27:13.770
+Jessica: All right. So let's do, let's implement gradient descent for this function. Okay, so remember, we need a step size. We need a starting point. We need the number of iteration because it's an algorithm. And we just need to tell the algorithm when to stop. Okay? And we need the gradient of the function, of course.
+
+118
+00:27:14.000 --> 00:27:40.529
+Jessica: All right. So here I have a toy implementation of gradient descent. So I am playing with 4 different starting point. Okay, so these are coordinates of starting point. I have negative 100 250, which is not even on the graph. So spoiler, alert, not a good starting point. Same with 2 and 3, and then I have 4,
+
+119
+00:27:40.650 --> 00:27:48.999
+Jessica: which is negative, 20 and 20, which is somewhere here, which seems to be a good starting point. Okay.
+
+120
+00:27:49.830 --> 00:28:01.879
+Jessica: for to play. Okay, to show you how things go south. If the starting point is wrong, I'm gonna pick starting point 2. Okay, so 100 a hundred. It's not even on the graph. So
+
+121
+00:28:02.130 --> 00:28:05.810
+Jessica: this is not going to work. But I want to show you that we can fix it.
+
+122
+00:28:06.960 --> 00:28:15.199
+Jessica: Next, I implement a gradient descent by hand. So I have my starting point x 0 y. Naught.
+
+123
+00:28:15.510 --> 00:28:25.539
+Jessica: The number of iterations 500 you can choose. 500 is for this function is fine, the learning rate. Let's let's pick a big learning rate.
+
+124
+00:28:26.310 --> 00:28:34.709
+Jessica: And then you simply implement gradient descent. So you update the number of iteration.
+
+125
+00:28:34.820 --> 00:28:40.329
+Jessica: You update the current point with the starting point.
+
+126
+00:28:40.500 --> 00:28:52.560
+Jessica: and then you with a simple for loop, you do well for the number of iterations that I've given. Evaluate the gradient of the function at the point where I'm at
+
+127
+00:28:52.810 --> 00:29:07.060
+Jessica: implement the gradient, the calculate, the step using gradient descent and update the coordinates. Okay, that's it. Gradient descent is done in 5 lines of code. Very simple. Okay?
+
+128
+00:29:08.170 --> 00:29:09.929
+Jessica: All right. So we do that.
+
+129
+00:29:10.360 --> 00:29:31.399
+Jessica: And yeah, well, I'm getting a warning here. So things diverged, obviously. But for you know, for out of just for curiosity, let's see if we can take a look at this result. So here I have my 3D plot of the function.
+
+130
+00:29:31.490 --> 00:29:57.109
+Jessica: And also I tried to plot a surface plot of my function that didn't work well, because my gradient descent just shoot to E to the 146, meaning that my parameters and my starting point were so off from the function that this didn't work at all. Okay, so let's go back and try and fix these parameters in gradient descent. Well.
+
+131
+00:29:57.360 --> 00:30:06.590
+Jessica: one thing you can do well, the 1st thing I would do is to fix the learning rate. Okay, obviously, we know that the starting point is not right. But let me play with it.
+
+132
+00:30:07.060 --> 00:30:08.950
+Jessica: Let's make it small.
+
+133
+00:30:11.270 --> 00:30:13.879
+Jessica: And let's see what happens. Okay.
+
+134
+00:30:14.390 --> 00:30:34.649
+Jessica: so you see that by decreasing the learning rate. Okay, this is the function that we are using to calculate gradient descent. This is its surface plot. Okay? So if you ever looked at a map of mountains or the like of a lake or the ocean. Okay, the closer the lines.
+
+135
+00:30:34.650 --> 00:30:52.440
+Jessica: the steeper the function is, and then towards the center, where the lines are more sparse, or where there are no lines. It means that the function is flat. Okay, have you ever seen a map of like a mountain range? That's exactly what this is, I'm looking at the function from the top. And I'm
+
+136
+00:30:52.510 --> 00:30:54.610
+Jessica: looking at these.
+
+137
+00:30:55.640 --> 00:31:07.529
+Jessica: And I'm looking at at this steepness. Essentially. So. This is my starting point a hundred a hundred. Okay, you see that it is converging
+
+138
+00:31:07.860 --> 00:31:14.420
+Jessica: towards a minimum. Actually, I, even, I even suspect that this thing converges somehow.
+
+139
+00:31:14.660 --> 00:31:19.470
+Jessica: Okay, so it's moving towards. So it started out here.
+
+140
+00:31:19.720 --> 00:31:26.129
+Jessica: But it's moving towards the right direction, which is the minimum of the function. Okay.
+
+141
+00:31:26.490 --> 00:31:31.869
+Jessica: as a sanity check. What I can do in this case is increase the number of iterations.
+
+142
+00:31:32.820 --> 00:31:42.240
+Jessica: 2,000. Okay, keep the same learning rate. And we're gonna try and see how much this thing moves okay for close to the minimum or not.
+
+143
+00:31:43.310 --> 00:31:44.670
+Jessica: So we do that.
+
+144
+00:31:45.980 --> 00:31:48.080
+Jessica: And we replot.
+
+145
+00:31:49.180 --> 00:31:59.800
+Jessica: And it looks like, well, we didn't quite find it earlier. But we're definitely close to it. Okay, it's definitely moving towards a point that is the minimum. Okay.
+
+146
+00:32:00.350 --> 00:32:08.000
+Jessica: now, let's pick a better starting point. So 4, it's definitely a better starting point.
+
+147
+00:32:08.720 --> 00:32:14.159
+Jessica: Why? Well, because it lies on the function. Okay, so we're gonna waste less iteration for that.
+
+148
+00:32:14.790 --> 00:32:26.569
+Jessica: At this point I can probably also decrease the number of iteration. Let's say 800. And the learning rate doesn't have to be so little. Okay, it can be probably something like this, and it's gonna work.
+
+149
+00:32:27.700 --> 00:32:32.060
+Jessica: I do that. And I replot my curve.
+
+150
+00:32:32.190 --> 00:32:35.450
+Jessica: And you see now that this was my starting point.
+
+151
+00:32:35.870 --> 00:32:40.080
+Jessica: and now this is converging to the minimum. Okay?
+
+152
+00:32:42.540 --> 00:32:49.980
+Jessica: And yeah, so this is an example of how to play with gradient descent with function. 2.
+
+153
+00:32:50.650 --> 00:33:02.650
+Jessica: Let's make things a little bit more interesting. Okay, so function 2 was easy, because there is only one minimum. Okay, so you're always going to end up at the same point.
+
+154
+00:33:03.840 --> 00:33:09.030
+Jessica: Function 3, which was this one up here?
+
+155
+00:33:09.330 --> 00:33:11.340
+Jessica: It's a little bit more complicated.
+
+156
+00:33:12.130 --> 00:33:18.359
+Jessica: and in fact, it looks like this. Let me zoom out a little bit
+
+157
+00:33:19.218 --> 00:33:25.079
+Jessica: it looks like this. So it has a 3 hills. Okay, one.
+
+158
+00:33:25.190 --> 00:33:32.120
+Jessica: 2, and 3, and it has 2 valleys. So you have.
+
+159
+00:33:32.890 --> 00:33:37.639
+Jessica: well, one down here, and you also have one behind this peak.
+
+160
+00:33:37.770 --> 00:33:52.780
+Jessica: Okay, you can't see it. But it's there. Right? So now, we're going into an optimization problem. That is a little bit more complicated because we want to find because we're dealing with multiple minimums. So we sort of have to be careful with what we decide to do
+
+161
+00:33:54.410 --> 00:34:03.619
+Jessica: alright. The process, though, doesn't change. Okay. So the here I have
+
+162
+00:34:04.040 --> 00:34:08.449
+Jessica: my options for starting points. Okay?
+
+163
+00:34:09.250 --> 00:34:12.679
+Jessica: What am I gonna pick? Let's pick.
+
+164
+00:34:13.150 --> 00:34:22.739
+Jessica: Let's pick one. Okay, which is minus 1 2.5, which could be okay, something somewhere.
+
+165
+00:34:22.960 --> 00:34:25.342
+Jessica: somewhere like here, something like that.
+
+166
+00:34:26.270 --> 00:34:41.749
+Jessica: And next, I have the implementation of gradient descent as before. So I have, let's do a thousand iteration, a big learning rate. And the algorithm is exactly the same. Okay, once you have the gradient and the function.
+
+167
+00:34:42.130 --> 00:34:45.950
+Jessica: the gradient descent algorithm by hand. It's very easy to implement.
+
+168
+00:34:47.230 --> 00:34:55.490
+Jessica: and we plot the trajectory of gradient descent. And this thing didn't go too. Well, okay. So we started here.
+
+169
+00:34:55.920 --> 00:35:00.840
+Jessica: And this was a horrible starting point, because green descent went
+
+170
+00:35:01.060 --> 00:35:06.540
+Jessica: the opposite way. Okay, didn't go towards a minimum or a maximum, it simply fell off the graph.
+
+171
+00:35:07.850 --> 00:35:14.380
+Jessica: Okay, so let's go back and try and fix this. Well, I 1st of all.
+
+172
+00:35:15.180 --> 00:35:22.118
+Jessica: you can play with the learning rate. I don't know if it's gonna help at this point it's going the opposite way. So
+
+173
+00:35:25.730 --> 00:35:28.220
+Jessica: yeah, see, this doesn't help at all, it's just
+
+174
+00:35:29.060 --> 00:35:33.310
+Jessica: keep going in the wrong direction. Okay? So this point is not very good.
+
+175
+00:35:35.192 --> 00:35:38.260
+Jessica: Let's pick 3.
+
+176
+00:35:38.870 --> 00:35:46.379
+Jessica: I don't know, and let's do 2,000 iteration and 0 point 1
+
+177
+00:35:47.130 --> 00:36:16.330
+Jessica: and recalculate. And this seems to be working pretty good. Okay? So we started here and it went straight to the minimum that is behind the sale, the hidden one, which we can see from the surface plot. Okay, so this is good. Okay, it's not the best, though. Why is it not the best? Well, because from the surface plot we know that this is the real minimum. Okay.
+
+178
+00:36:16.380 --> 00:36:27.560
+Jessica: so let's see if we can fix our code to find the absolute minimum of the function. So what am I picking here?
+
+179
+00:36:29.580 --> 00:36:34.189
+Jessica: 3 is minus 2.5 0 point 5.
+
+180
+00:36:35.420 --> 00:36:50.420
+Jessica: So like here. So I wanna pick one and minus 3, minus one minus 3 this.
+
+181
+00:36:54.400 --> 00:36:59.380
+Jessica: So we can do this and this.
+
+182
+00:37:00.800 --> 00:37:06.287
+Jessica: And you see that if I pick a much better starting point. You end up with the
+
+183
+00:37:07.640 --> 00:37:13.719
+Jessica: with the with gradient descent. Having found the global minimum for your function.
+
+184
+00:37:16.542 --> 00:37:31.560
+Jessica: Okay, we know this from the fact that the the lines are purple and darker means steeper. Okay? So I didn't plot the
+
+185
+00:37:31.740 --> 00:37:47.620
+Jessica: color bar for this surface plot. But yellow means it's a tall mountain, and the purple means it's a deep lake. Okay? So the darker the lines, the deeper or the lower your minimum. Is.
+
+186
+00:37:47.880 --> 00:37:48.880
+Jessica: Okay.
+
+187
+00:37:49.960 --> 00:38:12.140
+Jessica: I could also tell from this graph. Okay, but having the surface plot when you're solving gradient descent, like optimization problem with gradient descent is huge, because you know, when you cannot really see what's going on with the function having the surface plot easily tells you where the minimum is and where to start.
+
+188
+00:38:17.480 --> 00:38:21.689
+Jessica: And that is all I had for today. So I,
+
+189
+00:38:23.020 --> 00:38:29.467
+Jessica: yeah, I should have put it. I should have put the the color bar for this.
+
+190
+00:38:30.560 --> 00:38:37.513
+Jessica: but yeah, essentially, the yellow is this red peak, and the purple is this
+
+191
+00:38:38.550 --> 00:38:42.090
+Jessica: Is this blue one? So these.
+
+192
+00:38:42.310 --> 00:38:48.770
+Jessica: this green and this green correspond to these 2 oranges and and so on
+
+193
+00:38:56.220 --> 00:39:00.280
+Jessica: for gradient descent. You mean, Matt.
+
+194
+00:39:02.900 --> 00:39:12.050
+Jessica: Yeah, let me just find something. I don't have it. I don't have it ready. So let's see.
+
+195
+00:39:36.788 --> 00:39:40.140
+Jessica: Let's see if I can find an example.
+
+196
+00:40:02.787 --> 00:40:04.602
+Jessica: Let's see.
+
+197
+00:40:36.060 --> 00:40:38.180
+Jessica: Oh.
+
+198
+00:40:52.740 --> 00:40:54.790
+Jessica: okay, let's see if I can.
+
+199
+00:41:44.930 --> 00:41:53.459
+Jessica: All the examples I finding are not what I want. They are like using other libraries.
+
+200
+00:42:22.370 --> 00:42:27.550
+Jessica: Okay, what we're gonna do is go on to the documentation and look at it together.
+
+201
+00:42:28.607 --> 00:42:30.850
+Jessica: We can do
+
+202
+00:42:40.840 --> 00:42:41.700
+Jessica: model.
+
+203
+00:42:55.830 --> 00:42:59.659
+Jessica: Oh, actually, I can do something like this. Let me.
+
+204
+00:43:05.960 --> 00:43:08.529
+Jessica: Okay. One thing you can do.
+
+205
+00:43:10.360 --> 00:43:12.250
+Jessica: Let me grab.
+
+206
+00:43:27.850 --> 00:43:37.269
+Jessica: Okay, I've taken this from the documentation. So it's not groundbreaking. But this is like an example of how you can
+
+207
+00:43:37.730 --> 00:43:42.749
+Jessica: use. It's not. It's not the best example, but it's better than nothing.
+
+208
+00:43:45.550 --> 00:43:48.630
+Jessica: Well, I can show you quick. I can show you quick. It's just
+
+209
+00:43:48.950 --> 00:44:00.960
+Jessica: okay. So I have the diabetes data set. Okay, very simple. Okay, so essentially want to try and predict whether somebody has diabetes or not.
+
+210
+00:44:01.729 --> 00:44:15.050
+Jessica: And we split this data set into training and testing. Okay, this is without Eda, without data cleaning. This example is obviously bare bones. But just to give you an idea.
+
+211
+00:44:15.330 --> 00:44:25.409
+Jessica: So this is the stochastic gradient descent implementation for Sklearn. So you call this
+
+212
+00:44:27.650 --> 00:44:49.650
+Jessica: I guess. Algorithm. Okay, you still need to set the maximum number of iteration, which in this case is 100 or you can put 50. Whatever you want. The learning rate is constant, meaning that it doesn't change throughout your iteration. This is the step size. Okay, that I had essentially up here. Okay, so you still need that.
+
+213
+00:44:50.000 --> 00:44:57.399
+Jessica: And you fit this stochastic gradient descent to your data. And you can
+
+214
+00:44:57.400 --> 00:45:20.360
+Jessica: calculate your predictions. Okay, so you would use essentially an example like this, if you were using linear regression or a classification algorithm, and the results are not great. Okay? And you can't really I don't know, like you already did feature engineering. You already did feature selections.
+
+215
+00:45:20.360 --> 00:45:28.560
+Jessica: You already tried lasso. You already tried, Ridge, and the results are not very good. The last resort. Okay? Well, not the last resort.
+
+216
+00:45:28.560 --> 00:45:31.799
+Jessica: The another thing that you can try
+
+217
+00:45:32.000 --> 00:45:43.389
+Jessica: is to use Sgd regression regressor from Sklearn and see if your results are a little bit more accurate.
+
+218
+00:45:43.550 --> 00:45:49.410
+Jessica: So this is a very simple example of how you can do that. It's essentially.
+
+219
+00:45:49.600 --> 00:46:02.640
+Jessica: you know, it's not a machine learning algorithm. Okay? But it can be used to regularize your loss function a little bit if you want to try and improve the results.
+
+220
+00:46:07.670 --> 00:46:12.670
+Jessica: And there and up here. By the way, I did put
+
+221
+00:46:13.871 --> 00:46:42.560
+Jessica: you know, like the different gradient descent that are in Sklearner. So there is a classifier, stochastic gradient descent, a regression, stochastic, gradient descent, a Mini batch, gradient descent, a logistic regression, one so depending on the problem that you're solving and your application. You have a variety of gradient descent algorithm in sk learner that can help you improve your results a little bit.
+
+222
+00:46:47.010 --> 00:47:09.439
+Jessica: Does that? I know it's a little bit confusing. And I know this gradient descent thing gets a little bit out of the box at this point in the course, but it can be helpful, you know, if you want to like, improve the results, it takes very little time to implement, and you don't have to calculate the derivative like I did, but it can help you regularize your cost function a little bit.
+
+223
+00:47:13.780 --> 00:47:16.110
+Jessica: I'm opening the link.
+
+224
+00:47:17.134 --> 00:47:27.229
+Jessica: Yes, this is the the sk learner page for it.
+
+225
+00:47:28.490 --> 00:47:31.460
+Jessica: Any other comments or questions.
+
+226
+00:47:36.170 --> 00:47:55.379
+Jessica: Alright. So while you think I'm gonna wrap up what we did today and what to expect in the next couple of weeks. So well, today we saw obviously great and descent for the next. This is also the last module before the Christmas break. So you have one more office hour on Monday, I think
+
+227
+00:47:55.764 --> 00:48:20.745
+Jessica: and then emeritus will close for the holidays. This means that program support tickets all that goes on holiday as well, so we are not required to answer to your tickets over the holidays. Some of us may, some of us may not. We don't have to grade. We don't have to do anything during that time. It's also our holiday break.
+
+228
+00:48:21.180 --> 00:48:46.569
+Jessica: But yeah, so we are. We are. Gonna resume the operations. I guess. In the New Year with module 16. Another thing I mentioned at the beginning of the office hour is, you know you have a very little time to book your one on one consultation. I don't know if any of you are in my section or not. Book your consultation, please. If you haven't, it's
+
+229
+00:48:46.660 --> 00:49:10.920
+Jessica: it's gonna give you peace of mind to have 20 min with your learning facilitator that that is, gonna give you a green light about your capstone project, because once we come back in January, it's time to work on that. Okay, so it's really, really important that you get that green light. And yeah, I guess you guys don't have any more comments. So I am going to wish you a happy holidays and.
+
+230
+00:49:11.236 --> 00:49:16.610
+Harish: Just a quick question. Like, how do we schedule the time with you? Is there a.
+
+231
+00:49:18.445 --> 00:49:21.685
+Jessica: Yeah, so I can help you with that.
+
+232
+00:49:23.090 --> 00:49:25.389
+Jessica: So let me share the link
+
+233
+00:49:26.510 --> 00:49:29.540
+Jessica: in the chat. Just one second.
+
+234
+00:49:33.280 --> 00:49:33.785
+Harish: And
+
+235
+00:49:34.290 --> 00:49:37.170
+Harish: Until the 24.th Is that what it is?
+
+236
+00:49:37.170 --> 00:49:38.910
+Jessica: Sorry. Can you say that again.
+
+237
+00:49:39.090 --> 00:49:42.090
+Harish: You. You are working through the 24th till 24.th
+
+238
+00:49:42.090 --> 00:49:48.179
+Jessica: I. I am working until the 24, th but after the 24th that we are on holiday. Yes,
+
+239
+00:49:51.501 --> 00:49:57.548
+Jessica: yes. So somebody sent that in the chat already, because they're quicker than me.
+
+240
+00:49:58.890 --> 00:50:00.809
+Harish: Oh, I got the link to the book.
+
+241
+00:50:00.990 --> 00:50:06.765
+Jessica: Yes, so I don't know in what section you are.
+
+242
+00:50:08.220 --> 00:50:26.779
+Jessica: if you don't find a time that is, open, open a ticket and email us before the holiday break, because most likely we are going to be able to. We're going to be able to accommodate you and schedule a call separately.
+
+243
+00:50:26.950 --> 00:50:29.280
+Harish: Yeah. I still did not see the.
+
+244
+00:50:30.320 --> 00:50:34.680
+Jessica: I think I think Matt sent it in the chat. Do you see the chat.
+
+245
+00:50:35.110 --> 00:50:36.759
+Harish: Oh, capstone, session, module, one.
+
+246
+00:50:36.760 --> 00:50:49.989
+Jessica: Yes, yes. So book with the learning facilitator of your section. Okay, very important that you do that. So that we distribute the work equally.
+
+247
+00:50:50.270 --> 00:50:58.670
+Jessica: And really, if you don't find a time that works for you, for some reason, open a ticket with your learning facilitator
+
+248
+00:50:58.830 --> 00:51:06.010
+Jessica: mentioned that. And most like, for sure. We're going to be able to accommodate, you know, for a different.
+
+249
+00:51:06.010 --> 00:51:11.830
+Harish: Yeah, with with my tutor. It shows that no times in December.
+
+250
+00:51:11.830 --> 00:51:17.419
+Jessica: Okay. So send that, send open a ticket with program, support
+
+251
+00:51:17.670 --> 00:51:27.739
+Jessica: and communicate that. And then the learning facilitator is probably gonna tell, ask what your your availability is, and you're gonna he's gonna send you a private zoom link.
+
+252
+00:51:28.500 --> 00:51:29.340
+Harish: Thank you very much.
+
+253
+00:51:29.340 --> 00:51:30.660
+Harish: Yeah, no worries.
+
+254
+00:51:30.870 --> 00:51:46.279
+Jessica: And yeah, so thank you very much for coming today. And you know merry Christmas to the ones who celebrate and happy holidays. Otherwise we will see you in. I will see you in the New Year. And yeah, bye, and have a good rest of your day.
+
+255
+00:51:46.810 --> 00:51:47.230
+Harish: Thank you.
+

@@ -1,0 +1,1902 @@
+WEBVTT
+
+1
+00:00:01.480 --> 00:00:13.379
+Vikesh K: Alright, so welcome! Up to the office, and this is this is still in that week gradient different. But I I what I gather, what I understood is this
+
+2
+00:00:13.520 --> 00:00:42.039
+Vikesh K: had started way before, you know, holiday breaks, or December 18, so I believe you might have had a good amount of time to go through it. It's more mathematical in nature. The gradient is. And all those things that's sort of like the backbone of the algorithms that we have, because to to optimize them, you know how to figure out the minimum or maximum. That's the process and quite mathematical in nature. But there's another topic. And I thought, because there's a
+
+3
+00:00:42.180 --> 00:00:47.429
+Vikesh K: big gap and all of you are fresh. So I want to talk about another topic, which is
+
+4
+00:00:47.970 --> 00:01:08.970
+Vikesh K: very important from a practical perspective. But it's not really covered in the course, although we would talk about it. But we won't really go through it in detail. And I want to do that, especially if you're in any product product role, or you want to make it shift, or you want to work as a data scientist. Often you might have. This is a part of your role.
+
+5
+00:01:09.200 --> 00:01:12.630
+Vikesh K: And what I want to talk about is a B testing and experimentation.
+
+6
+00:01:13.461 --> 00:01:27.180
+Vikesh K: There are 2 things I want to give you an overview. Maybe many of you are new to Ab ab testing experimentation, and then we will do one case study, and I'm I would later supplement some more case studies, so that for all of you
+
+7
+00:01:27.605 --> 00:01:40.470
+Vikesh K: to practice, and especially if you're looking for roles. Let's say you know you, you look for typical roles in the industry. Ab. Testing is a very, very crucial skill. A lot of my work is about Ab testing, we do a lot of experimentation.
+
+8
+00:01:40.470 --> 00:02:02.019
+Vikesh K: So it's important that you understand this, and where it fits in with machine learning. Essentially, ab testing is, you can think it's applied statistics. So the basics of stats that you do hypothesis testing, then within that T test and over, and all those things that's basically is involved in Ab testing. So it's a very important topic. And then, once you have an understanding of this, so
+
+9
+00:02:03.090 --> 00:02:09.579
+Vikesh K: you would cover 2 parts. One is the machining part. One is the applied stats part. So at least you will have an overview of the same.
+
+10
+00:02:10.470 --> 00:02:18.249
+Vikesh K: Okay edits in the chat. Cool. Do you know anyone what? What? This is?
+
+11
+00:02:23.050 --> 00:02:24.030
+Vikesh K: Any clue?
+
+12
+00:02:29.460 --> 00:02:32.760
+Vikesh K: I will give you a hint. This is a series on Netflix.
+
+13
+00:02:36.263 --> 00:02:42.269
+Vikesh K: Nice, and that's great. Yes, so this was a. This was a fascinating series. They wanted to understand
+
+14
+00:02:42.420 --> 00:03:06.399
+Vikesh K: how your the kind of food you take, how it impacts. I think your body and other metrics that are of importance. Right? But the challenge is, if they give you a let's say, if I get a vegetarian diet, and you get a non-vegetarian diet, and they compare us. That won't be a right comparison. Because we 2, we 2 would have a very different genetic structure. Right? So what they did, they
+
+15
+00:03:06.730 --> 00:03:09.219
+Vikesh K: found out these identical twins.
+
+16
+00:03:10.340 --> 00:03:12.350
+Vikesh K: And you know, with the assumption that
+
+17
+00:03:12.500 --> 00:03:26.639
+Vikesh K: the genetic makeup, genetic structure of these identical twins the same. So one was given a you know, the meat based diet, the other was given, I believe, a Vegan diet, and then they started understanding how it impacts their body.
+
+18
+00:03:26.710 --> 00:03:43.350
+Vikesh K: Okay, so many of you know, many of us simply debate about the kind of food. So that's what they wanted to do. So the whole series is about that. And I think the name is called, you are what you eat. Okay? So the basic idea being, they did an experimentation to establish cause and effect.
+
+19
+00:03:43.480 --> 00:03:49.309
+Vikesh K: And that's why experimentation is very important when you have to establish a cause and effect
+
+20
+00:03:49.480 --> 00:03:55.729
+Vikesh K: rather than you know when you, when you can be sure that a causes. B, you have to do an experiment.
+
+21
+00:03:56.680 --> 00:03:59.989
+Vikesh K: And that's what was done in this study.
+
+22
+00:04:00.690 --> 00:04:01.599
+Vikesh K: So in
+
+23
+00:04:01.960 --> 00:04:13.150
+Vikesh K: usually, what we have been doing is something called observation study. You know, you have the past data. And using that, you are building the machine learning models. That's an observation study all right.
+
+24
+00:04:13.300 --> 00:04:16.029
+Vikesh K: The main point is, you can only
+
+25
+00:04:16.588 --> 00:04:27.709
+Vikesh K: focus on correlation there. Essentially, whatever insights you get you, you figure out the predictive modeling and all those things. But essentially, it's a correlation which you can infer from that
+
+26
+00:04:27.870 --> 00:04:30.140
+Vikesh K: right experiment
+
+27
+00:04:30.824 --> 00:04:42.250
+Vikesh K: allow you to establish causality. And that's very important. So what you. And one of the main distinction and experimentation is, you basically set up the whole thing
+
+28
+00:04:42.920 --> 00:04:47.099
+Vikesh K: you intervene into the process. You randomly divide people into groups.
+
+29
+00:04:47.240 --> 00:04:49.810
+Vikesh K: and they would see only one change.
+
+30
+00:04:50.120 --> 00:04:54.079
+Vikesh K: And then you note down the matrix on which the changes are measured.
+
+31
+00:04:54.240 --> 00:04:59.679
+Vikesh K: And with the help of that, you basically figure out, you know whether that one particular change
+
+32
+00:05:00.212 --> 00:05:08.529
+Vikesh K: made an impact or not. Right? That's the whole scenario about. So the main thing. Why you use experimentation or a B testing is because
+
+33
+00:05:08.750 --> 00:05:14.810
+Vikesh K: you can establish a causation. And this can be very helpful when you are improving your products.
+
+34
+00:05:15.010 --> 00:05:25.880
+Vikesh K: So, for example, what kind of ui should I use? What kind of languages should I use? These are the things which are heavily tested before they are rolled out in front of the customers.
+
+35
+00:05:27.660 --> 00:05:41.289
+Vikesh K: in the industry it's called a B testing a very simple scenario. Here, you can see you usually have something which you want to test. In this case it was the layout. How the website looks like, you can see this is different
+
+36
+00:05:41.640 --> 00:05:44.720
+Vikesh K: compared to this. And also the color is different.
+
+37
+00:05:45.110 --> 00:06:12.130
+Vikesh K: The how you measure the impact is, you might have a key metric. In this case this was conversion rate. So if 100 people came, how many converted to the next stage? All right. So in this case, 25 people, 25% of the people converted 5% of people converted in B variant. So as a product manager, once you do the analysis and come up with this, you will go ahead with version A, because that allows you to increase your conversion rate.
+
+38
+00:06:12.340 --> 00:06:19.839
+Vikesh K: So all the companies do these small iterative experiments to improve the product quality.
+
+39
+00:06:20.628 --> 00:06:30.259
+Vikesh K: I think in Google, this is. This is at the start, but but forgot the details of it. But Marisa Mayor, who later on moved to Yahoo.
+
+40
+00:06:30.510 --> 00:06:34.180
+Vikesh K: She once had a debate with the designer
+
+41
+00:06:34.300 --> 00:06:37.700
+Vikesh K: on which color which shade of blue to choose.
+
+42
+00:06:38.200 --> 00:06:42.320
+Vikesh K: They tested around some thousands of shades of blue.
+
+43
+00:06:42.430 --> 00:06:51.850
+Vikesh K: and they tested it, using a B testing. So they wanted to figure out which will make people, you know, search even more. So that's how companies have been doing it.
+
+44
+00:06:52.130 --> 00:06:59.940
+Vikesh K: I will give you 2 particular examples. One is Twitter now X and booking.com. So my company does a lot of experiments
+
+45
+00:06:59.960 --> 00:07:22.219
+Vikesh K: like each of my team. Each of the teams are booking at a given time would have 4 or 5 experiments running, and each of the vertical had multiple experiments running. So overall, we do a lot of experimentation company wide. That's how we test the products. In fact, booking is, you know, one of the very well known companies in the experimentation space, especially in Europe.
+
+46
+00:07:22.400 --> 00:07:31.009
+Vikesh K: In us there are many Google, Meta, Airbnb. They are very, very good at experimentation, and most of the job involves experimentation. Even Amazon.
+
+47
+00:07:32.400 --> 00:07:42.029
+Vikesh K: And one example of how it looks like, okay. So Netflix, again, very good. Big on experimentation. I want you to tell me what thing they are experimenting here.
+
+48
+00:07:49.620 --> 00:07:56.039
+Vikesh K: It's so. If it's the the bottom part is not completely sure.
+
+49
+00:07:59.190 --> 00:08:01.615
+Ravi Duvvuri: You know the transactions, I think,
+
+50
+00:08:02.630 --> 00:08:06.069
+Ravi Duvvuri: whether to do sign up or buy directly or.
+
+51
+00:08:07.150 --> 00:08:07.910
+Vikesh K: Yes.
+
+52
+00:08:08.280 --> 00:08:18.440
+Vikesh K: So if you see all the different pages and this is taken, I've taken this from their blog. This is called call to action, so call to action is, they have changed it.
+
+53
+00:08:18.720 --> 00:08:26.160
+Vikesh K: So each rest of the page remains the same. Only one thing which they have changed is the call to action. So this is something which companies keep doing. So they
+
+54
+00:08:26.614 --> 00:08:44.480
+Vikesh K: you have a copywriter. You want to see what entices people to take an action. So before it's rolled out, it's a b tested. You make a design change before it's rolled out. You do an Ab testing. So ab testing is is the way by which all these companies do it. All right.
+
+55
+00:08:45.880 --> 00:08:52.560
+Vikesh K: I went to Linkedin. I picked up some couple of job profiles. Expedia Amazon
+
+56
+00:08:53.102 --> 00:08:57.620
+Vikesh K: tick, tock, data, analyst product sign product, manager data scientist, each one of them
+
+57
+00:08:57.780 --> 00:09:00.529
+Vikesh K: highlight that you need to know experimentation.
+
+58
+00:09:00.840 --> 00:09:11.130
+Vikesh K: All right. So that's that's 1 of the reasons I highlighted here. Even in machine learning. For example, what happens? Let's say you have a you design a new ranking algorithm.
+
+59
+00:09:11.340 --> 00:09:16.829
+Vikesh K: So you go to amazon.com, you search for a product. You get a listings all right.
+
+60
+00:09:17.180 --> 00:09:23.169
+Vikesh K: How? And you have different machine learning algorithms to decide on the ranking.
+
+61
+00:09:23.740 --> 00:09:33.380
+Vikesh K: So you have, let's say, machine learning model, one machine learning model 2. The question becomes, then, which model should you choose? When when you
+
+62
+00:09:34.290 --> 00:09:45.030
+Vikesh K: roll it out for ranking right? Which ranking is better for the from a customer's perspective, because each ranking have will have its own criteria. So what usually is done. It's a b tested.
+
+63
+00:09:45.140 --> 00:09:49.040
+Vikesh K: You know, the machine learning model outputs are a B tested and then seen.
+
+64
+00:09:49.150 --> 00:09:56.079
+Vikesh K: which output gives you a better impact on the matrix that you care about, and
+
+65
+00:09:56.400 --> 00:09:58.450
+Vikesh K: that's rolled out to the customers.
+
+66
+00:09:59.310 --> 00:10:05.949
+Vikesh K: Okay? So even in machine learning so when you deploy models, when and those models
+
+67
+00:10:07.290 --> 00:10:11.750
+Vikesh K: are customer facing you do AV testing before you roll it out.
+
+68
+00:10:12.350 --> 00:10:13.160
+Vikesh K: Okay.
+
+69
+00:10:13.610 --> 00:10:21.889
+Vikesh K: any. I know this is new topic but but like, like, I said, this is this is very important one that way. So I want you to know about it
+
+70
+00:10:21.990 --> 00:10:27.419
+Vikesh K: any questions or doubts. So far I also wanted to show you one thing before we move to the case study.
+
+71
+00:10:27.760 --> 00:10:29.819
+Vikesh K: but I can't do.
+
+72
+00:10:29.970 --> 00:10:30.740
+Vikesh K: There you go.
+
+73
+00:10:31.600 --> 00:10:36.770
+Vikesh K: I wanted to show you about the most hot company right now we're just opening a
+
+74
+00:10:37.720 --> 00:10:39.679
+Vikesh K: I hope I'm able to open this
+
+75
+00:10:43.900 --> 00:10:45.380
+Vikesh K: any questions so far.
+
+76
+00:10:46.300 --> 00:10:50.890
+Vikesh K: I know. Maybe I I caught all of you off guard with the new topic.
+
+77
+00:10:51.400 --> 00:10:53.839
+Vikesh K: But I think this would be more
+
+78
+00:10:55.120 --> 00:11:13.100
+Vikesh K: okay. I'm not able to open this. But if you can open this at your end. This is again one of the hottest company right now. Openai automating all our jobs Sam Altman gave the latest blog so. But when they are hiring. And they have this. They have this data scientist product
+
+79
+00:11:13.280 --> 00:11:18.349
+Vikesh K: opening. And if you are not able to open this, but if you check this listing.
+
+80
+00:11:18.946 --> 00:11:24.080
+Vikesh K: They talk about knowing ab testing and experimentation. Okay? So
+
+81
+00:11:24.210 --> 00:11:31.780
+Vikesh K: you pick up any hot company any of these companies to which have a very fancy product. They will be doing a lot of a testing experience.
+
+82
+00:11:32.220 --> 00:11:33.859
+Vikesh K: It becomes very important.
+
+83
+00:11:34.150 --> 00:11:35.979
+Vikesh K: Okay, Ravi has put this.
+
+84
+00:11:37.810 --> 00:11:41.290
+Ravi Duvvuri: I was able to open it. So I just copied that
+
+85
+00:11:41.940 --> 00:11:45.010
+Ravi Duvvuri: the A B testing piece of it alrighty.
+
+86
+00:11:45.890 --> 00:11:54.380
+Vikesh K: Yeah. So again, so that that's 1 of the reasons. Any product company, any Google opening, you check any Meta opening Netflix opening
+
+87
+00:11:55.040 --> 00:12:16.519
+Vikesh K: unless until it's like A, you know, a totally software engineer back. And even in software engineering, you, you need to know A B testing because you design. This, you know the back end. Oh, sorry. The front end often to work with the experimentation team. Okay? So so from that perspective, Ab, testing is very important. And one of the things you should be aware about, especially if you wish to.
+
+88
+00:12:16.936 --> 00:12:22.950
+Vikesh K: You know, apply for roles. Move into a data scientist position, or don't go into a data, heavy position.
+
+89
+00:12:23.610 --> 00:12:26.350
+Vikesh K: cool any questions or doubts so far on this.
+
+90
+00:12:28.240 --> 00:12:29.999
+shashi: No, not at the moment, probably
+
+91
+00:12:30.430 --> 00:12:34.050
+shashi: along the way. Probably you get come up with some questions. I think.
+
+92
+00:12:34.730 --> 00:12:36.480
+Vikesh K: Okay, cool sounds good.
+
+93
+00:12:36.970 --> 00:12:41.919
+Vikesh K: Okay? So then I will share a simple notebook with all of you.
+
+94
+00:12:42.200 --> 00:12:43.020
+Vikesh K: Let me
+
+95
+00:12:50.250 --> 00:12:51.489
+Vikesh K: just a second.
+
+96
+00:13:01.830 --> 00:13:12.539
+Vikesh K: So I'm gonna give you an overview we will solve. Try to solve the problem together, just to give you an understanding of how what this kind of problems look like. And what's being done there? Okay.
+
+97
+00:13:13.340 --> 00:13:15.330
+Vikesh K: can you see my screen right now?
+
+98
+00:13:18.070 --> 00:13:18.740
+Ravi Duvvuri: Yes.
+
+99
+00:13:20.270 --> 00:13:26.440
+Vikesh K: Cool. So I've already pasted these things which which we talked about. Now this company.
+
+100
+00:13:28.540 --> 00:13:31.869
+Vikesh K: there are a few more people joining it. Okay, this this
+
+101
+00:13:32.060 --> 00:13:55.970
+Vikesh K: case study is a simple one. Obviously, they have slightly more complication in a B testing. In fact, a B testing as a topic can be quite vast. There are now dedicated companies which allow you to do A B testing. So one of the quick ways to learn the practical side of Ab testing is maybe reading their blogs some of these companies I can write down here. It's called stats.
+
+102
+00:13:57.080 --> 00:14:04.380
+Vikesh K: That's Hig. If I remember that correctly double bw.
+
+103
+00:14:04.880 --> 00:14:16.719
+Vikesh K: and echo, okay, so if you're curious, just go through their blog, and you know you will get an understanding of how companies are using. You'll be testing all of these people who started this company
+
+104
+00:14:17.010 --> 00:14:20.810
+Vikesh K: stats folks. I think they used to work at Facebook
+
+105
+00:14:21.210 --> 00:14:23.300
+Vikesh K: Echo. I'm not sure, maybe, Echo.
+
+106
+00:14:25.510 --> 00:14:36.099
+Vikesh K: But these people they used to work in different companies, they realize, oh, Ab, testing is can be given out as a service. Many companies don't know how to do it. And they started companies around it.
+
+107
+00:14:36.200 --> 00:14:57.330
+Vikesh K: Okay, so let's focus on, look at this simple case study. There is an online news portal which aims to expand its business by acquiring new customers. Every visitor to the website takes a certain action based on their interest. The company plans to analyze these interest and wants to determine whether a new feature will be effective or not. Right? So typically, this is how most of the
+
+108
+00:14:58.387 --> 00:15:00.210
+Vikesh K: A B testing
+
+109
+00:15:00.700 --> 00:15:28.979
+Vikesh K: problem statements look like you want to test out something new. You don't know whether it's good for customers or not, so what you will do. You will launch it on a sample of customers. See how they behave. If they behave positively you'll roll it out for the rest of the customers. Okay, so same thing with the what a Openai would be doing now with how people interact with the chat bots, what kind of results they're getting. I'm not sure if you have seen. But if you use chat, gpt off late.
+
+110
+00:15:29.090 --> 00:15:34.910
+Vikesh K: they sometimes give you 2 outputs, and then they ask you which output was better. A or B,
+
+111
+00:15:35.340 --> 00:15:49.169
+Vikesh K: okay, so right now what they're doing there. I think they're collecting a lot of survey data. In that sense. They're directly asking the customers which output was better. Mostly they are being generated from slightly different variations of data of the model.
+
+112
+00:15:49.320 --> 00:15:56.100
+Vikesh K: And then, once they get enough data points, they will roll out the one which is more favorable to the customers.
+
+113
+00:15:56.530 --> 00:15:57.370
+Vikesh K: Okay.
+
+114
+00:15:57.954 --> 00:16:12.489
+Vikesh K: so 100 users are divided equally into 2 groups. The old landing page is served to the 1st group, which is called often called the control group in which you show them things as status quo, and the new landing page is served to the second group, which is the treatment group
+
+115
+00:16:12.870 --> 00:16:24.419
+Vikesh K: and the different data points are collected. So what you have to do in this case study is explore the data set, you know. Do the Eda do users spend more time on the new landing page compared to the old?
+
+116
+00:16:24.590 --> 00:16:30.330
+Vikesh K: What is the conversion rate about converted status depending on the language
+
+117
+00:16:30.490 --> 00:16:32.680
+Vikesh K: and couple of other questions. Okay?
+
+118
+00:16:32.790 --> 00:16:34.429
+Vikesh K: So I've also given a
+
+119
+00:16:35.602 --> 00:16:47.550
+Vikesh K: again, I don't know why nothing is opening now. It's for opening again, a good book to read about Ab testing. If you're curious, all right, especially if if you plan to apply for data roles.
+
+120
+00:16:47.680 --> 00:16:49.670
+Vikesh K: these kind of things might be helpful.
+
+121
+00:16:50.830 --> 00:16:54.000
+Vikesh K: Alright. So let's go back to the
+
+122
+00:16:54.490 --> 00:16:57.889
+Vikesh K: data set. I will show you the simple data set so far.
+
+123
+00:16:59.900 --> 00:17:01.599
+Vikesh K: Let me zoom in.
+
+124
+00:17:02.460 --> 00:17:05.300
+Vikesh K: This is a simple 1. 50
+
+125
+00:17:06.099 --> 00:17:13.359
+Vikesh K: a hundred data points. You have groups often in A B testing. You will have a group column which will tell you
+
+126
+00:17:13.810 --> 00:17:29.749
+Vikesh K: whether the customer was in the control group or in the treatment group. Okay, Treatment Control group is the status quo, you know, if you have a page you will show it as it is, treatment would be a new page, all right. So, for example, that the diagram which I showed you.
+
+127
+00:17:29.900 --> 00:17:38.139
+Vikesh K: this might be a control group, or this might be a new page. This might be a control group. All right. And then you compare the matrix
+
+128
+00:17:39.270 --> 00:17:41.050
+Vikesh K: sounds good. So far any.
+
+129
+00:17:44.210 --> 00:17:49.810
+Vikesh K: Matt, I will come to your question. Any any other respect to this, so far?
+
+130
+00:17:52.790 --> 00:17:57.709
+Vikesh K: No cool devil says, fine. Okay.
+
+131
+00:17:57.820 --> 00:18:12.240
+Vikesh K: so you have landing. All the control group will have a old landing page. All the treatment will have the new landing page, so as a customer, as as a business. Now, what you care about, especially if you're a used website is how much time people are spending on your web page.
+
+132
+00:18:12.440 --> 00:18:35.549
+Vikesh K: Because if they're spending more time A, that means they are finding the content relevant. And B, maybe you can also show them more ads, because this is one of the things which companies care about how much people are spending time on your websites. That's 1 of the reasons why Facebook Tiktok are so hot properties from an advertisement perspective, because people are spending hours and hours on that
+
+133
+00:18:35.620 --> 00:18:46.609
+Vikesh K: converted? No? Yes, you know. Did they take some subscription? And if they had any, preferred languages? So now you can take the same thing, and you can slice and dice it by different angles.
+
+134
+00:18:46.800 --> 00:18:58.560
+Vikesh K: Okay, so 1st quick check duplicated missing values. No, nothing is there. So then, what you have to do is you have already looked at the data I can.
+
+135
+00:19:01.460 --> 00:19:06.230
+Vikesh K: We can due types.
+
+136
+00:19:07.120 --> 00:19:09.780
+Vikesh K: If you feel lost, let me know.
+
+137
+00:19:10.390 --> 00:19:15.619
+Vikesh K: Oh, I will repeat things. Okay.
+
+138
+00:19:19.730 --> 00:19:22.360
+Vikesh K: taking all the columns.
+
+139
+00:19:27.980 --> 00:19:42.190
+Vikesh K: Okay, so I'm I'm I was just trying to see the unique values in each one of them. So all the objects. They have 2 unique values except language preferred. There are 3 languages within there. Okay, if you check Df dot
+
+140
+00:19:44.230 --> 00:19:50.400
+Vikesh K: oops, these are your objects, and you can actually do a maybe a
+
+141
+00:19:54.980 --> 00:19:59.250
+Vikesh K: rooms list.
+
+142
+00:20:05.690 --> 00:20:11.560
+Vikesh K: I will call it got list.
+
+143
+00:20:13.390 --> 00:20:14.720
+Vikesh K: Then I can do.
+
+144
+00:20:30.520 --> 00:20:32.219
+Vikesh K: Let's see if this works.
+
+145
+00:20:51.713 --> 00:20:55.830
+Vikesh K: Okay. So you. You will see I'm I'm running the loop, but
+
+146
+00:20:56.293 --> 00:21:00.289
+Vikesh K: the loop is running, but I'm able to see only the
+
+147
+00:21:00.820 --> 00:21:04.860
+Vikesh K: the language preferred side. Do you know what's the reason for it, anyway?
+
+148
+00:21:11.720 --> 00:21:13.560
+Vikesh K: So she you're saying something. But you weren't.
+
+149
+00:21:15.142 --> 00:21:18.850
+shashi: It's being overwritten by the next variable. That's plot.
+
+150
+00:21:19.610 --> 00:21:29.769
+Vikesh K: Yeah, yes, lovely. So that's what happens in the map. It overwrites it. So one way you can do it is you put Plt dot show so
+
+151
+00:21:30.040 --> 00:21:36.470
+Vikesh K: hopefully with that, it will recreate all right every time. So now you have multiple
+
+152
+00:21:37.028 --> 00:21:43.299
+Vikesh K: values, multiple charts. Now, okay, just remember this, this often happens, and if you run a for loop
+
+153
+00:21:43.440 --> 00:21:59.130
+Vikesh K: for a for a, for a image, so control and treatment equally divided, 50 50 landing page. Again, because controlling treatment equally divided, converted, you have a different level. Maybe you can figure out the what I can do is
+
+154
+00:21:59.980 --> 00:22:04.480
+Vikesh K: I can normalize this. So we'll we'll we will get the percentages
+
+155
+00:22:04.890 --> 00:22:16.140
+Vikesh K: rather than the absolute number. All right, 50, 50 conversion rate. This would be maybe around 40, 55. This is, let's say, around 45. Okay, so there is a change in the conversion rate.
+
+156
+00:22:16.260 --> 00:22:17.920
+Vikesh K: Language preferred.
+
+157
+00:22:18.571 --> 00:22:28.050
+Vikesh K: What is the ratio of distribution? How many Spanish, French, and English, all right. So the main question which they want you to answer is the
+
+158
+00:22:28.320 --> 00:22:29.540
+Vikesh K: time spent?
+
+159
+00:22:29.660 --> 00:22:34.839
+Vikesh K: Okay, and time spent? You can look at as an individual column.
+
+160
+00:22:35.040 --> 00:22:39.570
+Vikesh K: So this run this first.st
+
+161
+00:22:41.400 --> 00:22:44.530
+Vikesh K: Okay? So this is the time spent. But what you
+
+162
+00:22:44.660 --> 00:22:49.019
+Vikesh K: remember, you have 2 versions of the page there all right.
+
+163
+00:22:49.230 --> 00:22:52.789
+Vikesh K: and you can also have this as a histogram, for example.
+
+164
+00:22:55.650 --> 00:22:56.450
+Vikesh K: Well.
+
+165
+00:22:58.900 --> 00:23:07.019
+Vikesh K: I hope this is his plot. Yes, okay. So this is the overall distribution. But what you care about are the landing pages?
+
+166
+00:23:07.500 --> 00:23:16.269
+Vikesh K: Right? So you see, this is the blue one is the old new is the orange one. So this is the landing page difference
+
+167
+00:23:16.540 --> 00:23:18.550
+Vikesh K: now, based on this.
+
+168
+00:23:18.760 --> 00:23:23.959
+Vikesh K: Do you think we should? The company can go ahead for the new landing page?
+
+169
+00:23:35.720 --> 00:23:38.560
+Vikesh K: Any guess? Or how would you like.
+
+170
+00:23:40.000 --> 00:23:44.360
+shashi: We are spending less time on the page. The new.
+
+171
+00:23:44.360 --> 00:23:46.939
+Harish: On the new page. They're spending less time right.
+
+172
+00:23:48.270 --> 00:23:53.839
+shashi: Yeah, probably ads showing ads may not be. They may not be able to see the ads.
+
+173
+00:23:55.040 --> 00:23:56.689
+Vikesh K: So what we can do, we can also.
+
+174
+00:23:57.730 --> 00:24:04.976
+Vikesh K: we can basically quantify this. So let's say, I group by landing page right? And
+
+175
+00:24:06.030 --> 00:24:20.680
+Vikesh K: then I focus on time spent right trying to me. And
+
+176
+00:24:34.050 --> 00:24:38.630
+Vikesh K: oh, that'll be doing the syntax. I keep forgetting.
+
+177
+00:24:41.390 --> 00:24:43.590
+Vikesh K: Okay, let me 1st show you the main. Only
+
+178
+00:24:45.560 --> 00:25:02.129
+Vikesh K: right. So for the mean for the new, the mean is around 6.2 2. So this is around 6 point. I believe both of them are normally distributed. So this will be around 6.2 2, and for the old this is around 4.5. All right.
+
+179
+00:25:03.140 --> 00:25:04.923
+Vikesh K: So do you think?
+
+180
+00:25:06.770 --> 00:25:14.120
+Vikesh K: So Dahlil says. Yes, the new landing page cool others. Do you do? Do you think this is? Make this make sense.
+
+181
+00:25:16.360 --> 00:25:18.720
+Anu.Arun: Yeah, we need the area under the curve.
+
+182
+00:25:19.270 --> 00:25:20.040
+Vijay Chaganti: Yeah.
+
+183
+00:25:24.040 --> 00:25:28.880
+Anu.Arun: What's the what's the standard deviation? So the total time is still the same.
+
+184
+00:25:30.760 --> 00:25:33.649
+Vikesh K: Yes, standard deviation is another parameter which will
+
+185
+00:25:35.480 --> 00:25:44.390
+Vikesh K: right? So if you check the and oh, I think, yeah, oh, yeah, that's that's
+
+186
+00:25:47.770 --> 00:25:51.990
+Vikesh K: yes. So you have the s 2D. Values as well.
+
+187
+00:25:53.790 --> 00:25:58.229
+Vikesh K: The old one has a higher standard deviation compared to the new one.
+
+188
+00:25:58.950 --> 00:26:02.460
+Vikesh K: Okay? And you can see, because this is wider, right?
+
+189
+00:26:03.840 --> 00:26:07.090
+Vikesh K: So now here things become interesting. So
+
+190
+00:26:07.200 --> 00:26:14.960
+Vikesh K: on the face of it, the new one has a higher time spent compared to the old one, but there is also an overlap between the 2.
+
+191
+00:26:16.070 --> 00:26:18.999
+Vikesh K: So if you see this area
+
+192
+00:26:19.330 --> 00:26:23.980
+Vikesh K: where the blue and the orange one, so there is no clear demarcation between the 2.
+
+193
+00:26:24.850 --> 00:26:37.629
+Vikesh K: Right? It's it's 1. 1 simple example is let's say, you know you, you want to measure the height of people, and you think you know the the claim is Dutch people people from Netherlands. They are the tallest.
+
+194
+00:26:37.780 --> 00:26:44.730
+Vikesh K: so you will pick up randomly, pick up 100 people from Netherlands, you will randomly pick 100 people from us and measure their height
+
+195
+00:26:44.970 --> 00:26:53.239
+Vikesh K: alright. On an average, maybe the Dutch people are taller, but there would be an overlap between the numbers. So how can you be sure?
+
+196
+00:26:54.280 --> 00:26:59.499
+Vikesh K: Right? And especially when you're making this product when you are launching this product.
+
+197
+00:26:59.660 --> 00:27:04.009
+Vikesh K: remember, you just have access right now, access only to 100 people.
+
+198
+00:27:04.880 --> 00:27:12.010
+Vikesh K: And your your website might be having, let's say, thousands of 1 million, or maybe tens of thousands of people coming every day.
+
+199
+00:27:12.290 --> 00:27:15.139
+Vikesh K: So that's where the stats part comes into picture.
+
+200
+00:27:15.520 --> 00:27:21.370
+Vikesh K: What you are doing right now is you're taking a sample data, and you're making claims about the population.
+
+201
+00:27:21.930 --> 00:27:24.909
+Vikesh K: That's what the whole inferential statistics is about.
+
+202
+00:27:25.490 --> 00:27:30.839
+Vikesh K: Right? So what you would do. This is the initial numbers which you have. But
+
+203
+00:27:30.950 --> 00:27:33.330
+Vikesh K: you know this can be by fluke as well.
+
+204
+00:27:33.580 --> 00:27:51.910
+Vikesh K: By chance you may get a you know. Let's suppose only those new customers, the 50 customers which were in the new page by chance. They happen to spend more time. Okay? Because you can never be sure you have. Let's say, 10,000 people coming to a website on a daily basis.
+
+205
+00:27:52.170 --> 00:27:57.979
+Vikesh K: 100 people came 50. You show them the new page 50. You showed them the old page.
+
+206
+00:27:58.130 --> 00:28:05.489
+Vikesh K: and by chance these 50 people were, let's say, loyal customers to your website, and they spend more time.
+
+207
+00:28:06.740 --> 00:28:10.129
+Vikesh K: So how do you figure out, hey? Whether this overlap
+
+208
+00:28:10.999 --> 00:28:19.919
+Vikesh K: is because of some chance, or you know, there is a clear distance differentiation between the 2 behaviors.
+
+209
+00:28:20.030 --> 00:28:25.990
+Vikesh K: That's that's where and that's where things become tricky. And here, effectively. Machine learning can't really help you.
+
+210
+00:28:26.450 --> 00:28:31.140
+Vikesh K: You have limited sample data. So what you need is the stats.
+
+211
+00:28:31.510 --> 00:28:37.309
+Vikesh K: That's where applied stats comes into picture. It will be able to tell you with some certainty
+
+212
+00:28:37.500 --> 00:28:45.019
+Vikesh K: whether you, whether this difference is significant or not, does that make sense any questions or doubts?
+
+213
+00:28:46.320 --> 00:29:15.510
+Vikesh K: By the way, this is the same way by which medicines are tested, you know. Let's say, when they came up with a new Corona vaccine. Obviously they can't give it to everyone in the world right? Because you haven't tested it. You don't know how people react to it. So you get a sample people. You give them. One gets a placebo version, one gets a proper vaccine. They measure those people. The performance of the different health metrics. If they think the difference is significant enough.
+
+214
+00:29:15.520 --> 00:29:19.749
+Vikesh K: The FDA approves the drug or the vaccine, and then it's rolled out in the market.
+
+215
+00:29:19.910 --> 00:29:22.500
+Vikesh K: So the process remains the same in a way.
+
+216
+00:29:24.240 --> 00:29:25.406
+Vikesh K: Okay? And
+
+217
+00:29:26.430 --> 00:29:53.029
+Vikesh K: in case someone is interested in social policy, in economics, this is called randomized controlled trial. This is what won the Nobel Prize in 2019. Okay, so this is used across social sector. This is used in medicine. This is used in companies. Just the name changes all right in companies in product companies. It's called a B testing. And when you do it in Pharma field, and when you do it in social sector, you call it randomized control trial.
+
+218
+00:29:53.460 --> 00:29:56.120
+Vikesh K: Okay? Any points or questions so far here.
+
+219
+00:29:59.850 --> 00:30:02.979
+Vikesh K: Okay, so what we will do in this case.
+
+220
+00:30:04.486 --> 00:30:09.340
+Vikesh K: We will 1st take out the old you know
+
+221
+00:30:09.520 --> 00:30:16.319
+Vikesh K: the time spent on the old page and the time spent on the new new page. Okay? So if you see the time, new
+
+222
+00:30:16.520 --> 00:30:24.480
+Vikesh K: data which I've collected. This is all the data spent on the new page, all right. And if you see the time old.
+
+223
+00:30:25.730 --> 00:30:27.510
+Vikesh K: this is all the data.
+
+224
+00:30:29.720 --> 00:30:52.220
+Vikesh K: All the time spent on the old page. All right. You have these 2 things, and what you do. There is a T test, all right. Now. I won't really go into the theory and all those things, because that will take another session on its own. But I just want you to be aware about it. What? Essentially you will do is something called T test. What T-test does is if you have 2 groups
+
+225
+00:30:52.580 --> 00:30:53.850
+Vikesh K: and you want to
+
+226
+00:30:54.010 --> 00:31:05.490
+Vikesh K: measure whether the numeric that you're measuring the the number that you are trying to figure out if the difference is statistically significant. Okay, so whenever you have
+
+227
+00:31:05.710 --> 00:31:08.629
+Vikesh K: a group like this, so you have an old group.
+
+228
+00:31:08.980 --> 00:31:10.600
+Vikesh K: and you have a new group.
+
+229
+00:31:11.010 --> 00:31:14.379
+Vikesh K: Alright. And here what you care about is time spent
+
+230
+00:31:15.000 --> 00:31:22.300
+Vikesh K: right in those 2 things, and you want to measure whether the time spent is statistically significant.
+
+231
+00:31:22.830 --> 00:31:35.149
+Vikesh K: The difference is statistically significant or not. You do a T test. There is some variation within T-test. You do a couple of other tests. But that's what essentially the whole stats is about. If you have a let's say
+
+232
+00:31:35.800 --> 00:31:39.990
+Vikesh K: 3 groups, you will do something else. The test will change.
+
+233
+00:31:40.220 --> 00:32:03.700
+Vikesh K: Okay, it's called a nova. But you don't really. You just need to know about it right now. Obviously, you know, read more about it later on. But the test will change. So this is very much like a machine learning. In that sense. When you have classification, you do different kind of classification test depending on the what kind of scenario it is. When you have regression, you have a different test. Different machine learning algorithm model. Same here, you have a test.
+
+234
+00:32:03.830 --> 00:32:09.579
+Vikesh K: And the whole test is about, hey, this is the large data set. I just have a sample.
+
+235
+00:32:10.470 --> 00:32:14.850
+Vikesh K: Can I take the sample data and make claims about the whole population.
+
+236
+00:32:15.860 --> 00:32:31.560
+Vikesh K: In my very 1st session I had once talked about the big picture of stats when we were talking about distribution. I'm not sure how many of you remember. But essentially, that's what you're trying to do here. You're taking these 50 data points. And from this 50 data points. You're trying to make a claim about the whole population.
+
+237
+00:32:31.800 --> 00:32:32.650
+Vikesh K: all right.
+
+238
+00:32:32.760 --> 00:32:39.480
+Vikesh K: and within that. So you use a library called Scipy within this, which I have, I think.
+
+239
+00:32:41.560 --> 00:32:57.549
+Vikesh K: Yes, you. You have a statistical library called Scipy within, like you have scikit-learn for machine learning. Most of the statistical tests that you do are from sci-fi. Alright. So if you, if you're, you know, working in the data center, this is something you will use a lot along with the scikit-learn.
+
+240
+00:32:57.860 --> 00:33:04.330
+Vikesh K: and you call out the test within it. Same procedure. You pass the 2 data sets, which is
+
+241
+00:33:06.760 --> 00:33:17.910
+Vikesh K: this is one basically procedural step. But essentially the main thing that you should be concerned about is this test, which is called the T test of independent values. You pass on the new
+
+242
+00:33:18.230 --> 00:33:21.110
+Vikesh K: column, which is time new time, old
+
+243
+00:33:21.583 --> 00:33:27.530
+Vikesh K: a couple of other things here, and don't worry about that. You can ask Chatgpt what this is about.
+
+244
+00:33:28.003 --> 00:33:33.609
+Vikesh K: So then the the main thing which comes out is the interpretation of the result.
+
+245
+00:33:33.720 --> 00:33:34.530
+Vikesh K: Okay.
+
+246
+00:33:36.820 --> 00:33:50.620
+Vikesh K: here what it? The test says. So this is the function which I have defined, which is, interpret the test results when you run this and you pass the data set. You know the test that you ran. It says there is a significant difference in the meantime spent
+
+247
+00:33:51.092 --> 00:34:02.379
+Vikesh K: between the old page and the new page. Okay, so what essentially is saying? The gap that you saw here which is around, I believe, 2 min, or something. Now less than 2 min.
+
+248
+00:34:03.260 --> 00:34:06.990
+Vikesh K: Confirm 6.2 2 minus 4.5 3
+
+249
+00:34:07.250 --> 00:34:17.399
+Vikesh K: 1.6 8 9. Okay, so what this is saying, this gap that you saw 1.6 8 min between the 2 groups is significant, and hence you should roll out this product.
+
+250
+00:34:17.870 --> 00:34:28.939
+Vikesh K: If you're a product manager, if you're a data scientist, you will give you will give the green light for the project and the company can the the front end guys can change the new layout to the new?
+
+251
+00:34:29.100 --> 00:34:31.730
+Vikesh K: Okay, so this is how things will be done.
+
+252
+00:34:32.080 --> 00:34:38.539
+Vijay Chaganti: So if this is not a positive change, then that number will be minus 1 point something, and then we don't know.
+
+253
+00:34:39.310 --> 00:34:53.049
+Vikesh K: Can happen. Sometimes you come up with a new thing, and you think, oh, customers may gonna love it, and they they actually don't love it, and you know, the the time spent might decrease. Then obviously, you're not gonna rule out the change.
+
+254
+00:34:53.710 --> 00:34:58.550
+Vikesh K: And again, you will 1st check whether that whether the difference that you see is by fluke
+
+255
+00:34:58.880 --> 00:35:00.560
+Vikesh K: or not by fluke.
+
+256
+00:35:01.260 --> 00:35:30.880
+Vikesh K: So so you know, one thing is, how many of you like this? Officers? Right, all of you. The people who come to this office are more or less random. You there are 12 of you, maybe I, 13 of yeah, 12 of you right now. Maybe I do it on tomorrow again, some 12 more people will come. Okay. Today, maybe I get an approval rating of 60%. Tomorrow I might get an approval rating of 40. So then the statisticians are filled out. When you have a small data, how can you make claims about the big population.
+
+257
+00:35:31.160 --> 00:35:34.959
+Vikesh K: Alright. So that's these are the scenarios in which this is helpful.
+
+258
+00:35:37.660 --> 00:35:39.149
+Vikesh K: Does that make sense?
+
+259
+00:35:39.680 --> 00:35:41.850
+Vikesh K: I I hope I haven't recorded
+
+260
+00:35:42.620 --> 00:35:50.239
+Vikesh K: so it scared you. But from my perspective, you ask me, this is a very important topic which I believe many of you are looking for jobs, or might be
+
+261
+00:35:50.650 --> 00:35:54.977
+Vikesh K: want to move into data oriented road. This is good to know
+
+262
+00:35:55.890 --> 00:36:03.429
+Vikesh K: So so hopefully, you know. And then I can give you more case studies to practice with. Along like, like what we have been doing with the machine learning part.
+
+263
+00:36:04.390 --> 00:36:05.010
+Vikesh K: Okay?
+
+264
+00:36:05.010 --> 00:36:06.370
+shashi: See now even the
+
+265
+00:36:06.560 --> 00:36:15.509
+shashi: movie screening. When the movie is being released, the project 30 million in the 1st weekend, 50 million in second weekend and all the project is this what they also
+
+266
+00:36:15.850 --> 00:36:23.140
+shashi: use, or how do they? I mean, even for viewership? They are expecting so many people to come, and things like that? Do they use something like this.
+
+267
+00:36:24.200 --> 00:36:25.200
+Vikesh K: Oh.
+
+268
+00:36:25.810 --> 00:36:42.159
+Vikesh K: I'm not sure, although I do know about this thing. You know this this thing. I'm not sure this movie released 30 million. But, Netflix, if you have watched series on Netflix, do you remember they they have this auto play.
+
+269
+00:36:42.480 --> 00:36:52.769
+Vikesh K: They have ex. They actually experimented a lot on what should be the ideal autoplay, whether it should be 5 second cap, 2 second gaps, 10 second cap. In fact, this was a
+
+270
+00:36:53.530 --> 00:36:59.070
+Vikesh K: this was a thing written on a let me quickly give me one second. I can. I can show that
+
+271
+00:36:59.190 --> 00:37:01.510
+Vikesh K: I will update in the slides.
+
+272
+00:37:01.900 --> 00:37:06.030
+Vikesh K: But these all these things are being tested by the
+
+273
+00:37:06.300 --> 00:37:09.639
+Vikesh K: scientists. You know, for example, what should be the ideal
+
+274
+00:37:11.360 --> 00:37:14.150
+Vikesh K: runtime between the different things. Just give me.
+
+275
+00:37:15.180 --> 00:37:19.519
+shashi: Especially for binge watching. I think they let the next episode start immediately.
+
+276
+00:37:21.360 --> 00:37:31.920
+Vikesh K: They do all these? Because, again, these are the things which machine learning can't really give you an answer, because what you need to figure out is a causal relationship. Okay.
+
+277
+00:37:32.850 --> 00:37:36.900
+Vikesh K: if you make it 5 seconds, does that lead to a better
+
+278
+00:37:37.040 --> 00:37:39.659
+Vikesh K: watch time, or compared to some other one?
+
+279
+00:37:40.490 --> 00:37:42.740
+Vikesh K: Let me just to you.
+
+280
+00:37:51.800 --> 00:37:53.789
+Vikesh K: And meanwhile, if you have any questions.
+
+281
+00:37:58.220 --> 00:38:00.050
+Vikesh K: can you see the screen? Yeah.
+
+282
+00:38:01.020 --> 00:38:04.310
+Vikesh K: So so this was a guy who had written it on
+
+283
+00:38:05.300 --> 00:38:26.850
+Vikesh K: I can use. And I happen to read this, and I saved this. So their key. Metrics were attention and hours watch. So always, whenever you do this, you focus on some key metric. And they, I believe they have written here. So they tested for 5 seconds, 10 seconds, 15 seconds, 10 seconds caused the biggest increase in hours. Watched.
+
+284
+00:38:26.970 --> 00:38:42.429
+Vikesh K: We thought it gave people time to digest what they had just watched, but wasn't too fast. 5 seconds where it become jarring? Interestingly. So then they rolled out with 10 seconds at least. The story which this guy mentions. Okay, he was a dev who built the netflix auto flare technology.
+
+285
+00:38:42.790 --> 00:38:43.690
+Vikesh K: So
+
+286
+00:38:44.430 --> 00:38:50.640
+Vikesh K: so whether you are in on software side product manager side ab testing as a skill can be very crucial.
+
+287
+00:39:03.070 --> 00:39:05.729
+Vikesh K: no doubts. Okay. So I think
+
+288
+00:39:06.100 --> 00:39:08.820
+Vikesh K: there was one question asked by.
+
+289
+00:39:10.990 --> 00:39:12.860
+Ravi Duvvuri: I have one question.
+
+290
+00:39:13.500 --> 00:39:13.930
+Vikesh K: So.
+
+291
+00:39:16.524 --> 00:39:23.620
+Ravi Duvvuri: So the product manager, right? Like, if data scientist, Ml, engineer and these guys do the job like.
+
+292
+00:39:24.000 --> 00:39:31.639
+Ravi Duvvuri: especially in the data science space or in Ml. Space. What would be the role of product manager there.
+
+293
+00:39:31.800 --> 00:39:37.139
+Ravi Duvvuri: I know, for other traditional softwares, I'm aware, like, you know, they are responsible for building the product.
+
+294
+00:39:37.500 --> 00:39:42.270
+Ravi Duvvuri: But when it comes to, you know this Ml. Space.
+
+295
+00:39:43.470 --> 00:39:51.720
+Vikesh K: Okay. So usually, I how I can tell you so at least, maybe how it happens that you know, most of the product companies is you set the direction of the product.
+
+296
+00:39:52.670 --> 00:40:12.090
+Vikesh K: So in a way, product managers like at least how it works in my team and a couple of other teams. That booking is. You work with the designers you work with the researchers. You work with the data folks. You try to understand 1st of all, what your product is about, what should be that? What? What is that direction it should take, how it should evolve.
+
+297
+00:40:12.220 --> 00:40:15.789
+Vikesh K: and how customers, what are the features which customers want.
+
+298
+00:40:16.160 --> 00:40:23.290
+Vikesh K: So you come up with different hypothesis that you need to order different features that your product should have, and then you work with the team to roll it out.
+
+299
+00:40:23.500 --> 00:40:28.540
+Vikesh K: So, for example, let's say, you know let me let me do.
+
+300
+00:40:30.620 --> 00:40:46.369
+Vikesh K: Yes. So, coming back to the example, let's say you have to measure the height between Dutch people and the Us. People. If I just give you 2 sample, you know, 2 Dutch people and 2 American people, and you measure the height between them. And you say, oh, maybe American people are tall. That can be a wrong conclusion.
+
+301
+00:40:46.710 --> 00:40:47.500
+Vikesh K: 2
+
+302
+00:40:49.670 --> 00:41:01.129
+Vikesh K: statistically confirm that. Yes, the difference between the height is significant. You need good amount of sample size, and how much sample size do you need? That will depend on the population and everything
+
+303
+00:41:01.320 --> 00:41:28.350
+Vikesh K: so often. We have experiments running for weeks, and that will depend on what kind of thing we want to test and how long. You know what are the other customers are behaving there? Couple of other things. There are some more nuances. But yeah, the gist is essentially this is this is like a very simplified version of this. But hopefully, this will give you an idea of what kind of things can be checked. Now, the second thing I want you to check is the conversion rate.
+
+304
+00:41:28.630 --> 00:41:34.639
+Vikesh K: So the conversion rate, if you check between the 2 groups that should also id differ.
+
+305
+00:41:34.890 --> 00:41:39.960
+Vikesh K: see if I have the data same, it's got handy.
+
+306
+00:41:44.810 --> 00:41:49.579
+Vikesh K: Oh, no. Once again, this is a different one. Yeah, this is.
+
+307
+00:41:50.940 --> 00:41:53.159
+Vikesh K: you have the conversion rate here.
+
+308
+00:41:53.360 --> 00:42:21.900
+Vikesh K: Yes, converted yes or no. You have to convert this into one and 0, and then you figure out the conversion rate, and then you see whether the conversion rate. So there are multiple metrics that you care about. Right? One is the time spent. The other one is the conversion rate. So the other thing you have to check is the conversion rate. So maybe try this at your end and see if you can. You know, figure out whether the conversion rate between the 2 is different or not. Right? You can use obviously use chat Gpt for this at this stage, because this is not something you've done.
+
+309
+00:42:22.685 --> 00:42:26.980
+Vikesh K: But but this would could be a good exercise.
+
+310
+00:42:29.040 --> 00:42:34.559
+Vikesh K: Matt is asking, okay, scrum. Has you got any metrics at all?
+
+311
+00:42:37.030 --> 00:42:57.610
+Vikesh K: No, no, we have a proper. There are company wide metrics that we have to choose. Matt. Every team has different metrics that they focus on. It could be funnel progression. So let's say, people move from one stage of the buying process to different stage. It could be funnel progress. It could be final. Conversion. Conversion is typically the main thing
+
+312
+00:42:58.189 --> 00:43:03.899
+Vikesh K: which many companies care about. So, for example, in this page
+
+313
+00:43:04.110 --> 00:43:20.439
+Vikesh K: which I showed you the example which I showed you for Netflix, they would care about how many people get converted as a customer, whether they sign up, whether they join the community right? So the matrix are pre-decided. You never decide metrics after the experiment. It's always before the experiment you have to.
+
+314
+00:43:20.630 --> 00:43:35.499
+Vikesh K: Otherwise anyone can do some hacking. Okay, you run an experiment, see which matrix are good. And then you say, Hey, these metrics are good. That means experiment is successful. No. So you basically pre decide on the matrix how you would evaluate it, and then you run the experiment.
+
+315
+00:43:36.880 --> 00:43:38.629
+Vikesh K: I hope that answers your question.
+
+316
+00:43:39.220 --> 00:43:41.720
+Vikesh K: Cool any other points.
+
+317
+00:43:46.830 --> 00:43:53.590
+Vikesh K: I hope I know we didn't talk about the stuff which is there in the course. But I hope this is useful.
+
+318
+00:43:53.780 --> 00:44:06.430
+Vikesh K: and and at least gives you some some interesting thing to check and explore at your own free time definitely read more about a B testing the main guy. If you really want to know it well.
+
+319
+00:44:06.670 --> 00:44:10.989
+Vikesh K: is a person called Roan Kohavi. He's he's sort of
+
+320
+00:44:11.517 --> 00:44:22.839
+Vikesh K: the top guy for a B testing. He's also written very good book on this so he's considered as sort of the god of a B testing, and especially for a product company. So if you are
+
+321
+00:44:23.480 --> 00:44:30.759
+Vikesh K: thinking of doing experimentation, learning more about it, he has bunch of videos on Youtube, you can go through that that could be helpful.
+
+322
+00:44:31.230 --> 00:44:37.910
+Vikesh K: And I will maybe give out some more case studies in case you want to practice Pb, testing.
+
+323
+00:44:38.700 --> 00:44:39.510
+Vikesh K: Okay?
+
+324
+00:44:40.510 --> 00:44:44.319
+Vikesh K: But before that, any other questions doubts. You have.
+
+325
+00:44:47.410 --> 00:44:52.179
+Matt Lee: Hey, Vikash? Yeah, I do have a quick question. So I'm just trying to kind of like picture
+
+326
+00:44:52.410 --> 00:44:54.650
+Matt Lee: myself in a professional environment. Right?
+
+327
+00:44:54.790 --> 00:44:57.880
+Matt Lee: So like, I guess
+
+328
+00:44:58.660 --> 00:45:06.460
+Matt Lee: these things are kind of planned way in advance. And then you know what metrics you can get. You can start to kind of like programming ahead of time, even before you get the results.
+
+329
+00:45:07.506 --> 00:45:10.530
+Matt Lee: And then how? And then you're typically given like
+
+330
+00:45:11.380 --> 00:45:15.520
+Matt Lee: a timeline is kind of based on how difficult the project is, or like,
+
+331
+00:45:17.990 --> 00:45:19.529
+Matt Lee: yeah, I guess. Like what
+
+332
+00:45:20.680 --> 00:45:29.811
+Matt Lee: I guess. Like trying to try and picture your daily life of like you get some data, and then they give you like, a usually like a month to work on it. Or you have to report every 2 weeks.
+
+333
+00:45:30.240 --> 00:45:32.670
+Matt Lee: just trying to picture your workload.
+
+334
+00:45:32.670 --> 00:45:51.630
+Vikesh K: So so it will depend. So, for example, let's say, when you when you do an A B test, when you launch an A B test. Often you have to. You let it run for a couple of weeks before you can figure out, you know, look into the data. So typically what happens in an A B test. There is a work at the start, and there is a work at the end.
+
+335
+00:45:52.040 --> 00:45:55.400
+Vikesh K: Usually there is not much work in the middle.
+
+336
+00:45:56.310 --> 00:46:02.370
+Vikesh K: But then, what's what's happening is you have as a team, you run multiple Ab tests. So let's say,
+
+337
+00:46:03.310 --> 00:46:24.920
+Vikesh K: in one experiment, you might be doing that work before you start the experiment in another project you might be working on a project on an experiment at towards the end. Right? So this is how you basically, that's on the Ab testing side. That's more or less the regular thing because our team does a regular work on experiments. The other part is the
+
+338
+00:46:25.180 --> 00:46:27.160
+Vikesh K: maybe, if you have some ad hocs.
+
+339
+00:46:27.490 --> 00:46:31.549
+Vikesh K: or if you have some projects which which is given timeline to you. So, for example.
+
+340
+00:46:35.190 --> 00:46:39.019
+Anu.Arun: Time curve, let's say, of unemployment rate.
+
+341
+00:46:39.430 --> 00:46:50.640
+Anu.Arun: Okay? And then, now you below, you have another sine curve, which is, let's say, the weather. You know, it's another time series.
+
+342
+00:46:51.570 --> 00:46:52.320
+Vikesh K: Okay.
+
+343
+00:46:52.670 --> 00:46:57.350
+Anu.Arun: So you, yeah, the period and the amplitude would be different.
+
+344
+00:46:57.490 --> 00:47:05.839
+Anu.Arun: And then, yeah, so this something. And then you know, another factor below this thing or we, and then, now you take slices of this
+
+345
+00:47:06.830 --> 00:47:12.789
+Anu.Arun: so so you can draw a line in the time axis like perpendicular. Then you take.
+
+346
+00:47:14.532 --> 00:47:16.289
+Vikesh K: Let's say, this is inflation. Okay.
+
+347
+00:47:16.290 --> 00:47:16.620
+Anu.Arun: Yeah.
+
+348
+00:47:16.620 --> 00:47:17.599
+Vikesh K: And then what you're saying.
+
+349
+00:47:17.600 --> 00:47:21.039
+Anu.Arun: And then, if you take a slice of the data now, like, if you.
+
+350
+00:47:21.040 --> 00:47:23.009
+Vikesh K: So so you're focused on this period.
+
+351
+00:47:23.010 --> 00:47:30.059
+Anu.Arun: Yeah, no, no, I'm saying. I'll take. I'll randomize it. I'll take over the entire.
+
+352
+00:47:31.500 --> 00:47:36.230
+Vikesh K: No it ideally when you do time series. So they should follow the same structure. Right? So if.
+
+353
+00:47:36.230 --> 00:47:38.996
+Anu.Arun: No, no, no! I'm saying
+
+354
+00:47:40.170 --> 00:47:47.189
+Vikesh K: By slices here, I mean, is like you pick up the data from, let's say, Jan to July of a particular year is, does that make sense. That's what you're trying.
+
+355
+00:47:48.020 --> 00:47:55.950
+Anu.Arun: No, I wasn't thinking that I was thinking I would randomize it like I would take data from
+
+356
+00:47:57.600 --> 00:48:04.665
+Anu.Arun: like, if you draw many like, if you sample this basically and and create
+
+357
+00:48:06.320 --> 00:48:07.720
+Vikesh K: Training test in this.
+
+358
+00:48:09.040 --> 00:48:19.040
+Anu.Arun: No. So let's say, okay, let's say T, equal to, let's say the period on. Let's say the axis of the YX axis is 100 like one month.
+
+359
+00:48:20.400 --> 00:48:24.479
+Anu.Arun: Let's say that that's the unit via X. Access is time, and it's 1 month.
+
+360
+00:48:24.480 --> 00:48:24.840
+Vikesh K: This.
+
+361
+00:48:24.840 --> 00:48:28.620
+Anu.Arun: Now, let's say I take data every 10 months.
+
+362
+00:48:29.950 --> 00:48:30.970
+Vikesh K: Okay, you take this
+
+363
+00:48:30.970 --> 00:48:37.910
+Vikesh K: every time. Every. So so then, I'm taking data, I'm I'm and then making a new.
+
+364
+00:48:40.560 --> 00:48:47.540
+Anu.Arun: a table which will be my new data and I will use. I won't use time series. I will use
+
+365
+00:48:48.170 --> 00:48:49.949
+Anu.Arun: decision tree for that.
+
+366
+00:48:50.420 --> 00:48:53.059
+Anu.Arun: So I'm generating my data this way.
+
+367
+00:48:53.670 --> 00:48:57.780
+Vikesh K: Okay, so, but but for that matter, you you can even do it like this. That.
+
+368
+00:48:57.780 --> 00:48:58.140
+Anu.Arun: No.
+
+369
+00:48:58.140 --> 00:49:06.749
+Vikesh K: You have this data. Let's say you have data from Jan. This is, hold your data from Jan to December. You pick up only half of it. You pick up from Jan to October.
+
+370
+00:49:07.210 --> 00:49:22.080
+Vikesh K: all right, and you build a model and you can make a decision tree model with this data. And then you test it on the rest of the data. You don't even have to randomly take it. So provided this is like a time series data, right. So within time series randomization becomes a problem, because
+
+371
+00:49:22.180 --> 00:49:42.320
+Vikesh K: the Time series is supposed to have some station, some cyclical nature in their cyclical in nature, and there is a seasonality and all those things. So the way you can approach it is you have this data, for as you train, you have this data as test, and you can apply decision tree here and see the output which it gets you.
+
+372
+00:49:44.070 --> 00:49:45.480
+Vikesh K: Does that make sense.
+
+373
+00:49:46.580 --> 00:50:01.790
+Anu.Arun: Yeah, yeah, yeah, no. I understand. Instead of randomizing. Yeah, yeah, yeah, understood. Yeah. But this makes sense. This, this thing makes sense. So conversely, put like I could just do unemployment just extrapolate that unemployment right
+
+374
+00:50:02.240 --> 00:50:12.500
+Anu.Arun: like. So I could. Just not you. So I could take the unemployment date the 1st curve. And if I project that further, that's what I want. Ideally, that's the goal.
+
+375
+00:50:13.380 --> 00:50:17.009
+Vikesh K: Correct. So you. So this is unimpression, and this is not correct.
+
+376
+00:50:17.010 --> 00:50:25.677
+Anu.Arun: Yeah, that would have been yeah. It's something like that would have been my output if I just take Arima or something, and I'm guessing that would give me something like that
+
+377
+00:50:25.940 --> 00:50:33.400
+Vikesh K: So anup. In any case, what you will, you will try to fit this with the time series. So essentially, it's more like the regression problems that we will have
+
+378
+00:50:33.650 --> 00:50:44.947
+Vikesh K: only thing which will matter is in plain regression. Where there is no time series. You randomly divide the data into train and test splits right? But in time series you have to be
+
+379
+00:50:45.800 --> 00:50:57.299
+Vikesh K: conscious of the fact that you know the data has some autocorrelation on all those things going on. So typically how you divide the data is, you take the data from Jan to October. Then you try to predict. For let's say November to December.
+
+380
+00:50:57.530 --> 00:51:02.469
+Vikesh K: Okay? And this prediction model part, you can use any of the regression models there.
+
+381
+00:51:02.790 --> 00:51:22.290
+Vikesh K: Why, in theory, we have time series. Because well, you know initially when the models were developed. These were the linear regression models, and then the statisticians figured out. The linear regression model is not good for time series. Time series need a specific set of models. So they came up with these Arimas and other things, because the nature of the data is different.
+
+382
+00:51:22.420 --> 00:51:24.092
+Vikesh K: But having said that
+
+383
+00:51:24.620 --> 00:51:33.130
+Vikesh K: exeboost works pretty well, for example, or random forest works pretty well with time series data as well, because it's able to capture those patterns.
+
+384
+00:51:33.240 --> 00:51:34.100
+Vikesh K: So
+
+385
+00:51:34.460 --> 00:51:42.300
+Vikesh K: when you divide data like this, then you can either use your Arima Sarima, or whatever you want, plus the exipuse, the random forest.
+
+386
+00:51:43.570 --> 00:51:44.939
+Vikesh K: Does that make sense.
+
+387
+00:51:45.830 --> 00:51:49.250
+Anu.Arun: Okay, I'm not familiar with random Forest. But okay,
+
+388
+00:51:49.630 --> 00:51:50.970
+Vikesh K: And we will study so, so.
+
+389
+00:51:50.970 --> 00:51:51.450
+Anu.Arun: Yeah, yeah.
+
+390
+00:51:51.450 --> 00:51:52.010
+Vikesh K: Good.
+
+391
+00:51:52.140 --> 00:51:54.309
+Vikesh K: We covered decision tree in this course. Right?
+
+392
+00:51:54.700 --> 00:51:58.860
+Anu.Arun: Yeah, I think we did that. Yes, that that we.
+
+393
+00:51:58.860 --> 00:52:12.279
+Vikesh K: Yeah, I don't think I thought, but after decision, tree there, we will basically talk about random forest. And then something called exit boost. These are one of the most powerful methods out there.
+
+394
+00:52:12.400 --> 00:52:16.560
+Vikesh K: Okay, so so you will cover this in the course, and then you can try these methods as well.
+
+395
+00:52:17.070 --> 00:52:42.280
+Anu.Arun: Okay. So my basic question was like, so you know, if you want to just project unemployment, we can do what you just did right. And the 1st one versus if I want to see other factors that can play which might not have been taken. If I want to correlate unemployment with weather and inflation. Whatnot is this a logical way to do it? Yeah.
+
+396
+00:52:42.280 --> 00:53:00.429
+Vikesh K: Yeah, yes. By the way, others, if you want to drop off, feel free or if you have any questions, I can stay back. But coming back to Anu to your question. So what you would do is a very simple way. So you will have unemployment. You will need to create this data set unemployment. Let's say you collect this at a monthly level same, you would have inflation.
+
+397
+00:53:00.460 --> 00:53:20.159
+Vikesh K: You would have what other you wanted, whether all right. You put all those features, but they should be at the same timestamp. For for example, you can't have inflation at a weekly level when you have employment at a monthly level, right? But once you do that, so you you will prepare a regular normal data set.
+
+398
+00:53:20.460 --> 00:53:25.940
+Vikesh K: and then you take a 1st half of this data set. You use this as trained.
+
+399
+00:53:26.220 --> 00:53:36.839
+Vikesh K: and then put this here, and like the second half is used as a test. But how you prepare the model will. How you prepare the data will look like a normal tables that we have.
+
+400
+00:53:38.270 --> 00:53:39.290
+Anu.Arun: Understood? Yeah.
+
+401
+00:53:39.860 --> 00:53:41.290
+Vikesh K: If this is not okay.
+
+402
+00:53:41.290 --> 00:53:43.829
+Anu.Arun: This makes sense. It's not stupid, or I'm not.
+
+403
+00:53:43.830 --> 00:53:48.660
+Vikesh K: No, no, ma'am, so this is this is what essentially all the people at Federal Reserve are doing. Right?
+
+404
+00:53:48.780 --> 00:54:00.260
+Vikesh K: So yeah, this is, you go to Federal Reserve. They they come up with these inflation figures, you know. They try to forecast the inflation. They try to forecast the unemployment. This is macro work day in, day out.
+
+405
+00:54:00.600 --> 00:54:12.910
+Vikesh K: This is. And again, this is used by finance firms as well. Right? Because if you figured out the unemployment rate, you can figure out 10 other things, you know, which stocks move. So this is a very useful. This is something which all the finance companies do a lot.
+
+406
+00:54:15.950 --> 00:54:20.049
+Anu.Arun: And thank you. Thank you so much. Thank you. That took a long thank you all
+
+407
+00:54:20.180 --> 00:54:21.930
+Anu.Arun: for patience. Yeah, thanks.
+
+408
+00:54:22.780 --> 00:54:24.810
+Vikesh K: Anna, do you work in finance by by chance.
+
+409
+00:54:25.117 --> 00:54:26.960
+Anu.Arun: No, no, I don't. I don't.
+
+410
+00:54:27.740 --> 00:54:29.300
+Vikesh K: I thought, maybe you're working fine.
+
+411
+00:54:30.730 --> 00:54:32.223
+Vikesh K: Cool. Okay.
+
+412
+00:54:33.320 --> 00:54:41.409
+Vikesh K: Oh, there, I studied economic. This is what I wanted to do for a living. Then I realized, Oh, you can. This is not that interesting? So I moved to proper tech.
+
+413
+00:54:41.640 --> 00:54:44.080
+Vikesh K: Yeah, this is initially what I have to do
+
+414
+00:54:44.440 --> 00:54:47.804
+Vikesh K: alright. Any other questions or doubts. Thank you for that. Anu
+
+415
+00:54:50.383 --> 00:55:04.950
+sai: So because because this is sai. So I have like I didn't get a chance to meet up for the capstone project, one on one, and previously it was there I was traveling a lot. So
+
+416
+00:55:05.080 --> 00:55:10.240
+sai: is it possible to schedule now? Or is there any process we need to.
+
+417
+00:55:10.552 --> 00:55:13.340
+Vikesh K: You're in. You're in Big City, you are, you know.
+
+418
+00:55:13.520 --> 00:55:15.669
+sai: Section, A, with you.
+
+419
+00:55:15.670 --> 00:55:25.099
+Vikesh K: So I I believe if I I still might have slots, I need to check that calendar link. But if if you, if there are still slots. You can book.
+
+420
+00:55:26.160 --> 00:55:27.469
+sai: Okay. Okay. Sure.
+
+421
+00:55:27.470 --> 00:55:38.741
+Vikesh K: Yeah, or or maybe I can also add some more slots if slots are over. But yeah, if you have, if there are slots available. You can just book. I would just request one thing. I I usually
+
+422
+00:55:39.540 --> 00:55:44.559
+Vikesh K: have a template for folks to go through, so I will share it beforehand with you.
+
+423
+00:55:46.090 --> 00:55:51.450
+Vikesh K: But yes, but then you can book the session with me, and I will add it. Okay.
+
+424
+00:55:51.760 --> 00:55:54.520
+Vikesh K: So this helps me to streamline the whole thing.
+
+425
+00:55:55.950 --> 00:55:57.730
+sai: Okay, sure. Yeah, thank you so much.
+
+426
+00:55:58.080 --> 00:56:08.429
+Vikesh K: Yeah, you can prepare this thing the the template and you send it across. We can. We can talk about it, and we I will, I will check if I I still have the slot.
+
+427
+00:56:10.050 --> 00:56:11.890
+sai: Okay, sure, yeah, thank you.
+
+428
+00:56:11.890 --> 00:56:12.220
+Vikesh K: Yeah.
+
+429
+00:56:12.690 --> 00:56:15.720
+Vikesh K: Cool others. Any question or doubt.
+
+430
+00:56:17.700 --> 00:56:19.749
+shashi: Rikesh. I had one question.
+
+431
+00:56:21.100 --> 00:56:21.590
+Vikesh K: Yes.
+
+432
+00:56:21.590 --> 00:56:26.451
+shashi: I for my data analytics, capstone. I was,
+
+433
+00:56:27.910 --> 00:56:31.979
+shashi: I have a record set of about roughly, about a million
+
+434
+00:56:31.980 --> 00:56:33.670
+shashi: records, but the number of features.
+
+435
+00:56:33.670 --> 00:56:35.605
+Vikesh K: Are around
+
+436
+00:56:36.600 --> 00:56:41.173
+shashi: 100 50. So it when I, when I do the pivot and
+
+437
+00:56:41.970 --> 00:56:43.829
+shashi: transfer them all to features.
+
+438
+00:56:44.510 --> 00:56:54.339
+shashi: So it comes to around 25 to 30,000 rows of 20, approximately 20 to 25,000 rows of data. That should be sufficient, I think, right for building
+
+439
+00:56:55.086 --> 00:56:55.799
+shashi: prediction model.
+
+440
+00:56:55.800 --> 00:57:00.040
+Vikesh K: You basically roll it up at some group level, some at some level.
+
+441
+00:57:00.832 --> 00:57:04.097
+shashi: No, no, it's the feature. I mean, the data is collected
+
+442
+00:57:04.900 --> 00:57:10.470
+shashi: one feature at a time. So what happens is over the period of time they add up and
+
+443
+00:57:11.160 --> 00:57:17.799
+shashi: for our feature. What do you call using the features for predicting? When we
+
+444
+00:57:17.940 --> 00:57:23.055
+shashi: pivot it, it becomes the 100 1 million rows become
+
+445
+00:57:23.920 --> 00:57:27.262
+shashi: let's say each feature has,
+
+446
+00:57:29.221 --> 00:57:35.159
+shashi: roughly 1,000 data points. So when it pivots, it becomes around 20,000 rows of.
+
+447
+00:57:35.570 --> 00:57:39.580
+shashi: So that is a sufficient amount of data. Right? That should be enough.
+
+448
+00:57:39.910 --> 00:57:42.410
+Vikesh K: Yeah, so 20,000 rows. And how many columns.
+
+449
+00:57:43.060 --> 00:57:44.929
+shashi: Roughly 100 20.
+
+450
+00:57:45.140 --> 00:57:49.199
+Vikesh K: Okay? No, I think that's good. You have good amount of problem columns. There.
+
+451
+00:57:49.770 --> 00:57:50.200
+shashi: Yeah.
+
+452
+00:57:50.200 --> 00:58:10.639
+Vikesh K: That should be good. So again, this is a lot of it will also depend on your section leader. I try to sort of gently push the people in my section to pick up something complicated, because it's a good opportunity to learn and also showcase, you know, because May, if you pick up a simple. For example, many people pick up a simple stock price prediction
+
+453
+00:58:10.860 --> 00:58:22.238
+Vikesh K: in my previous batch. Previous runs of this, when Tesla was growing very fast. They were like, Oh, we want to focus Tesla. But then you know, what they used to come up with is like a simple Tesla
+
+454
+00:58:22.680 --> 00:58:43.340
+Vikesh K: open high volume trading. So basically 3 columns, you know the open, the close price of every day, the volume which was traded, and they wanted to do a capture over that. But that's not really useful, right? You. You have 2 columns all time series all numerical. You won't learn anything about categorical. There's no missing value, nothing complicated in life.
+
+455
+00:58:43.550 --> 00:58:47.549
+Vikesh K: So I usually discourage doing those kind of projects.
+
+456
+00:58:48.640 --> 00:59:09.740
+Vikesh K: because that's too simple. And also, you know, with with the stock market prediction. Everyone knows you haven't done a good job, because otherwise you would have been a billionaire a millionaire if you had cracked it. So it's very easy for at times for a stock price. Prediction problems. I can tell you your model is not good enough because you're not a millionaire or billionaire.
+
+457
+00:59:09.970 --> 00:59:24.519
+Vikesh K: So I would say, pick up something which is more basic. I think you have. So she, your project sounds very realistic the kind of problems you will face, and I usually say the benchmark should be that practical application to the the car pricing.
+
+458
+00:59:24.920 --> 00:59:27.369
+Vikesh K: So any pick up something which is
+
+459
+00:59:27.770 --> 00:59:37.200
+Vikesh K: difficult at the same level, or more than that, not easier than that, because if the course has set a benchmark, the professors have set a benchmark, you don't really want to go below that.
+
+460
+00:59:37.970 --> 00:59:38.790
+shashi: Got it? Yeah.
+
+461
+00:59:40.880 --> 00:59:42.560
+Vikesh K: Cool anything else.
+
+462
+00:59:44.170 --> 00:59:47.103
+Vikesh K: Okay, so I hope you enjoyed this session.
+
+463
+00:59:48.610 --> 00:59:55.949
+Vikesh K: this is, many of you would be high on energy. So please use that energy and try to. If you have a backlog, try to finish that.
+
+464
+00:59:56.120 --> 00:59:58.250
+Vikesh K: and then we will go back.
+
+465
+00:59:58.370 --> 01:00:12.959
+Vikesh K: And then, yeah, we have some interesting topics coming up in the next couple of weeks you will get exposed to recommendations. I believe Nlp is also coming ensemble. So a lot of interesting stuff, so that will take some time
+
+466
+01:00:13.411 --> 01:00:19.640
+Vikesh K: so, please, you know, next couple of weeks take out some time at least, keep additional time for the course.
+
+467
+01:00:19.980 --> 01:00:21.910
+Vikesh K: otherwise it might be too much for you.
+
+468
+01:00:22.800 --> 01:00:23.830
+shashi: Alright.
+
+469
+01:00:24.110 --> 01:00:25.120
+shashi: Yeah, thank you.
+
+470
+01:00:25.350 --> 01:00:26.870
+shashi: Thanks. Cool. Thanks. Everybody.
+
+471
+01:00:26.870 --> 01:00:27.600
+Vikesh K: Thanks a lot.
+
+472
+01:00:27.880 --> 01:00:28.820
+Namrata: Thank you.
+
+473
+01:00:28.820 --> 01:00:29.539
+shashi: Here once again.
+
+474
+01:00:33.600 --> 01:00:33.960
+Vikesh K: Folks.
+
+475
+01:00:33.960 --> 01:00:37.020
+Anu.Arun: Everyone. Bye, thanks, Rikesh, bye-bye.
+
