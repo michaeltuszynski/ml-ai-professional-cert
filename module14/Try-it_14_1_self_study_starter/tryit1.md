@@ -1,0 +1,8 @@
+You use decision trees every day. You have been using decision trees since you were a child. It might help if you conceptualize decision trees as a subset of flowcharts. At the heart is the idea of asking questions (usually yes/no or true/false questions) to separate possibilities and continuing to ask questions until a single conclusion is reached. Unlike flowcharts, however, there is no looping back to a node based on the answer to another node. There is only one path in a decision tree from root to leaf node. Once you reach a leaf, you do not loop back to another node.
+
+Take, for example, the simple question of what sounds good to eat for dinner. There might be several possibilities that are available to you—from the ethnicity of the cuisine to the cost of acquisition to the time it would take to prepare. You could easily make a decision tree based on these questions. In fact, you make mental decision trees for a lot of decisions you have to make routinely.
+
+Your task in this discussion is to make a decision tree out of a thought process you use. Make an internal decision tree external. Create a visual representation of the decision tree in a graphic design program of your choice and upload a screenshot (or export) to the discussion board with a brief description of the decision you are making. Some of the tools that can be used to create these visuals are Lucidchart  Links to an external site.or Figma.Links to an external site.
+
+Your decision tree needs to have one root node and at least three levels (the root being level 1). Other than that, your decision tree can be as creative as you would like. This is your time to be creative in terms of both content and visual representation.
+
