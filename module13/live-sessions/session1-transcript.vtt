@@ -1,0 +1,1262 @@
+WEBVTT
+
+1
+00:00:06.750 --> 00:00:15.570
+Jessica: Okay, Hello, everybody, and welcome to the module. 13 office hour for the professional certificate in machine learning. And AI,
+
+2
+00:00:16.090 --> 00:00:18.390
+Jessica: yeah. So before we start?
+
+3
+00:00:19.100 --> 00:00:41.709
+Jessica: a couple of you know, housekeeping out items as usual. So the module 11 practical application assignment should have been graded at least for the ones of you in my section. And I'm I'm obviously speaking only for my section, because those are the ones that I've seen. But I did notice an improvement from
+
+4
+00:00:41.820 --> 00:00:54.889
+Jessica: the module 5 practical application. So that was that was good. It's showing that you are, you know, understanding a little bit better. What is going on with data, science and machine learning.
+
+5
+00:00:55.090 --> 00:00:58.890
+Jessica: And yeah. So a reminder
+
+6
+00:00:59.060 --> 00:01:08.180
+Jessica: to book your one on one consultation for the capstone project so let me just bring up the page here
+
+7
+00:01:10.380 --> 00:01:14.549
+Jessica: in case some of you don't know how to do that.
+
+8
+00:01:14.780 --> 00:01:17.199
+Jessica: Just give me one second.
+
+9
+00:01:28.330 --> 00:01:32.170
+Jessica: So if you go on modules
+
+10
+00:01:42.850 --> 00:01:47.430
+Jessica: and you go to should be in module 11.
+
+11
+00:01:56.220 --> 00:01:59.529
+Jessica: yeah. So if you just
+
+12
+00:01:59.640 --> 00:02:05.760
+Jessica: below module 11, you see this schedule? Your con capstone consultation.
+
+13
+00:02:06.730 --> 00:02:16.289
+Jessica: And yeah, here, depending on the section you are. You book with your corresponding learning facilitator.
+
+14
+00:02:16.450 --> 00:02:35.079
+Jessica: It's important that you know your section and you book with the correct learning facilitator. This ensures that the work is equally distributed, and the person that you know you do. The consultation with is also going to grade your capsule projects. So
+
+15
+00:02:35.563 --> 00:03:04.766
+Jessica: don't forget to do that. You still have quite some time to, you know, like book the consultations but don't forget to do so because we basically just like chat about your ideas and basically tell you if we think that your capstone project, the topic of your capstone project is is good or not. So it's it's very important that you sort of get the green light from from us before proceeding. Okay, it's also important that you come to this.
+
+16
+00:03:05.903 --> 00:03:32.300
+Jessica: meeting, I guess, somewhat prepared so don't come without having an idea of what to do with the Capstone project, because we are not allowed to give you to give you ideas. Okay, the topic of the Capstone project is your choice. So if you're unsure, maybe come with 2 or 3 different options. But yeah, have some some sort of idea prepared. Okay?
+
+17
+00:03:33.352 --> 00:03:36.630
+Jessica: Any questions on this?
+
+18
+00:03:40.070 --> 00:03:51.139
+Jessica: Okay, so if not, I am going to reshare my screen now, and we can talk about
+
+19
+00:03:51.300 --> 00:04:00.580
+Jessica: the topic of Module 13, which is logistic regression before we do that, though.
+
+20
+00:04:01.495 --> 00:04:02.100
+Jessica: Just.
+
+21
+00:04:02.100 --> 00:04:06.169
+Ravi Duvvuri: One question on the essa in minds of.
+
+22
+00:04:06.270 --> 00:04:18.260
+Ravi Duvvuri: So we have to not only book it. We have to finish the participation or discussion before holidays right before Christmas holidays. Is that the expectation.
+
+23
+00:04:19.113 --> 00:04:31.239
+Jessica: Let me check. So the one on one session go between Module 11 and Module 14. So you have until before the Christmas. The holiday break. Yes.
+
+24
+00:04:31.980 --> 00:04:38.679
+Ravi Duvvuri: Okay? So we have to book before that. Right? So and then finish it off. The discussion as well before holidays. Is that right?
+
+25
+00:04:38.680 --> 00:04:42.320
+Ravi Duvvuri: The what discussion means, like the one on one discussion.
+
+26
+00:04:42.865 --> 00:04:47.980
+Jessica: Yeah. So you know, like, if you click on any of these links
+
+27
+00:04:48.534 --> 00:05:04.920
+Jessica: you are, gonna see? Like that, some dates are like available, and some are are not so the this one on one consultation are meant to happen before the holiday break. Because we don't want you to wait too long before starting the Capstone project. Like ideally.
+
+28
+00:05:05.340 --> 00:05:12.949
+Jessica: You would want to work on them a little bit at a time, you know, like every module, and not leave everything for the end.
+
+29
+00:05:13.430 --> 00:05:15.619
+Ravi Duvvuri: Got it. Yeah, thank you. That's what I thought, yeah.
+
+30
+00:05:16.460 --> 00:05:19.819
+Jessica: Yeah. And then there was something in the chat, too. I saw.
+
+31
+00:05:20.299 --> 00:05:35.869
+Jessica: There is no formal communication on the one on one. So these. These one on one consultation. They are very informal. Okay, they're not graded. You know, like, it's a chance for you to meet with
+
+32
+00:05:36.160 --> 00:06:04.230
+Jessica: your learning facilitator, one on one which you haven't done yet. And you know, like we can get you to know you better. We can chat for, like, you know, 1015 min about your idea for the Capstone project. Maybe. Look at data sets together. But if there is no formal communication, it's it's just for you to sort of like again. Get the green light from us about the topic that you're choosing, because this is the 1st time you're working on
+
+33
+00:06:04.560 --> 00:06:13.620
+Jessica: something like this. And so we we like to offer you you know, support, and also to tell you what to expect
+
+34
+00:06:13.830 --> 00:06:42.499
+Jessica: throughout the course about the capstone project. There is no grade associated with these. Consultation. It's just a quick, informal chat about the the topic of the Capstone project, and you know what yourself as well like. We like to get to know you. And the consultations are free. Okay, like there, you don't have to pay for anything. It's just really to give you some some peace of mind about the Capstone project and to talk about the next steps.
+
+35
+00:06:45.370 --> 00:06:49.700
+Jessica: Okay.
+
+36
+00:06:50.110 --> 00:07:02.719
+Jessica: all right. So let's move on to the topic of today, which is logistic regression. And I don't know if I showed you this diagram already. You know I do.
+
+37
+00:07:02.750 --> 00:07:13.429
+Jessica: I have a few different classes at the same time. So I tend to forget the the what I show one class or the other. But essentially
+
+38
+00:07:14.170 --> 00:07:15.490
+Jessica: hold on.
+
+39
+00:07:15.600 --> 00:07:21.950
+Jessica: Vikash is asking in the chat, what is the end? Date to finish the capstone project.
+
+40
+00:07:21.970 --> 00:07:26.990
+Jessica: So the Capstone project is due at the end of Module 24. So
+
+41
+00:07:27.460 --> 00:07:35.249
+Jessica: it's the very last thing due at the end of the course, which for you guys is, let me check.
+
+42
+00:07:35.620 --> 00:07:42.190
+Jessica: The end of the course is March 19th
+
+43
+00:07:42.807 --> 00:08:01.130
+Jessica: but really time flies. And we, you know, like with the holiday break and everything that happens in between. We we do want you to start working on the capstone project as soon as possible. Of course, you can request extensions.
+
+44
+00:08:01.130 --> 00:08:17.120
+Jessica: Okay, like, even after the course is done, you can request up extensions for like a 2 weeks or 3 weeks. If you need more time for the Capstone project, but the Capstone project is due on tip without extensions at on March 19, th which is the last day of the course.
+
+45
+00:08:17.730 --> 00:08:18.599
+Vijay Chaganti: So in the calendar.
+
+46
+00:08:19.520 --> 00:08:24.360
+Vijay Chaganti: 2 projects mentioned, Capstone, one and 2. So are we going to do 2 or only one.
+
+47
+00:08:25.820 --> 00:08:51.640
+Jessica: No, it's only one. So the capstone, one and 2. There are like 2 phases of the capstone project. So there is phase one which is due in Module 20, where you just do data cleaning and exploratory data analysis. And then the second part, which is phase 2, is the modeling and the conclusion. But you know, like, if you work on it like a little bit earlier, then it's
+
+48
+00:08:51.988 --> 00:08:54.619
+Jessica: you know. It gives you more time to.
+
+49
+00:08:54.780 --> 00:08:59.430
+Jessica: you know, like, catch mistakes, talk to your learning facilitator, and so on.
+
+50
+00:09:02.786 --> 00:09:04.639
+Jessica: Okay. So
+
+51
+00:09:04.910 --> 00:09:31.820
+Jessica: going back to what I was saying, so, the topic today is going to be logistic regression. And essentially, what's gonna happen from now until the end of the course is that basically with each module you're going to learn a new machine learning algorithm, okay? Or more. Okay, so what is really important to do from now on is to sort of like, get a clear idea of
+
+52
+00:09:32.170 --> 00:09:42.499
+Jessica: which algorithms are meant to solve certain like specific problems. So if you have like a regression problem, you're using
+
+53
+00:09:42.550 --> 00:09:55.160
+Jessica: a BC and D algorithm, if you have a classification problem you use XY and Z, and so on. And you know, like, because this course is, it's heavy, and it's fast paced.
+
+54
+00:09:55.713 --> 00:10:03.159
+Jessica: You know, like we do want you to not get lost with all these algorithms. And so
+
+55
+00:10:03.180 --> 00:10:28.720
+Jessica: this is what I like to use, you know, to just have, like a diagram of machine learning algorithms. There are many available online. You can also create your own. But what I do recommend is for you to start really like, sort of like classifying this machine learning algorithms depending on what they're used for. Okay, this will also become very useful for the Capstone project. Okay? Because if you
+
+56
+00:10:28.720 --> 00:10:53.560
+Jessica: start working on the Capstone project, and then at the same time, you work on the course. Each module you can sort of like, learn something new, and then ask yourself, Well, can I use this algorithm for my capstone project or not, and then decide to incorporate that or not, and if you do that the Capstone project is going to become a little bit easier, in my opinion, to
+
+57
+00:10:56.000 --> 00:11:14.720
+Jessica: the time, as you do coursework as well. Okay, so which is why I've I've been saying for the past 10 min to book your one on one consultation, because the sooner you do that, the sooner you can work on the Capstone project, and the sooner you can start, you know, like kind of putting out everything together.
+
+58
+00:11:15.753 --> 00:11:16.656
+Jessica: So
+
+59
+00:11:18.080 --> 00:11:32.049
+Jessica: going back to the topic of today, the topic is logistic regression, which I always like to joke on it. Logistic regression is one algorithm that has, you know, like a sort of like a misleading name.
+
+60
+00:11:32.150 --> 00:11:43.479
+Jessica: It is called the regression algorithm. But is, it's, in fact, a classification algorithm. Okay. So be careful not to get confused.
+
+61
+00:11:43.600 --> 00:11:48.480
+Jessica: And the reason why it's called logistic regression is because the
+
+62
+00:11:48.760 --> 00:12:02.830
+Jessica: mathematical fundamentals of logistic regression. They are very similar to the ones of linear regression. However, the logistic regression is used for classification.
+
+63
+00:12:03.090 --> 00:12:13.620
+Jessica: So the logistic regression algorithm is named after the logistic function or the sigmoid function which I'm about to show you in a second
+
+64
+00:12:14.070 --> 00:12:16.615
+Jessica: logistic 3.rd
+
+65
+00:12:18.086 --> 00:12:25.680
+Jessica: So as you can see, the logistic curve is an S shaped curve
+
+66
+00:12:25.690 --> 00:12:39.389
+Jessica: that takes all the values on. Sorry. There are some sirens outside that takes all the values on the X axis. Okay? So it takes any input on the X axis.
+
+67
+00:12:39.390 --> 00:13:06.400
+Jessica: But the output is always abounded between 0 and one. So what does this mean? Well, essentially, we can interpret the output of a logistic function that is obviously connected to logistic regression as a output, that is, between a 0 and one which can be interpreted as a probability that a point belongs to a certain class or not. Okay. So this is why
+
+68
+00:13:06.570 --> 00:13:24.369
+Jessica: logistic regression, which is comes like is associated with the logistic curve is used as a algorithm to calculate the probability that a point belongs to a certain class. And therefore it's a classification algorithm. Okay.
+
+69
+00:13:26.130 --> 00:13:41.240
+Jessica: here, I have given you the equation of the logistic curve. So it's 1 over one plus E to the negative X or certain value. E, here is a Euler number.
+
+70
+00:13:41.280 --> 00:13:56.000
+Jessica: Okay, so for the ones of you that don't know this. It's 1 of the famous numbers in math. So it's like pi, for example, it's a constant number, and it's the base of the natural logarithm. Okay?
+
+71
+00:13:57.690 --> 00:14:13.120
+Jessica: The reason why logistic regression and linear regression have similar names, although they have a different purpose, is because the equation of logistic regression can actually be derived from the logistic curve
+
+72
+00:14:13.440 --> 00:14:26.470
+Jessica: function very much like we use the equation of the line to write the equation of linear regression. So here I have given you. Let me zoom in a little bit. So you guys can see
+
+73
+00:14:30.453 --> 00:14:33.560
+Jessica: here, I have given you the equation
+
+74
+00:14:33.680 --> 00:14:52.639
+Jessica: of logistic regression. So it's similar to the one of the logistic curve. It's not quite the same, but it's similar. And here B, naught and b 1 are the weights that are given from your from the training of your machine learning algorithm and x, 1 is your input.
+
+75
+00:14:52.930 --> 00:15:09.709
+Jessica: Similarly to what we were doing for linear regression. We can have a single logistic regression or a multiple logistic regression. So you can use either one column as your input, data, or you can use
+
+76
+00:15:09.710 --> 00:15:23.330
+Jessica: multiple input, okay, so multiple columns as input. So here I have the case with x 1 and x 2. But you can extend this equation as much with as many x's as you want. Okay?
+
+77
+00:15:27.190 --> 00:15:33.890
+Jessica: So the one thing that I have here is also an example.
+
+78
+00:15:34.361 --> 00:15:42.129
+Jessica: About. Well, before we dive into the python example of logistic regression. I have a like a A,
+
+79
+00:15:42.770 --> 00:15:52.990
+Jessica: you know, like a little problem that to show you how we can use the equation of logistic regression to interpret the result as a probability.
+
+80
+00:15:53.230 --> 00:15:54.145
+Jessica: So
+
+81
+00:15:55.120 --> 00:16:12.969
+Jessica: let's say that we have a model that can predict whether a person is male or female, based on their height. Okay, so we already trained this model, and we already have the coefficients. And we want to predict whether the probability that somebody is a male or a female
+
+82
+00:16:13.030 --> 00:16:20.379
+Jessica: depending on their height. Okay, so I have well given a height of 150 cm, which is.
+
+83
+00:16:20.840 --> 00:16:26.949
+Jessica: I think, like 5, 2, 5, 1. Okay, we want to predict whether this person is a male or a female.
+
+84
+00:16:27.100 --> 00:16:36.589
+Jessica: So we also know that the coefficients of our model are beta naught equals negative 100 and beta one equals 0 point 6,
+
+85
+00:16:36.840 --> 00:16:48.349
+Jessica: and we want to calculate the probability. So what you can do is plug in the numbers in the equation. Okay? So I have my beta naught. Negative, 100
+
+86
+00:16:48.470 --> 00:16:52.740
+Jessica: beta, 1 0 point 6, and then I have a hundred 50, which is my input.
+
+87
+00:16:53.070 --> 00:17:11.509
+Jessica: and this is the predicted y, so y is always going to be between 0 and one, because it's supposed to be a probability. And in this case, obviously, these numbers are toy numbers that I chose as I was creating this assignment, this example. Sorry.
+
+88
+00:17:12.060 --> 00:17:33.389
+Jessica: But here we have a near 0 probability that this person is male. So essentially, this is just to show you how you can. You know, plug in the numbers really, that are given from your model and your input to sort of like, make a prediction. Okay? So in this case, the interpretation of this result would tell us that the
+
+89
+00:17:34.170 --> 00:17:36.250
+Jessica: in our case, this
+
+90
+00:17:36.960 --> 00:17:46.119
+Jessica: person, as a near 0 probability of being a male. Okay, I think that in reality, the probability is a little bit higher. But let's just go with this for now.
+
+91
+00:17:47.160 --> 00:17:50.479
+Jessica: Okay, any questions or comments.
+
+92
+00:17:52.640 --> 00:17:59.389
+Jessica: Okay, so as the python example for today. I'm gonna keep it a little bit simple.
+
+93
+00:17:59.748 --> 00:18:01.540
+Ravi Duvvuri: Just question on that. So
+
+94
+00:18:01.810 --> 00:18:06.460
+Ravi Duvvuri: what's the basis for predicting that just based on the height? Is it
+
+95
+00:18:06.650 --> 00:18:09.879
+Ravi Duvvuri: like some kind of modeling was done that.
+
+96
+00:18:09.880 --> 00:18:10.380
+Jessica: Yeah.
+
+97
+00:18:10.380 --> 00:18:12.679
+Ravi Duvvuri: We close to that? Or is it like.
+
+98
+00:18:12.680 --> 00:18:20.050
+Jessica: No, we here, we're assuming that we already trained our model. And the, you know, the coefficients of the model
+
+99
+00:18:20.130 --> 00:18:29.769
+Jessica: B, 0 and B. Remember when we were doing linear regression, and we would print the coefficients of the model like the intercept and the slope.
+
+100
+00:18:30.260 --> 00:18:51.809
+Jessica: Yeah. So in this case, here we are assuming that the model has already been trained. And the we know that this model that predicts the height, okay, not not predicts the height, but predicts whether a person is male or female, based on their height. Has these coefficients. And I'm just plugging in numbers to show you how you can interpret this result.
+
+101
+00:18:51.820 --> 00:18:53.110
+Jessica: Okay, this is
+
+102
+00:18:53.440 --> 00:19:06.249
+Jessica: this is a model that was trained. Okay, it hasn't really, really been trained. I just chose numbers. And I just wanted to show you how you can plug in the numbers and and interpret the result.
+
+103
+00:19:06.430 --> 00:19:12.179
+Jessica: But in reality, normally, what you would do is, of course, train the model.
+
+104
+00:19:12.390 --> 00:19:18.329
+Jessica: figure out the coefficients, and then make the prediction based on a model that's actually been trained.
+
+105
+00:19:18.800 --> 00:19:19.570
+Ravi Duvvuri: Got it. Thank you.
+
+106
+00:19:19.570 --> 00:19:21.530
+Jessica: Yes, you're welcome.
+
+107
+00:19:22.280 --> 00:19:38.300
+Jessica: Okay, so let's keep this example a little simple today, because it's you know I always have the 1st office hour on Thursday, and I don't know how much work you've done through the the module. So but you know, we are going to
+
+108
+00:19:38.869 --> 00:19:42.940
+Jessica: work on the Titanic data set, which I think we have seen.
+
+109
+00:19:43.020 --> 00:19:44.900
+Jessica: Okay and
+
+110
+00:19:46.090 --> 00:20:07.359
+Jessica: the this data set contains information about the passengers of the Titanic. So it has passenger Id survived. P class, which is the class where they're on on the boat name, sex, age. These 2 columns describe whether a person was like traveling with family or friends.
+
+111
+00:20:07.570 --> 00:20:11.500
+Jessica: The ticket number, the fare, the cabin, and embarked.
+
+112
+00:20:11.650 --> 00:20:34.559
+Jessica: So let's spend a little bit of time cleaning this data. First, st okay, I do like this data frame because it has a lot of missing values. And I can show you a few different approaches or techniques that you can choose to clean the data set. And of course, what we want to predict here is whether somebody
+
+113
+00:20:34.810 --> 00:20:50.632
+Jessica: survived or not. Okay, this is going to be our output variable. And basically, we want to use logistic regression to evaluate being able to evaluate whether somebody survived or not on the Titanic. So I really,
+
+114
+00:20:51.210 --> 00:20:57.609
+Jessica: a very simple classification algorithm, okay, so
+
+115
+00:20:58.278 --> 00:21:00.821
+Jessica: we do know that this
+
+116
+00:21:01.810 --> 00:21:14.490
+Jessica: data set has quite a bit of missing values. Okay, you have a bunch in the cabin, but there is also a couple of other columns. I think, that have missing values. And you know.
+
+117
+00:21:14.900 --> 00:21:22.299
+Jessica: machine learning algorithms don't work with missing values. And so we do need to take care of that before we do anything.
+
+118
+00:21:22.600 --> 00:21:28.210
+Jessica: So the 1st thing I'm looking at is the whether there are any missing values.
+
+119
+00:21:28.440 --> 00:21:35.569
+Jessica: So we have. Age has a hundred 77 cabin, and embarked
+
+120
+00:21:36.360 --> 00:21:55.499
+Jessica: so another thing that I've always told you is the number of missing value really doesn't really say much. It's much more important to look at the percentage of missing values in a certain column, because that can give you a better indication of what to do with those missing values. Okay.
+
+121
+00:21:57.470 --> 00:22:09.770
+Jessica: So let's start with with age. So age has 177 compared to the number of rows that we have. This is about 20% of missing values.
+
+122
+00:22:09.780 --> 00:22:20.029
+Jessica: Now, 20% is a considerable number of missing values. Okay, but we also know that
+
+123
+00:22:20.120 --> 00:22:31.249
+Jessica: when predicting whether somebody died or not on the Titanic, probably the age played an important factor. So because probably age was important.
+
+124
+00:22:31.450 --> 00:22:41.347
+Jessica: We it's probably smart to try and fill those missing values with with, you know, in us, in us in some way. Okay,
+
+125
+00:22:41.980 --> 00:22:57.880
+Jessica: If it was a column that we did not consider important, you can probably like, get rid of those rows all right, but because age was probably an important factor. I'm gonna try and fill those missing values one way or the other. Okay.
+
+126
+00:22:59.084 --> 00:23:08.060
+Jessica: so to sort of like, decide how to fill the missing values. One thing that you can do is to look at the distribution.
+
+127
+00:23:08.230 --> 00:23:11.096
+Jessica: So here I have my
+
+128
+00:23:11.710 --> 00:23:20.397
+Jessica: you know, like a histogram with the distribution on plot on top and for values like
+
+129
+00:23:21.400 --> 00:23:36.440
+Jessica: age or height, or things like that. Typically you can use the mean, or the median value to fill the missing values. You can say, well, you know, like looking at the distribution
+
+130
+00:23:36.881 --> 00:23:41.869
+Jessica: there were there. It seems like there were a lot of people between, you know, like
+
+131
+00:23:41.890 --> 00:24:00.660
+Jessica: 18, say, and 30 years old, so probably I can use some value within that range which would be the mean or the median of this distribution, and try to fill those missing values rather than getting rid of them, because I know age is important.
+
+132
+00:24:01.210 --> 00:24:02.350
+Jessica: So.
+
+133
+00:24:02.791 --> 00:24:12.810
+Jessica: I mentioned here the mean or the median. Now this distribution is skewed to the left, so the mean and the median are going to be different.
+
+134
+00:24:12.810 --> 00:24:38.329
+Jessica: And you want to use the median to fill the missing values. Okay, so it typically is always use the median. Okay. But if the distribution is centered, then the mean and the median are going to be the same. But if the distribution is skewed, the mean and the median are going to be different. And so you want to use the median all the time as a trick to remember. Always use the median in these situations.
+
+135
+00:24:39.050 --> 00:24:47.840
+Jessica: So here I am calculating the mean and the median of this distribution, which, as you can see, they are a little bit different.
+
+136
+00:24:48.900 --> 00:24:53.300
+Jessica: And I can probably don't need this now.
+
+137
+00:24:53.440 --> 00:25:08.680
+Jessica: and I'm going to fill later. I'm going to use the median to fill those missing values. Okay. But for now in the back of my head, I'm just saying, okay, those 20% of missing values in the age column are going to be filled with the median.
+
+138
+00:25:09.870 --> 00:25:17.870
+Jessica: Next up is the column cabin. So the column cabin has 77% of missing values.
+
+139
+00:25:18.160 --> 00:25:20.919
+Jessica: This is a very large number of missing values.
+
+140
+00:25:22.196 --> 00:25:27.320
+Jessica: Looking at the cabin column.
+
+141
+00:25:30.490 --> 00:25:33.570
+Jessica: Let's say we do the 1st 15 rows oops.
+
+142
+00:25:34.280 --> 00:25:35.739
+Jessica: What did I call it?
+
+143
+00:25:36.910 --> 00:25:39.500
+Jessica: Train? Df, not df train.
+
+144
+00:25:44.160 --> 00:25:44.970
+Jessica: Okay.
+
+145
+00:25:45.577 --> 00:26:04.709
+Jessica: looking at the cabin column. So the cabin column seems to contain, literally, the cabin number. Okay, whatever you know. Label was on the door of where the people were sleeping. We can say pretty comfortably that the cabin number did not fill a a
+
+146
+00:26:04.710 --> 00:26:16.759
+Jessica: important factor on whether somebody survived or not. On top of that, just by looking at the data frame. It seems like the data frame is not ordered
+
+147
+00:26:16.760 --> 00:26:24.870
+Jessica: based on the cabin number. And so filling these missing values would be extremely challenging. Okay
+
+148
+00:26:25.030 --> 00:26:30.710
+Jessica: on top of that. When you go to like use, get dummies to transform to.
+
+149
+00:26:30.850 --> 00:26:52.800
+Jessica: you know, like to feature, transform this column. You're obviously going to get a different column for each of the cabin numbers. And so this column is really not helpful for our prediction. And so, based on these consideration. I am going to go ahead and decide to just drop the column at once. Okay.
+
+150
+00:26:54.070 --> 00:26:55.610
+Jessica: all right.
+
+151
+00:26:56.100 --> 00:27:02.540
+Jessica: The last thing, the last column that had missing values is embarked.
+
+152
+00:27:03.110 --> 00:27:16.800
+Jessica: So embarked at only 2 missing values, I think, which is 0 point 2 2% of my records. Here, you can really do whatever you want, so you can either drop 2 rows. Okay, that's not gonna be a big deal
+
+153
+00:27:17.541 --> 00:27:24.318
+Jessica: or you can say, well, let me see the distribution of the
+
+154
+00:27:25.120 --> 00:27:28.770
+Jessica: values in the embarked column.
+
+155
+00:27:29.120 --> 00:27:41.999
+Jessica: Okay? And I can probably fill those 2 rows with the most common value. Okay, it's probably not going to make a huge difference. You're talking 2 rows out of over a thousand. So really
+
+156
+00:27:42.358 --> 00:27:59.099
+Jessica: I don't think here it's going to make a huge difference. My philosophy is that if you find a smart way of miss, of filling the missing values, retain as much data as possible. So even if it's 2 rows. Try to fill those 2 rows rather than dropping them. Okay.
+
+157
+00:27:59.990 --> 00:28:15.159
+Jessica: so in this cell here I am using value counts and idx Max, to figure out what is the most common value in the column embarked.
+
+158
+00:28:15.540 --> 00:28:29.189
+Jessica: and this tells me that the most common boarding port is s, which is, I think Southampton at the time. Okay, so I am going to impute those 2 missing values with S.
+
+159
+00:28:29.780 --> 00:28:30.640
+Jessica: All right.
+
+160
+00:28:30.810 --> 00:28:32.609
+Jessica: So now did I know
+
+161
+00:28:32.880 --> 00:28:39.059
+Jessica: what to do with all my missing values. I'm going to apply those changes to my data frame.
+
+162
+00:28:39.100 --> 00:28:47.030
+Jessica: So I'm filling age with the median. As I told you, I am filling embarked with S.
+
+163
+00:28:47.150 --> 00:28:50.170
+Jessica: And I'm also dropping the column cabin.
+
+164
+00:28:50.350 --> 00:28:51.240
+Jessica: All right.
+
+165
+00:28:51.540 --> 00:28:53.310
+Jessica: So once I do that
+
+166
+00:28:53.816 --> 00:28:59.539
+Jessica: I check for missing values again as a sanity check. And I see that I have 0.
+
+167
+00:29:00.180 --> 00:29:01.060
+Jessica: All right.
+
+168
+00:29:02.084 --> 00:29:06.820
+Jessica: There are a few more things that we can do. Okay. So
+
+169
+00:29:07.160 --> 00:29:18.919
+Jessica: getting rid of missing values is not the only thing that you can do to clean your data. Okay, you can decide to you know.
+
+170
+00:29:19.914 --> 00:29:28.450
+Jessica: combine columns or create new columns based on your observation and based on the exploratory data analysis.
+
+171
+00:29:28.970 --> 00:29:29.633
+Jessica: So
+
+172
+00:29:31.200 --> 00:29:53.652
+Jessica: another thing that I noticed when working with this data set that I took from Kaggle. By the way, is that the column sib, sp and parch both relate to traveling with family. Okay? So to avoid multiple linearity. So in order to avoid working with
+
+173
+00:29:54.560 --> 00:30:03.740
+Jessica: input variables that are highly correlated to each other, which could cause overfitting.
+
+174
+00:30:04.378 --> 00:30:08.770
+Jessica: You can just combine those 2 columns together. Okay.
+
+175
+00:30:08.880 --> 00:30:10.050
+Jessica: So
+
+176
+00:30:10.400 --> 00:30:19.940
+Jessica: here I am, deciding to combine sib, sp, and parch into a new column that I called Travel alone.
+
+177
+00:30:20.370 --> 00:30:24.439
+Jessica: and this travel alone. Column is going to contain 0.
+
+178
+00:30:24.540 --> 00:30:39.540
+Jessica: If sip, sp and parch both contain 0 or one otherwise. Okay. So instead of having 2 columns that are highly correlated to each other. I am going to just drop those 2 and combine them into a single one. Okay.
+
+179
+00:30:40.280 --> 00:30:41.589
+Jessica: so I do that.
+
+180
+00:30:41.760 --> 00:30:48.680
+Jessica: And this is what my new training data frame looks like. So I have travel alone here.
+
+181
+00:30:52.520 --> 00:30:56.819
+Jessica: Next, what I want to do is create.
+
+182
+00:30:56.980 --> 00:31:07.990
+Jessica: you know, numerical variables for the columns that could be important. So P class sex and embarked.
+
+183
+00:31:08.000 --> 00:31:14.420
+Jessica: Okay, so this P class, sex, and embarked.
+
+184
+00:31:15.284 --> 00:31:25.809
+Jessica: Why? Only those? Well, because if you apply, get dummies to the columns, name ticket and fare, you're gonna end up with a data frame with
+
+185
+00:31:26.860 --> 00:31:33.250
+Jessica: thousands of columns. Right? Why? Well, because each value in these columns is different.
+
+186
+00:31:33.380 --> 00:31:44.959
+Jessica: Okay, so on top of that name, ticket and fare are probably not going to be determining factor on whether somebody survived or not like whether my name was
+
+187
+00:31:44.990 --> 00:31:47.649
+Jessica: Mary or I don't know
+
+188
+00:31:47.840 --> 00:31:54.879
+Jessica: another name. Okay, they probably did not play an important factor on whether I survived or not. Okay. So
+
+189
+00:31:55.226 --> 00:32:00.270
+Jessica: I'm leaving these columns as they are for now. But I will drop them.
+
+190
+00:32:01.130 --> 00:32:26.290
+Jessica: Okay, so let's apply. Get dummies to only the columns that we need. Okay? And this is like, this is what makes sense doing. Don't just apply. Get dummies to the entire data frame. Okay? Because you're going to end up with a data frame that's very large. And it's gonna become really confusing, really quickly. So you know, when you apply, get dummies. Try to be smart with it. Okay, and keep your data frame as clean as possible throughout the process.
+
+191
+00:32:27.810 --> 00:32:31.029
+Jessica: Okay, so this is our new data frame. So we have
+
+192
+00:32:31.040 --> 00:32:43.750
+Jessica: passenger Id survived the name, the age, the ticket, the fare, and then I have P. Class one P. Class 2, p. Class 3, embark CQ. And S. And then sex, female and sex male.
+
+193
+00:32:44.130 --> 00:32:47.280
+Jessica: Okay. Now we are almost there.
+
+194
+00:32:47.500 --> 00:33:04.649
+Jessica: The last thing that we need to do is to get rid of those columns that we know we're not going to use. So those columns are passenger Id. Why? Well, because we already have the index of the data frame. We don't need the passenger id to make our prediction.
+
+195
+00:33:04.850 --> 00:33:08.529
+Jessica: I'm going to drop name ticket
+
+196
+00:33:08.720 --> 00:33:13.640
+Jessica: and fair. Oh, actually, not the fair. I'm gonna drop name and ticket.
+
+197
+00:33:14.070 --> 00:33:24.039
+Jessica: and I am also dropping a sex female. Why? Well, because I have a sex male. So the 2 columns are complementary, and I don't need both of them.
+
+198
+00:33:24.050 --> 00:33:28.810
+Jessica: Okay, I only need one, because they contain a binary value, anyway.
+
+199
+00:33:29.670 --> 00:33:37.940
+Jessica: Alright. So at the end of it, at the end of our data cleaning. This is what our data frame looks like.
+
+200
+00:33:38.970 --> 00:33:56.629
+Jessica: Before we go on to logistic regression. I'm really getting into the feature engineering today. But I think it's a good exercise for you. I want to show you that sometimes zda can become quite useful okay into
+
+201
+00:33:57.924 --> 00:34:02.839
+Jessica: Deciding what columns are really the most important.
+
+202
+00:34:03.020 --> 00:34:13.489
+Jessica: So let's take a look at the column age. Okay, so here I have a density plot. Let me zoom out a little bit.
+
+203
+00:34:14.070 --> 00:34:27.480
+Jessica: a density plot of the age for surviving population and deceased population. So I have in teal the survived passengers, and in red the ones that have died.
+
+204
+00:34:27.969 --> 00:34:33.080
+Jessica: So what do we observe from this? Well, we observe
+
+205
+00:34:33.190 --> 00:34:47.560
+Jessica: that the age distribution? The 2 distributions are actually quite similar. However, the survived. One seemed to have a little bit of a different
+
+206
+00:34:48.380 --> 00:34:54.339
+Jessica: you know a little bit of a difference for passenger that were younger.
+
+207
+00:34:54.580 --> 00:35:00.489
+Jessica: so this graph could make you wonder. Well, should I create a new column
+
+208
+00:35:00.510 --> 00:35:07.949
+Jessica: that captures whether somebody was younger than 17 or 18 years old.
+
+209
+00:35:08.230 --> 00:35:12.130
+Jessica: right? Because there was clearly a big change.
+
+210
+00:35:12.180 --> 00:35:17.189
+Jessica: whether among the people that survived based on whether they were young or not.
+
+211
+00:35:18.220 --> 00:35:19.135
+Jessica: So
+
+212
+00:35:20.100 --> 00:35:32.389
+Jessica: I decide to go ahead and create this new column. Okay? And this is just based on Eda observation guys. But you will see that actually, this column becomes important when I want to make my prediction.
+
+213
+00:35:32.960 --> 00:35:36.730
+Jessica: So here I am creating. Another column is minor
+
+214
+00:35:36.790 --> 00:35:44.510
+Jessica: that has one. If age is less than 16 or 0 otherwise here I can actually.
+
+215
+00:35:44.660 --> 00:35:49.849
+Jessica: I think I can probably. Now 16 here seems like a good value.
+
+216
+00:35:50.440 --> 00:35:53.629
+Jessica: Yeah, maybe even 17. Let me change it.
+
+217
+00:35:54.300 --> 00:35:55.150
+Jessica: Okay.
+
+218
+00:35:55.590 --> 00:36:07.179
+Jessica: So I have this new column here. And now I now I'm ready for logistic regression. I don't think I want to do anything else with my data frame, so I can show you how logistic regression works.
+
+219
+00:36:07.800 --> 00:36:14.615
+Jessica: So I am going to show you also a
+
+220
+00:36:15.410 --> 00:36:23.914
+Jessica: technique to reduce the number of features in a data frame. Okay, so in a similar way. As for
+
+221
+00:36:24.410 --> 00:36:34.720
+Jessica: linear regression it's not always a good idea to just use all the variables that you have at your disposal to make the prediction. Okay.
+
+222
+00:36:34.890 --> 00:36:49.210
+Jessica: so here I will be using a technique that is called recursive feature, elimination, recursive feature, elimination.
+
+223
+00:36:49.570 --> 00:37:05.790
+Jessica: And what this technique does is that essentially based on the number of features that you want to use. Recursive feature. Elimination is gonna give you the top 3 or top 4 or top 5 features that you want that you should be using to make your prediction.
+
+224
+00:37:06.580 --> 00:37:19.000
+Jessica: So I am. Here at the top of this column. I am importing logistic regression from sk learn, and rfe, so recursive feature, elimination from the feature, selection, module.
+
+225
+00:37:19.830 --> 00:37:31.610
+Jessica: and I am defining my X and my y's. So x are going to be all the columns in my data frame, except for survived. And the
+
+226
+00:37:31.630 --> 00:37:38.079
+Jessica: column that I want to predict is going to be survived. I'll pause, because I think there is a comment in the chat.
+
+227
+00:37:41.850 --> 00:37:46.979
+Jessica: No, Rfe and Pca are not the same.
+
+228
+00:37:47.180 --> 00:37:52.717
+Jessica: So Pca is often used in association with
+
+229
+00:37:55.660 --> 00:38:01.580
+Jessica: unsupervised classification algorithm. So like Knn or K-means, I mean
+
+230
+00:38:01.630 --> 00:38:14.300
+Jessica: recursive feature, elimination and other techniques like. So there is like a family of them do work with supervised algorithm, and they can help you.
+
+231
+00:38:14.460 --> 00:38:17.830
+Jessica: They can help you reduce your number of features.
+
+232
+00:38:18.740 --> 00:38:21.069
+Jessica: But they are, they are different.
+
+233
+00:38:27.210 --> 00:38:44.289
+Jessica: So yeah, Pca is typically used with like unsupervised algorithms. And these like feature selections are used with supervised algorithms. So you can use Rfe with linear regression as well. Okay, you can use that together. So I'm gonna show you how to do this.
+
+234
+00:38:44.910 --> 00:38:51.009
+Jessica: So we define our X, and y's okay as normal.
+
+235
+00:38:51.310 --> 00:38:57.280
+Jessica: And then I do invoke logistic regression with default parameters
+
+236
+00:38:57.760 --> 00:39:02.369
+Jessica: and I assign logistic regression to a model.
+
+237
+00:39:02.790 --> 00:39:08.769
+Jessica: Next, before I do any training, I use
+
+238
+00:39:09.330 --> 00:39:14.210
+Jessica: recursive feature, elimination. So Rfe on my model.
+
+239
+00:39:14.490 --> 00:39:25.049
+Jessica: and as a parameter I pass the number of features that I want to select. So say, here you have 3, 6. You have 9 features.
+
+240
+00:39:25.220 --> 00:39:28.719
+Jessica: Here you can say, Well, choose the top 4.
+
+241
+00:39:28.760 --> 00:39:33.839
+Jessica: Okay. Don't matter. 3, 4, 5. This is a parameter you have to play with.
+
+242
+00:39:35.130 --> 00:39:40.600
+Jessica: Then next you fit your rfe to your data and
+
+243
+00:39:41.630 --> 00:39:46.810
+Jessica: what you can output is actually the features that are fe picked.
+
+244
+00:39:46.860 --> 00:40:08.279
+Jessica: So in this case it picked P class one P. Class 2, sex male and surprise. There is minor column that we created. Okay, so I don't know what column would have been picked if I did not create this column from scratch. But this is to show you that you know, like from some basic Eda.
+
+245
+00:40:08.530 --> 00:40:13.500
+Jessica: you might be able to create a column that your model actually considers important.
+
+246
+00:40:15.190 --> 00:40:19.069
+Jessica: So let's also take a look at how this
+
+247
+00:40:21.260 --> 00:40:25.500
+Jessica: features that were selected are correlated. Okay?
+
+248
+00:40:25.800 --> 00:40:29.379
+Jessica: So the correlation is looks pretty good.
+
+249
+00:40:29.740 --> 00:40:38.710
+Jessica: Okay? And now what I can do is use these only these 4 features
+
+250
+00:40:38.740 --> 00:40:46.210
+Jessica: to train my logistic regression algorithm. So what I'm doing here is basically
+
+251
+00:40:46.560 --> 00:41:01.059
+Jessica: repeat the process and actually train my logistic regression, using using only those features. So now my X is going to be only the selected features from recursive feature elimination.
+
+252
+00:41:01.090 --> 00:41:06.150
+Jessica: The Y is still the survived column.
+
+253
+00:41:06.470 --> 00:41:09.720
+Jessica: Next, I do my train test split. Okay?
+
+254
+00:41:09.860 --> 00:41:22.009
+Jessica: And next, I apply logistic regression, and I perform the training and the prediction on my training data and on my testing data as normal.
+
+255
+00:41:22.480 --> 00:41:23.680
+Jessica: And
+
+256
+00:41:24.570 --> 00:41:47.770
+Jessica: this is what we get. So we get an accuracy of like right off the bat, basically of 77%, which is a very good baseline model. Okay, we didn't do anything crazy. We didn't do any grid, search, any pipeline, anything like that. But this is this can be a really good baseline model, and that that you can definitely improve from here.
+
+257
+00:41:48.040 --> 00:41:52.639
+Jessica: And we can also look at the error for peace of mind. And
+
+258
+00:41:52.660 --> 00:42:12.989
+Jessica: we see that the error is pretty low, which is an indication that everything is working correctly. Okay, so this is just to show. Again, logistic regression is often used as a baseline model, very often in classification problems. So if you planning on doing classification for your
+
+259
+00:42:13.578 --> 00:42:15.730
+Jessica: Capstone project, you know.
+
+260
+00:42:15.740 --> 00:42:29.269
+Jessica: Probably start with a logistic regression baseline model, and then you can use more advanced classification models that we're going to be learning in the next week to sort of like. See if you can improve the accuracy of it.
+
+261
+00:42:29.910 --> 00:42:30.820
+Jessica: Okay?
+
+262
+00:42:31.600 --> 00:42:33.570
+Jessica: Any questions, comments?
+
+263
+00:42:39.930 --> 00:42:42.250
+Jessica: Yes, there is something in the chat.
+
+264
+00:42:45.200 --> 00:42:47.860
+Jessica: Oh, there was just something from before.
+
+265
+00:42:49.690 --> 00:43:11.449
+Jessica: and of course, as always, I will be sharing this material with you, so I do encourage you to, you know. Go back and experiment on your own. You can even like you know, since we have time. You know another thing that you can do is you know, change the number of features to select, you know. If you go to 6 features
+
+266
+00:43:13.350 --> 00:43:27.179
+Jessica: you can see that these are the ones that get selected, and then you can like reprint the results, and like, see if including more or less features, helps you out or not. So those are all things that you can. You can practice on your own.
+
+267
+00:43:27.970 --> 00:43:28.980
+Jessica: Yeah, sure.
+
+268
+00:43:28.980 --> 00:43:33.740
+shashi: This is Shashi. Yeah. Hi, Hi, I was just looking at the heat map.
+
+269
+00:43:33.810 --> 00:43:39.369
+shashi: So I think that it's that it's a good practice to see there is no colonarity.
+
+270
+00:43:39.440 --> 00:43:47.260
+shashi: Oh, if they're not strongly correlated, that's a good sign, I think. Right?
+
+271
+00:43:48.670 --> 00:43:56.649
+shashi: Yeah. Yeah. So that's again, you know, when you. You don't want to use your input fee. You don't want your input features to be.
+
+272
+00:43:56.680 --> 00:44:16.600
+Jessica: 2 correlated to each other to avoid overfitting. So this kind of shows you that. Okay, like, everything, is like, there is some correlation. But it's not crazy. So this also shows like how Rfe works. In that case, like it's not, it takes that into account like multi linearity, and tries to avoid that.
+
+273
+00:44:17.260 --> 00:44:23.169
+shashi: I mean, I wish I had known about Rfc. Last week, or when I was submitting the practical application, too. Because.
+
+274
+00:44:23.170 --> 00:44:24.400
+shashi: yeah, you're not using 15
+
+275
+00:44:24.400 --> 00:44:30.119
+shashi: features for building. It was fast, but still I was able to. I use that.
+
+276
+00:44:30.120 --> 00:44:38.219
+Jessica: Yeah, everything comes at at its own pace. But you can. You can definitely use Rfe with linear regression as well. So it's.
+
+277
+00:44:38.310 --> 00:44:43.980
+shashi: Yeah, that was the other question which you answered sometime back. Yeah, that that's a good thing to know. Yeah.
+
+278
+00:44:43.980 --> 00:44:54.019
+Jessica: And it's it's I don't think that Rfe is in the course, but I do like to put it in my office hours, because it's it's a fun tool to have when you don't know what to do so
+
+279
+00:44:55.655 --> 00:44:56.405
+Manish Goenka: One question,
+
+280
+00:44:56.780 --> 00:44:57.460
+Jessica: Hmm.
+
+281
+00:44:57.630 --> 00:45:09.899
+Manish Goenka: Like in linear regression. You've got lasso and bridge that help you put appropriate weights on different features. Similarly logistic. Here you've chosen 4 or 5 features by specifying.
+
+282
+00:45:10.120 --> 00:45:13.685
+Manish Goenka: Is there a similar thing like lasso and Richport logistic or.
+
+283
+00:45:14.010 --> 00:45:14.890
+Jessica: No.
+
+284
+00:45:14.890 --> 00:45:21.190
+Manish Goenka: No. So you always have to get to understand the data and choose the number of features that.
+
+285
+00:45:21.390 --> 00:45:23.356
+Jessica: Yeah, but you know, like,
+
+286
+00:45:23.900 --> 00:45:49.139
+Jessica: you can like resort to like recursive feature elimination, or the heat map here to the correlation to sort of like, decide also, like, I will never stress this enough. But knowing the topic of your data and knowing your data and knowing what you're trying to predict. It's going to help you pick the variables like common sense and knowledge.
+
+287
+00:45:49.481 --> 00:46:13.620
+Jessica: It's sometimes what makes like a good machine learning or a data, a good machine learning scientist or a data scientist like knowing. Oh, this feature might be related to this, because you know the topic, and which is why we also want you to pick your own capstone project. Because if you're familiar with the topic and you know the topic, and you're passionate about it. You're probably gonna do a good job
+
+288
+00:46:13.820 --> 00:46:26.459
+Jessica: right? Because if I were to tell you oh, do your capstone project on? I don't know cars, and you don't know anything about cars. It's going to be much harder for you. So that's why we want you to pick the Capstone project on topic on your own.
+
+289
+00:46:27.100 --> 00:46:28.009
+Manish Goenka: Got it. Thank you.
+
+290
+00:46:28.010 --> 00:46:28.600
+Jessica: Yeah.
+
+291
+00:46:31.970 --> 00:46:33.440
+Jessica: anything else?
+
+292
+00:46:35.714 --> 00:46:45.779
+Jessica: Yeah. So while you guys think if you have any last minute comments or not, just a reminder to book your one on one consultations. Okay? If none of the Times work.
+
+293
+00:46:45.830 --> 00:47:00.940
+Jessica: send a message to your learning facilitator, we can, for sure, accommodate an alternative time. But really, really book your one on one before the holiday break, so that you know you can start working on your capstone project as soon as possible.
+
+294
+00:47:01.620 --> 00:47:12.779
+Jessica: I mean, you can start working on it anyways. But talking to us is going to give you some peace of mind that you're on the right track. So. That's that's why I'm i i always trying to remind you of that.
+
+295
+00:47:13.680 --> 00:47:17.499
+shashi: Yeah, yeah, I had my session. So
+
+296
+00:47:17.530 --> 00:47:20.550
+shashi: it was good. I had the session with money, so he's.
+
+297
+00:47:20.550 --> 00:47:21.880
+Jessica: Good, absolutely good. That's right.
+
+298
+00:47:21.880 --> 00:47:22.800
+Jessica: Good, good.
+
+299
+00:47:22.800 --> 00:47:27.317
+shashi: Started acquiring the data for that. It's I. I have to decide between
+
+300
+00:47:27.680 --> 00:47:35.380
+shashi: predicting yield for agriculture, a field crop, or a vegetable or disease. Detection in plants.
+
+301
+00:47:35.600 --> 00:47:36.120
+Jessica: Yeah.
+
+302
+00:47:36.120 --> 00:47:41.809
+shashi: I started working on that. So I'll be having a eda session, probably another
+
+303
+00:47:41.950 --> 00:47:46.190
+shashi: 2, 3 weeks, or just after the Christmas, or something like that. So.
+
+304
+00:47:46.190 --> 00:47:48.744
+Jessica: Yeah. And I mean, it's really like,
+
+305
+00:47:49.390 --> 00:47:52.489
+Jessica: typically, we don't even take up to 30 min like
+
+306
+00:47:52.830 --> 00:48:01.810
+Jessica: fif, 1015 min. And we're done so. It's not a big time commitment but it's it can really like help you out, especially at the beginning. So.
+
+307
+00:48:03.090 --> 00:48:06.380
+shashi: Yeah, I mean he he gave. He gave me some good tips on
+
+308
+00:48:06.880 --> 00:48:12.049
+shashi: doing the eda what kind of things to look for, and things which was quite helpful, so
+
+309
+00:48:12.320 --> 00:48:16.609
+shashi: probably we will meet another 2, 3 weeks to explore it further.
+
+310
+00:48:16.830 --> 00:48:20.210
+Jessica: Yeah, there is definitely a second capstone consultation that comes.
+
+311
+00:48:20.210 --> 00:48:20.660
+shashi: Yeah.
+
+312
+00:48:20.660 --> 00:48:37.100
+Jessica: After module 20. So you know we do follow you along along the way. So you're not alone on in this, but you have to come. You have to book the consultation first, st so we cannot do it for you. So if you do that, then we we can help you, you know.
+
+313
+00:48:37.320 --> 00:48:39.240
+Jessica: Okay, all right.
+
+314
+00:48:39.400 --> 00:48:56.989
+Jessica: I guess there is no more questions on logistic regression. So I'll let you go for today. I will be sharing the material as always. And I hope you guys found this useful good luck with Module 13, and I will see you in a couple of weeks bye, and have a good rest of your day and weekend.
+
+315
+00:48:57.260 --> 00:48:58.069
+shashi: Thank you.
+
