@@ -1,0 +1,1526 @@
+WEBVTT
+
+1
+00:00:22.020 --> 00:00:25.511
+Mani K: Hello, Matt! Looks like you're the only one on the call so far.
+
+2
+00:00:25.780 --> 00:00:26.629
+Matt Lee: Oh, yeah.
+
+3
+00:00:26.630 --> 00:00:27.440
+Mani K: Good evening.
+
+4
+00:00:27.690 --> 00:00:35.202
+Mani K: Yeah, yeah, it's a part session. Yeah. Thanks for joining in. I know it's not the usual time.
+
+5
+00:00:35.992 --> 00:00:39.379
+Mani K: I've been traveling quite a lot in the last couple of months.
+
+6
+00:00:39.850 --> 00:00:44.668
+Mani K: and I think that's the reason why we've been having meetings in the evening
+
+7
+00:00:45.090 --> 00:00:46.769
+Mani K: fit with my schedule. So
+
+8
+00:00:48.090 --> 00:00:53.473
+Mani K: going to be like that for another couple of weeks before I move back to the Us.
+
+9
+00:00:54.600 --> 00:01:03.309
+Mani K: anyway. So we can. I mean, I have a I have a certain agenda, but I think since you're there, I mean we we can also talk
+
+10
+00:01:04.033 --> 00:01:15.389
+Mani K: if you have any specific topics to discuss? Since it's a more office hours. So we can also do that before I dive into some of the things that I wanted to bring up during this session.
+
+11
+00:01:16.910 --> 00:01:22.790
+Matt Lee: Oh, yeah, I do have one question in particular for the Arima function.
+
+12
+00:01:23.750 --> 00:01:28.579
+Matt Lee: I'm not clear on how we decide. You know the AR range, and then
+
+13
+00:01:29.010 --> 00:01:30.160
+Matt Lee: MA.
+
+14
+00:01:30.450 --> 00:01:30.870
+Mani K: Yeah.
+
+15
+00:01:30.870 --> 00:01:36.629
+Matt Lee: And then like, what are this? What is the significance like? What? How do you interpret? You know the selections that you put into that function.
+
+16
+00:01:37.210 --> 00:01:48.800
+Mani K: Okay. Yeah, hold on to that. Because I'm I'm gonna go into that. That was some of the things that I wanted to discuss during this office hour. Okay, alright cool. So I guess, like, we have
+
+17
+00:01:49.400 --> 00:01:52.889
+Mani K: 2 more people in. So I think we will get started. Okay, alright.
+
+18
+00:01:55.160 --> 00:01:56.620
+Mani K: I'm gonna share. My.
+
+19
+00:01:56.880 --> 00:01:59.610
+Mani K: hey? We rajesh
+
+20
+00:01:59.860 --> 00:02:00.819
+Mani K: good to meet you.
+
+21
+00:02:02.050 --> 00:02:02.950
+Mani K: Oh.
+
+22
+00:02:08.729 --> 00:02:10.020
+Mani K: I think while
+
+23
+00:02:11.120 --> 00:02:14.429
+Mani K: I'm getting started. I think it's also
+
+24
+00:02:16.985 --> 00:02:28.719
+Mani K: time to. I don't know if you guys have started thinking about your projects and stuff maybe I think it's about time to also get into that and start scheduling some sessions with
+
+25
+00:02:29.040 --> 00:02:32.530
+Mani K: the learning facilitators to discuss some of these things. Okay,
+
+26
+00:02:33.290 --> 00:02:34.680
+Mani K: they might have.
+
+27
+00:02:35.010 --> 00:02:38.410
+Mani K: I'm not sure if the a calendar link was shared
+
+28
+00:02:38.710 --> 00:02:40.023
+Mani K: with everybody.
+
+29
+00:02:40.750 --> 00:02:48.439
+Mani K: of of all the learning facilitators. So you can have some one on one sessions. I think you have 2, 1 on one sessions that you can have with the learning facilitators.
+
+30
+00:02:50.400 --> 00:02:55.020
+Mani K: Alright, we'll get started. So I think this. Yeah, go ahead.
+
+31
+00:02:55.778 --> 00:02:59.530
+Ravi Duvvuri: So the the assignment right are the application
+
+32
+00:02:59.935 --> 00:03:06.879
+Ravi Duvvuri: the project we submitted. Right? So you will be doing an initial review. and then we will
+
+33
+00:03:07.500 --> 00:03:09.129
+Ravi Duvvuri: go to the next one.
+
+34
+00:03:09.660 --> 00:03:11.059
+Ravi Duvvuri: In couple of weeks.
+
+35
+00:03:11.829 --> 00:03:33.549
+Mani K: Yeah. So we will. Yeah, let's just get an alignment on that like, like, what you're working on. It's going to be like, and then and then you can proceed with it. So that's the thing. I think evaluations are done by the sections, learning facilitators for all the projects so but till the time the learning facilitators are aligned with your project, I think we should be good.
+
+36
+00:03:34.170 --> 00:03:38.349
+Ravi Duvvuri: Okay. And and you, you are my section facilitator. So I'm just.
+
+37
+00:03:38.350 --> 00:03:41.619
+Mani K: Yeah, yeah, exactly. So, so that's yeah. So
+
+38
+00:03:41.630 --> 00:03:50.006
+Mani K: that's why I'm just bringing it up. I think this is for everybody. Whoever is your learning facilitator. If you are part of that section, just get in touch with them. And
+
+39
+00:03:50.760 --> 00:03:54.750
+Ravi Duvvuri: Okay. So you would be doing it in in Co. In couple of weeks, or in Co.
+
+40
+00:03:54.750 --> 00:04:05.119
+Mani K: Right? Right? I I believe there will be some I think Rachel will probably sending some links on how to schedule one on one sessions with us, I think. Yeah.
+
+41
+00:04:05.680 --> 00:04:08.849
+Mani K: see, we were just setting it up this week. Okay, cool.
+
+42
+00:04:09.690 --> 00:04:10.113
+Mani K: Alright
+
+43
+00:04:10.960 --> 00:04:15.460
+Matt Lee: Manny have a real quick question about the content. So are we, gonna
+
+44
+00:04:15.550 --> 00:04:18.810
+Matt Lee: can we get pictures as raw data
+
+45
+00:04:19.393 --> 00:04:24.059
+Matt Lee: as data sets. And then, like, are we gonna learn how to basically, like.
+
+46
+00:04:24.310 --> 00:04:32.789
+Matt Lee: you know, decode a picture from raw data? Or do we need to have a database made up of, you know, actual, you know, measurements like we saw in like the tulips. Example.
+
+47
+00:04:32.800 --> 00:04:34.030
+Matt Lee: I think it was
+
+48
+00:04:34.510 --> 00:04:36.010
+Matt Lee: so yeah, can we use
+
+49
+00:04:36.110 --> 00:04:39.140
+Matt Lee: pictures as inputs. Or do we need to have like
+
+50
+00:04:39.190 --> 00:04:41.110
+Matt Lee: a database with like measurements.
+
+51
+00:04:41.650 --> 00:04:48.780
+Mani K: No, no, you can have pictures as inputs. You can process the pictures I mean, just use like a really
+
+52
+00:04:49.500 --> 00:04:50.950
+Mani K: What should I say, like a
+
+53
+00:04:51.520 --> 00:04:55.689
+Mani K: small size picture, like, I think the dimensions of the image can be.
+
+54
+00:04:56.897 --> 00:05:18.910
+Mani K: we can play a big part in how large. Your computer is going to be like. So that's the thing. So till the time you have a data set that has pictures in the right size, or you can even resize it. Actually, I think a lot of times people go for 2, 56 by 2, 56, or even 1, 28, 1, 28. So you can go even smaller actually depends depends on what is the thing that you're trying to do with pictures.
+
+55
+00:05:20.500 --> 00:05:29.119
+Matt Lee: Okay, I see. Is there maybe, like a general guideline, for how many megabytes each picture should be, or pixels.
+
+56
+00:05:29.403 --> 00:05:54.390
+Mani K: I think the does. So that's what I'm saying. Like it. It's it depends what you're trying. If if it's just like general detection of things. I think you can go to a really low resolution. You can even go to 1 2828, 1 28 by 1 28, which is like like few Kilobytes in size. Okay, so you can even go to that like, it's like thumbnails is pretty much and that would also do the trick or if you're going for
+
+57
+00:05:54.390 --> 00:06:08.949
+Mani K: specific thing, if you're just generally classifying, that's more than enough. If you're looking for like object detection like within an image, and things like that. You might want to go a little bit higher in size. So maybe 5, 12 by 5 12 things like that. So that's the thing
+
+58
+00:06:09.610 --> 00:06:17.899
+Mani K: yeah. So it basically depends on what you are trying to do with the image and and how much details you need in the image for doing that particular job.
+
+59
+00:06:19.740 --> 00:06:20.690
+Matt Lee: Okay. Thanks.
+
+60
+00:06:20.690 --> 00:06:22.329
+Mani K: You got that? Yeah.
+
+61
+00:06:22.360 --> 00:06:33.999
+Mani K: yeah, if it's a general classification, hey? This is a this is a cat dog thing, kind of thing. I think you don't need like very, very high resolution images those are. Those can be done with some simple things
+
+62
+00:06:35.400 --> 00:06:36.240
+Mani K: worked
+
+63
+00:06:36.751 --> 00:06:46.588
+Mani K: cool. So again today. I just wanted to go. Time series in general, I think. I think I saw a lot of questions regarding
+
+64
+00:06:47.856 --> 00:07:13.173
+Mani K: I guess the Arima, or seasonal, Arima, and things like that. So I'll just give a brief overview of that and highlight some key things around there. I'm not going to go in depth. I don't have access to my notebook on this computer today. So but I I thought, I'll just walk my way through a gaggle. Example. Just for this. And then I also
+
+65
+00:07:13.983 --> 00:07:19.356
+Mani K: there are also other models out there for doing time series. So which also
+
+66
+00:07:20.000 --> 00:07:37.209
+Mani K: which has been quite popular. I don't. I don't think Facebook is it's Meta right now. They used to have something called profit. I don't think it's heavily maintained right now, but I think it's still being used quite a lot. So you can also take a look at that. So I just gave some links for that.
+
+67
+00:07:39.380 --> 00:07:50.569
+Mani K: Again, I'll start with some beginnings some basic stuff before I move into some some heavy stuff. Okay, so the time series, I think we're talking about 3 things right? Like there is.
+
+68
+00:07:51.918 --> 00:08:02.399
+Mani K: you have data in some data occurring in some time series fashion like in a in a in some frequency. It could be days, minutes.
+
+69
+00:08:02.812 --> 00:08:08.070
+Mani K: months, years, things like that. It can be anything you're trying to understand the 3 things which
+
+70
+00:08:08.260 --> 00:08:23.589
+Mani K: try to decipher time series with one is generally identifying the trend especially with Co. With Covid, like we've we've we've learned a lot about moving averages like we've always seen 7 7 day moving average 14 day moving averages with covid stuff
+
+71
+00:08:24.121 --> 00:08:28.338
+Mani K: seasonality is another thing. You know whether something repeats
+
+72
+00:08:29.760 --> 00:08:40.769
+Mani K: every quarter once a year or like every 6 months. Things like that seasonality can be done time series can also be
+
+73
+00:08:42.057 --> 00:09:07.610
+Mani K: unpredictive, because there could be a lot of nonlinear components to it. Now, the thing with the time series forecasting is, I think, this is something that you have to keep in mind, like we are just like trying to use like previous values, to try to see if try to forecast like future values. So that's that's the idea behind time series, right? Like we're taking like past values to to see like, what can we do based on that to predict future ones?
+
+74
+00:09:07.710 --> 00:09:12.203
+Mani K: Now, with this comes a lot of carriers like
+
+75
+00:09:14.390 --> 00:09:18.850
+Mani K: you cannot. I mean, a lot of external factors are not
+
+76
+00:09:19.423 --> 00:09:35.169
+Mani K: factored in in these modeling, like, for example, socioeconomic things, any events that are happening outside things like that, like, I think you can't explain. Maybe some of the nonlinearity can be explained based on that.
+
+77
+00:09:35.180 --> 00:09:44.670
+Mani K: But still some of these things cannot be explained just by everything. Okay? So that so we don't count those things into it. So that's why, like, I think
+
+78
+00:09:44.700 --> 00:09:49.714
+Mani K: with time series. I think the the level of confidence is always like
+
+79
+00:09:50.600 --> 00:09:53.629
+Mani K: quite large, like, in terms of the variation.
+
+80
+00:09:53.969 --> 00:09:58.319
+Mani K: Just to keep that in mind. So it depends how you're planning to use this
+
+81
+00:09:58.720 --> 00:10:16.510
+Mani K: short term forecasting is okay. Long term forecasting with time series is probably not a very advisable thing. So that's that's something to keep in mind. When you're when you're doing like time series forecasting like something. I don't know if the data is coming on a daily basis. Maybe we can do like
+
+82
+00:10:17.410 --> 00:10:32.652
+Mani K: couple of months or one quarter forecast. Not more than that. If if data is coming in on a hourly interval. Then you can probably do it for a few days. So things like that so based on the interval of the frequency try to
+
+83
+00:10:33.610 --> 00:10:49.658
+Mani K: set expectations accordingly, how much you can actually do some forecasting. So that's the thing. Don't do it like on a hourly thing like one year out forecast and things like that. It's not going to work most of the time. Let's just keep that in mind.
+
+84
+00:10:51.200 --> 00:10:51.775
+Mani K: so
+
+85
+00:10:52.450 --> 00:11:14.377
+Mani K: to identify trends like, usually like, this is a starting point. Everybody uses moving averages. I mean, I don't have to go through in depth about this. But we're just using past values it can be a simple, moving, average, exponential weighted. Again, it depends on like, what is the how we are using the previous values in the
+
+86
+00:11:15.260 --> 00:11:21.889
+Mani K: or or the previous values in the fall, in your series and in your time series, right? Like simple can be like, whatever the number of
+
+87
+00:11:23.032 --> 00:11:40.190
+Mani K: values that you want to see exponential is again like it assigns an exponential weightage in terms of like the immediate one is given a higher weightage, and and it goes beyond that weight weighted is actually like you're assigning some specific weights to actually.
+
+88
+00:11:40.370 --> 00:12:02.894
+Mani K: So, all of these are available as functions within within pandas itself. So you can also do some simple moving average curves to just so I understand, like trend lines. Okay, so that's the thing moving beyond moving averages is the next one which is like trying to fit like some complex polynomial functions. Okay?
+
+89
+00:12:03.270 --> 00:12:26.608
+Mani K: so that one is pretty straightforward. You are just trying to see like, okay, if there is a if there is a time series plot like you are just trying to fit a polynomial function. It can be a second order, 3rd order, 4th order, polynomial. You can try to fit any any polynomial, and and you can use that to make some predictions, too. But this one might work if you're
+
+90
+00:12:27.760 --> 00:12:28.650
+Mani K: -Oh!
+
+91
+00:12:29.540 --> 00:12:31.830
+Mani K: If your time series plot is like.
+
+92
+00:12:31.880 --> 00:12:33.400
+Mani K: kind of
+
+93
+00:12:36.060 --> 00:12:53.220
+Mani K: What should I say? Like, it's kind of like has a certain pattern. That kind of repeats, and things like that. Maybe you can go with get away with polynomial, I think. Beyond this comes the the Arima models right where, like we want. We learn about like auto regression.
+
+94
+00:12:53.260 --> 00:12:59.989
+Mani K: And then, like, we try to use the lags and figure out like, what else can we do into that thing.
+
+95
+00:13:00.434 --> 00:13:03.195
+Mani K: So what is auto regression, I think.
+
+96
+00:13:04.163 --> 00:13:08.816
+Mani K: if you have a time series plot, if you do a lag plot which is like
+
+97
+00:13:09.990 --> 00:13:11.453
+Mani K: let's say like
+
+98
+00:13:13.770 --> 00:13:18.709
+Mani K: if you have y and y y of t and y of t minus one, if you do
+
+99
+00:13:19.568 --> 00:13:25.419
+Mani K: a scatterplot of that and fit a straight line through it. That's an auto regression of with a lag of one.
+
+100
+00:13:25.520 --> 00:13:52.449
+Mani K: Okay, so that's a lag plot, and you can fit a straight line through it so you can have like lag plots with time difference of 2, 3, 4 things like that. And then you are trying to see if this can be used to do the time series forecasting. So basically, what the the term Arima stands for is it's auto regressive, integrated, moving average. So basically, what you're trying to do here is like you're
+
+101
+00:13:52.450 --> 00:14:08.579
+Mani K: trying to take the auto regression and then doing a moving average of the auto regression. So integrated moving average of the auto regression. So that's what Arima stands for. And you can. There are a couple of things around here.
+
+102
+00:14:09.020 --> 00:14:17.350
+Mani K: so there is the auto regressive, integrated, moving average, which is Arima, or you can also have a seasonal component added to it separately, which is called
+
+103
+00:14:17.440 --> 00:14:27.150
+Mani K: srima, or seasonal Arima so that's also quite both are both are heavily used in time series forecasting.
+
+104
+00:14:27.250 --> 00:14:41.929
+Mani K: So what are some of the important parameters inside this, Arima? Right? Like, I think that's the key thing here. So you've already. We've already learned, like, what are all the 2 things that are happening here? There is auto regression. And then there is the moving average component of it. Okay.
+
+105
+00:14:43.170 --> 00:14:48.130
+Mani K: there are primarily 3 parameters, the the Pdq
+
+106
+00:14:48.850 --> 00:14:54.355
+Mani K: the 1st one is the order of the auto regression. So this is like.
+
+107
+00:14:55.670 --> 00:15:08.359
+Mani K: what is the number of lags that we want to look at like? For example, I showed in the previous product, like with the lag of one with the lag of 2 like should have. Should we be using this lag of 3 or things like that? So that's the order of the auto regression.
+
+108
+00:15:08.480 --> 00:15:21.255
+Mani K: So this is something that we need to determine, based on the data that we have. So that's 1 thing the second one is like the the degree of differencing. So what is degree of differencing? So it's basically like,
+
+109
+00:15:21.960 --> 00:15:51.589
+Mani K: you have a data point at T, and then you have a data point at T minus one. And if you are just like doing a degree of differencing of one, which means that you're just subtracting this value to the other, and you're taking that value. So that's the degree of differencing. So you can have degree of referencing one. You can also have degree of differencing 0 degree of differencing. 2 means like, you are actually subtracting one and then also 2. So you, that's the so basically, you're trying to normalize here, think of this as normalizing. Okay.
+
+110
+00:15:51.928 --> 00:16:14.871
+Mani K: and then the 3rd component is the order of the moving average itself. So here we are talking about but since this is auto regression, right? Like we are talking about the lags. So here we are doing the the moving average of the errors itself. So that's what it is. And here, like, we are trying to understand, like how many errors we need to look
+
+111
+00:16:15.849 --> 00:16:22.830
+Mani K: in the in the for the model to be integrated. So that's the order of the moving average. So there are 3 things.
+
+112
+00:16:23.000 --> 00:16:31.240
+Mani K: If you are using the seasonal component. You can also have the length of the seasonal component like. For example, if if it's a monthly
+
+113
+00:16:32.850 --> 00:16:50.680
+Mani K: if if the seasonal cycle is monthly you can have S equal to 12, or if it's yearly S equal to one, things like that, you can have a seasonal component to it. So that's the s, okay, so 4 components, primarily 3, most of the time you'll be looking at if you're just using. Rm, okay.
+
+114
+00:16:53.271 --> 00:17:05.090
+Mani K: I think this is just explaining what the auto regression the order of the auto Regression does. Again, it's just like looking at the previous values. And we're trying to figure out like, what is the right order to use.
+
+115
+00:17:05.150 --> 00:17:21.806
+Mani K: And we'll be using something called the auto correlation function to determine like, what is the right P to do? So we will write P. Or write P to actually use for our modeling. Okay? Based on the data. Okay, so this is the other thing.
+
+116
+00:17:22.740 --> 00:17:40.539
+Mani K: degree of differencing. I just talked about it just like I have it in some text format. You can read through it. But it's the same thing. Basically, if the degree of differencing is one, you are just looking at the previous value, and you are subtracting it. And that becomes the value to be used for the simulation. Okay.
+
+117
+00:17:42.010 --> 00:18:03.649
+Mani K: so when do you go for higher degree of differencing? So this is where, like you'll have to see how your Time series plot looks like if you have like a very exponential curve or a strong quadratic curve trend, and things like that, then you can go for higher order. Differencing.
+
+118
+00:18:03.770 --> 00:18:20.010
+Mani K: I would suggest, like, start with a differencing of 0 in most cases, in fact, not even go to degree of differencing one unless, like you see something specific in your time series plot. So these are. These are something to to keep in mind in terms of the degree of differencing.
+
+119
+00:18:20.760 --> 00:18:33.490
+Mani K: and then the order of the moving average. So this one is the the the forecasted errors, like we are looking at the errors itself, and how many errors to use in our moving average? Okay, so that is the thing.
+
+120
+00:18:33.984 --> 00:18:53.750
+Mani K: So if if Q equal to one. We'll be just using one error. one lag error in our model. So that's all that's all it is. And for this like, we'll be using something called the partial autocorrelation function to determine what is the right queue to use in our model, is it? That's the thing.
+
+121
+00:18:53.780 --> 00:19:03.060
+Mani K: So this is what Arima is all about. Okay? So you're trying to, based on the time series data that you have. You're trying to determine, like, what is the
+
+122
+00:19:03.769 --> 00:19:16.651
+Mani K: what is the PQ. And d values that you want to use in the function and based on that like, you can run some simulations and figure out like if that fits to your
+
+123
+00:19:17.847 --> 00:19:28.122
+Mani K: if that that gives a better fit or not, or if you or you can actually play with the parameters to determine, like, what is the right thing to do here. Okay, so so basically, that's what
+
+124
+00:19:28.742 --> 00:19:37.829
+Mani K: that's what you do in in Arima. Okay, I'll just pause here. If there are any questions we can just briefly talk about it before I move forward. Actually.
+
+125
+00:19:37.990 --> 00:19:41.546
+Ravi Duvvuri: You know. Money. I I have some generic question like,
+
+126
+00:19:41.910 --> 00:19:50.950
+Ravi Duvvuri: we we do this one on the residue item, right? Like what is residues there. So we apply Arima there
+
+127
+00:19:51.330 --> 00:19:54.799
+Ravi Duvvuri: and and and then, if we know.
+
+128
+00:19:55.310 --> 00:20:00.949
+Ravi Duvvuri: we need to determine if it is a stationary or not right, the data set the residue data.
+
+129
+00:20:01.580 --> 00:20:06.145
+Ravi Duvvuri: I I think I was a little confused like in the videos, I watched.
+
+130
+00:20:06.770 --> 00:20:10.409
+Ravi Duvvuri: when the residue value is like fluctuating right like
+
+131
+00:20:10.830 --> 00:20:16.539
+Ravi Duvvuri: I, I thought, it's not stationary, but I think looks like that is a stationary. So
+
+132
+00:20:17.207 --> 00:20:27.670
+Ravi Duvvuri: you know, do you have any perspective that they're like, is is it stationary like when it is moving? Because my understanding is the stationary means it comes to 0 at some point.
+
+133
+00:20:29.340 --> 00:20:33.449
+Ravi Duvvuri: but I think in the videos, the the explanation is, if it is
+
+134
+00:20:34.040 --> 00:20:39.679
+Ravi Duvvuri: fluctuating and go not going anywhere. I think that's that's the definition of stationary, I think?
+
+135
+00:20:39.900 --> 00:20:41.570
+Ravi Duvvuri: Can you touch upon that.
+
+136
+00:20:41.570 --> 00:21:08.396
+Mani K: If it is, if it is fluctuating around the same value around the same area, like, I think it's the band right like, is it generally increasing, or generally so? That's why I said that trend is also important than the fluctuations to actually so, if there is just general fluctuations. Then you then you can say that it's it's around stationary. If if the trend is also moving up or down, then you can't say that it's actually like,
+
+137
+00:21:08.998 --> 00:21:12.339
+Mani K: you, you can't say that it's stationary. Okay, so that's the thing
+
+138
+00:21:12.687 --> 00:21:25.700
+Mani K: so always look at from both perspectives like, if it is just general fluctuations, or also the trend is also up or down, or stay, you know, so that those are a couple of things to keep in mind.
+
+139
+00:21:26.012 --> 00:21:48.640
+Mani K: Vivian. So you have a question regarding why would you use the equal to 0 is in the point to make the data set stationary. So again, it, it totally depends on again. The data set here. Okay, so a lot of times, like, you can run predictions. You can run a model with D equal to 0 and see like how it works for you. Okay, so that that's what I'm saying you. If
+
+140
+00:21:49.560 --> 00:21:50.470
+Mani K: you'd
+
+141
+00:21:51.440 --> 00:22:17.949
+Mani K: It's like, it's like a baseline kind of a thing. Okay? So you don't want to go to D equal to one or 2 or higher order thing. To begin with, I think you play with the basic I think the default, which is like d equal to 0, which is no differencing because you're already doing the other things, which is like the lag and the other parameters are still being used. Okay? So you are still using the lag component, the moving average component. This is
+
+142
+00:22:17.950 --> 00:22:33.760
+Mani K: just the the differential component, which is about normalizing things. Okay, so think of, think of differencing as normalizing. So whether you want to normalize your data is what differencing is all about. Okay? So that's the reason why I'm saying, like.
+
+143
+00:22:33.870 --> 00:22:34.950
+Mani K: Yeah, go ahead.
+
+144
+00:22:34.950 --> 00:22:42.880
+Vivian : So if you're if if you know, your data is already stationary, like, you don't really have to do d equals 0, you could
+
+145
+00:22:43.550 --> 00:22:44.600
+Vivian : do.
+
+146
+00:22:45.340 --> 00:22:49.640
+Vivian : I mean? Then you can just go ahead and not like skip the step.
+
+147
+00:22:49.790 --> 00:22:52.089
+Vivian : because if it's already stationary, then.
+
+148
+00:22:52.090 --> 00:22:52.670
+Mani K: Right.
+
+149
+00:22:53.040 --> 00:22:53.600
+Vivian : I'm a need.
+
+150
+00:22:53.600 --> 00:23:09.062
+Mani K: Again. At the same time, I wouldn't recommend going to very high d values. Okay? So that's the thing. So for d values, there's not like very good pointers in terms of how to how to set the right. D, there are a few functions that can help you there. But,
+
+151
+00:23:09.761 --> 00:23:24.548
+Mani K: that's why I said, like, start with the 0. Or if you want comfortable, you can go with 1, 2, actually. But no, not more. I wouldn't recommend anything more than 2 to start with, I think, before you try to understand, like how your model is performing
+
+152
+00:23:26.430 --> 00:23:41.541
+Mani K: again, a lot of this thing is all about tuning. So you need to understand, like, where how the model performs starting from before making any incremental changes. Okay? So that's yeah. So
+
+153
+00:23:42.735 --> 00:23:50.970
+Mani K: the starting with the equal to one is also fine. But I think I I would still suggest, like, in most cases, I think you can still go with the equality
+
+154
+00:23:51.390 --> 00:23:52.469
+Mani K: to begin with.
+
+155
+00:23:55.380 --> 00:23:56.070
+Mani K: Alright.
+
+156
+00:23:57.870 --> 00:23:59.549
+Mani K: any other questions?
+
+157
+00:24:01.910 --> 00:24:02.760
+Mani K: Oh.
+
+158
+00:24:04.860 --> 00:24:05.659
+Mani K: okay.
+
+159
+00:24:07.420 --> 00:24:15.200
+Mani K: okay. So I already mentioned, like, what is the things to? What are the things to do?
+
+160
+00:24:15.620 --> 00:24:22.637
+Mani K: to determine like the right P and Q value? So the the 1st one is actually
+
+161
+00:24:23.150 --> 00:24:27.857
+Mani K: for for determining the PI think we use. We use the
+
+162
+00:24:28.975 --> 00:24:36.262
+Mani K: partial acf and again, we are trying to look for the place where
+
+163
+00:24:37.950 --> 00:24:55.390
+Mani K: the the parameter sharply cuts off. Okay? So so that's 1 thing. And then for the queue, we'll be using the autocorrelation function. So what is the difference between acf and p acf, I think, that's something important to understand to actually.
+
+164
+00:24:55.390 --> 00:25:09.777
+Mani K: So the acf measures the correlation between a time series and all of its lag, like, for example, T minus one t, minus 2 t, minus 3 things like that. So you're measuring all of them. And then you are trying to figure out like, what is the right
+
+165
+00:25:11.930 --> 00:25:30.110
+Mani K: right queue that determines the where like, there is some kind of significance attached to the the autocorrelation function itself. So that's the thing. So this is where, like we, we are using the acf to determine the queue.
+
+166
+00:25:30.170 --> 00:25:49.630
+Mani K: the partial auto auto correlation. What it does is like it. It removes all the intermediate lags that are actually having an effect on the other lags, like, for example, like, let's say, if we have t minus one t minus 2 t, minus 3 t, minus 4 like this given example
+
+167
+00:25:50.038 --> 00:26:19.519
+Mani K: for the auto correlation function. All 4 of these lags will be part of the acf right. But for the Pacf like maybe t minus 2, and t minus 4 might be the only one that might be having a correlation on the T, so we might remove the TT minus one and T minus 3 things like that. So it basically isolates only the direct relationship and its lag in it, and it removes all the intermediate ones.
+
+168
+00:26:20.048 --> 00:26:23.361
+Mani K: And with this, like, we try to identify the
+
+169
+00:26:25.144 --> 00:26:28.049
+Mani K: we try to identify the P. Okay, so that's the thing.
+
+170
+00:26:30.620 --> 00:26:31.870
+Mani K: think I have a.
+
+171
+00:26:33.930 --> 00:26:49.236
+Mani K: So so with these 2 things, I think we can take a look at one of the examples that I shared in the link. I think it will be a lot more clearer in terms of how these things work. And what is the parameter that we look to? To fine tune, or
+
+172
+00:26:49.540 --> 00:26:52.549
+Mani K: to to fine tune our model. Okay, so that's the thing.
+
+173
+00:26:53.390 --> 00:26:57.975
+Mani K: Let me just go into my notebook, and then we can. We can jump into it. And then,
+
+174
+00:26:58.580 --> 00:27:00.309
+Mani K: pretty straightforward. Actually.
+
+175
+00:27:00.757 --> 00:27:02.892
+Mani K: I think the concepts of
+
+176
+00:27:04.003 --> 00:27:13.556
+Mani K: auto regression is just simple. It's just like the lags and the moving average. And the errors associated with that. It's just a little bit hard to,
+
+177
+00:27:14.110 --> 00:27:24.970
+Mani K: I think visualize sometimes. But I think once you get once you start using it little bit, I think you'll get comfortable around here. Okay, so that's it. So right?
+
+178
+00:27:25.570 --> 00:27:29.668
+Mani K: So here, I mean, this is a pretty decent notebook I've I've
+
+179
+00:27:31.500 --> 00:27:42.718
+Mani K: that's available on Kaggle. It explains most of the things that I've already mentioned. Like explains what the Pdq. And how in what way
+
+180
+00:27:43.850 --> 00:27:54.909
+Mani K: you know like, how are we determining the Pdq, and in terms of how we are, we will be using that in the models to actually just it really explains it in a pretty decent way.
+
+181
+00:27:55.344 --> 00:28:03.375
+Mani K: So let's look into the data set itself, like, here, there is a data set that we have like it just has.
+
+182
+00:28:04.594 --> 00:28:15.170
+Mani K: the the data is coming on a monthly basis, and we have some value. Think of it. This as like order numbers, or something like that that we have on a monthly basis. Okay.
+
+183
+00:28:15.607 --> 00:28:23.529
+Mani K: so here, in this particular example, this user is using this Adf function which is
+
+184
+00:28:24.009 --> 00:28:27.222
+Mani K: to determine like, what is the right
+
+185
+00:28:28.400 --> 00:28:29.310
+Mani K: Oh.
+
+186
+00:28:31.790 --> 00:28:37.880
+Mani K: the difference to use to actually, okay. So that's that's what they are doing here in this particular example.
+
+187
+00:28:41.480 --> 00:28:42.989
+Mani K: me just go into the
+
+188
+00:28:43.580 --> 00:28:44.380
+Mani K: okay
+
+189
+00:28:44.560 --> 00:28:51.519
+Mani K: and then and then the next thing that we are doing here is like pro plotting the acf and the Pacf plots.
+
+190
+00:28:53.980 --> 00:29:01.979
+Mani K: so if you look at here the the lag component and
+
+191
+00:29:02.451 --> 00:29:06.470
+Mani K: let's go to the auto order of the function here.
+
+192
+00:29:07.020 --> 00:29:21.216
+Mani K: So here, like, so this is the Pacf plot. Okay? So so you can see that like beyond the lag of one. I think there's this the the blue bar. Here is the
+
+193
+00:29:23.100 --> 00:29:38.083
+Mani K: the kind of the lag cut off thing. So here based on this, I think in this particular example he is using a lag of one, because after that it significantly drops, and then everything is below that. So here,
+
+194
+00:29:39.285 --> 00:29:47.559
+Mani K: you can see that like this is probably one. And then after that, like, everything is below. So so that's why he's using a lag of one.
+
+195
+00:29:54.430 --> 00:30:02.716
+Mani K: What are the blue bands calculated in the plot? A/C function? So the blue bands are. Think of that as like
+
+196
+00:30:05.620 --> 00:30:09.365
+Mani K: like a confidence plot like like
+
+197
+00:30:11.170 --> 00:30:24.479
+Mani K: beyond, like the thing is, how? What? How much is the lag contributing to the the different lags are contributing to the the current time series at T like at T equal to 0.
+
+198
+00:30:24.530 --> 00:30:35.401
+Mani K: So so we are doing an auto regression of TT minus 1, 2, 3 all the different lag, right? So how much of the
+
+199
+00:30:38.400 --> 00:31:01.570
+Mani K: How much of the different lags are actually truly contributing to your T is, what is we are getting from the blue band. So the blue bands, when it is like really low and dropping off. You're determining that those lags are not contributing. So anything beyond that, or anything outside of that band are the ones that are actually like correlating to the
+
+200
+00:31:01.961 --> 00:31:14.478
+Mani K: to the actually, T equal to 0 value. Okay, so that's that's what you're trying to determine from the Pacf plot with the blue bands. Okay? So anything that is
+
+201
+00:31:15.758 --> 00:31:21.970
+Mani K: inside of that is is not contributing. It's outside of that is what is contributing.
+
+202
+00:31:25.410 --> 00:31:32.650
+Mani K: So the same holds good for both of them. So here in this example, we do the same thing for
+
+203
+00:31:32.990 --> 00:31:35.820
+Mani K: the order queue
+
+204
+00:31:37.360 --> 00:31:47.719
+Mani K: So which is the which is the moving average thing. So here, like he's fixing the qs, 2.
+
+205
+00:31:47.760 --> 00:31:49.910
+Mani K: So here it's a little
+
+206
+00:31:51.100 --> 00:31:58.117
+Mani K: again. This plot is not very clear. I think I would. I think he's looking at like the lags for a very
+
+207
+00:31:59.228 --> 00:32:08.149
+Mani K: huge set of values. But I think we can do a better job of that and and try to understand like, how he can get the queue equal to 2. Okay.
+
+208
+00:32:10.680 --> 00:32:22.615
+Mani K: And then, once this is done, I think all you have to do is this one, okay, so here, like, so this is the model he's calling. And then these are the Pdq parameters he's passing. Okay? So
+
+209
+00:32:23.280 --> 00:32:34.590
+Mani K: he is one D is differencing one. And on the queue go to 2, and based on that, like, you are trying to fit the model. So he's here. He is using the stats model Arima.
+
+210
+00:32:34.690 --> 00:32:47.997
+Mani K: And and it gives you the this. The results of this particular model with the the data that you have. Okay. So here we are looking for this particular aic number, which is kind of like
+
+211
+00:32:48.598 --> 00:33:05.531
+Mani K: your loss function, if you want to think of think of it in that way. I think that would be the right thing to put it so, Aic would be a loss function. And you're trying to minimize this as much as possible. But at the same time you are also trying to see like how this would
+
+212
+00:33:07.460 --> 00:33:14.764
+Mani K: this would work in terms of the the actual predictions itself like, so you can also do
+
+213
+00:33:15.490 --> 00:33:16.500
+Mani K: the
+
+214
+00:33:16.875 --> 00:33:42.849
+Mani K: the plot of the prediction for the current data itself, like, you can just like like whatever data set that you took you can fit it with the model, and then try to see like how the predictions work. So this is on the same time series plot, like, okay? So so you have data from I don't know. So he has, like data of 200 time series values. And you're trying to predict on top of that.
+
+215
+00:33:42.850 --> 00:33:50.659
+Mani K: So usually, you'll have a pretty standard fit around this like. If you are using the right
+
+216
+00:33:51.439 --> 00:34:12.730
+Mani K: parameters. Okay, but the thing comes when, like, you don't want to use your entire data set for your time series forecasting right? Like. So you probably want to do something like this, where, like you've used the 1st part of the data set, and then the second part of the data set is where, like, you're trying to use for the predictions. And then.
+
+217
+00:34:13.045 --> 00:34:20.484
+Mani K: you are trying to compare that with the actual. Okay? So that's so that's what this particular notebook is doing. And you're trying to play with these
+
+218
+00:34:21.583 --> 00:34:24.409
+Mani K: number. So he's trying to change the
+
+219
+00:34:24.510 --> 00:34:29.774
+Mani K: I don't Pdq values to see if if we can. Set a better
+
+220
+00:34:33.107 --> 00:34:40.120
+Mani K: find a lower aic value like, for example, to begin with, I think he started with an aic of one.
+
+221
+00:34:40.260 --> 00:34:42.460
+Mani K: 2, 1, i think, at that. Perfect.
+
+222
+00:34:42.790 --> 00:34:58.770
+Mani K: I think it was 2, 2, 1, 1, i think, which had a value of around 8 40, and he's trying to play around with this and think after some time, I think the 3, 2, 1, i think, with 3, 2, 1, i think he gets to about 245.
+
+223
+00:34:58.800 --> 00:35:00.375
+Mani K: So you can also
+
+224
+00:35:01.040 --> 00:35:08.378
+Mani K: So so you're now you are trying to find you on this right? So you can also write a function around it. I mean, to find
+
+225
+00:35:09.880 --> 00:35:15.395
+Mani K: the values of Pdq that can give you the lower aic function. Yeah,
+
+226
+00:35:16.210 --> 00:35:42.249
+Mani K: I can. I think I have another notebook, my different computer. So I can share. I'll share it later the function to do that. So you can also determine what could be the set of Pdq. That can give you the lowest eic values. And I think you can also use that to. And then you can use that as a a placeholder to begin your analysis of the time series forecasting. So that's that's what it is. Okay.
+
+227
+00:35:42.360 --> 00:35:44.346
+Mani K: So in
+
+228
+00:35:48.180 --> 00:35:59.359
+Mani K: In short, right? I think the the main thing is determining these parameters. And then using that in the in the Arima or the seasonal Arima function, where whatever you're using.
+
+229
+00:35:59.930 --> 00:36:05.950
+Mani K: and and from that like trying to fine tune this.
+
+230
+00:36:07.360 --> 00:36:08.110
+Mani K: Why
+
+231
+00:36:08.220 --> 00:36:09.340
+Mani K: is that clear?
+
+232
+00:36:10.620 --> 00:36:16.683
+Mani K: I I mean, there's there's a lot of things around here. I think it's just like once you start playing around. I think that sets when
+
+233
+00:36:17.400 --> 00:36:42.559
+Mani K: I think you'll get the hang of it. Okay? And then he got. He also talks about like the accuracy metrics. I'm not going to get into that right now. I think the key thing here is to understanding the the lag component, the auto regression component and then trying to see like how you can get the the right Pdq values for fitting the model. Okay? So that would be the starting point, and I think you can move
+
+234
+00:36:42.730 --> 00:36:49.510
+Mani K: once you get comfortable with that like, then then the fine tuning part can come later, and then and then we can talk about the metrics component.
+
+235
+00:36:52.255 --> 00:36:53.620
+Mani K: Is that good.
+
+236
+00:36:57.270 --> 00:36:58.000
+Ravi Duvvuri: It's.
+
+237
+00:36:58.000 --> 00:37:07.330
+Mani K: I'll I'll I'll share another notebook of mine. I think I I just don't have access to it right now. Because of my travel, but I think it, it has a little bit better
+
+238
+00:37:09.120 --> 00:37:12.692
+Mani K: functions in terms of how we do the
+
+239
+00:37:13.570 --> 00:37:15.809
+Mani K: how are we? Fine tune the Pdq, yeah.
+
+240
+00:37:26.930 --> 00:37:27.600
+Mani K: fine.
+
+241
+00:37:32.650 --> 00:37:33.503
+Mani K: I have
+
+242
+00:37:45.970 --> 00:37:49.030
+Mani K: so to compare the models you would look at. Asc.
+
+243
+00:37:50.606 --> 00:37:58.010
+Mani K: yeah. So yeah, so that would be the thing that I would look at the aic and Bic instead of the Msc, value. Yeah.
+
+244
+00:37:58.660 --> 00:38:00.509
+Mani K: for a remote yeah, yeah.
+
+245
+00:38:00.740 --> 00:38:17.067
+Mani K: So yeah, definitely, I mean, the others will also point you in the right direction. But I I think you need to have one primary loss function always. Okay. You can't have like multiple loss functions you like, let's say, like you have
+
+246
+00:38:17.749 --> 00:38:31.180
+Mani K: an aic of 200 or 2 50 with different parameters. Then you can start to look at the other other things. But your primary thing would be to 1st fine tune one of them at least. Okay, so that's it.
+
+247
+00:38:31.180 --> 00:38:46.013
+Mani K: It's the same thing in the regression, too. Right? Like we. We always try to to look to fine tune the loss or the cost function primarily, and then you work with other parameters, if you have, like, similar
+
+248
+00:38:46.970 --> 00:38:53.529
+Mani K: similar loss functions or cost functions with different parameters, then you can look at
+
+249
+00:38:53.950 --> 00:38:55.319
+Mani K: some of the other metrics.
+
+250
+00:38:56.800 --> 00:39:02.559
+Mani K: but I think you should always focus on at least fine tuning one, to begin with, before you move on to the
+
+251
+00:39:03.054 --> 00:39:08.745
+Mani K: and the other thing is to make sure that, like you are when you are for
+
+252
+00:39:09.190 --> 00:39:38.049
+Mani K: with time series, you need to split it, split the data. And you need to make sure you need to understand how the actuals versus you don't want to fit the entire data with with your you don't want to fit your entire data for the Time series forecasting, which is something a lot of people do without without understanding like. How good it's going to forecast in the future. Okay, so a lot of times they just fit the entire data set because
+
+253
+00:39:38.160 --> 00:39:50.230
+Mani K: sometimes that's all you have. So you may want to. You just want to make sure that you avoid that part. And and if if and if you think that there is a seasonal component to it.
+
+254
+00:39:50.608 --> 00:39:57.781
+Mani K: Make sure that, like, you have the entire seasonal component to it, like, maybe if your seasonal component repeats every
+
+255
+00:39:59.700 --> 00:40:18.359
+Mani K: like only once a year, I think. Make sure that at least you have like 2 years of data, or something like that, or one and a half years of data right like this, I think you need to have some repeat of the seasonal component to actually because those things could could play a factor into like, how we are forecasting is going to work.
+
+256
+00:40:18.360 --> 00:40:32.207
+Mani K: So things like, I, I think that's why, like, just doing some basic trend analysis. There is also one function, I think. Let me see if I can find that out. There is a function that can also split out.
+
+257
+00:40:33.690 --> 00:40:41.690
+Mani K: the different components. Let me see, I I probably that notebook. I might have it in my computer. Give me 1 min
+
+258
+00:40:42.060 --> 00:40:43.269
+Mani K: much show that.
+
+259
+00:40:45.530 --> 00:40:47.282
+Mani K: So you can actually,
+
+260
+00:40:56.710 --> 00:41:00.040
+Mani K: okay, let me share my screen quickly.
+
+261
+00:41:00.640 --> 00:41:02.320
+Ravi Duvvuri: Are you referring to train
+
+262
+00:41:02.360 --> 00:41:04.180
+Ravi Duvvuri: test, split from?
+
+263
+00:41:04.590 --> 00:41:05.319
+Ravi Duvvuri: Should learn.
+
+264
+00:41:06.209 --> 00:41:27.189
+Mani K: Not trained to split. This is not about like randomly doing the train to split like, basically. If you have a a time series plot a time series data of like like, let's say, 3 years, maybe use 2, 2 and a half years worth of data and use the last 6 months worth of data for doing forecasting. Okay, so that's what I'm trying to say.
+
+265
+00:41:27.220 --> 00:41:30.500
+Mani K: So here you are not doing randomly 80 20 things and all.
+
+266
+00:41:30.500 --> 00:41:31.430
+Ravi Duvvuri: Okay. Okay.
+
+267
+00:41:31.430 --> 00:41:41.110
+Mani K: You're just trying to make sure that like don't use all of the data, which is something like a lot of people do. And then they try to predict whatever is in the future. Okay? Which for which you don't even have data on right
+
+268
+00:41:41.715 --> 00:41:45.115
+Mani K: which is which is something that I've seen
+
+269
+00:41:46.130 --> 00:41:47.559
+Mani K: teams doing. Okay?
+
+270
+00:41:49.380 --> 00:41:50.025
+Mani K: So
+
+271
+00:41:50.810 --> 00:41:58.080
+Mani K: I think you can also do something like this. Where, like, if you have a time series data, you can. Actually.
+
+272
+00:41:59.680 --> 00:42:09.239
+Mani K: there is a a seasonal decompose function. That's part of stats model which can basically give you like,
+
+273
+00:42:10.220 --> 00:42:25.100
+Mani K: the the second plot gives you the trend line based on the time series plot you have. And then the 3rd plot gives you the the seasonal component of it. Okay, although you don't ident, you can't see that in the actual time Series plot.
+
+274
+00:42:25.110 --> 00:42:39.439
+Mani K: But this is how your seasonal thing shows up. Okay, so it can actually spit out the seasonal component from your time series plot. And this will this kind of helps you to understand how the seasonality is working in your data.
+
+275
+00:42:39.510 --> 00:42:40.670
+Mani K: Okay? So that's the thing.
+
+276
+00:42:41.130 --> 00:42:45.430
+Mani K: So basically, you're trying to decompose the seasonal component from your time series data.
+
+277
+00:42:46.900 --> 00:42:49.819
+Mani K: So so you can see that like
+
+278
+00:42:52.170 --> 00:42:58.455
+Mani K: like this. This part keeps on repeating, okay, it's very hard to find this part. If you just look at
+
+279
+00:42:58.830 --> 00:43:11.469
+Mani K: if you just look at this data, right? So that's the thing. So it's trying to decompose that. And and this would help you identify. Oh, this is how my on a yearly basis. My seasonality repeats, okay?
+
+280
+00:43:14.407 --> 00:43:19.760
+Mani K: So it's called seasonal decompose. So this is something that you can also look into it.
+
+281
+00:43:21.650 --> 00:43:22.300
+Mani K: That's good.
+
+282
+00:43:22.300 --> 00:43:40.029
+Zhujun Wang: So yes. So so basically, once, I have a like training data. And once I run the seasonal decompose. And if I found like like a 3rd diagram. There's a clear pattern in. In such case I can use the S. Arima instead of Arima.
+
+283
+00:43:40.030 --> 00:43:48.090
+Mani K: You can use. Exactly. Exactly. So you can use the seasonal Arema. And you can say, what would be the time period for your seasonal. Okay? So that's the thing.
+
+284
+00:43:49.260 --> 00:43:50.170
+Zhujun Wang: Gotcha.
+
+285
+00:43:50.170 --> 00:43:56.589
+Mani K: Exactly. Yeah. So that's the thing. So so some, yeah, some of these things can help you understand what is the right model.
+
+286
+00:43:58.620 --> 00:43:59.433
+Zhujun Wang: Okay. Thanks.
+
+287
+00:44:04.070 --> 00:44:04.820
+Mani K: One thing
+
+288
+00:44:06.980 --> 00:44:09.239
+Mani K: just trying to understand. If
+
+289
+00:44:10.160 --> 00:44:15.060
+Mani K: actually, this might, this notebook might have the function to do that, I think, okay.
+
+290
+00:44:17.070 --> 00:44:18.870
+Mani K: make you have the annotation
+
+291
+00:44:23.580 --> 00:44:24.280
+Mani K: cool?
+
+292
+00:44:25.296 --> 00:44:26.763
+Mani K: Yeah. So here, like,
+
+293
+00:44:27.595 --> 00:44:35.840
+Mani K: so here there is. I'm using the seasonal rmr, to actually like, write a function. And I think this is what it does is
+
+294
+00:44:38.030 --> 00:44:39.800
+Mani K: it's trying to
+
+295
+00:44:40.840 --> 00:45:00.858
+Mani K: for various Pdq values along with the seasonality here. It's calculating the aic, and you can determine, like, what is the right aic to use based on just looking at these numbers. So I'm just like it doing. And it's just an iteration. It's not trying to find the lowest number. It's just like I'm trying to play with the different. So I'm I'm just saying like,
+
+296
+00:45:01.405 --> 00:45:12.810
+Mani K: for a range of 0 between 0 and 2 for the Pdq just find all the Aic number. So I can just browse through it and figure out like, what is the right aic what is the right? Pdq to use?
+
+297
+00:45:13.310 --> 00:45:14.270
+Mani K: So that's okay.
+
+298
+00:45:14.520 --> 00:45:19.499
+Mani K: So you can do something like this to help begin with in your analysis.
+
+299
+00:45:21.030 --> 00:45:22.659
+Mani K: Do you get the point? Yeah.
+
+300
+00:45:24.116 --> 00:45:25.484
+Mani K: Instead of doing
+
+301
+00:45:26.060 --> 00:45:33.684
+Mani K: like one at a time, one at a time kind of a thing. So you can just do a function that can determine like, what would be your right
+
+302
+00:45:37.690 --> 00:45:49.599
+Zhujun Wang: May I know? How do you select a range of Pdq. Because, as is the example, is ranges from 0 to 2. And were you based on the the previous diagram? And then.
+
+303
+00:45:49.600 --> 00:45:50.150
+Mani K: Yeah, those.
+
+304
+00:45:50.150 --> 00:45:51.880
+Zhujun Wang: You continue on the range.
+
+305
+00:45:51.880 --> 00:46:09.489
+Mani K: Yeah, exactly. So those are based on the previous diagram. So so you still use the acf, pacf, and things like that. But from that like you can, you can always start from 0. And whatever that value it's they're giving you. And then you can determine what is the right set of values to use.
+
+306
+00:46:11.740 --> 00:46:13.290
+Zhujun Wang: Okay. Yep.
+
+307
+00:46:17.680 --> 00:46:21.980
+Mani K: Oh, can you share the link to this? Yeah, I'll I'll share it definitely.
+
+308
+00:46:23.509 --> 00:46:36.439
+Mani K: I I need to put this in in some some Google drive, and then I'll share it. I'll I'll definitely add it to the the slide deck link itself. And then once the slide deck gets posted you would have access to this notebook as well.
+
+309
+00:46:38.390 --> 00:46:53.719
+Mani K: Alright, are there anything else? I think that's that's pretty much. Mostly I wanted to cover for this office hour. So we have another 10 min left. We can talk any other topics especially around projects and stuff definitely or or
+
+310
+00:46:55.090 --> 00:46:59.468
+Mani K: Oh, actually, I have one more topic I wanted to discuss. So there is
+
+311
+00:47:00.230 --> 00:47:02.970
+Mani K: similar to time series.
+
+312
+00:47:08.480 --> 00:47:20.330
+Mani K: Oh, how how about AR and M. So that's what you're trying to do with the Pdq. Right? Like the the p is the AR the q is the ma in the Arima. Okay?
+
+313
+00:47:20.450 --> 00:47:27.589
+Mani K: So if you look at the functions, the parameters of the Arima, it's basically 3 things which is Pdq.
+
+314
+00:47:28.074 --> 00:47:37.149
+Mani K: the P. Is the move p is the auto regression order, and then the Q is the moving average order.
+
+315
+00:47:37.970 --> 00:47:41.780
+Mani K: So the within the within the Arima function.
+
+316
+00:47:43.701 --> 00:47:53.659
+Zhujun Wang: May. May I ask a follow up question? So so for this example, how do you choose the Ops thresholds that 2 is like not not a 3 or 4
+
+317
+00:47:54.555 --> 00:47:57.670
+Zhujun Wang: for the for the Pd. Pdq. Range.
+
+318
+00:47:58.540 --> 00:48:02.669
+Mani K: That's why. So that's what you use the Acq and the Pacq for.
+
+319
+00:48:02.830 --> 00:48:09.484
+Mani K: Okay? So the Acq. let me go to the other notebook
+
+320
+00:48:12.320 --> 00:48:13.820
+Mani K: So when you
+
+321
+00:48:15.090 --> 00:48:18.589
+Mani K: when you do the Acq and the Pacq plot
+
+322
+00:48:19.100 --> 00:48:22.940
+Mani K: remember, I talked I mentioned about the bands
+
+323
+00:48:24.312 --> 00:48:26.028
+Mani K: the blue bands
+
+324
+00:48:27.245 --> 00:48:32.639
+Mani K: which determine like, what is the right order to select? Actually.
+
+325
+00:48:34.480 --> 00:48:36.369
+Mani K: I think it's the
+
+326
+00:48:37.490 --> 00:48:39.079
+Mani K: let me just go up again.
+
+327
+00:48:48.110 --> 00:49:17.690
+Mani K: Yeah. So so here like in this particular thing I although the plot is not very clear, let me I'll share my notebook in a little bit, the not the one that I just showed, but the other one. I think there, it'll be a little bit more clear in terms of identifying the queue, and the p values based on the the acf and pacf, but but what you're trying to do here is like you're plotting the Pacf and the acf plots.
+
+328
+00:49:17.710 --> 00:49:47.710
+Mani K: and then looking at the bands to identify what would be the right P. And Q values to begin with, and you use that in the in the function that I use to calculate the aic with with starting from 0. Okay? Like, for example, if my Q was 2 from here, and my P. Was also 2 from here. so that will. That would be the starting point for me. So I'll start from everything between 0 and 2, and start to iterate and and look for all the aic values.
+
+329
+00:49:47.750 --> 00:49:48.410
+Mani K: Good.
+
+330
+00:49:49.020 --> 00:49:49.800
+Zhujun Wang: Gotcha.
+
+331
+00:49:50.160 --> 00:49:50.880
+Zhujun Wang: Yep.
+
+332
+00:49:55.620 --> 00:49:56.380
+Mani K: the
+
+333
+00:49:59.310 --> 00:50:16.801
+Mani K: if you look at it like all of them is primarily related to regression. Only, okay. So every like, if you start seeing on the I mean it, although it's it's like the time series lags and stuff. The essential component is regression. Only. Okay?
+
+334
+00:50:20.060 --> 00:50:29.660
+Mani K: yeah. AR, is the number of lag? Exactly. It's the order of the lag. So how many, how many lags you want to use from the autoregressive function.
+
+335
+00:50:31.431 --> 00:50:36.507
+Mani K: So a similar use of the regression is also called as
+
+336
+00:50:40.770 --> 00:50:49.609
+Mani K: I'll I have did. Did you guys talk about anova regression in any of the classes before. So far
+
+337
+00:50:49.980 --> 00:50:53.810
+Mani K: I haven't. I haven't revisited any of the of all the
+
+338
+00:50:54.227 --> 00:50:57.500
+Mani K: videos. But I think. Have you guys talked about Anova yet?
+
+339
+00:50:59.040 --> 00:51:00.420
+Mani K: I know what regression.
+
+340
+00:51:02.242 --> 00:51:04.239
+Ravi Duvvuri: Not not heard about it actually.
+
+341
+00:51:04.240 --> 00:51:11.108
+Mani K: Okay, alright? So basically, that's another use case for regression. So basically there, what you do is like,
+
+342
+00:51:11.690 --> 00:51:15.139
+Mani K: you are regressing with categorical variables
+
+343
+00:51:16.219 --> 00:51:20.202
+Mani K: so usually like we do regressions with
+
+344
+00:51:22.860 --> 00:51:28.569
+Mani K: with numerical variables. Right? Like. So the other use case of that would be,
+
+345
+00:51:30.100 --> 00:51:31.740
+Mani K: yeah, there's sometimes the disk.
+
+346
+00:51:33.610 --> 00:51:35.620
+Mani K: So AR is negative.
+
+347
+00:51:35.670 --> 00:51:37.230
+Mani K: Yeah. So
+
+348
+00:51:38.450 --> 00:51:41.889
+Mani K: okay, let me address 1st Matt's point
+
+349
+00:51:42.730 --> 00:51:43.595
+Mani K: so
+
+350
+00:51:48.140 --> 00:52:11.444
+Mani K: you can have decimal values in auto regression. Okay? So the lag, it's just a time series. I mean, a lag is just like a a time series lag right? Like you can have like what? So let's say, like, your lag is like, if your time series is data is coming on on a monthly basis you can have a value of
+
+351
+00:52:12.130 --> 00:52:24.904
+Mani K: 1.5 means, which is just like, 45 days a month and a half. Right? So you can have like decimal values in auto regression, because it totally depends on
+
+352
+00:52:25.650 --> 00:52:43.326
+Mani K: the frequency, and whether the frequency can be divided into decimals, so that that part so in terms of the negative usually it is represented in the negative right? Like you are looking at past values to do auto regression. Okay, so it's TT minus one
+
+353
+00:52:43.840 --> 00:52:56.727
+Mani K: But sometimes you can also represent it as Tt, plus 1, 2, actually, okay, so it depends on how you actually represent the data usually you can associate it with.
+
+354
+00:52:58.752 --> 00:53:02.877
+Mani K: it doesn't matter whether it's positive or negative, I think
+
+355
+00:53:03.410 --> 00:53:15.899
+Mani K: like, till the time, like you're consistent with the usage in. In most of these use cases, you will see like a t of plus one like a positive, although it is looking at the previous value. Okay, so that's what it is.
+
+356
+00:53:15.910 --> 00:53:16.730
+Mani K: So
+
+357
+00:53:19.260 --> 00:53:34.372
+Mani K: so that that's my explanation around that. So you can have decimal values. But most of the time the usage is going to be positive. Okay, so you will be looking at maybe some functions might write it in in an opposite way
+
+358
+00:53:35.040 --> 00:53:39.569
+Mani K: but but as far as stats model is concerned, I've always seen like the lag being
+
+359
+00:53:39.909 --> 00:53:49.801
+Mani K: in in the positive number, although it is looking at the previous value. So if a lag of one means like it's it's it's looking at the previous one
+
+360
+00:53:50.590 --> 00:53:51.750
+Mani K: a data point.
+
+361
+00:53:58.680 --> 00:53:59.400
+Mani K: Bye.
+
+362
+00:53:59.820 --> 00:54:00.595
+Mani K: okay,
+
+363
+00:54:01.970 --> 00:54:02.660
+Mani K: okay.
+
+364
+00:54:05.060 --> 00:54:15.459
+Mani K: right? So so the the last thing I wanted to mention was, I think, on the regression itself. There are other use cases. You can look into it. It's called anova regression.
+
+365
+00:54:15.530 --> 00:54:17.075
+Mani K: It's the same
+
+366
+00:54:18.102 --> 00:54:26.879
+Mani K: similar concept to regression is just like you are. You are using categorical variables. You can do one hot end code and then do a regression around it.
+
+367
+00:54:27.320 --> 00:54:31.769
+Mani K: Where will this be used? Is like, if you are trying to
+
+368
+00:54:32.990 --> 00:54:34.610
+Mani K: do some
+
+369
+00:54:38.740 --> 00:55:02.299
+Mani K: if we're trying to select the like, let's say like, the classic example is like, if you're doing an SEO search, and like, what is the best keyword to use, and things like that. You can determine, like, based on the an over regression. What would be the set of keywords to use and things like that. So that's the thing. That's just one example. So you're trying to determine, like what? What?
+
+370
+00:55:02.300 --> 00:55:12.500
+Mani K: What combination, or what specific things can be better for a certain simulation. And in that use cases like you can do like an over regression.
+
+371
+00:55:12.500 --> 00:55:29.619
+Mani K: Okay, so or you can try to check like, if you have 3 brands of coffee, what is the best coffee or things like that? You can do an over ignition. So things like that like you can do those are the use cases for which, like, you will be doing an over ignition.
+
+372
+00:55:30.542 --> 00:55:37.267
+Mani K: I can give some examples of that as well, I don't know if we are covering that in in in any of the
+
+373
+00:55:38.490 --> 00:55:41.435
+Mani K: any of the classes. I'll look into it. But
+
+374
+00:55:42.287 --> 00:56:00.219
+Mani K: it's just an extension of regression the same way. How time series forecasting, especially around arima is also just using the regression component of it to. It's in the same way like you can also use it for a nova.
+
+375
+00:56:02.120 --> 00:56:05.231
+Mani K: Right I'll pause here, so
+
+376
+00:56:06.300 --> 00:56:22.039
+Mani K: I will. I think after the class, I'll I'll I'll add my! I'll add some of the notebooks that I briefly showed in the presentation in the during the call to the Powerpoint presentation. And
+
+377
+00:56:23.320 --> 00:56:25.661
+Mani K: and you can also.
+
+378
+00:56:27.970 --> 00:56:49.110
+Mani K: I'll also add one more notebook. I think that would take a little bit of time once I travel back I'll I'll I'll be able to access that. And and in that, like I think there'll be a little bit more clarity around like how to select the the p and the Q values properly. So I'll definitely share those 2 notebooks shortly as well, okay.
+
+379
+00:56:52.610 --> 00:56:55.910
+Mani K: pretty much it. Any any questions, any final thoughts.
+
+380
+00:57:04.930 --> 00:57:20.249
+Mani K: Right? If there aren't any, then let's call it a day. And and if you guys have questions related to the project feel free to reach out to me on that as well. So I think we should get started on that soon. So
+
+381
+00:57:20.380 --> 00:57:27.910
+Mani K: letting everyone know about it, and then we'll we'll talk soon again on a different topic. Okay, in about a few weeks. Yeah, thanks. Bye.
+

@@ -1,0 +1,1582 @@
+WEBVTT
+
+1
+00:00:06.140 --> 00:00:06.730
+Well, you can.
+
+2
+00:00:06.730 --> 00:00:11.069
+Viviana Márquez: Hi, everyone. Good afternoon. So let's just give it a couple of minutes
+
+3
+00:00:11.290 --> 00:00:16.250
+Viviana Márquez: for people to join the call, and then we'll get started. Thank you for being here.
+
+4
+00:00:16.590 --> 00:00:17.860
+Viviana Márquez: Da-da.
+
+5
+00:00:17.940 --> 00:00:21.649
+Viviana Márquez: and you may lose the other way, but we can't cry.
+
+6
+00:00:21.770 --> 00:00:22.800
+Viviana Márquez: What does that
+
+7
+00:00:23.220 --> 00:00:25.119
+Viviana Márquez: through your time? I'm based on
+
+8
+00:00:25.590 --> 00:00:28.640
+Viviana Márquez: my dear brother away in the army's day, in the night.
+
+9
+00:00:29.040 --> 00:00:29.979
+Viviana Márquez: staying alive.
+
+10
+00:00:30.140 --> 00:00:33.320
+Viviana Márquez: There was any breaking, and everybody should be staying alive.
+
+11
+00:00:33.600 --> 00:00:34.440
+Viviana Márquez: Stay in the line.
+
+12
+00:00:36.580 --> 00:00:39.119
+Viviana Márquez: staying alive, staying alive.
+
+13
+00:00:41.200 --> 00:00:42.670
+Viviana Márquez: I'm staying alive
+
+14
+00:00:56.000 --> 00:01:01.199
+Viviana Márquez: for those of you just joining the call. We'll get started in a few minutes.
+
+15
+00:01:01.690 --> 00:01:05.250
+Viviana Márquez: just like one more minute. We're just doing it
+
+16
+00:01:05.349 --> 00:01:10.300
+Viviana Márquez: a chance to join the call, and then we'll get started.
+
+17
+00:01:10.370 --> 00:01:11.440
+Viviana Márquez: one that's
+
+18
+00:01:11.740 --> 00:01:13.940
+Viviana Márquez: real time to make a mess.
+
+19
+00:01:14.300 --> 00:01:23.990
+Viviana Márquez: and as I see more people coming in, we're just giving it a few more seconds now for people to join the call, and then we'll get started
+
+20
+00:01:24.290 --> 00:01:27.790
+Viviana Márquez: happy. Thursday. Everyone.
+
+21
+00:01:44.720 --> 00:01:49.190
+Viviana Márquez: I'm going nowhere. Somebody help me.
+
+22
+00:01:49.210 --> 00:01:50.970
+Viviana Márquez: somebody.
+
+23
+00:01:56.330 --> 00:02:03.130
+Viviana Márquez: I'm going nowhere, somebody.
+
+24
+00:02:06.800 --> 00:02:09.130
+Viviana Márquez: You'll never be on you
+
+25
+00:02:10.199 --> 00:02:11.170
+Viviana Márquez: no time
+
+26
+00:02:12.160 --> 00:02:13.710
+Viviana Márquez: using love.
+
+27
+00:02:15.750 --> 00:02:16.860
+Viviana Márquez: I was born
+
+28
+00:02:19.180 --> 00:02:33.629
+Viviana Márquez: alright, so it's been a couple of minutes. So let's get started welcome to module 10 module on time series, analysis and forecasting so without further ado, let's
+
+29
+00:02:33.780 --> 00:02:57.149
+Viviana Márquez: get started. So this is the agenda for today. I have a little bit of housekeeping to do, just to tell you what is coming up. What are some things that you should keep an eye out for, etc. Then, as usual, I have a list for the required activities for Module 10. So you kind of have, like a checklist to go through those.
+
+30
+00:02:57.654 --> 00:03:10.199
+Viviana Márquez: Then we will do a content review. I brought some code for you today to have as an example, answer questions. And that's what we have for today. So
+
+31
+00:03:10.550 --> 00:03:37.750
+Viviana Márquez: as part of the housekeeping, Europe and North America should be on the same time zone. Now that being said, if, for example, you're a learner in in what is this Arizona, or in a different country? Or you're just looking at the calendar like the email notifications about the office hours.
+
+32
+00:03:37.750 --> 00:04:02.699
+Viviana Márquez: Keep in mind that the Utc time changed. So it seems like the office hours switched. But it's just the Utc time. The office hours are at the same time, anyway, just to make the message short check canvas to make sure that you have the most up to date information about when the office hours are just because depending on where you are. If you're
+
+33
+00:04:02.700 --> 00:04:23.750
+Viviana Márquez: joining us from a different country, or from Arizona, or from this part in Canada the time might be a little bit different for you. So just just keep that in mind. The following thing that I wanted to talk about is what's coming next? We have a few interesting things coming up in the next weeks.
+
+34
+00:04:24.269 --> 00:04:28.760
+Viviana Márquez: So this week is module. 10 time series. Analysis.
+
+35
+00:04:28.780 --> 00:04:45.871
+Viviana Márquez: then next week is module 11. So in Module 11, you don't really get new content, like new material to learn, you have to work on your second practical application, so very, very similar to the 1st practical application.
+
+36
+00:04:46.510 --> 00:04:54.940
+Viviana Márquez: the difference is that instead of just doing an exploratory data analysis, you're going to have to do a Regression project.
+
+37
+00:04:54.940 --> 00:05:19.449
+Viviana Márquez: So you'll get all the instructions next week. Once that module 11 is released. Of course you can ask questions during office hours. If you have any questions about practical application. Number 2. But you have all the knowledge now that you need to be able to do that practical application. So you should be good to go, and the good news is that what you do in the practical application should resemble
+
+38
+00:05:19.450 --> 00:05:26.829
+Viviana Márquez: what you are supposed to be doing for the Capstone project. So if you were wondering like, Oh, what do I have to do for the Capstone project?
+
+39
+00:05:26.830 --> 00:05:50.679
+Viviana Márquez: It's pretty much the same thing as a practical application. The only thing that is going to change is that instead of us giving you a data set like we're doing with the practical applications, you pick your own data set, but the amount of work is very similar, and if for your capstone project you end up picking a project that involves a regression task. You can pretty much recycle all that code. So
+
+40
+00:05:50.680 --> 00:06:05.260
+Viviana Márquez: so that's going to be fun. The other thing that is going to happen in Module 11 is that the one on ones are announced. So in case you didn't know as learner of this program, you have the right
+
+41
+00:06:05.260 --> 00:06:31.739
+Viviana Márquez: to meet with your learning facilitator, one on one for 30 min to talk about your capstone project. Ask questions, ask for advice, ask for feedback whatever you need. You have those 30 min to talk to your learning facilitator. So please take advantage of those. So next week, module 11, what's going to happen is that there's going to be a canvas announcement
+
+42
+00:06:31.780 --> 00:06:56.100
+Viviana Márquez: saying about the one on ones, and it's going to have some calendly links. And these links will allow you to book that one on one with your learning, facilitator, that one on one is going to happen through these 4 modules, 1213, 14, and 15. So during 4 weeks. But there are a few breaks coming up. So it actually is a little bit more than
+
+43
+00:06:56.110 --> 00:07:05.175
+Viviana Márquez: 4 weeks for you to be able to book that that time with your learning facilitators. That being said, holidays are coming up.
+
+44
+00:07:05.750 --> 00:07:18.619
+Viviana Márquez: People might be out of the office, so just make sure that you're booking that as fast as you can, so it's locked in, and you have your one on one secured already. That would be my advice.
+
+45
+00:07:18.840 --> 00:07:38.879
+Viviana Márquez: Module 12. The next topic, which is classification, and K. And N. Then you have Thanksgiving's break. If you celebrated. If you're in the Us. If you're not in the Us. Well, it doesn't matter. You still get that break. So there's not going to be any content. Released that week. You get to rest
+
+46
+00:07:39.462 --> 00:07:55.290
+Viviana Márquez: or you get to catch up depending where you are in the program, then module 13, logistic regression, module, 14, decision trees, module, 15, gradient descent and optimization. And then the holiday winter holiday break.
+
+47
+00:07:55.290 --> 00:08:13.769
+Viviana Márquez: which is basically Christmas to New Years. So there's not going to be any content released those weeks, and then we continue business as usual, model 1617, 18, etc, until you finish the program. So that's just to give you an idea of what's happening next.
+
+48
+00:08:14.438 --> 00:08:19.549
+Viviana Márquez: Just so you you keep in mind those things.
+
+49
+00:08:19.864 --> 00:08:22.509
+Viviana Márquez: So how do you have a great one on one
+
+50
+00:08:22.650 --> 00:08:34.580
+Viviana Márquez: next week those calendly links are going to be released. So, as I told you, my advice will be, book your one on one as soon as possible. There's so many learners in this cohort, so you want to be
+
+51
+00:08:34.580 --> 00:08:53.119
+Viviana Márquez: to make sure that you secure this slot that works for you? You don't want to be in this situation where, by the time you try to book it, they only have times that don't work for you. So so make sure that you're booking that one on one as soon as possible, so you secure it, especially now coming up with the holidays, the different breaks.
+
+52
+00:08:53.414 --> 00:08:56.059
+Viviana Márquez: Make sure that you get that slot in there.
+
+53
+00:08:57.660 --> 00:09:19.469
+Viviana Márquez: optionally. You can just show up to the one on one. My my overall recommendation is, have the one on one like you paid for this program. You paid for that one on one. So book it regardless. Don't! Don't! Don't be afraid that like oh, I haven't prepared enough stuff for a meeting. I'm not gonna book it.
+
+54
+00:09:19.470 --> 00:09:38.490
+Viviana Márquez: It's fine like as the learning facilitators. We're super chill. We're here to help you. So it's fine. If you don't have a very clear idea of what you want to talk about during the one-on-one. My advice would be book it, no matter what. But, of course, if you come prepared to the to the one on one, you're going to make
+
+55
+00:09:38.490 --> 00:09:55.669
+Viviana Márquez: most the most use of it. So if you have already thought about a data set for your capstone project, if you have already thought about it some examples, ideas, questions, whatever it is. That's gonna have a more. That's gonna be a more productive use of your time. But don't let
+
+56
+00:09:55.710 --> 00:10:25.710
+Viviana Márquez: that being an obstacle for you to book the one on one, even if you don't have anything, you should book that one on one, because even if maybe you're stuck in your head just talking to your learning facilitators, you might get unstuck and know where to do next, what to do next. So it's only one per one. Consultation per learner during modules 12 to 15, which is November 20th to January 7.th So keep an eye out for those calendly invites.
+
+57
+00:10:26.078 --> 00:10:37.489
+Viviana Márquez: You should book the one on one with your assigned learning facilitator. So if you don't know in which section you are are in, just go on canvas, click on people
+
+58
+00:10:37.610 --> 00:10:43.260
+Viviana Márquez: and like, find your name. And it will tell you which section you're in.
+
+59
+00:10:43.280 --> 00:11:07.249
+Viviana Márquez: And this is like the different sections and the different learning facilitators. So I'm Section C. If you're in Section C, you're stuck with me. But yeah, you should check. And if you have any questions, if this is not clear. If you have any problems, feel free to reach out through the support ticket, we try to reply within 24 h, so that should be fast.
+
+60
+00:11:07.250 --> 00:11:15.830
+Viviana Márquez: So so feel free to abuse the support button and ask for help, because that's where we're here for you.
+
+61
+00:11:16.770 --> 00:11:17.520
+Viviana Márquez: I
+
+62
+00:11:17.680 --> 00:11:32.709
+Viviana Márquez: thought I saw the question in the chat briefly, but I didn't see it anymore. Maybe, I replied to the question, live well, if if anybody has any questions, feel free to ask them in the chat also feel free to unmute yourself if you have any questions about
+
+63
+00:11:33.365 --> 00:11:35.150
+Viviana Márquez: what's coming up
+
+64
+00:11:36.750 --> 00:11:40.000
+Viviana Márquez: awesome. So I answered a question just now. That's great.
+
+65
+00:11:45.260 --> 00:11:47.150
+Viviana Márquez: So any questions.
+
+66
+00:11:47.910 --> 00:11:48.940
+Viviana Márquez: comments.
+
+67
+00:11:56.690 --> 00:11:57.867
+Viviana Márquez: all right, cool.
+
+68
+00:11:58.280 --> 00:12:07.200
+Viviana Márquez: If you think of a question. Any time during the office hour feel free to ask the question.
+
+69
+00:12:07.712 --> 00:12:09.119
+Viviana Márquez: Okay. So, as usual.
+
+70
+00:12:09.120 --> 00:12:09.910
+Raghavan Srinivasan: I have one.
+
+71
+00:12:09.910 --> 00:12:11.529
+Viviana Márquez: Oh, yeah, go for it.
+
+72
+00:12:11.530 --> 00:12:18.320
+Raghavan Srinivasan: So the section A, BC, we. How do we find out which one we belong to?
+
+73
+00:12:18.944 --> 00:12:28.679
+Viviana Márquez: So you can go on canvas and click here on the people. Tab and just find your name and then next to your name. You should say this section.
+
+74
+00:12:29.410 --> 00:12:30.150
+Raghavan Srinivasan: Okay.
+
+75
+00:12:30.600 --> 00:12:33.999
+Raghavan Srinivasan: He was trying to find it yesterday. Sorry. Thank you so much again.
+
+76
+00:12:34.382 --> 00:12:37.820
+Viviana Márquez: No worries. Yeah, that's where what we're here for.
+
+77
+00:12:38.562 --> 00:12:40.190
+Viviana Márquez: All right. Awesome.
+
+78
+00:12:41.105 --> 00:12:58.129
+Viviana Márquez: So here is a list of all the required activities for module 10 as usual. Just so you have a checklist. So you have a few activities as usual. And let's get started with today's topic. So today's topic is time series analysis.
+
+79
+00:12:58.160 --> 00:13:25.910
+Viviana Márquez: This is a very, very, very broad topic. When I did my master's, in case you didn't know I have a master's in Data Science from University of San Francisco. So when I did my master's, I took a whole semester on a class called Time Series Analysis, because this is a very, very, very broad topic. It requires a lot of statistics, a lot of math.
+
+80
+00:13:26.392 --> 00:13:40.890
+Viviana Márquez: So we're trying to cram everything into just one module, which is one week. And the reason why I'm saying this is that if you think the topic is difficult, it's because it is. It is a little bit difficult.
+
+81
+00:13:40.910 --> 00:13:59.560
+Viviana Márquez: But that's fine. We're going to give you the foundations to work with time series data sets. And if you ever face a time series problem at work, you can solve it, or at least know where to search for the answer.
+
+82
+00:13:59.590 --> 00:14:22.739
+Viviana Márquez: That being said, I took that whole semester in time series analysis in my Master's degree, and by pure chance. That's not necessarily the case for every data scientist. But by pure chance I haven't really had to do time series analysis at work. And I've been working as a data scientist for the past 6 years, and by pure chance all the data sets that I've worked with
+
+83
+00:14:22.740 --> 00:14:31.380
+Viviana Márquez: are not time series. Well, that's not completely true. One time I work on a time series data set. That was a sales data set. And I had to predict
+
+84
+00:14:31.380 --> 00:14:36.830
+Viviana Márquez: the amount of sales for a company, but it was like one project out of all the
+
+85
+00:14:36.830 --> 00:14:48.580
+Viviana Márquez: although many projects I've done in my career, so don't feel too stressed that you have to be a master of Time series. The important thing is that you have the notion of what time series is.
+
+86
+00:14:48.580 --> 00:15:15.739
+Viviana Márquez: So hopefully, today, we can go through some of the frequently asked questions. I brought a really cool example in code. Hopefully, that answers some questions. And yeah, let's get started. So what is a time series? Let's start by defining the basics. What is a time series? So time series is a data set. So you're going to have a data set as usual with your many columns.
+
+87
+00:15:16.316 --> 00:15:19.569
+Viviana Márquez: Yeah. Well, pretend all of these are columns.
+
+88
+00:15:19.990 --> 00:15:23.809
+Viviana Márquez: and you're gonna have all your X columns
+
+89
+00:15:24.470 --> 00:15:28.180
+Viviana Márquez: that you're going to use to predict your target variable your Y,
+
+90
+00:15:28.310 --> 00:15:47.649
+Viviana Márquez: but the special characteristic of a Time series data set is that one of these columns is going to have a time is going to be a time column. So it's a collection of data points measured at specific regular intervals of time. And this is this is also important
+
+91
+00:15:47.780 --> 00:15:57.709
+Viviana Márquez: that they're regular because you could have some timestamps in your data set, and that doesn't necessarily make it a time series data set. If, like.
+
+92
+00:15:57.770 --> 00:16:03.659
+Viviana Márquez: you collected one data point today and another one in 3 months and another one in 2 weeks.
+
+93
+00:16:04.010 --> 00:16:12.529
+Viviana Márquez: You don't have a regular interval of time. That doesn't make it a time series. It needs to be like every month or every day or every week.
+
+94
+00:16:19.340 --> 00:16:22.469
+Viviana Márquez: yeah. So that's a time series.
+
+95
+00:16:23.560 --> 00:16:30.600
+Viviana Márquez: Each observation, as I just mentioned, has a timestamp making the order of observations essential. So
+
+96
+00:16:30.930 --> 00:16:41.740
+Viviana Márquez: your data set should be ordered by this timestamp. So the 1st observation should be the 1st one that you measured in time, and the last one is the most recent one.
+
+97
+00:16:42.080 --> 00:16:45.350
+Viviana Márquez: and, as I mentioned, it needs to be in.
+
+98
+00:16:45.980 --> 00:16:46.760
+Viviana Márquez: Sorry.
+
+99
+00:16:59.110 --> 00:17:23.970
+Viviana Márquez: Sorry I don't know what happened. But yeah, as I was saying, every observation should be in regular intervals of time, so every observation should be every month or every day, every week, every year, whatever it is, but it should have the same regular intervals of time. If you don't have these regular intervals of time. It's not a good candidate. This data set is not a good candidate for a time series analysis.
+
+100
+00:17:25.920 --> 00:17:51.520
+Viviana Márquez: so unlike the regular data sets that you've been working in regular data sets that you've been working. The order doesn't really matter. And, for example, when you're doing the train test split. You do a random split because the order doesn't matter here. The order matters is critical for the context, because, for example, a very good example of time series data is weather.
+
+101
+00:17:51.530 --> 00:17:54.350
+Viviana Márquez: So you collect weather data.
+
+102
+00:17:54.800 --> 00:18:19.310
+Viviana Márquez: So you collect the data for yesterday, the day before the day before the day before, etc, and the weather yesterday is very related to the weather today. So if yesterday was snowing, today is not going to be hot as a desert, it's going to be related. So so that time component is super essential in this context.
+
+103
+00:18:19.410 --> 00:18:24.830
+Viviana Márquez: So examples, this is how it would look like you would have a time
+
+104
+00:18:24.860 --> 00:18:36.959
+Viviana Márquez: component. So, for example, in this, in this data set is divided into columns because you have the year and the month sometimes it comes in the same column, but you have that time component. So this one is every month.
+
+105
+00:18:37.000 --> 00:18:42.140
+Viviana Márquez: every month. So January, February, March, April, May, and so on.
+
+106
+00:18:42.590 --> 00:18:48.600
+Viviana Márquez: And here you have your target variable, which in this case is passengers. You want to predict the number of passengers.
+
+107
+00:18:48.740 --> 00:19:01.780
+Viviana Márquez: and if you visualize your data, another giveaway that you have a time series problem is that when you plot your target variable, you have this pattern like this. And
+
+108
+00:19:02.190 --> 00:19:11.700
+Viviana Márquez: maybe you're thinking of examples where you've seen this pattern before. For example, if you're trying to predict the value of the market
+
+109
+00:19:12.164 --> 00:19:26.250
+Viviana Márquez: it's like that sales. It happens like that weather data. It happens like that. It has like this repeating factor like this repeating pattern. So that's a giveaway. That is a time series data?
+
+110
+00:19:27.970 --> 00:19:44.055
+Viviana Márquez: so some examples. Yeah, just like Mike had just said in the chat, healthcare costs which I have in the list here as well. But finance so like stock prices, interest rates, cryptocurrency, prices, exchange rates.
+
+111
+00:19:44.490 --> 00:20:13.759
+Viviana Márquez: And what is the period of this data? It could be daily, it could be hourly, could be by the minute. So a lot of time series data in finance. I've never worked in finance. So that's why I haven't encountered time series data in my work experience. So there are fields where you're more prone to find these time series problems like finance. If you're working in finance, you're for sure going to have to work with time series
+
+112
+00:20:13.760 --> 00:20:30.569
+Viviana Márquez: weather, so temperature, rainfall humidity, wind speed, any climate data. It's time series data, retail data. So sales data, customer footprint in stores, inventory levels, etc.
+
+113
+00:20:30.970 --> 00:20:44.519
+Viviana Márquez: healthcare like Mike just said in the chat. So patient heart rate, blood pressure, etcetera. Economics like monthly unemployment rates, Gdp growth rates, inflation rates
+
+114
+00:20:44.520 --> 00:21:03.309
+Viviana Márquez: consumer price indices, energy, so electricity, usage by the hour, gas consumption, renewal, energy, etc, social media as well. So engagement metrics like number of likes per hour, and stuff like that. It also follows time series. Component
+
+115
+00:21:03.310 --> 00:21:21.289
+Viviana Márquez: traffic is another good case. So there's many, many places where you're going to find time series data. If, for example, you hope to work in a finance company. I'd be like, pay a lot of attention to this module because you're going to have to work with time series data.
+
+116
+00:21:23.020 --> 00:21:41.450
+Viviana Márquez: so time series is in a data set that has that time component. And if we have a time series data set, we can do a time series analysis. So what is a time series analysis, a time series. Analysis is a technique used to model the relationship between what we're trying to predict
+
+117
+00:21:41.600 --> 00:21:44.009
+Viviana Márquez: and time.
+
+118
+00:21:44.683 --> 00:22:03.060
+Viviana Márquez: So the sequence of time in a time series data set provides that critical context that I was mentioning earlier. And it allows us to identify seasonal patterns, evolve how the values evolve over time, etc.
+
+119
+00:22:03.591 --> 00:22:19.820
+Viviana Márquez: So the main goal of time, series analysis, and why you would be interested in doing a time series analysis is forecasting. So you want to predict the future using historical data. So
+
+120
+00:22:20.290 --> 00:22:39.540
+Viviana Márquez: that's usually the main purpose of time series analysis, because you want to know what's going to be that specific stock that you're doing like making investments on. You want to know if you should sell if you should buy more and for that you need to do that forecast. Right?
+
+121
+00:22:39.980 --> 00:22:52.210
+Viviana Márquez: That being said, there are other applications of time. Series. One is anomaly detection. So, for example, if I don't know the number of clients that you have follows this pattern
+
+122
+00:22:52.230 --> 00:22:53.280
+Viviana Márquez: usually
+
+123
+00:22:53.310 --> 00:23:00.599
+Viviana Márquez: or no, actually, let me give you a better example. The number of traffic on a website is like this.
+
+124
+00:23:01.160 --> 00:23:03.520
+Viviana Márquez: Usually, let's say something like this.
+
+125
+00:23:04.100 --> 00:23:13.349
+Viviana Márquez: and you predict that it's going to be like this. And then suddenly, one day, you're seeing this this, and then all of a sudden, you see a pick like this.
+
+126
+00:23:13.530 --> 00:23:33.237
+Viviana Márquez: This is an anomaly. So maybe your website is being attacked by bots. There's a cybersecurity breach. Something happened. So it's good for anomaly detection, because they will be easy to detect that something happened out of the usual pattern.
+
+127
+00:23:34.110 --> 00:23:43.350
+Viviana Márquez: it's also another application is for speech and audio processing. So speech is also a time series data, because
+
+128
+00:23:43.450 --> 00:23:47.219
+Viviana Márquez: whatever you're saying right now.
+
+129
+00:23:47.420 --> 00:23:51.199
+Viviana Márquez: it's related to what you were saying before. So you're not gonna have like.
+
+130
+00:23:51.420 --> 00:24:13.549
+Viviana Márquez: I mean, I don't know. I guess someone could say random stuff, but most of the time things follow a pattern. So there's like that idea of a sequence in speech so time series can be applied as well for speech, recognition, or even music, genera classification. So a broad field healthcare diagnostics. So instead of forecasting
+
+131
+00:24:13.610 --> 00:24:34.029
+Viviana Márquez: into the future, you would take, for example, the Ecg data of a patient to be able to see if their cardio workup is normal, or maybe they have an arrhythmia. So you compare it to what is supposed to be normal. Same with like seizures and
+
+132
+00:24:34.030 --> 00:24:55.749
+Viviana Márquez: taking the Eeg of a patient. So you can see, okay, is this a normal brain activity. Or is this a seizure? So those are other applications. And there's many more. For example, in the chat. Sashi said, Okay, agriculture could also be an application. So these are some examples. But there's many, many other applications as well.
+
+133
+00:24:56.270 --> 00:24:58.710
+Viviana Márquez: So key concepts in here.
+
+134
+00:24:59.790 --> 00:25:29.700
+Viviana Márquez: serial correlation. So in time series, serial correlation is important, because observations closer in time tend to be more similar. So the weather today is very similar to the weather yesterday, and it's probably going to be very similar to the weather tomorrow, but it's probably very different from the weather 3 months ago, so observations closer in time tend to be more similar, and this is going to help us
+
+135
+00:25:29.990 --> 00:25:32.750
+Viviana Márquez: a model or data later on.
+
+136
+00:25:33.555 --> 00:25:39.140
+Viviana Márquez: The other component that we'll see briefly in code is the trend.
+
+137
+00:25:40.600 --> 00:25:45.919
+Viviana Márquez: So I was saying, Okay, the time series data usually follow this pattern like this.
+
+138
+00:25:46.150 --> 00:26:10.779
+Viviana Márquez: The trend is like, you go super far from your screen, and you like, make you cross your eyes. So you see, glory and what you're seeing, you're not seeing the specific pattern you're kind of seeing like this line like this, instead of the specific pattern. If you do what I just did, that's the trend. So like the general behavior in the data.
+
+139
+00:26:11.540 --> 00:26:13.999
+Viviana Márquez: then you have
+
+140
+00:26:15.710 --> 00:26:28.880
+Viviana Márquez: the next one, which is seasonality. So seasonality is the repeated fluctuations. So even though you have usually this trend like a trend going up.
+
+141
+00:26:28.940 --> 00:26:30.870
+Viviana Márquez: you also have this
+
+142
+00:26:31.030 --> 00:26:38.809
+Viviana Márquez: little hills that repeat again and again and again and again. So that's the seasonality.
+
+143
+00:26:39.970 --> 00:26:45.259
+Viviana Márquez: For example, this happens a lot in retail, because in retail
+
+144
+00:26:45.820 --> 00:27:02.300
+Viviana Márquez: December is the best month. Everyone is buying stuff because they're happy because they have more money, because they want to buy gifts for their loved ones. So usually regardless of the year, even if it's a good year or a bad year, or the trend is up, the trend is down. Whatever is happening.
+
+145
+00:27:02.300 --> 00:27:23.489
+Viviana Márquez: December is always going to be the month where you're going to have more sales if you work in retail. So no matter what, you're always going to see that huge peak in December. So that's seasonality things that happen in a predictable number of periods. For example, Paris City, in the Us.
+
+146
+00:27:23.550 --> 00:27:29.290
+Viviana Márquez: The Paris city store in for those of you that are not in the Us. Is the Halloween store.
+
+147
+00:27:30.720 --> 00:27:50.029
+Viviana Márquez: so so the the pick for them is October, like they're always going to sell more stuff in October. So if you have access to their sales data, you're always going to see that peak in October, regardless of the year, regardless if they're overall selling less overall selling more.
+
+148
+00:27:50.120 --> 00:27:52.090
+Viviana Márquez: October is gonna be their peak
+
+149
+00:27:52.745 --> 00:27:57.505
+Viviana Márquez: so, and that happens everywhere like airline traffic.
+
+150
+00:27:58.780 --> 00:28:09.599
+Viviana Márquez: even traffic during the day you always are. Gonna have the rush time where you have more traffic in the mornings and in the afternoons, when people are commuting from work to their houses.
+
+151
+00:28:10.723 --> 00:28:20.670
+Viviana Márquez: And then you have the concept of stationarity. So stationarity is the concept of the statistical properties of the data
+
+152
+00:28:20.870 --> 00:28:36.909
+Viviana Márquez: that being mean variance and autocorrelation remain constant over time, making it easier to model and analyze our data. So in this module, you're going to learn about the Arma model. So the Arma model assumes
+
+153
+00:28:36.920 --> 00:28:58.520
+Viviana Márquez: stationarity. If you don't have stationarity, that's fine, you can use an Arima model for that. But the one that we're going to focus a lot on this model in this module is arma. So you're assuming that the properties of your data, that being mean variance and autocorrelation doesn't really change over time.
+
+154
+00:28:59.590 --> 00:29:11.249
+Viviana Márquez: Oops. Sorry this I had this slide twice. So those are the key concepts. Let me show you some code, and then I'll open it up for questions.
+
+155
+00:29:11.420 --> 00:29:17.070
+Viviana Márquez: So this code I'm going to show you before I show you the code. Let me show you this slide real quick.
+
+156
+00:29:17.440 --> 00:29:23.700
+Viviana Márquez: So there's several time series techniques. There's not only one, there's several.
+
+157
+00:29:23.750 --> 00:29:49.829
+Viviana Márquez: and you can cluster them into these different groups. So you have the statistical methods, the methods that are very heavy on statistics. So you have arma. This is the one that is like the main focus of this module, because it will be impossible to learn all of them. But once, you know, Arma is very easy to pick up on the other ones. Arima is basically arma, but is taken into account. If you have data that is non-stationary.
+
+158
+00:29:50.263 --> 00:30:07.229
+Viviana Márquez: You have Serema, you have Var, you have Varma. You have Ets, you have halt winters. Yeah. And those are the, there's probably more. But these are the most well-known statistical methods. Statistical Time Series analysis that you can conduct.
+
+159
+00:30:07.910 --> 00:30:15.549
+Viviana Márquez: Then there's the basic one which is a this composition model. So this this composition model is the Slt
+
+160
+00:30:15.590 --> 00:30:29.090
+Viviana Márquez: seasonal discomposition of time series. So that's like the basics. That's the 1st one that you would learn to understand time series better. And then you build from there and you go onto these other ones.
+
+161
+00:30:29.120 --> 00:30:34.549
+Viviana Márquez: And then there's the ones based on neural networks. So you have Lstm
+
+162
+00:30:34.720 --> 00:30:52.170
+Viviana Márquez: Gre use. And there's a model that was released by Facebook called profit. This model is very good and especially good. If you have time series data that involves holidays, that you have holidays in your data set. This one is very good.
+
+163
+00:30:52.640 --> 00:30:54.470
+Viviana Márquez: So you have these families.
+
+164
+00:30:54.590 --> 00:31:04.499
+Viviana Márquez: these neural networks families. Once we start learning about neural networks, so we can revisit it again. But for now you can just ignore them because you don't have the tools.
+
+165
+00:31:04.560 --> 00:31:13.119
+Viviana Márquez: You don't know what a neural network is, so you don't have the tools to be able to work with these models, but you can work with these other ones that I have listed here.
+
+166
+00:31:13.493 --> 00:31:20.390
+Viviana Márquez: So the one that I'm going to show you is the basic one, the seasonal decomposition of time series
+
+167
+00:31:20.510 --> 00:31:25.019
+Viviana Márquez: and I wanted to mention that the reason why, you see time series
+
+168
+00:31:25.150 --> 00:31:37.749
+Viviana Márquez: after you have learned regression is because time series is like a powered up regression, and we'll see why in this example. So let me share this example in the chat. So you have this notebook?
+
+169
+00:31:38.291 --> 00:31:41.630
+Viviana Márquez: This is also gonna get posted on canvas. But
+
+170
+00:31:42.690 --> 00:31:45.550
+Viviana Márquez: here you can have it in the meantime.
+
+171
+00:31:48.640 --> 00:31:50.010
+Viviana Márquez: Okay, so
+
+172
+00:31:51.506 --> 00:31:57.569
+Viviana Márquez: what are we gonna do here? So I'm loading here the libraries that I'm gonna work. With
+
+173
+00:31:57.850 --> 00:32:04.049
+Viviana Márquez: all of these libraries you should be familiar with. The only one that is new today is this.
+
+174
+00:32:04.060 --> 00:32:05.900
+Viviana Márquez: stats models.
+
+175
+00:32:05.910 --> 00:32:34.120
+Viviana Márquez: So stats models, is a Statistical Library in Python, and this one is going to allow you to do a lot of statistical stuff. And since we're working with time series, which is very statistics heavy. We need that library. That's the only new one. All the other ones you've worked with. You've worked with linear regression, one hot encoders, the performance metrics, the visualization libraries and numpy and pandas. So you should be familiar with this already.
+
+176
+00:32:37.930 --> 00:32:49.439
+Viviana Márquez: So the data set is this data set one of the default data sets is a flights data set. So this data set contains data from
+
+177
+00:32:49.510 --> 00:32:53.559
+Viviana Márquez: 1949. I think it's through 1965
+
+178
+00:32:53.988 --> 00:33:10.279
+Viviana Márquez: per month, and how many passengers international passengers were there at the time it was when aviation had just started. So notice that there's only like a hundred passengers per month which is not a lot, or nowadays it would be like.
+
+179
+00:33:10.400 --> 00:33:24.759
+Viviana Márquez: even in just 1 h you will have this amount of passengers, but back in the day. That was, those were the numbers. So this is just like a nice practice data set. It's a time series data set, because we have this regular
+
+180
+00:33:25.400 --> 00:33:34.080
+Viviana Márquez: time information. So month per month. We have the month of January, February, March, April, May, and so on.
+
+181
+00:33:34.760 --> 00:33:35.730
+Viviana Márquez: and
+
+182
+00:33:37.190 --> 00:33:38.520
+Viviana Márquez: I need to
+
+183
+00:33:38.800 --> 00:33:43.580
+Viviana Márquez: put my time in a single column. So that's what I'm doing in here.
+
+184
+00:33:43.930 --> 00:33:49.450
+Viviana Márquez: And that's how I converted from these to these in here.
+
+185
+00:33:52.750 --> 00:33:57.050
+Viviana Márquez: So okay. So I have loaded my data.
+
+186
+00:33:57.170 --> 00:34:15.409
+Viviana Márquez: So my data basically is, I have monthly data. Notice that all the days start in one. That was just because we didn't have any day information. So we just said, Okay, if it's January, let's make it the 1st of January. If it's February, let's make it the 1st of February and the passengers.
+
+187
+00:34:15.510 --> 00:34:36.039
+Viviana Márquez: So we should always do some exploratory data analysis on our data set regardless. If it's a clustering method, if it's a regression model, if it's a time series analysis, we should always understand our data set better. So you can run something exploratory data analysis here. I only plotted the data that we have.
+
+188
+00:34:36.780 --> 00:34:50.329
+Viviana Márquez: But you could have done a little bit more of exploratory data analysis, just to make sure that you understand the data that you have and that your data is in good health, like, you don't have any missing values and so on.
+
+189
+00:34:53.500 --> 00:34:56.150
+Viviana Márquez: So now that we have
+
+190
+00:34:56.510 --> 00:34:58.830
+Viviana Márquez: or exploratory data analysis.
+
+191
+00:34:59.610 --> 00:35:02.910
+Viviana Márquez: we're going to split our data set into train and test.
+
+192
+00:35:02.970 --> 00:35:28.659
+Viviana Márquez: So this is still a supervised machine learning model. Why is it supervised? Because we have a target variable that we're trying to predict. It's not clustering because we're not trying to see if there's any groups in there. We know what we want to predict. In this case we want to predict the number of passengers. So it is a supervised problem. Whenever you have a supervised problem, you absolutely have to split your data set into train test
+
+193
+00:35:28.660 --> 00:35:50.109
+Viviana Márquez: because you want to make sure that your model is not a memorization machine. That is very good at predicting the data that you have, but that is going to be capable of predicting data into the future. So your best proxy for future data is to have a test data set that you don't look until the end until after you have trained your model.
+
+194
+00:35:51.670 --> 00:36:16.909
+Viviana Márquez: so for regression. We were doing this split randomly because we wanted to have a good representation of our data in both the training and sales data set. But here we can't do that because the order matters. So because the order matters we have to split it either, chronologically, is the easiest way. So you grab the 1st
+
+195
+00:36:17.030 --> 00:36:37.719
+Viviana Márquez: 80% of columns in the data. And that's your train. And then your test is the remaining 20%. That's what I did here in here. There's also another method that is a little bit more sophisticated from Psyche. Learn? So you can just read the documentation and know, read exactly what it does. This one is a little bit more robust because it takes like
+
+196
+00:36:37.770 --> 00:36:53.120
+Viviana Márquez: different periods. But the reason why I'm not using it so far is because it also uses cross validation which we haven't seen yet, so I didn't want to like overwhelm you with too many topics today. So let's just keep it simple. Let's just do this split
+
+197
+00:36:53.170 --> 00:36:54.319
+Viviana Márquez: this way.
+
+198
+00:36:55.050 --> 00:37:01.189
+Viviana Márquez: So any questions so far of what we're doing. So far, we loaded our data set.
+
+199
+00:37:01.260 --> 00:37:10.009
+Viviana Márquez: We're trying to predict the number of passengers. And it's a time series data set because we have a time component. And we're trying to predict the number of passengers.
+
+200
+00:37:10.376 --> 00:37:17.999
+Viviana Márquez: And we have split our data setting to train and test. So before I go into the modeling any questions. So far.
+
+201
+00:37:19.020 --> 00:37:22.620
+Ravi Duvvuri: I have question so if we if you have
+
+202
+00:37:22.860 --> 00:37:29.468
+Ravi Duvvuri: multiple time columns other than month, let's say you have time also, like
+
+203
+00:37:30.020 --> 00:37:31.889
+Ravi Duvvuri: in minutes or hours?
+
+204
+00:37:32.140 --> 00:37:35.219
+Ravi Duvvuri: Or do we need to consider or ignore that.
+
+205
+00:37:36.320 --> 00:37:42.504
+Viviana Márquez: Depends. And the reason why I say it depends is because,
+
+206
+00:37:43.550 --> 00:38:09.430
+Viviana Márquez: yeah, it depends on what you're trying to do. Because, for example, if you're working in finance and you have minutes, you probably do want the minutes, because you want to know exactly when the the specific stock that you're looking at is going to drop. So you should work with the minutes. So it depends on the context, and it depends on the periods. The city that you have. So, for example, here, we couldn't work with days
+
+207
+00:38:09.560 --> 00:38:19.200
+Viviana Márquez: because we don't have enough days, even though we have the day here. So we have to work with the month, because that's the curiosity of the data that we have.
+
+208
+00:38:19.290 --> 00:38:21.779
+Viviana Márquez: because even in in here, if we had the minutes
+
+209
+00:38:21.910 --> 00:38:24.700
+Viviana Márquez: like, it's still a month. We're only having.
+
+210
+00:38:24.900 --> 00:38:41.940
+Viviana Márquez: Each observation is a month apart. But if each observation is minutes apart or seconds apart, and it makes sense for your specific problem, then. Yes, you should use it. And it should be that single time column that you're using. So that's the other thing. A lot of times it comes.
+
+211
+00:38:41.940 --> 00:38:56.820
+Viviana Márquez: split it in multiple columns like it did here. So whatever time period that you're using, whether it's seconds, minutes, days, weeks, whatever it is, it should be in a single column. Did that answer your question?
+
+212
+00:38:57.121 --> 00:39:00.440
+Ravi Duvvuri: I believe so. So my question, I think more like.
+
+213
+00:39:00.460 --> 00:39:13.660
+Ravi Duvvuri: can we ignore the Time series columns like, if I have year, month, time, day. Can I use? Only take year only, and ignore all other ones if it doesn't make sense? Or do I need to consider all the time, all the times.
+
+214
+00:39:13.660 --> 00:39:39.620
+Viviana Márquez: So that's a really good question. So no, it's completely up to you, because you have the domain knowledge, and you want to make the decision. So, for example, in here, you could have said, you know what I'm just going to ignore month. I'm gonna use the year. Well, then, now, you have a different problem, because now, the year you have several observations for the same year. So you have to aggregate the data. But then you could just predict the total number of passengers per year, not per month.
+
+215
+00:39:39.620 --> 00:39:52.410
+Viviana Márquez: So it's up to you and up to how much data you have, because since here you have to aggregate, you're going to end up with less observations. So the less the granularity, the less observations you're going to have.
+
+216
+00:39:52.410 --> 00:40:07.189
+Viviana Márquez: So if you don't have enough observations. Maybe you're like, okay, I actually have to consider the month. But if you have a lot of data, you could just consider the year. So it's up to you up to your domain expertise. And up to how much data you have.
+
+217
+00:40:08.350 --> 00:40:09.090
+Ravi Duvvuri: Thank you.
+
+218
+00:40:09.090 --> 00:40:09.989
+Viviana Márquez: Yeah, of course.
+
+219
+00:40:12.730 --> 00:40:13.999
+Viviana Márquez: all right, cool.
+
+220
+00:40:14.620 --> 00:40:15.880
+Viviana Márquez: So
+
+221
+00:40:16.090 --> 00:40:36.550
+Viviana Márquez: we have splitted our data set. Now, let's go into the modeling. So the model is the classical decomposition model is the easiest time series and analysis that you could possibly do. And of course you're going to learn the more advanced method, which is, Arma is more advanced than this. But this one is to get started. So
+
+222
+00:40:36.660 --> 00:40:38.670
+Viviana Márquez: from a linear regression model.
+
+223
+00:40:38.690 --> 00:40:43.479
+Viviana Márquez: we have this equation. Right? You guys, remember this equation. So you have.
+
+224
+00:40:43.640 --> 00:40:46.790
+Viviana Márquez: You are trying to predict that target variable
+
+225
+00:40:46.840 --> 00:40:49.840
+Viviana Márquez: using different features.
+
+226
+00:40:50.310 --> 00:40:55.320
+Viviana Márquez: And then, you're trying to find what are these best coefficients that
+
+227
+00:40:55.330 --> 00:41:05.889
+Viviana Márquez: work for our data set and explain that linear relationship between other features and the target variable. And then we have a little bit of error.
+
+228
+00:41:05.910 --> 00:41:09.150
+Viviana Márquez: So this is just like the linear Regression model.
+
+229
+00:41:09.280 --> 00:41:10.400
+Viviana Márquez: as usual.
+
+230
+00:41:10.870 --> 00:41:14.140
+Viviana Márquez: and turns out that the the Time Series Data set
+
+231
+00:41:14.170 --> 00:41:19.250
+Viviana Márquez: the Time series modeling is very similar. You have a very similar idea, because you have.
+
+232
+00:41:19.470 --> 00:41:32.780
+Viviana Márquez: you want to predict your target variable. But your target variable is the combination of the trend component. So that if this is your time series, let's say
+
+233
+00:41:33.090 --> 00:41:35.680
+Viviana Márquez: so. Your trend is this.
+
+234
+00:41:36.140 --> 00:41:38.220
+Viviana Márquez: and then so that's your trend.
+
+235
+00:41:38.520 --> 00:41:42.809
+Viviana Márquez: Then you have your seasonality. So that's this, like
+
+236
+00:41:42.960 --> 00:41:44.180
+Viviana Márquez: Montine
+
+237
+00:41:44.780 --> 00:41:46.769
+Viviana Márquez: pattern that you have in here.
+
+238
+00:41:47.450 --> 00:41:49.240
+Viviana Márquez: So you add these 2,
+
+239
+00:41:49.390 --> 00:41:52.750
+Viviana Márquez: and you should get the target variable. So
+
+240
+00:41:53.170 --> 00:42:02.939
+Viviana Márquez: in a way, you're working with a linear regression, and even more so if you look at each one of the of the components. So, for example, for the trend.
+
+241
+00:42:03.080 --> 00:42:20.700
+Viviana Márquez: the trend, you can express the trend exactly the same way as a linear regression. So this is just to make all of these shorter in math notation. But this is basically a time series and a linear regression. It's just that.
+
+242
+00:42:21.255 --> 00:42:34.019
+Viviana Márquez: You're instead of using features, you're using time and different powers of the time feature. But it's a pretty much a linear regression, and then for the seasonal component
+
+243
+00:42:34.140 --> 00:42:37.304
+Viviana Márquez: for the seasonal component, let's say you have
+
+244
+00:42:38.450 --> 00:42:39.810
+Viviana Márquez: January.
+
+245
+00:42:40.030 --> 00:43:01.729
+Viviana Márquez: February March. So you have months. Let's say your periods are months, so your season is 12, you have 12 months. So that's your season seasonality. So your seasonality, since you are going to treat this as categorical variables. And remember that when you treat this as categorical variables.
+
+246
+00:43:01.740 --> 00:43:12.310
+Viviana Márquez: you can make them this into dummy variables. So you're going to end up with a bunch of dummy variables, one for each one of the months. Actually.
+
+247
+00:43:12.560 --> 00:43:15.579
+Viviana Márquez: if you look at the equation, here would be
+
+248
+00:43:15.930 --> 00:43:30.450
+Viviana Márquez: season minus one. So the number of months that we have is 12 minus one. So you would have 11 dummy variables, because then the baseline captures that 12th one that's just like a math thing that always happens even in linear regression.
+
+249
+00:43:30.450 --> 00:43:47.549
+Viviana Márquez: But in other things this is basically a linear regression where the features are only categorical features. So we have 2 linear regressions in here. So basically, we're adding together 2 linear regressions. And we end up with our time series analysis.
+
+250
+00:43:47.550 --> 00:44:09.919
+Viviana Márquez: So you put everything together. It looks like this, maybe a little bit scary. I know it's a lot of math, but if you think about it, you're just adding 2 linear regressions together, which you already know, a linear regression. So you're just taking it up that next step that just like one level more.
+
+251
+00:44:10.691 --> 00:44:12.660
+Viviana Márquez: So this is the data we have.
+
+252
+00:44:13.400 --> 00:44:28.770
+Viviana Márquez: then we to be able to model the trend. So let's start with the trend because we have the trend, the seasonality, and the error that you can't really do anything about the error. So let's focus on this trend and the seasonality.
+
+253
+00:44:29.010 --> 00:44:33.739
+Viviana Márquez: So let's model 1st the trend. So to model the trend
+
+254
+00:44:33.750 --> 00:44:36.790
+Viviana Márquez: you need to create a time variable T,
+
+255
+00:44:37.000 --> 00:44:40.619
+Viviana Márquez: which is basically just numbering everything from one
+
+256
+00:44:40.800 --> 00:44:45.110
+Viviana Márquez: to whatever number of observations you have. So 1, 2, 3, 4, 5.
+
+257
+00:44:45.150 --> 00:45:12.999
+Viviana Márquez: That's just going to allow us to represent time as a numerical variable, because this variable is not a categorical variable, because it's a time variable. But it's also not a numerical variable, because it's a time variable. And remember that models only work with numbers. So we need to convert that in a way that is a numerical, variable. And since it's a in a way, you can think of it as a as an ordinal
+
+258
+00:45:13.610 --> 00:45:26.310
+Viviana Márquez: variable because it has some type of order. You can just like enumerate it. So you created this T, and you're just basically enumerating like, this is the 1st observation, second observation, 3, rd observation, and so on.
+
+259
+00:45:26.670 --> 00:45:27.729
+Viviana Márquez: and then
+
+260
+00:45:28.834 --> 00:45:33.060
+Viviana Márquez: you can do the same thing well, for the month.
+
+261
+00:45:33.632 --> 00:45:37.250
+Viviana Márquez: Let's see, why did I do the month here.
+
+262
+00:45:38.040 --> 00:45:43.269
+Viviana Márquez: Okay, so for the month I just
+
+263
+00:45:43.680 --> 00:45:47.660
+Viviana Márquez: let me let me just double check that. What I'm gonna say is
+
+264
+00:45:47.800 --> 00:45:48.620
+Viviana Márquez: true
+
+265
+00:45:49.630 --> 00:45:51.900
+Viviana Márquez: running everything.
+
+266
+00:45:54.380 --> 00:45:56.969
+Viviana Márquez: And then here, if I do train
+
+267
+00:45:57.590 --> 00:46:01.190
+Viviana Márquez: month, that value counts.
+
+268
+00:46:02.440 --> 00:46:03.909
+Viviana Márquez: Wait a second.
+
+269
+00:46:13.630 --> 00:46:15.781
+Viviana Márquez: Just give it a second. That
+
+270
+00:46:16.450 --> 00:46:20.039
+Viviana Márquez: I think my notebook had disconnected. Okay, it's running. Now.
+
+271
+00:46:23.360 --> 00:46:24.949
+Viviana Márquez: this, this. Okay.
+
+272
+00:46:25.150 --> 00:46:28.320
+Viviana Márquez: there we go. So for the months.
+
+273
+00:46:29.000 --> 00:46:41.960
+Viviana Márquez: Okay, yeah, this is this is what I expected. So for the months, we're just like pretty much doing the same thing, because the months are an ordinal category in the in the sense that
+
+274
+00:46:42.220 --> 00:46:51.640
+Viviana Márquez: each month is a category. January is a category. February is a category. March is a category, and so on. But they
+
+275
+00:46:51.800 --> 00:47:16.080
+Viviana Márquez: have some type of order, because February is always gonna come after January and then March is always going to come after February and January, so they can serve some type of order. So here you're just extracting the like, converting that categorical variable which is the months into a numerical variable. So you're doing feature engineering, in other words, but
+
+276
+00:47:16.100 --> 00:47:27.309
+Viviana Márquez: to put it into plain English, you're just extracting the numerical part of the month, which is like, if it's January, is one, if it's December is 12 end of story. So you have
+
+277
+00:47:27.590 --> 00:47:29.659
+Viviana Márquez: T, which is like one
+
+278
+00:47:29.980 --> 00:47:39.149
+Viviana Márquez: to the last number of observations. It's just an enumeration of all the data points that you have. And then the month is just extracting the number of the month.
+
+279
+00:47:40.760 --> 00:47:41.890
+Viviana Márquez: so
+
+280
+00:47:42.230 --> 00:47:46.029
+Viviana Márquez: in an ideal world, a time series
+
+281
+00:47:46.360 --> 00:47:47.510
+Viviana Márquez: would
+
+282
+00:47:48.950 --> 00:47:56.790
+Viviana Márquez: have the same width like this. These waves that we're saying here would have the same like height.
+
+283
+00:47:57.130 --> 00:47:58.310
+Viviana Márquez: So here.
+
+284
+00:47:58.480 --> 00:48:07.180
+Viviana Márquez: this would have the same height. But that's not the case in this data set, because look at this last one has a much taller height than this one that was very small.
+
+285
+00:48:07.270 --> 00:48:19.669
+Viviana Márquez: So so you have to do something about that. If you didn't have that you didn't have to do anything about that. But you have to do something about that, because otherwise the modeling is not going to work.
+
+286
+00:48:20.145 --> 00:48:33.579
+Viviana Márquez: So you can apply a log transformation. And this is actually useful for linear regression as well. Because, let's say, you're trying to model the linear relationship of a variable that looks like this
+
+287
+00:48:33.770 --> 00:48:36.740
+Viviana Márquez: usually looks like this, something like this. You can just
+
+288
+00:48:37.000 --> 00:48:38.320
+Viviana Márquez: plot the line.
+
+289
+00:48:38.400 --> 00:48:41.949
+Viviana Márquez: But if you have a data set that looks something like this.
+
+290
+00:48:44.630 --> 00:48:50.600
+Viviana Márquez: But here it starts increasing and increasing and increasing. It's kind of like a cone.
+
+291
+00:48:50.880 --> 00:48:57.809
+Viviana Márquez: You can do a pre-processing which is to apply the log, because this, if you plot the line here.
+
+292
+00:48:58.270 --> 00:49:11.000
+Viviana Márquez: this data over here is being modeled. But this data over here is not being modeled very well, because it's very sparse. So you can apply a log transformation. So this log transformation, I'm actually like bringing it
+
+293
+00:49:11.240 --> 00:49:14.530
+Viviana Márquez: from my linear regression knowledge. This is not
+
+294
+00:49:14.560 --> 00:49:16.150
+Viviana Márquez: time series knowledge.
+
+295
+00:49:16.538 --> 00:49:25.779
+Viviana Márquez: So you have to do that. Here. I put like a little bit of writing in case you are looking at this notebook on your own later on the correct
+
+296
+00:49:25.950 --> 00:49:30.879
+Viviana Márquez: terminology for for this behavior, where, like
+
+297
+00:49:31.230 --> 00:49:49.730
+Viviana Márquez: the height of the waves, is increasing, is it's over here. Is this thing here. So this city that's hard to pronounce. But yeah, that's the correct terminology. If you wanted to use the correct terminology. So how do you fix that? You just take the log.
+
+298
+00:49:49.800 --> 00:50:03.029
+Viviana Márquez: Okay? So now we're going to predict the log instead of predicting the passengers. We're going to predict the log because we're taking care of that issue. Okay? So now let's model the trend. That was the 1st thing here we're modeling the trend.
+
+299
+00:50:03.420 --> 00:50:05.060
+Viviana Márquez: How do we model the trend?
+
+300
+00:50:05.110 --> 00:50:14.440
+Viviana Márquez: It's a linear regression as easy as that. So your your X value is T, that T column that we created here.
+
+301
+00:50:14.500 --> 00:50:25.640
+Viviana Márquez: and your Y is the log of passengers because you're predicting these target variable after you have taken the log
+
+302
+00:50:26.186 --> 00:50:35.609
+Viviana Márquez: and notice that this is just a linear regression, very easy linear regression that we have been doing, and then you fit the values to get some predictions.
+
+303
+00:50:35.770 --> 00:50:37.450
+Viviana Márquez: And
+
+304
+00:50:37.500 --> 00:50:47.509
+Viviana Márquez: this is how it looks like. So you were able to model the trend. So the red line is what we just model with this linear regression.
+
+305
+00:50:47.660 --> 00:50:49.970
+Viviana Márquez: And that's what we know as the trend.
+
+306
+00:50:50.190 --> 00:50:52.579
+Viviana Márquez: And it was as easy as just
+
+307
+00:50:52.940 --> 00:51:03.090
+Viviana Márquez: having a linear regression using the T variable to predict the log of passengers. And that gave us this answer right here so
+
+308
+00:51:03.350 --> 00:51:05.120
+Viviana Márquez: very easy.
+
+309
+00:51:05.290 --> 00:51:19.969
+Viviana Márquez: And I say this, but feel free to ask questions if it's not easy. I understand that it's not easy. But yeah, it was just a linear regression. And now the next component in here. So we already did this, we obtained that result. Which is this trend component?
+
+310
+00:51:20.070 --> 00:51:26.370
+Viviana Márquez: Let's now now go into the seasonality component. So how do we model the seasonality component?
+
+311
+00:51:26.890 --> 00:51:29.009
+Viviana Márquez: So for the seasonality component.
+
+312
+00:51:29.350 --> 00:51:32.739
+Viviana Márquez: we have to do the one hot encoder for the month.
+
+313
+00:51:33.120 --> 00:51:37.549
+Viviana Márquez: So so basically, we're creating this dummy variables for the month.
+
+314
+00:51:37.770 --> 00:51:40.390
+Viviana Márquez: And then we're going to use the dummy variables
+
+315
+00:51:40.760 --> 00:51:48.660
+Viviana Márquez: to predict the log of passengers. And then it's just another linear regression, the linear regression that you already know.
+
+316
+00:51:48.770 --> 00:51:50.739
+Viviana Márquez: and you predict the values.
+
+317
+00:51:51.140 --> 00:52:01.229
+Viviana Márquez: And here you don't get the trend. But you get the seasonality, which is always like in July you have more passengers. Notice that in July you always have more passengers.
+
+318
+00:52:01.700 --> 00:52:21.600
+Viviana Márquez: and then in January, what is this? November? In November you had the least amount of passengers. So it's that recurring pattern. So we train 2 linear regressions and we obtain our trend, which is the overall smooth behavior of the time series, and we obtain our seasonality. Which is this?
+
+319
+00:52:23.130 --> 00:52:24.240
+Viviana Márquez: so
+
+320
+00:52:24.510 --> 00:52:27.290
+Viviana Márquez: now we have okay. So
+
+321
+00:52:27.470 --> 00:52:29.109
+Viviana Márquez: here we had the trend.
+
+322
+00:52:29.230 --> 00:52:36.020
+Viviana Márquez: And basically, the trend is a linear regression. Notice that it's a very, very simple linear regression where?
+
+323
+00:52:36.250 --> 00:52:42.339
+Viviana Márquez: Yeah, I have my Y intercept my coefficient. My X, which in this time in this case is time
+
+324
+00:52:42.730 --> 00:52:48.259
+Viviana Márquez: and well, the error that you can't ever escape. So here you have a linear regression.
+
+325
+00:52:48.550 --> 00:52:51.849
+Viviana Márquez: and here you have a linear regression for the seasonality
+
+326
+00:52:52.230 --> 00:52:53.010
+Viviana Márquez: of
+
+327
+00:52:53.570 --> 00:53:12.869
+Viviana Márquez: it's just a linear regression. But instead of having one feature, which was time, now, we have 12 features, which are the months and the months are the you get the coefficients for the different months. But these coefficients are going to be either 0 or one, because it's dummy variables by
+
+328
+00:53:13.090 --> 00:53:25.650
+Viviana Márquez: pretty much a linear regression is what we just did. And, as I mentioned earlier, then, to be able to predict why, as a time series, you add the trend plus the seasonality.
+
+329
+00:53:25.930 --> 00:53:27.790
+Viviana Márquez: And so you add.
+
+330
+00:53:27.920 --> 00:53:33.000
+Viviana Márquez: here, this is this is the trend. What we had done up here with the trend.
+
+331
+00:53:34.000 --> 00:53:39.760
+Viviana Márquez: and then we quite literally just add the seasonality, which is this.
+
+332
+00:53:39.990 --> 00:53:45.119
+Viviana Márquez: and that should gives us the time series modeling. So let's
+
+333
+00:53:45.220 --> 00:53:56.980
+Viviana Márquez: put them together. So that's what we're doing here. We're going to predict the log of passengers using the train using the the T column and the dummies. For the months
+
+334
+00:53:57.120 --> 00:53:58.940
+Viviana Márquez: I trained the linear regression.
+
+335
+00:54:00.010 --> 00:54:29.789
+Viviana Márquez: And I predict so there's a good question in the chat. So Ravi is asking, what about this error that I keep ignoring the error is just there to denotate that no matter how good this modeling is, you're always going to have a little bit of error, because that's just the noise that comes from the real world. So in a previous office hours we were talking about that irreversible error. So that's the irreversible error. So that's just so. We don't forget that the model is not perfect. By.
+
+336
+00:54:29.830 --> 00:54:31.020
+Viviana Márquez: that's just
+
+337
+00:54:31.220 --> 00:54:39.499
+Viviana Márquez: how off we're going to be from our prediction. So we don't have to worry about that from a math perspective. You write it so you don't forget that
+
+338
+00:54:39.640 --> 00:54:44.359
+Viviana Márquez: otherwise this wouldn't be true, because otherwise you will have to write something like
+
+339
+00:54:44.600 --> 00:54:59.200
+Viviana Márquez: the the my target variable is approximately my seasonality, my trend, and my seasonality, because otherwise it would not be accurate to say so. You have to say, to put the error term in there.
+
+340
+00:55:00.745 --> 00:55:06.640
+Viviana Márquez: So yeah, we added. Now we are adding the T column.
+
+341
+00:55:07.190 --> 00:55:08.320
+Viviana Márquez: the dummies.
+
+342
+00:55:09.010 --> 00:55:15.080
+Viviana Márquez: and we just feed a linear regression like we've been doing so far.
+
+343
+00:55:15.615 --> 00:55:30.700
+Viviana Márquez: And look at that. So this is pretty good. It's not perfect. It has an error. The red line is the prediction, and the blue line is the actual value. So it's not perfect. You can see it in here, like, if I zoom in
+
+344
+00:55:30.700 --> 00:55:49.999
+Viviana Márquez: like, there's a lot of difference between the actual value and the error. But to be such a simple model, I think, is pretty impressive, and this is the classical decomposition model. This is the 1st thing that you learn with time series. And it's very useful. If you don't know more advanced techniques, it's very useful. It does the job.
+
+345
+00:55:50.483 --> 00:56:05.029
+Viviana Márquez: And this was just a fancy way to explain it. But basically what we did was some fast fancy feature engineering, where, instead of using this column, we're using this T column and this month column that it's the dummies
+
+346
+00:56:06.630 --> 00:56:17.739
+Viviana Márquez: and we are using it to predict the log of passengers. So you could just directly do that. But this was just to illustrate that if you add the trend.
+
+347
+00:56:18.060 --> 00:56:22.420
+Viviana Márquez: and to that trend you add this seasonality.
+
+348
+00:56:22.620 --> 00:56:23.760
+Viviana Márquez: you get
+
+349
+00:56:24.170 --> 00:56:28.499
+Viviana Márquez: trend plus seasonality. You get basically what you're trying to model.
+
+350
+00:56:28.730 --> 00:56:32.200
+Viviana Márquez: So then
+
+351
+00:56:32.860 --> 00:56:35.930
+Viviana Márquez: you would want, what am I doing here?
+
+352
+00:56:37.030 --> 00:56:38.070
+Viviana Márquez: Oh, yeah.
+
+353
+00:56:38.130 --> 00:56:40.240
+Viviana Márquez: The
+
+354
+00:56:40.900 --> 00:56:47.059
+Viviana Márquez: next thing here. Okay, so the the don't forget that we
+
+355
+00:56:47.410 --> 00:57:08.150
+Viviana Márquez: took the log over target variable, just to be able to model it correctly. But if you want to see the actual results, you have to undo that step. So we're taking the exponential. And that's what's happening in here. So now we see this was the original data with its respective prediction.
+
+356
+00:57:08.960 --> 00:57:21.239
+Viviana Márquez: So you then will compute performance metrics as usual, as with any model, because you want to know how your model is doing. So on the train data set. I computed the root mean square error.
+
+357
+00:57:21.320 --> 00:57:22.620
+Viviana Márquez: which is 12,
+
+358
+00:57:22.730 --> 00:57:34.550
+Viviana Márquez: which is not bad, because that means that on average, my prediction was 12 passengers off. But when each month has, like hundreds of passengers like being off by 12 passengers, is not that bad?
+
+359
+00:57:34.903 --> 00:57:37.740
+Viviana Márquez: But then you do it in the test data set.
+
+360
+00:57:38.380 --> 00:57:41.730
+Viviana Márquez: and you're off by 52 passengers, which is still
+
+361
+00:57:41.740 --> 00:57:56.280
+Viviana Márquez: not terrible, but it could be better. And how do you make it better? Well, you don't use the classical decomposition model. You do. The more advanced Time series models, but not too terrible. The fact that the root mean square error is
+
+362
+00:57:56.410 --> 00:58:21.659
+Viviana Márquez: significantly higher than in the test set. It means that we're overfeeding a little bit. Our model is a little bit of a memorization machine which is not great, but not too bad for our 1st time series model. And then, if you want to visualize it, this is how it looks like. So here we see our feed model for the test data set, which is not too terrible. If you look at it like it's still
+
+363
+00:58:22.140 --> 00:58:28.169
+Viviana Márquez: making the predictions not great, but better than just like a random guessing
+
+364
+00:58:30.380 --> 00:58:38.600
+Viviana Márquez: And then the next step is that you want to forecast because you have your data until the 1960, December, 1960,
+
+365
+00:58:39.080 --> 00:58:55.760
+Viviana Márquez: yeah, December, 1960. So now you want to be able to predict the data into the future. So what happened in January, 1961 February, 1961. So here is the the steps on. How do you do that forecast? So here you have that forecast for you, for you.
+
+366
+00:58:56.190 --> 00:58:59.470
+Viviana Márquez: and that was the Time series.
+
+367
+00:58:59.670 --> 00:59:01.889
+Viviana Márquez: Classical decomposition model.
+
+368
+00:59:02.523 --> 00:59:08.329
+Viviana Márquez: Here I have some slides with some terminology in case it's helpful.
+
+369
+00:59:08.590 --> 00:59:18.110
+Viviana Márquez: So what is outer correlation? How do we interpret the outer correlation? What is the lagged value? What is the acf? Pacf?
+
+370
+00:59:18.575 --> 00:59:21.550
+Viviana Márquez: A little bit of a description about
+
+371
+00:59:21.620 --> 00:59:49.989
+Viviana Márquez: Arima? Because in this module you're learning about Arma, which is Arima without the I. So I just was like might as well just add the I. So you learn about the I. And if you wanted to look at the code, here's a nice code that I found on Kaggle about this same data set. So you can see the difference between this classical decomposition? And how will you do it with neural networks? Which is Lstm. How would you do it with profit? Which is that library by Facebook.
+
+372
+00:59:49.990 --> 00:59:55.830
+Viviana Márquez: And how would you do, Sarima? Which is Arima with an S. So just
+
+373
+00:59:56.010 --> 01:00:02.360
+Viviana Márquez: concerning seasonality of Arima. So basically like a fancier version of what you're going to be learning in this module.
+
+374
+01:00:02.731 --> 01:00:21.149
+Viviana Márquez: So here you have all those different models that someone published on Kaggle. So you have them for reference, and they're also in python, which is nice, because you can just compare that to what you're learning so far. So I know I'm 1 min over time. But I wanted to
+
+375
+01:00:21.610 --> 01:00:28.750
+Viviana Márquez: give some time for questions, so feel free to drop if you need to drop. But yeah, I'll open up for questions right now.
+
+376
+01:00:34.090 --> 01:00:46.510
+Viviana Márquez: So I think this one is. I haven't looked at this code closely, but I've never seen Surima. I think it's Saurima. I think the person just like had a typo, it should be Saurima.
+
+377
+01:00:46.910 --> 01:00:51.070
+Viviana Márquez: Yeah, yeah. I also think it's a typo. It should be so remind they have it here.
+
+378
+01:00:53.513 --> 01:00:59.049
+Viviana Márquez: The powerpoint is gonna be shared on canvas. So in case
+
+379
+01:01:00.350 --> 01:01:15.499
+Viviana Márquez: you didn't know here on live sessions, you can access all the office hours, all the videos, all the code, all the slides, all the transcripts, everything that you can possibly need from the office hours.
+
+380
+01:01:17.960 --> 01:01:19.290
+Viviana Márquez: hassle
+
+381
+01:01:19.390 --> 01:01:20.860
+Viviana Márquez: questions.
+
+382
+01:01:29.070 --> 01:01:31.139
+Viviana Márquez: So I hope everyone is
+
+383
+01:01:31.320 --> 01:01:33.000
+Viviana Márquez: as excited as to
+
+384
+01:01:33.010 --> 01:01:44.569
+Viviana Márquez: as me as about Time series. I love time series. I think they're pretty great. I'm sad that I don't see them too often in my line of work, but but time series are pretty great.
+
+385
+01:01:52.028 --> 01:01:59.050
+Viviana Márquez: I'm seeing your comment in the Chat Risa would you be able to send
+
+386
+01:01:59.540 --> 01:02:07.770
+Viviana Márquez: a support ticket indicating which Jupiter, which videos don't have a Jupyter notebook. That way, we can
+
+387
+01:02:08.120 --> 01:02:14.890
+Viviana Márquez: track it and update it for for everyone. So if it's not too much to ask, could you send that support ticket?
+
+388
+01:02:18.910 --> 01:02:31.120
+Viviana Márquez: All right. Awesome. So I didn't see any questions. So thank you so much. Everyone for being here. Will I see you before Thanksgiving. Let's see, I don't think so.
+
+389
+01:02:31.140 --> 01:02:36.830
+Viviana Márquez: Oh, no, I do. So I I wouldn't say Happy Thanksgiving just yet. So see you next time.
+
+390
+01:02:37.130 --> 01:02:38.000
+Raghavan Srinivasan: Thank you.
+
+391
+01:02:38.110 --> 01:02:41.999
+Raghavan Srinivasan: Thank you. Thank you, Viviana. This is great. Really appreciate it.
+
+392
+01:02:42.000 --> 01:02:43.100
+Viviana Márquez: Thank you.
+
+393
+01:02:43.490 --> 01:02:45.420
+Viviana Márquez: Bye, everyone happy. Thursday.
+
+394
+01:02:45.810 --> 01:02:47.450
+Raghavan Srinivasan: Happy. Thursday, bye.
+
+395
+01:02:47.450 --> 01:02:48.240
+Viviana Márquez: Bye.
+

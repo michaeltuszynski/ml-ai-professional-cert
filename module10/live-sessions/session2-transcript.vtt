@@ -1,0 +1,2270 @@
+WEBVTT
+
+1
+00:00:01.020 --> 00:00:01.520
+Great.
+
+2
+00:00:02.020 --> 00:00:07.680
+Francesca Vera: I've started the recording welcome to everyone. We're just waiting to see if people trickle in. But
+
+3
+00:00:08.029 --> 00:00:10.786
+Francesca Vera: I just wanted to get a sense.
+
+4
+00:00:11.240 --> 00:00:14.060
+Francesca Vera: how how the past few modules.
+
+5
+00:00:14.515 --> 00:00:20.920
+Francesca Vera: and the topics covered, including the topic of Time Series analysis, which was this week's module, you know.
+
+6
+00:00:21.180 --> 00:00:23.450
+Francesca Vera: have any of these modules affected
+
+7
+00:00:23.600 --> 00:00:38.660
+Francesca Vera: your thoughts on the Capstone project. Maybe one of you proposed a project that looks at data with Timestamps, and this time series analysis is really relevant, or maybe
+
+8
+00:00:38.770 --> 00:00:48.149
+Francesca Vera: the model of, you know, the method of linear regression from a few weeks ago. That's going to be really useful. Any any thoughts on how
+
+9
+00:00:48.680 --> 00:00:53.370
+Francesca Vera: the recent things we've discussed have affected how you're thinking about your project.
+
+10
+00:00:54.750 --> 00:00:59.030
+Kiran: Yeah, for time series is going to help me at my work also. So that's.
+
+11
+00:01:00.360 --> 00:01:02.040
+Kiran: Using our
+
+12
+00:01:02.520 --> 00:01:05.939
+Kiran: changing my problem statement to time series, if possible.
+
+13
+00:01:06.690 --> 00:01:15.159
+Francesca Vera: And if you don't mind, if you're willing to share what? What is the problem statement that you're interested in like, how does that relate to time series.
+
+14
+00:01:15.670 --> 00:01:24.469
+Kiran: So so I work on you know, telemetry services. So I capture data from routers and switches. So.
+
+15
+00:01:24.910 --> 00:01:38.149
+Kiran: It. And it is time series where I find a latency packet size, you know. Wrap time. All these things relevant to the data that we receive from the routers and switches.
+
+16
+00:01:38.986 --> 00:01:46.720
+Kiran: Yeah, I would like to apply this time series on that to measure different latencies at different time.
+
+17
+00:01:46.920 --> 00:01:47.810
+Kiran: cities.
+
+18
+00:01:48.720 --> 00:01:52.839
+Francesca Vera: Very interesting. Thank you. Thank you for sharing, Carmen. Your hand is up.
+
+19
+00:01:53.700 --> 00:02:02.649
+Carmen P.: Yeah, I think that is, I thought was in the right part, but based on the last 2 models modules. I'm so confused because my
+
+20
+00:02:03.931 --> 00:02:10.519
+Carmen P.: my, my original problem statement was like a to create a model, to predict heart attack.
+
+21
+00:02:11.220 --> 00:02:13.480
+Carmen P.: In female populations.
+
+22
+00:02:14.830 --> 00:02:17.530
+Carmen P.: So I thought it was like a logistic regression.
+
+23
+00:02:18.250 --> 00:02:25.550
+Carmen P.: But now, because my, why is categorical, based on the learning that I have done through the models
+
+24
+00:02:25.670 --> 00:02:34.540
+Carmen P.: probably is not gonna be logistic regression, but mostly classification. I know we're not there yet, but based on research. I have done so I don't know how.
+
+25
+00:02:36.250 --> 00:02:38.460
+Carmen P.: Yeah, how can I
+
+26
+00:02:38.770 --> 00:02:44.230
+Carmen P.: apply the model to remain logistic regression without changing the Y.
+
+27
+00:02:44.230 --> 00:02:55.120
+Francesca Vera: Yeah, actually, it's you, you're right. And we're gonna see in my last slide today, logistic regression which we could come in. But logistic regression actually does.
+
+28
+00:02:55.746 --> 00:03:00.500
+Francesca Vera: Is a classification algorithm. I know it has regression in the name.
+
+29
+00:03:00.690 --> 00:03:08.990
+Francesca Vera: But logistic regression is actually a classification algorithm. So I think you're right to use logistic regression.
+
+30
+00:03:08.990 --> 00:03:10.480
+Carmen P.: Okay. Good.
+
+31
+00:03:10.480 --> 00:03:38.219
+Francesca Vera: For your topic linear regression, which we did do a few weeks ago. That's for regression. That would not work, but logistic regression. I know it's a subtle difference in the word logistic regression will actually be a good algorithm for your problem. It is a classification one. It's a funny little thing with the name regression. But logistic regression is a classification algorithm.
+
+32
+00:03:38.220 --> 00:03:43.397
+Carmen P.: Oh, okay, good. Because I was getting mixed up. So I guess I'm in the right part. I guess.
+
+33
+00:03:43.890 --> 00:03:54.409
+Francesca Vera: Great and then I see. Yeah, of course, and I see a few things, Mike said. Limiting the scope of the capstone. I think that's across the board
+
+34
+00:03:55.150 --> 00:04:01.860
+Francesca Vera: going to be really key for everyone's capstone, you know, limiting the scope. And that means.
+
+35
+00:04:01.890 --> 00:04:08.289
+Francesca Vera: you know, limiting the thing you're predicting, making sure you're really just focusing on predicting one outcome, not
+
+36
+00:04:08.400 --> 00:04:15.299
+Francesca Vera: necessarily multiple outcomes. You can have a lot of factors that lead to outcomes. For example, Carmen's project
+
+37
+00:04:15.330 --> 00:04:34.760
+Francesca Vera: for predicting. You know, heart attack. You might have a lot of factors about each individual patient, but the outcome is just one outcome of risk of heart attack, maybe not risk of heart attack right? And so limiting the scope. I think that's a really really good insight, Mike. And then, Matt, unclear on the total
+
+38
+00:04:34.940 --> 00:04:39.600
+Francesca Vera: picture. We have some tools, but it's more analysis and not really AI,
+
+39
+00:04:40.272 --> 00:04:44.699
+Francesca Vera: so I'm gonna super just fast forward
+
+40
+00:04:44.930 --> 00:04:46.080
+Francesca Vera: to
+
+41
+00:04:47.450 --> 00:04:52.009
+Francesca Vera: the end. Actually, it'll be quicker if I do this the end and this might help you.
+
+42
+00:04:52.650 --> 00:04:53.870
+Francesca Vera: Matt. So
+
+43
+00:04:54.300 --> 00:04:58.319
+Francesca Vera: if you look down here hopefully, you can see my cursor. So
+
+44
+00:04:58.730 --> 00:05:10.900
+Francesca Vera: your capstone project will focus on the application of a predictive model and communicating your findings around that model. Matt, if you feel like your project right now is more of just analysis.
+
+45
+00:05:10.990 --> 00:05:13.740
+Francesca Vera: Think about what predictions
+
+46
+00:05:13.840 --> 00:05:18.010
+Francesca Vera: like, what outcome can you predict, based on that analysis?
+
+47
+00:05:18.470 --> 00:05:37.180
+Francesca Vera: Because really what you're going to try to do by the end of your capstone project is, apply these machine learning concepts. You know these AI tools. You're going to make a prediction. And so we kind of see that with time series analysis, right? Like when we're looking at past data.
+
+48
+00:05:37.560 --> 00:05:44.010
+Francesca Vera: And we're doing that time series analysis on past data, right? Like that's the data analysis, part of it.
+
+49
+00:05:44.120 --> 00:05:51.760
+Francesca Vera: But there's that second part in our topic which is time series, analysis, and forecasting
+
+50
+00:05:51.860 --> 00:05:59.600
+Francesca Vera: where the forecasting is going to be the prediction part. Right? We're using a lot of our time series analysis, our insights
+
+51
+00:05:59.680 --> 00:06:19.220
+Francesca Vera: gain their observation of trends. Maybe various factors. We're using that to then forecast, maybe the next 10 years, maybe the next 100 seconds, maybe the next decade century. But that's the predictive element. So my recommendation, my challenge for you, Matt would be if you feel like your project right now is more of just data analysis.
+
+52
+00:06:20.530 --> 00:06:22.020
+Francesca Vera: Think about what
+
+53
+00:06:22.110 --> 00:06:33.310
+Francesca Vera: can you predict with that data analysis. So taking the heart attack example again, if I'm going to do a lot of analysis, and I notice oh, patient with this profile
+
+54
+00:06:33.510 --> 00:06:36.760
+Francesca Vera: in the past have been more at risk.
+
+55
+00:06:36.880 --> 00:06:42.509
+Francesca Vera: Maybe my prediction will be given a new patient profile. Can I predict
+
+56
+00:06:42.670 --> 00:06:44.710
+Francesca Vera: if they'll be at risk?
+
+57
+00:06:44.980 --> 00:06:47.369
+Francesca Vera: Do you get what I'm saying, Does that make sense?
+
+58
+00:06:48.558 --> 00:06:54.320
+Francesca Vera: But thank you for bringing that up, because I think that was one of the biggest challenges that I saw
+
+59
+00:06:54.400 --> 00:06:58.360
+Francesca Vera: in the proposal. The the project
+
+60
+00:06:58.370 --> 00:07:07.740
+Francesca Vera: or the problem statement was, a lot of people had great ideas on data analysis. So then the challenge is, okay, what do I want to do with that data analysis?
+
+61
+00:07:08.195 --> 00:07:10.270
+Francesca Vera: Yeah, no, no worries. Matt. Yeah.
+
+62
+00:07:10.270 --> 00:07:11.610
+Kiran: I haven't
+
+63
+00:07:12.040 --> 00:07:13.139
+Kiran: sorry. Go ahead. Yeah.
+
+64
+00:07:13.140 --> 00:07:14.609
+Francesca Vera: No no go ahead.
+
+65
+00:07:14.900 --> 00:07:26.353
+Kiran: Yeah. So usually, we keep you know, time slot constant across the data, right? Like in time series. Either we have every month data or every year data or every second data.
+
+66
+00:07:27.050 --> 00:07:33.479
+Kiran: Is there are there any modules in time series where we can handle data at a different frequencies like, you know.
+
+67
+00:07:33.480 --> 00:07:34.080
+Francesca Vera: Yeah.
+
+68
+00:07:34.411 --> 00:07:40.710
+Kiran: Like like. You know, data for every second, followed by every minute, followed by every hour like that.
+
+69
+00:07:40.710 --> 00:07:45.289
+Francesca Vera: Yeah, no, that's a great question. And I am actually pulling out
+
+70
+00:07:45.849 --> 00:07:48.969
+Francesca Vera: the canvas, because there's a great
+
+71
+00:07:49.160 --> 00:07:57.070
+Francesca Vera: bit here, let me transfer it so that you can see it on the share screen. All right, does everyone. Can everyone see this on canvas?
+
+72
+00:07:57.140 --> 00:07:59.270
+Francesca Vera: So time series data.
+
+73
+00:07:59.640 --> 00:08:00.910
+Francesca Vera: you can see
+
+74
+00:08:00.970 --> 00:08:05.449
+Francesca Vera: types of time series data. You actually have a lot of time series data.
+
+75
+00:08:05.480 --> 00:08:09.119
+Francesca Vera: And what you're saying reminds me of this one.
+
+76
+00:08:10.370 --> 00:08:11.320
+Francesca Vera: Are you.
+
+77
+00:08:11.320 --> 00:08:16.270
+Kiran: It's a regular, but you know, different. Regular
+
+78
+00:08:16.820 --> 00:08:19.830
+Francesca Vera: Oh, I see. So you would have multiple.
+
+79
+00:08:20.800 --> 00:08:22.719
+Francesca Vera: Okay, and
+
+80
+00:08:23.920 --> 00:08:25.829
+Francesca Vera: that would then be.
+
+81
+00:08:26.300 --> 00:08:36.180
+Kiran: Then I would like to know what would be the prediction if if the frequency increases versus like, you know, one second interval data versus 1 min interval data
+
+82
+00:08:36.539 --> 00:08:42.860
+Kiran: is my system going to act differently when I have 1 min interval data versus one second interval data.
+
+83
+00:08:43.780 --> 00:08:46.050
+Francesca Vera: I think that is something that
+
+84
+00:08:46.070 --> 00:08:46.970
+Francesca Vera: you
+
+85
+00:08:48.010 --> 00:09:12.370
+Francesca Vera: It would be very fair for you to actually explore that. If that's something you're concerned with, if you remember. So I loaded this sunspot data. I was going to get to it later. But if you think back to the lecture, which might be a while ago. You'll notice that when doing the sunspot data and looking at sort of
+
+86
+00:09:12.830 --> 00:09:14.030
+Francesca Vera: the
+
+87
+00:09:16.680 --> 00:09:29.200
+Francesca Vera: the the differences on to see how the trend. You know it. It wasn't a stationary it. It did not show a stationary plot. But then, if you look
+
+88
+00:09:29.220 --> 00:09:30.380
+Francesca Vera: over
+
+89
+00:09:30.640 --> 00:09:42.130
+Francesca Vera: 20 lags that shows a different plot from 200 lags. So your exploration in your time series data analysis can look
+
+90
+00:09:42.560 --> 00:09:55.339
+Francesca Vera: at those different time intervals, right? Like, let's say your data is collected in seconds. You can look at intervals of per second. And then, if you just change those intervals to 60 seconds, we know, that's the same as
+
+91
+00:09:55.850 --> 00:09:59.059
+Francesca Vera: over a minute. And so in the same way, you can
+
+92
+00:10:00.720 --> 00:10:14.329
+Francesca Vera: imagine that it's 1 data set. But the way you're looking at it is different, because you're looking at looking at it like maybe one second intervals, and then 60 second intervals, or like
+
+93
+00:10:15.020 --> 00:10:22.699
+Francesca Vera: 3,600 second intervals. Right? So does that answer your question? Am I understanding that correctly?
+
+94
+00:10:23.320 --> 00:10:30.421
+Kiran: Yeah, yeah, I I think I missed that session. Maybe I need to revisit and then get traffic. Yeah.
+
+95
+00:10:30.760 --> 00:10:55.870
+Francesca Vera: Yes, so here, you in the in the plots, and maybe I can go. I'll go through it later and kind of show that. But you can see that one of the examples from the lecture shows where lags are 200, and that will look very different from when it's 20. And so thinking about scale, because time, obviously
+
+96
+00:10:56.347 --> 00:11:05.160
+Francesca Vera: different scales, like 60 seconds, is not the same as one second. It might be a an interesting thing to look over, and then.
+
+97
+00:11:05.960 --> 00:11:19.390
+Manish Goenka: Francisca. I have a question. I'm behind on submitting my capstone project, is it? I just caught up to my coursework, so I'm good in the course and module 10. When is the latest by which we can submit the capstone.
+
+98
+00:11:20.758 --> 00:11:24.590
+Francesca Vera: So I'll go into modules, and
+
+99
+00:11:24.630 --> 00:11:28.719
+Francesca Vera: there is up here in
+
+100
+00:11:29.810 --> 00:11:31.510
+Francesca Vera: program orientation.
+
+101
+00:11:31.870 --> 00:11:40.039
+Francesca Vera: You'll be able to find everything about your capstone. This is really useful, as you can see. I've been onto this page many times, because I know exactly where it is.
+
+102
+00:11:41.520 --> 00:11:47.300
+Francesca Vera: in the next few weeks. Actually think, starting next week. Module 11
+
+103
+00:11:47.350 --> 00:12:01.709
+Francesca Vera: to module 14. You'll each have the opportunity to meet one on one with your learning facilitator, and by module 16. So I think that's your question. By module 16. You will need to submit your formal problem proposal.
+
+104
+00:12:02.058 --> 00:12:04.849
+Manish Goenka: We have a few weeks. Okay, thank you.
+
+105
+00:12:04.850 --> 00:12:09.459
+Francesca Vera: Great. And yes, you have a few weeks plus a 1 on one session with your program leader.
+
+106
+00:12:10.160 --> 00:12:10.940
+Francesca Vera: Thank you.
+
+107
+00:12:10.940 --> 00:12:11.659
+Manish Goenka: Thank you.
+
+108
+00:12:11.920 --> 00:12:27.280
+Francesca Vera: Great and to go back to the earlier question. I think, Kieran, you asked matt put some examples in the chat that might be useful to you as well about looking at timescale
+
+109
+00:12:29.740 --> 00:12:43.400
+Francesca Vera: cool. Well, thank you all so much. I think that was a really productive check-in. I'll think about doing those more often, and I'm glad to hear that you've been thinking about your projects as you've been going through the modules.
+
+110
+00:12:43.940 --> 00:12:47.700
+Francesca Vera: My agenda for today. Just very quick. Faqs.
+
+111
+00:12:48.296 --> 00:12:51.573
+Francesca Vera: I may skip over going over.
+
+112
+00:12:52.520 --> 00:13:02.730
+Francesca Vera: I may. I may skip past going over prior notes, and then, if we have time at the end. Going back to these. These were just some observations from previous
+
+113
+00:13:03.137 --> 00:13:09.380
+Francesca Vera: assignments that would probably be useful to you moving forward, but I can jump back to that
+
+114
+00:13:09.937 --> 00:13:26.610
+Francesca Vera: at the end. Week 10 overview. So we're in week 10, looking at time series analysis and forecasting and then looking at forward ahead. Your capstone projects particularly, because, starting, I believe, Module 11, you will have.
+
+115
+00:13:26.740 --> 00:13:34.790
+Francesca Vera: You were each entitled to a 1-on-one discussion about your capstone project with your learning facilitators, and I'll go over that at the end.
+
+116
+00:13:36.720 --> 00:13:38.253
+Francesca Vera: So I've
+
+117
+00:13:39.390 --> 00:13:50.740
+Francesca Vera: noted that many of the previous office hours attendees. Maybe you feel the same. Have have expressed, maybe needing more time to discuss
+
+118
+00:13:50.750 --> 00:13:52.900
+Francesca Vera: with a learning facilitator.
+
+119
+00:13:53.407 --> 00:14:03.849
+Francesca Vera: Some questions that perhaps don't need to be raised during office hours. If they're a very specific question about your progress or about your project.
+
+120
+00:14:04.060 --> 00:14:08.632
+Francesca Vera: and not not knowing where or how to do that.
+
+121
+00:14:10.030 --> 00:14:17.379
+Francesca Vera: One thing that I have noticed recently, and I've really appreciated actually, is that I've been getting more ticket requests
+
+122
+00:14:17.560 --> 00:14:28.228
+Francesca Vera: on a specific topic. And people who are submitting. These ticket requests have even provided either screenshots or
+
+123
+00:14:28.790 --> 00:14:48.449
+Francesca Vera: you know, quotes from the certain module or quotes from the code assignment, and I think you know, depending on which learning facilitator receives your ticket. This is a great way to get more detailed feedback, or answers to a specific question that you might not want to bring up at office hours.
+
+124
+00:14:48.630 --> 00:14:53.480
+Francesca Vera: So an example of this was, as you all know. If you submit an assignment late.
+
+125
+00:14:54.029 --> 00:15:11.100
+Francesca Vera: You get your grade, but you don't get as in-depth feedback as you would get if you submit your assignment on time. That's the benefit of submitting on time and definitely for the 1st practical applications. One.
+
+126
+00:15:11.120 --> 00:15:18.109
+Francesca Vera: there was a lot of feedback to give, because it was very much your 1st time really putting together a full project, which was great.
+
+127
+00:15:18.440 --> 00:15:27.190
+Francesca Vera: but that meant people who submitted late did not necessarily get feedback to the same degree as people who submitted on time. So I did get a ticket.
+
+128
+00:15:27.370 --> 00:15:52.339
+Francesca Vera: asking, hey? I know I submitted a late practical applications. One, but I really want to know how I can improve on, say, my visualizations, how I can improve on my code, syntax, etc. And so, getting that from the learner, I was able to just pull up their submission for practical applications, one, and write out feedback for the criteria and submit that, and then close the ticket.
+
+129
+00:15:52.580 --> 00:15:54.580
+Francesca Vera: And that was a way that
+
+130
+00:15:55.060 --> 00:15:58.470
+Francesca Vera: this learner who wanted specific feedback was able to get
+
+131
+00:15:58.610 --> 00:16:08.619
+Francesca Vera: specific feedback without having to bring it into this office hour session and have, you know, 12 of you. Listen to me. Give one person feedback. Right? So that's a great example.
+
+132
+00:16:08.840 --> 00:16:32.670
+Francesca Vera: Another example was a learner had encountered a new function. You know, we're learning new functions all the time learning about new packages, learning about new classes all the time, and they were like, Hey, this colab notebook refers to a new function that was brought up in lecture once for 3 seconds, and never brought up again.
+
+133
+00:16:33.180 --> 00:16:42.830
+Francesca Vera: Can you give me things to help me learn about this new function, or can you help explain why this new function works for this colab?
+
+134
+00:16:42.910 --> 00:16:46.049
+Francesca Vera: You know this, this colab question.
+
+135
+00:16:46.070 --> 00:16:54.969
+Francesca Vera: And so these are just examples, ways that if you have a specific question that you think. Okay, it's not really the right place to bring it up in office hours.
+
+136
+00:16:55.860 --> 00:17:07.739
+Francesca Vera: Try to submit a ticket with all the relevant information, the relevant details, and hopefully, you'll be able to get the direct response in that in that format. So just wanted to
+
+137
+00:17:07.839 --> 00:17:11.959
+Francesca Vera: flag that for you if you are looking to get specific feedback or have
+
+138
+00:17:12.170 --> 00:17:16.100
+Francesca Vera: a longer discussion on something that you encountered.
+
+139
+00:17:17.010 --> 00:17:40.689
+Francesca Vera: I also got requests about the answer key for the try it exercises, I am aware there are not answer keys posted, so I'm still following up on getting the answer key, for try it exercises. So stay tuned. I know people have been submitting tickets to ask for help with some of the try it exercises. So in the meantime, that should still work
+
+140
+00:17:43.610 --> 00:17:44.976
+Francesca Vera: codeo issues.
+
+141
+00:17:45.830 --> 00:17:47.030
+Francesca Vera: So
+
+142
+00:17:47.570 --> 00:17:57.030
+Francesca Vera: by week 10, I'm sure you're all very familiar with the Codeo interface, and that there have been some issues that crop up depending on the module.
+
+143
+00:17:58.030 --> 00:18:01.612
+Francesca Vera: Firstly, if you've noted a codeo issue,
+
+144
+00:18:02.635 --> 00:18:15.059
+Francesca Vera: submission was a common one, but sometimes something incorrect in the answer key or not understanding why you were penalized for marks. We are working on them. Sometimes I'll leave a ticket open
+
+145
+00:18:15.230 --> 00:18:22.169
+Francesca Vera: and just respond like we're looking into Codeo on your behalf. But that ticket remains open. We're working on that.
+
+146
+00:18:24.110 --> 00:18:45.520
+Francesca Vera: note that you may edit your assignment submission an unlimited number of times. So if you mark your assignment as incomplete after having marked it complete, maybe the day before, and you wanted to change something, you can go back and mark it as incomplete. Make your edits and then complete your assignment again. So
+
+147
+00:18:45.770 --> 00:18:59.150
+Francesca Vera: this is really supposed to be your learning experience. It's not a test to see if you are, you know, passing on fail or failing on the 1st try. It's it's really not that kind of a
+
+148
+00:18:59.480 --> 00:19:04.480
+Francesca Vera: kind of platform. Not that kind of a course. So it's it's a learning process. Maybe
+
+149
+00:19:04.750 --> 00:19:10.589
+Francesca Vera: you got one question wrong the 1st time you want to go back and edit it, and
+
+150
+00:19:10.910 --> 00:19:18.770
+Francesca Vera: sort of understand why, that 1st time you got it wrong you could do that. So please please feel free to go back to edit your submission
+
+151
+00:19:19.670 --> 00:19:35.420
+Francesca Vera: in a previous module. There were some inconsistencies between the question and answer. Key. If you follow the prompt, the answer key will be adjusted, so no need to adjust your answer to the incorrect answer just to fit the answer, key.
+
+152
+00:19:35.430 --> 00:19:43.779
+Francesca Vera: And please, please, I got a ticket about this recently. Make sure you match the output of your answer key exactly
+
+153
+00:19:44.040 --> 00:20:00.819
+Francesca Vera: as the question asks it. So that means if you are given a variable name. If the data frame has set column names. Please do not change the variable name. Do not change the function. Name. Do not change the column names, you know. The answer key will match.
+
+154
+00:20:01.150 --> 00:20:11.479
+Francesca Vera: We'll want you to match these these variable names function, names, etc. Exactly. So. If you're getting something wrong, even though your code is functionally correct.
+
+155
+00:20:11.500 --> 00:20:13.109
+Francesca Vera: it may be because
+
+156
+00:20:13.150 --> 00:20:16.719
+Francesca Vera: the names of your variables are not matching those of the answer key.
+
+157
+00:20:17.090 --> 00:20:23.759
+Francesca Vera: So feel free to to go back and change those and just ultimately, if you were correct.
+
+158
+00:20:24.120 --> 00:20:39.550
+Francesca Vera: your grades will end up being changed. To reflect this like, we would not penalize you for a code eo assignment. If you are correct, and that may get done, you know, on week 24 at the last week of the course or something. But do not worry if you are correct.
+
+159
+00:20:39.750 --> 00:20:43.880
+Francesca Vera: you will get the credit you earned by being correct.
+
+160
+00:20:46.740 --> 00:20:56.700
+Francesca Vera: Cool and so in the interest of time, I'll skip over some of these and jump back to it
+
+161
+00:20:57.480 --> 00:21:01.420
+Francesca Vera: later, if time permits. But I'll
+
+162
+00:21:01.600 --> 00:21:04.310
+Francesca Vera: then jump into
+
+163
+00:21:04.820 --> 00:21:07.054
+Francesca Vera: the module itself.
+
+164
+00:21:08.010 --> 00:21:19.959
+Francesca Vera: and field various questions. As I go through focusing on specific things. But if time permits, I'll go back to the general more general advice and feedback.
+
+165
+00:21:20.310 --> 00:21:27.799
+Francesca Vera: So module, 10 time, series, analysis, and forecasting, we spoke about it a little bit at the start of this
+
+166
+00:21:28.533 --> 00:21:37.810
+Francesca Vera: at the start of the icebreaker, and why these 2 things are important, but also why they're put together. A lot of
+
+167
+00:21:37.880 --> 00:21:44.069
+Francesca Vera: what you are building towards for your capstone project is to be able to predict
+
+168
+00:21:44.220 --> 00:21:50.099
+Francesca Vera: an outcome using machine learning techniques or using, you know, various AI techniques.
+
+169
+00:21:50.230 --> 00:22:06.969
+Francesca Vera: You want to predict a future outcome. Right? And so that's why time series, analysis and forecasting are put together. You can almost think of it. As you know, if I'm given this data that requires some time series analysis. What can I do with that data? Well, I can forecast
+
+170
+00:22:07.050 --> 00:22:21.689
+Francesca Vera: outcomes in the future. And that's really how I like to think of a lot of the various techniques and a lot of the real life problems that you encounter in the lecture videos or in the colab notebooks. For me, it's very much a question of.
+
+171
+00:22:21.930 --> 00:22:23.710
+Francesca Vera: I have this data set.
+
+172
+00:22:24.270 --> 00:22:31.510
+Francesca Vera: What can I learn from this data set? What insights can I extract? What patterns? How can I analyze it?
+
+173
+00:22:31.780 --> 00:22:39.260
+Francesca Vera: And then my problem doesn't stop there right after I've done all of that hard work to really understand what the historical data has told me.
+
+174
+00:22:39.500 --> 00:22:43.330
+Francesca Vera: I'm then asking myself, Okay, so what next? What can I do
+
+175
+00:22:43.740 --> 00:22:51.730
+Francesca Vera: to, you know, to predict something important, relevant in the future, using all the hard work and all the analysis I did.
+
+176
+00:22:51.780 --> 00:22:58.149
+Francesca Vera: So that's really one way you can just think about your capstone project. I have a data set.
+
+177
+00:22:58.560 --> 00:23:03.210
+Francesca Vera: I want to do some really meaningful analysis on it. Once I'm done with that analysis.
+
+178
+00:23:03.300 --> 00:23:07.280
+Francesca Vera: How can that help me predict something important, relevant in the future?
+
+179
+00:23:08.770 --> 00:23:11.439
+Francesca Vera: So for time, series analysis, the
+
+180
+00:23:11.630 --> 00:23:28.109
+Francesca Vera: 1st one is to apply a 1st learning outcome listed was to apply these tools to model and analyze real world data. And there's specific kinds of data that we are looking at and then to draw useful conclusions from this real world data.
+
+181
+00:23:28.330 --> 00:23:32.799
+Francesca Vera: As I mentioned in previous office hours. I like to think of
+
+182
+00:23:32.840 --> 00:23:36.060
+Francesca Vera: the knowledge checks and Codeo assignments as
+
+183
+00:23:36.460 --> 00:23:38.660
+Francesca Vera: sort of mapping them. To which
+
+184
+00:23:38.960 --> 00:23:42.509
+Francesca Vera: topic before I even start. So that I know.
+
+185
+00:23:42.640 --> 00:23:51.350
+Francesca Vera: okay, if I'm gonna do forecasting problem section today, I have 3 things I want to finish. It's hard to jump
+
+186
+00:23:51.370 --> 00:23:59.130
+Francesca Vera: from one thing to the next if you're still in the process of learning, and so I always like to break it down like this.
+
+187
+00:23:59.260 --> 00:24:04.600
+Francesca Vera: So that I know, okay, I'm not really going to do codeo assignment one
+
+188
+00:24:04.630 --> 00:24:12.019
+Francesca Vera: 10.1 and knowledge check 10.3 in the same seating. I like to keep them separate. So if that's helpful
+
+189
+00:24:12.050 --> 00:24:16.009
+Francesca Vera: for you, this might be one way you can break down
+
+190
+00:24:16.030 --> 00:24:17.500
+Francesca Vera: how to tackle the
+
+191
+00:24:17.550 --> 00:24:19.719
+Francesca Vera: knowledge checks and Codeo assignments
+
+192
+00:24:24.140 --> 00:24:25.730
+Francesca Vera: all right. So
+
+193
+00:24:26.440 --> 00:24:30.820
+Francesca Vera: I left these blank because I had hoped for us to fill them in.
+
+194
+00:24:31.260 --> 00:24:33.660
+Francesca Vera: And this is very much
+
+195
+00:24:33.830 --> 00:24:36.230
+Francesca Vera: you know, a question of, when
+
+196
+00:24:36.520 --> 00:24:40.330
+Francesca Vera: would we use time series analysis?
+
+197
+00:24:42.520 --> 00:24:46.350
+Francesca Vera: I would love to have some examples of data sets
+
+198
+00:24:46.620 --> 00:24:48.339
+Francesca Vera: that would not
+
+199
+00:24:49.210 --> 00:24:55.202
+Francesca Vera: use time series analysis and data sets that would use time series analysis. So
+
+200
+00:24:55.800 --> 00:24:56.670
+Francesca Vera: please.
+
+201
+00:24:57.760 --> 00:24:58.380
+Francesca Vera: please
+
+202
+00:24:59.310 --> 00:25:05.289
+Francesca Vera: get me started on that. Any any ideas of a data set where maybe time series analysis would not be the right
+
+203
+00:25:05.760 --> 00:25:07.129
+Francesca Vera: right tool for it.
+
+204
+00:25:14.050 --> 00:25:15.960
+Manish Goenka: Height of people in a population.
+
+205
+00:25:15.960 --> 00:25:16.780
+Francesca Vera: Okay.
+
+206
+00:25:17.080 --> 00:25:19.439
+Francesca Vera: Height of people
+
+207
+00:25:20.700 --> 00:25:23.670
+Francesca Vera: in a population cool. Okay.
+
+208
+00:25:24.480 --> 00:25:25.680
+Francesca Vera: any
+
+209
+00:25:25.920 --> 00:25:27.050
+Francesca Vera: other
+
+210
+00:25:27.510 --> 00:25:28.520
+Francesca Vera: things
+
+211
+00:25:29.110 --> 00:25:30.272
+Francesca Vera: to do with
+
+212
+00:25:32.440 --> 00:25:41.170
+Francesca Vera: data sets here, categorization. Okay, do you have an idea of a data set that would need categorization, like.
+
+213
+00:25:41.300 --> 00:25:44.539
+Francesca Vera: what kind of data restaurant reviews. Okay.
+
+214
+00:25:46.850 --> 00:25:52.049
+Francesca Vera: horsepower and gasoline. Okay? And images. So we have images.
+
+215
+00:25:52.330 --> 00:26:01.330
+Francesca Vera: horsepower and gasoline, I take that is for different car models. Great. Okay. So now into the actual
+
+216
+00:26:02.311 --> 00:26:05.400
+Francesca Vera: topic this this week, this module. What
+
+217
+00:26:05.460 --> 00:26:07.909
+Francesca Vera: would I want to use time
+
+218
+00:26:07.980 --> 00:26:10.900
+Francesca Vera: series stock prices over time.
+
+219
+00:26:12.640 --> 00:26:13.950
+Francesca Vera: whether
+
+220
+00:26:14.030 --> 00:26:18.139
+Francesca Vera: okay, weather and then sales. Okay?
+
+221
+00:26:19.170 --> 00:26:22.619
+Francesca Vera: So can someone tell me, how? How did you
+
+222
+00:26:22.850 --> 00:26:27.840
+Francesca Vera: come up with these versus these like, what were you? What were you thinking about
+
+223
+00:26:28.270 --> 00:26:30.330
+Francesca Vera: when you were thinking about?
+
+224
+00:26:30.440 --> 00:26:36.079
+Francesca Vera: You know what would use time, series, analysis, and what wouldn't use time series analysis.
+
+225
+00:26:39.060 --> 00:26:43.000
+Kiran: If it's relevant to the time, then it comes to time, space.
+
+226
+00:26:43.350 --> 00:26:47.690
+Francesca Vera: Yes. So if it's related to time
+
+227
+00:26:48.090 --> 00:27:05.410
+Francesca Vera: or here, it says, the data should have time format, no time scale versus others. So there's data collection is not linear. That's a great one seasonality dependence on timing. So that's all actually, really, really great intuition. Because, as I believe.
+
+228
+00:27:06.280 --> 00:27:08.319
+Francesca Vera: Shashi put right at the top
+
+229
+00:27:08.340 --> 00:27:15.420
+Francesca Vera: time series sounds so easy as a concept, it's actually a nuanced topic. Yes, because if you think about these.
+
+230
+00:27:17.700 --> 00:27:20.519
+Francesca Vera: if you think about these? These.
+
+231
+00:27:20.870 --> 00:27:21.830
+Francesca Vera: you know.
+
+232
+00:27:21.940 --> 00:27:23.649
+Francesca Vera: pieces of information
+
+233
+00:27:25.220 --> 00:27:34.619
+Francesca Vera: there will be, or let's say you're making people fill out a form about their height, their birthday, their name. You know, there will be a timestamp.
+
+234
+00:27:34.780 --> 00:27:40.669
+Francesca Vera: If anyone has used a Google forms or anything like that, there is a timestamp that is
+
+235
+00:27:41.540 --> 00:27:44.419
+Francesca Vera: that that shows when the data was collected.
+
+236
+00:27:44.750 --> 00:27:55.439
+Francesca Vera: So usually, if you fill out a Google form and then you import it to Google Sheets, it will show you the date and time that someone maybe put down their name, their email address, and their birthday.
+
+237
+00:27:55.950 --> 00:28:00.340
+Francesca Vera: So you could actually have time in this data set.
+
+238
+00:28:00.980 --> 00:28:03.489
+Francesca Vera: But, as you all pointed out.
+
+239
+00:28:03.780 --> 00:28:09.500
+Francesca Vera: There's also the idea of dependence on time or the relationship with time.
+
+240
+00:28:11.470 --> 00:28:16.780
+Francesca Vera: probably for this case, even if you have the timestamp that someone put in
+
+241
+00:28:17.050 --> 00:28:18.820
+Francesca Vera: their information.
+
+242
+00:28:19.020 --> 00:28:33.449
+Francesca Vera: You might not care right if you don't care what the time that someone put your information and all you care was the height of all the people who submitted the form. Then you're not really going to use time series analysis, right? So
+
+243
+00:28:33.850 --> 00:28:41.540
+Francesca Vera: keep in mind that it's not just does the data set have time? Because if this is a Google form, I could have the timestamp of
+
+244
+00:28:41.580 --> 00:28:44.000
+Francesca Vera: the people who submitted the form.
+
+245
+00:28:44.010 --> 00:28:46.860
+Francesca Vera: But do I care in this case?
+
+246
+00:28:46.930 --> 00:28:49.940
+Francesca Vera: Not really. So. That's why it would go here.
+
+247
+00:28:51.270 --> 00:28:53.679
+Francesca Vera: And with sales
+
+248
+00:28:54.010 --> 00:28:55.930
+Francesca Vera: you could have time data
+
+249
+00:28:56.000 --> 00:29:04.846
+Francesca Vera: sales over time. But you could also have sales data with sales over time and not care about the time. Right? If I want to.
+
+250
+00:29:06.000 --> 00:29:09.309
+Francesca Vera: if I want to predict you know
+
+251
+00:29:09.370 --> 00:29:10.850
+Francesca Vera: what this
+
+252
+00:29:10.940 --> 00:29:15.929
+Francesca Vera: child is going to want for Christmas, based on my toy store sales data.
+
+253
+00:29:16.400 --> 00:29:18.160
+Francesca Vera: It might not matter
+
+254
+00:29:18.540 --> 00:29:20.980
+Francesca Vera: the time of each sale, right?
+
+255
+00:29:21.190 --> 00:29:23.440
+Francesca Vera: It might, but it also might not.
+
+256
+00:29:23.540 --> 00:29:25.680
+Francesca Vera: So, thinking about what
+
+257
+00:29:25.710 --> 00:29:34.310
+Francesca Vera: your problem is going back to that earlier discussion about your capstone project, you know, knowing your problem scope
+
+258
+00:29:34.470 --> 00:29:39.209
+Francesca Vera: is going to help you also decide whether or not time matters.
+
+259
+00:29:39.220 --> 00:29:54.820
+Francesca Vera: So something like stock prices over time might be the only thing that you care about for your capstone projects. So then it's definitely going to matter. But sales, maybe you're just trying to, you know. Figure out what you want to restock
+
+260
+00:29:55.280 --> 00:29:58.360
+Francesca Vera: for Christmas, and maybe it doesn't matter what time.
+
+261
+00:29:58.450 --> 00:29:59.999
+Francesca Vera: Maybe it does. Maybe it doesn't
+
+262
+00:30:01.580 --> 00:30:03.480
+Francesca Vera: any any questions. So far
+
+263
+00:30:06.140 --> 00:30:11.369
+Francesca Vera: it seemed like everyone had a pretty good intuition of of the types of data to work with.
+
+264
+00:30:12.870 --> 00:30:18.769
+Francesca Vera: so just lifting this from the Module Information Time series data.
+
+265
+00:30:18.820 --> 00:30:21.949
+Francesca Vera: the data points are ordered in time.
+
+266
+00:30:22.220 --> 00:30:24.670
+Francesca Vera: So an ordered data set.
+
+267
+00:30:24.770 --> 00:30:28.809
+Francesca Vera: also very important with each point corresponding to a specific time.
+
+268
+00:30:29.747 --> 00:30:39.570
+Francesca Vera: regular intervals. So often the data points are collected at regular intervals, daily, monthly, yearly. Maybe. If you're
+
+269
+00:30:39.660 --> 00:30:44.947
+Francesca Vera: looking at larger time jumps, you could do it, you know. Maybe you're looking at
+
+270
+00:30:46.740 --> 00:30:58.829
+Francesca Vera: the sort of start to finish of kids in high school. So if you take it when they're freshmen, and then, seniors, that might be a time jump of 4 years, right or 3 years.
+
+271
+00:30:59.563 --> 00:31:05.319
+Francesca Vera: So just the regular interval may may vary greatly. And then
+
+272
+00:31:06.350 --> 00:31:09.472
+Francesca Vera: this is really what I was trying to say
+
+273
+00:31:10.050 --> 00:31:12.200
+Francesca Vera: earlier, that
+
+274
+00:31:12.970 --> 00:31:17.840
+Francesca Vera: the concept of time. It it the value of
+
+275
+00:31:18.420 --> 00:31:23.530
+Francesca Vera: the outcome is influenced by previous values, and this
+
+276
+00:31:23.540 --> 00:31:37.219
+Francesca Vera: then, implicitly shows that time matters because there's some concept of prior outcomes. Remember, for your data set, each data point should have a timestamp
+
+277
+00:31:37.400 --> 00:31:57.930
+Francesca Vera: you can. I'm sure that you've seen in your previous. You think back to you know, the the coupon data set from practical applications. One, or maybe the many other data sets. I went over a car data set last week there will be missing values for your time series data.
+
+278
+00:31:58.100 --> 00:32:06.757
+Francesca Vera: You want to make sure that any value so any output, any outcome, any prediction that you're looking at has
+
+279
+00:32:07.250 --> 00:32:09.739
+Francesca Vera: has a corresponding timestamp.
+
+280
+00:32:14.500 --> 00:32:17.600
+Francesca Vera: And so to break down just the title
+
+281
+00:32:17.730 --> 00:32:20.640
+Francesca Vera: Time series, Analysis, and forecasting
+
+282
+00:32:21.670 --> 00:32:29.450
+Francesca Vera: in the process of conducting this time series analysis. You are modeling the relationship between the outcome
+
+283
+00:32:29.650 --> 00:32:34.580
+Francesca Vera: or the dependent variable, if you like to use that term and time.
+
+284
+00:32:34.940 --> 00:32:38.894
+Francesca Vera: And so this is where you're looking at historical outcomes
+
+285
+00:32:39.680 --> 00:32:44.680
+Francesca Vera: and actually modeling those historical outcomes over time.
+
+286
+00:32:45.240 --> 00:32:55.499
+Francesca Vera: In doing so, you want to make sure that you're observing significant trends or patterns over a period of time, and this you may look at various timescales to do that.
+
+287
+00:32:56.570 --> 00:32:57.720
+Francesca Vera: and
+
+288
+00:32:58.160 --> 00:33:03.650
+Francesca Vera: you are also doing this step to ensure that you build an accurate model
+
+289
+00:33:03.920 --> 00:33:14.749
+Francesca Vera: to enable future predictions. Remember, we're not just stopping at the analysis. We're going to carry forward this analysis by making some predictions.
+
+290
+00:33:14.880 --> 00:33:16.890
+Francesca Vera: And that brings us to forecasting.
+
+291
+00:33:17.140 --> 00:33:23.650
+Francesca Vera: So forecasting is then predicting future outcomes based on
+
+292
+00:33:24.030 --> 00:33:26.000
+Francesca Vera: that time series analysis.
+
+293
+00:33:28.890 --> 00:33:38.529
+Francesca Vera: And if you recall this fits very nicely with how we're looking at making predictions with AI
+
+294
+00:33:38.830 --> 00:33:59.659
+Francesca Vera: when we make predictions with AI as a whole. So basically, for all of your capstone projects, you are going to forecast future events or make predictions based on insights from data, ie. The analysis. So this is this is exactly what we were talking about for your project, Capstone in action with Time series data
+
+295
+00:34:02.470 --> 00:34:05.259
+Francesca Vera: to go over the steps of the forecasting problem.
+
+296
+00:34:05.500 --> 00:34:08.400
+Francesca Vera: The 1st step collecting historical data
+
+297
+00:34:08.440 --> 00:34:10.794
+Francesca Vera: ideally for your
+
+298
+00:34:11.679 --> 00:34:15.570
+Francesca Vera: capstone project. You will not have to do this collection
+
+299
+00:34:16.880 --> 00:34:20.239
+Francesca Vera: part ideally. You would already have
+
+300
+00:34:20.260 --> 00:34:25.169
+Francesca Vera: some kind of data set if it is your you know, data set from
+
+301
+00:34:25.740 --> 00:34:34.259
+Francesca Vera: maybe something a prior project that you had collected for, or it's 1 of the many, many publicly available historical data sets with
+
+302
+00:34:35.877 --> 00:34:39.499
+Francesca Vera: with possible application of time series analysis.
+
+303
+00:34:40.690 --> 00:34:44.151
+Francesca Vera: And then you are going to train a model. So this is
+
+304
+00:34:44.639 --> 00:34:47.360
+Francesca Vera: a very high level
+
+305
+00:34:47.690 --> 00:34:53.730
+Francesca Vera: heading. Can someone tell me what kinds of mini steps might go into? Number 2?
+
+306
+00:34:53.860 --> 00:34:55.849
+Francesca Vera: So when we say, train a model, what?
+
+307
+00:34:57.030 --> 00:35:01.959
+Francesca Vera: What? What are the actual practical steps we're taking to train a model.
+
+308
+00:35:03.090 --> 00:35:04.890
+Francesca Vera: any any ideas
+
+309
+00:35:11.960 --> 00:35:13.490
+Francesca Vera: I can give you one
+
+310
+00:35:14.480 --> 00:35:18.199
+Francesca Vera: after we've collected the historical data.
+
+311
+00:35:18.430 --> 00:35:20.830
+Francesca Vera: we might need to clean the data, right?
+
+312
+00:35:22.030 --> 00:35:27.470
+Francesca Vera: So that goes under number 2, you know, maybe I, this data has
+
+313
+00:35:27.600 --> 00:35:34.339
+Francesca Vera: 50 columns, and only 5 of them are relevant to my problem. So I'm gonna need to clean that up.
+
+314
+00:35:34.400 --> 00:35:35.490
+Francesca Vera: Or
+
+315
+00:35:36.090 --> 00:35:42.319
+Francesca Vera: maybe all the timestamps are strings, and I need to make it into a date time object.
+
+316
+00:35:42.390 --> 00:35:53.189
+Francesca Vera: So I'm going to have to clean that up. And then I see here in the chat. Thank you. You're going to have to pick a model. Yes, so before you can train a model you have to know what
+
+317
+00:35:53.270 --> 00:36:07.419
+Francesca Vera: kind of model you want to end up with, so that you can train it in the correct way to end up with that model. That's great. Split the data and fit the data. When you say, split the data, what are we splitting it into?
+
+318
+00:36:10.330 --> 00:36:12.859
+Ravi Duvvuri: Train data and the test data.
+
+319
+00:36:12.860 --> 00:36:21.420
+Francesca Vera: Yeah, perfect. So we're going to want to make sure we split into our train test sets and then fitting our training data as you put
+
+320
+00:36:21.904 --> 00:36:36.750
+Francesca Vera: yeah, looking for patterns and repeatability. So maybe before you even jump into training the model, maybe you want to conduct analysis, because, say, maybe you think maybe you think weather affects your stock prices.
+
+321
+00:36:36.760 --> 00:36:48.789
+Francesca Vera: and then you conduct analysis. And you notice, actually, the weather doesn't, you know, hasn't really affected stock prices in my historical data. So maybe weather is no longer going to be
+
+322
+00:36:49.446 --> 00:36:54.650
+Francesca Vera: a factor in the training of your model. So yeah, looking for patterns and repeatability.
+
+323
+00:36:55.180 --> 00:37:03.799
+Francesca Vera: understanding your data and cleaning it before modeling hyperparameters. Great. It sounds like everyone's got a great idea of training your model. And that's
+
+324
+00:37:03.900 --> 00:37:07.629
+Francesca Vera: you know. That means everyone's been keeping up in the past few
+
+325
+00:37:08.150 --> 00:37:09.270
+Francesca Vera: few weeks.
+
+326
+00:37:16.250 --> 00:37:20.899
+Francesca Vera: great. And I see this question, what is the technical difference
+
+327
+00:37:21.050 --> 00:37:24.220
+Francesca Vera: between the 2 between
+
+328
+00:37:25.230 --> 00:37:29.020
+Francesca Vera: forecasting tomorrow's weather and
+
+329
+00:37:29.930 --> 00:37:32.729
+Francesca Vera: predicting tomorrow's weather oops.
+
+330
+00:37:34.100 --> 00:37:35.350
+Francesca Vera: Sorry it.
+
+331
+00:37:36.420 --> 00:37:38.620
+Francesca Vera: switching between the chat and
+
+332
+00:37:38.720 --> 00:37:43.629
+Francesca Vera: screen share, has paused the screen share. I think we're back now, and so
+
+333
+00:37:44.970 --> 00:37:46.629
+Francesca Vera: I would say that
+
+334
+00:37:48.240 --> 00:37:51.800
+Francesca Vera: in general we we like to think of.
+
+335
+00:37:53.460 --> 00:37:55.443
+Francesca Vera: We like to think of
+
+336
+00:37:56.970 --> 00:38:00.793
+Francesca Vera: wanting to know the future outcomes as
+
+337
+00:38:01.540 --> 00:38:02.980
+Francesca Vera: predicting
+
+338
+00:38:03.210 --> 00:38:05.629
+Francesca Vera: just a prediction problem. But
+
+339
+00:38:06.280 --> 00:38:11.029
+Francesca Vera: usually forecasting is when there is an element of time.
+
+340
+00:38:11.410 --> 00:38:12.543
+Francesca Vera: And so
+
+341
+00:38:17.540 --> 00:38:19.019
+Francesca Vera: notice how
+
+342
+00:38:19.040 --> 00:38:20.670
+Francesca Vera: the word predict
+
+343
+00:38:20.680 --> 00:38:36.489
+Francesca Vera: in this sort of definition of forecasting exists and forecasting is really looking at, or is really the making of making predictions of future outcomes based on some time element.
+
+344
+00:38:38.250 --> 00:38:40.220
+Francesca Vera: predictions may be
+
+345
+00:38:40.350 --> 00:38:42.229
+Francesca Vera: more of the
+
+346
+00:38:42.240 --> 00:38:52.419
+Francesca Vera: sort of discrete predictions, but I like to think of forecasting as when you are making predictions with some element of time.
+
+347
+00:38:53.270 --> 00:38:55.270
+Francesca Vera: Although if you were.
+
+348
+00:38:56.430 --> 00:38:58.229
+Francesca Vera: although if you were
+
+349
+00:39:03.710 --> 00:39:13.139
+Francesca Vera: stating it as such, for example, if you were writing in your problem statement that I can predict tomorrow's weather, or I can forecast
+
+350
+00:39:13.230 --> 00:39:15.621
+Francesca Vera: tomorrow's weather. I don't know that.
+
+351
+00:39:16.560 --> 00:39:22.100
+Francesca Vera: I don't know that your learning facilitator would take issue with either one. But
+
+352
+00:39:22.260 --> 00:39:31.739
+Francesca Vera: it is something that you. If you are curious, you can ask your learning facilitator as well. But I, I personally, would not take issue with either one as
+
+353
+00:39:31.820 --> 00:39:34.079
+Francesca Vera: written in a problem statement.
+
+354
+00:39:35.770 --> 00:39:36.510
+Francesca Vera: Great?
+
+355
+00:39:38.680 --> 00:39:42.430
+Francesca Vera: okay. So then use the model to make a forecast.
+
+356
+00:39:42.500 --> 00:39:55.170
+Francesca Vera: And you know you, you could easily for a different problem statement. Say, use the model to make a prediction right? Like we've we've heard that phrase used before, and then number 4 evaluate the performance of the model.
+
+357
+00:39:55.562 --> 00:39:59.789
+Francesca Vera: So it seems to me like when you go 1, 2, 3
+
+358
+00:39:59.840 --> 00:40:01.020
+Francesca Vera: like that's
+
+359
+00:40:01.640 --> 00:40:13.380
+Francesca Vera: that achieves what the capstone says. Right like that, says the capstone wants you to make predictions with a machine learning model? Right? Why do we? Why do we use number 4?
+
+360
+00:40:13.590 --> 00:40:16.230
+Francesca Vera: Why why is number 4 important to us and
+
+361
+00:40:16.330 --> 00:40:19.360
+Francesca Vera: in why is it worth mentioning here?
+
+362
+00:40:21.110 --> 00:40:24.310
+Carmen P.: I think it's to make sure it can
+
+363
+00:40:24.340 --> 00:40:31.480
+Carmen P.: be applicable to the general population. So because it's kind of like probability just to make sure the result can be
+
+364
+00:40:32.100 --> 00:40:34.009
+Carmen P.: applicable to the mass.
+
+365
+00:40:36.760 --> 00:40:38.413
+Francesca Vera: Okay. So
+
+366
+00:40:39.300 --> 00:40:42.709
+Francesca Vera: what? What would tell you if a model is applicable
+
+367
+00:40:43.040 --> 00:40:45.200
+Francesca Vera: to the general population or not?
+
+368
+00:40:45.470 --> 00:40:46.749
+Francesca Vera: How would you know that.
+
+369
+00:40:47.960 --> 00:40:54.265
+Carmen P.: Based on on a percentage. Or maybe that's accuracy. Maybe I'm mixing both performance and accuracy.
+
+370
+00:40:55.177 --> 00:40:56.729
+Francesca Vera: Okay? And then.
+
+371
+00:40:56.790 --> 00:40:59.050
+Francesca Vera: okay? And Shashi says.
+
+372
+00:40:59.370 --> 00:41:02.079
+Francesca Vera: so closer to reality.
+
+373
+00:41:02.533 --> 00:41:05.080
+Francesca Vera: Yeah, i mean, you're, both pretty much
+
+374
+00:41:05.900 --> 00:41:14.859
+Francesca Vera: along the same lines, I mean, what is the point of doing all of this? What is the point of doing any of this time series analysis and forecasting?
+
+375
+00:41:15.330 --> 00:41:21.110
+Francesca Vera: We? We want it. If we go all the way back to here, we want to apply
+
+376
+00:41:21.160 --> 00:41:22.879
+Francesca Vera: real world tools
+
+377
+00:41:23.080 --> 00:41:23.950
+Francesca Vera: to
+
+378
+00:41:24.420 --> 00:41:29.449
+Francesca Vera: analyze model real-world data and draw useful conclusions about real-world data.
+
+379
+00:41:29.990 --> 00:41:33.270
+Francesca Vera: If we don't do this, step 4
+
+380
+00:41:33.560 --> 00:41:35.920
+Francesca Vera: and see if the model
+
+381
+00:41:35.940 --> 00:41:42.440
+Francesca Vera: is accurate to the real world. If it reflects the real world accurately.
+
+382
+00:41:42.730 --> 00:41:54.310
+Francesca Vera: then we're then what is the use of doing this right? And so it's really really important to evaluate how well your model did, because in the grand scheme of things.
+
+383
+00:41:54.960 --> 00:41:56.360
+Francesca Vera: What we want
+
+384
+00:41:56.410 --> 00:42:16.560
+Francesca Vera: is to be able to use this in our jobs in our everyday life, you know. Maybe it's maybe there are some really important things on the line. If you're making forecasts of like stock market prices and so evaluating your model. That number 4 step is what takes 1, 2, 3. In this.
+
+385
+00:42:16.560 --> 00:42:27.020
+Francesca Vera: you know, test environment in this experimental environment. Number 4 is what takes it to the real world, right? And we have seen in some of the lecture videos of this
+
+386
+00:42:27.070 --> 00:42:33.159
+Francesca Vera: past module that one way you can even evaluate your model and evaluate how well it did
+
+387
+00:42:33.430 --> 00:42:38.890
+Francesca Vera: was to compare your predictions to real life outcomes like, maybe you made predictions in
+
+388
+00:42:39.160 --> 00:42:41.069
+Francesca Vera: 2017,
+
+389
+00:42:41.480 --> 00:42:55.880
+Francesca Vera: and then you want to compare it to what actually happened between 2017 and 2021. Maybe your model didn't predict that Covid would happen right? And so you need to evaluate against that. You need to evaluate
+
+390
+00:42:56.080 --> 00:43:01.010
+Francesca Vera: so that these models become useful to you in real life. So
+
+391
+00:43:01.413 --> 00:43:11.450
+Francesca Vera: Shashi and Carmen, I think you you got it right. You got. I mean, that's that's what's that's what makes it useful to actually build these models right if you evaluate
+
+392
+00:43:11.730 --> 00:43:16.229
+Francesca Vera: the performance. If you evaluate the usefulness of these models in real life.
+
+393
+00:43:19.010 --> 00:43:20.923
+Francesca Vera: cool. So
+
+394
+00:43:21.910 --> 00:43:23.260
+Francesca Vera: if you
+
+395
+00:43:23.810 --> 00:43:24.810
+Francesca Vera: are
+
+396
+00:43:25.430 --> 00:43:32.523
+Francesca Vera: looking at time series analysis. We have been introduced to this new stats model.
+
+397
+00:43:33.480 --> 00:43:37.491
+Francesca Vera: statsmodels.org stats, models, package.
+
+398
+00:43:39.110 --> 00:43:47.850
+Francesca Vera: I really really like that 1st of all, stats models has a bunch of available data sets.
+
+399
+00:43:48.256 --> 00:43:51.549
+Francesca Vera: So the way I got to that page was
+
+400
+00:43:51.960 --> 00:43:57.720
+Francesca Vera: in the colab notebook of week. 10. Video 3. There is a link
+
+401
+00:43:57.980 --> 00:44:00.770
+Francesca Vera: here to stats, models, stats, models, data sets.
+
+402
+00:44:02.065 --> 00:44:08.900
+Francesca Vera: So that brought me to this. And these available data sets may be
+
+403
+00:44:08.940 --> 00:44:10.650
+Francesca Vera: very useful
+
+404
+00:44:10.830 --> 00:44:12.518
+Francesca Vera: to you in your
+
+405
+00:44:13.140 --> 00:44:15.210
+Francesca Vera: in your, in your project.
+
+406
+00:44:15.220 --> 00:44:16.410
+Francesca Vera: Right? Like
+
+407
+00:44:17.020 --> 00:44:19.270
+Francesca Vera: these are all real
+
+408
+00:44:19.980 --> 00:44:23.340
+Francesca Vera: real world data sets that have been.
+
+409
+00:44:23.450 --> 00:44:34.910
+Francesca Vera: You kind of get the helpful hint of what kinds, of what kinds of analysis and what kinds of modeling you may do on these. But I think some of these are really really interesting.
+
+410
+00:44:35.645 --> 00:44:43.840
+Francesca Vera: So please take a look at these data sets. If you need some more inspiration for your project
+
+411
+00:44:49.090 --> 00:44:56.490
+Francesca Vera: stats, models. Oh, actually, as you can see here, stats, models also has a bunch of other
+
+412
+00:44:57.430 --> 00:45:08.129
+Francesca Vera: statistical tools. You can see they, it also provides some regression and linear models. But for the purposes of
+
+413
+00:45:08.480 --> 00:45:14.530
+Francesca Vera: these, of this, of this module we've been looking at Time series analysis, but
+
+414
+00:45:14.610 --> 00:45:21.309
+Francesca Vera: just wanted to give you the full picture. I don't think Github was working earlier.
+
+415
+00:45:21.680 --> 00:45:24.479
+Francesca Vera: but not to worry
+
+416
+00:45:32.030 --> 00:45:32.810
+Francesca Vera: great.
+
+417
+00:45:33.510 --> 00:45:52.219
+Francesca Vera: And so in this stats, modules, package. I loaded one of the data sets from the lectures, because it really inspired me to cover a few things. One was to look at documentation for new methods or new functions that were introduced to. So I'll get to that.
+
+418
+00:45:52.950 --> 00:45:55.330
+Francesca Vera: But I also thought it was really
+
+419
+00:45:55.350 --> 00:46:00.269
+Francesca Vera: interesting, because it it made me reflect on how
+
+420
+00:46:01.020 --> 00:46:10.030
+Francesca Vera: different people might decompose the same problem in the very same colab notebook in very different ways.
+
+421
+00:46:10.750 --> 00:46:15.649
+Francesca Vera: So let me actually just jump into the notebook right here. So
+
+422
+00:46:16.530 --> 00:46:21.080
+Francesca Vera: I will just run everything from the start, just to make sure.
+
+423
+00:46:21.620 --> 00:46:24.719
+Francesca Vera: You'll if you don't remember. In the
+
+424
+00:46:24.840 --> 00:46:30.410
+Francesca Vera: in the lecture, video, where this notebook occurs. It was
+
+425
+00:46:30.630 --> 00:46:32.040
+Francesca Vera: very much
+
+426
+00:46:32.510 --> 00:46:35.029
+Francesca Vera: showing that you can generate
+
+427
+00:46:35.140 --> 00:46:50.699
+Francesca Vera: your own time series. If you want to just practice using various methods. If you want to practice actually conducting the analysis on toy data. You can generate various random time series, as you can see. When I regenerated a new random
+
+428
+00:46:51.370 --> 00:47:02.469
+Francesca Vera: data set it generated, you know, a plot to reflect that. I can also increase this number. So this is very much like your experimental playground
+
+429
+00:47:02.490 --> 00:47:03.135
+Francesca Vera: for
+
+430
+00:47:04.110 --> 00:47:05.000
+Francesca Vera: just
+
+431
+00:47:05.360 --> 00:47:12.229
+Francesca Vera: trying out various time series data. So just wanted to make sure we were all aware of that. And then
+
+432
+00:47:12.667 --> 00:47:23.140
+Francesca Vera: here plotting the auto correlations, and we can see. Yes, you know, the exponential trend and and hinting at sort of the the Stationary time series.
+
+433
+00:47:24.910 --> 00:47:30.469
+Francesca Vera: So I actually want to go into, and I'll just import these for the sake of
+
+434
+00:47:30.570 --> 00:47:36.219
+Francesca Vera: making sure we don't get any errors. I actually really want to focus on
+
+435
+00:47:36.470 --> 00:47:48.279
+Francesca Vera: the thought process that was shown to us in the lecture with regards to the sunspots data. So we are all we should all be very familiar with how to load
+
+436
+00:47:48.910 --> 00:47:50.720
+Francesca Vera: into our Pandas
+
+437
+00:47:51.070 --> 00:47:59.390
+Francesca Vera: data frame. Here we have perfectly this, you know. Csv sunspot. Csv, we can see that each value.
+
+438
+00:47:59.530 --> 00:48:01.000
+Francesca Vera: each value
+
+439
+00:48:01.590 --> 00:48:03.360
+Francesca Vera: has a corresponding
+
+440
+00:48:03.781 --> 00:48:14.348
+Francesca Vera: date. And so we're thinking, okay, perfect for some kind of time series analysis, right? And we can even see, okay, this is this is the
+
+441
+00:48:15.030 --> 00:48:18.680
+Francesca Vera: the value stored in the 1st
+
+442
+00:48:19.070 --> 00:48:21.609
+Francesca Vera: 1st item under the date column.
+
+443
+00:48:22.160 --> 00:48:26.969
+Francesca Vera: And so the next thing that we got introduced to was, Okay.
+
+444
+00:48:27.770 --> 00:48:29.970
+Francesca Vera: this looks like a string
+
+445
+00:48:30.050 --> 00:48:37.499
+Francesca Vera: oops. This looks like a string, we can tell, because it has those sort of quotation marks that denote a string.
+
+446
+00:48:38.860 --> 00:48:45.690
+Francesca Vera: But we know we want it to be in a date time format, not a string.
+
+447
+00:48:46.600 --> 00:48:48.820
+Francesca Vera: So how are we going to do that?
+
+448
+00:48:49.410 --> 00:48:54.009
+Francesca Vera: And this is why I was inspired by this decomposing a problem
+
+449
+00:48:54.570 --> 00:48:55.810
+Francesca Vera: because
+
+450
+00:48:56.360 --> 00:49:01.049
+Francesca Vera: we could do we could tackle this problem of, you know.
+
+451
+00:49:01.140 --> 00:49:09.010
+Francesca Vera: cleaning our data so that we can get it into a nice format so that we can perform some time series analysis. One way we could do it
+
+452
+00:49:09.180 --> 00:49:16.799
+Francesca Vera: is by working front to back. So front to back means like at the start. So assuming the
+
+453
+00:49:16.960 --> 00:49:18.220
+Francesca Vera: data set
+
+454
+00:49:18.660 --> 00:49:22.020
+Francesca Vera: loaded into your pandas data frame. That's the start.
+
+455
+00:49:22.190 --> 00:49:25.700
+Francesca Vera: And then the back or the finish. The finished product
+
+456
+00:49:25.830 --> 00:49:31.930
+Francesca Vera: might be okay, creating a usable time series based on that data. Right?
+
+457
+00:49:32.100 --> 00:49:34.820
+Francesca Vera: So we have our data set. We loaded it into a.
+
+458
+00:49:34.940 --> 00:49:39.629
+Francesca Vera: our patents data frame, and we want to eventually be able to conduct
+
+459
+00:49:39.640 --> 00:49:42.079
+Francesca Vera: time series analysis on it.
+
+460
+00:49:42.940 --> 00:49:47.040
+Francesca Vera: So that's front to back. How do we get from the
+
+461
+00:49:47.420 --> 00:49:51.040
+Francesca Vera: data set loading to time series analysis.
+
+462
+00:49:51.400 --> 00:49:54.400
+Francesca Vera: And then there's also back to front, which is
+
+463
+00:49:54.490 --> 00:49:57.389
+Francesca Vera: okay. I know I want to have
+
+464
+00:49:57.430 --> 00:50:00.279
+Francesca Vera: some time series analysis at the end of it.
+
+465
+00:50:00.660 --> 00:50:03.899
+Francesca Vera: What steps if I'm moving backwards?
+
+466
+00:50:04.050 --> 00:50:05.639
+Francesca Vera: Do I need to do
+
+467
+00:50:06.240 --> 00:50:08.900
+Francesca Vera: to get back to the original
+
+468
+00:50:09.870 --> 00:50:12.910
+Francesca Vera: thing that I have, which is just this. Csv.
+
+469
+00:50:13.950 --> 00:50:23.760
+Francesca Vera: so I would say that many of the problems that we've been doing. You know, many of the practices we've been doing have very much been you know.
+
+470
+00:50:24.180 --> 00:50:27.249
+Francesca Vera: you are given a data. You were given a data set.
+
+471
+00:50:27.280 --> 00:50:34.900
+Francesca Vera: and then you're given instructions how to move from start to finish. Right from that data set. Maybe you're given the sunspot data set and then
+
+472
+00:50:34.950 --> 00:50:38.199
+Francesca Vera: you move, start to finish until you get to the
+
+473
+00:50:38.300 --> 00:50:41.019
+Francesca Vera: Time Series analysis. But
+
+474
+00:50:41.310 --> 00:50:43.250
+Francesca Vera: maybe you
+
+475
+00:50:43.280 --> 00:50:46.939
+Francesca Vera: want to. You, you know, you want to do time series analysis.
+
+476
+00:50:46.980 --> 00:50:50.640
+Francesca Vera: and you have to figure out how to get
+
+477
+00:50:50.810 --> 00:50:54.379
+Francesca Vera: back to your data set. And by that I mean.
+
+478
+00:50:56.350 --> 00:50:58.360
+Francesca Vera: I have my data set loaded.
+
+479
+00:51:00.590 --> 00:51:06.020
+Francesca Vera: and I know this cannot be the format that time. You know, my time series exists.
+
+480
+00:51:06.150 --> 00:51:10.210
+Francesca Vera: So I'm thinking, okay, let's say, I have this time series.
+
+481
+00:51:10.280 --> 00:51:14.260
+Francesca Vera: What do I need for it? Okay. Moving back one step.
+
+482
+00:51:14.400 --> 00:51:20.809
+Francesca Vera: I know I need to have all the values, the dependent variables, the outputs.
+
+483
+00:51:21.040 --> 00:51:25.399
+Francesca Vera: Okay? And then moving back, I know I need to have all
+
+484
+00:51:25.490 --> 00:51:30.860
+Francesca Vera: the Timestamps or the date time objects associated with those
+
+485
+00:51:31.410 --> 00:51:32.490
+Francesca Vera: variables.
+
+486
+00:51:33.330 --> 00:51:35.030
+Francesca Vera: Okay? Then, I'm moving back.
+
+487
+00:51:38.200 --> 00:51:41.789
+Francesca Vera: I know I need to have a data set that has
+
+488
+00:51:41.820 --> 00:51:44.710
+Francesca Vera: the variables and the Associated
+
+489
+00:51:45.460 --> 00:51:51.750
+Francesca Vera: Timestamps. And then I'm moving back. I need to make sure that my data set
+
+490
+00:51:53.440 --> 00:51:55.690
+Francesca Vera: time or date.
+
+491
+00:51:55.820 --> 00:51:58.169
+Francesca Vera: Information is in a date time
+
+492
+00:51:58.570 --> 00:52:02.920
+Francesca Vera: format. And then I'm moving back. And then I end up in my Csv.
+
+493
+00:52:03.100 --> 00:52:08.039
+Francesca Vera: and so what I'm trying to say is that when you decompose a problem.
+
+494
+00:52:09.650 --> 00:52:14.150
+Francesca Vera: It's important to know what your starting point is, which is usually your data set.
+
+495
+00:52:14.390 --> 00:52:22.259
+Francesca Vera: But it's equally important to know before you jump in for this this case. What you want your finished outcome to be.
+
+496
+00:52:24.390 --> 00:52:29.150
+Francesca Vera: I'm sorry if that confused you. Are there any questions?
+
+497
+00:52:31.040 --> 00:52:34.447
+Francesca Vera: with with that? Because that was, I know that was a lot of
+
+498
+00:52:34.740 --> 00:52:36.140
+Francesca Vera: talking at once.
+
+499
+00:52:40.040 --> 00:52:43.500
+Francesca Vera: Okay, so I'll just jump in then, in this case so
+
+500
+00:52:43.870 --> 00:52:48.459
+Francesca Vera: great. So here, I know I have my data set.
+
+501
+00:52:48.770 --> 00:53:01.889
+Francesca Vera: and I have my date as a string, and when I was going backwards and backwards I remember that I said, oh, I need to have things in a date time format so that I can make my time series.
+
+502
+00:53:02.530 --> 00:53:06.169
+Francesca Vera: So the next thing I'll do right is make
+
+503
+00:53:06.770 --> 00:53:07.790
+Francesca Vera: my
+
+504
+00:53:11.980 --> 00:53:23.019
+Francesca Vera: my item in this date time format no longer the string, but, as you can see, it has also this time 0 0, just because there was no time value in it.
+
+505
+00:53:24.880 --> 00:53:27.889
+Francesca Vera: And then let's say that
+
+506
+00:53:27.900 --> 00:53:29.810
+Francesca Vera: I want to
+
+507
+00:53:31.570 --> 00:53:32.670
+Francesca Vera: then
+
+508
+00:53:33.110 --> 00:53:35.200
+Francesca Vera: do this for the entire column.
+
+509
+00:53:35.900 --> 00:53:37.180
+Francesca Vera: I'm going to
+
+510
+00:53:37.380 --> 00:53:40.620
+Francesca Vera: do this for the entire column. And so now I'm here.
+
+511
+00:53:41.430 --> 00:53:45.059
+Francesca Vera: And then I'm looking at this and thinking to myself, Okay.
+
+512
+00:53:45.740 --> 00:53:56.339
+Francesca Vera: I know I needed the value. And I needed the date time format right? I told myself that earlier, when I was stepping backwards and backwards and backwards.
+
+513
+00:53:57.020 --> 00:53:59.509
+Francesca Vera: So what I don't need is
+
+514
+00:54:00.480 --> 00:54:08.130
+Francesca Vera: everything else right? So that's why, I know that I can then drop these columns because I don't need
+
+515
+00:54:09.000 --> 00:54:14.169
+Francesca Vera: any of these things, and I told myself, such when I was moving back.
+
+516
+00:54:15.970 --> 00:54:17.709
+Francesca Vera: is everyone with me so far.
+
+517
+00:54:20.650 --> 00:54:25.310
+Francesca Vera: In the in the example there was a renaming of the column. I will, just
+
+518
+00:54:25.370 --> 00:54:27.279
+Francesca Vera: for the purposes of
+
+519
+00:54:27.490 --> 00:54:33.510
+Francesca Vera: completing, you know. Maybe I saw this, and I didn't like my various columns, so I'll rename my column
+
+520
+00:54:33.880 --> 00:54:38.040
+Francesca Vera: and then, now I'm now, I'm thinking to myself, okay.
+
+521
+00:54:39.300 --> 00:54:45.920
+Francesca Vera: did I do all the steps when I was working backwards and backwards to get to my final
+
+522
+00:54:48.016 --> 00:54:50.760
+Francesca Vera: to my final destination.
+
+523
+00:54:52.660 --> 00:54:55.900
+Francesca Vera: And so I'm just going to plot everything.
+
+524
+00:54:56.370 --> 00:54:57.820
+Francesca Vera: Okay. It
+
+525
+00:54:58.110 --> 00:55:00.450
+Francesca Vera: looks like I have some kind of
+
+526
+00:55:02.320 --> 00:55:05.290
+Francesca Vera: some kind of time series. And then I'm able to just
+
+527
+00:55:05.460 --> 00:55:07.630
+Francesca Vera: actually conduct my analysis.
+
+528
+00:55:08.140 --> 00:55:09.250
+Francesca Vera: So
+
+529
+00:55:09.740 --> 00:55:14.740
+Francesca Vera: this was just to illustrate that, to get through your
+
+530
+00:55:14.750 --> 00:55:18.020
+Francesca Vera: you know your thinking process. You're decomposing of the problem.
+
+531
+00:55:18.400 --> 00:55:30.840
+Francesca Vera: I would I could do it from start to finish where I could just do low. You know, I could memorize. Okay, I load my data set. And then I, you know, check for duplicates. And then I check for missing values.
+
+532
+00:55:30.930 --> 00:55:33.121
+Francesca Vera: And then I check for
+
+533
+00:55:33.690 --> 00:55:57.070
+Francesca Vera: you know, value types, you know. That's very much what the what the process we've been really practicing has been right, like we've been doing things step by step. It's almost mechanical. It's we're we're building a muscle memory to know. Okay, every time I want to clean. I'm looking for duplicates. I'm looking for missing values. Do I want to drop a column? That's very start to finish right front front to back.
+
+534
+00:55:57.660 --> 00:56:09.089
+Francesca Vera: But there is also another way to do it, which is sort of how I was approaching this, which is back to front. Maybe I'm starting with. I know that I want my finished outcome
+
+535
+00:56:09.480 --> 00:56:13.989
+Francesca Vera: to be the prediction of patients who are at risk for a heart attack.
+
+536
+00:56:14.300 --> 00:56:21.979
+Francesca Vera: So now I'm going to go back. Okay, patients at risk for a heart attack. What kind of problem is that? Okay, it's a classification problem.
+
+537
+00:56:22.080 --> 00:56:27.539
+Francesca Vera: Then I'll go one step back. Do I know any classification algorithms for it.
+
+538
+00:56:27.730 --> 00:56:32.700
+Francesca Vera: Yes, I do. I know logistic regression. Then I'll go one step back
+
+539
+00:56:32.760 --> 00:56:34.469
+Francesca Vera: and I'll go. Okay.
+
+540
+00:56:34.480 --> 00:56:44.710
+Francesca Vera: If I know that I want to do classification with logistic regression. What kind of data input can I put into my logistic regression model?
+
+541
+00:56:45.520 --> 00:56:50.409
+Francesca Vera: Then I'll go back and I'm gonna put. Oh, I can put this type of data
+
+542
+00:56:50.850 --> 00:57:01.059
+Francesca Vera: with, you know, looking at maybe patient age. If they were a smoker, if they have a history of previous heart attacks. Okay, then I'll go one step back and go.
+
+543
+00:57:01.470 --> 00:57:05.030
+Francesca Vera: Do I need to know? In my data set.
+
+544
+00:57:05.340 --> 00:57:18.319
+Francesca Vera: you know. Is it labeled or unlabeled? Do I need to know if people were at risk before I'm going to say yes, I do for logistic regression. So then I'm going to go back and back and back and back. And eventually I'm going to end up at my
+
+545
+00:57:18.400 --> 00:57:27.690
+Francesca Vera: Csv of patient data that has been labeled. Whether or not they were at risk for a heart attack. Do you get what I'm saying? It's sort of like
+
+546
+00:57:28.000 --> 00:57:40.789
+Francesca Vera: I could have started with that data set and weaved my way all down to my final logistic regression model that predicts if a patient has a risk for heart attack. But I can also start from the
+
+547
+00:57:40.910 --> 00:57:43.230
+Francesca Vera: and which was, I want to predict.
+
+548
+00:57:43.710 --> 00:57:55.030
+Francesca Vera: a patient is at risk. And I'm moving back. Okay, so do I need to have labeled data, what does that label data need to look like, what kind of model could I use like moving back and back?
+
+549
+00:57:55.140 --> 00:57:57.809
+Francesca Vera: So I wanted to just express that
+
+550
+00:57:57.890 --> 00:58:00.770
+Francesca Vera: even for something as simple as
+
+551
+00:58:01.000 --> 00:58:17.099
+Francesca Vera: what we just did, which was getting our sunspots. Csv. Ready for some time. Series analysis, even something simple like that you can apply moving back and back and back, as well as starting up here and moving forward.
+
+552
+00:58:19.540 --> 00:58:26.934
+Francesca Vera: And that is actually the end of the time. I do want to just express that
+
+553
+00:58:27.620 --> 00:58:29.169
+Francesca Vera: module 10 is due
+
+554
+00:58:30.420 --> 00:58:31.410
+Francesca Vera: November.
+
+555
+00:58:31.780 --> 00:58:37.110
+Francesca Vera: I think that is wrong. Sorry. 14.th
+
+556
+00:58:37.940 --> 00:58:45.809
+Francesca Vera: practical applications. 2 is coming up. If you remember practical applications. One. Think back to your feedback.
+
+557
+00:58:46.310 --> 00:58:50.379
+Francesca Vera: look over it, if necessary, because practical applications 2 is coming up
+
+558
+00:58:50.750 --> 00:58:51.970
+Francesca Vera: and
+
+559
+00:58:52.050 --> 00:58:53.080
+Francesca Vera: always
+
+560
+00:58:53.230 --> 00:59:02.449
+Francesca Vera: be thinking about your capstone projects and sort of opportunities, and you will have those one-on-one consultations in the near future.
+
+561
+00:59:05.660 --> 00:59:06.420
+Francesca Vera: Great!
+
+562
+00:59:06.790 --> 00:59:07.460
+Francesca Vera: It's
+
+563
+00:59:11.738 --> 00:59:23.680
+Francesca Vera: and Matt. I see you have a question. Would you be willing to submit a ticket on this question, and we can converse there. Does that work for you?
+
+564
+00:59:26.520 --> 00:59:28.730
+Francesca Vera: Great, all right, and thank you all.
+
+565
+00:59:28.890 --> 00:59:29.740
+Francesca Vera: Thanks.
+
+566
+00:59:33.650 --> 00:59:36.590
+Francesca Vera: Oh, 13, th thank you. There you go
+
+567
+00:59:37.380 --> 00:59:41.140
+Francesca Vera: Every date that I had written was was the wrong date. Thanks, Shashi.
+
