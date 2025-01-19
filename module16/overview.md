@@ -1,0 +1,5 @@
+# Overview: Nonlinear Features
+
+The selection of predictor variables linearly associated with the outcome is a widespread technique in ML. However, it is well known that nonlinear and complex correlations also exist. Choosing predictors that are both linearly and nonlinearly associated with the outcome variable can be significant in high-dimensional datasets.
+
+Nonlinear feature selection methods (filter-based methods) score each feature (using a statistical measure, e.g., correlation coefficient), rank each feature according to this measure, and reject features that fall below a cut-off criterion. Filter methods are the least computationally demanding because they operate on each feature individually and ignore dependencies. However, while filter methods address the issue of multicollinearity, they may lead to relatively poor performance compared to other techniques.
