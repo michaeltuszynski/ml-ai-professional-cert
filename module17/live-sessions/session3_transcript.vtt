@@ -1,0 +1,2862 @@
+NWEBVTT
+
+1
+00:00:00.100 --> 00:00:01.620
+Manish Goenka: It's online
+
+2
+00:00:03.972 --> 00:00:10.297
+Manish Goenka: the dates, for you know, when the session, too, I mean, you're not my facilitator, but just
+
+3
+00:00:10.870 --> 00:00:15.130
+Manish Goenka: days for session 2 as well as when is the capstone final final deal.
+
+4
+00:00:16.420 --> 00:00:27.900
+Vikesh K: Okay for session 2. Yes, maybe I think. I'm I'm not sure. I think I have updated, but I will recheck and do it, and regarding the capstone like
+
+5
+00:00:28.880 --> 00:00:31.099
+Vikesh K: just a second, let me share my screen.
+
+6
+00:00:33.340 --> 00:00:37.568
+Vikesh K: I hope all of you can see it so capstone as you can see here.
+
+7
+00:00:38.350 --> 00:00:42.909
+Vikesh K: is due March 19.th Technically. So.
+
+8
+00:00:43.130 --> 00:00:45.716
+Vikesh K: I believe. So this is when you're
+
+9
+00:00:46.450 --> 00:00:52.369
+Vikesh K: module starts. And by the end of this week, which is March 19, th is when the capstone is due.
+
+10
+00:00:53.070 --> 00:00:54.779
+Vikesh K: Obviously, maybe you can ask for
+
+11
+00:00:55.660 --> 00:01:03.550
+Vikesh K: one or 2 weeks of extension if you want to do that, I would, although I would suggest, keep the momentum going and see if you can finish it during that time.
+
+12
+00:01:04.650 --> 00:01:10.239
+Vikesh K: But I understand sometimes it can be challenging, and maybe you won't be able to finish it within that time.
+
+13
+00:01:10.420 --> 00:01:13.993
+Vikesh K: But if you can, that would be wonderful. And
+
+14
+00:01:15.060 --> 00:01:20.030
+Vikesh K: yeah. And then we can talk about at the yeah, we
+
+15
+00:01:21.780 --> 00:01:25.000
+Vikesh K: the main thing which I've seen. The caption got it. Yes.
+
+16
+00:01:25.000 --> 00:01:26.730
+Vikesh K: yes, you please go, and then I will say.
+
+17
+00:01:26.730 --> 00:01:28.610
+shashi: The capture, I mean the
+
+18
+00:01:28.860 --> 00:01:37.950
+shashi: practical application itself is taking so much time, so probably, I mean they should have given more time for the capstone for submission. I think
+
+19
+00:01:38.500 --> 00:01:44.500
+shashi: they expect that to be done in a week probably that little bit challenging there.
+
+20
+00:01:44.720 --> 00:01:50.930
+Vikesh K: You know the the I think. I've heard a famous saying, if you sweat more in training, you will bleed less in the war.
+
+21
+00:01:51.050 --> 00:01:51.850
+Vikesh K: That's how it is.
+
+22
+00:01:52.710 --> 00:01:53.180
+shashi: So.
+
+23
+00:01:54.740 --> 00:02:03.540
+Vikesh K: Especially for this one. This practical assignment which you folks are gonna do now. So I believe all of you are in practical assignment 3, right?
+
+24
+00:02:05.350 --> 00:02:08.199
+Vikesh K: And then the exotic topic starts.
+
+25
+00:02:08.700 --> 00:02:20.500
+Vikesh K: Ensemble techniques would be useful from from that perspective. By the way, and maybe some of you want to try neural networks. So then you have these. But having said that.
+
+26
+00:02:20.890 --> 00:02:25.460
+Vikesh K: even if you try techniques, at least till ensemble, that would be good enough.
+
+27
+00:02:26.100 --> 00:02:37.150
+Vikesh K: at least bare minimum. I would want you to try the ensemble techniques, which is Xgpo's Random Forest, because those are quite powerful techniques. So it would be good to have that
+
+28
+00:02:38.490 --> 00:02:39.390
+Vikesh K: and
+
+29
+00:02:39.770 --> 00:02:52.849
+Vikesh K: practical assignment. 3. In which you have to compare the classifiers is pretty much how your final project will also look like. So let's say whether you pick up a regression problem or whether you pick up a classification problem.
+
+30
+00:02:53.260 --> 00:03:07.069
+Vikesh K: you have to compare multiple algorithms that you cover in this course and see which one gives you the best result. Right? You can't just fit one because no free lunch. Theorem says you have to try different techniques.
+
+31
+00:03:07.190 --> 00:03:23.170
+Vikesh K: because every data pattern is different. And you need to see which one does the best job for your data set. All right. So in any case, you have to do it. The more sort of detail, the more in depth you go in this stage in practical application. 3.
+
+32
+00:03:23.330 --> 00:03:29.319
+Vikesh K: The better understanding you will have for how to approach the capstone, and the better it will, the more easy it will become.
+
+33
+00:03:29.450 --> 00:03:34.020
+Vikesh K: because essentially it will be the same process that you can pick up and put it there.
+
+34
+00:03:34.590 --> 00:03:37.810
+Vikesh K: Okay, so that's where practical Application 3 is quite useful.
+
+35
+00:03:37.980 --> 00:03:44.589
+Vikesh K: Another thing I would say, so this is a pass passing criteria. I know some of you are little behind.
+
+36
+00:03:44.810 --> 00:03:55.010
+Vikesh K: So at this stage I would urge all of you to be more strategic. For example, Code, your activities takes a decent amount of time. There are so many activities, so many questions within it.
+
+37
+00:03:55.110 --> 00:04:11.079
+Vikesh K: But if you see, they just count for 15% of the paypage. And also you have solutions. I'm not asking you to use solutions beforehand. But there is. If there is an emergency, there is some solution available, at least. Okay, which which will allow you to quickly do it.
+
+38
+00:04:11.340 --> 00:04:17.130
+Vikesh K: But the main chunk is the practical applications. The capstone project part one and part 2.
+
+39
+00:04:17.240 --> 00:04:21.600
+Vikesh K: Even if you managed to finish these 3, you will
+
+40
+00:04:21.760 --> 00:04:26.200
+Vikesh K: reach 70%. The passing grade is 75%.
+
+41
+00:04:26.390 --> 00:04:33.819
+Vikesh K: So if you're a little far behind, be more strategic focus on the big chunks. Okay? Because when you finish these off
+
+42
+00:04:34.646 --> 00:04:37.699
+Vikesh K: you will actually clear the 70%.
+
+43
+00:04:38.000 --> 00:04:47.299
+Vikesh K: This, I believe, knowledge check and discussion should be at least more straightforward. I don't think it will be very time consuming to get this so
+
+44
+00:04:47.500 --> 00:04:50.298
+Vikesh K: try to finish this off 15%, I believe,
+
+45
+00:04:50.790 --> 00:05:00.999
+Vikesh K: among the different activities, this should take the least amount of time. Okay, let me know if I'm wrong here in my assessment, and then you focus on this chunk. So even if you do this chunk.
+
+46
+00:05:01.330 --> 00:05:05.259
+Vikesh K: you're already crossing the 75% threshold.
+
+47
+00:05:05.770 --> 00:05:11.699
+Vikesh K: Okay? And remember, capstone is a mandatory part. All right. So you have to do. And it's 50% weightage.
+
+48
+00:05:11.860 --> 00:05:23.550
+Vikesh K: So it's mandatory. And also that's the best way to learn stuff that you're learning. Like, you know you're doing in this course. Only when you start solving your own problem, things will start coming together.
+
+49
+00:05:23.680 --> 00:05:27.770
+Manish Goenka: So I would say, if you're a little far behind, if you if you're up here today, okay.
+
+50
+00:05:28.050 --> 00:05:32.290
+Vikesh K: That's wonderful. But if you're a little far behind, focus on these.
+
+51
+00:05:32.460 --> 00:05:33.020
+Namrata: Yeah.
+
+52
+00:05:33.880 --> 00:05:36.599
+Vikesh K: Okay. Any questions, suggestions, or doubts.
+
+53
+00:05:37.150 --> 00:05:37.940
+Anu.Arun: Yeah.
+
+54
+00:05:37.940 --> 00:05:47.290
+Anu.Arun: can I ask a question about the applicate? Latest one? I got a result of a test accuracy of 90%.
+
+55
+00:05:47.889 --> 00:05:56.520
+Anu.Arun: I thought I, I was happy when I saw that. Then I saw the dummy classifier, and it was at 87%. So it was like,
+
+56
+00:05:58.230 --> 00:06:08.649
+Anu.Arun: there was a 3% improvement after all that so I was like, I don't know. I don't. If I'm supposed to share. And this is
+
+57
+00:06:08.910 --> 00:06:11.720
+Anu.Arun: any thoughts advice on that.
+
+58
+00:06:11.720 --> 00:06:16.820
+Vikesh K: Sure. Sure I will, I will come to it. I've kept this thing. I will come to it. So basically, it's a class imbalance problem.
+
+59
+00:06:17.313 --> 00:06:20.979
+Vikesh K: I'll come to that. That's a good point. What you raised.
+
+60
+00:06:21.580 --> 00:06:22.622
+Anu.Arun: Okay. Thank you.
+
+61
+00:06:25.810 --> 00:06:28.320
+Vikesh K: Others anything on this on the completion, part because.
+
+62
+00:06:28.460 --> 00:06:34.259
+Harish: So, vikesha, quick question when we do the capstone project.
+
+63
+00:06:34.660 --> 00:06:44.639
+Harish: If we, you know, we will have face time with with learning facilitators right if we don't get on their schedule. Is there a way for us to reach out to them? Because
+
+64
+00:06:45.130 --> 00:06:51.390
+Harish: I was not able to talk to my learning facilitator, and then I think the time passed, and I don't find time on the calendar.
+
+65
+00:06:51.580 --> 00:06:57.390
+Vikesh K: Okay? Sure, yeah. Sometimes it happens, maybe the window gets over. Then maybe you can reach out, raise a ticket
+
+66
+00:06:57.590 --> 00:07:03.980
+Vikesh K: and request them to, if possible. Just open the window again. Slot for some time which you can book.
+
+67
+00:07:05.323 --> 00:07:07.779
+Vikesh K: Yeah. I believe.
+
+68
+00:07:08.293 --> 00:07:09.319
+Vikesh K: Right? So.
+
+69
+00:07:10.023 --> 00:07:17.920
+Harish: Part one and part 2. It is due by the March 24, th right? That's what I was seeing, the one that you were sharing earlier.
+
+70
+00:07:18.300 --> 00:07:37.879
+Vikesh K: Yes. So where is it? The calendar says ideally, March. So you you can. See March, for example, you have different deadlines. So module 5, 1117, whenever their deadlines are. So that's the 1st deadline for the practical, then capstone part one is 6, 1620.
+
+71
+00:07:38.050 --> 00:07:41.260
+Vikesh K: So whenever those weeks end. That's your 1st deadline.
+
+72
+00:07:41.530 --> 00:07:46.960
+Vikesh K: and then module 24 is basically March 19.th And
+
+73
+00:07:47.640 --> 00:07:53.300
+Vikesh K: so when module module 24 ends, that's that's technically the 1st deadline.
+
+74
+00:07:53.880 --> 00:07:55.620
+Vikesh K: Yes, you can ask for
+
+75
+00:07:55.730 --> 00:08:08.140
+Vikesh K: extension, but I would suggest, unless until you really have something pressing or emergency. Try to complete it on time, because many people try to then create a big backlog, and then they struggle to
+
+76
+00:08:08.550 --> 00:08:12.390
+Vikesh K: finish it. In the end I actually feel very sad. Some of the learners
+
+77
+00:08:12.730 --> 00:08:24.430
+Vikesh K: ended at 50%, 60%. Because, you know, they were not very strategic. Also how to finish the last part. That's what I'm saying. Focus on the chunk, which are easy. Be more strategic right now. Okay?
+
+78
+00:08:24.610 --> 00:08:36.229
+Vikesh K: Because, remember, you have access to the material for next one year, you can. Once you get your certificate, at least you're you know you have not wasted your money, and you can come back to the material anytime. All right. So.
+
+79
+00:08:36.230 --> 00:08:38.150
+Harish: Oh, this is very useful. Thank you very much.
+
+80
+00:08:38.150 --> 00:08:41.740
+Vikesh K: Yeah, so please focus on the big chunks, the easy chunks.
+
+81
+00:08:41.960 --> 00:08:57.159
+Vikesh K: And I'm suggesting Codeo is very good for learning, obviously. But it's also time consuming. But I understand it only waits for 15%. Right? So right now, you have to be a bit more strategic focus on the big chunks. You will also learn a lot in that process.
+
+82
+00:08:57.350 --> 00:09:04.709
+Vikesh K: And then once you get time, maybe you can focus on Codeo. Okay, don't stop because what happens. I've seen Co. Many people get stuck with Codeo
+
+83
+00:09:05.030 --> 00:09:07.589
+Vikesh K: sometimes Cody also doesn't work properly right?
+
+84
+00:09:08.098 --> 00:09:13.109
+Vikesh K: But in the end, even if you complete all the code use you will just get 15%
+
+85
+00:09:15.760 --> 00:09:18.839
+Vikesh K: cool. Any other questions or doubts on this. On the completion part.
+
+86
+00:09:20.750 --> 00:09:31.590
+Ravi Duvvuri: So, Vikesh, what I found more useful is the self study I know it's time consuming, but that helped to ace through the code your assignments as well as the
+
+87
+00:09:31.840 --> 00:09:39.499
+Ravi Duvvuri: practical assignments, because the the hands-on experience there helped me really so just a part. There.
+
+88
+00:09:40.010 --> 00:09:58.369
+Vikesh K: Lovely. No, that that's what. So if if you are you know, if you're moving as per the calendar, for example, if all of you are, let's say, in week, 17 or week 16. That means you are not far behind. So that's fine. But if you are far behind, let's say you're still doing these sections.
+
+89
+00:09:58.520 --> 00:10:14.540
+Vikesh K: and you know your time is less. Then then I would say, do this strategy. Obviously, if you have time, the best part is to like Ravi also suggested, go through self-study, go through Codeo, do each and everything in depth you develop that, you know.
+
+90
+00:10:14.650 --> 00:10:22.679
+Vikesh K: repeat the practice as much as possible, and then you focus on it as it comes. But if you're short of time, don't take the
+
+91
+00:10:22.860 --> 00:10:29.489
+Vikesh K: the proper route, then you have to be more strategic. Okay? Because I want I don't want any one of you not to get a certificate.
+
+92
+00:10:30.402 --> 00:10:43.799
+Vikesh K: So, and if you still have some questions, doubts. You want to talk to me separately, please let me know. But it will be sad if you don't get your certificates after putting in so much of efforts. Okay, so be be more strategic at this stage in case you are
+
+93
+00:10:44.391 --> 00:10:53.090
+Vikesh K: fall in a little behind. All right. There's no need to worry. But only thing you have to be a bit more strand. Because last time it happened in some of the runs people.
+
+94
+00:10:53.658 --> 00:11:03.210
+Vikesh K: they got 50%, 60%. They couldn't. Really. They were quite close to the benchmark. They couldn't really cross the 75. They didn't get certificate. So that's pretty sad.
+
+95
+00:11:03.661 --> 00:11:07.060
+Vikesh K: So I don't want you, all of you, to be in that space.
+
+96
+00:11:07.880 --> 00:11:11.689
+Vikesh K: Cool. Shall we talk about the practical assignment? Then.
+
+97
+00:11:12.790 --> 00:11:13.800
+shashi: Yeah, this week.
+
+98
+00:11:14.680 --> 00:11:16.339
+Vikesh K: Or if you have any questions.
+
+99
+00:11:18.820 --> 00:11:21.429
+Vikesh K: no, okay. So then we can talk about.
+
+100
+00:11:21.660 --> 00:11:43.750
+Vikesh K: So this week. What? Essentially, you have one of the very interesting and good problem statement. I am loading this data set in front of me, and we will just mostly talk about that approach and everything together. Because that's what matters essentially. And then you can figure out the coding part. So what you need to figure out is this Y column. No worry. Yes, right.
+
+101
+00:11:43.910 --> 00:11:47.359
+Vikesh K: If you see the 1st thing when you do.
+
+102
+00:11:47.520 --> 00:12:01.869
+Vikesh K: your No is 87% of the time. Yes, is 11% of the time. So, as Anu also suggested, if you make a random guess, which is dummy classifier, 87% of the time you will be correct by default.
+
+103
+00:12:02.030 --> 00:12:06.430
+Vikesh K: Alright, and only 11% time, you will be wrong.
+
+104
+00:12:06.920 --> 00:12:16.330
+Vikesh K: So what you have to do you have to come up with an algorithm which will allow you to do, in fact, do much better than your dummy classified
+
+105
+00:12:17.330 --> 00:12:22.419
+Vikesh K: alright. And that's 1 of the reasons you have dummy classifiers, because, like I know also said
+
+106
+00:12:22.610 --> 00:12:42.119
+Vikesh K: she got 90%. She got happy. But then she saw even a dummy classifier just gives you 87%. So it's not a huge jump. So these kind of problems are called class imbalance problems. Now, at least typically traditionally, what used to be the case is something called smart was one of the techniques that was used
+
+107
+00:12:42.370 --> 00:12:47.380
+Vikesh K: like there were different approaches on this, but of late smart
+
+108
+00:12:47.805 --> 00:12:55.199
+Vikesh K: Has been considered as a very bad technique, and there has been a lot of backlash around it, and there has been a lot of
+
+109
+00:12:55.758 --> 00:12:58.760
+Vikesh K: you know, papers now against using smart.
+
+110
+00:12:58.920 --> 00:12:59.620
+Vikesh K: Okay?
+
+111
+00:13:00.130 --> 00:13:11.659
+Vikesh K: If you want, just for the practice of it, just for the sake of it. Maybe you can try smooth. That's 1 technique. But usually the strategy around these is, let's say you have one class, which is no.
+
+112
+00:13:12.150 --> 00:13:25.490
+Vikesh K: which is a bigger class. The other class is yes, which is a very small class. What you can do the different strategies is, take a sample of it, only a big sample, and you may make them equate both of them right?
+
+113
+00:13:25.780 --> 00:13:33.659
+Vikesh K: Or you add more elements. Repeat this elements of Y, so that maybe both of them are sort of equally represented.
+
+114
+00:13:33.880 --> 00:13:43.050
+Vikesh K: Okay, so you're doing some data manipulation there, which initially, was thought to be a maybe a smart technique. You're taking the data itself. And then, you know.
+
+115
+00:13:43.513 --> 00:13:54.840
+Vikesh K: adding more data to it, sort of a bootstrapping method. But later on now, people saying, Oh, no, I don't think this is the right method. Okay, just be careful about that.
+
+116
+00:13:55.030 --> 00:14:09.979
+Vikesh K: But despite that, having said that what matters in this is, how do you approach the problem? You know, the data checks the Eda, the pre-processing, the modeling okay, irrespective of the fact. Because, for example, even in the capstone
+
+117
+00:14:10.489 --> 00:14:17.950
+Vikesh K: we won't really focus on what is your accuracy score? But rather, how do? How? How have you approached the whole problem.
+
+118
+00:14:18.140 --> 00:14:23.123
+Vikesh K: So in a way, if you have solved it in a structured manner,
+
+119
+00:14:24.080 --> 00:14:32.819
+Vikesh K: and done the right thing in this case, study, you can literally pick up these things and put it in your own capstone, so Capstone will become way more easier then
+
+120
+00:14:33.820 --> 00:14:35.200
+Vikesh K: does that make sense.
+
+121
+00:14:37.410 --> 00:14:37.750
+Namrata: Yep.
+
+122
+00:14:38.660 --> 00:14:39.190
+Vikesh K: Yeah.
+
+123
+00:14:39.350 --> 00:14:40.620
+Vikesh K: So
+
+124
+00:14:40.890 --> 00:14:59.400
+Vikesh K: so first, st go just make a simple model, try different models and see what you get. The best output that I would say, just focus on that first.st Once you have achieved that, then maybe you can, you know, do some more research, read more about it, and then see how you can tackle that problem of class imbalance, how you can further improve it.
+
+125
+00:14:59.570 --> 00:15:03.289
+Vikesh K: But your 1st attempt should be to get a good
+
+126
+00:15:03.440 --> 00:15:08.769
+Vikesh K: like accuracy score at least better than the dummy. Okay, even if it's not a big gap.
+
+127
+00:15:10.110 --> 00:15:13.680
+Vikesh K: If you can get better than dummy. That's a good start. Okay?
+
+128
+00:15:14.850 --> 00:15:22.919
+Vikesh K: Sounds good cool. So this is how the data set looks like you have 21 columns.
+
+129
+00:15:23.140 --> 00:15:27.599
+Vikesh K: You have 400 K. No. Sorry. 41 K. Rows.
+
+130
+00:15:27.890 --> 00:15:32.879
+Vikesh K: and if I do. Df dot head I've already done if I do. df.info.
+
+131
+00:15:33.250 --> 00:15:38.800
+Vikesh K: this is what you have. You have 5 float and 5 integers, so that's like 10 numerical
+
+132
+00:15:39.500 --> 00:15:41.149
+Vikesh K: and 11 objects.
+
+133
+00:15:41.700 --> 00:15:55.649
+Vikesh K: And then so that's a good problem statement to have. In fact, that's that's 1 of the thing I keep saying to people is that pick up a caption project which has got both of them all right. So that because categorical data has its own challenges, and you should be exposed to that.
+
+134
+00:15:56.930 --> 00:15:58.040
+Vikesh K: So
+
+135
+00:15:58.560 --> 00:16:05.149
+Vikesh K: you need to understand what is the right way to tackle these categorical elements in this? And what is the right?
+
+136
+00:16:05.300 --> 00:16:06.120
+Vikesh K: Oh.
+
+137
+00:16:06.300 --> 00:16:14.760
+Vikesh K: approach for these numerical elements. Okay, so we will. I I would like to discuss, mostly on that, hopefully, at least the whole end to end process
+
+138
+00:16:15.265 --> 00:16:20.320
+Vikesh K: so that then, if you haven't attempted this, you can attempt this at your own end.
+
+139
+00:16:20.500 --> 00:16:21.440
+Vikesh K: Sounds good.
+
+140
+00:16:22.370 --> 00:16:22.910
+shashi: Yeah.
+
+141
+00:16:23.530 --> 00:16:25.900
+Vikesh K: I hope that would be a good use of your time.
+
+142
+00:16:26.140 --> 00:16:33.540
+Vikesh K: Okay, so let's start with data checks. Okay? Then we have Ed apart pre-processing.
+
+143
+00:16:33.880 --> 00:16:44.330
+Vikesh K: modeling evaluation. Okay, broadly, this is what you can classify. Break it down into same with your capstone as well in data checks. What are the things you will see.
+
+144
+00:16:47.500 --> 00:16:53.380
+shashi: Duplicates, dulls, and imbalanced data, and.
+
+145
+00:16:55.871 --> 00:17:03.710
+Vikesh K: Yes, you can do. But yeah, you you can. Really, you can't really do anything about imbalance at this stage.
+
+146
+00:17:04.859 --> 00:17:11.470
+Vikesh K: Identify distribution. All right. So.
+
+147
+00:17:11.770 --> 00:17:15.810
+shashi: Missing values. Yeah, if you have any outliers in your data.
+
+148
+00:17:15.810 --> 00:17:16.460
+shashi: Yes, yeah.
+
+149
+00:17:19.589 --> 00:17:22.150
+Vikesh K: That's on the stage. Anything else.
+
+150
+00:17:27.270 --> 00:17:27.869
+shashi: Part.
+
+151
+00:17:33.840 --> 00:17:36.490
+Ravi Duvvuri: Video remove duplicates, wait.
+
+152
+00:17:37.070 --> 00:17:39.679
+Vikesh K: Yes, so that I will put it in data check
+
+153
+00:17:40.208 --> 00:17:50.689
+Vikesh K: that, you focus on the duplicates and like duplicate finding and treating them right? So so we will tackle that at this stage India would be like more understanding more about the data. So how would you do that?
+
+154
+00:17:51.390 --> 00:17:59.050
+Vijay Chaganti: There are some rules with the unknown like like loan default, housing himself.
+
+155
+00:17:59.050 --> 00:18:04.380
+Vijay Chaganti: No other few rows with unknown removing those. Those
+
+156
+00:18:05.440 --> 00:18:13.850
+Vijay Chaganti: is okay, right? I mean, I I just think, like the percentage of unknowns is minimal compared to snow Rose. So.
+
+157
+00:18:15.430 --> 00:18:20.120
+Vikesh K: Okay, I will put it here, we we need to check what is the scope like, what percentage is it
+
+158
+00:18:21.280 --> 00:18:30.686
+Vikesh K: like? Let's say, if it's 70% then, you know, you maybe you need to drop the column rather than the rows. Right? That that's the call you have to take.
+
+159
+00:18:31.200 --> 00:18:36.959
+Sai: One hot encoding, converting the categorical data to integers.
+
+160
+00:18:37.600 --> 00:18:39.750
+Sai: I will put that in pre-processing.
+
+161
+00:18:41.480 --> 00:18:46.320
+Vikesh K: Okay, one part encoding food.
+
+162
+00:18:46.810 --> 00:18:51.067
+Manish Goenka: 80, population, collinear, collinearity,
+
+163
+00:18:53.070 --> 00:18:53.980
+Vikesh K: Coalition
+
+164
+00:18:54.930 --> 00:19:00.819
+Vikesh K: so broadly. When you think of Edia, think of it in terms of you know the broad structure. It's
+
+165
+00:19:00.940 --> 00:19:02.250
+Vikesh K: univariate.
+
+166
+00:19:03.090 --> 00:19:05.260
+shashi: It's bivariate.
+
+167
+00:19:05.510 --> 00:19:08.680
+Vikesh K: And it's multivariate. Okay? So like.
+
+168
+00:19:08.870 --> 00:19:17.749
+Vikesh K: that's like a structured approach, univated. At this stage, at least, mostly, it would be in the univate. You will focus on the
+
+169
+00:19:18.590 --> 00:19:20.050
+Vikesh K: let me put it like this.
+
+170
+00:19:20.560 --> 00:19:23.150
+shashi: Distribution, how they are distributed!
+
+171
+00:19:23.280 --> 00:19:23.770
+shashi: How about you.
+
+172
+00:19:23.770 --> 00:19:24.250
+Vikesh K: Yes.
+
+173
+00:19:24.250 --> 00:19:24.859
+shashi: Do that.
+
+174
+00:19:27.390 --> 00:19:33.790
+Vikesh K: Okay, this would be mostly your feature columns.
+
+175
+00:19:34.270 --> 00:19:35.500
+Vikesh K: Individually.
+
+176
+00:19:36.410 --> 00:19:44.830
+Vikesh K: You want to understand if how the behavior is, if there are any, you know, weird shapes, weird patterns, but mostly better understanding
+
+177
+00:19:45.990 --> 00:19:57.449
+Vikesh K: of your target. All right. So the quick thing is, at least in this case it's pretty straightforward. It's imbalance. Okay? So you need to be aware of that before you go into the modeling part. So
+
+178
+00:19:57.680 --> 00:20:06.760
+Vikesh K: feature columns individually and then by variate is when you have a relationship of target.
+
+179
+00:20:07.480 --> 00:20:11.509
+Vikesh K: which is your Y column with other feature columns.
+
+180
+00:20:12.380 --> 00:20:18.649
+Vikesh K: Okay, that's 1 to one relationship which you would like to understand. All right within this
+
+181
+00:20:18.960 --> 00:20:22.040
+Vikesh K: correlation can help you out right?
+
+182
+00:20:24.130 --> 00:20:31.820
+Vikesh K: And maybe if you want to, relationship among the feature values.
+
+183
+00:20:32.220 --> 00:20:39.570
+Vikesh K: okay, how the columns relate to each other. So once once you do the correlation that can be a good start, all right.
+
+184
+00:20:40.620 --> 00:20:46.070
+Vikesh K: And then you also might have to do relationship.
+
+185
+00:20:48.800 --> 00:20:58.070
+Vikesh K: And remember within this you would have the feature columns. You would have numeric and categorical
+
+186
+00:20:58.210 --> 00:21:08.949
+Vikesh K: for categorical. The 1 1 way would be for each category within a categorical data set. What is the typical value of your target? Alright? So maybe you would want to understand that.
+
+187
+00:21:09.450 --> 00:21:13.627
+Vikesh K: So that's your on your bivariate multivariate, usually,
+
+188
+00:21:14.640 --> 00:21:18.499
+Vikesh K: at least in terms of graph charts, it becomes little difficult.
+
+189
+00:21:18.660 --> 00:21:27.030
+Vikesh K: But maybe you can do this with combination of group buys. Right? So, for example, you have education.
+
+190
+00:21:27.130 --> 00:21:35.140
+Vikesh K: And then you have a job or marital status. Okay? So you maybe you can combine these things all right.
+
+191
+00:21:38.590 --> 00:21:39.870
+Vikesh K: Me zoom in a bit.
+
+192
+00:21:40.590 --> 00:21:47.320
+Vikesh K: You can combine your job, marital status and education
+
+193
+00:21:48.140 --> 00:21:54.040
+Vikesh K: right? And its impact on why that you care about
+
+194
+00:21:54.820 --> 00:22:00.690
+Vikesh K: right? So how? So, for example, you would have an individual relationship right
+
+195
+00:22:00.820 --> 00:22:12.270
+Vikesh K: it. From here you will have one individual relationship of job with Y marital status, with Y, education with Y, but maybe sometimes a combination works fairly. Okay. So
+
+196
+00:22:12.650 --> 00:22:22.509
+Vikesh K: if if you're highly educated, then your marital status is yes, and then you are in a good job. The 3 combinations. How does it impact your Y value?
+
+197
+00:22:22.900 --> 00:22:26.999
+Vikesh K: Alright. So so that will allow you to understand this. So the groups
+
+198
+00:22:27.917 --> 00:22:39.919
+Vikesh K: this, at least from a business perspective. We often do this. Because it gives you a better combination, a better understanding of the how the business is running right? What are the combinations, and what do they produce?
+
+199
+00:22:40.740 --> 00:22:45.120
+Vikesh K: And, by the way, in logistic regression.
+
+200
+00:22:45.220 --> 00:22:52.469
+Vikesh K: maybe you should be able to. If you use logistic regression, you can even quantify this, how elements come together
+
+201
+00:22:52.660 --> 00:22:54.960
+Vikesh K: through something called interaction effects
+
+202
+00:22:55.630 --> 00:23:05.480
+Vikesh K: in case you don't know or you haven't read. Just check the interaction effects. That's that tells you how things, when they combine together? What is the output they produce?
+
+203
+00:23:06.130 --> 00:23:08.240
+Vikesh K: Is it making sense? So far all good.
+
+204
+00:23:12.290 --> 00:23:15.599
+Vikesh K: so pre-processing? That's where.
+
+205
+00:23:16.280 --> 00:23:19.789
+Vikesh K: Let's see what we have one. We have one hot encoding.
+
+206
+00:23:20.040 --> 00:23:23.449
+Vikesh K: and is there any other encoding technique you can use.
+
+207
+00:23:24.180 --> 00:23:24.880
+Manish Goenka: Kayleigh.
+
+208
+00:23:25.870 --> 00:23:28.669
+Namrata: Sorry scaling standard, scalar or.
+
+209
+00:23:28.960 --> 00:23:29.760
+Vikesh K: Yes. Okay.
+
+210
+00:23:31.500 --> 00:23:34.520
+Ravi Duvvuri: We can also use label, encoder.
+
+211
+00:23:35.480 --> 00:23:42.500
+Vikesh K: Okay. Standard scalar. So remember, this is for numerical label encoder.
+
+212
+00:23:42.620 --> 00:23:46.399
+Vikesh K: Is there any difference between label encoder and one hot encoding.
+
+213
+00:23:47.360 --> 00:23:48.080
+Ravi Duvvuri: Yes.
+
+214
+00:23:49.190 --> 00:24:01.100
+Ravi Duvvuri: think if I remember. If there is a ordinality, I think you use the label encoder if the values doesn't make any difference then you can use the on hot encoder.
+
+215
+00:24:01.690 --> 00:24:04.729
+Vikesh K: Okay, let's do this. I.
+
+216
+00:24:06.060 --> 00:24:12.849
+Sai: And one more thing is in label. It makes values like 1, 2, 3, 4, something like that.
+
+217
+00:24:13.160 --> 00:24:17.709
+Sai: But for one hot encoding it is just 0 and one which is.
+
+218
+00:24:17.710 --> 00:24:18.090
+Vikesh K: So.
+
+219
+00:24:18.090 --> 00:24:18.510
+Sai: Yeah.
+
+220
+00:24:18.510 --> 00:24:22.019
+Vikesh K: That's a good point. One thing which I want to highlight in this. If you go.
+
+221
+00:24:23.600 --> 00:24:24.780
+Vikesh K: To the
+
+222
+00:24:25.325 --> 00:24:37.900
+Vikesh K: yeah, this is sometimes people often make this mistake. Label encoder the dictionary. The documentation itself, says, encode the target labels with value between 0 and N classes minus one.
+
+223
+00:24:38.030 --> 00:24:47.409
+Vikesh K: and then they give a sort of a hint and a warning. In the second line. This transformer should be used to encode target values, which is y and not. X.
+
+224
+00:24:48.270 --> 00:24:49.100
+Vikesh K: So
+
+225
+00:24:49.690 --> 00:24:57.150
+Vikesh K: this pre-processing, if you're doing for X values which are your features, you should not use label encoder. Okay.
+
+226
+00:24:57.730 --> 00:25:04.490
+Vikesh K: so this is, I will write it in capital. This is only for y
+
+227
+00:25:04.900 --> 00:25:09.177
+Vikesh K: and not for x, okay, because
+
+228
+00:25:10.130 --> 00:25:15.590
+Vikesh K: at least in this case, if you randomly just give values, 1, 2, 3, 4. Let's say you have multiple categories.
+
+229
+00:25:15.980 --> 00:25:19.659
+Vikesh K: You are creating a relationship where there is no relationship
+
+230
+00:25:19.910 --> 00:25:27.410
+Vikesh K: and without any analysis there, there can be some cases where, like Ravi was mentioning, there can be some relationship somewhere.
+
+231
+00:25:27.600 --> 00:25:30.900
+Vikesh K: Then you need to 1st figure out that relationship
+
+232
+00:25:31.220 --> 00:25:45.529
+Vikesh K: and then do the encoding. Okay. So label encoding doesn't do that. It just assigns it 1, 2, 3, 4, so always use it only for the Y, which is your target, which is the column that you're trying to predict, and not for your X
+
+233
+00:25:46.830 --> 00:25:47.770
+Vikesh K: sounds good.
+
+234
+00:25:48.700 --> 00:25:59.378
+Ravi Duvvuri: So, Vikesh, there's like all the time like I saw one notebook in previous exercises. They use a label encoder, or maybe self study on the x
+
+235
+00:25:59.760 --> 00:26:03.019
+Vikesh K: Oh, then, then, if you can let me know that because that would be wrong.
+
+236
+00:26:03.670 --> 00:26:04.390
+Ravi Duvvuri: Okay.
+
+237
+00:26:04.770 --> 00:26:07.990
+Vikesh K: Yeah, because, for example, the this.
+
+238
+00:26:08.260 --> 00:26:13.510
+Vikesh K: like, it's also about good practice. Maybe in that sense, maybe you could use it. I need to see it. But
+
+239
+00:26:14.265 --> 00:26:18.289
+Vikesh K: the best practices, and that's why they write it in documentation
+
+240
+00:26:18.760 --> 00:26:24.250
+Vikesh K: very categorically. It's should be used only for y, and never for x.
+
+241
+00:26:25.610 --> 00:26:27.900
+Ravi Duvvuri: It makes sense. Yeah, okay, I will check it up.
+
+242
+00:26:28.250 --> 00:26:28.980
+Vikesh K: Cool.
+
+243
+00:26:30.076 --> 00:26:35.000
+Vikesh K: Then the ordinal encoder has anyone used this?
+
+244
+00:26:36.720 --> 00:26:47.129
+Vikesh K: So so 1 1 also. One good way is, you know, check the maybe make a habit once in a while just to visit the psychic, learn documentation.
+
+245
+00:26:47.240 --> 00:26:58.879
+Vikesh K: The documentation also gives you some clues. So, for example, when you go to the label encoder, they tell you. Hey, check this ordinal encoder, check this one hot encoder, one hot encoder, you know. So when your categorical values
+
+246
+00:26:59.360 --> 00:27:08.129
+Vikesh K: don't have a relationship between them. Don't have a hierarchy. It's very good to use a 1 hot encoder. But let's say, if you if they have some hierarchy.
+
+247
+00:27:08.927 --> 00:27:12.509
+Vikesh K: Maybe you use ordinary encode in that case.
+
+248
+00:27:13.250 --> 00:27:13.950
+Vikesh K: Okay.
+
+249
+00:27:14.870 --> 00:27:18.469
+Vikesh K: And then it gives you a number. It gives you.
+
+250
+00:27:18.640 --> 00:27:24.870
+Manish Goenka: Things like, you know, low medium, high, right? So it has a ordinal. It has an order. So you would use
+
+251
+00:27:24.990 --> 00:27:26.660
+Manish Goenka: ordinal encoder for that.
+
+252
+00:27:27.190 --> 00:27:30.539
+Vikesh K: Correct. And there's 1 more. Let me see if they have it here.
+
+253
+00:27:31.530 --> 00:27:37.320
+Vikesh K: Actually, there are. I think that's that's target encoder. I believe it's that.
+
+254
+00:27:41.400 --> 00:27:43.760
+Vikesh K: Yes. So if you want to give some
+
+255
+00:27:44.070 --> 00:27:54.730
+Vikesh K: be some, you know. You want to assign numbers to it based on some values. Then what you can use is target encoder.
+
+256
+00:27:55.410 --> 00:27:56.240
+Vikesh K: Okay?
+
+257
+00:27:57.190 --> 00:28:06.249
+Vikesh K: for example, here they are doing some assignment. You might have to read through about it in depth. But main thing which I want you to understand and read more about is
+
+258
+00:28:07.000 --> 00:28:08.670
+Vikesh K: the Yes.
+
+259
+00:28:11.740 --> 00:28:22.990
+Vikesh K: read more about target and go to and ordinal
+
+260
+00:28:24.190 --> 00:28:30.399
+Vikesh K: encoder. Alright, so there might be some cases, especially when you have too many.
+
+261
+00:28:30.984 --> 00:28:36.510
+Vikesh K: When your categorical data has too much of cardinality.
+
+262
+00:28:36.650 --> 00:28:46.239
+Vikesh K: then maybe one hot encoding is not the right way, because it will just keep on adding 40, 50 columns to a data set. Then maybe you try the other techniques like target encoder or original encoder.
+
+263
+00:28:46.710 --> 00:29:02.680
+Vikesh K: Okay? I would also suggest, maybe, if possible, you can, you can try experiment. See how different encoding how it produces different results. Okay, that would be a good way to learn. And why I'm emphasizing on this. Because for your capstone also, this could be a good practice.
+
+264
+00:29:04.080 --> 00:29:04.900
+Vikesh K: Okay.
+
+265
+00:29:06.010 --> 00:29:17.789
+Ravi Duvvuri: Another basic question, is it a good idea to select only few columns to do the classification, instead of doing the whole data set.
+
+266
+00:29:20.135 --> 00:29:24.260
+Vikesh K: See? If you have a scientific method of doing that.
+
+267
+00:29:24.640 --> 00:29:27.729
+Vikesh K: that would be nice. So, for example, maybe I can
+
+268
+00:29:27.940 --> 00:29:32.559
+Vikesh K: talk about that before you do the pre-processing.
+
+269
+00:29:32.760 --> 00:29:35.219
+Vikesh K: And then we can, in fact, also have a
+
+270
+00:29:35.650 --> 00:29:38.450
+Vikesh K: feature selection of feature engineering. Okay.
+
+271
+00:29:40.000 --> 00:29:54.249
+Ravi Duvvuri: No. The reason why I'm asking is in one of the self study things. You know. They intentionally dropped the all the columns, but kept only like 2 features, I mean, and then one target. And then
+
+272
+00:29:54.560 --> 00:29:58.100
+Ravi Duvvuri: the whole classification happened on the small data set.
+
+273
+00:29:58.718 --> 00:30:07.010
+Ravi Duvvuri: So and then they did the all the things you know. And can we do the same thing with any of these data sets?
+
+274
+00:30:08.000 --> 00:30:12.000
+Vikesh K: So Ravi, usually when when you know in the assignments, or sometimes even I do it.
+
+275
+00:30:12.482 --> 00:30:23.369
+Vikesh K: But that's more from a perspective of teaching right? Because we want to take a simple example which everyone can understand. And hence we sometimes have to like plot something. So it's it's good to have
+
+276
+00:30:23.650 --> 00:30:26.089
+Vikesh K: one or 2
+
+277
+00:30:27.267 --> 00:30:35.729
+Vikesh K: columns at a time, and then, you know, showcase you the whole process. But when you are doing dealing with the real data.
+
+278
+00:30:35.900 --> 00:30:46.790
+Vikesh K: What if the you select randomly something? You know you have 10 columns. You select 5 columns. You draw 5 columns. Maybe that has important information. So your model won't be. Your predictions won't be as good.
+
+279
+00:30:47.820 --> 00:30:50.210
+Vikesh K: So okay, you can drop
+
+280
+00:30:50.620 --> 00:30:57.339
+Vikesh K: provided you have done it in the right manner. So, for example, you try some feature selection methods. And then you drop it.
+
+281
+00:30:58.920 --> 00:31:01.909
+Vikesh K: Yeah, okay, okay, so that's what you have to do.
+
+282
+00:31:03.850 --> 00:31:09.600
+Vikesh K: Does anyone remember, we we did that feature selection, any technique. Do you remember anyone.
+
+283
+00:31:18.850 --> 00:31:24.239
+Manish Goenka: What about l. 1 l. 2. But that was in the context of linear regression, right? When we were doing.
+
+284
+00:31:24.807 --> 00:31:26.510
+Vikesh K: The lasso. Yes.
+
+285
+00:31:26.510 --> 00:31:28.365
+Manish Goenka: Yeah. Lasso and rich.
+
+286
+00:31:28.830 --> 00:31:29.330
+Vikesh K: Yes.
+
+287
+00:31:29.380 --> 00:31:35.740
+Manish Goenka: Can. Can you use that for classification? I mean, it's a concept would be the same right or or importance.
+
+288
+00:31:35.740 --> 00:31:36.490
+Vikesh K: See.
+
+289
+00:31:36.760 --> 00:31:40.913
+Vikesh K: So one thing you can check. So, for example, if you check the cyclone
+
+290
+00:31:41.540 --> 00:31:45.880
+Vikesh K: logistic regression documentation, because it's a classification problem that you're doing?
+
+291
+00:31:51.190 --> 00:31:52.210
+Vikesh K: no.
+
+292
+00:31:55.250 --> 00:31:55.690
+Vikesh K: it.
+
+293
+00:31:56.040 --> 00:31:58.000
+Manish Goenka: This penalty is.
+
+294
+00:31:58.240 --> 00:32:07.259
+Vikesh K: Yes. So if you see here, like, for example, what they write in bold is that at least here the regularization is applied by default. Right? So
+
+295
+00:32:07.440 --> 00:32:10.909
+Vikesh K: your regularization is happening in the logistic regression
+
+296
+00:32:11.020 --> 00:32:18.230
+Vikesh K: for others. In any case, you don't want that because that's a technique specific to linear models. Alright
+
+297
+00:32:18.920 --> 00:32:23.640
+Vikesh K: the good part about, for example, decision trees, have you?
+
+298
+00:32:23.750 --> 00:32:26.550
+Vikesh K: You you guys have gone through decision trees right?
+
+299
+00:32:26.820 --> 00:32:27.710
+Harish: Yeah, decision.
+
+300
+00:32:28.310 --> 00:32:38.810
+Vikesh K: Yes, the good part about decision tree, and later on ensemble techniques. We teach, we learn a random forest is that they do the feature selection automatically.
+
+301
+00:32:39.170 --> 00:32:43.649
+Vikesh K: You don't have to worry about it. Logistic regression you have in built
+
+302
+00:32:44.319 --> 00:32:58.160
+Vikesh K: regularization happening. So you you might have to change, you know, in your grid search change the solvers which can maybe help you figure out the right combinations. But that's also happening automatically.
+
+303
+00:32:58.840 --> 00:33:02.617
+Vikesh K: Okay, do you remember, there's something called
+
+304
+00:33:02.970 --> 00:33:03.630
+shashi: I see.
+
+305
+00:33:04.870 --> 00:33:09.580
+Vikesh K: The select E best.
+
+306
+00:33:09.820 --> 00:33:11.090
+Vikesh K: Let me see.
+
+307
+00:33:12.320 --> 00:33:13.399
+Vikesh K: Let me see there.
+
+308
+00:33:14.060 --> 00:33:14.910
+Vikesh K: Yes.
+
+309
+00:33:15.710 --> 00:33:19.050
+Vikesh K: So, for example, check the feature, selection, module.
+
+310
+00:33:19.560 --> 00:33:36.209
+Vikesh K: alright. What are the different techniques out there. I will just put a link here. And within that you tried. One thing which you tried you would have seen is select K best, all right, or Rfe, is that one method? Just check more. Just read more about it.
+
+311
+00:33:37.870 --> 00:33:41.980
+Vikesh K: Okay, select the best.
+
+312
+00:33:50.450 --> 00:33:51.343
+Vikesh K: Oh, shit
+
+313
+00:33:56.000 --> 00:34:04.020
+Vikesh K: So it ranks all the features, and then you can take the top one I've put here.
+
+314
+00:34:05.030 --> 00:34:16.730
+Vikesh K: So the main thing but the this is the standard one which you already know the standard scaling what's happening. One hot encoding, what's happening just and label encoding. Remember, it's only for your Y and never for your X.
+
+315
+00:34:17.297 --> 00:34:29.279
+Vikesh K: Only thing you might have to read more about it. And just to internalize it is, how do you use target importer? Okay? And does your data set provide you with a chance to use either of them. Okay.
+
+316
+00:34:29.489 --> 00:34:36.189
+Vikesh K: so just do a bit of a research on this, and then feature selection. Can you drop some columns
+
+317
+00:34:36.300 --> 00:34:53.060
+Vikesh K: before you even go for the modeling one. Right? That's feature selection. Although you have 21 columns, you can actually start from scratch. You take all the columns first.st That should be fine as well, because your data set is not big enough, but just for your learning. Maybe you can try the you know. How do you use the feature selection method?
+
+318
+00:34:53.060 --> 00:35:03.689
+Manish Goenka: In the case just to. So I understand so logistic regression will automatically apply into. But for the others, like Svm and decision tree we have, we should look into selecting.
+
+319
+00:35:04.850 --> 00:35:24.740
+Vikesh K: So so for Svm, and all, you have different kind of hyperparameter tuning right? So from a modeling perspective. Yes, that that's 1 thing you would have to do, you would. In Svm, for example, you can play around with the C. That's 1 hyper parameter which you have, and I believe there is. What else is there in Svm.
+
+320
+00:35:27.300 --> 00:35:29.839
+Vikesh K: The values and some interesting.
+
+321
+00:35:29.840 --> 00:35:31.369
+Manish Goenka: Polynomial, or something right?
+
+322
+00:35:31.370 --> 00:35:40.469
+Vikesh K: Oh, yeah, yeah, the radial basis, right? So which kernel function would you use? So those those things you can use to figure out the best combinations.
+
+323
+00:35:41.340 --> 00:35:43.979
+Manish Goenka: But feature selection. Which features we
+
+324
+00:35:44.542 --> 00:35:48.740
+Manish Goenka: using the model. And before we do, we do select a best
+
+325
+00:35:48.940 --> 00:35:56.009
+Manish Goenka: to determine which features we should, or maybe trim the data set to only use those features and then build the model off
+
+326
+00:35:56.180 --> 00:35:59.780
+Manish Goenka: that trimmed data set before we use Sdm. And fit.
+
+327
+00:36:00.200 --> 00:36:05.519
+Vikesh K: So that's that's like this combination. You use the best features, and then you fit this into it.
+
+328
+00:36:06.236 --> 00:36:09.800
+Vikesh K: From Svm. I don't think there is a method.
+
+329
+00:36:09.810 --> 00:36:13.310
+Harish: No. Can we use decision for feature, selection.
+
+330
+00:36:15.290 --> 00:36:24.949
+Vikesh K: See this decision tree in any case, does the feature selection automatically. So what it does decision tree when you have multiple columns. Right?
+
+331
+00:36:25.450 --> 00:36:36.000
+Vikesh K: It it figures out where to split the data, because based on some that entropy and information game, right? So it will start dividing your data.
+
+332
+00:36:36.250 --> 00:36:48.870
+Vikesh K: it starts splitting your data into multiple layers when it does that based on the importance of the column. Okay? So, for for example, it will take the age column, because it thinks age is the most important column.
+
+333
+00:36:49.010 --> 00:36:50.489
+Vikesh K: Then it does the job.
+
+334
+00:36:50.780 --> 00:37:00.890
+Vikesh K: then it does the marital status. Okay, so then, what happens in decision tree is that feature selection happens automatically. You don't really have to do it.
+
+335
+00:37:01.300 --> 00:37:06.993
+Vikesh K: Okay? And in the end, if you do a decision tree, it can also give you something like,
+
+336
+00:37:09.220 --> 00:37:19.930
+Vikesh K: oh, filters in decision 3. You can actually calculate that if you go to images, feature, importance, let me.
+
+337
+00:37:20.590 --> 00:37:24.260
+Vikesh K: What feature? Importance.
+
+338
+00:37:24.530 --> 00:37:25.360
+Vikesh K: Okay?
+
+339
+00:37:25.770 --> 00:37:29.099
+Vikesh K: So in the end you can, you will get a chart like this.
+
+340
+00:37:29.770 --> 00:37:33.080
+Vikesh K: So which will tell you which was the most.
+
+341
+00:37:33.080 --> 00:37:37.739
+Harish: Based on weightage or based on whatever the nomenclature is, we'll be able to.
+
+342
+00:37:37.740 --> 00:37:53.829
+Vikesh K: Yes, like how important is it's for your model results. So decision tree itself will tell you. Hey? We think age is the most important one, and we started with age. So the feature selection, in a way, happens very fast and happens before
+
+343
+00:37:53.970 --> 00:37:57.430
+Vikesh K: hand only, and you don't separately have to do it.
+
+344
+00:37:59.010 --> 00:38:00.360
+Vikesh K: Does that make sense.
+
+345
+00:38:01.070 --> 00:38:08.140
+Harish: Yeah. So so I think, given the data, if we run a decision tree model, we should be able to, you know, get this
+
+346
+00:38:08.250 --> 00:38:12.030
+Harish: approach right, a visual approach, and then we identify which one? Okay.
+
+347
+00:38:12.030 --> 00:38:12.670
+Vikesh K: Yeah.
+
+348
+00:38:16.480 --> 00:38:22.940
+Vikesh K: So remember, usually, this, many of these techniques initially were built. When you were just dealing with
+
+349
+00:38:23.766 --> 00:38:34.159
+Vikesh K: logistic. Sorry, the simple linear model, and you want to make wanted to make it more sophisticated. So then they figured out, okay, let's 1st do some feature selection with methods like select K. Best.
+
+350
+00:38:34.260 --> 00:38:48.109
+Vikesh K: Let's do lasso rich there to make it more powerful. But then they later on. You know, these nonparametric models like decision tree Random Forest came into picture which sort of eliminate many of these problems that you face here.
+
+351
+00:38:50.140 --> 00:38:50.555
+Vikesh K: Okay.
+
+352
+00:38:56.360 --> 00:38:59.009
+Vikesh K: try. I would say. One experiment.
+
+353
+00:39:00.451 --> 00:39:04.540
+Anu.Arun: Sorry, Vikesh, just to summarize there. So you're saying the the
+
+354
+00:39:05.320 --> 00:39:14.289
+Anu.Arun: select key best that's only necessary for, like logistic regression or ledge Classifier, and not for
+
+355
+00:39:15.330 --> 00:39:18.509
+Anu.Arun: Svc. Or decision tree or.
+
+356
+00:39:20.960 --> 00:39:27.470
+Vikesh K: Svc. I think it might still might be little helpful. But when you have the kernel as nonlinear
+
+357
+00:39:27.750 --> 00:39:34.160
+Vikesh K: ideally, maybe you should not do it. If you go to select K. Best. And you know, you see the method
+
+358
+00:39:35.330 --> 00:39:39.029
+Vikesh K: you have, let's say, have you mentioned the method here?
+
+359
+00:39:44.250 --> 00:39:50.715
+Vikesh K: So now, okay, one interesting thing which happens why, many, many people say, maybe doing
+
+360
+00:39:51.440 --> 00:39:53.460
+Vikesh K: selecting as some features
+
+361
+00:39:53.770 --> 00:40:00.400
+Vikesh K: initially, can be problematic because many of these techniques are linear in nature. So what it does
+
+362
+00:40:00.888 --> 00:40:11.180
+Vikesh K: it takes the target column column, for example, and it takes the feature column and it sees if there is a relation, linear relationship between it, and if it doesn't find it, it drops it all right.
+
+363
+00:40:11.630 --> 00:40:19.000
+Vikesh K: That. That's how you know many of these techniques work. But the challenge could be, what if there's a nonlinear relationship?
+
+364
+00:40:19.200 --> 00:40:27.240
+Vikesh K: Your feature selector can't figure that out. And then you're dropping a very important column which had a nonlinear relationship with your target.
+
+365
+00:40:27.800 --> 00:40:55.449
+Vikesh K: So the beauty of putting these things directly into decision trees, decision tree can figure out the linear relationship and nonlinear relationships. It will see which one overall which of your columns overall plays a big role and assigns it at the top of the decision tree. Then the column, which is second, most important or 3, rd most important. So it starts building from that. So that's the beauty of decision tree. It figures out all the different kind of relationships within the data set.
+
+366
+00:40:55.540 --> 00:41:00.020
+Vikesh K: And then sort of ranks it based on the feature importance.
+
+367
+00:41:00.250 --> 00:41:19.269
+Vikesh K: Okay? So ideally, if you go for decision tree. You don't really need to do the feature selection part. And also in this case it's in any case there, there are hardly 21 rows. So you. Don't. You know it's not like you have 200 rows and 500 K rows of data, so you can actually fit in the whole data set
+
+368
+00:41:19.510 --> 00:41:24.380
+Vikesh K: into your model anup? Does that answer your question?
+
+369
+00:41:25.630 --> 00:41:26.570
+Vikesh K: Have I confused you.
+
+370
+00:41:26.570 --> 00:41:31.470
+Anu.Arun: Yeah, yeah, no. I understand. Yeah, thank you.
+
+371
+00:41:33.120 --> 00:41:35.500
+Vikesh K: Manish. And does that answer your question? I think.
+
+372
+00:41:35.942 --> 00:41:37.270
+Manish Goenka: Thank you. Yep.
+
+373
+00:41:37.950 --> 00:41:39.040
+Vikesh K: Okay, cool.
+
+374
+00:41:40.370 --> 00:41:45.853
+Vikesh K: But once you, these are the main things I would want you to try.
+
+375
+00:41:46.450 --> 00:42:07.580
+Vikesh K: In fact, you can actually also try with. You know you do select K. Best the more. See that the best way to learn this would be doing some experiments right? You try. Say, K. Best. Maybe you shortlist only 10 columns, and then you build a decision model. See what is the prediction? Accuracy of that compared to let's say you go for the whole data set. And then you build a model.
+
+376
+00:42:07.770 --> 00:42:12.560
+Vikesh K: So in modeling, you know logistic is what I would want you to try.
+
+377
+00:42:12.700 --> 00:42:20.389
+Vikesh K: You have Knn, you have decision trees, you have support vector, machine.
+
+378
+00:42:24.580 --> 00:42:26.459
+Vikesh K: I would say.
+
+379
+00:42:26.460 --> 00:42:54.389
+Zhujun Wang: May I ask a last question about the feature selection? Yeah. So so I remember, like, based on the previous lecture and and the previous project. Like we, we basically 1st like a drop, maybe like a correlation like metrics to see how the score, how much relate to to. For example, for this y. If it's a very low score, I can kind of visually this
+
+380
+00:42:54.490 --> 00:42:59.489
+Zhujun Wang: kind of throw away, and the remaining one I can apply the best.
+
+381
+00:42:59.630 --> 00:43:04.719
+Zhujun Wang: The the library. Just show me the best. Is that correct?
+
+382
+00:43:05.040 --> 00:43:10.549
+Zhujun Wang: Or or like? We directly apply these like
+
+383
+00:43:10.660 --> 00:43:14.139
+Zhujun Wang: this library to slot the features?
+
+384
+00:43:15.670 --> 00:43:22.520
+Zhujun Wang: because this is slightly different from what we do before. Maybe maybe I'm not sure my understanding is correct.
+
+385
+00:43:23.410 --> 00:43:31.630
+Vikesh K: Sure good question. So so let me let me understand the question correctly. You said you can apply first.st You can figure out the correlation values between the.
+
+386
+00:43:31.630 --> 00:43:50.510
+Zhujun Wang: Right, the heat map and like, say, for example, maybe H. Compared with y is like only like 0 point 0 0 5. Then by default. I don't need to apply any library. I should 1st throw away right, and then maybe, for example, if the threshold is above like a
+
+387
+00:43:50.640 --> 00:44:01.809
+Zhujun Wang: 0 point 6, maybe above. Maybe I slide those features and then inside, within that feature, and and apply this in the slide. The best fit, or something like that.
+
+388
+00:44:02.190 --> 00:44:03.500
+Vikesh K: Sure, sure.
+
+389
+00:44:03.500 --> 00:44:04.410
+Zhujun Wang: Question, yes.
+
+390
+00:44:04.660 --> 00:44:08.169
+Vikesh K: Sure. So so the the one catch with the
+
+391
+00:44:08.490 --> 00:44:19.830
+Vikesh K: correlation using using correlation values as the metric is. For for example, if you have X and y, and you want to figure out the relationship is the relationship linear in nature, like here.
+
+392
+00:44:20.090 --> 00:44:22.810
+Zhujun Wang: Correlation coefficient will be able to capture that.
+
+393
+00:44:23.050 --> 00:44:28.110
+Vikesh K: Alright, then it does a good job. But, on the other hand, if the relationship is nonlinear
+
+394
+00:44:28.430 --> 00:44:36.150
+Vikesh K: alright, there is some relationship, but it's nonlinear. It has got some curves. Correlation may not do a good job of that.
+
+395
+00:44:37.890 --> 00:44:38.650
+Zhujun Wang: I see.
+
+396
+00:44:38.650 --> 00:44:42.889
+Vikesh K: Then, if you drop that, then maybe there was a relationship
+
+397
+00:44:43.170 --> 00:44:46.240
+Vikesh K: which a decision tree could have figured out
+
+398
+00:44:46.500 --> 00:44:50.099
+Vikesh K: all right, but which you can't figure out oh! Which? Which?
+
+399
+00:44:50.100 --> 00:44:50.580
+Zhujun Wang: Okay.
+
+400
+00:44:50.580 --> 00:45:06.300
+Vikesh K: It's like this, you know, we have airport security. We have sniffing dogs because it's because we can't smell something. That's why we have dogs. They are way more powerful than us in terms of sniffing. The different kind of, you know, smells out there
+
+401
+00:45:06.570 --> 00:45:11.060
+Vikesh K: just because we can't smell it. That doesn't mean there is no smell. Same thing happens here.
+
+402
+00:45:11.170 --> 00:45:19.850
+Vikesh K: Your logistic regression or your linear regression is based on a linear relationship. If there is a linear relationship.
+
+403
+00:45:20.500 --> 00:45:26.999
+Vikesh K: So figure it out, and it will tell you the relationship. But if the relationship is nonlinear in nature, it's not straightforward.
+
+404
+00:45:27.170 --> 00:45:36.759
+Vikesh K: they would say, Hey, there is no relationship, you can discard it, but then a decision tree will come. It will say, No, there's a relationship, but it's just not linear in nature.
+
+405
+00:45:37.190 --> 00:45:37.710
+Vikesh K: So.
+
+406
+00:45:37.710 --> 00:45:38.959
+Zhujun Wang: Oh, I see!
+
+407
+00:45:38.960 --> 00:45:42.749
+Vikesh K: That's the problem with the just relying on the correlation methods.
+
+408
+00:45:43.300 --> 00:45:45.320
+Zhujun Wang: I see gotcha, I see.
+
+409
+00:45:45.320 --> 00:46:07.160
+Vikesh K: So there might be a relationship. But maybe see often it goes hand in hand. But you don't want to drop an important column which might give you some clue in decision trees. Okay? And one more thing which happens sometimes there is an interaction effect. That's another challenge. So let's say, you have column x, 1 and x 2.
+
+410
+00:46:07.380 --> 00:46:13.319
+Vikesh K: In itself they are not very powerful, but when you combine them
+
+411
+00:46:13.570 --> 00:46:18.099
+Vikesh K: they can. They have a good impact on your
+
+412
+00:46:18.580 --> 00:46:22.060
+Vikesh K: Y, okay? So sometimes when you drop x 1,
+
+413
+00:46:22.550 --> 00:46:26.289
+Vikesh K: you're losing out on that relationship itself as well.
+
+414
+00:46:26.540 --> 00:46:27.260
+Vikesh K: The beauty of.
+
+415
+00:46:27.260 --> 00:46:27.910
+Zhujun Wang: Chill.
+
+416
+00:46:27.910 --> 00:46:31.110
+Vikesh K: Again, there is decision. Tree can figure out this interaction effect.
+
+417
+00:46:31.640 --> 00:46:54.310
+Zhujun Wang: I see I see. So in other words, like before, usually correct me if I'm wrong. So if I try to apply the collision metrics. Maybe. Firstly, I try to maybe do the scatter plot. If I see the relationship more like linear, maybe it's good to use collision metrics if it's not
+
+418
+00:46:54.450 --> 00:47:06.270
+Zhujun Wang: like you say it's either polynomial or quadratic. Whatever, then, yeah. Done. Looks like the collision. Have a have a lot of limitation. Looks like right. It's not a
+
+419
+00:47:06.270 --> 00:47:07.780
+Zhujun Wang: anyway. Gotcha!
+
+420
+00:47:08.240 --> 00:47:09.670
+Zhujun Wang: I see. I see.
+
+421
+00:47:10.220 --> 00:47:21.480
+Vikesh K: So that's that's that's that's what ideally you should figure out, or you will discover in the bivariate part, right when you're trying to figure out the relationship of the target with other columns. It will give you insights like those.
+
+422
+00:47:22.420 --> 00:47:25.940
+Zhujun Wang: I see gotcha cool. Thanks.
+
+423
+00:47:27.840 --> 00:47:29.429
+Vikesh K: Okay, all good. So far here.
+
+424
+00:47:29.660 --> 00:47:32.509
+Vikesh K: Anyone doubts or questions, or have I confused you.
+
+425
+00:47:33.084 --> 00:47:35.380
+Harish: Yeah. Good. Thank you.
+
+426
+00:47:35.680 --> 00:47:44.000
+Vikesh K: Okay on the evaluation part. Obviously, accuracy is one. But remember, this is imbalance. So not useful.
+
+427
+00:47:44.780 --> 00:47:50.069
+Vikesh K: Okay? Because, like Anu was mentioning the default is 87%.
+
+428
+00:47:50.200 --> 00:48:07.700
+Vikesh K: And the logistic or the model gave her 90%. Okay? So it's not a big jump. And also accuracy doesn't is not very reliable. You please calculate the other matrix, which is precision, recall, and how it looks like in this case. Okay, also focus on that.
+
+429
+00:48:07.880 --> 00:48:13.370
+Vikesh K: And then, if possible, maybe have that. A here we go.
+
+430
+00:48:14.610 --> 00:48:22.429
+Vikesh K: Rc, calls. Okay, just to do this sort of end to end like, you have the different components
+
+431
+00:48:22.570 --> 00:48:25.170
+Vikesh K: and you evaluate the model.
+
+432
+00:48:25.828 --> 00:48:28.520
+Vikesh K: The different models with these parameters.
+
+433
+00:48:30.340 --> 00:48:31.830
+Vikesh K: Does that make sense.
+
+434
+00:48:31.970 --> 00:48:35.109
+Ravi Duvvuri: We can do also f 1 score as well.
+
+435
+00:48:38.190 --> 00:48:39.610
+Vikesh K: Sunscreen, no point.
+
+436
+00:48:43.050 --> 00:48:50.270
+Ravi Duvvuri: Sorry one question on the graphs in general. So how do we go about like plotting this one
+
+437
+00:48:50.640 --> 00:48:57.800
+Ravi Duvvuri: like these are all like numerical thing, right? Like some table information numbers like 90% score and all
+
+438
+00:48:58.498 --> 00:49:04.979
+Ravi Duvvuri: the final result in the after the evaluation. Hey, this model is better
+
+439
+00:49:05.776 --> 00:49:11.843
+Ravi Duvvuri: based on some visual description or visual picture of it. So how do we do that?
+
+440
+00:49:12.580 --> 00:49:15.330
+Vikesh K: As as in when you want to compare the different ones.
+
+441
+00:49:15.870 --> 00:49:21.300
+Ravi Duvvuri: Yeah, because at the end, like, you know, we comparing 4 modelings right? Svm.
+
+442
+00:49:21.490 --> 00:49:34.889
+Ravi Duvvuri: so how? How do we plot that like? Say, hey? For this data set logistic regression, or maybe decision tree is good, based on the metrics. We got right. Our train score interest score and all those things
+
+443
+00:49:35.030 --> 00:49:38.190
+Ravi Duvvuri: but plotting something. How do we go about it?
+
+444
+00:49:38.950 --> 00:49:51.119
+Vikesh K: Okay. So one thing which at least they have given you a hint is that you may. You fill you populate this table. Right. So you have a model name. You have a train time, train accuracy and test accuracy. Alright.
+
+445
+00:49:51.876 --> 00:50:04.609
+Vikesh K: obviously, you can add on to this like we discussed. You can have the f 1 score, the precision, recall scores, and then one easy way would be then, you know, you just have a bar chart of different models. So, for example, this is your.
+
+446
+00:50:05.040 --> 00:50:07.519
+Vikesh K: for example, accuracy score.
+
+447
+00:50:08.330 --> 00:50:17.950
+Vikesh K: and each bar is each model all right. That could be one way, and then on the same thing. You have accuracy. Then you have precision scores.
+
+448
+00:50:18.320 --> 00:50:31.799
+Vikesh K: And then you have recalled scores. Okay, so essentially, at least, if you want to do the comparison part. The table should be fine, but it's just one more step from table to the bar chart, so I would say, maybe have that new numerical representation as well.
+
+449
+00:50:33.500 --> 00:50:40.420
+Ravi Duvvuri: Okay. And and is it not required to show some feature relationships or anything.
+
+450
+00:50:40.420 --> 00:50:43.219
+Vikesh K: Oh, that's that's in the Ed box, right? That that.
+
+451
+00:50:43.220 --> 00:50:48.069
+Ravi Duvvuri: After the after the that we will do. But you know, after the modeling is done.
+
+452
+00:50:49.130 --> 00:50:55.210
+Ravi Duvvuri: do we need to show anything features versus target value?
+
+453
+00:50:55.210 --> 00:51:00.199
+Vikesh K: I don't think so, I think, usually the relationship which you will show would be at the initial stage.
+
+454
+00:51:00.340 --> 00:51:00.740
+Ravi Duvvuri: Okay.
+
+455
+00:51:00.740 --> 00:51:02.939
+Vikesh K: But yeah, you don't need anything. There.
+
+456
+00:51:03.660 --> 00:51:12.069
+Harish: So basically, you're what you're saying is, we will prove that right in the beginning you will relationship. You understand the correlation.
+
+457
+00:51:12.270 --> 00:51:17.430
+Harish: whatever it is, and then, finally, when you arrive at the results and plot it, it should prove.
+
+458
+00:51:17.430 --> 00:51:27.679
+Ravi Duvvuri: Yeah, yeah, no. This is one of the exercises I did like. That's why I removed lot of features and use it only few. And at the end I tried to plot it against those features. See that? How?
+
+459
+00:51:28.293 --> 00:51:35.560
+Ravi Duvvuri: You know the classification boundaries were fixed. Basically, it's showing the boundaries of the classification between the models.
+
+460
+00:51:35.790 --> 00:51:39.680
+Ravi Duvvuri: Is it required, or is it like too much of a thing? Because we have so many features right.
+
+461
+00:51:39.680 --> 00:51:44.370
+Vikesh K: The boundaries. Oh, no, no, I think. Yeah. The final thing. No, you don't require that.
+
+462
+00:51:48.470 --> 00:51:58.250
+Vikesh K: Just one more point we didn't talk about train test split. But what is the best practice train test split should be done after all these steps or before these steps.
+
+463
+00:51:58.250 --> 00:51:59.060
+Ravi Duvvuri: Before.
+
+464
+00:52:02.030 --> 00:52:03.120
+Manish Goenka: I think after.
+
+465
+00:52:03.120 --> 00:52:03.990
+shashi: After.
+
+466
+00:52:06.710 --> 00:52:14.430
+Manish Goenka: Because you're scaling in and you're also imputing scaling, encoding should be after right.
+
+467
+00:52:15.990 --> 00:52:17.589
+shashi: No, if you put it in a
+
+468
+00:52:18.950 --> 00:52:22.299
+shashi: column, transformer and a pipeline and all. So
+
+469
+00:52:22.610 --> 00:52:26.623
+shashi: after split before, when we fit it, it will take care of that right
+
+470
+00:52:27.500 --> 00:52:31.509
+Vikesh K: Yeah, so just remember this, this should happen before.
+
+471
+00:52:32.840 --> 00:52:34.599
+shashi: I would have split the.
+
+472
+00:52:34.600 --> 00:52:36.429
+Harish: You turn around and in the people.
+
+473
+00:52:36.430 --> 00:52:40.149
+shashi: The one not encoding and numerical
+
+474
+00:52:41.150 --> 00:52:49.589
+shashi: scaling standard, scalar or min, Max Scalar, and all so to be part of the pipeline that works on the split data, correct.
+
+475
+00:52:50.770 --> 00:52:59.550
+Vikesh K: Yes, so in the pipeline ideally, what should happen is your train test split should happen first.st Remember, if you don't split first, st
+
+476
+00:52:59.720 --> 00:53:13.300
+Vikesh K: you are corrupting the data. You're basically it's called data leakage. Because what's happening when if you have the whole data set, you do the treatment. So your train data is impacting your test data as well.
+
+477
+00:53:14.260 --> 00:53:19.159
+Vikesh K: Hence what you need to do. First, st you need to ensure that your train and tests are split separately.
+
+478
+00:53:20.279 --> 00:53:29.290
+Vikesh K: You build these, you know estimators from here, and then you fit it on test. So the split should happen first.st
+
+479
+00:53:29.620 --> 00:53:34.869
+Vikesh K: Another thing. Be careful. Here I've written data check. So identify the nulls here.
+
+480
+00:53:35.060 --> 00:53:39.700
+Vikesh K: Alright, and I should put it here. Don't do the null treatment there.
+
+481
+00:53:40.020 --> 00:53:43.800
+Vikesh K: Do the imputation at this stage
+
+482
+00:53:44.380 --> 00:53:50.306
+Vikesh K: again after the train test. Split. Okay? Otherwise, you're again corrupting the data. Okay?
+
+483
+00:53:50.990 --> 00:53:58.499
+Vikesh K: if you do imputation at this stage, that will be the wrong way. Okay, you just have to identify, but not treat it.
+
+484
+00:53:59.370 --> 00:54:07.179
+Vikesh K: Identify the nulls and which imputation technique you should use.
+
+485
+00:54:10.090 --> 00:54:12.689
+Manish Goenka: But the missing data you do drop earlier, correct.
+
+486
+00:54:13.627 --> 00:54:15.830
+Vikesh K: No, like. If you drop
+
+487
+00:54:16.760 --> 00:54:19.829
+Vikesh K: again dropping, put it in a pipeline.
+
+488
+00:54:20.200 --> 00:54:24.210
+Vikesh K: Don't do it before I would say trade all of them in the one go.
+
+489
+00:54:24.370 --> 00:54:31.309
+Vikesh K: let's say, like, like, if you think a column is 90% missing, then maybe yes, you can drop it before
+
+490
+00:54:32.250 --> 00:54:45.120
+Vikesh K: yeah. Then maybe you can drop it before otherwise, I would say, if you have to do some mean imputation, some Median imputation, or you're using a canon imputer. Please do that imputation at this stage.
+
+491
+00:54:46.160 --> 00:54:53.100
+Ravi Duvvuri: So, Vikesh, if you do that way like your test, data is not imputed right because you.
+
+492
+00:54:53.100 --> 00:54:55.210
+Vikesh K: No test data will be included by the same thing.
+
+493
+00:54:55.440 --> 00:54:57.659
+Ravi Duvvuri: Okay, it will be in the pipeline.
+
+494
+00:54:57.810 --> 00:55:01.039
+Vikesh K: Only thing it ensures. See what will happen. Let's say
+
+495
+00:55:01.700 --> 00:55:24.840
+Vikesh K: you want to use mean as a method, average as a method to do the imputation. So you have one missing value here, one missing value here and one missing value in the test. Okay, let's assume this is in the original data. This is how it looks like. So when I calculate the mean at this stage before the split, you will calculate the overall mean. So let's assume that's 52 units whatever that is
+
+496
+00:55:24.950 --> 00:55:42.280
+Vikesh K: so. Now the 1st problem is in your mean imputation. You have also considered the test part which is wrong. So your your mean imputed. This value already is corrupted by inclusion of this test data, and then you put in 52. Here you put in 52. There you put in 52 there.
+
+497
+00:55:42.560 --> 00:55:46.730
+Vikesh K: so that your data is already corrupted. So what you have to do is you have to 1st split.
+
+498
+00:55:47.530 --> 00:55:50.330
+Vikesh K: You have these 2 missing values
+
+499
+00:55:50.610 --> 00:55:58.080
+Vikesh K: calculate the average of this side. Let's say this is 47. So then you replace this with 47. You replace this with 47.
+
+500
+00:55:58.250 --> 00:56:04.389
+Vikesh K: And you replace this as well with 47. Because that's the only information you have, which is of the train data.
+
+501
+00:56:04.820 --> 00:56:05.620
+Vikesh K: Okay?
+
+502
+00:56:06.160 --> 00:56:07.569
+Vikesh K: Does that make sense?
+
+503
+00:56:09.410 --> 00:56:10.360
+Vikesh K: Others.
+
+504
+00:56:11.720 --> 00:56:12.300
+shashi: Yeah.
+
+505
+00:56:13.220 --> 00:56:13.640
+Namrata: Yeah.
+
+506
+00:56:15.510 --> 00:56:19.180
+Vikesh K: Because I can't see most of you. I can't figure out from your
+
+507
+00:56:19.350 --> 00:56:22.850
+Vikesh K: looks whether I'm confusing you. So you have to tell me.
+
+508
+00:56:26.470 --> 00:56:26.944
+Harish: Good.
+
+509
+00:56:27.420 --> 00:56:29.530
+Vikesh K: No, Harish, I think I'm seeing you for the 1st time.
+
+510
+00:56:30.240 --> 00:56:31.129
+Harish: Here we go!
+
+511
+00:56:35.880 --> 00:56:36.870
+Vikesh K: And vacation. For now.
+
+512
+00:56:36.870 --> 00:56:44.320
+Vikesh K: before I've been, I've been looking at the blank black screen. Now, at least, I see some faces. It's lovely. Okay, sorry. Someone was saying something.
+
+513
+00:56:44.320 --> 00:56:50.050
+Ravi Duvvuri: No, I was. I was asking about the Auc and Roc. I think I forgot the
+
+514
+00:56:50.250 --> 00:56:53.120
+Ravi Duvvuri: relevance of that. I think I used it before.
+
+515
+00:56:53.730 --> 00:56:57.280
+Ravi Duvvuri: I can read it upon again. Can you touch upon it quickly if you can.
+
+516
+00:56:57.745 --> 00:57:08.449
+Vikesh K: That's why? Because I keep forgetting Aucy. I don't know why they even introduce this technique here. But essentially, this is
+
+517
+00:57:08.990 --> 00:57:13.939
+Vikesh K: the main theory how I remember it. The best way is, you know, when you calculate all these metrics.
+
+518
+00:57:14.140 --> 00:57:20.919
+Vikesh K: the farther away your line is, the better it is okay, if you're if you're okay, made a mess here.
+
+519
+00:57:24.550 --> 00:57:26.190
+Vikesh K: just give me one second.
+
+520
+00:57:29.160 --> 00:57:55.600
+Vikesh K: This is your diagonal line. If your model falls on this diagonal line. That means you know, your model as good is as good as a random guess. But if it's like this, that means it's slightly better. And the further away it goes, the more area it starts having under it the better it is. Okay. So ideally, you want a line. And even if you do, a comparison between different models. So let's say, this is your linear logistic regression.
+
+521
+00:57:56.050 --> 00:57:59.220
+Vikesh K: Okay? And then you have a decision tree on top.
+
+522
+00:57:59.360 --> 00:58:06.039
+Vikesh K: So at least what this says, this decision tree is doing a better job compared to your logistic recognition.
+
+523
+00:58:06.720 --> 00:58:07.410
+Vikesh K: Okay.
+
+524
+00:58:08.970 --> 00:58:18.409
+Vikesh K: so that that's like the main thing. And obviously, then you have to see how to calculate it. That's more or less straightforward. You have to put this, you Cyclen has the libraries for it.
+
+525
+00:58:18.550 --> 00:58:21.690
+Vikesh K: But essentially, that's what Rocco tells you.
+
+526
+00:58:22.260 --> 00:58:24.619
+Vikesh K: Okay? Main thing, I would say, focus.
+
+527
+00:58:24.620 --> 00:58:25.510
+shashi: Good question.
+
+528
+00:58:26.640 --> 00:58:28.340
+Vikesh K: Sorry. Just just 1 point
+
+529
+00:58:28.680 --> 00:58:29.250
+shashi: Yeah.
+
+530
+00:58:29.850 --> 00:58:31.260
+Vikesh K: For precision, recall.
+
+531
+00:58:31.430 --> 00:58:45.879
+Vikesh K: precision, recall essence for at least for precision. Recall. Think in terms of business. Okay. Accuracy is pretty straightforward, you know what is accuracy but precision? Recall. The problem is, how do you interpret it in business terms?
+
+532
+00:58:46.010 --> 00:58:49.440
+Vikesh K: So, if possible, put it a like.
+
+533
+00:58:49.440 --> 00:58:49.960
+Namrata: It's true.
+
+534
+00:58:51.010 --> 00:58:56.990
+Vikesh K: To. I will put it, note it down, interpret precision.
+
+535
+00:58:57.840 --> 00:59:07.920
+Vikesh K: and recall in business terms. Okay. So, for example, if if you're trying to find whether a person has got any deadly disease or not.
+
+536
+00:59:09.122 --> 00:59:12.200
+Vikesh K: You know this precision. Recall. How is it important
+
+537
+00:59:12.520 --> 00:59:17.590
+Vikesh K: versus when you're trying to figure out whether a person clicks on, add or not.
+
+538
+00:59:17.760 --> 00:59:20.960
+Vikesh K: Right? So just if you do that, that would be wonderful.
+
+539
+00:59:21.480 --> 00:59:25.249
+Vikesh K: One thing if I can say maybe I'm just pushing it a bit, but for your.
+
+540
+00:59:26.380 --> 00:59:27.440
+Namrata: Okay.
+
+541
+00:59:28.590 --> 00:59:36.450
+Vikesh K: Would be the explanation part. Okay, there's something called. It's it's also called, or maybe model. Enter.
+
+542
+00:59:36.810 --> 00:59:37.830
+Vikesh K: You're patient.
+
+543
+00:59:38.320 --> 00:59:46.890
+Vikesh K: Okay, this is not mandatory at all. But see if you can read about the sharp values there, all right. Maybe this can be helpful for your capstone.
+
+544
+00:59:48.610 --> 00:59:51.419
+Vikesh K: but this is extra alright. I will just.
+
+545
+00:59:51.420 --> 00:59:57.150
+Ravi Duvvuri: And and and along with precision, do we need to do confusion? Matrix thing.
+
+546
+00:59:57.554 --> 01:00:01.190
+Vikesh K: It would be good to have that. I will.
+
+547
+01:00:05.450 --> 01:00:13.859
+Vikesh K: You know the regular stuff, by the way, in in a practical life. Most of the problems that you face at a business level are more classification rather than regression.
+
+548
+01:00:14.310 --> 01:00:17.670
+Vikesh K: So even that if let me
+
+549
+01:00:20.824 --> 01:00:32.629
+Vikesh K: for capstone, which is around classification. But classification is slightly more thorough, more comprehensive. So if you really get comfortable with classification, with all these things.
+
+550
+01:00:33.490 --> 01:00:35.530
+Vikesh K: regression will be a bit easier.
+
+551
+01:00:35.660 --> 01:00:54.299
+Vikesh K: Okay. So just remember, from a tactical perspective, classification problems are more in business environment compared to regression regression, mostly around, hey? Forecasting sometimes, mostly most, the most common business problem is forecasting. Okay, if you're a retailer, you want to focus, how much will you sell?
+
+552
+01:00:55.104 --> 01:00:59.519
+Vikesh K: But other than that, most of the problems are around classification, at least in business.
+
+553
+01:01:00.180 --> 01:01:05.830
+shashi: Okay, I was. I had a question.
+
+554
+01:01:06.550 --> 01:01:14.254
+shashi: I'm getting a good recall score. But poor precision. So I'm I'm getting a high number of
+
+555
+01:01:15.490 --> 01:01:25.489
+shashi: false positives. So I was trying to play around with the threshold. And that was not helping much. And from what I interpret is that
+
+556
+01:01:26.030 --> 01:01:32.450
+shashi: false positive, especially in this case. In this business case they have to make more sales call to get the same kind of
+
+557
+01:01:33.626 --> 01:01:38.100
+shashi: probably the more subscriptions. So that's what I would assume.
+
+558
+01:01:38.420 --> 01:01:48.452
+shashi: But I'm able to get good. False negatives are low, and accuracy is also pretty recall, and accuracy is also good, especially for
+
+559
+01:01:49.150 --> 01:01:52.649
+shashi: negative scenario, because the data is skewed in that way.
+
+560
+01:01:53.400 --> 01:01:59.670
+shashi: I was just having a poor score on precision with false positives.
+
+561
+01:02:00.790 --> 01:02:01.510
+Vikesh K: I think.
+
+562
+01:02:01.640 --> 01:02:10.020
+Vikesh K: at least in this case, even if you have false, usually false positives are fine like false negative is what we need to be careful about.
+
+563
+01:02:10.330 --> 01:02:35.699
+Vikesh K: Because, for example, let's say, if we predict someone has a cancer and he doesn't have a he or she doesn't have a cancer. He will. He or she will just do one more test. And you know the next test will confirm. Okay, there is no cancer, but false negative can be very dangerous. So in this case, Shashi, you know, I believe false positive doesn't have much cause. So maybe you can base your decisions on that as well. That's what I'm saying. Focus on the interpretation part.
+
+564
+01:02:35.710 --> 01:02:41.250
+Vikesh K: Because problem statement like this even in, let's say, when you have to do a credit card fraud.
+
+565
+01:02:41.250 --> 01:02:41.869
+shashi: Yeah, kind of.
+
+566
+01:02:41.870 --> 01:02:55.460
+Vikesh K: Credit card fraud problems, again, are class imbalance problems. You among, I believe, 1 million transactions, maybe 10 transactions are faulty, right? Because things have become really, really
+
+567
+01:02:55.760 --> 01:02:56.889
+Vikesh K: improved. Now.
+
+568
+01:02:57.000 --> 01:03:00.430
+Vikesh K: So then, if you have a false positive
+
+569
+01:03:01.272 --> 01:03:25.849
+Vikesh K: is it more dangerous, or a false negative, or more dangerous? Because if you have a false positive, what happens? They will just make a call to you like, for example, when I do transactions in India they give me a call, hey? You know you are in? Not in India. But you're making a transaction. Is that the correct transaction? So yeah, it's bit annoying sometimes to get a call, but it saves me because I'm I'm hopeful when someone else is trying to
+
+570
+01:03:26.110 --> 01:03:32.360
+Vikesh K: screw with my card. They will give it a call, and they will block the transaction all right. So just just.
+
+571
+01:03:33.010 --> 01:03:38.739
+Gopikrishna Putti: Yeah, this is Gopi, I mean, in this particular case. Shouldn't we look for more?
+
+572
+01:03:39.170 --> 01:03:43.240
+Gopikrishna Putti: All, I mean false negatives, because the false positive means.
+
+573
+01:03:43.510 --> 01:03:51.949
+Gopikrishna Putti: They are not subscribed, but we get a result, as, hey, they are going to take the term. What are the deposit? Right subscription?
+
+574
+01:03:52.060 --> 01:04:02.439
+Gopikrishna Putti: So if once we, the we get a false positive. That means, we know that that this is the result says that they subscribe, then the we don't even bother to call them right.
+
+575
+01:04:02.610 --> 01:04:11.059
+Gopikrishna Putti: But the other way is okay. If they're not subscribing, they're not subscribing. But we get a result saying that they are not subscribing.
+
+576
+01:04:11.220 --> 01:04:13.188
+Gopikrishna Putti: It's okay. We will call them again.
+
+577
+01:04:13.780 --> 01:04:15.900
+Gopikrishna Putti: but for the bank it is a better, I believe.
+
+578
+01:04:16.720 --> 01:04:17.920
+Vikesh K: Yeah, yeah, I'm just.
+
+579
+01:04:18.820 --> 01:04:23.449
+Harish: It depends on case to case. I guess right, because the cancer scenario is a lot.
+
+580
+01:04:23.450 --> 01:04:26.710
+Gopikrishna Putti: No, no, in this particular case. That's why I'm I'm trying.
+
+581
+01:04:26.710 --> 01:04:30.752
+shashi: This particular case. Gopi. What I was, my assumption was,
+
+582
+01:04:31.605 --> 01:04:45.370
+shashi: the false positive is that it says this guy is going to sign up after the contact. All this subscription happens only after the call has been made, and after the discussion they are able to convince him that his guy will sign up.
+
+583
+01:04:45.650 --> 01:04:58.064
+shashi: So that is what from the historical data he signed up, is what you say. But they make a phone call, but he doesn't sign up is that is a false positive. But he he didn't sign up, that's all. That's what I assumed.
+
+584
+01:04:59.030 --> 01:05:02.930
+shashi: false, false negative is a case where
+
+585
+01:05:03.050 --> 01:05:12.430
+shashi: I will not call to find out whether he will subscribe or not, because my model says he will. This guy will not sign up. Is my assumption correct? Vikesh.
+
+586
+01:05:14.220 --> 01:05:19.115
+Vikesh K: Sorry I was. I was doing this sending this, but but I believe you know, one thing is,
+
+587
+01:05:20.120 --> 01:05:26.479
+Vikesh K: look in the you make some assumptions about the business here and you know.
+
+588
+01:05:26.944 --> 01:05:41.999
+Vikesh K: and see which one fits your case right? For example, if you think false, positive, like Gopi was saying. You know, we would stop making a call, and that's a loss to business. That's that's a quite good assumption. And then maybe it doesn't matter if you make one more call.
+
+589
+01:05:42.000 --> 01:05:59.259
+Vikesh K: you just have to see whether it you know you have the, you know. Obviously it will depend on the context. Do you have the? Are you annoying the customers by making giving them calls? Right? All those things you have to factor? That's more like a business, but I would say, when you're doing it for the caption, or you're doing it for the practical assignment.
+
+590
+01:05:59.390 --> 01:06:06.089
+Vikesh K: Make some assumptions about it, and then accordingly base your decision all right, because these things would be
+
+591
+01:06:06.260 --> 01:06:08.630
+Vikesh K: pretty much business dependent or scenario based.
+
+592
+01:06:09.040 --> 01:06:27.840
+Vikesh K: Okay, I will share. I've noted down these points. So if you want to like, you know, whatever we discuss, I will share. The notebook is and I think Shikha had a question. Is Shikha around? Yeah, Shikha is there, Shikha? I will come. Yes, I will look into your read me. I believe you updated your rate me so so I will get back to you on that. I got a ticket on that.
+
+593
+01:06:28.210 --> 01:06:29.793
+Vikesh K: so don't worry about that.
+
+594
+01:06:30.110 --> 01:06:31.080
+Shikha: How much vacation.
+
+595
+01:06:33.270 --> 01:06:36.190
+Vikesh K: Okay. Any other doubts or questions.
+
+596
+01:06:36.380 --> 01:06:39.422
+Anu.Arun: Application reality is this number like,
+
+597
+01:06:40.448 --> 01:06:45.890
+Anu.Arun: in real world scenario. Are these numbers like 90% kind of common.
+
+598
+01:06:47.728 --> 01:06:49.612
+Vikesh K: You mean for
+
+599
+01:06:50.660 --> 01:06:55.959
+Vikesh K: like. If your class, if you have class imbalance, then usually your numbers would be around this right.
+
+600
+01:06:56.580 --> 01:06:57.510
+Anu.Arun: Hmm, hmm.
+
+601
+01:06:57.920 --> 01:07:08.900
+Vikesh K: So that can again it can happen. scenario to scenario in class imbalance like. For example, if I was a mastercard and I'm looking into credit card fraud.
+
+602
+01:07:09.010 --> 01:07:20.469
+Vikesh K: usually out of 1 million transactions. Maybe only 100 transactions are of, you know the faulty ones. So by default I would have a class imbalance there.
+
+603
+01:07:21.880 --> 01:07:27.289
+Vikesh K: So that happens. But in business scenarios, usually things are more or less balanced.
+
+604
+01:07:29.290 --> 01:07:30.610
+Vikesh K: Okay, with that.
+
+605
+01:07:32.290 --> 01:07:39.680
+Vikesh K: also, whether a person will click on your ad or not. That's also, I think, decently class and balance, because not many people click on ads.
+
+606
+01:07:40.240 --> 01:07:44.380
+Vikesh K: So maybe you will have 10 or 20%. Only people convert
+
+607
+01:07:44.710 --> 01:07:47.159
+Vikesh K: click on ads. So that also happens.
+
+608
+01:07:49.030 --> 01:07:51.410
+Vikesh K: But yeah, class imbalance usually is a
+
+609
+01:07:51.560 --> 01:07:56.600
+Vikesh K: quite prominent as well in in real life. If if that's what you you were hinting at.
+
+610
+01:07:57.800 --> 01:07:58.890
+Anu.Arun: Understandable.
+
+611
+01:07:59.319 --> 01:08:00.179
+Anu.Arun: Thank you.
+
+612
+01:08:00.180 --> 01:08:09.479
+Vikesh K: I shared the Jupyter notebook, and I've I've whatever we discussed, so I hope at least this gives you an approach in case.
+
+613
+01:08:09.480 --> 01:08:09.960
+Harish: Thank you.
+
+614
+01:08:10.490 --> 01:08:11.830
+Namrata: So he's.
+
+615
+01:08:11.830 --> 01:08:14.990
+Harish: I guess I heard a sorry go ahead.
+
+616
+01:08:17.885 --> 01:08:18.390
+Harish: Yeah.
+
+617
+01:08:18.390 --> 01:08:19.620
+Vikesh K: Someone had a question.
+
+618
+01:08:25.020 --> 01:08:27.169
+Vikesh K: okay, yeah. Hello.
+
+619
+01:08:27.170 --> 01:08:27.830
+Vikesh K: Go ahead.
+
+620
+01:08:28.350 --> 01:08:36.239
+Harish: So, yeah, I was asking a question. Maybe somebody also had a question. So initially, I defined a problem statement that I'll go after.
+
+621
+01:08:36.520 --> 01:08:41.230
+Harish: And then I want to change my problem statement, which I did.
+
+622
+01:08:41.689 --> 01:08:46.380
+Harish: So it was mostly, I just want to get your sense of what I'm trying to do is
+
+623
+01:08:46.883 --> 01:08:49.879
+Harish: for a contact center or for a call center.
+
+624
+01:08:50.029 --> 01:08:51.529
+Harish: Try to predict.
+
+625
+01:08:51.830 --> 01:09:07.010
+Harish: You know, the call drops, because that is something and then predict 1st call resolution. How many of the calls that come into contact center will result in a 1st call resolution percentage, because some because I think some of the
+
+626
+01:09:07.140 --> 01:09:15.989
+Harish: top care reports for contact centers is to reduce cost, and some of these things will apply. So would that be a good project to consider for capstone.
+
+627
+01:09:17.350 --> 01:09:26.989
+Vikesh K: Yeah, I think if it's if if you think it's important, I'm not sure if you are in this line of business, if you think it's important. And if you find a relevant data set for this, it can be a good problem statement.
+
+628
+01:09:27.819 --> 01:09:28.969
+Harish: Okay. Okay. Thank you.
+
+629
+01:09:29.109 --> 01:09:40.389
+Vikesh K: Also one more thing which often many people doing for call centers is like, how many calls would we get on a daily basis? Because if you get 100 calls, maybe then you need, and one person can handle. Let's say 5. Call
+
+630
+01:09:40.569 --> 01:09:43.970
+Vikesh K: 5 calls or 6 calls. Then accordingly you will deploy your staff.
+
+631
+01:09:44.270 --> 01:09:46.180
+Harish: Yeah, agent, deployment.
+
+632
+01:09:46.189 --> 01:09:48.959
+Vikesh K: So that, could, the forecasting could be another angle to it.
+
+633
+01:09:49.439 --> 01:09:55.279
+Vikesh K: Okay? Because, for example, a seasonal business like us. You know, we have summer peaks
+
+634
+01:09:55.419 --> 01:10:02.129
+Vikesh K: or in in for Walmart. There is a peak in shopping during the November December month.
+
+635
+01:10:02.269 --> 01:10:09.379
+Vikesh K: and you will often see this Amazon is hiring extra people for warehouse. What they need to figure out is how many people to hire.
+
+636
+01:10:09.599 --> 01:10:14.019
+Harish: And because if they hire too much they're they're again making a loss. If they can't
+
+637
+01:10:14.020 --> 01:10:15.880
+Harish: like agent forecasting like.
+
+638
+01:10:15.880 --> 01:10:31.659
+Vikesh K: Yeah, like, so so basically, essentially, it will boil down from business. Often it boils down from business. If you say, if you if you project to sell a lot of items, then obviously to process them to do the packaging. You need so many workers in your warehouse.
+
+639
+01:10:32.350 --> 01:10:35.419
+Vikesh K: So that's another problem. I I remember I worked
+
+640
+01:10:35.630 --> 01:10:38.130
+Vikesh K: my colleague and I work partly on that.
+
+641
+01:10:38.595 --> 01:10:48.554
+Vikesh K: This was around. How many associates should we have in the Gcpenney stores at that time. So, and that was built around the forecast of the delux. Because
+
+642
+01:10:49.040 --> 01:10:54.740
+Vikesh K: if we predicted in a store we will sell more. That means we need more people to replenish the.
+
+643
+01:10:55.180 --> 01:10:56.730
+Harish: Specific department versus.
+
+644
+01:10:56.730 --> 01:11:08.400
+Vikesh K: Correct. So it it boils down to that usually. So so yes, either you take the classification to it call drops or something, or maybe if you have relevant data, you can see how many calls you get. Can you predict those calls.
+
+645
+01:11:08.970 --> 01:11:10.900
+Harish: Yup, okay, thank you very much.
+
+646
+01:11:11.120 --> 01:11:12.070
+Harish: Nothing.
+
+647
+01:11:12.680 --> 01:11:14.663
+Vikesh K: Okay, just one more point.
+
+648
+01:11:15.990 --> 01:11:19.821
+Vikesh K: I found this one nice portfolio.
+
+649
+01:11:20.420 --> 01:11:35.059
+Vikesh K: you know this lady, had she? She? I think she's from Cmu. So she worked on a couple of projects, but she put it very nicely as a portfolio. I just wanted to showcase it to you. So the projects that you do here, especially if you're looking for a job.
+
+650
+01:11:35.240 --> 01:11:48.219
+Vikesh K: Maybe you make a capstone around it like this. Okay, another thing you can do is like you click on any of the projects and see how she has sort of provided the details around it.
+
+651
+01:11:48.370 --> 01:11:56.430
+Vikesh K: Okay. So, for example, in your Github at least simple repository, or for your Cv. If you want to add these projects, this could be one way
+
+652
+01:11:56.650 --> 01:12:08.730
+Vikesh K: alright. So I just want you to wanted to share this to showcase it. So as you work on different projects, even after the course, maybe you make a dashboard like this, and she's use a notion site, so it's not very difficult to do it.
+
+653
+01:12:09.930 --> 01:12:13.590
+Vikesh K: And build a nice looking portfolio for yourself.
+
+654
+01:12:14.230 --> 01:12:18.709
+Vikesh K: Alright, and I will keep sharing if I get more resources like this.
+
+655
+01:12:20.440 --> 01:12:40.920
+Vikesh K: Harish. Thank you. Oh, that's very kind of you, I'm glad to know. Please let me know in feedback also. So that that's like proper formal feedback. I will. That's that's very helpful. The sad part about me is my feedback. My session happens when most of you have given the feedbacks, so we don't get to know so. But if you have critical points, if you have good points, let me know. That would be helpful for me as well.
+
+656
+01:12:42.230 --> 01:12:43.250
+Gopikrishna Putti: Thanks for the link.
+
+657
+01:12:43.250 --> 01:12:47.720
+Harish: Every time I we attend your session it's always something new, and
+
+658
+01:12:48.410 --> 01:12:59.360
+Harish: always relate real life experience into the topics. I think one of the challenges we are we faced is the videos that we have is very
+
+659
+01:12:59.500 --> 01:13:07.939
+Harish: limited. You know, the classroom recorded videos. But I think when we attended when we attend these sessions, it's very informative, and
+
+660
+01:13:08.200 --> 01:13:11.729
+Harish: you kind of relate to the real world problems which is good.
+
+661
+01:13:12.100 --> 01:13:19.060
+Vikesh K: Thank you. Thank you. That's a good feedback for me, and that motivates me as well to, you know. Keep focusing more on the practical assignments.
+
+662
+01:13:19.330 --> 01:13:26.929
+Vikesh K: So, but thank you for bearing with me. But thank you for that, and thank you. Thank you for attending the sessions again.
+
+663
+01:13:27.100 --> 01:13:29.769
+Vikesh K: Any other questions. I can stay back. If you have any doubt.
+
+664
+01:13:29.770 --> 01:13:55.529
+Anu.Arun: Sorry, Vikesh, one small technical question, yeah, and and great session. And for me especially because I I don't use it. All this at work at all. So what I learn every week I forget. So it's a very crisp refresher for me, and it's really been helpful quick question, is there a difference between what a feature, importance, and coefficients you? You mentioned feature, importance in this
+
+665
+01:13:55.690 --> 01:13:58.250
+Anu.Arun: session, or.
+
+666
+01:13:58.770 --> 01:14:22.059
+Vikesh K: Yes. Okay. Good point. So feature. Importance as such is sort of a you know way, how you it's more specific to decision tree and random forest that once you built a decision tree and a random forest, and you want to understand which columns are decision tree or Random Forest considered as important. And that's the feature importance, all right
+
+667
+01:14:22.270 --> 01:14:26.020
+Vikesh K: in in a logistic regression or linear regression world.
+
+668
+01:14:26.170 --> 01:14:29.240
+Vikesh K: This. This takes the shape of the coefficient.
+
+669
+01:14:29.420 --> 01:14:33.650
+Vikesh K: So, for example, if you especially if you standardize all the values of a column.
+
+670
+01:14:34.570 --> 01:14:45.399
+Vikesh K: and then you calculate the coefficients. If a value has a bigger coefficient. That means essentially, it's a weight right? Remember, the linear regression essentially, is a weighted average.
+
+671
+01:14:45.500 --> 01:14:49.970
+Vikesh K: So the coefficients tells you how much weight
+
+672
+01:14:50.120 --> 01:14:52.149
+Vikesh K: to take for a particular column.
+
+673
+01:14:53.360 --> 01:15:02.110
+Vikesh K: so the coefficients in linear regression is more like importance, so it will convey the same information. But it's dependent on the model.
+
+674
+01:15:02.720 --> 01:15:11.480
+Anu.Arun: Understood. So now, if I ask for feature, importance for linear regression, it will tell me it doesn't exist, but I can instead ask the coefficients, and interpret to the same interpretation.
+
+675
+01:15:11.760 --> 01:15:29.510
+Vikesh K: Yes, yes, yeah. So so, as such, there is no function of feature importance for linear regression. But if I ask you, hey, what are the most important features. What you have to do is go back to the coefficients and see which has a bigger value. That means it. It has a bigger impact on the final output.
+
+676
+01:15:31.030 --> 01:15:34.979
+Anu.Arun: Understood. I guess different people are coding that on this different names.
+
+677
+01:15:35.930 --> 01:15:45.609
+Vikesh K: Yeah, it can happen. But yeah, as such feature importance. In terms of that technique, that specific decision tree and the random forest, because you have a specific function to calculate that.
+
+678
+01:15:47.220 --> 01:15:50.280
+Anu.Arun: Understood. Thanks, Vikesh, thank you all. Bye.
+
+679
+01:15:51.380 --> 01:15:56.570
+Vikesh K: All right. Any other questions, no
+
+680
+01:15:57.740 --> 01:16:00.469
+Vikesh K: cool. So thank you again. And.
+
+681
+01:16:01.640 --> 01:16:02.470
+Frank Lu: You're very helpful.
+
+682
+01:16:03.120 --> 01:16:04.149
+Vijay Chaganti: Thank you, Keish. Bye.
+
+683
+01:16:04.800 --> 01:16:07.150
+Vikesh K: Tracy, you have some question or doubt.
+
+684
+01:16:08.109 --> 01:16:15.300
+shashi: No, I mean just that's what I was building the models in the last. This one fine tuning. The
+
+685
+01:16:15.610 --> 01:16:33.660
+shashi: modules are to do that. And I was kind of worried about the precision being low, whereas the recall was 88, 90%. So I was looking it up and says that's a compromise, because in the imbalance data set, so that is one of the
+
+686
+01:16:35.080 --> 01:16:38.179
+shashi: things which is usually noticed.
+
+687
+01:16:38.830 --> 01:16:44.923
+shashi: So so kind of I thought that was not my own unique problem. So
+
+688
+01:16:45.620 --> 01:16:51.907
+shashi: so I was kind of looking at that. So I just have to. Now, putting it all together hopefully, I'll do it today and
+
+689
+01:16:52.460 --> 01:16:54.230
+Vikesh K: Okay, okay, cool. Yeah.
+
+690
+01:16:54.230 --> 01:16:54.750
+Vikesh K: So
+
+691
+01:16:54.750 --> 01:17:00.640
+Vikesh K: that's what I said, if you focus on the business part. So then precision recall makes much more sense. Otherwise it's it's it's a very abstract thing.
+
+692
+01:17:01.320 --> 01:17:07.874
+shashi: Yeah, because my true positives were lower than the false positive.
+
+693
+01:17:08.850 --> 01:17:13.610
+shashi: So by 100 or something like that out of good.
+
+694
+01:17:14.910 --> 01:17:15.230
+Vikesh K: Okay.
+
+695
+01:17:15.230 --> 01:17:16.520
+shashi: Vikesh. How's it going.
+
+696
+01:17:16.520 --> 01:17:16.860
+Ravi Duvvuri: Thank you.
+
+697
+01:17:16.860 --> 01:17:19.019
+shashi: As always, fantastic session.
+
+698
+01:17:19.390 --> 01:17:25.675
+Vikesh K: Thank you. Thanks a lot for your kind comments, and we'll see you after, I think. 2, 3 weeks now. Okay, there's a break week, I believe, or.
+
+699
+01:17:25.900 --> 01:17:30.129
+shashi: I think there is on February, so I didn't know there was a break, and suddenly I saw one break week coming up.
+
+700
+01:17:30.420 --> 01:17:31.859
+Vikesh K: Yeah. So that's a good thing.
+
+701
+01:17:32.190 --> 01:17:33.230
+Vikesh K: That's unexpected.
+
+702
+01:17:33.230 --> 01:17:40.450
+Vikesh K: I need to work on the capstone during that time, because that 14 one week is not sufficient for the final capstone project anyway.
+
+703
+01:17:40.760 --> 01:17:42.280
+Vikesh K: With this.
+
+704
+01:17:42.410 --> 01:17:47.158
+shashi: Practical applications itself. We are struggling to put together and
+
+705
+01:17:48.200 --> 01:17:59.159
+shashi: the documented, the submission, and all those things, putting it nicely, and things like that is time consuming when to do that with the capstone is a bit of a challenge. So
+
+706
+01:17:59.780 --> 01:18:01.255
+shashi: no, I understand time.
+
+707
+01:18:02.760 --> 01:18:06.099
+Vikesh K: Cool and let me know if you face any issues. Yeah.
+
+708
+01:18:06.100 --> 01:18:16.150
+shashi: Yeah, sure. Yeah, we'll we'll raise this up. I don't know if from different sections can raise a ticket asking you for inputs. So, but anyway, we'll.
+
+709
+01:18:16.150 --> 01:18:18.839
+Vikesh K: I think if you specify in the ticket it will come to me.
+
+710
+01:18:19.250 --> 01:18:22.220
+shashi: Oh, okay, yeah. Then, probably if I have specific questions.
+
+711
+01:18:22.220 --> 01:18:26.990
+Vikesh K: Yeah, yeah, I'm not sure how it works, but I think it might work. If you just pre tell them.
+
+712
+01:18:27.450 --> 01:18:33.719
+shashi: Sure. Sure. Okay, yeah, money, and I will. Then if there are questions, I will send it across.
+
+713
+01:18:34.560 --> 01:18:35.330
+Vikesh K: Sounds good.
+
+714
+01:18:35.590 --> 01:18:37.069
+Vikesh K: Thanks. Everyone cheers.
+
+715
+01:18:37.070 --> 01:18:38.100
+shashi: Bye, Matt.
+

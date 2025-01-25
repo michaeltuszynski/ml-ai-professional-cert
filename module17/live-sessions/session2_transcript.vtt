@@ -1,0 +1,570 @@
+WEBVTT
+
+1
+00:00:03.590 --> 00:00:04.270
+Jessica: Hmm!
+
+2
+00:00:07.830 --> 00:00:18.639
+Jessica: Alright! Hello, everybody, and welcome to the module. 17 office hour for the professional certificate in machine learning. And AI.
+
+3
+00:00:18.640 --> 00:00:33.729
+Jessica: So it's been a little bit since we've seen each other so welcome back, and you know I don't know if it's too late to say Happy New Year, or maybe it is, but anyways I am happy that we're back for the last stretch of the course.
+
+4
+00:00:34.172 --> 00:00:58.069
+Jessica: So this office hour is going to be, I think, a little bit shorter than normal. Module 17 is a practical application assignment, meaning that, as you know, you don't have any new videos, any audio assignments. Any knowledge checks. All you have to do for the module 17 is to focus on
+
+5
+00:00:58.130 --> 00:01:01.019
+Jessica: the practical application assignment
+
+6
+00:01:01.240 --> 00:01:07.980
+Jessica: for this module, so, as you can see, the module here is pretty short, right? It doesn't have many pages.
+
+7
+00:01:09.810 --> 00:01:38.763
+Jessica: but yeah. So most of your time is gonna be dedicated to the caps to the practical application. Pardon, so a few things to that I want to mention before we get started on covering the practical application for module 17. This is really your last chance to practice
+
+8
+00:01:39.430 --> 00:02:04.720
+Jessica: creating a project or an assignment. That sort of like mimics, your the structure of your capstone project before you have to submit to the capstone project. Okay? So after this one, there won't be any practical application assignment. It's just gonna be regular modules until you get to the final module, where you have to submit the capstone.
+
+9
+00:02:04.770 --> 00:02:18.290
+Jessica: So really try and do your best in for this practical application, and the reason why I say and submit on time. Okay, you know, late
+
+10
+00:02:19.070 --> 00:02:33.029
+Jessica: lead submissions are never penalized. I know all of you are working professionals, and they're busy right? But in my opinion, the earlier you get feedback on this assignment.
+
+11
+00:02:33.030 --> 00:02:54.010
+Jessica: the more time you're going to have to take that feedback and apply it to your capstone project, because really the Capstone project is nothing but a personalized, more complicated practical application assignment. Okay, so if you submit module 17 on time, and you get
+
+12
+00:02:54.060 --> 00:03:07.470
+Jessica: feedback right away. And you kind of know, like what to focus on, on which areas you should be improving, and so on. I think it would make more sense for you to do so.
+
+13
+00:03:08.299 --> 00:03:23.039
+Jessica: The other reason why this practical application is important is that this practical application is designed as a comparison of classifiers. And
+
+14
+00:03:23.040 --> 00:03:50.360
+Jessica: a lot of you are probably going to have a classification problem in their capstone project. Okay? So obviously, not all of you picked a classification problem. Some of you are doing regression. Some of you are doing time series. Some of you are doing natural language processing that we have yet to start. But for the ones of you that are planning on using classifiers this
+
+15
+00:03:50.360 --> 00:04:00.660
+Jessica: practical application, it's really a an opportunity to sort of like practice your knowledge, and see if you are doing things correctly
+
+16
+00:04:00.680 --> 00:04:06.620
+Jessica: before the before submitting the capstone project, which is more important than this.
+
+17
+00:04:06.990 --> 00:04:19.449
+Jessica: So let's see, let's go over it. Let's see what you have to do. Let's think about some strategies, and let's spend some time looking at this assignment.
+
+18
+00:04:19.829 --> 00:04:42.339
+Jessica: So the title is comparing classifiers, which is pretty self explanatory. So you are given a data set. Okay, the data is taken from a Portuguese banking institution and is a result of multiple marketing campaign. And we can take a look at this data set. Now.
+
+19
+00:04:46.290 --> 00:04:47.430
+Jessica: let's see here.
+
+20
+00:04:51.260 --> 00:04:52.360
+Jessica: Okay.
+
+21
+00:04:58.170 --> 00:04:59.430
+Jessica: take a look.
+
+22
+00:05:01.610 --> 00:05:03.549
+Jessica: Somebody is trying to get in.
+
+23
+00:05:09.110 --> 00:05:21.089
+Jessica: Okay. So you have a few data sets here. So I would probably take a look at obviously, all of them. I think this one is probably the main one.
+
+24
+00:05:21.300 --> 00:05:29.949
+Jessica: Okay, by looking at it. One thing that you may want to do is look at the other day. Oh, this is not
+
+25
+00:05:31.450 --> 00:05:33.739
+Jessica: maybe the full one.
+
+26
+00:05:36.860 --> 00:05:55.610
+Jessica: And see if you know. Maybe you want to merge these 2 data sets. If they are overlapping in any ways. You know, like this is part of the preliminary analysis. But essentially what this data set contains are informations about a marketing campaign
+
+27
+00:05:56.260 --> 00:06:17.229
+Jessica: and the marketing campaigns were based on phone calls. And you essentially want to determine using different classifiers whether a person subscribed to the service or not. Okay? So it's a binary classification problem, very simple.
+
+28
+00:06:17.230 --> 00:06:37.460
+Jessica: And in the past few modules we have learned about a different array of classification algorithms. K nearest neighbors, logistic regression decision, trees support vector, machines. Okay, that can all be applied to this problem. Okay, the idea is for you to
+
+29
+00:06:37.640 --> 00:06:55.749
+Jessica: take this data set. Do your preliminary analysis. Look at the correlation between the variables. Obviously clean the data. Okay, I don't know if this data is clean or not. Probably not. I hope that there are some values that need, or some columns or rows that need some work.
+
+30
+00:06:56.090 --> 00:06:58.570
+Jessica: and after you're done.
+
+31
+00:06:58.690 --> 00:07:26.030
+Jessica: choose a model that you want to use for your baseline model. Okay, this is certainly it's going to give you like, a little bit of an idea of where to start. Okay, pick some input variables. Select your output variables, which in this case is probably going to be the variable. Y, okay, so this is the output variable that you want to try and predict to see whether the customers sign up for the service or not.
+
+32
+00:07:26.400 --> 00:07:38.870
+Jessica: And once you have your baseline model, then you can apply other classification algorithms. And I per parameter tuning techniques, such as grid search
+
+33
+00:07:39.240 --> 00:07:53.860
+Jessica: to to see if you can improve those results. Okay? And essentially, what we want you to do is for you to tune all of these models and eventually pick the one that works best. Okay, hopefully.
+
+34
+00:07:54.150 --> 00:08:12.470
+Jessica: all of you give you answers that are, you know, in line with each other. Okay, the results should not be contradictory among models. Okay, but you want to essentially determine which one gives you the best result. Okay.
+
+35
+00:08:12.690 --> 00:08:13.720
+Jessica: now.
+
+36
+00:08:14.540 --> 00:08:32.840
+Jessica: by looking at this output column. Okay, I'm just looking at it. I'm not running any python code. I can already tell that the number of people that did not sign up for the marketing campaign is
+
+37
+00:08:33.030 --> 00:08:51.420
+Jessica: higher than and much higher, I think. Okay, than the people that subscribed. Okay, so the data set is unbalanced. Okay, do obviously calculate that double check me on that. But I'm pretty sure that this data set is unbalanced by looking at it.
+
+38
+00:08:52.210 --> 00:09:16.809
+Jessica: Keep in mind that accuracy is not going to be a good metric when you're working on a binary classification problem, and your data set is unbalanced. Okay, so you want to look at other metrics, such as the confusion matrix, okay? And it's derived metrics, such as precision and recall f 1 score and all that
+
+39
+00:09:17.060 --> 00:09:35.400
+Jessica: to to understand which model works best. Okay, obviously, you want to be looking at the number of false, positive, and number of false negative. Decide which one you want to minimize for this particular problem and go from there. Okay.
+
+40
+00:09:35.490 --> 00:10:02.258
+Jessica: so this is essentially the digits of the of the Capstone project. Okay? It's I think it's pretty straightforward. Okay, but you know, as for any capstone project, we don't give you really any guideline. Okay, beside what I just sold you, and we don't really give you like a template to follow. Actually, okay, there is a template here. Sorry.
+
+41
+00:10:03.150 --> 00:10:04.240
+Jessica: let's see.
+
+42
+00:10:09.927 --> 00:10:26.109
+Jessica: Yeah, there is a little bit of a template. So we give you understanding the data, read the data, understanding the features, understanding the task feature engineering, creating a baseline model. And then, you know.
+
+43
+00:10:26.590 --> 00:10:37.589
+Jessica: comparing the classifier and improving the model with hyperparameter tuning. So we do give you a template, you know
+
+44
+00:10:37.740 --> 00:11:05.379
+Jessica: you can deviate a little bit from the template. So if you think that you know, you need a section about data cleaning, if you need a section about data visualization. And Eda, this template is modifiable. Okay, of course. But you know, try at least to cover the points that are there, and then you can. You can. You know. You can add sections if you want
+
+45
+00:11:08.070 --> 00:11:35.820
+Jessica: But I think the project per se is pretty straightforward. Okay, and whenever you, if you are solving a classification problem for your capstone project this, I think that this can be a really really good exercise for you to do before submitting the Capstone project, because really it's gonna give you like an idea of what's where you are at with your understanding.
+
+46
+00:11:35.990 --> 00:11:40.759
+Jessica: and you know, then you can take that feedback and apply it for the capsule.
+
+47
+00:11:41.700 --> 00:11:45.130
+Jessica: Do you have any questions at the moment.
+
+48
+00:11:48.350 --> 00:11:50.270
+Jessica: or everything is clear.
+
+49
+00:11:51.415 --> 00:11:54.810
+Jessica: The deliverable is, of course, the
+
+50
+00:11:54.930 --> 00:12:06.309
+Jessica: typical Github link with the data set, the readme file, the Jupyter notebook. Nothing has changed from the previous practical application assignments.
+
+51
+00:12:07.443 --> 00:12:08.930
+Jessica: The rubric
+
+52
+00:12:09.381 --> 00:12:33.079
+Jessica: is pretty much the same. Okay? The project. Or and again, I know I sound repetitive, and I know I talk about the rubric every time we do the Capstone project. But your, if you are losing points in the Capstone project is because you did not follow the rubric. Okay? I get sad for you when
+
+53
+00:12:33.080 --> 00:12:55.129
+Jessica: the Readme file doesn't have a link to the notebook. Okay? And I have to take out 1 point out of the 5 because you forgot to submit the link. Okay, it hurts you, but it hurts me as well, because it seems it seems like a lot of points to lose for a link. But I am just here to follow the rubric. Okay?
+
+54
+00:12:55.320 --> 00:12:59.999
+Jessica: So again, before you submit, work on the capstone project.
+
+55
+00:13:00.360 --> 00:13:06.439
+Jessica: read the rubric first, st work on it, and before submitting, read the rubric again.
+
+56
+00:13:06.550 --> 00:13:32.219
+Jessica: make sure that everything gets in the Capstone project, and if your results are good. And you know, like, your project makes sense, it's actually pretty easy to get full points. Okay? Because we really just follow the rubric. Okay, of course, your submission has to make sense, and your conclusion have to make sense and all that. But having everything that the rubric listed, it's an excellent starting point.
+
+57
+00:13:32.950 --> 00:13:55.469
+Jessica: So, yeah, so the project organization section is always the same. The readme file with a summary of the findings and the link to the notebook. It can have other things. Okay, the readme file. If you want to include Eda and an introduction about the project, you can have that. But at least it has to have a summary of the findings and a link to the notebook.
+
+58
+00:13:56.040 --> 00:14:18.529
+Jessica: The Jupyter notebook, of course, has to be present. The data has to be present. You don't want any unnecessary files. So if you have, like a draft of the notebook you know, remove it. Okay, just submit the final version, and so on, and the directories and the files have to have an appropriate location.
+
+59
+00:14:18.610 --> 00:14:40.639
+Jessica: Another thing that I want to talk about about project organization is that I noticed that some of you tend to submit, tend to split the project or the assignments into multiple notebooks. You know, like, you know, maybe like a notebook for Eda, one for data, cleaning, one for model training, and so on. And that is
+
+60
+00:14:40.910 --> 00:14:46.979
+Jessica: fine. But I, personally, okay, this is just my opinion.
+
+61
+00:14:46.980 --> 00:15:14.449
+Jessica: I find it a little bit harder to follow. Okay, so these projects are not really long, and I think that everything could be in a notebook. And I think that if somebody was to take a look at your notebook like not me, but a potential future employer, I think it would make more sense to have everything in one notebook instead than over multiple files, because unless you number those files
+
+62
+00:15:14.926 --> 00:15:25.080
+Jessica: sometimes, I don't even know which one to open first, st and that can get quite confusing. So I do recommend that you keep everything in one notebook.
+
+63
+00:15:25.750 --> 00:15:39.329
+Jessica: syntax, and code quality. Nothing has changed here. Obviously your code has to work and has to run. You know, the variable names have to make sense. The outputs need to be, you know.
+
+64
+00:15:40.159 --> 00:15:59.000
+Jessica: like formatted correctly. If you have, you know, some output or warning error that takes up an entire page, and you need to like, I need to scroll for 30 seconds. That is not very good. There are ways to suppress those outputs. Okay, so again.
+
+65
+00:15:59.660 --> 00:16:01.960
+Jessica: do this project for yourself.
+
+66
+00:16:02.070 --> 00:16:14.479
+Jessica: but also treat this project as perhaps something that you want to show to a future employer in the future. Okay, so you want to make a good impression, and you want to show that you know how to write clean code
+
+67
+00:16:16.305 --> 00:16:24.550
+Jessica: the visualizations. Again. Super important? Okay, you don't need to get super fancy with them. But
+
+68
+00:16:24.800 --> 00:16:27.660
+Jessica: if you just plot, you know
+
+69
+00:16:27.890 --> 00:16:47.549
+Jessica: one histogram or a bar plot of the customer that signed the for the marketing campaign, and the ones that didn't sign for the marketing campaign. That is not enough. That does not show me that you know how to do visualization, because everybody can create a bar plot, so
+
+70
+00:16:48.450 --> 00:17:08.800
+Jessica: you know, include a few visualizations about the input variables and the output variables and their correlation with the output, with the input variables and make sure that these visualizations are you know that the axes are legible, that the the
+
+71
+00:17:08.910 --> 00:17:29.539
+Jessica: the labels are present on the Y and X axis. If you need a legend, add the legend, okay, but we are in module 17. Okay, this is not the practical application for module. 5. This is the practical application for Module 17. So I we expect you to
+
+72
+00:17:29.540 --> 00:17:41.679
+Jessica: being able by now to create some interesting visualization that can help you actually give insight about the data. Okay, if you just plot the output variable in a bar plot. Well.
+
+73
+00:17:41.920 --> 00:18:00.940
+Jessica: to show that the that the data set is not balanced. Well, thank you. Okay. But we could have also wrote that with a couple of lines of code. Okay, we want you to use visualizations that are meaningful and that can help you draw interesting conclusion about the data. So you can model better.
+
+74
+00:18:01.390 --> 00:18:24.180
+Jessica: The modeling section is the new part. Okay, there was one in Module 11 as well, but this time has changed. We well ignore this regression model. This should not be here. We're not doing regression. We're doing classification. So the rubric here should be a
+
+75
+00:18:24.350 --> 00:18:45.310
+Jessica: use of multiple classification model. We are going to fix this rubric as soon as possible. You should do cross validation and grid. Search for the hyper parameters. If you want to do, if you want to apply any feature reduction methods, you can do so. Okay, to try and see which variables your model would pick.
+
+76
+00:18:45.670 --> 00:19:13.969
+Jessica: It's important that you identify the correct classification metric evaluation metrics. Again, I don't think accuracy is gonna be a good one. So look at the confusion matrix. Okay, it's a binary classification problem, the confusion matrix were perfect and establish whether you know, perhaps you wanna look more at the precision, or you want to minimize the recall or the f 1 score, or see what works best for the problem.
+
+77
+00:19:14.380 --> 00:19:33.460
+Jessica: And finally, for the findings. Again, it's often overlooked. Okay, because you are tired. You are at the end of it. You don't want to work anymore with this project, but it is important that you know how to write.
+
+78
+00:19:33.570 --> 00:20:01.179
+Jessica: Finding like your your findings. Well, okay, it's important to be able to communicate to the stakeholders, to the clients, to your manager what your findings are. Present them preferably in a non technical way. Okay, if people ask you to do this project is probably because they don't know how to do them themselves. Okay? So when they see the results. They want to be able to understand and read the result in a language that is non-technical.
+
+79
+00:20:01.300 --> 00:20:05.010
+Jessica: This should, you know.
+
+80
+00:20:05.150 --> 00:20:16.319
+Jessica: you really should separate the the findings and put them in their own section, and essentially make to make sure that you convey the message and your recommendations clearly.
+
+81
+00:20:17.310 --> 00:20:20.019
+Jessica: And there was a message.
+
+82
+00:20:21.570 --> 00:20:43.860
+Jessica: what visualization? A good viewing relationship between input variables when the data is mostly categorical. Well, you can do like pie charts. You can do bar plots again. Scatter plots in this case are not going to work or anything like that. But you know, like you can get creative with the bar plots
+
+83
+00:20:44.200 --> 00:20:55.060
+Jessica: or pie charts and try and see what the distribution is. If there is any, you can look at the distribution of the variables as well, and you can sort of like.
+
+84
+00:20:55.830 --> 00:21:01.019
+Jessica: try and understand if there is some sort of relationship with the input variables.
+
+85
+00:21:02.620 --> 00:21:13.059
+Jessica: But yeah, like for for categorical variables, you can do pie charts and like bar plots, you can. You can do much different than that. And I'm not saying that bar plots are bad.
+
+86
+00:21:13.681 --> 00:21:22.440
+Jessica: But there are bar plots that you can like. Given any data set, you can, you can plot the
+
+87
+00:21:24.970 --> 00:21:43.429
+Jessica: the output variable. Okay, just yes and nos, and it's going to be like a bar plot where the no's are much higher and the Yes are lower, and it's going to tell you. Well, the data set is unbalanced surprise. Or perhaps you can try and plot, you know, on a bar plot. Let's see what we have here.
+
+88
+00:21:46.610 --> 00:21:52.720
+Jessica: I think it could be interesting to see if the like, you know, like
+
+89
+00:21:53.270 --> 00:22:22.750
+Jessica: the relationship between people that are employed or not, but also, maybe that are in a family to see if they subscribed or not, because if somebody is unemployed but has a partner that perhaps has a well-paying job, maybe this person are more inclined to pay to sign up for the for the product, right? Because somebody in this household in the household makes money anyways, and so they have the means to sign up for that. But if they are single and unemployed, then it
+
+90
+00:22:22.750 --> 00:22:38.390
+Jessica: it's more likely that they're not going to sign up for the product. Okay? And you know, thinking about these things and thinking about how you know, people may behave around. You know, a marketing campaign like that can really help you in
+
+91
+00:22:38.390 --> 00:22:56.930
+Jessica: starting to think about the problem. Okay, not everything is mechanical and has to be mechanical in machine learning, AI or data science, you have to adopt the
+
+92
+00:22:57.370 --> 00:23:01.910
+Jessica: the like, start thinking about it, how the
+
+93
+00:23:02.600 --> 00:23:15.689
+Jessica: the client wants, and what the data points are trying to to communicate with you. So you can really like, try and and draw conclusions from the data that are interesting. Okay.
+
+94
+00:23:15.740 --> 00:23:44.530
+Jessica: like, remember, when we were doing like the Titanic data set that I was cleaning that data, and I was telling you. Oh, you know, like I think we should look at the age, because, you know, like probably the people that were females and younger were saved. First, st Yada Yada, and we were able to like find some interesting to create some interesting plot for that. And it's the same thing here. Okay, try to understand the problem and put yourself
+
+95
+00:23:44.530 --> 00:24:00.419
+Jessica: in from the point of view of the people that got the call for the marketing campaign and trying to think about. Okay, what would I have done? What do I expect the different scenarios could be? Can I reproduce these with my graphs? And can I confirm this hypothesis. And then
+
+96
+00:24:00.480 --> 00:24:02.290
+Jessica: that is going to help you
+
+97
+00:24:02.460 --> 00:24:07.619
+Jessica: understanding better the data. And it's going to help you train your model better.
+
+98
+00:24:09.360 --> 00:24:24.070
+Jessica: So yeah. So, for example, I think that one interesting one to look at would be job and marital, and then see what their relationship is with the output variable. And then I'm sure that there are others, but that could be, I think, an interesting one to look at
+
+99
+00:24:25.810 --> 00:24:29.440
+Jessica: any questions or comments, or
+
+100
+00:24:36.530 --> 00:24:42.820
+Jessica: Yes, Shashi. I have graded my section, I believe.
+
+101
+00:24:43.734 --> 00:24:51.635
+Jessica: Let me stop sharing the screen so I can take a look at the
+
+102
+00:24:55.450 --> 00:25:01.170
+Jessica: at the submission. But if you're not in my section, and it's not graded. Feel free to open a ticket.
+
+103
+00:25:11.350 --> 00:25:19.790
+Jessica: Yeah, it doesn't look, it's graded. But you are not in my section. So raise a ticket, and the I hope that you're
+
+104
+00:25:20.580 --> 00:25:24.890
+Jessica: yes, that the that the somebody will get back to you.
+
+105
+00:25:29.645 --> 00:25:48.780
+Frank Lu: Hi! This is Frank. Have a question, hey? Hey? Jessica? Thank you. Yeah. I'm a little behind. I'm just wondering like what the the final capstone project has a deadline, it has a like cut deadline, or is there a possibility of extension there?
+
+106
+00:25:48.930 --> 00:25:50.810
+Frank Lu: So if I'm really behind.
+
+107
+00:25:51.230 --> 00:26:00.169
+Jessica: Yeah, yeah, yeah. So the we do grant extensions for everybody. Now, let me see.
+
+108
+00:26:06.370 --> 00:26:09.670
+Jessica: I when is the last day of the course.
+
+109
+00:26:10.870 --> 00:26:13.820
+Jessica: Let me sorry. Let me find that information.
+
+110
+00:26:18.770 --> 00:26:21.159
+Frank Lu: Of course, I'm trying really hard, trying to catch.
+
+111
+00:26:21.160 --> 00:26:27.770
+Jessica: No, no, it's okay. It's okay. I I don't. Okay, let me share the screen.
+
+112
+00:26:29.790 --> 00:26:38.830
+Jessica: So the extension asking for extensions is fine, even for the Capsule project. Now the end of the course is March 19.th
+
+113
+00:26:39.040 --> 00:26:46.553
+Jessica: So this the deadline, technically for the Capstone project, is March 19.th Now,
+
+114
+00:26:48.270 --> 00:26:58.480
+Jessica: you can get extensions for 6 months after the course is done. If you need. Okay, that is not the more if you need that time
+
+115
+00:26:58.870 --> 00:27:02.269
+Jessica: requested. And most likely it's gonna be granted to you.
+
+116
+00:27:02.470 --> 00:27:05.719
+Jessica: What I want to mention to you and everybody
+
+117
+00:27:05.870 --> 00:27:19.809
+Jessica: is that as learning facilitators are on a contract for this course. So our responsibilities towards you and the course are limited to a certain amount of time.
+
+118
+00:27:20.070 --> 00:27:31.689
+Jessica: our contract and our grading responsibilities, and 2 weeks after the course is done. So this would be March or April second. Okay.
+
+119
+00:27:32.630 --> 00:27:37.610
+Jessica: so if you submit before April second.
+
+120
+00:27:37.940 --> 00:27:43.620
+Jessica: we learning facilitators are going to be grading your Capstone project.
+
+121
+00:27:44.030 --> 00:27:46.950
+Jessica: If it's after that.
+
+122
+00:27:47.390 --> 00:28:03.759
+Jessica: someone else will grade it. Someone on the grading team at Emeritus will be will grade your submission. You will still receive the certificate. Okay, but my like, our advice is, try and finish
+
+123
+00:28:03.930 --> 00:28:18.079
+Jessica: everything before the learning facilitators are done, because we know you because we've been following you because we're familiar with the program and probably because you want us to grade the capital project and not somebody that you don't.
+
+124
+00:28:18.520 --> 00:28:25.559
+Jessica: So that is the that is the the summary of it. But if you need more time, you can have it.
+
+125
+00:28:26.010 --> 00:28:26.969
+Frank Lu: Okay. Thank you.
+
+126
+00:28:26.970 --> 00:28:27.510
+Jessica: Yep,
+
+127
+00:28:30.810 --> 00:28:54.080
+Jessica: yeah. So we are almost at the end of the course, also, which is super exciting. We have a few more modules. We're going to get into a little bit of a peek into what we're about to get into. We're going to get into natural language processing. We're going to get finally into AI and an introduction to generative AI. We'll be looking at Gpts and and transformers
+
+128
+00:28:54.170 --> 00:29:13.269
+Jessica: and things like that. So the machine learning part of the course is basically done. And in the last 6 modules of the course, we're going to be getting into more advanced and modern topics, and which I think it's really exciting. And of course, the capstone project.
+
+129
+00:29:14.399 --> 00:29:23.509
+Jessica: Any questions or comments? I don't have anything else to say, but I have time.
+
+130
+00:29:26.040 --> 00:29:28.398
+Jessica: Oh, there is a question
+
+131
+00:29:29.360 --> 00:29:58.220
+Jessica: good source or info for hypothesis testing. Well, there are probably some things that you can look at online graph and plotting can also give you a lot of insight about your hypothesis. Like, for example, an unemployed single person is probably not going to sign up for the marketing campaign. Now, is that true? In every case?
+
+132
+00:29:58.340 --> 00:30:03.850
+Jessica: I don't know. That is something that something called a B testing.
+
+133
+00:30:03.960 --> 00:30:05.940
+Jessica: I'm gonna put it in the chat
+
+134
+00:30:06.210 --> 00:30:15.172
+Jessica: can tell you. Okay, so essentially, you split your population, say, or your data into multiple
+
+135
+00:30:15.710 --> 00:30:38.470
+Jessica: like situations. Okay, in different cases. And you look at the hypothesis for each case. And there's something called a B testing that's automatically implemented in Scipy. I believe I haven't done it in forever, which can give you a little bit of a better insight about what to expect.
+
+136
+00:30:38.470 --> 00:30:45.959
+Jessica: Also having a little bit of an hypothesis, or a little bit of an idea of what the results could be
+
+137
+00:30:46.180 --> 00:31:01.220
+Jessica: can help you in your modeling. Okay, not because you're necessarily going to chase a result, but having a good intuition about what to expect can, I think can really make the difference in your in your submission?
+
+138
+00:31:18.680 --> 00:31:23.620
+Jessica: And yeah, anything else.
+
+139
+00:31:28.120 --> 00:31:32.009
+Jessica: So this office hour was a bit short, because of the you know the
+
+140
+00:31:32.250 --> 00:31:41.549
+Jessica: practical application assignment, but I hope I gave you useful information and best of luck in Module 17.
+
+141
+00:31:41.550 --> 00:32:07.499
+Jessica: Of course, if there are any questions. Okay, our tickets are open. Feel free to reach out. If you're stuck at any point we are here to help and so feel free to reach out if you need some help with the capstone project or with the practical application, and with that I will wish you a good rest of your day or evening, and I will see you in a couple of weeks bye, and see you later.
+
+142
+00:32:07.500 --> 00:32:09.279
+Jessica: Thank you. Bye, bye.
+
