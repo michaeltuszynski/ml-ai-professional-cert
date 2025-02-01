@@ -1,0 +1,1398 @@
+WEBVTT
+
+1
+00:00:01.650 --> 00:00:06.700
+Mani K: Just get yeah? All right. Good. Let me just share my screen.
+
+2
+00:00:12.330 --> 00:00:13.430
+Mani K: Write down.
+
+3
+00:00:17.140 --> 00:00:19.880
+Mani K: How's everyone doing all good?
+
+4
+00:00:21.940 --> 00:00:26.829
+Mani K: Let's see about the for a few on the call.
+
+5
+00:00:27.920 --> 00:00:33.560
+Mani K: Oh, look! My!
+
+6
+00:00:38.410 --> 00:00:39.740
+Mani K: And the
+
+7
+00:00:43.270 --> 00:00:45.059
+Mani K: slide deck link.
+
+8
+00:00:48.840 --> 00:00:49.680
+Mani K: Sure.
+
+9
+00:00:51.460 --> 00:00:56.594
+Mani K: Last week's office hour. I forgot to send the link to the
+
+10
+00:00:58.302 --> 00:01:14.320
+Mani K: the support so they I so I just shared with them yesterday. So last week's office hour slide deck will be posted pretty soon, I think but in, I think in last week's slide deck I also, or actually in the office hour. I also went over a bit regarding
+
+11
+00:01:16.583 --> 00:01:23.036
+Mani K: notebook with some Nlp stuff in it. So I added, those links in this of
+
+12
+00:01:23.550 --> 00:01:32.793
+Mani K: slide deck as well. So that's something just letting everyone know. Okay, alright. So
+
+13
+00:01:34.703 --> 00:01:43.286
+Mani K: so for this officer, I'll just go over the capstone stuff one more time again. So just to rehash. And then,
+
+14
+00:01:44.471 --> 00:01:51.049
+Mani K: I know in my previous office hours, I talked about doing something around images.
+
+15
+00:01:51.110 --> 00:02:10.820
+Mani K: So I'm gonna show a notebook with some image data set and doing simple. Ml, again, I'm not going any deeper. No, we're not doing any neural net. And all of that just simple classification stuff with like, whatever
+
+16
+00:02:10.820 --> 00:02:24.474
+Mani K: I'll go that we are working with right now. So that's the thing. Okay? So that's going to be the primary agenda for today. Going over that notebook. And then apart from that, like any other discussions around
+
+17
+00:02:24.970 --> 00:02:31.572
+Mani K: the capstone. Okay, alright! So for capstone,
+
+18
+00:02:34.020 --> 00:02:44.718
+Mani K: for capstone, I think. I've already mentioned that you have like different deliverables. I think there is one that is going to be,
+
+19
+00:02:45.290 --> 00:02:51.718
+Mani K: I guess, like a deliverable next week. I think so. It's going to be for the
+
+20
+00:02:52.360 --> 00:02:57.760
+Mani K: like a 1st version of your Jupyter notebook. It's not the final one. It's like a draft like
+
+21
+00:02:57.900 --> 00:03:07.414
+Mani K: some Eda parts done. So I think that's the requirement just letting you know. I think it's due on February 3rd or 4, th I think.
+
+22
+00:03:08.120 --> 00:03:13.663
+Mani K: so. So that's the next deliverable. And then you can also have, like
+
+23
+00:03:14.170 --> 00:03:25.050
+Mani K: follow up meeting scheduled with me. The URL is the same, it's the same calendar link for again again, this is to
+
+24
+00:03:25.150 --> 00:03:45.239
+Mani K: check your progress. Whether you're going in the right direction. And if we need to change any scope or like should we? Or if we need to do, if we need to make any other decisions regarding your project. So that's the thing. Okay? So you can schedule that call maybe around
+
+25
+00:03:45.850 --> 00:03:55.089
+Mani K: starting of second week of February 3rd week of February earlier, the better. So more time you have. I think it might be better for the project. Okay.
+
+26
+00:03:55.880 --> 00:03:58.919
+Mani K: any. Is that clear? Any questions around the project?
+
+27
+00:03:59.090 --> 00:04:05.000
+Mani K: Anything else that you want me to? Just clarify or highlight?
+
+28
+00:04:07.870 --> 00:04:10.105
+Mani K: Okay, right?
+
+29
+00:04:11.320 --> 00:04:22.090
+Mani K: okay. So if there aren't any questions around the project, I mean, I'll still have some time left towards the end. I think we can. We can go with some questions there as well, okay.
+
+30
+00:04:22.380 --> 00:04:24.985
+Mani K: right? So this is the
+
+31
+00:04:26.400 --> 00:04:43.489
+Mani K: agenda that I had planned. So basically an image classification thing that I was just gonna go over and then leave with some next steps for you guys to continue working on, because that's the thing. And then these 2 links are the ones that I
+
+32
+00:04:43.550 --> 00:05:02.100
+Mani K: briefly shared towards the end regarding Nlp. We can also have some. If there are any open questions that you have around there, I think. We can also discuss that towards the end. Okay, right? And there are some links that. I populated in the last slide regarding the notebook that I'm just working on. Okay. Alright
+
+33
+00:05:03.560 --> 00:05:07.850
+Mani K: this. I think. Let's get
+
+34
+00:05:08.000 --> 00:05:11.720
+Mani K: started. Give me a moment. I need to share my other screen.
+
+35
+00:05:35.670 --> 00:05:42.320
+Mani K: okay, right? So this is a notebook, so that I'm gonna be going over right now. So
+
+36
+00:05:43.544 --> 00:05:46.515
+Mani K: I'm importing some libraries here.
+
+37
+00:05:47.370 --> 00:05:50.686
+Mani K: so I'll just briefly talk about it.
+
+38
+00:05:52.500 --> 00:06:05.529
+Mani K: So specifically, since we are dealing with images. I'm I'm using these 2 libraries. Opencv, which is like an open source. Computer vision library
+
+39
+00:06:07.450 --> 00:06:12.280
+Mani K: pillow or pil is a python image.
+
+40
+00:06:13.851 --> 00:06:27.498
+Mani K: it's an image library which deals with like, you know, dealing with image files and stuff. So it's called pillow. So I'm also doing that. You can pip install all of these in your environment. Pretty easily.
+
+41
+00:06:28.330 --> 00:06:31.638
+Mani K: I am importing tensorflow into this
+
+42
+00:06:32.677 --> 00:06:42.792
+Mani K: into this notebook. But I'm not using any part of tensorflow. I'm just like importing a built in data set that is available as part of keras, which is
+
+43
+00:06:43.836 --> 00:07:06.120
+Mani K: which uses tensorflow as the back backend. Okay? So that's the thing. So if you want to import this data set, you will have to install tensorflow. Just look for documentation on like like what python versions you need to have to run tensorflow, I believe, like, I think you need to have minimum of 3.7
+
+44
+00:07:06.280 --> 00:07:08.500
+Mani K: like for running tensorflow.
+
+45
+00:07:08.620 --> 00:07:11.459
+Mani K: So create appropriate
+
+46
+00:07:13.520 --> 00:07:16.188
+Mani K: you know, in python environments. And then
+
+47
+00:07:17.207 --> 00:07:44.319
+Mani K: and then accordingly, run the notebook. So just fyi on that. So I I like to have multiple python environments like this. One is running on 3.9. Actually, I have one for 3.8 3.7. It depends, like, you know, sometimes all older libraries. Sorry. There are some libraries that work with older versions and things like that. So it's always good to have like, multiple environments. Okay.
+
+48
+00:07:44.750 --> 00:07:54.909
+Mani K: apart from that, I think the remaining ones are standard, only there's no but there's 1 called sk image feature this is
+
+49
+00:07:55.982 --> 00:08:04.329
+Mani K: from library to extract certain features out of an image again, this is just for an example purpose. Here. I'm using it
+
+50
+00:08:04.852 --> 00:08:17.097
+Mani K: again, not necessary. But I just wanted to give some example of how what you can do with images. If that's the. So, these are the libraries that I'm importing
+
+51
+00:08:18.610 --> 00:08:23.670
+Mani K: And then for the data loading part, like, I'm using a function.
+
+52
+00:08:25.207 --> 00:08:43.202
+Mani K: sorry I'm using a data set directly from karos. It's called fashion mnist. It's basically a data set around some clothing and shoes and stuff like that. It's basically has about 60,000 images, I believe. And they are and and it's labeled
+
+53
+00:08:43.710 --> 00:08:59.859
+Mani K: they do have a way to. They have a test data and training data directly. So you can import it in one in direct directly itself. Okay, so that's that's the thing that's good thing about it. So I'm importing the training and test data set completely for 60,000 images.
+
+54
+00:09:00.466 --> 00:09:07.799
+Mani K: And I think the next step is just like checking how many observations that I have?
+
+55
+00:09:07.990 --> 00:09:15.361
+Mani K: No, I also put in a link for here to read about the data set. If you want.
+
+56
+00:09:17.570 --> 00:09:18.550
+Mani K: oh.
+
+57
+00:09:21.850 --> 00:09:24.249
+Mani K: so so this is the data set. Okay?
+
+58
+00:09:25.530 --> 00:09:36.170
+Mani K: So basically, it has like, these 10 different classifications. So images are labeled based on these, like, you know, shirts, t-shirts.
+
+59
+00:09:36.410 --> 00:09:39.130
+Mani K: sneakers, bags, and things like that. Yeah.
+
+60
+00:09:40.225 --> 00:09:47.299
+Mani K: so going back to the data set, so once I load the data set.
+
+61
+00:09:49.230 --> 00:09:51.950
+Mani K: I have it in these lists.
+
+62
+00:09:52.501 --> 00:09:53.948
+Mani K: I can just like,
+
+63
+00:09:56.830 --> 00:10:09.849
+Mani K: I can just check the sizes of them. So you can see that it has 60,000 observations in both the in in the training. And then 10,000 observations in the test. Okay.
+
+64
+00:10:10.390 --> 00:10:15.679
+Mani K: no, I mean, I didn't want to go through a long process of doing the
+
+65
+00:10:16.180 --> 00:10:45.810
+Mani K: training and training phase in this particular office. Also, what I'm doing here is like, I'm randomly sampling 10,000 images and then I'm gonna be using that for the training data. Okay, so so I'm just like splitting filtering like 10,000 random images. And then that becomes my train data. Okay? Then the test data. I'm just keeping it the same because it has 10,000. So I'll just I'll just use the same 10,000. Okay, so that's what I'm doing here.
+
+66
+00:10:46.020 --> 00:10:53.359
+Mani K: So basically. Now, my training data has 10,000 randomly sample data. And then test data remains the same. Okay.
+
+67
+00:10:53.790 --> 00:10:55.049
+Mani K: that do, yeah.
+
+68
+00:10:56.330 --> 00:10:59.935
+Mani K: Okay, so whenever you're dealing with
+
+69
+00:11:02.183 --> 00:11:05.703
+Mani K: images and stuff you know,
+
+70
+00:11:07.245 --> 00:11:16.969
+Mani K: the standard procedure is to always do. It's not just in dealing with images, or even in data like, it's always good to do some some sort of normalization.
+
+71
+00:11:17.070 --> 00:11:21.255
+Mani K: So here I'm just doing a pixel normalization.
+
+72
+00:11:22.130 --> 00:11:27.876
+Mani K: so the reasons for doing that is like, you know. 3 things right like
+
+73
+00:11:29.370 --> 00:11:31.250
+Mani K: faster convergence
+
+74
+00:11:32.440 --> 00:11:58.900
+Mani K: in an even scale. And then the 3rd one is like, you know, you don't want, like some of these larger values to dominate. So that's the thing. So I'm just like dividing it by 2, 2, 5 5 to normalize all the pixel values. Okay, again, we, this is, this is nothing to do with the data itself. It's just like how the data is being processed from the images as pixels. That's what we're doing. Okay? So we're not doing anything
+
+75
+00:11:58.900 --> 00:12:04.889
+Mani K: on the image directly itself. Okay, so this is a normalization piece.
+
+76
+00:12:04.920 --> 00:12:12.029
+Mani K: These are our class names. I just, I'm just making a list of that so that it's easy to play with. So I just took this from the
+
+77
+00:12:12.462 --> 00:12:17.120
+Mani K: the cares website. So I'm just having a list for the class names. Okay.
+
+78
+00:12:18.465 --> 00:12:26.209
+Mani K: we can do a little bit of understanding the data and some sampling
+
+79
+00:12:26.916 --> 00:12:41.913
+Mani K: of the data to see like how the data looks like or how the images look like in this particular example. Okay. So here, I'm just looking at the 1st 5 images. I just want to see like how it looks like. So for this, I'm using the
+
+80
+00:12:45.138 --> 00:12:53.501
+Mani K: the color map function that's part of mat block. And basically what it gives you is like,
+
+81
+00:12:54.180 --> 00:13:19.709
+Mani K: it's just a color map for grayscale images. So this plt.cm, dot binary. So basically, it's just like a think of it as a 0 to one kind of a scale where, like the lowest 0 could be black and one is white. Okay? So it's like that. and then in between numbers could be any gray. Okay, so that's the thing so with this, like, you can display images as a grayscame. Okay, so that's what it is.
+
+82
+00:13:20.369 --> 00:13:28.939
+Mani K: Or I mean, you can also display images as colors, too. So that's also possible. Here, we're just displaying it as gray scheme. Okay?
+
+83
+00:13:29.190 --> 00:13:37.560
+Mani K: Right? I think even the input images are like that. I think so. This is how it looks like to the 1st 5 images. Again, the size of the images
+
+84
+00:13:37.940 --> 00:13:51.762
+Mani K: the quality of the images need not be that high for doing image processing like small size images are great, I mean, because, we're dealing with like pixels. And all you need to figure out is like
+
+85
+00:13:52.773 --> 00:14:14.430
+Mani K: if if it can understand the shapes or the textures and things like that, colors and things. Those are the important ones. So till the time those things are available you can deal with that, because that's the thing. So this is just to give an example of how they how the samples look like, okay.
+
+86
+00:14:14.915 --> 00:14:22.043
+Mani K: you can also do some class distribution. It's always good to check, like if if the
+
+87
+00:14:22.550 --> 00:14:26.109
+Mani K: the data set is evenly balanced or not. Okay.
+
+88
+00:14:26.220 --> 00:14:30.770
+Mani K: So I'm just you using pandas for this. So I'm creating a
+
+89
+00:14:32.022 --> 00:14:34.828
+Mani K: count of the number of
+
+90
+00:14:36.441 --> 00:14:45.460
+Mani K: classes that I sorry the for each class. How many value count I have. And then I'm just going to plot this up. Okay, so that's the thing.
+
+91
+00:14:45.760 --> 00:14:57.570
+Mani K: So so for example, this is the data. How it looks like like this is the value of images. So again, I sampled 10,000
+
+92
+00:14:58.299 --> 00:15:22.230
+Mani K: images. So you can see that like, on an average, every class is more or less it. You know, hitting the 1,000 mark. Okay, so we have 10 classes, almost 1,000 each. So there are some that are a little high, a little low, that's totally fine. This is all within the margins. Okay, I can also just do a bar plot of that. Okay, so that's what it is.
+
+93
+00:15:22.290 --> 00:15:30.760
+Mani K: Okay. So just I mean, just doing, Eda is always good trying to understand. Like, I mean, just trying to understand like, if
+
+94
+00:15:30.940 --> 00:15:42.726
+Mani K: especially in classification, balancing and all of that is important. So that's 1 thing. So the only thing that we have here is like an image. And then, along with that like
+
+95
+00:15:44.376 --> 00:16:08.140
+Mani K: a label that is associated with that image like on what that image is like what what it is like. It's an image of a shirt or image of a trouser, or a dress, or a coat, or a sandal or something like that. So that's what we have. And I think the problem that we're trying to solve is like, can you imagine given image can I correctly classify into one of these? 10? Right? So that is the thing.
+
+96
+00:16:10.800 --> 00:16:11.670
+Mani K: Now,
+
+97
+00:16:13.107 --> 00:16:27.229
+Mani K: there are 3 ways I'm going to be looking at this one. Okay, the 1st one is like, I'm not even going to do any like direct image processing like, what I'm going to do is like, I'm gonna extract some features from the image
+
+98
+00:16:27.300 --> 00:16:46.249
+Mani K: and then use that features to construct a an Ml model. Okay, so basically, what I'm trying to do is like I'm I'm processing an image, extracting few things, and then and then can I use that features to perform to do an Ml training. So that's the 1st approach that I'm gonna do.
+
+99
+00:16:46.766 --> 00:16:58.529
+Mani K: Again. This is just the mechanics of how you go about doing it right like this is more simpler. I don't have to deal with direct image processing too much. But if I do this.
+
+100
+00:16:58.820 --> 00:17:12.686
+Mani K: and my model is also simple. Okay, so so that's the 1st thing that I'm gonna be doing. The second thing. What I'm gonna do is like I'm going to. Only I'm gonna directly give the pixel to the
+
+101
+00:17:13.867 --> 00:17:32.300
+Mani K: to the whatever algorithm that I'm going to be using. So I'm not adding any extra features. It's just like whatever is available in the image. I'm going to be modeling that with, okay, so that's going to be the second model. And then the 3rd model. What I'm going to do is like I'm going to combine the features that I expected in the 1st model
+
+102
+00:17:32.300 --> 00:17:44.129
+Mani K: along with the raw image and then see like how the performance looks like. So I'm taking 3 approaches. One is extracting features from the image, second is only the image, 3rd is like
+
+103
+00:17:44.526 --> 00:17:53.940
+Mani K: features plus the image. Is that clear? So that's the 3 pronged approach that I'm taking here for just for this particular thing. Okay.
+
+104
+00:17:54.438 --> 00:17:57.500
+Mani K: and I want to see, like, how it works. Okay?
+
+105
+00:17:57.840 --> 00:18:08.774
+Mani K: So here I'm creating a function to extract some features from the images. So what are some of the functions that can be extracted. Okay,
+
+106
+00:18:09.420 --> 00:18:29.719
+Mani K: So the 1st one I'm going to be. Obviously the color can be something that you can use. So here, like, I'm extracting the color histogram and storing it. So that's going to be one of the images again. So this can get a little bit technical. Again, apologies I highly. What I am trying to do here is like, I think the concept is what is more important here. So
+
+107
+00:18:29.720 --> 00:18:44.188
+Mani K: in this particular example as a feature. What I'm trying to do here is extract the color as a color histogram. And then can I extract some textures as a feature. Okay, there are some features that can be extracted
+
+108
+00:18:45.309 --> 00:19:11.039
+Mani K: to represent texture. So one of them is called hog. This one is histogram of the oriented gradients. And then, there's another one called local binary patterns. This is also. These are all are like some functions that can be that are available to extract as features to represent texture. Okay, so, but I'm not. No, I'm no subject matter. Expert in dealing with images. But what I'm trying to do here is like
+
+109
+00:19:11.291 --> 00:19:26.620
+Mani K: from a from a higher level. I know at least the concept like, what is it that I can do, or what is it that I want to do? And based on that? Like, you can do some research and kind of understanding what kind of features that you can do. Okay? What? What kind of features you can extract.
+
+110
+00:19:26.620 --> 00:19:43.419
+Mani K: So these are the 3 that I'm going to be extracting. So I'm free. I'm writing a function to extract these features. And then I'm going to be passing the training data set to extract features from the training data set. Okay, so that's what it is. So here I'm writing a function to do this.
+
+111
+00:19:43.670 --> 00:19:53.492
+Mani K: and then the next is, I'm going to be like passing the training data set. And then the test data set to this function that I created. This would be my
+
+112
+00:19:54.793 --> 00:20:01.070
+Mani K: train features and the test features list. Okay?
+
+113
+00:20:01.440 --> 00:20:02.200
+Mani K: Right?
+
+114
+00:20:02.691 --> 00:20:09.449
+Mani K: If you want to see the very 1st it's gonna take some time to process the 10,000 images
+
+115
+00:20:09.620 --> 00:20:11.470
+Mani K: to extract those features.
+
+116
+00:20:13.030 --> 00:20:18.495
+Mani K: So you can also do some other extra things to here. Okay, so here,
+
+117
+00:20:19.798 --> 00:20:42.889
+Mani K: I'll wait towards the end to I don't want to give away initially itself. But there are some more things that you can also do to begin with. But since, like, this is just a plain data set that I that we just got hold of. We'll just follow the simple steps first, st and then we can try to see like, what are the things that we can do to just keep improving it?
+
+118
+00:20:45.070 --> 00:20:47.645
+Mani K: Okay, so while that's working,
+
+119
+00:20:48.700 --> 00:20:51.760
+Mani K: it'll finish in a few minutes.
+
+120
+00:20:52.620 --> 00:20:57.769
+Mani K: I'll just talk about a few other things. So after that, like once these features are available.
+
+121
+00:20:58.497 --> 00:21:09.950
+Mani K: I am using standard scalar to actually like basically to normalize them again. Which. Okay? So so it's done.
+
+122
+00:21:10.150 --> 00:21:12.110
+Mani K: Okay, so I normalize them.
+
+123
+00:21:12.390 --> 00:21:33.800
+Mani K: And then, that's it. I'm just going to use a plain, simple spm, model to actually like fit. With this data set. Okay? So basically, I have the extreme features scale, which is what I got from this step, which I which is the normalized features.
+
+124
+00:21:33.990 --> 00:21:38.850
+Mani K: And then I'm going to be just like training them. Let's just go on this.
+
+125
+00:21:39.670 --> 00:21:40.480
+Mani K: Okay?
+
+126
+00:21:41.870 --> 00:21:54.400
+Mani K: So once this is done, I'm also creating another function to evaluate this model. Basically printing the accuracy score and then also looking at the the
+
+127
+00:21:55.490 --> 00:22:04.319
+Mani K: looking at the confusion matrix. Okay, so those things. So those are the 2 things with which, like, I'm going to be evaluating it. For now. I will
+
+128
+00:22:04.470 --> 00:22:05.990
+Mani K: run this as well.
+
+129
+00:22:06.200 --> 00:22:07.410
+Mani K: And then
+
+130
+00:22:07.620 --> 00:22:15.010
+Mani K: I will also run this step, which is like using this function to actually like, explain the 1st model. Okay.
+
+131
+00:22:15.260 --> 00:22:39.255
+Mani K: I'll just stop these things. So so basically, my 1st model is just like fitting the Svm model with just the extracted features that I that I just like built myself from the images. And then I'm just trying to understand, like, how this model is going to be
+
+132
+00:22:40.378 --> 00:22:44.209
+Mani K: looking like, yeah. So it finished the fit.
+
+133
+00:22:44.440 --> 00:22:46.900
+Mani K: It's doing the evaluation right now.
+
+134
+00:22:53.643 --> 00:23:07.240
+Mani K: Is that clear? So far? What I've done? I haven't. I'm not doing any direct pixel use in the Ml, I'm just. I just extracted the features from the image, and then I'm just using it to fit. Okay.
+
+135
+00:23:08.860 --> 00:23:18.089
+Ravi Duvvuri: So money. One quick question the Cv 2 package you you referred. Is it like, what is that package cv. 2.
+
+136
+00:23:18.340 --> 00:23:20.849
+Mani K: Yeah. Cv 2. It's open.
+
+137
+00:23:21.260 --> 00:23:22.189
+Mani K: Let me just
+
+138
+00:23:22.500 --> 00:23:24.109
+Ravi Duvvuri: Is part of the Keras.
+
+139
+00:23:24.720 --> 00:23:27.149
+Mani K: It's not part of Keras. It's a different one.
+
+140
+00:23:27.150 --> 00:23:31.430
+Ravi Duvvuri: Okay, so what did you lose to get them.
+
+141
+00:23:33.050 --> 00:23:37.550
+Mani K: You need to do you, you need to 1st do a pip, Pip install of that. Okay.
+
+142
+00:23:37.550 --> 00:23:37.870
+Ravi Duvvuri: Okay.
+
+143
+00:23:37.870 --> 00:23:40.279
+Mani K: You can just search for Opencv, Python.
+
+144
+00:23:40.680 --> 00:23:45.279
+Ravi Duvvuri: Okay? And that gives you extraction of features from an image.
+
+145
+00:23:45.610 --> 00:23:49.570
+Mani K: Right? Exactly so. I think you can go through some of the
+
+146
+00:23:50.290 --> 00:23:56.240
+Mani K: documentation of this to figure out like what kind of image related functions that they have. Okay.
+
+147
+00:23:56.240 --> 00:23:58.380
+Ravi Duvvuri: Okay, excellent. Thank you.
+
+148
+00:23:58.710 --> 00:24:03.989
+Mani K: The same thing. The other one I mentioned is actually pillow. Okay pillow. I think.
+
+149
+00:24:05.010 --> 00:24:18.629
+Mani K: So. This also is like a python imaging library. They also have some things. Okay. So I think between this and opencv, I think you should be able to extract few image related features. Okay.
+
+150
+00:24:20.390 --> 00:24:26.390
+Mani K: like, okay, let me just go back to the notebook.
+
+151
+00:24:29.250 --> 00:24:35.049
+Mani K: Alright. So alright. So this is the evaluation of the 1st model. So so I'm getting
+
+152
+00:24:35.619 --> 00:24:44.000
+Mani K: this is the s f. 1 score for the all the 10 classifications you can see that like.
+
+153
+00:24:45.210 --> 00:24:51.708
+Mani K: I mean, the average is about point 4 which is not that great but it varies between
+
+154
+00:24:52.665 --> 00:25:04.055
+Mani K: like point 6 4 is the highest one, and the lowest is about point 2 2 again. I don't know what 6 is, but I think we can. We can see what these are.
+
+155
+00:25:04.830 --> 00:25:07.388
+Mani K: I think probably it.
+
+156
+00:25:10.830 --> 00:25:26.960
+Mani K: I think it it. It probably fast badly against shirts and and probably fast. Very good against trousers, I think. Looks like, okay. So based on this model. But this is your confusion. Matrix. Okay?
+
+157
+00:25:27.420 --> 00:25:27.940
+Mani K: So.
+
+158
+00:25:28.190 --> 00:25:36.509
+Manish Goenka: I need one question. So in the case of images, the features are so your pixels right? sorry. It's a 2 dimensional
+
+159
+00:25:36.770 --> 00:25:39.830
+Manish Goenka: structure, so the features will be
+
+160
+00:25:40.920 --> 00:25:46.510
+Manish Goenka: Pixels are arranged like in columns. So how do you like? What's a feature.
+
+161
+00:25:47.580 --> 00:26:04.670
+Mani K: So in this example, I didn't use Pixel as the feature. Okay, what I did was like, I passed the image to this open Cv function, and it gave me a feature that represents texture, a feature that represents color. Okay? So I'm not.
+
+162
+00:26:04.670 --> 00:26:18.770
+Mani K: I'm not sending the raw pixels. So that's what that's what I said. Like, I'm expecting some fe features from the image using these existing libraries, and then I'm trying to see if I can. If I can do a Ml model based on that. Okay.
+
+163
+00:26:19.180 --> 00:26:26.280
+Mani K: got it. So that's that's that's yeah. So the next one the second model that I'm gonna be going. That one will. Yeah.
+
+164
+00:26:26.280 --> 00:26:40.739
+Ravi Duvvuri: Only 1. 1 question on the score values is 34 f. 1 score. A recall of that low, is it okay to base on that? Or is it like too low to rely on that model for image, feature, feature, extraction from images.
+
+165
+00:26:41.483 --> 00:26:59.979
+Mani K: I think this is too low. Okay? So I think, yeah, to be honest, like, if you want again it to me, like all these metrics depend on what is the risk or the level of performance that you want to give? Right?
+
+166
+00:27:00.100 --> 00:27:09.429
+Mani K: So that is the thing if we need like a really solid performing model, then of course, this f 1 score of point 3 4 is bad. Okay.
+
+167
+00:27:09.430 --> 00:27:17.650
+Ravi Duvvuri: But we should be aiming at least like eighties point 8.0 point 8 or something for a phone score to be considered better or is it.
+
+168
+00:27:17.650 --> 00:27:18.460
+Mani K: So
+
+169
+00:27:18.580 --> 00:27:28.184
+Mani K: it's not about that. It's about like, what is the level of false positives or negatives. Your business
+
+170
+00:27:29.030 --> 00:27:34.539
+Mani K: needs. Actually, okay, that is what drives. What is that one score you need to achieve? Okay.
+
+171
+00:27:34.540 --> 00:27:35.120
+Ravi Duvvuri: Right.
+
+172
+00:27:35.120 --> 00:27:36.650
+Mani K: You get my point? Yeah.
+
+173
+00:27:36.650 --> 00:27:37.560
+Ravi Duvvuri: Yeah, cool.
+
+174
+00:27:37.863 --> 00:28:01.209
+Mani K: Like, if you are processing 1,000 images, can you live with 2 or 3 errors? Okay? Or or if if you get 2 or 3 errors. What is the I guess, like a financial risk of that, or something like that, like, you know, you need to figure out like, what is that? And then does that make sense right? Like, I think, that drives like, what kind of metrics you need to achieve.
+
+175
+00:28:01.800 --> 00:28:03.599
+Ravi Duvvuri: Got it? Got it? Yeah, thanks.
+
+176
+00:28:03.600 --> 00:28:04.940
+Mani K: Yeah, yeah.
+
+177
+00:28:05.210 --> 00:28:07.919
+Zhujun Wang: I do have a quick question. So I remember, basically.
+
+178
+00:28:07.920 --> 00:28:08.500
+Mani K: Go ahead!
+
+179
+00:28:08.500 --> 00:28:24.630
+Zhujun Wang: Previous instructors say, for Svm. Probably is not good for the multi class classification. Maybe good for the binary. That's the reason, like the score is kind of low or right. Now, you don't do any special.
+
+180
+00:28:24.900 --> 00:28:38.270
+Zhujun Wang: precisely. Just just feeding the route, feeding the image texture. Or what's the yeah. I just wanna wondering is that true like Svm. Is not suitable for this scenario, or it's not true.
+
+181
+00:28:39.610 --> 00:28:58.050
+Mani K: No, I mean, I wouldn't. no stm's do work very very well for multi class situations. Okay? So I I don't think that's the case. So in this particular case, I don't think I'm giving enough information regarding the image. So to me, like I think the features that I'm using are very, very simple. Okay?
+
+182
+00:28:58.410 --> 00:29:03.539
+Mani K: The reason. The only reason why I took this approach is I wanted to give a
+
+183
+00:29:03.882 --> 00:29:30.289
+Mani K: step by step approach in terms of like. Okay, this is how you. You can also work with only feature, like extracted features, and try to do some modeling. Or you can also directly deal with pixels, or you can do a combination of it. And or you can also add few more extra features that I'll I'll finally talk about to actually, okay. So that's the thing. So it's a, it's just a process like how you want to follow.
+
+184
+00:29:30.290 --> 00:29:39.570
+Mani K: And and like for me, like the simpler the model.
+
+185
+00:29:40.219 --> 00:30:02.179
+Mani K: And it can achieve the business outcomes. I will always take that rather than going to a complex one. So I start with something simple. And then, like, Okay, can I improve it? If I if I have to improve, I will improve it. Okay? So that should be the process with which, like, you should always look at rather than always going for the most complex. And
+
+186
+00:30:02.417 --> 00:30:12.849
+Mani K: I need to have all these features and then figure out what it is. Okay. So that is the thing. Until this time you have a data set that is well rounded. I think you have. You are at a good starting place.
+
+187
+00:30:13.030 --> 00:30:13.680
+Zhujun Wang: Okay.
+
+188
+00:30:14.150 --> 00:30:15.840
+Mani K: Yeah, alright.
+
+189
+00:30:15.980 --> 00:30:26.265
+Mani K: So a great question. So yeah, right cool. So here I'll just quickly go over it right? Like, so this one we, on an average, every
+
+190
+00:30:26.800 --> 00:30:47.439
+Mani K: class had about 1,000 images. Right? So you can see that for the 1st one of the 1,000 T-shirt images 319 got correctly classified. And then the remaining 700 got classified into different different things. It got classified as a trouser below dress. That's that's what it says. Okay.
+
+191
+00:30:48.112 --> 00:31:12.677
+Mani K: so that's the 1st model like, how the performance looks like. Now, the second model is pretty simple. I I'm not taking any of the features. I'm just like using the raw pixels. And then I'm just sending the pro raw pixels to the sem model. Okay? So that's what this is. So basically for this, like, you just have to
+
+192
+00:31:14.166 --> 00:31:34.981
+Mani K: reshape the the data. So that, like it can be passed over into the spm. Okay, so that's all. It is. So here, I'm not the color, the texture textures that I expected. I'm not using that. I'm just sending it the raw pixel. Okay? Again, I'm not doing any major
+
+193
+00:31:36.173 --> 00:31:51.030
+Mani K: even in the spm. I'm not doing any tuning and all anything. I'm just passing some basic you know, C of one gamma of the scale is the parameter that I'm passing for the gamma and things like that. This is the one that I mentioned last week.
+
+194
+00:31:51.210 --> 00:31:57.839
+Mani K: So so this is the second model I'm just going to print out like how this one is going to look like. Okay.
+
+195
+00:31:59.230 --> 00:32:04.290
+Mani K: so this is an Svm with just the the raw images, if you want to call it.
+
+196
+00:32:06.320 --> 00:32:09.149
+Mani K: And then oh, okay, here you go.
+
+197
+00:32:09.380 --> 00:32:29.913
+Mani K: So you can see like the kind of improvement that passing just the pixels. You can see that like? from an average accuracy of 0 point 4, we jump to point 8 5. Okay, and even their phone score for all the individual classes are significantly higher. There are some
+
+198
+00:32:32.670 --> 00:32:50.320
+Mani K: there. There are some classes that are a little bit low like the 3.rd The 3rd one is 0 point 7 7, and this one is 0 point 7 6. But maybe this one is the lowest. Okay, 0 point 5 9. But in general it's pretty decent improvement. Just by passing the pixels. Okay?
+
+199
+00:32:50.810 --> 00:33:03.779
+Mani K: And you can see that they jump in the confusion matrix pretty significantly. We had 300 for the T-shirt. Now you have 814 that are getting correctly classified. And then
+
+200
+00:33:05.323 --> 00:33:11.090
+Mani K: and then you can see, like what, how it's getting misclassified, too.
+
+201
+00:33:11.780 --> 00:33:13.603
+Mani K: To me, also, the
+
+202
+00:33:14.380 --> 00:33:43.520
+Mani K: confusion matrix reveals quite a lot. Okay, this is the one that I wanted to highlight to here like, for example, here for 814 T-shirts got correctly classified as T-shirts. But then, what is the major? What is the major second major class. It is got misclassified right like, if you look at all the numbers, I think, shirt comes shirt and dress stands out. Okay? I think just by using common knowledge, you can.
+
+203
+00:33:44.120 --> 00:34:00.569
+Mani K: You can try to understand why T-shirt and shirt might get misclassified. Okay? I mean, from a shape standpoint they might look the same. I mean, it's just like the difference in the collar or the buttons and things like that, right like So
+
+204
+00:34:01.178 --> 00:34:14.803
+Mani K: so you can. So what I'm trying to say here is confusion. Matrix can reveal quite a few things, and you can probably add features based on that. Okay? Like, for example, if you know that like
+
+205
+00:34:16.420 --> 00:34:45.229
+Mani K: the presence of a button, or like the cut of the neck like, for example. If it has a collar, there's more chance that it could be a shirt compared to the presence of a V-neck or a circular neck, things like that right? Like. So so now you can think about adding some extra features if which is not even like related to the image. But it is just like a tag associated with that particular product, right like. So then you can
+
+206
+00:34:45.770 --> 00:34:47.540
+Mani K: look to improve
+
+207
+00:34:47.840 --> 00:35:10.516
+Mani K: how to get this you know, false positives or false negatives correctly classified. So that's what it is. So so here, like, I think for me like T-shirt and shirt, and maybe there is another one that could I? I think the other one that stands out is this, pull over and rest, I think, there might, there can be some
+
+208
+00:35:11.666 --> 00:35:15.030
+Mani K: improvements that can be done. As features to improve that.
+
+209
+00:35:15.190 --> 00:35:15.860
+Mani K: Okay.
+
+210
+00:35:17.370 --> 00:35:35.059
+Mani K: get my point. So so that's that's that's why, like, I, I like working with confusion, matrix trying to understand, like, how how how well it classifies and like where we can add, like new features as well. Okay, that's me.
+
+211
+00:35:36.090 --> 00:35:48.133
+Mani K: Right? So the 3rd model, what I'm trying to do here is, I'm adding, I'm adding, the the features that I got from the 1st model, which is this
+
+212
+00:35:48.876 --> 00:36:06.190
+Mani K: the color and the texture stuff, and then I'm also adding the so I'm concatenating all the features. Okay? So I'm adding that. And along with the pixels. Okay? So basically, this is just a combination of both the features that I extracted from the image, and also the pixels itself. Okay?
+
+213
+00:36:06.996 --> 00:36:12.629
+Mani K: And then we can do a royal and do a evaluation of that. Okay, so that's what it is.
+
+214
+00:36:20.970 --> 00:36:22.410
+Mani K: Wait for it to finish.
+
+215
+00:36:30.090 --> 00:36:37.899
+Mani K: But do you guys think this is going to improve or reduce by adding.
+
+216
+00:36:37.900 --> 00:36:41.610
+Ravi Duvvuri: Brings down, I think, because you know, in my opinion.
+
+217
+00:36:43.630 --> 00:36:44.567
+Mani K: Oh, let's see!
+
+218
+00:36:49.190 --> 00:36:54.319
+Manish Goenka: In this model, is it using both the pixels as well as the features you extracted with those lines.
+
+219
+00:36:54.320 --> 00:36:57.359
+Mani K: That that I featured. Yeah, exactly. Okay.
+
+220
+00:36:57.360 --> 00:37:03.719
+Manish Goenka: It should improve, because I mean, I'm just guessing here that the thing you were mentioning about like a shirt which has a collar and a button.
+
+221
+00:37:03.870 --> 00:37:04.470
+Manish Goenka: maybe some.
+
+222
+00:37:04.470 --> 00:37:06.589
+Mani K: No, but I'm not adding those features. Okay.
+
+223
+00:37:06.590 --> 00:37:07.389
+Manish Goenka: Oh, you're not having to.
+
+224
+00:37:07.390 --> 00:37:16.819
+Mani K: I'm I'm I'm I'm just saying, like, those are some additional things that you can look to do. Okay, based on, based on looking at the confusion matrix and how
+
+225
+00:37:17.020 --> 00:37:19.359
+Mani K: how it's classifying things. Okay.
+
+226
+00:37:20.820 --> 00:37:42.340
+Mani K: now, the other thing is, take it with a grain of salt. This is like, I mean, this is just in the interest of time to speed up the training process. I'm I down, sample my training data set to 10,000 images. Okay? So if you run it with 60,000 images, I don't know how it's going to be like, okay, so that's something that you can also do. Okay, let's just look at the data here.
+
+227
+00:37:42.340 --> 00:37:51.929
+Mani K: Okay, so it did reduce. Okay. So we we went all the way to point 8 5, and then drop back to point 7 6 by, with the addition of fees.
+
+228
+00:37:52.608 --> 00:38:20.621
+Mani K: And this is how that one score looks like so so definitely the I guess like just the pixels itself is doing some good work maybe the features that I put in as the extracted features is not is not probably great. Okay, so that's what it is. And and this one just tells you the confusion matrix of that.
+
+229
+00:38:21.040 --> 00:38:22.960
+Manish Goenka: Just trying to get my head up.
+
+230
+00:38:22.960 --> 00:38:23.560
+Mani K: Yeah, yeah.
+
+231
+00:38:23.560 --> 00:38:32.469
+Manish Goenka: The pixel concept. So we're taking images which you've translated into pixels and now flattened. So let's say, if it was a 64 K file. Now, you have 64,000 pixels
+
+232
+00:38:32.630 --> 00:38:33.779
+Manish Goenka: as a flat
+
+233
+00:38:33.950 --> 00:38:44.369
+Manish Goenka: as a flat list of you know. RGB, values right? So when you said 1,000 is basically 10,000 records or one column. Is it one? No, actually 64,000 columns.
+
+234
+00:38:44.770 --> 00:38:45.750
+Manish Goenka: one
+
+235
+00:38:45.920 --> 00:38:51.590
+Manish Goenka: and one column represent 1 1 cell. In that case representing an RGB value. Right? That's what we're sending in.
+
+236
+00:38:51.590 --> 00:38:53.940
+Mani K: Right, right, exactly.
+
+237
+00:38:54.330 --> 00:38:57.370
+Manish Goenka: Okay? And then when you add the scale that adds another
+
+238
+00:38:58.780 --> 00:39:00.811
+Manish Goenka: whatever the number of columns, right?
+
+239
+00:39:01.150 --> 00:39:02.549
+Mani K: Yeah, so you do.
+
+240
+00:39:02.550 --> 00:39:02.980
+Manish Goenka: That list.
+
+241
+00:39:03.332 --> 00:39:11.779
+Mani K: Yeah, it'll add up, probably another. I think 6 or 7 columns, I think, okay, yeah. Yeah. So that's what it is. Okay.
+
+242
+00:39:12.849 --> 00:39:26.850
+Mani K: okay, so just this is my analysis of this. Okay? So it could be, you can, you can have another deeper analysis. But these are my notes that I put in here. Okay, so
+
+243
+00:39:27.750 --> 00:39:43.879
+Mani K: let me just start to summarize it. So the 1st model had a low accuracy. The second model had a pretty high accuracy, like even the f 1. Scores were good, and then the 3rd one reduced it. Okay, which is a combination of 1st and second. Now
+
+244
+00:39:46.040 --> 00:39:56.329
+Mani K: my, my thoughts on this, maybe the features that I selected probably, is not that great? Okay? So maybe that's something that can be looked at. Okay.
+
+245
+00:39:56.850 --> 00:40:16.149
+Mani K: Now, there is also a chance that there is like redundancy between the pixels. And then the features that I selected right? Like, I mean, you're sending the pixels. But also there is some overlapping things that are happening because of the texture and the and the color features that I'm doing. Okay.
+
+246
+00:40:16.572 --> 00:40:27.100
+Mani K: I did not do any parameter tuning. Okay? So the Svm was set to one gamma scale. So this is something that can be looked at to see if there is any kind of
+
+247
+00:40:28.066 --> 00:40:31.489
+Mani K: improvements that can be done or not. Okay.
+
+248
+00:40:31.968 --> 00:40:44.111
+Mani K: I think the raw pixels was good. I think I didn't do anything with the raw pixels other than just reshaping it which is just like a standard thing to do so which was good
+
+249
+00:40:44.975 --> 00:41:10.938
+Mani K: I think this one is the last it's the same as the second one. In terms of feature. It can also be a conflict, or or an interaction that's happening between the the pixel and the features that I did, and that could also be the factor that is causing the lower number. Okay, so that's these are things that probably can be looked at a little deeper. And
+
+250
+00:41:11.800 --> 00:41:21.995
+Mani K: and can and can be improved. Okay, now. Possible. Next steps. I didn't write all of them, but I think in general, I think again.
+
+251
+00:41:22.510 --> 00:41:42.028
+Mani K: when you're dealing with images, I think the more images are better. So I think training with the entire data set that was available for training might be something that can be done and then the other thing is to the one that I just mentioned about right, like the int
+
+252
+00:41:42.950 --> 00:42:01.586
+Mani K: going over the confusion matrix and trying to see if there are any other features that can help separate out these false positives and or convert these false positives and false negatives. Right? So I think that's also something that can be done like like, I mean, I just briefly mentioned about
+
+253
+00:42:02.450 --> 00:42:03.050
+Mani K: like
+
+254
+00:42:04.616 --> 00:42:13.970
+Mani K: like like a collars, right like for shirts and t-shirts you can think of something for dresses and pullovers. Okay.
+
+255
+00:42:14.361 --> 00:42:31.770
+Mani K: the best performing was the trouser. Maybe you don't need anything for the trousers, so it's pretty good. So you need to look at like how all of these are performing and based on that like, take a look at like what other features that can help improve?
+
+256
+00:42:32.178 --> 00:42:53.149
+Mani K: By just analyzing the confusion matrix. So that's the more advanced features or more new features that can help separate out the classes. Maybe some odd other advanced text features. So I just briefly looked at the possible easiest features to play with. But maybe there are other ones.
+
+257
+00:42:53.150 --> 00:43:02.002
+Mani K: Okay, feature. Importance is something that can also be done like. If you have too many things, then maybe you can do some feature importance.
+
+258
+00:43:02.650 --> 00:43:24.979
+Mani K: and then again, grid search and these are topics that you you guys have learned actually, right? Like grid search and randomized search and things like that. And then parameter optimization. So these are things that you can do just with this simple models itself to see, like, you know, whether this can be something that can be used as this. Okay?
+
+259
+00:43:25.190 --> 00:43:38.630
+Mani K: Of course, if if nothing works, I mean, you can also go the neural network approach like Cnn and stuff. Okay, which is the the most common thing that is being done for images and stuff. Right? So that's the thing.
+
+260
+00:43:39.129 --> 00:44:02.570
+Mani K: So is that clear? I mean, so just wanted to give a brief about like working with images. How what can be done and what it's so it's not just pixels. I think there's a lot of things that can be done by by extracting features, by adding features like as tags like. This is where data labeling and all comes in handy.
+
+261
+00:44:03.740 --> 00:44:20.839
+Mani K: if you're working with objects and stuff like you've seen like, you know. I'm sure you might have seen in multiple cases where, like you have bounding boxes, and then they have like, what is this object? What is that object? Things like that? So that's also there. So it's all about like
+
+262
+00:44:23.545 --> 00:44:37.004
+Mani K: pixels, along with some additional information that can be added as tags up and some feature extractions that can be done for identifying patterns and stuff right? Like. So those are the things that can help with.
+
+263
+00:44:37.986 --> 00:44:42.240
+Mani K: I guess, like better image classification or dealing with images. Okay.
+
+264
+00:44:43.950 --> 00:44:55.630
+Mani K: right? Guess I'll pause here, and maybe I can have the remaining of the session for just any discussions around this notebook or or any other topics.
+
+265
+00:44:57.374 --> 00:45:23.279
+Zhujun Wang: Mani, I have a quick question. So, for example, I look at a confusion. Metrics like, say, like a T-shirt, and the and the dress kind of like, make a confusion. So, for example, if I, after looking that this and how do I improve the probably recognizing T-shirt and the dress? Is it like a give more T-shirt and the dress image, or
+
+266
+00:45:23.420 --> 00:45:32.790
+Zhujun Wang: do sound like a special treatment or make? Can can make the model recognize better, like, what's the high, level thinking like approach.
+
+267
+00:45:33.040 --> 00:45:51.467
+Mani K: So the high level thing, the the easiest thing, is to add more images. But I think the the thing to keep in mind is like, where? What was your starting point? Right like, let's say, like, if I started with 1,000 images to begin with, which was the example that I took here. I think you can. You can go with
+
+268
+00:45:51.840 --> 00:46:11.239
+Mani K: adding more images. But if you already have like, let's say, like 50,000 1,000 or 1 million images. I don't think like adding more images is going to be of help. Okay, so in that instance, like you would be looking at the next step, which is like, Okay, what can I additionally provide? So that, like, I can.
+
+269
+00:46:11.604 --> 00:46:25.470
+Mani K: I can correctly classify address as address and not as a T-shirt or something like that. Okay, so and if if the volume of data is less, then you can go with or less, or
+
+270
+00:46:26.705 --> 00:46:44.479
+Mani K: pretty normal. Then you can add additional data points. If not, I think you should probably be looking for other things. Now, the other thing is you can also look at. So here, like we do, we're dealing with like
+
+271
+00:46:46.356 --> 00:47:00.300
+Mani K: I know, like we are dealing with like gray. We grayscale the images, and we are dealing with grayscale. So you can also look at to see like if all these images are like, you know, particular shades, and maybe like having
+
+272
+00:47:00.490 --> 00:47:06.739
+Mani K: different color shades and textures might help improve the classification. That's also something that you can do. Okay?
+
+273
+00:47:07.228 --> 00:47:28.049
+Mani K: So it's all about analyzing that the I guess, like the population of the the dresses that you have as well as like in the data set as well as like the count. And if nothing we if any of both don't work, then you add additional features. Okay.
+
+274
+00:47:29.530 --> 00:47:30.210
+Mani K: so that's the thing.
+
+275
+00:47:31.380 --> 00:47:41.939
+Ravi Duvvuri: Money. I I question so once we train the model, let's say, we got 95 accuracy, or f 1 score right like you are more option. 2.
+
+276
+00:47:42.080 --> 00:47:42.420
+Mani K: Yeah.
+
+277
+00:47:42.420 --> 00:47:55.040
+Ravi Duvvuri: Now to to use this one like after the you know, in a practical way, right like for the business use. Do you have any thoughts on, how can we? Once we get a trained model which is doing good job
+
+278
+00:47:55.576 --> 00:48:01.960
+Ravi Duvvuri: for this one? How do we use that? You know in the real world, you know. I think that's why you know any thoughts.
+
+279
+00:48:01.960 --> 00:48:09.740
+Mani K: I mean I mean, there are a lot of like frameworks for all these things like
+
+280
+00:48:10.530 --> 00:48:38.389
+Mani K: I mean, so this is where, like, I don't know if you've heard about Ml, engineering. So it's basically like, this is the team that handles all of this, which is like, you need to have some kind of Ml, infrastructure to manage these kind of like models. Okay? Because the it's not like you train the model and then, like you, it's done right, like there is a life cycle for the model. You are actually like training on a
+
+281
+00:48:38.470 --> 00:49:06.925
+Mani K: continuous basis as an as, and when like, you're getting more and more data so you need from you're looking from a business standpoint or a product standpoint. You should be looking at some kind of an Ml framework where, like this the lifecycle of these things can be managed there. And basically, the models are pulled into a certain type of files like, I think we might have heard about pickles, or
+
+282
+00:49:07.320 --> 00:49:23.600
+Mani K: there are like a few different variations of in which, like the the train model can be extracted out. And then it's all about you know the dock containerization and then, and then exposing that as like either a service or an endpoint, or something like that. Okay, so that's the thing.
+
+283
+00:49:23.710 --> 00:49:39.252
+Mani K: But to all of that, like, you need to do some. This is where the Ml engineering comes into play. So you need to have some kind of a framework to use these things. Okay. There is something called ml flow cube flows there and then.
+
+284
+00:49:40.048 --> 00:49:54.049
+Mani K: I don't know if you've heard about Meta flow, which is a popular framework that that Netflix published quite some time ago. And and it's being used to actually
+
+285
+00:49:54.742 --> 00:49:56.920
+Mani K: so it'll be something like that.
+
+286
+00:49:57.190 --> 00:49:59.409
+Ravi Duvvuri: Yeah, I know it makes sense, thanks. You know.
+
+287
+00:49:59.410 --> 00:50:00.729
+Mani K: Yeah, so that's me.
+
+288
+00:50:01.567 --> 00:50:02.702
+Mani K: We haven't.
+
+289
+00:50:03.830 --> 00:50:05.360
+Mani K: So this is the
+
+290
+00:50:05.740 --> 00:50:14.009
+Mani K: just giving an example. So this is like a meta flow, which is a framework for dealing with these kind of things. They can read about it.
+
+291
+00:50:14.580 --> 00:50:15.880
+Mani K: Yeah.
+
+292
+00:50:16.180 --> 00:50:19.929
+Mani K: And there are other things like this as well.
+
+293
+00:50:20.880 --> 00:50:26.989
+Mani K: and it works with pretty much you can. It's cloud agnostic. You can do it anywhere. Okay.
+
+294
+00:50:27.280 --> 00:50:30.590
+Mani K: so. But it came from Netflix. This one release.
+
+295
+00:50:32.250 --> 00:50:32.825
+Mani K: Right?
+
+296
+00:50:35.260 --> 00:50:39.930
+Mani K: Great any any other questions, comments on this
+
+297
+00:50:43.810 --> 00:50:44.590
+Mani K: right?
+
+298
+00:50:45.180 --> 00:51:13.230
+Mani K: Yeah, I mean, the one thing is, you're not expected to do any image stuff on this project. I don't think we are going through any of the image processing stuff in any of the sessions. So I just did it just for to give an intro to to understand some of these libraries. And then like what you can do. Okay? So that's what it is. So if anyone wants to do it as part of the project. That's fine, but it's not like a requirement or anything. Yeah,
+
+299
+00:51:14.040 --> 00:51:29.200
+Mani K: right? So we have about like another 8 min left. So again, we have about. We have about close to 10 people here. Are there any questions regarding your project like, how should we?
+
+300
+00:51:30.523 --> 00:51:44.269
+Mani K: maybe if there are any. If someone has any questions around your project, or we can just like talk about that or I can also ha answer any questions regarding Nlp. Or or any other topic.
+
+301
+00:51:57.860 --> 00:52:22.389
+Zhujun Wang: May I just ask? Just quick! Follow up questions like, for example, after the confusion matrix, that one like T-shirt and the dress, I have a confusion. And if I adding the like, say the color information into the vector, and then maybe the the result looks better. But
+
+302
+00:52:22.930 --> 00:52:36.210
+Zhujun Wang: does it guarantee like? Once we give a new image. And if this image has the color which is not within this data set, or have a minor data and
+
+303
+00:52:36.700 --> 00:52:43.689
+Zhujun Wang: output is, and probably the partition have a wrong result. So in such case.
+
+304
+00:52:43.930 --> 00:52:52.460
+Zhujun Wang: normally, how do you like? Say, if you see the the 2 things have a have a arrow. And
+
+305
+00:52:53.030 --> 00:52:57.269
+Zhujun Wang: what's the thinking process? Like what might be the
+
+306
+00:52:58.000 --> 00:53:03.159
+Zhujun Wang: 1st like feature, you can try to enhance the input data set.
+
+307
+00:53:04.265 --> 00:53:04.730
+Zhujun Wang: You?
+
+308
+00:53:05.680 --> 00:53:06.140
+Zhujun Wang: Oh.
+
+309
+00:53:06.140 --> 00:53:18.510
+Mani K: So so your question is like, okay. So let's if if I'm using color as one of the features, and in the real data. I have a completely new color that is not in the data set right?
+
+310
+00:53:18.820 --> 00:53:19.430
+Zhujun Wang: Something like that.
+
+311
+00:53:19.430 --> 00:53:20.963
+Mani K: And so
+
+312
+00:53:23.890 --> 00:53:40.288
+Mani K: so whether it's so so we need to 1st understand whether it was did it actually like classify correctly or not. So, if so, let's assume that it did not classify correctly. So how do you improve it? So?
+
+313
+00:53:40.670 --> 00:53:58.737
+Mani K: you can actually, I mean the easiest thing is to is to add this data back to the training data set right? So that, like, you learn from it, so that that's 1 thing and the other thing is I think this is where like, sometimes like
+
+314
+00:53:59.530 --> 00:54:06.789
+Mani K: because you don't want to add like each and every data set right? Like, yeah, one time, one at a time. So you can also do like things like
+
+315
+00:54:07.908 --> 00:54:20.101
+Mani K: like, what we talked about for like, you can do smart, which is like, some synthetic data generation around this color, right? Like. So you can also do some more extra
+
+316
+00:54:20.910 --> 00:54:40.229
+Mani K: data generation points to. Because you don't want to just add one data point and train again. Right? So so you can do some synthetic data generation around this or you. You can also try to do some kind of analysis around, like, how? What is the distribution of the colors that you have right like.
+
+317
+00:54:40.616 --> 00:54:52.973
+Mani K: I mean, there's only finite number of finite color range, right? Like. So do you have, like some kind of an imbalance in that right? Is your data set more
+
+318
+00:54:53.894 --> 00:55:04.075
+Mani K: more, looking normal or uniform in the color spectrum, or like, does it look uneven right like, I think something that you can.
+
+319
+00:55:04.710 --> 00:55:09.464
+Mani K: look at an identify and see if we can. make some
+
+320
+00:55:10.667 --> 00:55:28.849
+Mani K: make some corrections like, for example, obviously like for certain things, it may not work well, like, for example, for a bag. Right? I'm just giving you an example for a bag most most of the time. It's going to be dominated by like a black or brown color. Right? I'm just giving you an example
+
+321
+00:55:29.126 --> 00:55:42.119
+Mani K: so you may not have, like too many variations in the color. So in that instance, like you don't need to have a full spectrum of the color in in your data set. It's okay to have an imbalance. So, but those are like things that you'll
+
+322
+00:55:42.270 --> 00:56:02.970
+Mani K: you'll have to make your own assumptions. There might be an occasional yellow bag, or you know, some odd colored bag but that but you don't need to necessarily have a uniform color spectrum for the bags, but maybe it may not be the case for
+
+323
+00:56:03.395 --> 00:56:20.939
+Mani K: a t-shirt or something else. So that is the thing. So that's this is where the I think even the some little bit of background information regarding or an Sme type information could be helpful in terms of coming up with some assumptions. Okay.
+
+324
+00:56:21.190 --> 00:56:22.520
+Mani K: yeah. Gotcha.
+
+325
+00:56:22.520 --> 00:56:22.900
+Zhujun Wang: Gotcha.
+
+326
+00:56:22.900 --> 00:56:36.629
+Mani K: The most. The most important thing is documenting these assumptions. Okay, I think because if you don't document it, I can for sure guarantee that like once you start like iterating certain things.
+
+327
+00:56:36.770 --> 00:56:40.730
+Mani K: You you will forget, like, where you started from. Okay.
+
+328
+00:56:41.250 --> 00:56:41.590
+Zhujun Wang: Got it.
+
+329
+00:56:41.590 --> 00:57:04.240
+Mani K: So that is the thing. So whenever you make some changes, say I'm I'm making this decision because this is what I'm assuming. And this is what I saw. Right? I think having a Ml. Can get like quickly a very cyclic thing. Okay? Wherein, like you started somewhere, and then you will come back to the same point again. If you don't keep track of things. Okay.
+
+330
+00:57:04.640 --> 00:57:07.573
+Zhujun Wang: Gotcha gotcha, I see. Okay.
+
+331
+00:57:08.430 --> 00:57:08.700
+Mani K: Right.
+
+332
+00:57:08.700 --> 00:57:19.580
+Zhujun Wang: Yes, suddenly I'm thinking about. Do you think like, if I do, the image processing make the boundary the image boundary more obviously. And input the
+
+333
+00:57:19.860 --> 00:57:24.209
+Zhujun Wang: the data adding the boundary pixel into the
+
+334
+00:57:24.410 --> 00:57:29.479
+Zhujun Wang: like, vector like for each, for each image will make it better than the.
+
+335
+00:57:29.480 --> 00:57:55.530
+Mani K: Yeah, of course, of course, of course it will improve right? So it it would. It would improve like the boundaries and stuff like that right? like like even even like like, for example, you can have like a full length shirt versus a half length, shirts and things like that. You can have boundary boxes for that, and maybe like, have a tag for that.
+
+336
+00:57:55.896 --> 00:58:10.290
+Mani K: You know, like things like that. I'm just giving some example right like that. Those are some examples of boundary for a single item. It's very hard, like when there is a like, let's say, like there is a picture like a in general, like a picture.
+
+337
+00:58:11.196 --> 00:58:34.180
+Mani K: because the picture. That is a scene like, for example, an interior of a house or or an a picture of a city, or a street, or something like that. There's a lot more components inside that. So it's easy to like, identify, put boundary bounding boxes and then add some context to it.
+
+338
+00:58:34.720 --> 00:58:44.200
+Mani K: For a single item things it's a little harder, but you can. You can still try to do certain things. Okay.
+
+339
+00:58:44.719 --> 00:59:00.069
+Mani K: Like, for example, within the shoes you can have, like full ankle shoes, half ankle shoes. If you want to have that kind of classification, then you need to. You might need to. Might be better to just do some bounding boxes in some cases. Okay.
+
+340
+00:59:01.710 --> 00:59:03.350
+Zhujun Wang: Gotcha? Thanks. Yeah.
+
+341
+00:59:03.350 --> 00:59:03.980
+Mani K: Right.
+
+342
+00:59:05.570 --> 00:59:13.146
+Mani K: Alright I think we're about time. Hopefully, the session was useful, and and
+
+343
+00:59:13.820 --> 00:59:23.569
+Mani K: we'll connect back in a couple of weeks from now. And look forward to talking to you guys all one on one pretty soon on the
+
+344
+00:59:24.873 --> 00:59:27.139
+Mani K: regarding the caption. Okay.
+
+345
+00:59:28.618 --> 00:59:38.660
+Mani K: yeah, sure I will. The link to the notebook. I will just provide the link to the slide deck.
+
+346
+00:59:39.430 --> 00:59:42.510
+Mani K: It has the link to the notebook. Okay, so it's here.
+
+347
+00:59:43.750 --> 00:59:47.500
+Mani K: So I wanna just quickly take that link. That would be great.
+
+348
+00:59:48.220 --> 00:59:51.860
+Mani K: Alright, thanks everyone for joining, and then we'll we'll catch up soon, bye.
+
+349
+00:59:55.780 --> 00:59:56.739
+Zhujun Wang: Thank you. Bye.
+

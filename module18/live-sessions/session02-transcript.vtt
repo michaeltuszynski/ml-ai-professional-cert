@@ -1,0 +1,2198 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:11.380
+Francesca: Start the recording. Hello, everyone welcome, I imagine. As usual, some people will trickle in, so I'll give it a few more minutes and
+
+2
+00:00:11.580 --> 00:00:19.510
+Francesca: start with the icebreaker. I I'm excited
+
+3
+00:00:19.680 --> 00:00:26.030
+Francesca: to do the office hours today because we're kind of getting into the home stretch of the course and
+
+4
+00:00:27.330 --> 00:00:28.110
+Francesca: you'll
+
+5
+00:00:28.380 --> 00:00:47.830
+Francesca: you've probably already noticed that the modules were designed very purposely with a very specific structure, and that the tail end of the course that we are entering now is going to be structured slightly differently from the part that we just finished. And I'll talk a little bit
+
+6
+00:00:47.990 --> 00:00:49.580
+Francesca: about that later.
+
+7
+00:00:50.745 --> 00:00:58.680
+Francesca: But while I have everyone and waiting for people to trickle in. I thought that
+
+8
+00:00:58.920 --> 00:01:03.569
+Francesca: for the icebreaker today we could go a little bit relevant.
+
+9
+00:01:04.292 --> 00:01:11.329
+Francesca: To the topic of the week natural language processing by just asking if
+
+10
+00:01:11.660 --> 00:01:15.530
+Francesca: anyone wants to share either unmute or in the chat.
+
+11
+00:01:16.401 --> 00:01:23.729
+Francesca: You know, do you have a favorite book, or any interesting book recommendations, or I might even
+
+12
+00:01:24.150 --> 00:01:26.819
+Francesca: broaden this to any interesting
+
+13
+00:01:27.381 --> 00:01:34.030
+Francesca: anything interesting to read any interesting language that you have encountered. Shashi. I saw you unmuted first.st
+
+14
+00:01:34.820 --> 00:01:43.410
+shashi: Yeah, I just a couple of weeks back I got the book. Why, machines learn the new book so
+
+15
+00:01:43.570 --> 00:01:45.840
+shashi: that I'll link share the link in.
+
+16
+00:01:45.840 --> 00:01:46.230
+Francesca: Yes.
+
+17
+00:01:46.230 --> 00:01:48.670
+shashi: And it's in the chat. It's a very good book.
+
+18
+00:01:48.820 --> 00:01:58.400
+shashi: And I think one of the in one of the earlier sessions somebody recommended. I think Vikesh or somebody recommended that one, so I got that.
+
+19
+00:01:58.400 --> 00:01:59.030
+Francesca: Nice.
+
+20
+00:01:59.110 --> 00:02:02.700
+shashi: So that's a i haven't finished because of the
+
+21
+00:02:03.770 --> 00:02:12.905
+shashi: hours of assignments keeping me awake. So I'm not got around completing it. But it explains in
+
+22
+00:02:13.760 --> 00:02:18.755
+shashi: understandable English, why the machines learn. And they take simple
+
+23
+00:02:19.460 --> 00:02:28.779
+shashi: use cases. And in normal English, they explain. So I found it very, very interesting. I have to finish that one. So it's a good book. I'll share the link.
+
+24
+00:02:29.160 --> 00:02:40.220
+Francesca: Yeah, thank you. Thank you for sharing anyone else. Want to feel free to throw in the chat. You know an interesting article that you might have read, or
+
+25
+00:02:40.846 --> 00:02:46.940
+Francesca: you know, a favorite book or a favorite article from before. I put
+
+26
+00:02:47.120 --> 00:02:55.509
+Francesca: an article in the Slides, which obviously you will have the. You'll have access to the slides at the end of the
+
+27
+00:02:55.820 --> 00:02:58.649
+Francesca: office hours as well as the recording. Just about
+
+28
+00:02:59.527 --> 00:03:06.679
+Francesca: like a summary of. I like to think about machine learning as sort of how did we get
+
+29
+00:03:06.850 --> 00:03:12.060
+Francesca: to now? And especially with natural language processing because of
+
+30
+00:03:12.200 --> 00:03:34.150
+Francesca: the development of large language models in the last couple of years. I always think of how did we get to now? What were the researchers doing 2 years ago? 5 years ago, 10 years ago. That led us to now. And so I put an article here for your reference any any other favorite books or reading.
+
+31
+00:03:35.320 --> 00:03:44.780
+Francesca: otherwise I will get started. Continue to populate the chat. If you'd like to just share with your your fellow learners. You know something
+
+32
+00:03:44.960 --> 00:03:46.519
+Francesca: something interesting to read.
+
+33
+00:03:49.560 --> 00:03:55.650
+Francesca: So I did mention that we are now getting into the tail end of
+
+34
+00:03:55.800 --> 00:04:15.559
+Francesca: the course, in fact, everything. You'll remember that a few office hours ago I would have to put the schedule on 2 slides, and now we are so close to the end that everything fits on one slide. Here we are with natural language processing. This is a typo. But
+
+35
+00:04:16.050 --> 00:04:23.300
+Francesca: I wanted to extra extra flag this. It's probably obvious already that if you are
+
+36
+00:04:24.025 --> 00:04:28.479
+Francesca: doing a capstone project where you're dealing with text data of
+
+37
+00:04:28.600 --> 00:04:38.890
+Francesca: any sort. This is, you know, this is the week for you. This is the week where we finally understand how on Earth computers are able to get text data
+
+38
+00:04:39.040 --> 00:04:45.300
+Francesca: and actually apply some of the algorithms that we just learned about
+
+39
+00:04:45.450 --> 00:04:56.639
+Francesca: on that text data and actually produce some prediction or complete some task. And so I said earlier, for those of you who were here earlier, that
+
+40
+00:04:57.410 --> 00:05:07.370
+Francesca: the course was structured very purposely where you know at the start for that whole part one. We were learning very much to the overview of
+
+41
+00:05:07.600 --> 00:05:19.879
+Francesca: maybe what machine learning is conceptually. And we weren't really touching machine learning. Directly we were doing a lot of the, you know, data analysis techniques, why, data analysis might be important for machine learning.
+
+42
+00:05:20.010 --> 00:05:41.390
+Francesca: And then when we hit part 2, basically every week was a new algorithm. And so you know, we were learning of classifier K nearest neighbors one week. And then we were learning about decision trees one week and then logistic regression one week. So we were really building that toolbox of algorithm algorithm.
+
+43
+00:05:41.560 --> 00:05:50.799
+Francesca: And then, now that we're diving in to this end portion that we have termed advanced topics and capstone.
+
+44
+00:05:51.160 --> 00:05:54.662
+Francesca: It isn't so much that we are learning
+
+45
+00:05:55.670 --> 00:06:05.280
+Francesca: a new technique every week or a new algorithm every week in the way that part 2 was very clearly. This week is about
+
+46
+00:06:05.380 --> 00:06:23.090
+Francesca: decision trees. This week is about logistic regression. This week is about time series. Right now we're looking at broad themes. And so natural language processing, for example, is a theme or an advanced topic where you could use
+
+47
+00:06:23.480 --> 00:06:26.949
+Francesca: many of the algorithms that we learned in part 2,
+
+48
+00:06:27.250 --> 00:06:32.290
+Francesca: but under the theme or topic of language as data.
+
+49
+00:06:32.840 --> 00:06:42.639
+Francesca: and the same will be for this week where we look into neural networks for computer vision. And so there may be
+
+50
+00:06:43.050 --> 00:06:52.560
+Francesca: a variety of techniques that we've learned over the past few weeks. But then now applied to a very specific advanced topic of computer vision.
+
+51
+00:06:52.850 --> 00:07:00.579
+Francesca: And so that is sort of the progression that we have gone through and what the rest of the
+
+52
+00:07:00.870 --> 00:07:30.119
+Francesca: course will look like. So I challenge you to think, not so much for this part 3 in terms of techniques. Of course you will be learning new techniques. For example, we learned a lot about Nltk and how to use it for natural language processing. But we didn't necessarily learn new classification algorithms, right? What we learned was how to make sure that language fit into classification algorithms that we have already covered.
+
+53
+00:07:31.070 --> 00:07:37.309
+Francesca: Does anyone have any questions about sort of the last portion of advanced topics in Capstone.
+
+54
+00:07:37.410 --> 00:07:38.499
+Francesca: Before I move on.
+
+55
+00:07:40.750 --> 00:07:46.396
+Ravi Duvvuri: Hi, I have Jen Jenny question. So maybe we can touch upon
+
+56
+00:07:47.090 --> 00:07:55.280
+Ravi Duvvuri: So I'm trying to interpret what I learned for my capstone project, which is a classification of images. So
+
+57
+00:07:56.190 --> 00:08:03.549
+Ravi Duvvuri: so I'm a little bit, you know. Yeah, trying to understand. And how do I approach it? I got techniques. But you know.
+
+58
+00:08:04.070 --> 00:08:11.689
+Ravi Duvvuri: you know, I think that's where my next challenge is to assemble everything. And how do I apply to my capstones?
+
+59
+00:08:11.690 --> 00:08:16.424
+Francesca: Yeah, no, that. That is a great question. And
+
+60
+00:08:17.400 --> 00:08:26.469
+Francesca: that is a relevant question for this group, because you're not the only one in this group doing a computer vision classification project. So I'm glad you I'm glad you asked that.
+
+61
+00:08:27.300 --> 00:08:41.870
+Francesca: When we do natural language processing. We are trying to think of ways that a computer can understand language. Right? Maybe we give a computer
+
+62
+00:08:42.159 --> 00:08:49.139
+Francesca: a bunch of text in a foreign language, and we want to translate it. What we're doing is
+
+63
+00:08:49.260 --> 00:08:56.179
+Francesca: we have maybe Spanish text. We have to transform that into some representation
+
+64
+00:08:56.420 --> 00:09:02.520
+Francesca: so that the computer understands it. Because, remember, a computer only stands understands numbers.
+
+65
+00:09:02.980 --> 00:09:15.699
+Francesca: And so for computer vision, that is an analogous thing because you were working with images. Is that correct? Your your data? Involves having images. Yeah.
+
+66
+00:09:15.700 --> 00:09:22.730
+Ravi Duvvuri: Images and labels also, for so I'm both. I'm trying to do like label or images both. I think I prefer so.
+
+67
+00:09:22.730 --> 00:09:26.950
+Francesca: Yeah. And so it's exactly analogous
+
+68
+00:09:27.060 --> 00:09:34.299
+Francesca: in that. Let's see if I can actually do a text box in that. In Nlp.
+
+69
+00:09:34.640 --> 00:09:40.729
+Francesca: we have language data, and we are trying to turn it into numbers right?
+
+70
+00:09:41.540 --> 00:09:45.779
+Francesca: So similar to that for computer vision.
+
+71
+00:09:46.090 --> 00:09:48.429
+Francesca: And I now realize this is not
+
+72
+00:09:49.000 --> 00:09:56.740
+Francesca: the color I would have. I should have picked apologies about that. But with computer vision oops.
+
+73
+00:09:59.060 --> 00:10:05.670
+Francesca: It's going to be visual data that we turn into numbers.
+
+74
+00:10:05.860 --> 00:10:11.530
+Francesca: So the key technique that we're going to teach everyone, I believe it'll be in week 22
+
+75
+00:10:11.800 --> 00:10:15.410
+Francesca: is how to do this transformation.
+
+76
+00:10:15.900 --> 00:10:25.809
+Francesca: And then, once you've done this transformation. These numbers can actually just be put into your
+
+77
+00:10:25.990 --> 00:10:31.240
+Francesca: classification algorithm that you've already learned. Right? That's the same with
+
+78
+00:10:31.400 --> 00:10:38.819
+Francesca: Nlp, where, as soon as we got language into numbers, the example showed us we were able to do
+
+79
+00:10:39.070 --> 00:10:41.350
+Francesca: logistic regression.
+
+80
+00:10:42.070 --> 00:10:56.510
+Francesca: So this, I will say, the computer vision will be covered later. And there is a strong chance that in addition to maybe using logistic regression, you'll create a neural network which is really exciting.
+
+81
+00:10:56.640 --> 00:11:01.169
+Francesca: But the key technique to learn is analogous
+
+82
+00:11:01.340 --> 00:11:14.029
+Francesca: to Nlp, where we want to just find a way to transform images into numbers. And then those numbers get put into your computer algorithm. And then you get an output.
+
+83
+00:11:15.030 --> 00:11:16.129
+Francesca: Does that make sense.
+
+84
+00:11:16.130 --> 00:11:21.918
+Ravi Duvvuri: Yeah, it makes sense. I was also I also was told that Cnn's may be relevant as well
+
+85
+00:11:22.620 --> 00:11:24.350
+Ravi Duvvuri: to be covered in 22 weeks.
+
+86
+00:11:24.350 --> 00:11:40.119
+Francesca: I believe Cnn's will be covered in 22. Yes. And does anyone know what the C. Stands for in a Cnn. Or what Cnn. In general stands for you might be able to guess the Nn. Based on this slide.
+
+87
+00:11:42.110 --> 00:11:46.290
+Ravi Duvvuri: Maybe conceptual or convolution. Yeah, I think.
+
+88
+00:11:46.290 --> 00:11:55.500
+Francesca: Yes. So NN and n neural network.
+
+89
+00:11:57.571 --> 00:12:02.949
+Francesca: As you can see down here, and then the C is a con
+
+90
+00:12:03.250 --> 00:12:06.130
+Francesca: evolution. Does anyone know why it's called a convolution?
+
+91
+00:12:09.820 --> 00:12:14.650
+Francesca: So the convolution actually refers to the technique
+
+92
+00:12:15.250 --> 00:12:20.089
+Francesca: that you are going to use to make this visual data into numbers.
+
+93
+00:12:20.810 --> 00:12:34.510
+Francesca: So when you see something like Cnn, the convolution is actually the technique that I believe you will learn. And this is very, very applicable to creating numbers out of visual data.
+
+94
+00:12:35.420 --> 00:12:51.630
+Francesca: So I believe, like I said, many people in this group are very interested in computer vision. So what is important is to make sure that you know
+
+95
+00:12:52.350 --> 00:13:00.219
+Francesca: what you're trying to do is 1st translate visual data into numbers, and then those numbers go into your
+
+96
+00:13:00.650 --> 00:13:02.400
+Francesca: classification algorithm.
+
+97
+00:13:03.670 --> 00:13:04.760
+Ravi Duvvuri: Yep, thank you.
+
+98
+00:13:05.740 --> 00:13:10.745
+Francesca: Any other questions. That was a great. That was a great question, and I think is very
+
+99
+00:13:11.140 --> 00:13:20.069
+Francesca: you know, is very illustrative of what it means to actually be an advanced topic, because when we were learning something like logistic regression.
+
+100
+00:13:20.330 --> 00:13:25.950
+Francesca: you know, most of the data we had was very nicely already in a table format.
+
+101
+00:13:26.090 --> 00:13:37.350
+Francesca: And those tables, those columns had numbers and those numbers were easy to put into your logistic regression algorithm, right? But now that we're getting into advanced topics. It's
+
+102
+00:13:37.860 --> 00:13:45.419
+Francesca: clear that in the real world not everything is tables and numbers. Sometimes things are paragraphs of text. Sometimes
+
+103
+00:13:45.880 --> 00:13:51.289
+Francesca: things are images or videos. And so these topics will not only.
+
+104
+00:13:51.530 --> 00:14:01.839
+Francesca: you know, show you how to complete your task and make a prediction, but they'll also show you how to get the data from the real world into a format so that the computer can accept it.
+
+105
+00:14:04.890 --> 00:14:07.860
+shashi: And Jessica. I had another question
+
+106
+00:14:08.350 --> 00:14:11.968
+shashi: when we do the classification. So far, what we have learned is
+
+107
+00:14:12.510 --> 00:14:20.510
+shashi: a binary classification, or we may come across cats or dogs, and any other where it is either this or that.
+
+108
+00:14:20.750 --> 00:14:22.308
+shashi: How do we go about?
+
+109
+00:14:23.600 --> 00:14:38.169
+shashi: if it is different, I mean 3 or more this one. Will you be covering that as well in our this one, and like, if I'm sure if I have to do a cats and dogs, and if I show a photo of rose.
+
+110
+00:14:38.620 --> 00:14:46.170
+shashi: can it say it is neither? Or will it say with some this 1% chance that it is a cat or something like that. Is there a
+
+111
+00:14:46.350 --> 00:14:48.540
+shashi: way of working around that?
+
+112
+00:14:49.080 --> 00:14:50.520
+shashi: How do we go about.
+
+113
+00:14:50.520 --> 00:15:06.350
+Francesca: Great question. Okay? So to repeat the question for everyone, what if my classification task has more than just 2 things I want to predict? What if I want to look at cats, dogs, and horses? Right?
+
+114
+00:15:06.870 --> 00:15:11.739
+Francesca: Okay, can we list our classification algorithms?
+
+115
+00:15:12.521 --> 00:15:16.280
+Francesca: Does anyone want to start? What what algorithms. Have we learned?
+
+116
+00:15:17.450 --> 00:15:20.580
+Francesca: Knn, okay?
+
+117
+00:15:22.636 --> 00:15:26.560
+Francesca: Any any other ones? I already mentioned? Logistic regression.
+
+118
+00:15:28.180 --> 00:15:34.400
+Francesca: Okay, this should be top of mind, because you had to test all of these in your
+
+119
+00:15:35.390 --> 00:15:42.229
+Francesca: in your practical application. This was exactly the practical application. Right? Yep. Svc, was one of them, and
+
+120
+00:15:42.720 --> 00:15:47.430
+Francesca: yep decision tree perfect.
+
+121
+00:15:48.741 --> 00:15:50.669
+Francesca: So now that we have it.
+
+122
+00:15:51.950 --> 00:15:57.460
+Francesca: is it true that for all of these you can only have 2 options
+
+123
+00:15:58.020 --> 00:16:06.229
+Francesca: like, is it true that if I use Knn, or if I use logistic regression or Svc. Or decision tree, can I only
+
+124
+00:16:06.810 --> 00:16:08.920
+Francesca: have cat or dog?
+
+125
+00:16:09.100 --> 00:16:13.289
+Francesca: Am I not allowed to have cat, dog, or horse.
+
+126
+00:16:15.020 --> 00:16:20.659
+Ravi Duvvuri: Think you can have it with Knn, I think with Knn. I believe you can have it more.
+
+127
+00:16:20.660 --> 00:16:26.399
+Francesca: So let's so let's put. So you think, Knn, this one.
+
+128
+00:16:27.590 --> 00:16:29.159
+Kiran: Station Tree, also right.
+
+129
+00:16:29.160 --> 00:16:34.019
+Francesca: Decision tree. Okay, what else are we thinking?
+
+130
+00:16:36.190 --> 00:16:38.134
+shashi: Even, yes, we support
+
+131
+00:16:39.040 --> 00:16:46.630
+shashi: support vector machines. Also, we can have multiple separation lines coming across and classifying it as a multiple
+
+132
+00:16:48.220 --> 00:17:03.360
+Francesca: Yeah, exactly. Yeah. I don't know if that answers your question, Shashi. But if you're thinking about binary classification, typically, the constraint would be for logistic regression. But we definitely know, for something like Svc.
+
+133
+00:17:03.610 --> 00:17:10.380
+Francesca: which divides, you know, which tries to optimize the plane of different classes.
+
+134
+00:17:10.640 --> 00:17:14.689
+Francesca: You can end up with like this kind of division, right?
+
+135
+00:17:14.690 --> 00:17:15.339
+shashi: Got it. Got it.
+
+136
+00:17:15.349 --> 00:17:18.099
+Francesca: Where you have this, and then this, and then
+
+137
+00:17:18.239 --> 00:17:22.189
+Francesca: maybe these, and that's more. That's that could be cat.
+
+138
+00:17:23.469 --> 00:17:24.689
+Francesca: This could be dogs.
+
+139
+00:17:24.690 --> 00:17:25.809
+shashi: I'm just kidding.
+
+140
+00:17:25.819 --> 00:17:26.849
+Francesca: Horse right?
+
+141
+00:17:27.679 --> 00:17:36.929
+Francesca: So it is about making sure you pick the right one. If you're looking at something like cat, dog, horse. Maybe you want to use Svc instead of logistic regression.
+
+142
+00:17:37.829 --> 00:17:38.439
+Francesca: That's it.
+
+143
+00:17:38.440 --> 00:17:50.189
+shashi: Svc, I mean, I mean, one of the caveats is that it cannot work with larger data sets. That was one of the thing, because it becomes a computationally very, very expensive operation.
+
+144
+00:17:50.440 --> 00:17:50.760
+Francesca: Yes.
+
+145
+00:17:50.760 --> 00:18:01.378
+shashi: So I was kind of looking at. And how do we? I mean output this one? How do we encode this one to give one of the multiple options
+
+146
+00:18:02.486 --> 00:18:10.020
+shashi: predominantly. We have just compared the 2 items thing and say yes or no kind of scenario. So
+
+147
+00:18:11.362 --> 00:18:20.849
+shashi: we do it in a probability probabilistic output, and see what is the probability of a B or C, or something like that? How do we go about that.
+
+148
+00:18:21.462 --> 00:18:24.209
+Francesca: Okay. So if I had a table.
+
+149
+00:18:24.950 --> 00:18:30.350
+Francesca: and let's say my feature is pointy ears.
+
+150
+00:18:30.710 --> 00:18:42.310
+Francesca: And then this is my label, and I have. Yes, and I have cat, no dog, no dog. Yes.
+
+151
+00:18:43.550 --> 00:18:47.049
+Francesca: how would I encode the label of each of these?
+
+152
+00:18:48.630 --> 00:18:53.300
+Francesca: So how would I make it so that my algorithm understands the label is cat.
+
+153
+00:18:56.280 --> 00:19:02.690
+Francesca: I could say, 0, right? And I could say one.
+
+154
+00:19:02.910 --> 00:19:04.680
+Francesca: So then what would this one be?
+
+155
+00:19:13.470 --> 00:19:16.989
+Francesca: Does this make sense. How I got 0 and one here.
+
+156
+00:19:22.673 --> 00:19:25.589
+Francesca: Essentially, what I'm doing is
+
+157
+00:19:25.820 --> 00:19:36.030
+Francesca: I'm just putting it so that 0 means cat and one means dog, because computers like
+
+158
+00:19:36.370 --> 00:19:39.430
+Francesca: numbers, right? So I can't
+
+159
+00:19:39.670 --> 00:19:48.269
+Francesca: really give a computer cat. But if I give it 0, it's going to know that I mean cat. And if I give it one, it's going to know. I mean dog.
+
+160
+00:19:49.570 --> 00:19:51.709
+Francesca: Is that, does that make sense to people?
+
+161
+00:19:53.430 --> 00:19:54.010
+Francesca: Yep.
+
+162
+00:19:54.385 --> 00:19:54.760
+shashi: Yeah.
+
+163
+00:19:54.760 --> 00:19:56.909
+Francesca: Yeah, okay, so what would this one be?
+
+164
+00:19:59.250 --> 00:19:59.570
+Ravi Duvvuri: One.
+
+165
+00:19:59.570 --> 00:20:00.110
+shashi: And.
+
+166
+00:20:00.410 --> 00:20:03.259
+Francesca: One, and the next one.
+
+167
+00:20:03.260 --> 00:20:04.050
+Ravi Duvvuri: 0.
+
+168
+00:20:04.290 --> 00:20:07.869
+Francesca: 0. Okay, now, what if I have another one?
+
+169
+00:20:08.070 --> 00:20:18.060
+Francesca: And I want horse, and I have yes, and then, horse, how can I add horse to my algorithm
+
+170
+00:20:18.250 --> 00:20:23.470
+Francesca: so that my computer understands. I don't mean cat or dog. What can I name horse.
+
+171
+00:20:24.780 --> 00:20:25.560
+shashi: 1 1,
+
+172
+00:20:28.820 --> 00:20:30.180
+shashi: both the.
+
+173
+00:20:30.630 --> 00:20:32.440
+Francesca: 2. I see this in the chat.
+
+174
+00:20:32.920 --> 00:20:34.950
+Francesca: I could name it, too, right.
+
+175
+00:20:35.140 --> 00:20:39.600
+Francesca: And so if I look at my labels up here, then to his horse.
+
+176
+00:20:39.600 --> 00:20:42.109
+shashi: Okay, that way. Okay, that way, yeah, right? Yeah.
+
+177
+00:20:42.110 --> 00:20:44.780
+Francesca: And if I wanted to do something like
+
+178
+00:20:46.130 --> 00:20:48.479
+Francesca: snake, what would I put this as.
+
+179
+00:20:48.870 --> 00:20:49.430
+shashi: 3.
+
+180
+00:20:49.620 --> 00:20:54.810
+Francesca: 3 exactly, and so then I could put this at 3 is Snake.
+
+181
+00:20:55.280 --> 00:20:59.099
+Francesca: And so when I give this to my Svc.
+
+182
+00:20:59.430 --> 00:21:08.840
+Francesca: What's it going to try to predict it's going to be, you know, new animal, is it? 0
+
+183
+00:21:09.050 --> 00:21:11.749
+Francesca: 1, 2, or 3, right?
+
+184
+00:21:12.490 --> 00:21:16.180
+Francesca: And then it's going to pick? Maybe it's 1,
+
+185
+00:21:16.450 --> 00:21:19.570
+Francesca: and if it picks one, what does it mean? My new animal was.
+
+186
+00:21:21.060 --> 00:21:21.770
+shashi: Doug.
+
+187
+00:21:21.770 --> 00:21:22.900
+Francesca: Dog. Exactly.
+
+188
+00:21:23.150 --> 00:21:41.590
+Francesca: So when you're doing the labels. If you have, you know, more than one label, you can do it like 0 1, 2, 3, etc. Another example that I've done in a past project is, what if I have something like negative.
+
+189
+00:21:42.090 --> 00:21:42.620
+shashi: No.
+
+190
+00:21:43.020 --> 00:21:46.480
+Francesca: Positive and neutral.
+
+191
+00:21:46.740 --> 00:21:48.349
+Francesca: How might I label? This?
+
+192
+00:21:49.720 --> 00:21:53.740
+Francesca: Let's say, positive usually is one right.
+
+193
+00:21:54.650 --> 00:21:59.069
+Francesca: and if I put neutral as 0, what might I want to call negative.
+
+194
+00:21:59.960 --> 00:22:00.620
+Kiran: Minus one.
+
+195
+00:22:00.950 --> 00:22:12.380
+Francesca: Yeah, I might want to call it minus one. And that is a label that my computer will understand because computer likes numbers. And it's a unique number compared to one and 0 right?
+
+196
+00:22:13.920 --> 00:22:19.309
+Francesca: So if you're working with, maybe you're working with Shashi, I know you're working with crops
+
+197
+00:22:19.450 --> 00:22:28.249
+Francesca: or disease types for crops like, maybe you have multiple diseases. You might have 0 1, 2 and 3 as your labels right?
+
+198
+00:22:28.250 --> 00:22:32.450
+shashi: Yes, yes, great thanks. Yeah. That was good.
+
+199
+00:22:32.970 --> 00:22:35.140
+Francesca: Any other questions.
+
+200
+00:22:38.380 --> 00:22:44.220
+Francesca: and yes, as always, feel free to keep asking. I'll move along then.
+
+201
+00:22:45.850 --> 00:23:01.580
+Francesca: So some everyday examples of computers using language, I'll quickly just go over these. I'm sure you are familiar, and maybe actually use these as often as I do. So translation is
+
+202
+00:23:02.970 --> 00:23:05.130
+Francesca: one of the, you know, most
+
+203
+00:23:05.480 --> 00:23:14.899
+Francesca: common, most easily understood in terms of, you know, an example of something. And
+
+204
+00:23:16.240 --> 00:23:40.099
+Francesca: it's important to note that translation can mean text in the way that Google translate when you type in the text box can translate Spanish into English, but recall that translation can also mean spoken language right? Have you ever used the translate app on your phone and spoken in English to it, and maybe it outputs Spanish
+
+205
+00:23:40.220 --> 00:23:50.670
+Francesca: right? And that's from using your voice. That is also natural language processing. So natural language processing is not just about written language, but also spoken language.
+
+206
+00:23:51.830 --> 00:24:03.790
+Francesca: spell, check, and predictive typing. So spell, check and predictive typing could be in text messages. It could be in email. It can even be something like
+
+207
+00:24:03.940 --> 00:24:18.579
+Francesca: your Google search right when you type something in your search. And you spell a few words wrong. It still seems to understand what it is that you wanted to search for initially, despite your spelling errors. So that is an example of natural language processing
+
+208
+00:24:18.880 --> 00:24:20.500
+Francesca: spam filters.
+
+209
+00:24:20.650 --> 00:24:30.730
+Francesca: So this is one of, you know, the classic classification tasks we could have, you know, emails. And you might want to say safe or spam
+
+210
+00:24:31.640 --> 00:24:38.969
+Francesca: speech recognition. So if you've ever used the dictate function on your phone and dictated
+
+211
+00:24:39.560 --> 00:24:50.639
+Francesca: a sentence, or maybe a note to your phone and your phone ends up typing it into your notes. App, that's you know, speech recognition is a big part of that.
+
+212
+00:24:50.980 --> 00:25:10.910
+Francesca: And I would say, one of the newer, very much everyday things. And why natural language processing is very, very popular right now, and widely discussed is the use of Chatbots and large language models like Chatgpt. That's a lot of
+
+213
+00:25:11.500 --> 00:25:19.710
+Francesca: natural language processing used in that. That's years and years of natural language processing research.
+
+214
+00:25:19.820 --> 00:25:31.180
+Francesca: and is maybe something different from what we've covered in the course so far, because when we've looked at classification tasks like spam filters.
+
+215
+00:25:31.400 --> 00:25:35.170
+Francesca: we are trying to predict if something is spam
+
+216
+00:25:35.520 --> 00:25:41.549
+Francesca: or not spam when you're looking at something like Chatbots, you're also generating
+
+217
+00:25:41.600 --> 00:26:00.019
+Francesca: new language right? When we're looking at a spam filter. We're not generating new language. We're just interpreting the language in an email. But when we look at something at Chatbots, the Chatbot gives you a response. And so there are Nlp techniques that allow the Chatbot to create a response
+
+218
+00:26:00.020 --> 00:26:12.030
+Francesca: to your question. It has to interpret your question and then also generate language. So language generation is a really exciting part of natural language processing that although we aren't covering
+
+219
+00:26:12.130 --> 00:26:12.950
+Francesca: that.
+
+220
+00:26:13.740 --> 00:26:23.580
+Francesca: You know, area in in this week, it is definitely something to be aware of that language. Generation also falls under this Nlp umbrella.
+
+221
+00:26:26.013 --> 00:26:42.749
+Francesca: I have a video. And I'm going to quickly show this video just because I want you to also think about now that we've learned a lot more about machine learning. And we still are going to explore other very exciting advanced topics like computer vision.
+
+222
+00:26:43.814 --> 00:26:48.089
+Francesca: These topics and these techniques don't live in silos
+
+223
+00:26:48.270 --> 00:26:56.710
+Francesca: just because you're doing natural language processing doesn't mean you're not going to also be doing something in computer vision.
+
+224
+00:26:57.110 --> 00:27:10.200
+Francesca: Or just because you're doing natural language processing doesn't mean you're not going to be doing something in image generation, or what have you? So I want to show this video
+
+225
+00:27:11.450 --> 00:27:19.909
+Francesca: and you'll get a sense of sort of what the technology is doing.
+
+226
+00:27:22.110 --> 00:27:24.060
+Francesca: I'll pause for a second here.
+
+227
+00:27:43.860 --> 00:27:47.360
+Francesca: all right. So I put here, what
+
+228
+00:27:47.720 --> 00:28:08.489
+Francesca: technologies do you notice in this video? I don't need the details of how each of the technologies are working, or, you know, sort of the summary of what the technology they're using is. But what I'm trying to get is, what do you think is working together like, what are the different components that are working together in
+
+229
+00:28:09.010 --> 00:28:12.710
+Francesca: in something like sign language, interpretation.
+
+230
+00:28:18.210 --> 00:28:22.079
+shashi: The body motion the tracking of the body motion.
+
+231
+00:28:22.080 --> 00:28:31.980
+Francesca: Yeah. Tracking of the body motion. We definitely saw that portion over here, the tracking of the body motion. Okay? Anything else.
+
+232
+00:28:33.270 --> 00:28:38.039
+shashi: And how the finger, what fingers are representing, and
+
+233
+00:28:42.151 --> 00:28:44.609
+Francesca: I think you mean this part, right?
+
+234
+00:28:44.800 --> 00:28:46.679
+Francesca: Yeah, I don't know, if you noticed, you can.
+
+235
+00:28:46.680 --> 00:28:48.289
+shashi: Yeah, this, yeah, correct.
+
+236
+00:28:48.750 --> 00:28:50.300
+Francesca: Okay. Anyone else.
+
+237
+00:28:51.110 --> 00:28:55.769
+Deep: I think, translating body motion to some kind of vectors.
+
+238
+00:28:57.530 --> 00:28:58.470
+Francesca: Okay?
+
+239
+00:28:58.740 --> 00:29:08.890
+Francesca: So we have body oops, body emotion capture. We also have
+
+240
+00:29:09.330 --> 00:29:18.019
+Francesca: sort of the hand signs and then turning hand signs into
+
+241
+00:29:18.590 --> 00:29:26.089
+Francesca: vectors. Okay, what about the Nlp portion of this? So we've talked a lot about the visual computer vision
+
+242
+00:29:26.280 --> 00:29:38.680
+Francesca: things, you know, body motion capture, maybe visually interpreting. You know, hand images into symbols, turning those into vectors. What about the Nlp, where's the Nlp. In all of this.
+
+243
+00:29:42.380 --> 00:29:46.560
+Deep: I think it will be like converting them back to the text.
+
+244
+00:29:46.740 --> 00:29:49.129
+Francesca: Yeah, exactly. So.
+
+245
+00:29:50.440 --> 00:29:52.940
+Francesca: We already said earlier that
+
+246
+00:29:53.810 --> 00:30:07.740
+Francesca: you know, trans translation is one of the the key classic classic applications. This one is like a multi-step translation, but where? Where? You have to maybe get the visual.
+
+247
+00:30:08.240 --> 00:30:11.069
+Francesca: and then the visual turns into vectors.
+
+248
+00:30:11.320 --> 00:30:21.780
+Francesca: and then those vectors go into a model, and then the model has to maybe predict the words.
+
+249
+00:30:22.010 --> 00:30:25.559
+Francesca: and then that has to go through another model.
+
+250
+00:30:26.142 --> 00:30:34.240
+Francesca: And then that model is going to translate right? So maybe this is a multi-step thing where you have a little combination of
+
+251
+00:30:34.520 --> 00:30:37.960
+Francesca: computer vision. And then maybe you have a little
+
+252
+00:30:38.730 --> 00:30:56.750
+Francesca: bit of Nlp as well. Right? So I just want to show you that these Nlp projects can become really complex. And it's important to be familiar with a bunch of different domains and different techniques, because all of that is going into just one task of
+
+253
+00:30:57.170 --> 00:30:59.180
+Francesca: getting some visual input
+
+254
+00:30:59.580 --> 00:31:21.690
+Francesca: language is being communicated in that visual input that has to go through a model that then understands what the person signing is saying. And then that needs to be translated and put into, you know written words, and then you maybe receive it on a screen. So good good job, everyone. And hopefully, that's
+
+255
+00:31:21.800 --> 00:31:27.739
+Francesca: something to be excited about. Once we get to the computer vision portion of the course.
+
+256
+00:31:29.490 --> 00:31:36.960
+Francesca: So very briefly, Nlp is the intersection of AI and linguistics.
+
+257
+00:31:37.230 --> 00:31:55.499
+Francesca: It's it's essentially the area of AI where we use computers to process, model, generate, understand, human language and human language can be expressed in, you know, a written written format, spoken format, visual format, maybe a combination of of all of those things.
+
+258
+00:31:55.680 --> 00:31:59.850
+Francesca: And what we're really interested in is making
+
+259
+00:32:00.421 --> 00:32:08.849
+Francesca: words useful to the computer so that the computer can perform the machine learning test that would be useful to us.
+
+260
+00:32:09.240 --> 00:32:11.859
+Francesca: So an example of Nlp in action.
+
+261
+00:32:12.160 --> 00:32:21.719
+Francesca: Here we have a task. Where is this product? Review, positive or negative. Here I've shown 2 reviews, 2 product reviews very quickly.
+
+262
+00:32:22.380 --> 00:32:25.200
+Francesca: How can I label these reviews?
+
+263
+00:32:25.370 --> 00:32:26.449
+Francesca: Any ideas.
+
+264
+00:32:30.330 --> 00:32:33.240
+Deep: I think, getting the sentiments.
+
+265
+00:32:33.900 --> 00:32:34.620
+Francesca: Okay,
+
+266
+00:32:36.370 --> 00:32:42.440
+Francesca: So the sentiment is probably what we are predicting. Right?
+
+267
+00:32:42.440 --> 00:32:47.750
+Deep: Yeah, yeah. So the idea will be, 1st to get
+
+268
+00:32:48.600 --> 00:32:53.090
+Deep: the executives. I will say, removing all the stop words.
+
+269
+00:32:54.000 --> 00:32:57.909
+Francesca: So before we get into actually doing the
+
+270
+00:32:58.650 --> 00:33:03.789
+Francesca: task. And so I did hear you said adjectives.
+
+271
+00:33:04.400 --> 00:33:14.910
+Francesca: And then you said, you know, stop word removal. Those are very important. But think about this in terms of you know, any other machine learning task we've done.
+
+272
+00:33:15.660 --> 00:33:22.050
+Francesca: you know. Does our data have a label, yes or no, and anyone can
+
+273
+00:33:22.180 --> 00:33:25.569
+Francesca: answer what they think. Is our data labeled Yes or No.
+
+274
+00:33:26.740 --> 00:33:27.950
+shashi: Oh yes!
+
+275
+00:33:28.530 --> 00:33:34.569
+Francesca: Ok. I heard a yes and a no. I'd love to. Okay. Who said, no, I want to hear no.
+
+276
+00:33:34.900 --> 00:33:36.170
+shashi: Yeah, because.
+
+277
+00:33:37.040 --> 00:33:37.620
+Zhujun Wang: Go ahead!
+
+278
+00:33:38.350 --> 00:33:43.449
+Francesca: Oh, sorry. I said, yes, sorry. You go ahead
+
+279
+00:33:43.450 --> 00:33:45.139
+Francesca: first, st and then we'll go to. Yes.
+
+280
+00:33:45.870 --> 00:33:48.239
+Zhujun Wang: Oh, yeah, I just said.
+
+281
+00:33:49.660 --> 00:33:57.939
+Zhujun Wang: based on the the data. It doesn't clear. Say, this is a positive or negative. So it's not not labeled.
+
+282
+00:33:57.940 --> 00:34:04.820
+Francesca: So no positive or negative label, Ok. And chassis.
+
+283
+00:34:05.330 --> 00:34:11.660
+shashi: Yeah, I saw, because there was a 1 star rating and a 5 star rating. I thought that was the kind of label
+
+284
+00:34:12.150 --> 00:34:13.550
+shashi: this one. So.
+
+285
+00:34:13.550 --> 00:34:13.960
+Francesca: Okay.
+
+286
+00:34:15.090 --> 00:34:21.540
+Francesca: so what would. So what would the label be? Is the label one star. Is that what is the label?
+
+287
+00:34:22.138 --> 00:34:27.009
+shashi: I would say it is a 1 star, because it has more information on
+
+288
+00:34:27.330 --> 00:34:31.550
+shashi: why the sentiment is negative rather than just the
+
+289
+00:34:32.739 --> 00:34:36.525
+shashi: 2 words. This one, so probably I would assume it is
+
+290
+00:34:37.873 --> 00:34:40.536
+shashi: more details is available for negative
+
+291
+00:34:41.359 --> 00:34:47.379
+Francesca: But is is this your label? Is this so you you would put, like Pac-man, one star.
+
+292
+00:34:47.599 --> 00:34:51.979
+Francesca: a keen skier, you'd label it. 5 star. Is that?
+
+293
+00:34:52.449 --> 00:34:55.229
+Francesca: Is this what your you know? Your table would look like.
+
+294
+00:34:57.050 --> 00:34:57.720
+shashi: Well.
+
+295
+00:35:00.660 --> 00:35:03.980
+Francesca: Or how? How could I? How could I make the stars.
+
+296
+00:35:04.520 --> 00:35:12.650
+shashi: No, probably I will have a star rating column, and I will put the number of stars categories as a 1 or yeah. So.
+
+297
+00:35:12.650 --> 00:35:15.330
+Francesca: So you have one and 5. Okay,
+
+298
+00:35:17.520 --> 00:35:23.540
+Francesca: that's still not positive or negative, right? And we and we want to find positive or negative.
+
+299
+00:35:23.540 --> 00:35:29.549
+Kiran: Okay, we still haven't arrived at the point where we make a decision, whether it is positive or negative. Okay.
+
+300
+00:35:29.550 --> 00:35:31.840
+Francesca: I think he's yeah. Go ahead.
+
+301
+00:35:32.080 --> 00:35:37.250
+Kiran: We can classify the executives either point 2 or negative side, right?
+
+302
+00:35:37.830 --> 00:35:38.680
+Francesca: Okay. But I.
+
+303
+00:35:38.680 --> 00:35:39.720
+Kiran: Like a great
+
+304
+00:35:40.200 --> 00:35:50.389
+Kiran: like if you see great good awesome, these kind of words into a positive classification, and bad, not all these things into a negative classification.
+
+305
+00:35:50.870 --> 00:35:51.500
+Francesca: Okay.
+
+306
+00:35:51.500 --> 00:35:55.129
+Kiran: And that can be a label that itself is a label.
+
+307
+00:35:55.410 --> 00:36:03.660
+Francesca: Ok. But is the label? Is the label of our data the same as a prediction?
+
+308
+00:36:05.300 --> 00:36:08.870
+Francesca: Is label equal to prediction.
+
+309
+00:36:09.410 --> 00:36:11.349
+Francesca: What am I? What am I asking here?
+
+310
+00:36:12.360 --> 00:36:22.429
+Francesca: Right? Because when you're looking at an adjective like great or awesome, and you're saying positive.
+
+311
+00:36:23.480 --> 00:36:26.990
+Francesca: Is what you're making. Is this positive?
+
+312
+00:36:27.540 --> 00:36:29.940
+Francesca: Is that a label, or is that a prediction.
+
+313
+00:36:31.490 --> 00:36:35.110
+shashi: That's a prediction, I mean, based on the adjectives and other
+
+314
+00:36:36.051 --> 00:36:40.558
+shashi: comments I would arrive at whether it is a positive or a negative
+
+315
+00:36:41.110 --> 00:36:47.179
+Francesca: Yes, so this positive is the prediction. And that's what we're doing here right.
+
+316
+00:36:47.480 --> 00:36:47.870
+shashi: Correct.
+
+317
+00:36:47.870 --> 00:36:55.290
+Francesca: That's our overall task. But I'm starting at the beginning. I'm just asking, does our data have a label right?
+
+318
+00:36:56.540 --> 00:36:58.420
+Francesca: And some people say, No.
+
+319
+00:36:58.420 --> 00:36:59.219
+shashi: Oh, okay.
+
+320
+00:36:59.220 --> 00:37:04.879
+Francesca: Doesn't say positive or negative, and some people say, Yes, it does. It does, because it has one or 5.
+
+321
+00:37:05.860 --> 00:37:06.510
+shashi: Okay.
+
+322
+00:37:06.510 --> 00:37:08.779
+Francesca: How can I make a star
+
+323
+00:37:09.470 --> 00:37:13.159
+Francesca: positive or negative, like if I say something is
+
+324
+00:37:13.360 --> 00:37:16.160
+Francesca: one star? Is that positive or negative?
+
+325
+00:37:18.030 --> 00:37:22.519
+shashi: Again, yeah, that again depends on the context. So yeah, I think.
+
+326
+00:37:22.740 --> 00:37:28.580
+Francesca: Well, would you say one star if I say something, is one star? Do you think I think that's positive or negative?
+
+327
+00:37:29.880 --> 00:37:33.589
+Ravi Duvvuri: I think that's negative, definitely right? Because that's the lowest available.
+
+328
+00:37:33.590 --> 00:37:37.389
+Francesca: What if I say something is 2 stars? Do I think that's positive or negative?
+
+329
+00:37:37.390 --> 00:37:38.250
+Ravi Duvvuri: Negative.
+
+330
+00:37:38.520 --> 00:37:42.980
+Francesca: Okay, what about 3? Do I think something's positive or negative? If I.
+
+331
+00:37:42.980 --> 00:37:44.810
+shashi: Neutral, I would say neutral.
+
+332
+00:37:45.120 --> 00:37:46.369
+Ravi Duvvuri: Be tough. Yes.
+
+333
+00:37:46.370 --> 00:37:48.849
+Francesca: Okay, neutral. If I say it's 4.
+
+334
+00:37:49.350 --> 00:37:50.270
+Ravi Duvvuri: Positive.
+
+335
+00:37:50.270 --> 00:37:51.589
+Francesca: I think it's positive.
+
+336
+00:37:51.970 --> 00:37:54.500
+shashi: And 5 positive.
+
+337
+00:37:54.700 --> 00:37:55.480
+Francesca: Positive.
+
+338
+00:37:55.680 --> 00:37:56.350
+Francesca: Yep.
+
+339
+00:37:56.718 --> 00:38:07.400
+Zhujun Wang: But but this you have. Hypothesis, like the 5 5, is the total star. But if I have a maximum, I support 3 star. Right? So this is a
+
+340
+00:38:07.520 --> 00:38:10.329
+Zhujun Wang: changeable, is not the yeah.
+
+341
+00:38:10.880 --> 00:38:14.300
+Ravi Duvvuri: If it's 3 star one become negative, 2, new right?
+
+342
+00:38:14.760 --> 00:38:19.860
+Zhujun Wang: Like. It's not for sure like 0 to one like if we can scale, you know.
+
+343
+00:38:19.860 --> 00:38:26.550
+Francesca: Okay. So I heard scale, so we could do a scale of 0
+
+344
+00:38:26.760 --> 00:38:29.369
+Francesca: to 2. Did you say was negative?
+
+345
+00:38:29.370 --> 00:38:32.209
+Deep: 1 0 to one, maybe there one.
+
+346
+00:38:32.370 --> 00:38:34.039
+Deep: And then we can say, Okay.
+
+347
+00:38:34.040 --> 00:38:34.670
+Francesca: Who's.
+
+348
+00:38:34.850 --> 00:38:39.229
+Deep: Ever 0 point 5. Then it's positive, you know less than 0 point 5.
+
+349
+00:38:39.960 --> 00:38:47.079
+Francesca: So, yeah, so it sounds like. So then you could. Also, if you're a scale out of 10, you could. Do, you know.
+
+350
+00:38:47.810 --> 00:38:55.250
+Francesca: So it looks like everyone has some understanding, basic understanding that when you see one star
+
+351
+00:38:55.440 --> 00:39:03.990
+Francesca: you in general most of the time, you know, one star is negative, and when you see something as 5 stars most of the time.
+
+352
+00:39:04.280 --> 00:39:05.710
+Francesca: you know, it's positive.
+
+353
+00:39:06.240 --> 00:39:08.900
+Francesca: Right? So let's go back to this.
+
+354
+00:39:10.080 --> 00:39:14.750
+Francesca: So we 1st said, No, there's no positive or negative label, but we do have
+
+355
+00:39:14.950 --> 00:39:19.459
+Francesca: a label which is the number of stars. It's just not positive or negative.
+
+356
+00:39:19.610 --> 00:39:23.570
+Francesca: Is there something I can do to give this a positive or negative label.
+
+357
+00:39:27.330 --> 00:39:31.449
+Francesca: So, using our scale here, what would Pac-man think.
+
+358
+00:39:33.070 --> 00:39:33.840
+shashi: Thank you, too.
+
+359
+00:39:34.000 --> 00:39:34.880
+Zhujun Wang: Negative.
+
+360
+00:39:35.100 --> 00:39:37.890
+Francesca: Negative. And what does a keen skier think.
+
+361
+00:39:39.290 --> 00:39:40.020
+shashi: Positive.
+
+362
+00:39:40.200 --> 00:39:40.970
+Francesca: Positive.
+
+363
+00:39:41.950 --> 00:39:44.170
+Francesca: Exactly so.
+
+364
+00:39:44.810 --> 00:39:53.240
+Francesca: What we did here was our final project, right like I
+
+365
+00:39:53.470 --> 00:39:58.349
+Francesca: had to talk through exactly my thinking
+
+366
+00:39:58.690 --> 00:40:03.950
+Francesca: for getting this label that was not immediately clear. I 1st acknowledged
+
+367
+00:40:04.390 --> 00:40:07.580
+Francesca: there my task is positive or negative.
+
+368
+00:40:08.060 --> 00:40:15.510
+Francesca: No, there were no positive or negative labels, however, in real life this
+
+369
+00:40:15.970 --> 00:40:35.549
+Francesca: tends to be true for product reviews. Right? It tends to be that when we review a movie or when we review a product on a shopping website. It tends to be that if someone has a 1 star review, it's negative. And someone has a 5 star review, it's positive. So I would be writing that down in my final project.
+
+370
+00:40:35.720 --> 00:40:41.439
+Francesca: And then what I did was I went back to my data set and I looked at
+
+371
+00:40:41.670 --> 00:40:43.809
+Francesca: all my star labels.
+
+372
+00:40:44.010 --> 00:40:50.139
+Francesca: compared it to the scale that I defined that I'm going to justify because of my understanding of
+
+373
+00:40:50.440 --> 00:40:55.320
+Francesca: product reviews. And then I was able to create a negative and positive label.
+
+374
+00:40:55.630 --> 00:41:01.450
+Francesca: Now, it's very possible that someone else with the exact same data set doing the same task
+
+375
+00:41:01.730 --> 00:41:04.109
+Francesca: would do it completely, differently right.
+
+376
+00:41:04.610 --> 00:41:10.780
+Francesca: But as the person running this ship as the person you know, leading my project.
+
+377
+00:41:10.890 --> 00:41:17.390
+Francesca: I have made this design decision to translate stars into negative or positive.
+
+378
+00:41:18.260 --> 00:41:19.939
+Francesca: Does that make sense to everyone.
+
+379
+00:41:23.170 --> 00:41:24.280
+Francesca: And so now I have.
+
+380
+00:41:24.280 --> 00:41:27.660
+shashi: It is your perspective of analyzing the results.
+
+381
+00:41:29.262 --> 00:41:33.889
+Francesca: In. Could you explain further what you mean by that.
+
+382
+00:41:34.960 --> 00:41:48.780
+shashi: So based on your experience and your assessment of the situation and looking at the results. So you have arrived at one means negative 5 means positive. That is your that is the way you have defined your project.
+
+383
+00:41:51.590 --> 00:41:53.839
+Francesca: And what is your question?
+
+384
+00:41:54.390 --> 00:42:05.109
+shashi: No, no. So I was saying, you're this one. It can be depending, I mean somebody else, they may say I mean, for argument's sake we can say
+
+385
+00:42:05.290 --> 00:42:08.649
+shashi: 5 is negative. One is positive. Also, I mean, oh, yeah.
+
+386
+00:42:08.650 --> 00:42:11.559
+shashi: not happen. But I can define a scale which is
+
+387
+00:42:11.850 --> 00:42:17.130
+Francesca: I mean, think about yeah, like, if you're familiar with golf.
+
+388
+00:42:17.330 --> 00:42:21.379
+Francesca: you know, a negative one score is much better.
+
+389
+00:42:21.910 --> 00:42:29.549
+Francesca: Yeah, 5. Right? So then I'm going. But then that means if I were trying to predict golf scores.
+
+390
+00:42:29.780 --> 00:42:35.850
+Francesca: and it's maybe, let's say, makes the cutoff or doesn't make the cutoff. Then I'm going to have a very
+
+391
+00:42:35.960 --> 00:42:37.510
+Francesca: different scale.
+
+392
+00:42:37.660 --> 00:42:42.719
+Francesca: And I'm really a not going to want to use this
+
+393
+00:42:42.970 --> 00:42:46.039
+Francesca: right. This is, this is a bad scale for golf.
+
+394
+00:42:47.380 --> 00:42:52.059
+Francesca: So it does matter how much you understand your problem.
+
+395
+00:42:52.300 --> 00:42:56.760
+Francesca: because this scale works for product reviews and would be really bad for golf. Right?
+
+396
+00:42:57.630 --> 00:43:01.520
+Francesca: Okay, any other questions about this process?
+
+397
+00:43:06.230 --> 00:43:06.930
+Francesca: Great.
+
+398
+00:43:08.950 --> 00:43:13.330
+Francesca: So we do end up with creating labels, using this
+
+399
+00:43:13.520 --> 00:43:22.610
+Francesca: by translating the stars into this scale because immediately there were no labels until I did that.
+
+400
+00:43:23.080 --> 00:43:43.990
+Francesca: So everyone, I think, understood sort of where I was coming from, and if you disagreed, that's sort of the beauty of doing the machine learning experiments right? Maybe I want to just do 2 binary labels. Maybe I want to just do positive or negative. But maybe
+
+401
+00:43:44.340 --> 00:44:00.930
+Francesca: you know. Maybe Kiran wants to do 1, 2, 3, 4, 5, and have 5 different classes. So that's that's sort of the the beauty of doing. The project is that you have so many different experiments that you could be doing for for this product? Review?
+
+402
+00:44:01.693 --> 00:44:04.439
+Francesca: The last thing is, why is it useful?
+
+403
+00:44:04.760 --> 00:44:07.251
+Francesca: Why do I want to
+
+404
+00:44:08.010 --> 00:44:10.389
+Francesca: use machine learning for this task?
+
+405
+00:44:15.880 --> 00:44:17.920
+Kiran: We can check the customer satisfaction.
+
+406
+00:44:21.990 --> 00:44:24.869
+Francesca: Sorry I so I see in the chat improvement, but I think
+
+407
+00:44:25.370 --> 00:44:28.380
+Francesca: 2 people were unmuted, so I didn't quite catch.
+
+408
+00:44:28.380 --> 00:44:36.040
+Kiran: We can use this to check the customer satisfaction of a customer of a company or.
+
+409
+00:44:36.290 --> 00:44:44.519
+Francesca: Absolutely customer satisfaction, especially if your product is getting thousands or tens of thousands of reviews.
+
+410
+00:44:44.640 --> 00:44:53.419
+Francesca: You want to make sure those aren't tens of thousands of negative reviews. Right? Improvement. Yeah. Improvement of the product
+
+411
+00:44:53.950 --> 00:45:03.509
+Francesca: could be improvement of the service, you know it. Could it could be improvement?
+
+412
+00:45:04.160 --> 00:45:13.010
+Francesca: Of the delivery, etc. Yeah, this is why it's super super useful to to make sure your
+
+413
+00:45:13.821 --> 00:45:17.789
+Francesca: creating as appropriate a model as you can.
+
+414
+00:45:21.400 --> 00:45:24.190
+Deep: Or maybe increase revenue can be.
+
+415
+00:45:24.190 --> 00:45:36.369
+Francesca: Revenue. Okay? And so how would you increase revenue by looking at product reviews? So let's say, I did all my product reviews, and I have my pile of positive and negative ones. How? What do I do next?
+
+416
+00:45:37.070 --> 00:45:45.789
+Deep: Like. If I see there is a demand about a particular thing in the customer feedback, you know. Hey? If I would have this product. I will buy it.
+
+417
+00:45:46.180 --> 00:45:50.509
+Deep: That might be testing a product in the market can be helpful.
+
+418
+00:45:50.770 --> 00:45:53.159
+Francesca: Yeah, totally, absolutely right.
+
+419
+00:45:56.040 --> 00:46:09.780
+Francesca: so I'm going to skip through this quickly in the interest of time, because I actually have an example that demonstrates turning the stars into positive or negative for reviews. But
+
+420
+00:46:11.120 --> 00:46:18.440
+Francesca: here, you know, we know that your data will be fed into an algorithm, create a model, and then make a prediction
+
+421
+00:46:18.720 --> 00:46:26.139
+Francesca: in natural language processing. Remember what really makes it, you know, different from the other
+
+422
+00:46:26.430 --> 00:46:37.479
+Francesca: topics. The other domains is that we are looking at language so that could be words written down could be spoken. Words could be visually represented like sign language that we saw earlier.
+
+423
+00:46:38.670 --> 00:46:42.759
+Francesca: and the challenge for this is to get words into numbers.
+
+424
+00:46:42.880 --> 00:46:56.069
+Francesca: So we might have words. We might have the review of a product. And now we want to turn it into something that looks like numbers so that that can be fed into your algorithm, create a model and make a prediction.
+
+425
+00:46:57.910 --> 00:47:04.320
+Francesca: So the 1st thing we want to do is prepare your data. And by data we really mean
+
+426
+00:47:04.550 --> 00:47:13.110
+Francesca: text. So keep that in mind for data, we are referring to the text,
+
+427
+00:47:16.680 --> 00:47:23.909
+Francesca: some ways where we can prepare our data. And I know someone already mentioned some of these techniques earlier tokenization.
+
+428
+00:47:24.280 --> 00:47:25.350
+Francesca: So
+
+429
+00:47:26.080 --> 00:47:31.969
+Francesca: I might have the sentence. I would not like them here or there, and to split this up into tokens.
+
+430
+00:47:33.240 --> 00:47:46.979
+Francesca: lower casing. That might be really important, because we know that in in computing an a does not
+
+431
+00:47:47.150 --> 00:47:55.389
+Francesca: equal a right. Those are not the same thing, even though to humans those might be the same thing right?
+
+432
+00:47:56.238 --> 00:48:01.500
+Francesca: Stop word removal. So maybe these words don't carry as much
+
+433
+00:48:01.750 --> 00:48:06.650
+Francesca: meaning. You can see the ending on the cover. If I write this out as
+
+434
+00:48:07.910 --> 00:48:10.610
+Francesca: you can see ending
+
+435
+00:48:11.150 --> 00:48:19.679
+Francesca: on cover those pretty much mean the same thing right? Even though I've taken out my stop words and my punctuation. Those are
+
+436
+00:48:19.870 --> 00:48:21.290
+Francesca: pretty much the same thing.
+
+437
+00:48:21.620 --> 00:48:40.820
+Francesca: And then stemming and lemmatization. Just so you're looking at, you know, trying to derive the core meaning of your words. So 1st thing we're going to do before we even get into turning our words into numbers is we're just going to prepare our data, right? We're going to use some of these techniques.
+
+438
+00:48:42.600 --> 00:48:48.519
+Francesca: Once we've prepared our data, we're going to extract features from the prepared data.
+
+439
+00:48:48.970 --> 00:49:03.830
+Francesca: And by that I simply mean turn words into numbers right? The numbers are our features.
+
+440
+00:49:04.410 --> 00:49:05.240
+Francesca: So
+
+441
+00:49:05.550 --> 00:49:17.809
+Francesca: when I say features like how we were talking about features when we were looking at, you know, car mileage, or we were looking at the age of the car. In the same way the words
+
+442
+00:49:17.990 --> 00:49:21.500
+Francesca: represented into numbers. Those are the features of my text
+
+443
+00:49:21.800 --> 00:49:24.529
+Francesca: and some techniques, a bag of words.
+
+444
+00:49:24.770 --> 00:49:35.249
+Francesca: And tf, idf that we have covered in this module and grams. If we have time, I'll also cover that very quickly. And then word embeddings. I'll also.
+
+445
+00:49:35.450 --> 00:49:42.639
+Kiran: So for numerical data, the each column will be a feature. But here in this text, based data, how do you
+
+446
+00:49:43.654 --> 00:49:49.040
+Kiran: how do you consider? I mean, once we convert the text into numbers
+
+447
+00:49:49.677 --> 00:49:58.019
+Kiran: I like this can be converted into 3 numerals. Right? But how can I choose that in form of a column.
+
+448
+00:49:58.750 --> 00:50:13.789
+Francesca: Okay? Great great question. So in the features. For the the your logistic regression.
+
+449
+00:50:14.471 --> 00:50:20.638
+Francesca: When you had something like car one, and then let's just say it was
+
+450
+00:50:21.440 --> 00:50:26.669
+Francesca: Miles, and you add car car 2, and you had.
+
+451
+00:50:28.160 --> 00:50:32.969
+Francesca: And then maybe you had car 3, which was young. Car only 2,500.
+
+452
+00:50:33.460 --> 00:50:43.850
+Francesca: When I extract this column. When I extract, let's just say data car.
+
+453
+00:50:44.960 --> 00:50:47.330
+Francesca: miles. Let's say I do that.
+
+454
+00:50:48.990 --> 00:50:56.739
+Francesca: How do? What does that look like when I, you know, go print data car, miles and I, you know, create that into
+
+455
+00:50:57.760 --> 00:51:05.619
+Francesca: into a you know, something that can be put in the algorithm. What does that look like?
+
+456
+00:51:07.660 --> 00:51:10.699
+Francesca: So that might look like a list
+
+457
+00:51:11.010 --> 00:51:15.150
+Francesca: right? Like it might look like this right?
+
+458
+00:51:16.060 --> 00:51:21.940
+Francesca: And then, however many, so it might look like that.
+
+459
+00:51:24.580 --> 00:51:33.110
+Francesca: What you have here is essentially just like a list of numbers or a list of values
+
+460
+00:51:33.460 --> 00:51:41.750
+Francesca: that's going to look really similar to
+
+461
+00:51:47.860 --> 00:51:53.440
+Francesca: oops to this, right?
+
+462
+00:51:55.710 --> 00:51:59.779
+Francesca: Like, if I were to type this out.
+
+463
+00:51:59.890 --> 00:52:03.550
+Francesca: I might just do 2, 2,
+
+464
+00:52:04.530 --> 00:52:10.120
+Francesca: 2, 2, 2, I think I got the right number of twos there, and that.
+
+465
+00:52:10.590 --> 00:52:14.049
+Francesca: And so that's my feature for this sentence.
+
+466
+00:52:14.790 --> 00:52:21.369
+Francesca: So this whole sentence is represented by that
+
+467
+00:52:23.150 --> 00:52:25.059
+Francesca: is, that, does that answer your question?
+
+468
+00:52:26.410 --> 00:52:38.359
+Kiran: No, in in numerals, right? The entire list. I know that that is, we are talking about miles of car, but here the numeral, each numeral is giving a different meaning. Right?
+
+469
+00:52:38.960 --> 00:52:44.209
+Kiran: Like the 1st 2 is like I, the second 2, maybe. Would the 3rd 2 maybe not.
+
+470
+00:52:44.872 --> 00:52:49.590
+Kiran: So how? How how to process that data is is the confusion.
+
+471
+00:52:49.740 --> 00:52:52.723
+Francesca: Yeah, so it let's
+
+472
+00:52:53.790 --> 00:53:01.429
+Francesca: Let's let me find a slide that has less things on it. Okay, let's say.
+
+473
+00:53:01.850 --> 00:53:13.210
+Francesca: actually, why don't I just create one? Here, let's say I have a table and
+
+474
+00:53:14.420 --> 00:53:17.330
+Francesca: like let's say I have here
+
+475
+00:53:18.100 --> 00:53:21.649
+Francesca: car. And then Miles, and then I have
+
+476
+00:53:21.820 --> 00:53:30.030
+Francesca: car A with 10,000, and car B with 8,000 right.
+
+477
+00:53:31.250 --> 00:53:34.190
+Francesca: So if I were to make this.
+
+478
+00:53:35.590 --> 00:53:40.430
+Francesca: if I were to make this similar to this.
+
+479
+00:53:40.940 --> 00:53:45.790
+Francesca: what that actually looks like in a table, let's say I were to put this in a table.
+
+480
+00:53:45.940 --> 00:54:00.240
+Francesca: what it would actually look like is, let's say, sentence, and then encoding that whole sentence is one row.
+
+481
+00:54:00.990 --> 00:54:02.609
+Francesca: and that encoding.
+
+482
+00:54:03.520 --> 00:54:04.340
+Kiran: Okay.
+
+483
+00:54:04.960 --> 00:54:09.149
+Francesca: Is one value in my table.
+
+484
+00:54:09.810 --> 00:54:15.370
+Francesca: And so the way you could think about it is, each sentence
+
+485
+00:54:16.530 --> 00:54:19.280
+Francesca: is the same as one car.
+
+486
+00:54:22.210 --> 00:54:24.669
+Francesca: And so this is my feature.
+
+487
+00:54:25.160 --> 00:54:29.110
+Francesca: And so this is my feature right?
+
+488
+00:54:29.740 --> 00:54:39.120
+Francesca: And I might have a new sentence. It could. My new sentence might be. I never liked it anyways.
+
+489
+00:54:39.950 --> 00:54:40.740
+Francesca: right?
+
+490
+00:54:41.420 --> 00:54:50.330
+Francesca: And I might have 2 here, and then 0 0 0, 0
+
+491
+00:54:50.490 --> 00:54:53.519
+Francesca: 0. I don't think I have any repeats there.
+
+492
+00:54:54.340 --> 00:54:58.920
+Francesca: Maybe I have 1, 1, 1 1,
+
+493
+00:54:59.200 --> 00:55:02.110
+Francesca: and then this one would then have
+
+494
+00:55:02.390 --> 00:55:12.300
+Francesca: be like 0 0 0, does that make sense? And so actually, this is like this.
+
+495
+00:55:12.410 --> 00:55:17.350
+Francesca: So if we wanted to think about it, really, simply, maybe we'll just call this sentence a
+
+496
+00:55:18.090 --> 00:55:32.480
+Francesca: sentence. B, then so on sentence C sentence D, and that's the same as saying, like, car, a car, B car, C, car d. So for the example that we're doing, we're looking on like a sentence to sentence basis.
+
+497
+00:55:32.750 --> 00:55:36.280
+Francesca: You can imagine that for text, I might, instead of
+
+498
+00:55:36.450 --> 00:55:39.912
+Francesca: do sentence basis. I might do
+
+499
+00:55:41.370 --> 00:55:47.470
+Francesca: a full document like resume a and resume
+
+500
+00:55:48.610 --> 00:55:55.220
+Francesca: be. If I were trying to assess people's resumes, then this would be some encoding, and
+
+501
+00:55:55.900 --> 00:55:58.310
+Francesca: this would be some encoding right.
+
+502
+00:55:58.500 --> 00:56:04.260
+Francesca: This could also be words, so this could be the word banana.
+
+503
+00:56:05.000 --> 00:56:07.809
+Francesca: and this could be the word cat.
+
+504
+00:56:08.830 --> 00:56:10.579
+Francesca: and that would have some encoding.
+
+505
+00:56:10.840 --> 00:56:18.160
+Francesca: So it really depends. But if you're trying to visualize it like you would the features of a table
+
+506
+00:56:18.320 --> 00:56:21.620
+Francesca: in the example that we're looking at.
+
+507
+00:56:21.800 --> 00:56:28.589
+Francesca: Each sentence is the thing. So it's not each word. It's each sentence.
+
+508
+00:56:30.580 --> 00:56:31.700
+Kiran: Got it. Thank you. Yeah.
+
+509
+00:56:31.700 --> 00:56:49.250
+Francesca: Great. Okay, yeah. I'm glad I will keep moving on in the interest of time. The notebook that I was going to go over will get posted as well. It's for a yelp dataset, and you'll notice that
+
+510
+00:56:49.360 --> 00:56:57.620
+Francesca: the big thing for this one is that I defined a function called Isgoodreview. Maybe I'll actually get do
+
+511
+00:56:58.750 --> 00:57:04.439
+Francesca: do this quickly, since my data set is still here.
+
+512
+00:57:15.760 --> 00:57:16.840
+Francesca: Okay?
+
+513
+00:57:27.710 --> 00:57:29.000
+Francesca: Oh.
+
+514
+00:57:33.430 --> 00:57:42.450
+Francesca: okay. So I have my data set here, as you can see there is a review, and there is stars like we said earlier.
+
+515
+00:57:42.800 --> 00:57:46.229
+Francesca: and maybe for the purposes of this
+
+516
+00:57:46.550 --> 00:58:09.040
+Francesca: task, I'm going to say that if I think a restaurant is 3 stars or up. I think it's good, you know. If I think it's 1 or 2 stars, then I think it's it's negative, so is good review to return. True, I would say, if Num stars is greater than 2,
+
+517
+00:58:09.400 --> 00:58:11.980
+Francesca: then I think it's a good review.
+
+518
+00:58:12.270 --> 00:58:32.379
+Francesca: and let's see, I'm going to apply that, and as you can see here, where it says, 5 stars I now have is good review. True, I could also have this labeled as you saw earlier. I could also have this labeled as one or 0. So I could also just put is good. Review is one that means yes, and 0 means no.
+
+519
+00:58:32.820 --> 00:58:38.020
+Francesca: So this notebook will be with the office hours, notes as well as the slides.
+
+520
+00:58:38.180 --> 00:58:43.180
+Francesca: But just to then cap off, once you have your encoding.
+
+521
+00:58:43.690 --> 00:58:46.379
+Francesca: you're able to use this encoding
+
+522
+00:58:46.680 --> 00:58:53.869
+Francesca: in your algorithm. Maybe it's your logistic regression algorithm for positive or negative. And then you make your prediction.
+
+523
+00:58:54.900 --> 00:59:07.739
+Ravi Duvvuri: Hi, one question on that. So how many of these models we need to train to get this prediction thing like, if I have, like 1,000 images in my data set, do I need to?
+
+524
+00:59:08.310 --> 00:59:13.999
+Ravi Duvvuri: Is it good enough to train to make a prediction in a future image, or
+
+525
+00:59:14.430 --> 00:59:19.209
+Ravi Duvvuri: or what's the normal thing for a capstone? Basically, not for real life, but in.
+
+526
+00:59:19.210 --> 00:59:22.309
+Francesca: I would say the capstone
+
+527
+00:59:22.490 --> 00:59:36.380
+Francesca: should have more complexity than your practical applications. It's, I think, a lot of people have been thinking that the practical application assignment is like a mini capstone. And so.
+
+528
+00:59:37.180 --> 00:59:43.510
+Francesca: if you recall the classification, practical application
+
+529
+00:59:43.690 --> 00:59:47.179
+Francesca: had multiple models, if your project
+
+530
+00:59:47.210 --> 01:00:14.300
+Francesca: is, if you do your project pretty quickly, and you get a, you know, pretty good result. It might not be the case for computer vision, because I think actually getting your images ready might be complex enough. But if you're looking to add complexity in general to your project, a great way to do it is to do it like the classification, practical application, which was to compare different models.
+
+531
+01:00:14.500 --> 01:00:24.750
+Ravi Duvvuri: Oh, no, my! My question is not no, not that one. So you just put here in the slide one one data feed right. And then you're feeding into algorithmic model
+
+532
+01:00:25.660 --> 01:00:36.620
+Ravi Duvvuri: prediction. Similarly, if I want to use similar setup, of course I will be using it. So how many of models. I need to input to my algorithm to make predictions. Is it like.
+
+533
+01:00:36.620 --> 01:00:37.859
+Francesca: Like that.
+
+534
+01:00:37.860 --> 01:00:43.860
+Ravi Duvvuri: Enough, good enough, or like 100, or like, what's the normal cut off like from image perspective?
+
+535
+01:00:44.060 --> 01:01:00.060
+Francesca: So it really depends, because it depends on how complex your images are. It depends on how much time you have, how many images are in your data set. So I would say some factors to consider.
+
+536
+01:01:00.640 --> 01:01:04.549
+Francesca: When you decide is, how big is your data set?
+
+537
+01:01:06.050 --> 01:01:08.480
+Francesca: If your data set is really small.
+
+538
+01:01:08.710 --> 01:01:21.269
+Francesca: then you might not. You just might not be able to train on, as you know that many images, because you have a small data set. The other thing is, you can
+
+539
+01:01:21.670 --> 01:01:30.599
+Francesca: see if your, if the performance of your model improves with more images.
+
+540
+01:01:30.900 --> 01:01:37.940
+Francesca: so that is something to consider. And then also, if your images are really complex
+
+541
+01:01:38.090 --> 01:01:52.400
+Francesca: and you have many of them, then maybe it will just take a long time because you require more computational power. So my answer for how many instances you need to train your model really depends on your project
+
+542
+01:01:52.580 --> 01:01:54.820
+Francesca: and the data set that you have.
+
+543
+01:01:55.250 --> 01:02:09.479
+Ravi Duvvuri: Okay, yeah, quick. Follow up on that. So we can. We start like maybe 10 images and and release the model and then refine it. And then we can in in reality that happens right? We don't need to train all the images. Okay.
+
+544
+01:02:09.620 --> 01:02:24.489
+Francesca: Yes, yeah, exactly for your project and your data set, and also depending on how complex your images are, it would really depend. But it could be an example that you use. Where
+
+545
+01:02:24.630 --> 01:02:36.830
+Francesca: does you know? Maybe does training on 50 images produce quite similar results to training on a thousand images that could be an interesting experiment for your project.
+
+546
+01:02:37.770 --> 01:02:38.380
+Ravi Duvvuri: Thank you.
+
+547
+01:02:38.750 --> 01:02:54.120
+Francesca: Great. Well, we are at time. Thank you. Everyone. Great great questions. Today. I hope I was able to answer them to some satisfaction, and this recording will be available, as will the resources. So I'll see you next time.
+
+548
+01:02:54.120 --> 01:02:55.290
+shashi: Yeah. Thank you. Bye-bye.
+
+549
+01:02:55.510 --> 01:02:56.340
+Francesca: Thank you.
+

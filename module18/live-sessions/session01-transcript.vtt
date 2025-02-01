@@ -1,0 +1,1454 @@
+WEBVTT
+
+1
+00:00:10.120 --> 00:00:11.600
+Viviana Márquez: Hi, everyone.
+
+2
+00:00:13.130 --> 00:00:14.380
+Viviana Márquez: Thursday.
+
+3
+00:00:17.220 --> 00:00:20.970
+Viviana Márquez: Hope everyone is doing great. So as usual, just wait.
+
+4
+00:00:21.090 --> 00:00:27.409
+Viviana Márquez: maybe one more minute and then we'll get started.
+
+5
+00:00:30.360 --> 00:00:40.759
+Viviana Márquez: You guys had double double today? No, and also office hours with many.
+
+6
+00:00:41.570 --> 00:00:48.150
+Viviana Márquez: What did Manny cover? Did he cover module 17 or 18?
+
+7
+00:00:48.750 --> 00:00:51.020
+Viviana Márquez: There's an eye on because they'll be gone.
+
+8
+00:00:54.760 --> 00:00:55.570
+Viviana Márquez: Toyota.
+
+9
+00:00:55.810 --> 00:00:56.550
+Viviana Márquez: Yeah.
+
+10
+00:01:16.620 --> 00:01:18.400
+Viviana Márquez: it's missing money.
+
+11
+00:01:19.030 --> 00:01:20.450
+Viviana Márquez: I eat it. So
+
+12
+00:01:22.550 --> 00:01:47.749
+Viviana Márquez: all right. Awesome. So let's get started. Welcome to office hours. So I had prepared today for office hours. Module, 18 natural language processing. It is a very broad topic. It. It's people get doctorates on natural language processing, and it's a field that is
+
+13
+00:01:47.850 --> 00:02:01.889
+Viviana Márquez: constantly growing, especially in the last few years, with Chat Gpt. It's just been nonstop. There's so many so many new things on this field. So unfortunately, our time is limited, so we only have one week.
+
+14
+00:02:01.890 --> 00:02:22.889
+Viviana Márquez: But this is a really exciting field that if maybe after this program, you want to deep dive research go more on it. It's a fantastic topic. So, Manny, I thank you, Sashi, for for letting me know. So Manny covered a little bit of module 18 today as well.
+
+15
+00:02:22.890 --> 00:02:31.870
+Viviana Márquez: So maybe my 1st part of of what I prepared today is more like the intuition behind it.
+
+16
+00:02:31.870 --> 00:02:51.170
+Viviana Márquez: And then I also have code for bag of words and tfidf! But if I'm saying something that is repetitive, that Manny already said, and you guys don't want to hear it again. Feel free to tell me in the chat like no problem at all. Don't don't feel embarrassed. Just be like we already know that, and I won't cover it.
+
+17
+00:02:51.617 --> 00:02:54.329
+Viviana Márquez: Alright cool. So let's talk about nlp.
+
+18
+00:02:54.740 --> 00:02:58.990
+Viviana Márquez: so oh, I there's a slide missing in here.
+
+19
+00:02:59.930 --> 00:03:06.970
+Viviana Márquez: Oh, yeah, yeah, no, this is good. This is good so so far in this program until module 17
+
+20
+00:03:07.499 --> 00:03:29.420
+Viviana Márquez: we had been in this world, the world of tables, the world of structured data. So structured data is any data that is very organized, specifically organized in a table. It could be a Csv file, it could be excel. It could be in a database. It's just a table with some columns. And then you're trying to model that data.
+
+21
+00:03:29.640 --> 00:03:39.360
+Viviana Márquez: And then there's 1 kind of data we haven't touched at all so far which is unstructured data. So unstructured data doesn't follow a specific format.
+
+22
+00:03:39.950 --> 00:03:56.169
+Viviana Márquez: So it's more challenging to organize and analyze. And what are examples of these unstructured data. So free text is one of them. So like comments or feedback or text, any kind of text is there
+
+23
+00:03:56.170 --> 00:04:10.909
+Viviana Márquez: images, videos, audio and other multimedia formats? So anything that is not a table we haven't dealt with yet. Today is the 1st day that we are going to be doing that. So
+
+24
+00:04:11.210 --> 00:04:12.175
+Viviana Márquez: for
+
+25
+00:04:13.440 --> 00:04:29.419
+Viviana Márquez: the to deal with tables. Usually you work with machine learning. So machine learning is everything that we have done so far in the program. And then for an unstructured data usually is deep learning. Today, we're actually going to be doing machine learning just to get
+
+26
+00:04:29.530 --> 00:04:44.740
+Viviana Márquez: into the topic of unstructured data. But a lot of times is going to be deep learning. So you're going to use neural networks to deal with that data so deep learning, if you're using neural networks machine learning. If you're using cycle, learn? Basically.
+
+27
+00:04:45.188 --> 00:05:02.220
+Viviana Márquez: so congratulations on making it to this section, the last section of this program which is advanced topics on AI. So we're going to be learning today about Nlp next week, we're going to learn about recommender systems
+
+28
+00:05:02.230 --> 00:05:29.919
+Viviana Márquez: the following week, ensemble techniques. Then you're going to have a little break, and after the break you're going to learn about deep neural networks. There's going to be 2 sessions on that, because it's a very broad topic. Then you have a session on Gen. AI. You guys are actually the 1st cohort to get the Gen. AI module. So I'm really, really excited for that. And then the last week, the capstone project.
+
+29
+00:05:29.950 --> 00:05:33.839
+Viviana Márquez: So that's what we have so far.
+
+30
+00:05:34.995 --> 00:05:37.810
+Viviana Márquez: So you can.
+
+31
+00:05:38.770 --> 00:05:43.720
+Viviana Márquez: This is this still applies in natural language processing.
+
+32
+00:05:44.070 --> 00:05:59.399
+Viviana Márquez: So natural language processing is basically a set of techniques that you have to do on your data set. So then you can do the modeling, but the modeling could be. For example, if it's clustering. If you just want to see pattern
+
+33
+00:05:59.430 --> 00:06:23.350
+Viviana Márquez: patterns in your text, if you have some text files, you could do topic modeling, document, clustering social media analysis, maybe to cluster topics or cluster people that follow you. I don't know something like that. You could also have classification tasks. So you have text, and you want to detect the sentiment of it. So you're going to classify it either as positive or negative.
+
+34
+00:06:23.520 --> 00:06:31.679
+Viviana Márquez: You want to do spam detection, you have an email, and which is text. And you want to know if it's a spam or not topic classification.
+
+35
+00:06:32.040 --> 00:06:36.310
+Viviana Márquez: You could also have a regression task. So, for example, you have a text.
+
+36
+00:06:36.400 --> 00:07:03.819
+Viviana Márquez: and you want to know, okay, is this, is this review going to be 5 stars or 4 stars. So that could be one regression application of Nlp, or maybe predict the age of the author. So you're collecting data on social media. And you want to know the age of the person that wrote that thing. You could train a model to predict what's the age of that person? So that would be a regression task.
+
+37
+00:07:04.753 --> 00:07:16.339
+Viviana Márquez: So what is nlp, natural language processing? So we're dealing with text today. And when you deal with text, you have to deal with. Nlp, so nlp is natural language processing.
+
+38
+00:07:16.340 --> 00:07:38.379
+Viviana Márquez: And it's the overlap of computer science and linguistics. So everything. If you know about linguistics, I don't know if there's any linguist in the room. But if you know linguistics, everything that you know from linguistics is valid here, we're just using computational methods on things that have been studied on linguistics.
+
+39
+00:07:38.960 --> 00:07:44.420
+Viviana Márquez: So basically, Nlp is the area of AI that deals with human languages.
+
+40
+00:07:44.440 --> 00:08:11.599
+Viviana Márquez: So what is a natural language that sounds fancy right, it's just a language. So language, this is like English, Spanish, French, and natural language is just like a language that is spoken and created by humans. So like English, Chinese, French, whatever it is, there are artificial languages, which is, when humans create a language. I think Esperanto would be.
+
+41
+00:08:11.700 --> 00:08:18.869
+Viviana Márquez: Let me ask this on Google is Esperanto and artificial language.
+
+42
+00:08:20.270 --> 00:08:23.909
+Viviana Márquez: I think Esperanto is an artificial language, but I'm not sure.
+
+43
+00:08:26.930 --> 00:08:33.689
+Viviana Márquez: It's naturalistic. So it's not quite a natural language because it was created by humans.
+
+44
+00:08:33.740 --> 00:08:57.880
+Viviana Márquez: But it didn't develop naturally. So natural language process. Natural language means like the language that just emerged naturally in human living like English and processing is processing that language. So there are dozens of methods and strategies to solve a given problem with text. So that's nlp, so nlp is not like
+
+45
+00:08:58.435 --> 00:09:09.820
+Viviana Márquez: K means. And K means is this specific algorithm and Lp is just many, many different tools and techniques to be able to process text.
+
+46
+00:09:11.670 --> 00:09:36.550
+Viviana Márquez: so why is it important? So it's estimated that 80 to 90% of the data generated and collected by organizations is unstructured. So although we like tables a lot because they're organized and easy to deal with, most of the data usually comes unstructured and out of that unstructured data. Most of the data is text data.
+
+47
+00:09:36.889 --> 00:09:51.470
+Viviana Márquez: So millions of data are being generated right now, millions of text data are being generated right now, as we speak. So think about all the text messages that are being sent, all the comments that are being left on Tiktok, Youtube, Reddit.
+
+48
+00:09:51.470 --> 00:10:09.989
+Viviana Márquez: etc. So there's all the emails that are being sent right now, there's enormous amounts of text data. So this is why it's such an exciting field. And it's a field that if you know what you're doing, and if you know what you're looking for, you could do really cool stuff. So, for example.
+
+49
+00:10:09.990 --> 00:10:13.350
+Viviana Márquez: there's an example in retrospective with Covid.
+
+50
+00:10:13.390 --> 00:10:26.800
+Viviana Márquez: So if someone had been analyzing what people were tweeting about in different places, they could have predicted the arrival of Covid because people started tweeting like my throat hurts.
+
+51
+00:10:26.800 --> 00:10:48.720
+Viviana Márquez: I can't smell anything. This is so weird. So if you analyze historical data, you could find patterns of as how Covid was getting into different cities even before anyone got tested, got positive. They got tested as positive in that specific city.
+
+52
+00:10:49.032 --> 00:11:04.340
+Viviana Márquez: Just just by looking at the text data. Of course people didn't know in advance, like nobody expected Covid to happen, so nobody was like looking, but if someone had been looking they would have been able to to detect it. So there's a lot of power in there.
+
+53
+00:11:04.770 --> 00:11:14.299
+Viviana Márquez: So many of you probably used Mlp. Today already. If some of your emails went to your your spam box. That's Nlp.
+
+54
+00:11:14.320 --> 00:11:44.319
+Viviana Márquez: If you were writing a text message and Apple or Android suggested to create an event or something from the text that you wrote. That's an lp, if you translated text from one language to another, that's an lp, if you use the Chatbot, that's an lp, if you search something on Google and to see what comes up. That's an lp, so there's there's many, many different applications of an lp, that we might not even think of.
+
+55
+00:11:44.350 --> 00:12:14.100
+Viviana Márquez: And here's a really cool example of how, by you, knowing Nlp, you can generate a lot of value to a company. So this actually happened at one of the companies that I worked for. I used to work for Zimmerman advertising. It's just an advertising firm in Florida, and this happened before I joined them. So I was not part of this. But thanks to Nlp, this happened. So let me show you the video. It's a really short video.
+
+56
+00:12:16.220 --> 00:12:35.309
+Viviana Márquez: Tell me about Jumbo juice. Tell me about Jumbodoo. We have something similar in Britain. We have something similar in Britain. We call it a swishy chug, swishy chug. It's called in English, swishy chug! Say it swishy chug!
+
+57
+00:12:35.310 --> 00:12:53.999
+Viviana Márquez: How did we turn a prank into an idea to promote our smoothies without a budget? Obviously there's no such thing as a swishy chug, and after it aired this website appeared. It's swishychug.com, it says, move over tea and crumpets. England has a new national favorite, the rolling in the beats Smoothie.
+
+58
+00:12:54.220 --> 00:13:10.560
+Viviana Márquez: and when you click on the coupon it takes you to Jumba juice website for $2 off any Smoothie so very cool, so Jumba juice put that overnight. They put that up, and I love that they did that. I mean, that's a fantastic idea. Thank you, Ellen, but it didn't happen overnight.
+
+59
+00:13:10.560 --> 00:13:33.990
+Viviana Márquez: It was faster. We picked up on the prank the morning it happened, and by the time the segment aired in the afternoon we had built the swishy chug brand from scratch complete with a logo, a website, a coupon, and a Twitter handle. We even launched 5 signature smoothies inspired by Adele. Within seconds of the broadcast the Internet lit up with conversations about Jamba juice and swishy chug.
+
+60
+00:13:34.220 --> 00:14:00.110
+Viviana Márquez: We jumped in and took the opportunity to promote our smoothies through tweets and response videos. Our engagement went off the charts in just 4 days. Jamba juice was featured in over 1,200 publications which led to an Internet-breaking number of impressions generating over 10 million dollars of earned exposure. As a result of the campaign 120,000 coupons were downloaded and sales soared by 32%.
+
+61
+00:14:00.110 --> 00:14:08.399
+Viviana Márquez: While we spent $0 on media. In addition to promoting our smoothies, we created a conversation around the brand and brought it to life
+
+62
+00:14:08.530 --> 00:14:13.649
+Viviana Márquez: while swishy choke may not be real. We've found that the power of an idea certainly is
+
+63
+00:14:14.550 --> 00:14:23.579
+Viviana Márquez: so. Where is Nlp in here. Basically, what happened is that Zimmerman advertising had as a client
+
+64
+00:14:23.630 --> 00:14:52.909
+Viviana Márquez: Zimmerman advertising had as a client Jamba juice. So Zimmerman was in charge of creating all the marketing strategies for Jamba juice, and since they were one of our clients we were monitoring social media, I mean, I say we but I hadn't joined the company yet, but that's what we used to do with all our clients. We would monitor social media and hear what people were saying about our clients.
+
+65
+00:14:52.930 --> 00:15:08.749
+Viviana Márquez: And because of that you can't have people monitoring social media because there's like thousands of comments per day. So you have to do Nlp to process all that text, and to be able to catch what's relevant versus what's just like random people talking about your brand.
+
+66
+00:15:08.750 --> 00:15:33.370
+Viviana Márquez: And thanks to that, it was spotted a tweet. The Zimmerman spotted a tweet that said, we just saw Adele walk into a Jamba juice, and of course, people with their marketing brains. They were like this is a big opportunity. We have to jump on it. But the reason why they were able to jump on it right away it was because, Nlp, we were doing these social media monitoring. Nlp.
+
+67
+00:15:33.420 --> 00:15:44.460
+Viviana Márquez: and I don't know if you guys are aware. But ads are super expensive, like having Ellen Ellen Degeneres. Just mention your brand in her show
+
+68
+00:15:44.460 --> 00:16:09.320
+Viviana Márquez: could cost thousands, if not millions, of hundreds of thousands of dollars on her show. It's it's very expensive. But if she organically mentioned something. You got that for free. You got that exposure for free. So that's what happened to Jamba juice, and everybody was talking about it. Everyone was like publishing about it, and of course the sales for Jamba juice went up, and they were like, We love
+
+69
+00:16:09.320 --> 00:16:24.530
+Viviana Márquez: Zimmerman because it's the best advertising company in the world. And then Zimmerman internally was like we love whoever created this Nlp model that was monitoring social media. So there's a lot of power in there. So companies do that a lot
+
+70
+00:16:24.590 --> 00:16:39.269
+Viviana Márquez: want to understand their customers, and they want to also know what's happening with their brand real time. And you have to use Nlp for that, to be able to to listen to what people are saying without actually having a human checking social media.
+
+71
+00:16:40.005 --> 00:16:53.099
+Viviana Márquez: So you can take advantage through marketing campaigns, also explicit and implicit feedback from your customers. Several. You can do several things.
+
+72
+00:16:54.770 --> 00:17:01.210
+Viviana Márquez: Yeah. So I love. Nlp, this is a topic I'm very passionate about. For example, Instagram.
+
+73
+00:17:01.330 --> 00:17:17.970
+Viviana Márquez: almost like 10 years ago now did oh, 10 years ago now. Well, they did an analysis on emojis as well. How do people use emojis on Instagram? So this is probably a little bit outdated. People probably have changed. How they use emojis
+
+74
+00:17:17.980 --> 00:17:33.459
+Viviana Márquez: by this is a really cool article. I'm going to put it in the chat. You can read it. And they were doing Nlp on emojis, how people talked about in what contexts they would use emojis.
+
+75
+00:17:33.500 --> 00:17:38.470
+Viviana Márquez: And if you make this image bigger, let's see
+
+76
+00:17:39.150 --> 00:17:57.740
+Viviana Márquez: you find some interesting patterns. So, for example, here you have all the fruits, and then you have some other fruits here that are not in the same cluster, because they have some other meaning. So if you continue looking at this is super super interesting.
+
+77
+00:17:57.930 --> 00:18:04.199
+Viviana Márquez: So all of that is nlp, so we have talked about the wonders of Nlp.
+
+78
+00:18:05.296 --> 00:18:21.059
+Viviana Márquez: So how do we talk to Siri? Does it speak English? Because siri is AI right, and it is processing what I'm saying. So it's like natural language processing it. Does that mean that Siri speaks English.
+
+79
+00:18:21.160 --> 00:18:46.090
+Viviana Márquez: Well, as you guys know, you always have to represent your data in numerical form. Computers don't like things that are not numbers. Computers need numbers so so far in this program, we've learned about one hot encoding label encoding to change categorical variables. If you were working with images, we'll talk more about this once we're covering convolutional neural networks.
+
+80
+00:18:46.220 --> 00:19:00.449
+Viviana Márquez: You're not working with a picture. You're working with the pixels, the numerical values of those pixels of that picture. So the computer. This is what it's working with. So an image is represented as a matrix of numbers.
+
+81
+00:19:00.570 --> 00:19:07.599
+Viviana Márquez: A video is just a collection of matrices, then a collection of images. So a collection of matrices, but unfortunately.
+
+82
+00:19:07.720 --> 00:19:20.640
+Viviana Márquez: or fortunately representing text numerically, is not so simple, so unfortunately, because it makes it super hard. But I say, fortunately, because that's what makes this field so exciting. There's so many cool techniques.
+
+83
+00:19:21.120 --> 00:19:43.140
+Viviana Márquez: So why is Nlp so hard? Why am I saying that it's harder than pictures. Why am I saying that it's harder than video because it's hard to capture meaning even for us humans. That's hard. For example, if I say I saw the man on the hill with a telescope.
+
+84
+00:19:44.480 --> 00:19:48.090
+Viviana Márquez: Does that mean that I saw the man
+
+85
+00:19:48.280 --> 00:19:52.229
+Viviana Márquez: and the man was on the hill, and I was using the telescope.
+
+86
+00:19:52.550 --> 00:19:59.280
+Viviana Márquez: or does it mean that I was on the hill, and I saw the man with the telescope and the man was just there.
+
+87
+00:19:59.400 --> 00:20:14.279
+Viviana Márquez: or does it mean that I saw the man? But the man was the one with the telescope on the hill? And yeah, there's different interpretations. So it's it's Nlp is really, really hard even for humans is hard. So now imagine for a machine.
+
+88
+00:20:15.580 --> 00:20:41.780
+Viviana Márquez: So the issue that we have is that so far we have learned in this program that if you have garbage data, even if you have the best model, you're going to get garbage results. So that's why feature engineering is so important. You want to have your data in the best shape possible for modeling. But how do you do that with Nlp, it's hard. Let's take, for example, the word bow.
+
+89
+00:20:42.336 --> 00:20:51.599
+Viviana Márquez: bow. Can you give it a number? So can you say, Okay, bow from now on is going to be word number 37.
+
+90
+00:20:51.830 --> 00:21:04.309
+Viviana Márquez: What's an issue with that? That bow has 2 meanings? Bow could be the like. The the thing that you put in your hair like the ribbon, like the bow, or or the one that you put here when you have a smoking
+
+91
+00:21:04.786 --> 00:21:33.360
+Viviana Márquez: or the action of bowing right? So we can't represent it with the number 37, because it has 2 different meanings. So you're going to be squishing those 2 meanings onto that number. So that doesn't work just giving it a number. It doesn't work. So how do you represent the meaning of a word? How do you convert this abstract thing into something that you can give to the computer.
+
+92
+00:21:33.980 --> 00:21:36.600
+Viviana Márquez: So then that makes us think.
+
+93
+00:21:36.720 --> 00:21:55.819
+Viviana Márquez: how do we us humans know what a word means? Because a lot of times. This is how AI gets developed. You have to understand, how do we humans do it? And we try to replicate it through code. So how do we humans know what a word means? So, for example, if I say the word Queen.
+
+94
+00:21:55.970 --> 00:22:01.639
+Viviana Márquez: maybe if you grew up in Europe, you think of the Queen of England
+
+95
+00:22:01.890 --> 00:22:15.630
+Viviana Márquez: if you didn't grow up in Europe. But you just grew up through experience. You think of royalty and gowns and crowns, and this is very important because your experience
+
+96
+00:22:15.820 --> 00:22:42.389
+Viviana Márquez: impacts how you think of a word, the meaning of a word. And this is the same thing for AI. So depending on what data it has been exposed to it can reflect that meaning. So that's a very important thing to keep in mind. So, for example, with the word Queen. I'm Colombian. So I don't think of the Queen of England. I think of beauty queens, because we're a country that loves beauty queens.
+
+97
+00:22:43.027 --> 00:22:51.320
+Viviana Márquez: So so your experience impacts what you understand by meaning of different words.
+
+98
+00:22:52.560 --> 00:22:53.770
+Viviana Márquez: So
+
+99
+00:22:54.170 --> 00:23:08.829
+Viviana Márquez: we just established that as humans, we learn what a word means through experience. And this is true for babies. When babies are born they don't really. I mean, maybe some things you teach to them. But it's not like you're
+
+100
+00:23:09.240 --> 00:23:34.180
+Viviana Márquez: grabbing a dictionary and telling them, okay, the word mouse means animal, the word this. No, they just learn through experience. And that's how you develop your 1st language. So the good news is, the machines also learn from experience. And you might be wondering but how it's not like, I send my computer to the kindergarten. How does the machine learn from experience?
+
+101
+00:23:34.723 --> 00:23:42.270
+Viviana Márquez: So I can show you a quick example how machines learn from experience. So don't Google it?
+
+102
+00:23:42.490 --> 00:23:46.099
+Viviana Márquez: Does anybody know what teaching Nikki is.
+
+103
+00:23:46.570 --> 00:23:50.299
+Viviana Márquez: and if you don't know what it is, just say no, put it in the chat.
+
+104
+00:23:55.610 --> 00:23:57.340
+Viviana Márquez: So we have one No.
+
+105
+00:23:59.310 --> 00:24:01.330
+Viviana Márquez: 2, nos. 3 nos.
+
+106
+00:24:02.760 --> 00:24:06.349
+Viviana Márquez: Just just know. So people don't know what teaching Iki is.
+
+107
+00:24:06.660 --> 00:24:09.079
+Viviana Márquez: But what if I said the following.
+
+108
+00:24:09.370 --> 00:24:13.360
+Viviana Márquez: Joseph offered a glass of Tichiniki to his girlfriend
+
+109
+00:24:13.800 --> 00:24:18.540
+Viviana Márquez: technicia and steak make a great pairing for a nice meal.
+
+110
+00:24:19.090 --> 00:24:24.250
+Viviana Márquez: Charles stumbled. His face was flushed from drinking too much Ficiniki.
+
+111
+00:24:24.740 --> 00:24:36.410
+Viviana Márquez: Last night I had bread, cheese, and this excellent Tucchiniki for dinner, and I love that. I haven't asked the question again. What is Tucchiniki? And you guys already know what it is? It's a drink
+
+112
+00:24:36.470 --> 00:25:04.180
+Viviana Márquez: a drink that potentially resembles wine. So that's what Tichiniki is an alcoholic beverage. Did I ever tell you the definition, the meaning of Tichiniki? I never did that. I just put you through some experiences just now, and you'll learn what Tichiniki was if you are wondering what it actually it is. I just made up this word for this example. So if you Google it, nothing is going to show up. But that's what Tichiniki is.
+
+113
+00:25:04.290 --> 00:25:09.100
+Viviana Márquez: I mean, it's nothing. I made it up. But just to convey the message?
+
+114
+00:25:10.193 --> 00:25:27.569
+Viviana Márquez: So how does it work for the computer? How does the computer get experience from this? So let's have these sentences here. So a bottle of Tichiniki is on the table that makes sense. Not everyone likes Tichiniki that makes sense.
+
+115
+00:25:27.700 --> 00:25:31.009
+Viviana Márquez: Don't drink Tichiniki, and drive that makes sense.
+
+116
+00:25:31.180 --> 00:25:39.950
+Viviana Márquez: We make Tichiniki with grapes that make sense. So these are things that people would say about Tichiniki if Tichiniki was a real word.
+
+117
+00:25:40.553 --> 00:25:53.999
+Viviana Márquez: So now let's just create some blanks in there and create this. So this is going to be, let me use a different color. So this is going to be sentence 1, 2, 3, and 4.
+
+118
+00:25:54.510 --> 00:26:01.970
+Viviana Márquez: So sentence one. Sentence, 2. Sentence 3, and sentence 4.
+
+119
+00:26:02.190 --> 00:26:09.880
+Viviana Márquez: So, Tichiniki, we just established that it makes sense. So a bottle of Tichiniki is on the table. That's what someone would say. So
+
+120
+00:26:10.140 --> 00:26:11.419
+Viviana Márquez: you get a 1.
+
+121
+00:26:11.890 --> 00:26:20.569
+Viviana Márquez: Not everyone likes Tichiniki. You get a 1, 2 sentence, 2 makes sense. Don't drink Tichiniken drive. One makes sense.
+
+122
+00:26:20.680 --> 00:26:34.989
+Viviana Márquez: We make Tichiniki with grapes. That's a 1. Okay, let's go on to the next one. Strong. A bottle of strong is on the table. That sounds weird. Nobody's going to say that. So that's not going to be in our data set. So 0,
+
+123
+00:26:35.960 --> 00:26:44.290
+Viviana Márquez: not everyone likes strong. That also sounds odd, right? So 0 don't drink strong and drive.
+
+124
+00:26:44.570 --> 00:27:03.599
+Viviana Márquez: That sounds like something that an Esl speaker would say, someone that is learning English. Don't drink too much and drive. Don't drink strong and drive, but let's say it's 0. For the matter of this exercise, we make strong with grapes. That also doesn't make sense. So you get a 0,
+
+125
+00:27:04.100 --> 00:27:06.350
+Viviana Márquez: let's say, motor oil.
+
+126
+00:27:06.470 --> 00:27:16.850
+Viviana Márquez: A bottle of motor oil is on the table that makes sense. And you could have a motor oil on the table. Not everyone likes motor oil, this one.
+
+127
+00:27:17.450 --> 00:27:30.580
+Viviana Márquez: We could have it for discussion. I think this sentence makes sense. Not everyone likes motor oil. But if you think about what are the odds of someone saying that? Probably not so it could be a 0. But let's just give it a 1.
+
+128
+00:27:30.730 --> 00:27:48.589
+Viviana Márquez: Don't drink motor oil and drive. I mean, you shouldn't do that. But I don't think anyone would say that like, Don't drink motor oil and drive, people would say, Don't drink tequila and drive. Don't drink wine and drive, don't drink bad things and drive, but you wouldn't say oil. So I'm just going to give it a 0.
+
+129
+00:27:48.930 --> 00:28:04.589
+Viviana Márquez: We make motor oil with grapes. No, we don't make a motor oil with grapes. What about Tacos? A bottle of Tacos is on the table. No, that doesn't make sense, not everyone likes Tacos. Okay, that makes sense. Let's put a 1.
+
+130
+00:28:05.050 --> 00:28:16.210
+Viviana Márquez: Don't drink Tacos and drive. That doesn't make sense. Let's give it a 0. We make tacos with grapes. Let's give it a 0 because there's no grapes involved in Taco creation.
+
+131
+00:28:16.630 --> 00:28:21.339
+Viviana Márquez: We make wine. We make.
+
+132
+00:28:22.010 --> 00:28:29.039
+Viviana Márquez: Yeah, okay. Next one, a bottle of wine is on the table that makes sense. Not everyone likes wine
+
+133
+00:28:29.480 --> 00:28:37.879
+Viviana Márquez: that makes sense. Don't drink wine and drive. That makes sense. We make wine with grapes that makes sense.
+
+134
+00:28:38.090 --> 00:28:41.209
+Viviana Márquez: Okay, so what do we have here? Now, here
+
+135
+00:28:41.390 --> 00:28:54.869
+Viviana Márquez: we have this very basic rudimentary way of expressing words as a number while conveying meaning. Because, for example, in here.
+
+136
+00:28:55.030 --> 00:28:59.460
+Viviana Márquez: what do we notice? First, st we notice that teaching Nikki
+
+137
+00:29:00.170 --> 00:29:04.369
+Viviana Márquez: and wine have the same vector representation.
+
+138
+00:29:04.560 --> 00:29:12.780
+Viviana Márquez: So the same numerical representation. Vector representation is just vector is just like a list of numbers.
+
+139
+00:29:13.150 --> 00:29:25.509
+Viviana Márquez: So these 2 have the same vector representation. So that tells me that Teichiniki and wine are very similar. Maybe we had some other sentence that says.
+
+140
+00:29:25.760 --> 00:29:27.579
+Viviana Márquez: one is purple.
+
+141
+00:29:28.000 --> 00:29:32.510
+Viviana Márquez: Let's say we had that 5th one wine is purple.
+
+142
+00:29:32.870 --> 00:29:58.079
+Viviana Márquez: so here wine would have one, because wine, I guess wine could also be white, but wine is purple, and then Tichiniki is not purple, let's say Tichiniki is blue, so you would have a 0 here. So they're slightly different. But they're very similar. They're only slightly different. So so where versus strong, Tichiniki and strong are completely different. These 2 words are not similar to each other. Notice that everything is different.
+
+143
+00:29:58.726 --> 00:30:07.390
+Viviana Márquez: On the other hand, we also have stuff here. So, for example, here the 1st sentence, we have Tichiniki motor oil and wine.
+
+144
+00:30:07.560 --> 00:30:12.879
+Viviana Márquez: So somehow this column now is conveying liquids
+
+145
+00:30:13.770 --> 00:30:16.220
+Viviana Márquez: or things that could go in a bottle.
+
+146
+00:30:21.150 --> 00:30:27.880
+Viviana Márquez: This column is conveying like things that people would like.
+
+147
+00:30:28.270 --> 00:30:33.920
+Viviana Márquez: and so on. So that's how you create a numeric, a vector embedding how you convert
+
+148
+00:30:34.120 --> 00:30:38.399
+Viviana Márquez: text to numbers in a way that conveys meaning.
+
+149
+00:30:39.053 --> 00:30:49.519
+Viviana Márquez: So so that's the intuition behind Nlp, how Nlp works. Is this how we do it in real life?
+
+150
+00:30:49.770 --> 00:31:07.900
+Viviana Márquez: Yes and no. It's a little bit more sophisticated. This is the principle, but it's a little bit more sophisticated. There's some math equations in there, but this is the intuition behind on how we are able to capture that meaning. So I wanted to stop there for a second and see if there was any questions.
+
+151
+00:31:20.930 --> 00:31:22.590
+Viviana Márquez: Alright, that's good.
+
+152
+00:31:25.940 --> 00:31:31.170
+Viviana Márquez: So let's go through some common terminology. So if you hear these words, this is what they mean.
+
+153
+00:31:31.690 --> 00:31:33.549
+Viviana Márquez: So the 1st one is token.
+
+154
+00:31:33.870 --> 00:31:42.789
+Viviana Márquez: So a token is a continuous sequence of characters. That's the official definition. But a token is basically any word that you have.
+
+155
+00:31:43.341 --> 00:31:48.300
+Viviana Márquez: It could be also like an emoji. An emoji is a token. So anything that is like
+
+156
+00:31:48.400 --> 00:32:03.720
+Viviana Márquez: like an unit. I would say, this is like the atoms of this universe. The atoms of an Lp are tokens. So those units. So a word, maybe an emoji. Yeah. So that's called a token.
+
+157
+00:32:04.120 --> 00:32:14.599
+Viviana Márquez: The next level would be document. So document is a collection of tokens. So imagine, for example, a Wikipedia article is a collection of tokens. You have a bunch of words in there.
+
+158
+00:32:15.390 --> 00:32:23.540
+Viviana Márquez: Then you have the corpus next level the Corpus. So a corpus is a collection of documents. So, for example, all Wikipedia articles.
+
+159
+00:32:23.920 --> 00:32:31.889
+Viviana Márquez: So this is a word that you might have heard already in the context of Chat Gpt, that people sometimes wonder what is the corpus of
+
+160
+00:32:32.318 --> 00:32:55.209
+Viviana Márquez: gpt chat gpt openai. What corpus did they use? We don't know for sure. We know that it was an enormous corpus that included probably encyclopedias, all of Internet, all of you books written by humans, everything, absolutely everything. But we don't know for sure what the corpus contains, because they haven't released that information. So
+
+161
+00:32:55.210 --> 00:33:04.609
+Viviana Márquez: you might have heard that word in that context. So Corpus is basically your training data, all the documents that are in your training data. And then embedding
+
+162
+00:33:04.840 --> 00:33:28.269
+Viviana Márquez: is the numerical representation of the text. And it's a, vector so you have your word, and then you express it as numbers. And that's called an embedding. So what I just did here, this is the embedding for Tishiniki. This is the embedding for strong, and so on. So that's an embedding. So it's just terminology. So we're speaking in the same language.
+
+163
+00:33:28.790 --> 00:33:31.840
+Viviana Márquez: And once you have a numerical, vector
+
+164
+00:33:32.040 --> 00:33:40.350
+Viviana Márquez: if your numerical vector was 2, let's say 2 3 you could plot. Let's say this is a word
+
+165
+00:33:40.600 --> 00:33:51.369
+Viviana Márquez: you could plot that word. So here is 2. Here is 3, and then here's that word, and let's say that word is, Bunny. I don't know something like that.
+
+166
+00:33:53.118 --> 00:33:57.239
+Viviana Márquez: So you can plot that in space.
+
+167
+00:33:57.430 --> 00:34:13.069
+Viviana Márquez: Of course it's going to be in higher dimensions. It's going to be hard to visualize unless you apply some Pca onto it, because you're not going to have a vector that is only 2. Even just the example that we did back here, which was a dummy sample.
+
+168
+00:34:13.110 --> 00:34:38.650
+Viviana Márquez: You already have 4 dimensions. You wouldn't be able to visualize this because you have 4 columns, and this was just a corpus of 4 small sentences. Now imagine how big is your corpus when you have all the Wikipedia articles, but you can plot that somewhere, and once you plot it, you can compute the distance just the same way that you can compute the distance between 2 points in your
+
+169
+00:34:38.699 --> 00:34:47.310
+Viviana Márquez: normal life. If you don't remember the formula you have. Let's say, this is point I'm calling
+
+170
+00:34:48.429 --> 00:34:50.919
+Viviana Márquez: M. And let's call this V.
+
+171
+00:34:51.139 --> 00:34:54.409
+Viviana Márquez: You have to compute the distance of
+
+172
+00:34:54.800 --> 00:34:59.400
+Viviana Márquez: M, and V, you have to compute the norm of M,
+
+173
+00:34:59.680 --> 00:35:11.670
+Viviana Márquez: minus B. And how do you? What is the norm? The norm is just basically the root squared of each one of the points in here. So m, 1 minus
+
+174
+00:35:12.300 --> 00:35:15.400
+Viviana Márquez: v, 1 squared plus
+
+175
+00:35:16.120 --> 00:35:24.160
+Viviana Márquez: m, 2 minus v, 2 squared plus and so on. By you don't have to do this math. You can just
+
+176
+00:35:24.340 --> 00:35:28.020
+Viviana Márquez: call a python library and get the distance between 2 vectors.
+
+177
+00:35:28.080 --> 00:35:51.230
+Viviana Márquez: And the really cool thing that basically made AI become a thing because I don't know. Maybe the people that are a little bit older here would know. But before, like 2013. Nobody was really talking about AI, even though AI existed since the sixties or fifties like, it's not something new, but it was kind of like
+
+178
+00:35:51.260 --> 00:35:59.950
+Viviana Márquez: in in a rut. It was, it was it was stuck. And then in 2013, these these people, Michaelov and his friends.
+
+179
+00:36:00.000 --> 00:36:07.040
+Viviana Márquez: published this paper, where they said, Hey, we can actually do this numerical vector representation of text.
+
+180
+00:36:07.250 --> 00:36:16.370
+Viviana Márquez: And we can do math on text. So you could say something like King minus man plus woman. What is it? It's queen.
+
+181
+00:36:16.640 --> 00:36:23.947
+Viviana Márquez: and it worked pretty nicely. You could also say something like, Let's say,
+
+182
+00:36:25.080 --> 00:36:36.150
+Viviana Márquez: France is to Paris as Italy is to, and then it would say, Rome, so you have these analogies, and which is pretty cool, pretty, powerful. That being said.
+
+183
+00:36:36.420 --> 00:36:59.312
+Viviana Márquez: the models are not smart. They're just modeling the world. They're modeling the experience they have been exposed to. They're modeling the data that they have as their corpus. So if you model this on what humans are speaking, humans, what do humans have? Humans have biases. So humans would
+
+184
+00:37:00.080 --> 00:37:24.699
+Viviana Márquez: have those biases. And these biases are going to go into the model. So, for example, one of the issues that rose from this is that you would say, stuff like doctor is no what men is to doctor, as woman is to. And instead of saying doctor, it would say, nurse or men is to computer programmer as woman is to
+
+185
+00:37:24.850 --> 00:37:45.629
+Viviana Márquez: housewife and stuff like that. So we had those human biases. It's not like the model is evil, and the model is like, ha! Ha! I'm going to be misogynistic. No, that's that's not the case. It's just modeling how we humans speak. And we humans have biases. So it's just modeling the real world. Same thing is not the fault of
+
+186
+00:37:45.630 --> 00:37:58.699
+Viviana Márquez: decoders. I don't think they're evil, and they're trying to be misogynistic or some type of bias in any way it just happens. But what is our responsibility as data professionals.
+
+187
+00:37:59.270 --> 00:38:07.969
+Viviana Márquez: Make sure that if we like, try to do some tests that the if there's any type of biases in there.
+
+188
+00:38:08.040 --> 00:38:16.299
+Viviana Márquez: and if we notice any of them. Try to fix them so nowadays. These models, if you ask stuff like that, like men, is to
+
+189
+00:38:16.300 --> 00:38:28.100
+Viviana Márquez: doctor as woman is to. And I would say, doctor, because we I mean, I say we. I haven't done that. But people that created these models have fixed those biases.
+
+190
+00:38:28.100 --> 00:38:52.960
+Viviana Márquez: A really cool book on that. If you want to read more about that is called weapons of mass destruction. So it talks about the impact that data and algorithms have on people. So, for example, if your model, you're working with a model to approve bank loans and your model is using zip code, you might think that that's an innocent feature. But Zip code could be. Work
+
+191
+00:38:52.960 --> 00:39:04.594
+Viviana Márquez: could be used as a proxy to talk about race or socioeconomical status, etcetera. So you're penalizing people for just living in a Zip code,
+
+192
+00:39:05.210 --> 00:39:13.919
+Viviana Márquez: and stuff like that. So this book is really good. If you want to learn more about AI and ethics I recommended. But anyways.
+
+193
+00:39:14.360 --> 00:39:25.479
+Viviana Márquez: so what is the evolution of an lp. Since the 19 fifties you had bag of words, which is what money told you guys in the previous office hours. So this is this is not a new field.
+
+194
+00:39:26.125 --> 00:39:31.799
+Viviana Márquez: Then later, came Tfidf, which is what we're going to cover in this module.
+
+195
+00:39:31.940 --> 00:39:36.249
+Viviana Márquez: then, in 2013 was war 2 back. Which is this.
+
+196
+00:39:36.390 --> 00:39:52.390
+Viviana Márquez: and that was the revolution of machine learning. And that's why data science became a thing. Data. Science now is a degree data. Science wasn't offered at universities back in the day. And now it's a thing. Now you have professional certificates. It was
+
+197
+00:39:52.390 --> 00:40:13.930
+Viviana Márquez: mainly because of this paper that just revolutionized things, and it got them unstuck. And now there's a lot of really cool developments in AI. And now, in recent years you have transformer models and transformer models are what gave us chat gpt. So now here, in this timeline of transformer models you have
+
+198
+00:40:13.940 --> 00:40:23.720
+Viviana Márquez: Gpt, you have, Bert, you have Roberta. You have so many of them like. And this slide is a little bit updated nowadays. There's many more.
+
+199
+00:40:23.740 --> 00:40:35.249
+Viviana Márquez: The one that chat Gpt uses is one of these Gpt models. Precisely by. There's many, many more, and as we're speaking, I'm sure there's many, many more being released.
+
+200
+00:40:36.029 --> 00:40:43.840
+Viviana Márquez: So that's if you have heard the term. Llms. Llms are large language models. These are models
+
+201
+00:40:44.030 --> 00:41:07.379
+Viviana Márquez: that are Nlp, our natural language processing, but they're Llms because they were trained on enormous amounts of data. They're they're trained so much data. That's why they're so good. And that's why they're called large. Because it's so much data, large language models. They could have been called enormous language models. But they're called large data.
+
+202
+00:41:08.780 --> 00:41:16.049
+Viviana Márquez: So one thing to keep in mind, this is just like for your cultural knowledge is that
+
+203
+00:41:16.440 --> 00:41:41.329
+Viviana Márquez: here you could do this in your personal computer. No problem like this takes seconds in a modern computer, this type of embeddings that use neural networks with work to back glove this use neural networks. This is just machine learning. This is neural networks already. This you could still do with your own computer. You could train it.
+
+204
+00:41:41.440 --> 00:41:44.839
+Viviana Márquez: It could probably take a few days, but you could train it.
+
+205
+00:41:44.950 --> 00:42:03.989
+Viviana Márquez: But now, in this era, in the modern day with large language models the normal person, you and me, where we can't train these models because it requires a lot of resources. So typically they're done by large organizations. So Openai Meta Microsoft.
+
+206
+00:42:04.050 --> 00:42:32.159
+Viviana Márquez: And they're using it's said, this is rumored because, of course, Openai hasn't released, how they actually train chatgpt because they don't want any other company copying their IP. But it's rumored that they used 25,000 Gpus for 100 days. 25,000 Gpus, that's so much
+
+207
+00:42:32.830 --> 00:42:36.749
+Viviana Márquez: lama, which is the one by Meta. It's
+
+208
+00:42:37.490 --> 00:42:52.060
+Viviana Márquez: rumor that it used 6,000 gpus for 12 days, so it wasn't as long, but like we don't have 6,000 gpus at home. No, nobody in this room would have that like. That's very expensive. It costs
+
+209
+00:42:52.290 --> 00:43:19.210
+Viviana Márquez: the Gpu itself would cost, like thousands of dollars, hundreds of thousands of dollars to have that many, but also the energy to have these machines on the electricity, the computing resources. This is just so expensive. It costs millions of dollars. So nowadays, when you work for a company, maybe if it's a small project, something very specific, you would do
+
+210
+00:43:19.210 --> 00:43:44.710
+Viviana Márquez: this you would do. This is still valid, but nowadays what you do is that you connect to a oops you connect to an Api Openai Api. And then you use that to deploy a model because there's no way that you could train these large language models. So that's more, a little bit of software engineering, but I wanted to brought it up to your attention, because that's something that is being done nowadays.
+
+211
+00:43:45.001 --> 00:43:55.489
+Viviana Márquez: Of course, it's outside of the scope of this program because we don't do software engineering this program. But I would look into tutorials on how to connect to the Openai Api, so you can have
+
+212
+00:43:55.500 --> 00:44:05.179
+Viviana Márquez: the knowledge from Chat Gpt, but not on the chat gpt app, but on your own apps. Something else that is being done
+
+213
+00:44:05.370 --> 00:44:24.140
+Viviana Márquez: nowadays is rag which is retrieval, augmented generation. So basically, you have your own data. For example, let's say a company, a makeup company has their own information about their makeup, their clients, etc.
+
+214
+00:44:24.280 --> 00:44:40.469
+Viviana Márquez: And they apply chat, Gpt, but specifically on the company data. So the model doesn't start hallucinate and inventing stuff. So that's rag and a lot of companies are applying that nowadays. That's also a little bit of
+
+215
+00:44:40.900 --> 00:44:58.060
+Viviana Márquez: like a bit like a little bit of software engineering. And AI. So I would look into this as well. If you want to be doing the top of the top things that are being done right now. Another alternative is to use the hugging face. Library.
+
+216
+00:44:58.419 --> 00:45:16.050
+Viviana Márquez: So here you can leverage those Llms without training them yourself. So this is a little bit outside of the scope of this module. We don't really cover this in this module, but since in the industry and I have friends in the industry, I wanted to like.
+
+217
+00:45:16.050 --> 00:45:24.879
+Viviana Márquez: let you know what's what's what's the deal. But the nice thing about learning about these basic models is that you understand Llms.
+
+218
+00:45:24.880 --> 00:45:48.439
+Viviana Márquez: because, for example, a lot of people have the misconception that something like Chat gpt is smart, is thinking it gets your question, it thinks, and it gives you an answer. And that's not really what is happening. Chat Gpt has been exposed to so much human information that it works kind of like when you're watching Netflix. And you know how you watch a show, and you watch the 1st season.
+
+219
+00:45:48.440 --> 00:45:55.546
+Viviana Márquez: and then the these the 1st season. The finale has a hen. Clifford has
+
+220
+00:45:56.230 --> 00:45:59.170
+Viviana Márquez: like a plot twist, and you don't know what's going to happen next.
+
+221
+00:45:59.490 --> 00:46:19.690
+Viviana Márquez: But because of your experience of having watched so many, Netflix shows you cannot make a prediction. I think this person is going to marry this person, or I think the next season is going to be filmed in a new city, whatever it is those suppositions that you're making are probably going to be right. And the reason why you're
+
+222
+00:46:19.690 --> 00:46:31.179
+Viviana Márquez: being able to make this suppositions is because you've been exposed to many different Netflix shows. So the same thing with Chatgpt Chatgpt has been exposed to so much data that if you ask it, how are you?
+
+223
+00:46:31.500 --> 00:46:54.829
+Viviana Márquez: It's going to know to say I'm good. How are you? Or it's going to say fine, and you or it's going to say I'm doing well, thanks for asking, because it's been exposed to humans saying this again and again, and that's part of the reason why, when you ask Chatgpt a question, and then you ask it again. It's going to give you the same meaning of the answer, but a different. It's not written exactly the same thing, because it's just doing a statistical
+
+224
+00:46:54.830 --> 00:47:06.599
+Viviana Márquez: guess of what is the answer supposed to be? And that's why it hallucinates. Because, if I ask it to say like, Oh, how much is 23 times 90
+
+225
+00:47:06.910 --> 00:47:25.449
+Viviana Márquez: it. It knows that when you ask humans, a number by a number is going to give you a number, and then it gives you a random number. So that's why it hallucinates, because it's not thinking it's just predicting what is the most likely sentence that will come out after that question given on how much data it has been exposed.
+
+226
+00:47:26.066 --> 00:47:31.330
+Viviana Márquez: Yeah. So that's the state of the art. But in this module we're gonna
+
+227
+00:47:31.480 --> 00:47:37.053
+Viviana Márquez: start with the building blocks to get there. Which is
+
+228
+00:47:37.700 --> 00:47:45.579
+Viviana Márquez: bag of words? And tf, tf, idf, so now I'm gonna jump on to the code.
+
+229
+00:47:45.700 --> 00:47:52.559
+Viviana Márquez: Where is the code. Oh, the code. Today, I have the code in my computer. I don't have it in
+
+230
+00:47:54.930 --> 00:48:04.919
+Viviana Márquez: in Google, Google. Let me make this bigger. I didn't have it in Google because I needed faster computing. So I don't have it in Google Collab.
+
+231
+00:48:05.310 --> 00:48:10.920
+Viviana Márquez: But let me see if I can send an attachment on in the chat.
+
+232
+00:48:11.580 --> 00:48:15.880
+Viviana Márquez: but if I can't, that's fine. This is going to get posted on canvas.
+
+233
+00:48:16.270 --> 00:48:21.020
+Viviana Márquez: I think I was able to to send it. So you have it for your reference.
+
+234
+00:48:22.730 --> 00:48:28.490
+Viviana Márquez: But also I sent you the wrong notebook. Let me send you write a notebook.
+
+235
+00:48:29.482 --> 00:48:31.050
+Viviana Márquez: It's this one.
+
+236
+00:48:34.750 --> 00:48:35.640
+Viviana Márquez: Okay.
+
+237
+00:48:37.336 --> 00:48:52.290
+Viviana Márquez: so let me before I go into code. Let me know if there's any questions about Nlp. This was just like a big introduction on the history of Nlp. Hopefully, it wasn't too boring. But just just so, you guys know.
+
+238
+00:48:54.440 --> 00:49:03.989
+Ravi Duvvuri: So, Viviana? The package? We use only one package here and and Ltk, or is a group of packages? How is that going to happen?
+
+239
+00:49:04.270 --> 00:49:26.939
+Viviana Márquez: So great question. There's several libraries for Nlp people use different libraries. I use nltk, because that's what the module is using. But there's also Spacey. There's several several of them. I'm blanking on the names right now, but there's several of them. So Nltk is. One of them is one the one that we're going to be using in this module.
+
+240
+00:49:26.960 --> 00:49:38.709
+Viviana Márquez: But there's several of them, and a lot of times. What you do is you try several libraries, and you see which one gives you the best results, the one that I wanted to recommend. Let me open up this link
+
+241
+00:49:38.930 --> 00:49:44.200
+Viviana Márquez: is hugging face, so hugging face is a startup
+
+242
+00:49:44.550 --> 00:50:01.850
+Viviana Márquez: that publishes open source models related to mainly Nlp, but it also has a few other things. So here there's several links on, so you can read the documentation because it's a little bit outside of the scope of this course. But I wanted you to have it.
+
+243
+00:50:02.328 --> 00:50:14.439
+Viviana Márquez: And here's a notebook on how to use that library? And it's super easy to use like, for example, here you have, you create this pipeline object, which is question answering.
+
+244
+00:50:14.440 --> 00:50:33.820
+Viviana Márquez: and the question is, Where do I work? And the context is, my name is Rivianna, and I teach at emeritus, and then it gives you the answer which is emeritus. So imagine if you put here a long text, and then you have questions. So so this is pretty cool, but this is like the cheat sheet because it's doing it for you, is doing everything for you here. We're doing things from scratch
+
+245
+00:50:36.090 --> 00:50:44.010
+Ravi Duvvuri: Okay and and follow up on that. Is, that package is as big as the Sk. Learn group of pack of
+
+246
+00:50:44.370 --> 00:50:48.770
+Viviana Márquez: Oh, that's a good question. I actually don't know.
+
+247
+00:50:49.020 --> 00:51:02.519
+Viviana Márquez: I have no idea. No idea. I would think second learn is bigger. No, no, I don't know. Maybe this one is bigger, because it has many words. I don't know. I don't know which one is bigger. Did it take a long time for you to install, or something like that.
+
+248
+00:51:02.520 --> 00:51:14.749
+Ravi Duvvuri: You know we are doing in sk, learn. We are going after individual packages and importing it because Skn itself is so big. So we are not doing import. Sk, learn. So similarly, I'm asking, do we need to go after
+
+249
+00:51:15.280 --> 00:51:22.969
+Ravi Duvvuri: Ntlkr and then import something else every time? Or is it like one is import.
+
+250
+00:51:23.100 --> 00:51:24.689
+Ravi Duvvuri: and Ltk is good enough for.
+
+251
+00:51:24.690 --> 00:51:39.730
+Viviana Márquez: So that's that's a really good practice in general to not call the whole library. But just call the packages that you need, like we do in Secondarn here? I didn't do it because I needed to download this stop words. You only need to do this once.
+
+252
+00:51:39.740 --> 00:52:01.239
+Viviana Márquez: and I just did it. I was being lazy. But yeah, I guess I could just remove this and only bring what I need. But in general, that's a good practice. You could just import everything if you want to use everything. But if you know that you're going to use something specifically is better practice to do this in general, not just for an Ltk.
+
+253
+00:52:05.030 --> 00:52:05.740
+Ravi Duvvuri: Thank you.
+
+254
+00:52:06.050 --> 00:52:06.680
+Viviana Márquez: Yep.
+
+255
+00:52:07.240 --> 00:52:26.099
+Viviana Márquez: alright. So what is the data set that we're going to be working with? So we're going to be working with this data set that comes from cycle learn is some news articles. And the data looks like this. It's not a nice table like we're used to. We're going to put it in a table just to make the transition easier. But it comes like this. It's just just text.
+
+256
+00:52:26.973 --> 00:52:34.456
+Viviana Márquez: So here you have the categories. So let's say you wanted to classify this text into the different categories.
+
+257
+00:52:35.160 --> 00:52:41.160
+Viviana Márquez: so some are politics, some are sport, etcetera.
+
+258
+00:52:41.370 --> 00:52:45.400
+Viviana Márquez: And here's a sample document of how it looks like
+
+259
+00:52:46.196 --> 00:52:49.849
+Viviana Márquez: and the category of this guy is auto
+
+260
+00:52:50.160 --> 00:53:04.480
+Viviana Márquez: autos. And then here I created a data frame just because we're used to the data frame. You don't have to do a data frame. This is just just so we can make this transition from unstructured to structure no, from structure to unstructured.
+
+261
+00:53:05.050 --> 00:53:09.560
+Viviana Márquez: So here I have the table, and that's it. So
+
+262
+00:53:10.000 --> 00:53:13.339
+Viviana Márquez: in modern day, when you're using word to back.
+
+263
+00:53:13.750 --> 00:53:37.480
+Viviana Márquez: I mean, this is the work. 2 back is not modern. It's like from 10 years ago. Modern day is birth. Gpt, you don't have to do any pre-processing for the words. In fact, you don't want to do any pre-processing. So you keep all the meaning, because, for example, it's not the same thing. Let me add something here. It's not the same thing to write.
+
+264
+00:53:38.120 --> 00:53:39.110
+Viviana Márquez: Hello!
+
+265
+00:53:39.310 --> 00:53:43.780
+Viviana Márquez: As, Hello! This
+
+266
+00:53:44.340 --> 00:54:03.689
+Viviana Márquez: you by just reading this, you know that this is just like a normal Hello! And this is like someone that is very excited and potentially screaming. So for modern day techniques, you're encouraged to not do any type of preprocessing. So keep that in mind. But for back of words. And tfidf.
+
+267
+00:54:03.750 --> 00:54:16.589
+Viviana Márquez: you usually have to do some pre-processing. So the modeling works better. So if you're going to use one of these 2 techniques, you do need to do the pre-processing. So what is the preprocessing?
+
+268
+00:54:16.700 --> 00:54:36.800
+Viviana Márquez: Making the text super plain as plain as possible, so lower casing everything, removing stop words. So stop. Words are words that happen often in the English language, and doesn't. They don't have a lot of meaning like the like, or that doesn't have that much meaning, or the
+
+269
+00:54:36.840 --> 00:54:57.810
+Viviana Márquez: like. THED, and all of that is stop words stemming limitization. So, for example, you could have running and run and run, and all of these mean the same thing. So just bring that word onto the root. So you have the collection of words that mean the same thing.
+
+270
+00:54:58.463 --> 00:55:06.590
+Viviana Márquez: and cleaning punctuation and numbers again. You only do this for these 2 techniques. If you're using modern techniques, you don't do that.
+
+271
+00:55:07.456 --> 00:55:10.949
+Viviana Márquez: So here I created a preprocessing function myself
+
+272
+00:55:11.130 --> 00:55:21.070
+Viviana Márquez: to lower the the text, make it lowercase, remove punctuation, tokenize, remove, stop words, and there you go. So
+
+273
+00:55:21.200 --> 00:55:23.299
+Viviana Márquez: a text that looked like this.
+
+274
+00:55:23.660 --> 00:55:29.149
+Viviana Márquez: Now it looks like this. So I remove the I was because it's stop words.
+
+275
+00:55:29.430 --> 00:55:41.269
+Viviana Márquez: And now you only have wondering anyone could enlighten, and so on. And it's lowercase. You don't have punctuation anymore. And so on.
+
+276
+00:55:41.400 --> 00:56:03.520
+Viviana Márquez: So we have this so cool, we have cleaned and pre-processed or text. But it's still not numeric. So we need to make it into vectors. So how do we do that? There's several methods, old school methods, but that you have to learn. So you build up from there one hot encoding bag of words. Tfidf!
+
+277
+00:56:03.740 --> 00:56:21.709
+Viviana Márquez: A little bit more modern, but not so much. They're like 10 years old. You have word embeddings like word to beck, glove fast text. And nowadays what people use transformer based embeddings, Bert and Gpt. So let's go with the old school methods. The 1st one
+
+278
+00:56:22.040 --> 00:56:35.120
+Viviana Márquez: is one hard encoding. So basically the same thing that you used to do with categories, you would do here. So you map each word in the vocabulary. So the words present in your corpus
+
+279
+00:56:35.130 --> 00:56:53.580
+Viviana Márquez: to an unique identification advantages is easy to understand, pretty straightforward to implement. But the disadvantage is that it generates a matrix that is super sparse. So it has a bunch of zeros everywhere, and that's not great, because it's going to consume a lot of space in your memory.
+
+280
+00:56:53.580 --> 00:57:05.949
+Viviana Márquez: and each phrase doesn't have a constant size. There's no notion of solving library between words. And if you have on your test data. Set a word that was not
+
+281
+00:57:06.000 --> 00:57:11.049
+Viviana Márquez: in your corpus. It's gonna fail. So not not super great.
+
+282
+00:57:11.130 --> 00:57:17.379
+Viviana Márquez: So if your corpus was composed of these 2 sentences. I like cats, and I like dogs.
+
+283
+00:57:17.580 --> 00:57:24.639
+Viviana Márquez: This is how the one HUD encoding would look like for each one of the words.
+
+284
+00:57:24.990 --> 00:57:28.879
+Viviana Márquez: So basically, if this is your data set.
+
+285
+00:57:29.280 --> 00:57:34.710
+Viviana Márquez: and you had here. I like cats, and here you had I like dogs.
+
+286
+00:57:35.610 --> 00:57:44.929
+Viviana Márquez: Your embedding would be for this 1st sentence would be this comma, this
+
+287
+00:57:46.750 --> 00:57:53.950
+Viviana Márquez: comma, this, and then, for I like dogs, will be this. Oh, let me pick a different color, this
+
+288
+00:57:54.860 --> 00:57:59.400
+Viviana Márquez: comma like this comma, this.
+
+289
+00:57:59.590 --> 00:58:07.499
+Viviana Márquez: So it's like 3 vectors, because there's 3 words on each one of the sentences. So this is this is not practical.
+
+290
+00:58:08.040 --> 00:58:16.920
+Viviana Márquez: So that's why this one sometimes is not even mentioned, but that's that's the thing you could do, and you already know how to do one hot encoding. So you could do that. But.
+
+291
+00:58:17.651 --> 00:58:23.460
+Viviana Márquez: you could do bag of words. Bag of words makes more sense. So it represents the text
+
+292
+00:58:23.600 --> 00:58:33.240
+Viviana Márquez: as a bag of words. That means that if 2 pieces of text has have almost the same words, they belong to the same bag.
+
+293
+00:58:33.810 --> 00:58:42.440
+Viviana Márquez: Advantage is also intuitive and easy to understand. The implementation is straightforward. The vector of each phrase has a constant size.
+
+294
+00:58:42.876 --> 00:58:52.640
+Viviana Márquez: Oh, because here you have the issue, that if, for example, you said, I like, that's cats
+
+295
+00:58:53.110 --> 00:59:04.419
+Viviana Márquez: here, this will have length 4, so we will have this 1, 2, and this 1 2 times, and then, if you have, I like cats, it will be only 3.
+
+296
+00:59:04.690 --> 00:59:12.379
+Viviana Márquez: So it has. The vector is not always the same length which is not ideal for modeling. Where here is the same length.
+
+297
+00:59:13.104 --> 00:59:28.829
+Viviana Márquez: Also, you have the issue that it generates a sparse matrix full of zeros. So it occupies a lot of memory, and it still has the problem of out of vocabulary. So like, if you have data on your training data, set.
+
+298
+00:59:29.363 --> 00:59:44.109
+Viviana Márquez: on your test data set, that is not on your training data set is going to fail. And but in our dummy example this is how it would be. So you have. I like cats and dogs, so you have all your words here at the top.
+
+299
+00:59:44.340 --> 00:59:57.449
+Viviana Márquez: and then you just turn on that switch like if it was a switch for the words. So the 1st sentence is, I like cats. So you have 1 1 and one in here sentence 2 has. I like dogs?
+
+300
+00:59:57.980 --> 01:00:01.230
+Viviana Márquez: So that's why it has a 0 here, because it has no cats
+
+301
+01:00:02.070 --> 01:00:09.649
+Viviana Márquez: so super intuitive. And this is how it looks like from a coding perspective. Here I put the code for you.
+
+302
+01:00:10.030 --> 01:00:12.880
+Viviana Márquez: If you wanted to visualize it. This is how it looks like.
+
+303
+01:00:13.090 --> 01:00:16.560
+Viviana Márquez: So you hear you have the encoding like this.
+
+304
+01:00:16.710 --> 01:00:21.070
+Viviana Márquez: So now you can predict the category using these numbers here.
+
+305
+01:00:21.250 --> 01:00:31.399
+Viviana Márquez: and you solve the problem. So now you have it in a position where you can model. So here I created a stupid logistic regression model. So you would see how it works.
+
+306
+01:00:31.400 --> 01:00:53.170
+Viviana Márquez: But of course, here everything that you have learned so far it applies. So if you need to do train, test, split, if you need to do, Eva, if you need to do performance metrics, everything still applies here. I just wanted to show you here. What would you put in as an X and as a Y. But you should do everything. I just didn't want to write all that code.
+
+307
+01:00:53.210 --> 01:01:01.949
+Viviana Márquez: but everything still applies. The only thing that changed is how we were able to transform this text into a numerical form.
+
+308
+01:01:02.060 --> 01:01:12.650
+Viviana Márquez: I also just noticed that I'm like 3 min over time. So if you need to drop, feel free to drop. This is being recorded. But let me real quick talk about Tfidf.
+
+309
+01:01:13.946 --> 01:01:29.509
+Viviana Márquez: So we know that this is not super great, because it's very sparse. It has zeros, and you lose meaning as well. So tfidf addresses that problem so tfidf I when
+
+310
+01:01:29.770 --> 01:01:56.689
+Viviana Márquez: the last time I interviewed for jobs was in late 2022, and they were still asking me like, Oh, what is the Tfidf formula? What is tfidf now? I haven't. I just have my own company, so I haven't interviewed for jobs in a while. I don't know if they're still asking for the formula. I'd be surprised, because nowadays people don't use tfidf, but I yeah, just wanted to let you know that sometimes that could be an interview question.
+
+311
+01:01:57.750 --> 01:02:06.200
+Viviana Márquez: So Tfidf is basically leveraging the fact that some words are unique
+
+312
+01:02:06.430 --> 01:02:19.150
+Viviana Márquez: to some text, and that would allow you to distinguish it. So, for example, let's say you have medical articles and law articles, so the medical articles are going to use medical words.
+
+313
+01:02:19.250 --> 01:02:27.420
+Viviana Márquez: So these medical words are not going to be super common among the whole Corpus, because you have different topics in the Corpus.
+
+314
+01:02:27.490 --> 01:02:52.063
+Viviana Márquez: but they're relevant to the medical ones. So you want to bring some importance to those words. Where, on the other hand, you have some other words, that if they happen everywhere in the Corpus, they're not going to allow you to distinguish between documents like d. 4, it happens in every document. So if you see the word for it could be any document. But if you see the word
+
+315
+01:02:53.230 --> 01:02:59.800
+Viviana Márquez: heartbeat, then that's probably going to be a medical document. So that's the formula.
+
+316
+01:03:02.480 --> 01:03:12.830
+Viviana Márquez: I put an example here on how do? How do you apply it? So you do? Tf, the tf, then you do the idf.
+
+317
+01:03:13.220 --> 01:03:20.649
+Viviana Márquez: and once you have the tf, and the idf, you multiply them together and you get the values. So I did here this model example.
+
+318
+01:03:20.870 --> 01:03:26.119
+Viviana Márquez: We ran out of time, so I won't go through each one of the examples, but you can go through it at home.
+
+319
+01:03:26.250 --> 01:03:29.319
+Viviana Márquez: and then from a coding perspective, it looks like this.
+
+320
+01:03:30.250 --> 01:03:31.030
+Viviana Márquez: So
+
+321
+01:03:31.150 --> 01:03:40.480
+Viviana Márquez: then you end up with this matrix that is also very sparse. But now you're capturing a little bit of meaning in there
+
+322
+01:03:40.590 --> 01:04:06.219
+Viviana Márquez: and then. Once you have it in a numerical format, you do the modeling. So, for example, what would be a cool thing to test here. You could do this classification model for these articles, using one hot encoding back of words and tfidf and see which one gives you the best result, computing performance metrics. And you see which one gives you the best result. I would think it's going to be tfidf.
+
+323
+01:04:06.400 --> 01:04:17.390
+Viviana Márquez: That being said. Nowadays people use represent these numerical representations. Instead of using this, they would use Bert or Gpt, they wouldn't use tfidf
+
+324
+01:04:18.080 --> 01:04:41.139
+Viviana Márquez: tfidf back in the day. That's what Google used to use to retrieve information to match. What article was the most relevant to the search that you put nowadays. I would imagine that they don't use tfidf anymore, but it was widely used for for a long while.
+
+325
+01:04:41.958 --> 01:04:51.029
+Viviana Márquez: So we are over time. I'm going to check if there's questions in the chat also feel free to unmute yourself. If you have any questions.
+
+326
+01:04:53.150 --> 01:05:10.460
+Zhujun Wang: Oh, I have a question, for the token of Nrp is referring the same meaning as token for the Gpt, because we also say the token in each prompt that token means the same meaning, the token as nlp, or it's different.
+
+327
+01:05:10.460 --> 01:05:35.520
+Viviana Márquez: Yeah, because Gpt is one of the embeddings that exist in nlp, so so the word token is the same everywhere in the umbrella of Nlp, which means just a collection of characters. A word is the easiest way to describe it, but you could also have tokens that are an emoji. That's also a token. So anything that is separated by a space, I would say it's a token.
+
+328
+01:05:36.720 --> 01:05:57.360
+Zhujun Wang: Gotcha. And and another question is, you say nowadays using a bird or Gpt, were you referring the? For example, if you're using Chat Gp, they have a embedding endpoint. That's like I input any like a text. And he gonna come back with a better. That's the Gpt embedding
+
+329
+01:05:57.920 --> 01:06:00.170
+Zhujun Wang: as you. What do you mean here? Right.
+
+330
+01:06:00.170 --> 01:06:06.189
+Viviana Márquez: Yeah. So for example, after Tfidf, the next thing you would learn is word to beck
+
+331
+01:06:06.290 --> 01:06:31.090
+Viviana Márquez: and basically word to back would also give you an embedding like this. It's just that the numbers are better to reflect reality. The numbers are conveying reality a little bit better, because it's using neural networks. So with a birth embedding the numbers are even better. So you have multiple options. You can use the embedding itself like the birth embedding or the Gpt embedding you can use hugging face for that
+
+332
+01:06:31.150 --> 01:06:52.509
+Viviana Márquez: or a lot of times nowadays. What happens with, for example, with Gpt? You don't even do the embedding anymore. You just connect to the Openai Api, and you ask the question in natural language. So yeah, depends how you're thinking to develop your application.
+
+333
+01:06:53.530 --> 01:06:54.950
+Zhujun Wang: Okay. Gotcha.
+
+334
+01:06:57.000 --> 01:06:59.390
+Viviana Márquez: Great questions. I like those questions.
+
+335
+01:07:03.350 --> 01:07:11.819
+Viviana Márquez: Alright. So if there's no more questions, I'll call it a day. I know that was a lot of content. Oh, yeah, go for it.
+
+336
+01:07:12.447 --> 01:07:18.590
+Ankit Phophalia: Sorry I mean, if you don't mind. Can you stay for like a couple of minutes after the call.
+
+337
+01:07:20.000 --> 01:07:25.180
+Viviana Márquez: I can only stay for like, literally 2 min. But yeah.
+
+338
+01:07:25.180 --> 01:07:26.770
+Ankit Phophalia: Sure that should be fine.
+
+339
+01:07:26.770 --> 01:07:27.970
+Viviana Márquez: Yeah, go for it.
+
+340
+01:07:30.310 --> 01:07:34.770
+Viviana Márquez: Alright, everybody. So thank you so much for joining. I'm just gonna stay here for
+
+341
+01:07:34.880 --> 01:07:37.589
+Viviana Márquez: quite literally 2 min to talk to andkit.
+
+342
+01:07:37.840 --> 01:07:38.250
+Ankit Phophalia: Yeah.
+
+343
+01:07:38.658 --> 01:08:06.460
+Zhujun Wang: I just a quick, last quick question. So I will drop off. So so regarding the example, the 2, vector you draw the line between the like distance between Korean and King, probably the similar distance between the man and woman. So from the model perspective do they store those distance. Or actually, it's like, when you try to predict, is wrong time. Calculate the distance.
+
+344
+01:08:06.740 --> 01:08:09.499
+Zhujun Wang: Do they have a you see what I mean?
+
+345
+01:08:10.990 --> 01:08:14.139
+Viviana Márquez: I'm not sure I understood the question.
+
+346
+01:08:14.300 --> 01:08:34.284
+Zhujun Wang: Oh, my question is like, you apply the embed embedding algorithm. You change to this like a vector, even, no matter. It's a sparse or non sparse. But remember going up you also in some slice you drop the diagram. We can. You drop the distance between
+
+347
+01:08:35.290 --> 01:08:39.799
+Zhujun Wang: the distance between like man and woman, or king or queen.
+
+348
+01:08:40.240 --> 01:08:44.240
+Zhujun Wang: I just wondering for this model when they
+
+349
+01:08:44.470 --> 01:08:50.470
+Zhujun Wang: when you train those models. They also also precalculate the distance.
+
+350
+01:08:50.930 --> 01:09:07.729
+Zhujun Wang: or it's a wrong time calculate otherwise. Otherwise, for example, if you input is like a king or queen, and it's a training data. And and the test data is. If you give the man maybe he can output as a woman. So
+
+351
+01:09:07.770 --> 01:09:26.840
+Zhujun Wang: I just wondering it's like how it's a wrong time, applied the distance. That's why he find the, for example, men adding those distance you get a woman's vector. Or something, or it's a, or it's like a pre pre calculate the distance already saving some some place in the model. That's why they can quickly predict.
+
+352
+01:09:26.840 --> 01:09:30.919
+Viviana Márquez: I think I missed a little bit of your question because my Internet went down.
+
+353
+01:09:30.920 --> 01:09:31.670
+Zhujun Wang: Oh, okay.
+
+354
+01:09:31.670 --> 01:09:45.099
+Viviana Márquez: No worries. I think I got the question. So the the embeddings that you're going to get, regardless of the model are going to look like this. And this is just a vector so you can compute the distance between any vectors. And
+
+355
+01:09:45.340 --> 01:10:02.839
+Viviana Márquez: you can apply any distance related thing to this. It will be a matter of how do you interpret this? For example, you could add 2 vectors. But what does that mean? But yeah, you can apply any distance, related things to any embedding.
+
+356
+01:10:03.780 --> 01:10:05.410
+Zhujun Wang: Okay. Okay.
+
+357
+01:10:05.550 --> 01:10:06.676
+Zhujun Wang: Cool. Thanks.
+
+358
+01:10:07.240 --> 01:10:08.949
+Viviana Márquez: Yeah, of course. Thank you for your questions.
+
+359
+01:10:08.970 --> 01:10:10.650
+Zhujun Wang: Hi! Thank you. Bye.
+
+360
+01:10:10.650 --> 01:10:11.599
+Viviana Márquez: Thank you. Bye.
+
+361
+01:10:13.750 --> 01:10:24.259
+Ankit Phophalia: Hey? Viviana. Sorry? Well, thank you so much for for staying back. Hey? So actually, what happens that you are my cohorts? Learning facility.
+
+362
+01:10:24.260 --> 01:10:31.140
+Viviana Márquez: Yeah, I remember you from the messages right that you were trying to meet because you were sick, and so.
+
+363
+01:10:31.140 --> 01:10:59.070
+Ankit Phophalia: Yeah, yeah, so yeah, so I mean, I just wanted to check like, if you get the context. So me, my entire family got extremely sick during that time. And I've been trying to. So so what happens is, I didn't get a chance to to meet with you, and as we are progressing like, I'm at a state that I do not have a final draft ready, because, you know, I didn't get a chance to discuss the problem with you. And even, you know the data services and things like that. So I mean.
+

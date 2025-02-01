@@ -1,0 +1,160 @@
+---
+description: Cursor to Notion Markdown Compatibility Rules
+globs: 
+---
+# Cursor to Notion Markdown Compatibility Rules
+
+## Basic Text Formatting
+
+1. Headers:
+   - Use ATX-style headers (`#`) instead of Setext-style (`===` or `---`)
+   - Always include a space after the `#` symbols
+   - Leave one blank line before and after headers
+   ```markdown
+   # Header 1
+   
+   ## Header 2
+   ```
+
+2. Emphasis:
+   - Use asterisks (`*`) consistently instead of underscores (`_`)
+   - Single asterisk for italics: `*italic*`
+   - Double asterisk for bold: `**bold**`
+   - Triple asterisk for bold-italic: `***bold-italic***`
+
+3. Lists:
+   - Use hyphens (`-`) for unordered lists instead of asterisks or plus signs
+   - Use proper indentation (2 spaces) for nested lists
+   - Include a blank line before and after lists
+   ```markdown
+   - First level
+     - Second level
+     - Another second
+   - Back to first
+   ```
+
+## Code Blocks
+
+1. Fenced Code Blocks:
+   - Use triple backticks (```) instead of indentation
+   - Always specify the language after the opening backticks
+   - Include a blank line before and after code blocks
+   ```markdown
+   ```python
+   def example():
+       return True
+   ```
+   ```
+
+2. Inline Code:
+   - Use single backticks (`)
+   - Don't use spaces between the backticks and the code
+   - Example: `code`
+
+## Links and Images
+
+1. Links:
+   - Use reference-style links for better readability
+   - Keep references at the bottom of the document
+   ```markdown
+   [Link text][reference]
+   
+   [reference]: https://example.com
+   ```
+
+2. Images:
+   - Use the exclamation mark syntax
+   - Include alt text in brackets
+   - Store images in a consistent location relative to the markdown file
+   ```markdown
+   ![Alt text](./images/example.png)
+   ```
+
+## Tables
+
+1. Structure:
+   - Use standard pipe syntax
+   - Include header row separation
+   - Align columns using colons in the separator row
+   ```markdown
+   | Header 1 | Header 2 | Header 3 |
+   |:---------|:--------:|---------:|
+   | Left     | Center   | Right    |
+   ```
+
+## Special Considerations
+
+1. Math Equations:
+   - Use double dollar signs for block equations
+   - Use single dollar signs for inline equations
+   - Leave spaces around inline equation markers
+   ```markdown
+   This is an inline equation $ E = mc^2 $
+   
+   $$ 
+   \frac{d}{dx}(x^n) = nx^{n-1}
+   $$
+   ```
+
+2. Checkboxes:
+   - Use standard GitHub-style syntax
+   - Include a space after the brackets
+   ```markdown
+   - [ ] Unchecked task
+   - [x] Checked task
+   ```
+
+3. Line Breaks:
+   - Use two spaces at the end of lines for soft breaks
+   - Use blank lines for paragraph breaks
+   - Avoid using backslash line breaks
+
+## Document Structure
+
+1. Frontmatter:
+   - Include YAML frontmatter at the start of documents
+   - Use triple dashes to denote frontmatter section
+   ```markdown
+   ---
+   title: Document Title
+   date: 2025-02-01
+   tags: [tag1, tag2]
+   ---
+   ```
+
+2. Table of Contents:
+   - Use heading-based navigation
+   - Include a TOC after frontmatter if document is long
+   - Use consistent heading levels (no skipping levels)
+
+## Best Practices
+
+1. File Organization:
+   - Use lowercase names with hyphens for files
+   - Maintain a consistent folder structure
+   - Keep related images in an `images/` subdirectory
+
+2. Formatting:
+   - Limit line length to 80 characters
+   - Use consistent indentation (2 spaces)
+   - Include a single blank line at the end of files
+
+3. Special Characters:
+   - Escape special characters with backslash
+   - Use HTML entities for symbols when needed
+   - Be consistent with quote styles (straight quotes preferred)
+
+## Common Issues to Avoid
+
+1. Don't use:
+   - HTML tags (except when absolutely necessary)
+   - Complex nested structures
+   - Inline styles
+   - Custom CSS
+   - JavaScript
+
+2. Be careful with:
+   - Nested blockquotes (limit to one level)
+   - Table complexity (keep simple)
+   - Image paths (use relative paths)
+   - Special characters in headers
