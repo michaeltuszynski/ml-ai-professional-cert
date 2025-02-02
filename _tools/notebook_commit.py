@@ -239,49 +239,47 @@ def add_or_update_page_content(notion: Client, page_id: str, notebook_path: str,
     for block in blocks:
         notion.blocks.delete(block_id=block["id"])
 
+    # Prepare blocks to add
+    content_blocks = []
+
     # Extract and add notebook summary if available
     summary = extract_notebook_summary(notebook_path)
     if summary:
-        notion.blocks.children.append(
-            block_id=page_id,
-            children=[
-                {
-                    "type": "heading_2",
-                    "heading_2": {
-                        "rich_text": [{
-                            "type": "text",
-                            "text": {"content": "Notebook Summary"}
-                        }]
-                    }
-                },
-                *convert_markdown_to_blocks(summary)
-            ]
-        )
-
-    # Add divider before bookmarks
-    notion.blocks.children.append(
-        block_id=page_id,
-        children=[
+        content_blocks.extend([
             {
-                "type": "divider",
-                "divider": {}
+                "type": "heading_2",
+                "heading_2": {
+                    "rich_text": [{
+                        "type": "text",
+                        "text": {"content": "Notebook Summary"}
+                    }]
+                }
             }
-        ]
-    )
+        ])
+        content_blocks.extend(convert_markdown_to_blocks(summary))
+
+    # Add divider
+    content_blocks.append({
+        "type": "divider",
+        "divider": {}
+    })
 
     # Add bookmarks
+    content_blocks.extend([
+        {
+            "type": "bookmark",
+            "bookmark": {"url": github_url}
+        },
+        {
+            "type": "bookmark",
+            "bookmark": {"url": colab_url}
+        }
+    ])
+
+    # Add all blocks at once
     notion.blocks.children.append(
         block_id=page_id,
-        children=[
-            {
-                "type": "bookmark",
-                "bookmark": {"url": github_url}
-            },
-            {
-                "type": "bookmark",
-                "bookmark": {"url": colab_url}
-            }
-        ]
+        children=content_blocks
     )
 
 def sync_notebook_to_notion(notebook_path: str, github_url: str, colab_url: str) -> None:

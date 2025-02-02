@@ -100,34 +100,88 @@ def find_module_notes_structure(notion: Client, module_number: str) -> None:
     """Find and print the structure of a module's Notes page"""
     # Find the module page
     response = notion.search(
-        query=f"Module {module_number}",
+        query=f"Module {module_number}: Recommendation Systems",
         filter={"property": "object", "value": "page"}
     ).get("results", [])
 
+    print(f"\nSearching for Module {module_number}...")
     module_id = None
     for page in response:
         if page["object"] == "page":
             title = page["properties"]["title"]["title"][0]["text"]["content"]
-            if f"Module {module_number}" in title:
+            print(f"Found page: {title}")
+            if f"Module {module_number}: Recommendation Systems" == title:
                 module_id = page["id"]
+                print(f"Selected as module page (ID: {module_id})")
                 break
 
     if not module_id:
-        print(f"Could not find Module {module_number}")
+        print(f"Could not find main Module {module_number} page")
+        print("Creating Module 19 page...")
+        module_id = notion.pages.create(
+            parent={"type": "page_id", "page_id": "2f7f4bed-9f8a-4725-b486-afead86f9d64"},  # Root page ID
+            properties={
+                "title": {
+                    "title": [
+                        {
+                            "text": {
+                                "content": f"Module {module_number}: Recommendation Systems"
+                            }
+                        }
+                    ]
+                }
+            }
+        )["id"]
+        print(f"Created Module {module_number} page (ID: {module_id})")
+
+        print("Creating Notes page...")
+        notes_id = notion.pages.create(
+            parent={"type": "page_id", "page_id": module_id},
+            properties={
+                "title": {
+                    "title": [
+                        {
+                            "text": {
+                                "content": "Notes"
+                            }
+                        }
+                    ]
+                }
+            }
+        )["id"]
+        print(f"Created Notes page (ID: {notes_id})")
         return
 
     # Find Notes page
+    print("\nLooking for Notes page...")
     children = notion.blocks.children.list(module_id).get("results", [])
     notes_id = None
     for child in children:
         if child["type"] == "child_page":
             title = child.get("child_page", {}).get("title", "")
+            print(f"Found child page: {title}")
             if title == "Notes":
                 notes_id = child["id"]
+                print(f"Selected as Notes page (ID: {notes_id})")
                 break
 
     if not notes_id:
-        print("Could not find Notes page")
+        print("Notes page not found, creating it...")
+        notes_id = notion.pages.create(
+            parent={"type": "page_id", "page_id": module_id},
+            properties={
+                "title": {
+                    "title": [
+                        {
+                            "text": {
+                                "content": "Notes"
+                            }
+                        }
+                    ]
+                }
+            }
+        )["id"]
+        print(f"Created Notes page (ID: {notes_id})")
         return
 
     # Print Notes page structure

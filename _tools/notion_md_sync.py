@@ -1,11 +1,12 @@
 import os
+import sys
+import re
 from notion_client import Client
 from dotenv import load_dotenv
 import json
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 from pathlib import Path
 import markdown
-import re
 import argparse
 
 def setup_notion_client() -> Client:
@@ -20,25 +21,51 @@ def setup_notion_client() -> Client:
 
     return Client(auth=token)
 
-def find_module_19_page(notion: Client) -> Optional[str]:
-    """Find the Module 19 page ID"""
+def extract_module_info(file_path: str) -> Tuple[str, str]:
+    """Extract module number and title from file path.
+    Returns tuple of (module_number, module_title)
+    """
+    # Extract module number from path (e.g., module19/ -> 19)
+    match = re.match(r'module(\d+)/', file_path)
+    if not match:
+        raise ValueError(f"Invalid module path format: {file_path}")
+
+    module_number = match.group(1)
+
+    # For now, use a mapping for module titles
+    # This could be enhanced to read from a config file
+    MODULE_TITLES = {
+        "19": "Recommendation Systems",
+        # Add more modules as needed
+    }
+
+    module_title = MODULE_TITLES.get(module_number)
+    if not module_title:
+        # If no specific title found, use a generic one
+        module_title = f"Module {module_number}"
+
+    return module_number, module_title
+
+def find_module_page(notion: Client, module_number: str, module_title: str) -> Optional[str]:
+    """Find the module page ID"""
+    full_title = f"Module {module_number}: {module_title}"
     response = notion.search(
-        query="Module 19: Recommendation Systems",
+        query=full_title,
         filter={"property": "object", "value": "page"}
     ).get("results", [])
 
     for page in response:
         if page["object"] == "page":
             title = page["properties"]["title"]["title"][0]["text"]["content"]
-            if "Module 19" in title:
+            if title == full_title:  # Exact match
                 return page["id"]
 
     return None
 
-def find_notes_page(notion: Client, module_19_id: str) -> Optional[str]:
-    """Find the Notes page under Module 19"""
-    # Get all child pages of Module 19
-    children = notion.blocks.children.list(module_19_id).get("results", [])
+def find_notes_page(notion: Client, module_id: str) -> Optional[str]:
+    """Find the Notes page under a module"""
+    # Get all child pages of the module
+    children = notion.blocks.children.list(module_id).get("results", [])
 
     for child in children:
         if child["type"] == "child_page":
@@ -73,10 +100,10 @@ def extract_first_h1_header(content: str) -> Optional[str]:
 def convert_markdown_to_blocks(content: str) -> List[Dict[str, Any]]:
     """Convert markdown content to Notion blocks"""
     blocks = []
+    current_paragraph = []
 
     # Split content into lines
     lines = content.split('\n')
-    current_paragraph = []
 
     for line in lines:
         # Handle headers
@@ -135,6 +162,43 @@ def convert_markdown_to_blocks(content: str) -> List[Dict[str, Any]]:
 
     return blocks
 
+def create_module_page(notion: Client, module_number: str, module_title: str) -> str:
+    """Create a new module page"""
+    full_title = f"Module {module_number}: {module_title}"
+    new_page = notion.pages.create(
+        parent={"type": "page_id", "page_id": "2f7f4bed-9f8a-4725-b486-afead86f9d64"},  # Root page ID
+        properties={
+            "title": {
+                "title": [
+                    {
+                        "text": {
+                            "content": full_title
+                        }
+                    }
+                ]
+            }
+        }
+    )
+    return new_page["id"]
+
+def create_notes_page(notion: Client, module_id: str) -> str:
+    """Create a Notes page under a module"""
+    new_page = notion.pages.create(
+        parent={"type": "page_id", "page_id": module_id},
+        properties={
+            "title": {
+                "title": [
+                    {
+                        "text": {
+                            "content": "Notes"
+                        }
+                    }
+                ]
+            }
+        }
+    )
+    return new_page["id"]
+
 def create_notion_page(notion: Client, parent_id: str, title: str, content: str) -> str:
     """Create a new page in Notion under the specified parent"""
     # Create the page
@@ -188,19 +252,24 @@ def update_notion_page(notion: Client, page_id: str, title: str, content: str) -
     return page_id
 
 def sync_markdown_to_notion(file_path: str, force_new: bool = False) -> None:
-    """Sync a markdown file to Notion under Module 19's Notes page"""
+    """Sync a markdown file to Notion under a module's Notes page"""
     # Setup client
     notion = setup_notion_client()
 
-    # Find Module 19 page
-    module_19_id = find_module_19_page(notion)
-    if not module_19_id:
-        raise ValueError("Could not find Module 19 page in Notion")
+    # Extract module information from file path
+    module_number, module_title = extract_module_info(file_path)
 
-    # Find Notes page
-    notes_page_id = find_notes_page(notion, module_19_id)
+    # Find or create module page
+    module_id = find_module_page(notion, module_number, module_title)
+    if not module_id:
+        print(f"Creating Module {module_number} page...")
+        module_id = create_module_page(notion, module_number, module_title)
+
+    # Find or create Notes page
+    notes_page_id = find_notes_page(notion, module_id)
     if not notes_page_id:
-        raise ValueError("Could not find Notes page under Module 19")
+        print("Creating Notes page...")
+        notes_page_id = create_notes_page(notion, module_id)
 
     # Read the markdown file
     file_path = Path(file_path)
@@ -240,8 +309,9 @@ def main():
     parser.add_argument('--new', action='store_true', help='Force creation of a new page even if one exists')
     args = parser.parse_args()
 
-    if not args.file_path.startswith('module19/'):
-        print("Error: Can only sync files from the module19 directory")
+    # Validate file path is in a module directory
+    if not re.match(r'^module\d+/', args.file_path):
+        print("Error: File path must be in a module directory (e.g., module19/)")
         sys.exit(1)
 
     try:
