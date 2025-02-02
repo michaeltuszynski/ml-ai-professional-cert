@@ -75,14 +75,17 @@ def extract_module_number(notebook_path: str) -> Optional[str]:
 
 def find_module_page(notion: Client, module_number: str) -> Optional[str]:
     """Find the module page ID"""
+    print(f"Searching for 'Module {module_number}'...")
     response = notion.search(
         query=f"Module {module_number}",
         filter={"property": "object", "value": "page"}
     ).get("results", [])
 
+    print(f"Found {len(response)} potential matches")
     for page in response:
         if page["object"] == "page":
             title = page["properties"]["title"]["title"][0]["text"]["content"]
+            print(f"Checking page with title: {title}")
             if f"Module {module_number}" in title:
                 return page["id"]
 
@@ -239,44 +242,47 @@ def add_or_update_page_content(notion: Client, page_id: str, notebook_path: str,
     for block in blocks:
         notion.blocks.delete(block_id=block["id"])
 
-    # Prepare blocks to add
+    # Extract notebook summary
+    summary = extract_notebook_summary(notebook_path)
     content_blocks = []
 
-    # Extract and add notebook summary if available
-    summary = extract_notebook_summary(notebook_path)
+    # Add summary if available
     if summary:
-        content_blocks.extend([
-            {
-                "type": "heading_2",
-                "heading_2": {
-                    "rich_text": [{
-                        "type": "text",
-                        "text": {"content": "Notebook Summary"}
-                    }]
-                }
-            }
-        ])
         content_blocks.extend(convert_markdown_to_blocks(summary))
-
-    # Add divider
-    content_blocks.append({
-        "type": "divider",
-        "divider": {}
-    })
 
     # Add bookmarks
     content_blocks.extend([
         {
             "type": "bookmark",
-            "bookmark": {"url": github_url}
+            "bookmark": {
+                "url": github_url,
+                "caption": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "View on GitHub"
+                        }
+                    }
+                ]
+            }
         },
         {
             "type": "bookmark",
-            "bookmark": {"url": colab_url}
+            "bookmark": {
+                "url": colab_url,
+                "caption": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Open in Colab"
+                        }
+                    }
+                ]
+            }
         }
     ])
 
-    # Add all blocks at once
+    # Add all blocks to the page
     notion.blocks.children.append(
         block_id=page_id,
         children=content_blocks
@@ -293,16 +299,21 @@ def sync_notebook_to_notion(notebook_path: str, github_url: str, colab_url: str)
         return
 
     # Find module page
+    print(f"\nLooking for Module {module_number} page...")
     module_id = find_module_page(notion, module_number)
     if not module_id:
         print(f"Could not find Module {module_number} page in Notion")
         return
+    print(f"Found Module {module_number} page with ID: {module_id}")
 
     # Find Notes page
+    print("\nLooking for Notes page...")
     notes_id = find_notes_page(notion, module_id)
     if not notes_id:
         print(f"Could not find Notes page under Module {module_number}")
-        return
+        print("Creating Notes page...")
+        notes_id = create_notes_page(notion, module_id)
+        print(f"Created Notes page with ID: {notes_id}")
 
     # Find or create notebook page
     notebook_page_id = find_or_create_notebook_page(notion, notes_id, notebook_path)

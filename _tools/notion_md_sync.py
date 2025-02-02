@@ -358,6 +358,25 @@ def update_notion_page(notion: Client, page_id: str, title: str, content: str) -
 
     return page_id
 
+def extract_last_markdown_from_notebook(notebook_path: str) -> str:
+    """Extract the content of the last markdown cell from a Jupyter notebook"""
+    with open(notebook_path, 'r', encoding='utf-8') as f:
+        notebook = json.load(f)
+
+    # Find the last markdown cell
+    last_markdown = None
+    for cell in notebook['cells']:
+        if cell['cell_type'] == 'markdown':
+            last_markdown = cell['source']
+
+    if last_markdown is None:
+        raise ValueError("No markdown cells found in notebook")
+
+    # Join the source lines if it's a list
+    if isinstance(last_markdown, list):
+        return ''.join(last_markdown)
+    return last_markdown
+
 def sync_markdown_to_notion(file_path: str, force_new: bool = False) -> None:
     """Sync a markdown file to Notion under a module's Notes page"""
     # Setup client
@@ -378,13 +397,16 @@ def sync_markdown_to_notion(file_path: str, force_new: bool = False) -> None:
         print("Creating Notes page...")
         notes_page_id = create_notes_page(notion, module_id)
 
-    # Read the markdown file
+    # Read the content based on file type
     file_path = Path(file_path)
     if not file_path.exists():
         raise ValueError(f"File not found: {file_path}")
 
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
+    if file_path.suffix == '.ipynb':
+        content = extract_last_markdown_from_notebook(str(file_path))
+    else:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
 
     # Try to get title from first H1 header, fallback to filename
     title = extract_first_h1_header(content)
