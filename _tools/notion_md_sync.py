@@ -97,15 +97,116 @@ def extract_first_h1_header(content: str) -> Optional[str]:
             return line.lstrip('# ').strip()
     return None
 
+def parse_table(lines: List[str]) -> Tuple[List[str], List[List[str]]]:
+    """Parse a markdown table into headers and rows.
+    Returns tuple of (headers, rows)"""
+    if not lines or len(lines) < 3:  # Need at least header, separator, and one data row
+        return [], []
+
+    # Parse headers
+    headers = [cell.strip() for cell in lines[0].strip('|').split('|')]
+
+    # Skip separator line
+    data_rows = []
+    for line in lines[2:]:
+        if line.strip():  # Skip empty lines
+            cells = [cell.strip() for cell in line.strip('|').split('|')]
+            data_rows.append(cells)
+
+    return headers, data_rows
+
+def parse_code_in_cell(cell_content: str) -> List[Dict[str, Any]]:
+    """Parse cell content and convert code blocks to rich text with code formatting"""
+    parts = []
+    pattern = r'`([^`]+)`'
+    last_end = 0
+
+    for match in re.finditer(pattern, cell_content):
+        # Add text before code if any
+        if match.start() > last_end:
+            parts.append({
+                "type": "text",
+                "text": {"content": cell_content[last_end:match.start()]}
+            })
+
+        # Add code part
+        parts.append({
+            "type": "text",
+            "text": {"content": match.group(1)},
+            "annotations": {"code": True}
+        })
+
+        last_end = match.end()
+
+    # Add remaining text if any
+    if last_end < len(cell_content):
+        parts.append({
+            "type": "text",
+            "text": {"content": cell_content[last_end:]}
+        })
+
+    return parts if parts else [{
+        "type": "text",
+        "text": {"content": cell_content}
+    }]
+
+def create_table_block(headers: List[str], rows: List[List[str]]) -> Dict[str, Any]:
+    """Create a Notion table block from headers and rows"""
+    table_rows = []
+
+    # Create header row
+    header_cells = []
+    for header in headers:
+        header_parts = parse_code_in_cell(header)
+        for part in header_parts:
+            part.get("annotations", {}).update({"bold": True})
+        header_cells.append(header_parts)
+    table_rows.append({"cells": header_cells})
+
+    # Create data rows
+    for row in rows:
+        cells = []
+        for cell in row:
+            cells.append(parse_code_in_cell(cell))
+        table_rows.append({"cells": cells})
+
+    return {
+        "type": "table",
+        "table": {
+            "table_width": len(headers),
+            "has_column_header": True,
+            "has_row_header": False,
+            "children": table_rows
+        }
+    }
+
 def convert_markdown_to_blocks(content: str) -> List[Dict[str, Any]]:
     """Convert markdown content to Notion blocks"""
     blocks = []
     current_paragraph = []
+    in_table = False
+    table_lines = []
 
     # Split content into lines
     lines = content.split('\n')
 
     for line in lines:
+        # Check if line is part of a table
+        if '|' in line and (line.strip().startswith('|') or line.strip().endswith('|')):
+            if not in_table:
+                # Start of new table
+                in_table = True
+            table_lines.append(line)
+            continue
+        elif in_table:
+            # End of table
+            if table_lines:
+                headers, rows = parse_table(table_lines)
+                if headers and rows:
+                    blocks.append(create_table_block(headers, rows))
+            table_lines = []
+            in_table = False
+
         # Handle headers
         if line.startswith('#'):
             if current_paragraph:
@@ -159,6 +260,12 @@ def convert_markdown_to_blocks(content: str) -> List[Dict[str, Any]]:
                 }]
             }
         })
+
+    # Handle any remaining table
+    if table_lines:
+        headers, rows = parse_table(table_lines)
+        if headers and rows:
+            blocks.append(create_table_block(headers, rows))
 
     return blocks
 
