@@ -67,7 +67,7 @@ globs:
    - Include alt text in brackets
    - Store images in a consistent location relative to the markdown file
    ```markdown
-   ![Alt text](./images/example.png)
+   ![Alt text](mdc:images/example.png)
    ```
 
 ## Tables

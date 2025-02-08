@@ -1,0 +1,1254 @@
+WEBVTT
+
+1
+00:00:02.250 --> 00:00:13.236
+Jessica: Hey? Hello, everybody! And welcome to the module. 19 office hour for the professional certificate in machine learning. And AI.
+
+2
+00:00:13.800 --> 00:00:34.440
+Jessica: 1st of all, thank you for reaccommodating my office hour. I was not available on Thursday. So I wanna thank you for that. And yeah, so the goal for today is to explore, understand and review an implementation of recommender system.
+
+3
+00:00:34.980 --> 00:01:00.049
+Jessica: So I have prepared a Jupyter notebook. And it's pretty comprehensive. Okay? And we're basically going to start from defining recommender system and understanding what they are, which I'm sure that by now you're well over halfway done through the module. You already know by now what they are. But I'm gonna
+
+4
+00:01:00.270 --> 00:01:15.740
+Jessica: show you a very, very simple and basic implementation of recommender system. And then we're going to build on that until we get to some more advanced types of recommender systems, such as collaborative filtering and
+
+5
+00:01:15.900 --> 00:01:18.079
+Jessica: single value decomposition.
+
+6
+00:01:18.430 --> 00:01:45.799
+Jessica: Okay, so recommender systems are perhaps the oldest machine learning mechanism. Okay, they have been around for a very, very long time, and you might have used them a lot more than you think, even when you didn't really didn't know what machine learning was or what any of these type of algorithms were. Okay.
+
+7
+00:01:45.950 --> 00:02:02.529
+Jessica: for example, you know, I don't know when any of you created their Youtube account or their Netflix account, or spotify or apple music. But these you know, these services have been around for a long time.
+
+8
+00:02:02.630 --> 00:02:32.439
+Jessica: and they all work really well. Okay. And by using recommender system, which is what makes those services popular because they take advantage and they use recommender system to essentially recommend or suggest products that a user may like. Okay, I do remember, for example, creating my Netflix account years ago.
+
+9
+00:02:32.520 --> 00:02:49.940
+Jessica: and the 1st screen that came out. It made me like it was asking me the type of movies that I was liking if I watched any TV series in particular, and that was really, I didn't recognize that at the time, right?
+
+10
+00:02:50.180 --> 00:03:03.870
+Jessica: But that really was the beginning of the recommender system that was starting to feed into my user, okay, so that Netflix, for example, could you know, recommend.
+
+11
+00:03:04.426 --> 00:03:11.960
+Jessica: You know, the TV shows or movies or podcasts or whatever you want, that, I like the best. Okay?
+
+12
+00:03:12.070 --> 00:03:41.680
+Jessica: So recommender system. Again, they're all around us. Okay, every website that sells any type of product uses them. Okay? Often when you're online shopping, whether you're on Amazon or some another type of product, you click on a certain product. Okay? And then if you scroll below, you see similar items. You see, suggestions of what users that also bought the same item that you're looking at
+
+13
+00:03:41.810 --> 00:04:11.349
+Jessica: also bought. And that is really how a recommender system works. It's really a tool for these websites and these services to make the user experience more likeable. Okay, so the more you like the service and the more you get suggestions that you like. The more you are going to be using the system, which is why these services really take a lot of advantage from recommender system. Because
+
+14
+00:04:11.440 --> 00:04:17.130
+Jessica: the more a user likes the the website the more it's going to use it and go back to it. Okay.
+
+15
+00:04:18.709 --> 00:04:45.570
+Jessica: so the what we're gonna do today is we are going to work a movie recommendation system using a Tmbdb 5,000 movie data set. So this has, it's a huge collection of movies. And we are going to build different levels of recommender system to really understand how they work. Okay?
+
+16
+00:04:45.820 --> 00:04:52.459
+Jessica: So there are 3 main classes of recommender system. Okay?
+
+17
+00:04:53.219 --> 00:04:59.969
+Jessica: The 1st one, which is the most basic one it's called the demographic filtering.
+
+18
+00:05:00.200 --> 00:05:08.210
+Jessica: So they of this type of collaborative filtering offers. Generalized.
+
+19
+00:05:11.050 --> 00:05:30.019
+Jessica: sorry. I was just letting someone in offers generalized recommendation based on movie popularity. So it basically just takes the overall ranking. Okay? Or how many times a movie or a song has been listened to, or a movie has been watched and based on
+
+20
+00:05:30.020 --> 00:05:43.552
+Jessica: purely popularity. Okay, it recommends those to you. Okay? This is, you might see this in on services like Netflix, for example, I don't know if you have a subscription or not, but
+
+21
+00:05:44.000 --> 00:06:08.210
+Jessica: depending on the region you're at. You're in, you may see. Oh, these are the top 10 movies that are watched in the Us. Okay? And you may like one or 2 of them. Okay? And maybe you're not interested in the other 8 that are present. Right? But this is a very, very basic type of recommender system that it's simply based on popularity. Okay.
+
+22
+00:06:08.210 --> 00:06:31.650
+Jessica: this type of recommender system is also very seasonally based. So, for example, I don't watch horror movies personally. But during Halloween all I get all this system recommends are horror movies, right? Because that's what people like to watch during Halloween or during Christmas. Right? You get a lot of recommendation
+
+23
+00:06:31.650 --> 00:06:36.610
+Jessica: about over about Christmas movies because everybody's watching them because it's the season.
+
+24
+00:06:36.660 --> 00:06:54.859
+Jessica: But it they may not be exactly what you like, okay, it's simply based on popularity. Okay, this is true for movies. But it's true for any other product out there, you know, like sweaters. If you're in the winter or winter boots or jackets, and and so on. Okay.
+
+25
+00:06:54.970 --> 00:07:03.290
+Jessica: the next step of recommender system that we are going to see today is called the content-based filtering.
+
+26
+00:07:03.330 --> 00:07:30.939
+Jessica: So this takes the recommender system up a notch. Okay? So this recommender system does not work only on popularity, but also suggests a similar item based on the particular item you're watching. Okay, this is a type of recommender system that is not maybe as popular in movies. Okay, you can. You can do it, and we are going to
+
+27
+00:07:31.533 --> 00:07:43.550
+Jessica: apply it. But it's very common on websites like Amazon. You're looking at a kitchen scale, for example. Okay? And it has a white top and a brown, you know brown buttons. For example.
+
+28
+00:07:43.770 --> 00:07:44.980
+Jessica: you
+
+29
+00:07:45.190 --> 00:07:53.719
+Jessica: select one, and then below you see a suggestion of other 20 scales that look very similar to the one you picked. Okay.
+
+30
+00:07:53.830 --> 00:08:09.189
+Jessica: The general idea behind these recommender system is that if a person liked a particular item, it's also, probably gonna like another item that is very similar to the one that that person is liking is looking at in that particular moment.
+
+31
+00:08:10.265 --> 00:08:15.669
+Jessica: In Netflix. They do use. You know.
+
+32
+00:08:16.050 --> 00:08:45.339
+Jessica: type of content based filtering. You know, their movies and music, they can be scored on a using a similarity metric. Okay, it sometimes is more accurate than other times, I must say, but it can be used to make suggestions. For example, if you watched, especially movies that are in the same collection or series. You watch Harry Potter, one.
+
+33
+00:08:45.340 --> 00:08:53.650
+Jessica: Then, naturally, Netflix is going to suggest to you that you watch Harry Potter 2 or 3, and so on later. Okay.
+
+34
+00:08:54.380 --> 00:09:02.350
+Jessica: the next and last type of collaborative filtering system that we're going to see today is collaborative filtering.
+
+35
+00:09:02.360 --> 00:09:21.500
+Jessica: So this is the more complicated one of the more complicated recommender system that we are going to see today. And essentially, it works not only by looking at the similarity between the items, but also by matching customers, similar tastes.
+
+36
+00:09:21.500 --> 00:09:39.939
+Jessica: Okay? So it basically looks at the history between users. And it tries to cross match. Okay, what a user may like, based on what a user of similar taste also liked. Okay.
+
+37
+00:09:41.312 --> 00:09:54.819
+Jessica: an. A visual example of this is, for example, when you're looking at coffee filters, for example, for your coffee machine on Amazon. And then you get products that are not exactly
+
+38
+00:09:55.010 --> 00:10:07.710
+Jessica: may maybe coffee filters. Maybe they're coffee machines. Maybe they're coffee grinders. Okay? But they are items in the same category. Okay? And this type of collaborative filtering essentially works in the following matter. Well, if a
+
+39
+00:10:08.107 --> 00:10:27.210
+Jessica: if somebody is looking at a set of brushes, for example, perhaps it also needs some paint. Okay? So it looks at similar items and what users also what others user that were shopping for the same item were buying in order to make those suggestions. Okay, the
+
+40
+00:10:27.210 --> 00:10:37.470
+Jessica: main takeaway from this discussion that we had in this introduction of collaborative filtering. Is that a lot
+
+41
+00:10:37.470 --> 00:11:03.899
+Jessica: of the services that I've mentioned? Okay, I've been talking a lot about Amazon or Netflix or spotify. They don't use only one type of collaborative filter of recommender system. Sorry they don't use only one type of recommender system. They depending on what they want to achieve and what they want to gain.
+
+42
+00:11:03.900 --> 00:11:27.159
+Jessica: Okay, perhaps they use a combination of all of them at the same time to maximize the results. Okay? So it's very, very often the case that a lot of the products that or the services that use recommender system use multiple types of recommender system to maximize the user experience. Okay? And to make it as best as possible.
+
+43
+00:11:28.260 --> 00:11:33.749
+Jessica: Alright. So what we're gonna do is any questions so far all good.
+
+44
+00:11:34.400 --> 00:12:03.409
+Jessica: So what we're gonna do today is basically use the movie data set and build from the ground up. So we're gonna implement, the demographic filtering first, st which we're gonna see? Is, I mean, it works. Okay, it's able to pick the top 3 movies. Okay. But it's not user based in any way. And then we're gonna move on onto item based filtering. And then we're gonna finish with collaborative filtering.
+
+45
+00:12:04.660 --> 00:12:09.079
+Jessica: All right. So let's start by loading the data.
+
+46
+00:12:09.400 --> 00:12:11.800
+Jessica: So here I am
+
+47
+00:12:12.190 --> 00:12:22.530
+Jessica: loading 2 data sets. So the 1st data set contains information about the movie Id, the cast and the crew.
+
+48
+00:12:22.550 --> 00:12:44.999
+Jessica: So we have the unique identifier for each movie, the name of the lead and supporting actors, and the name of the director, editor and the composer. And then the second data set is a little bit more technical. It goes into budget genre, id keywords. It has a lot of other information about the movies.
+
+49
+00:12:45.220 --> 00:13:00.190
+Jessica: The interesting thing is that these 2 data sets can actually be joined. Okay, so we are gonna basically put them these 2 data sets side by side, and we're gonna merge them
+
+50
+00:13:00.330 --> 00:13:22.419
+Jessica: on the column id. So we're gonna use the movie id column to merge these 2 data sets. And we end up with this data frame. Okay? So as you can see it has the movie Id, the budget, the genre, the homepage, the original language, and so on.
+
+51
+00:13:22.580 --> 00:13:43.490
+Jessica: We didn't really care for the crew and the director. Okay, well, the director is also in the second data frame. But I have dropped the cast and the crew column from the 1st data frame, because typically, that's too much information. Okay? And also we do have that information here as well.
+
+52
+00:13:44.560 --> 00:13:45.660
+Jessica: All right.
+
+53
+00:13:46.350 --> 00:14:02.540
+Jessica: So now that we have our data, let's start implementing demographic filtering. So what do we need to implement demographic filtering? Well, 1st of all, we need to define some sort of metric that we're going to use to rate a movie.
+
+54
+00:14:02.880 --> 00:14:12.970
+Jessica: Next, we're gonna calculate the score for every movie. And finally, we're gonna sort these scores and recommend the top movies. Okay?
+
+55
+00:14:13.190 --> 00:14:14.070
+Jessica: So
+
+56
+00:14:14.380 --> 00:14:36.510
+Jessica: the interesting thing about movies. Okay? And I think it's about songs, too, is that the user rating might be a little biased, or it may count in a different way, based on the number of ratings that a movie has. For example.
+
+57
+00:14:36.850 --> 00:14:49.049
+Jessica: a movie that has 8.9 out of 10, but only 2 or 3 reviews. Okay, it's going to have a different weight than a movie that has a
+
+58
+00:14:49.410 --> 00:15:14.339
+Jessica: a score of 7.8 out of 10, but maybe has 40 or 50 reviews. Okay, so to take into account this difference into the number of reviews that each movie gets, we are going to use for this particular problem. Okay, the Imbd's weighted rating. Okay, so it's a formula that it's used on Imbd to score movies.
+
+59
+00:15:14.340 --> 00:15:24.629
+Jessica: This is very movie specific. Don't use this metric. If you're going to build a recommender system for any other product, because it's really not going to work.
+
+60
+00:15:24.980 --> 00:15:39.289
+Jessica: So this weighted rating is defined by the formula here, where V is the number of votes per movie. So how many reviews a movie has given as as received
+
+61
+00:15:39.420 --> 00:15:59.190
+Jessica: hem is the minimum votes required to be listed in the chart, meaning that while we only we're only interested in movies that have been scored at least 5 times. Okay, if a movie has less than 5 reviews. For example, we're not gonna care for it. Okay? Or you can decide what that number may be. But you can set that
+
+62
+00:15:59.890 --> 00:16:07.459
+Jessica: R is the average rating of the movie. And C is the mean vote across the whole report.
+
+63
+00:16:07.970 --> 00:16:15.070
+Jessica: So the only coefficient that we don't have is this
+
+64
+00:16:15.640 --> 00:16:23.440
+Jessica: mean vote C, which can be calculated by just taking the mean of the vote average column. So I'm just defining that here
+
+65
+00:16:25.377 --> 00:16:34.819
+Jessica: alright. So the other thing that we need to consider and take into account here is to decide
+
+66
+00:16:35.450 --> 00:16:41.159
+Jessica: what is the minimum number of votes that we require. Okay, so
+
+67
+00:16:41.560 --> 00:16:44.870
+Jessica: do we want to move? Do we want to consider movies that have less than
+
+68
+00:16:45.240 --> 00:16:49.679
+Jessica: that have more than 3 reviews, 4 reviews, 5 reviews, and so on.
+
+69
+00:16:49.890 --> 00:17:00.480
+Jessica: So a good approach to this is to look at the the
+
+70
+00:17:01.480 --> 00:17:09.300
+Jessica: quantiles of the vote count column. So essentially, we look at the column vote, count.
+
+71
+00:17:09.319 --> 00:17:32.649
+Jessica: we look at the 90% quantile. And we're saying, Okay, well, if 90% of the movies have at least X number of reviews, we're going to take that as our value. Okay, you can obviously play with these numbers. Okay, but that includes a good 90% of the movies in the data set, which I think it's a good number.
+
+72
+00:17:33.050 --> 00:17:38.059
+Jessica: So the magic number here is 1838.
+
+73
+00:17:38.790 --> 00:17:50.109
+Jessica: And after we do have this number, we can filter our data frame and basically eliminate all the rows
+
+74
+00:17:50.260 --> 00:17:54.271
+Jessica: where the movies have less than
+
+75
+00:17:55.280 --> 00:17:57.290
+Jessica: 1,848 votes.
+
+76
+00:17:57.550 --> 00:18:01.330
+Jessica: Okay? So we're only keeping the ones that have been scored the most.
+
+77
+00:18:02.740 --> 00:18:08.870
+Jessica: This leaves us with 481 movies. So we still have a lot of movies to choose from.
+
+78
+00:18:09.310 --> 00:18:14.150
+Jessica: And after we do have all this, we just implement the formula
+
+79
+00:18:14.520 --> 00:18:19.959
+Jessica: into a user defined function. So this is the same formula that was up here.
+
+80
+00:18:20.460 --> 00:18:27.630
+Jessica: And after that, I apply this function to my filtered data frame.
+
+81
+00:18:28.890 --> 00:18:34.500
+Jessica: And finally, I can sort my data frame based on score.
+
+82
+00:18:35.530 --> 00:18:43.520
+Jessica: So this is essentially the result of our very primitive and very simple demographic filter.
+
+83
+00:18:43.690 --> 00:18:45.410
+Jessica: So I'm
+
+84
+00:18:45.640 --> 00:19:00.819
+Jessica: actually not familiar with the top movie here. But I have watched fight, club. I watched the dark knight pulp fiction inception. The godfather. We can see that from this data set. And from this demographic.
+
+85
+00:19:01.280 --> 00:19:21.900
+Jessica: you know, filter, basically a lot of the movies that stand out are either the ones that are very popular and very good, or the ones that are classics. Okay, very old movies that everybody has watched and that are considered, you know, one of the best movies of all times. Okay.
+
+86
+00:19:22.250 --> 00:19:46.560
+Jessica: I am not saying that this is a bad way of recommending movies, but it is very general. Okay? And so if somebody is more into, you know sci-fi movies, or like more like, I don't know, like horror movies, for example, or something that doesn't really appear in this chart. They're not going to like any of the recommend and any of the recommended movies from this
+
+87
+00:19:46.920 --> 00:19:49.260
+Jessica: from this recommender system.
+
+88
+00:19:50.841 --> 00:19:58.310
+Jessica: Yes. So apparently the 1st one is a really good movie. So I could probably watch. I should probably watch it. But yeah.
+
+89
+00:19:58.520 --> 00:20:13.290
+Jessica: And of course, another thing that you can do here. You can get creative. You can plot your most popular movies and sort of like, have a quick and dirty way of getting your top 1520, 10 entries from your data. Okay.
+
+90
+00:20:14.380 --> 00:20:32.330
+Jessica: now, let's take it up a notch and try and implement content based filtering. So now, essentially, we are going to implement a way to recommend movies based on something that we've liked. Okay.
+
+91
+00:20:32.690 --> 00:20:33.910
+Jessica: so
+
+92
+00:20:34.120 --> 00:20:56.599
+Jessica: in this type of recommender system, at least for movies, the content of the movie. So the overview, the cast, the crew, the keyword, and so on. Something that is within the movie is used to find the similarity with other movies. So it can be the same director. It can be the same main actor. And so on. Okay.
+
+93
+00:20:57.090 --> 00:21:09.929
+Jessica: so 2 implement, this type of recommender system. We do need, 1st of all, to decide.
+
+94
+00:21:10.290 --> 00:21:36.890
+Jessica: what are we basing our similarity on? Okay, here you can have many different options. I decided to try and score the movies based on their plot. Okay, so we're going to take the plot of the movie. We're going to compute the similarity score between the plots. And then we're gonna try and see if we can find any good recommendations for the movie that we pick.
+
+95
+00:21:37.790 --> 00:21:51.249
+Jessica: So this is the plot. These are the plots of the movies that we have. So I'm extracting the overview column. And these are the 1st 10 entries. Okay, in the 20 second century. A paraplegic marine is
+
+96
+00:21:52.170 --> 00:21:58.609
+Jessica: the I don't know. Okay, so these are just like a summary of the plot of all the movies.
+
+97
+00:21:59.680 --> 00:22:16.610
+Jessica: And of course we do need to do some work with it. Okay? And the interesting part about this is that last week you have seen natural language processing, I believe. And so now we are equipped to use the natural language processing
+
+98
+00:22:16.730 --> 00:22:34.699
+Jessica: in order to extract information about the plot and then calculate the similarity between the movies. So to vectorize these plots, we're going to use Tfidf, which we've seen last week.
+
+99
+00:22:35.510 --> 00:22:41.559
+Jessica: So what I'm doing here. I am just importing Tfidf from Sklearn.
+
+100
+00:22:41.750 --> 00:22:55.799
+Jessica: I am removing the stop words. Okay? So the most common words in English, those I'm removing because I want to clean up. I haven't done any text processing, really, but I at least I want to remove the most common words.
+
+101
+00:22:56.840 --> 00:23:02.290
+Jessica: I am replacing any missing values with an empty string.
+
+102
+00:23:02.600 --> 00:23:09.179
+Jessica: and I am creating the Tfidf matrix. Okay?
+
+103
+00:23:10.310 --> 00:23:13.040
+Jessica: Using this, the function.
+
+104
+00:23:14.420 --> 00:23:15.430
+Jessica: Okay?
+
+105
+00:23:15.630 --> 00:23:16.550
+Jessica: So
+
+106
+00:23:18.470 --> 00:23:45.910
+Jessica: we can see. Okay. For now that over 20,000 different words were used to describe the movies that we have in the data set. Okay? So we went back to the original data set. Okay, I kept all the movies, and I have constructed the Tfidf matrix using all the words that were used to write the plot of the movies
+
+107
+00:23:49.000 --> 00:23:58.080
+Jessica: with this matrix in hand. Now we can compute the similarity score between each movie. Okay.
+
+108
+00:23:58.670 --> 00:24:23.489
+Jessica: how do you compute the similarity score? Well, there are a few different metrics that you can use. Okay, I'm not going to be able to tell you which one is best when in doubt. Use both and see what gives you the best results. Typically, you have the Euclidean distance, the Pearson correlation and the cosine similarity.
+
+109
+00:24:24.222 --> 00:24:37.940
+Jessica: Different scores work best for different scenarios, and the best I can tell you right now is to experiment with different calculations, depending on your application and see what works best.
+
+110
+00:24:38.450 --> 00:24:47.080
+Jessica: So to keep things simple, we're going simple. We are going to use the cosine similarity, which is
+
+111
+00:24:47.860 --> 00:24:50.989
+Jessica: which is defined by this formula. Okay.
+
+112
+00:24:51.010 --> 00:25:17.950
+Jessica: now, why do I want to use the cosine similarity in this case? Well, because the cosine similarity has this dot product here? Okay? And the dot product is actually kind of easy to calculate when you have the Tfidf matrix. Okay? So the reason why I'm using the cosine similarity is because I do have this matrix. And the dot product is easy to calculate.
+
+113
+00:25:19.670 --> 00:25:20.885
+Jessica: So
+
+114
+00:25:22.690 --> 00:25:39.519
+Jessica: all we have to do is calculate the dot product of, because the Tfidf matrix with itself. And we're going to have the similarity scores. Okay, that is as easy as that. Which is why I chose this approach.
+
+115
+00:25:40.270 --> 00:25:51.310
+Jessica: So to calculate the dot product, you can import linear kernel from Sklearn, and I'm just taking the dot product of the Tfidf matrix with itself.
+
+116
+00:25:52.750 --> 00:25:55.598
+Jessica: You do that and
+
+117
+00:25:57.900 --> 00:26:00.440
+Jessica: The other thing that I want to do
+
+118
+00:26:01.050 --> 00:26:18.460
+Jessica: is well. The next thing that I want to do is now use this cosine similarity to create my recommender system. We haven't done that yet. Okay, all we have done is processing the plot of the movies and calculate the similarity between them. But the recommender system is not there yet.
+
+119
+00:26:19.330 --> 00:26:26.410
+Jessica: So what the way I'm going to build this recommender system is that I am going to define a function
+
+120
+00:26:26.640 --> 00:26:37.809
+Jessica: that takes one movie as input and it outputs the 10 most similar movies. Okay?
+
+121
+00:26:38.160 --> 00:26:45.606
+Jessica: So the 1st thing I need to do in order to implement this function is to
+
+122
+00:26:46.220 --> 00:27:00.729
+Jessica: find a mechanism to identify the index of the movie with my Tfidf matrix. Okay? Because the Tfidf matrix only had, you know, the plots of the of the
+
+123
+00:27:01.280 --> 00:27:07.339
+Jessica: of the of the movies. But we kind of lost the information about what movie we're talking about.
+
+124
+00:27:07.890 --> 00:27:12.730
+Jessica: So here I am constructing this mapping.
+
+125
+00:27:13.240 --> 00:27:16.608
+Jessica: and here I do have the
+
+126
+00:27:17.360 --> 00:27:20.399
+Jessica: the recommender function that is going to do the job for me.
+
+127
+00:27:20.780 --> 00:27:26.779
+Jessica: So 1st of all, we're going to get this is the function get recommendations.
+
+128
+00:27:27.040 --> 00:27:32.049
+Jessica: So I'm going to pass the title of the movie that I want to get recommendations for.
+
+129
+00:27:32.190 --> 00:27:35.969
+Jessica: And then the cosine similarity values that I just calculated.
+
+130
+00:27:36.170 --> 00:27:41.539
+Jessica: The 1st thing I'm going to do is get the index of the movie. Okay? So I can quickly search it.
+
+131
+00:27:41.960 --> 00:27:50.549
+Jessica: Next I get the pairwise similarity score of all movies with that movie. So it's gonna compare all the similarity scores in my database
+
+132
+00:27:51.000 --> 00:28:07.730
+Jessica: sort the movies based on similarity score. And take the 1st 10. Okay? And after I do that, I map those 10 similarity scores that is extracted with the movie Id, and then output the list of recommendations.
+
+133
+00:28:08.650 --> 00:28:15.205
+Jessica: Okay, so let's play around a little bit. If you guys have any suggestions for movie feel free to
+
+134
+00:28:15.740 --> 00:28:42.299
+Jessica: Drop them in the chat. I hope the movies in the data set, but we can play with it. So let's start with the dark Knight rises. So it's Christopher Nolan movie. It's about Batman. Very good, very famous. The top 10 recommendations I get are the Dark Knight Batman forever. Batman returns Batman, the Dark Knight returns part 2, batman begins, and so on. Okay, so you can see that
+
+135
+00:28:42.370 --> 00:28:59.239
+Jessica: it seems to be working pretty well. Okay, at least like the topic of the movie is the same. Some of the movies suggested have the same directors, even the same cast, in some cases right? And so this recommender system, although very simple. Okay, seems to be working pretty good.
+
+136
+00:29:00.170 --> 00:29:15.028
+Jessica: We can also play with other movies. Here I have the avengers. Again, I'm not a not. I don't know much about the avengers, but I do believe that at least the sum of these movies are
+
+137
+00:29:16.260 --> 00:29:20.409
+Jessica: are at least related, or about the same topic. Okay?
+
+138
+00:29:21.120 --> 00:29:46.170
+Jessica: And yeah, so this is another example, where, without using crazy libraries, okay, and using libraries that you are already familiar with, like Sklearn and do some tfidf or natural, very simple, natural language processing, you are able to construct a recommender system. The other thing that I didn't mention about recommender system is that
+
+139
+00:29:46.400 --> 00:30:05.990
+Jessica: they are pretty personalized. So, depending on your data set on the data that you have on the application on the type of recommender system. It's very common for you that you're going to have to to, maybe not code your recommender system from scratch.
+
+140
+00:30:05.990 --> 00:30:19.449
+Jessica: Okay? But it's not as easy as implementing other machine learning algorithms such as linear regression. Okay, there is a little bit more thinking behind what you have available and where you want to end up.
+
+141
+00:30:19.680 --> 00:30:23.459
+Jessica: But I think they're pretty fun to play with, and it's fun to see the result.
+
+142
+00:30:24.960 --> 00:30:28.660
+Jessica: Okay, all good for now, all right.
+
+143
+00:30:29.270 --> 00:30:35.039
+Jessica: So let's move on to the last part. Yeah. One question.
+
+144
+00:30:36.850 --> 00:30:42.760
+shashi: Jessica deshashi. If you can. Can you scroll up a bit? The avengers part. Yeah.
+
+145
+00:30:43.372 --> 00:31:00.849
+shashi: See, Batman, I can see all the movies are virtually related with Batman, the Dark Knight, whereas the Avengers it has. Except for the age of ultron, it has not recommended any of the other Avengers movie like Captain America or Spider-man. And all those things. Why is, how did the.
+
+146
+00:31:01.690 --> 00:31:04.699
+Jessica: It could be that those movies are not in the data set.
+
+147
+00:31:05.040 --> 00:31:06.210
+Jessica: I don't know.
+
+148
+00:31:07.075 --> 00:31:12.829
+Jessica: We can. We can check if we put Captain America.
+
+149
+00:31:14.160 --> 00:31:22.156
+Jessica: See? That's not. That's not in the data set. So you know, like I do, I I know that there is more famous.
+
+150
+00:31:23.080 --> 00:31:29.950
+Jessica: you know, avengers movies, but again, if those are not in the data set, obviously, the system is not gonna pick them up.
+
+151
+00:31:30.330 --> 00:31:31.410
+shashi: Okay. Yeah. Thanks.
+
+152
+00:31:31.410 --> 00:31:31.930
+Jessica: Yeah.
+
+153
+00:31:32.502 --> 00:31:43.489
+Jessica: but yeah, feel free, you know, like, I'll share this code to see you are feel free to like play around with some movie titles later and see what's there and what's not.
+
+154
+00:31:44.636 --> 00:31:46.010
+Jessica: Okay.
+
+155
+00:31:46.120 --> 00:31:59.176
+Jessica: so collaborative filtering. So the this is the most difficult one of recommend type of recommender system that we're going to see today. And it's perhaps perhaps also the most advanced that we have. So
+
+156
+00:31:59.840 --> 00:32:18.879
+Jessica: it's the most complicated one, and also the most computationally heavy because it looks at similarities between users. So the way collaborative filtering works essentially is.
+
+157
+00:32:20.003 --> 00:32:21.550
+Jessica: well, if
+
+158
+00:32:21.770 --> 00:32:44.409
+Jessica: me and another user have watched 2 movies. And we both really like that movie, those movies. Sorry. And then the other user watched a 3rd movie. And he also really liked that one. That system is going to recommend to me the 3rd movie. Because if a user similar to me like that, it's most likely that I'm gonna like it as well.
+
+159
+00:32:44.550 --> 00:32:47.699
+Jessica: Okay? So it's
+
+160
+00:32:48.190 --> 00:32:59.889
+Jessica: it takes essentially into account the sentiment. Okay, that users have behind products and the similarities between them in order to work.
+
+161
+00:33:01.000 --> 00:33:04.779
+Jessica: So the user-based filtering
+
+162
+00:33:04.880 --> 00:33:12.730
+Jessica: is a type of collaborative filtering that recommends products to a user that similar users have liked.
+
+163
+00:33:13.830 --> 00:33:23.100
+Jessica: So the way you can measure the similarity, okay, it's still the Pearson correlation or the cosine similarity.
+
+164
+00:33:23.530 --> 00:33:36.150
+Jessica: And in order before we implement this because it's a little bit more complicated to understand. Let's take a look at these tables. And let's understand, let's try and understand what happens here.
+
+165
+00:33:36.420 --> 00:33:47.669
+Jessica: So in the following tables, each rows represents a users, and then I have all the movies. Okay? And then, you see, which
+
+166
+00:33:47.800 --> 00:33:51.929
+Jessica: movie user as a scored okay?
+
+167
+00:33:52.860 --> 00:34:00.540
+Jessica: So let's suppose, for this example, that I'm doing here that we want to
+
+168
+00:34:00.710 --> 00:34:03.179
+Jessica: recommend a system for user E,
+
+169
+00:34:03.520 --> 00:34:16.080
+Jessica: so we want to essentially find which of these users is the most similar to E, and see what they have watched and then make our recommendations. Okay.
+
+170
+00:34:16.850 --> 00:34:17.780
+Jessica: all right.
+
+171
+00:34:20.909 --> 00:34:29.849
+Jessica: let's take a look at. So here, okay, in in this. Sorry in this table, I am computing the
+
+172
+00:34:30.510 --> 00:34:35.349
+Jessica: Pearson correlation of every user. Okay?
+
+173
+00:34:35.650 --> 00:34:39.949
+Jessica: And we see that because A and F
+
+174
+00:34:40.300 --> 00:34:49.639
+Jessica: so user A and user F have not watched any of the movies. That user E has watched
+
+175
+00:34:50.040 --> 00:34:58.500
+Jessica: their peerson correlation is not available. There is no correlation between the user. They come. They have completely different taste, and therefore there is no similarity.
+
+176
+00:35:01.360 --> 00:35:02.770
+Jessica: The
+
+177
+00:35:04.058 --> 00:35:15.759
+Jessica: user that we have left are user BC and D, so we have correlations for those values. And obviously E is correlated with itself.
+
+178
+00:35:18.430 --> 00:35:24.409
+Jessica: From this table we can also see that user D
+
+179
+00:35:24.760 --> 00:35:33.999
+Jessica: is very different from E, because the correlations are basically opposite. So one has one and the other one is negative one. Okay.
+
+180
+00:35:37.210 --> 00:35:45.109
+Jessica: so based on these conclusions. Okay, you can start filling.
+
+181
+00:35:47.240 --> 00:35:50.190
+Jessica: The blank. Okay, in
+
+182
+00:35:50.910 --> 00:35:58.588
+Jessica: for the user. E, based on these conclusions. Okay, so you see, well, like, if user
+
+183
+00:36:00.300 --> 00:36:07.339
+Jessica: D has scored a movie very high or very low, then user E may score it higher. And so on.
+
+184
+00:36:07.770 --> 00:36:08.810
+Jessica: Okay.
+
+185
+00:36:09.460 --> 00:36:34.820
+Jessica: the problem with user-based filtering is that this matrix can change over time. So based on how a user essentially changed the like watches a movie or scores a movie or many times watches a movie. This matrix can change and therefore item-based collaborative filtering, although it can be used
+
+186
+00:36:35.040 --> 00:36:37.889
+Jessica: for some application, it might not be the best.
+
+187
+00:36:38.850 --> 00:36:46.670
+Jessica: Another type of collaborative filtering that's out. There is the item based collaborative filtering.
+
+188
+00:36:47.130 --> 00:36:55.750
+Jessica: The difference compared to the user-based collaborative filtering is that instead of measuring the similarity between users.
+
+189
+00:36:55.880 --> 00:37:19.640
+Jessica: the item based collaborative filtering measures, the similarity with the items that the users, the target users has rated. Okay, so it basically takes into account the items that the target users has watched, and then it computes the similarity with the other users and the other movies to
+
+190
+00:37:19.830 --> 00:37:22.240
+Jessica: score the movie. Okay?
+
+191
+00:37:22.620 --> 00:37:23.630
+Jessica: So
+
+192
+00:37:27.130 --> 00:37:35.660
+Jessica: here, I have the same users and the same movie. But now, because I'm scoring item based and not user based.
+
+193
+00:37:35.820 --> 00:37:41.019
+Jessica: Now you end up with these values for the.
+
+194
+00:37:41.160 --> 00:37:51.199
+Jessica: for the sorry, for the Pearson correlation and with a matrix that is also more stable and more static, which is
+
+195
+00:37:51.520 --> 00:38:06.260
+Jessica: preferable because this matrix ends up being really big. Okay, and very sparse. And you don't want this matrix to change a lot. So the item based collaborative filtering is preferred.
+
+196
+00:38:07.680 --> 00:38:12.049
+Jessica: Now, one thing that I mentioned with this is that
+
+197
+00:38:12.310 --> 00:38:22.469
+Jessica: because it's impossible for the users to watch every movies on the Netflix catalog, and also to score every one of those movies.
+
+198
+00:38:22.810 --> 00:38:37.230
+Jessica: What happens is that this matrix that we have ends up being very empty. Okay? And a big big problem in recommender system is that having these matrices that are
+
+199
+00:38:37.230 --> 00:39:03.349
+Jessica: sparse, so they have a lot of missing values. Okay, end up being very expensive. Not only for storage, but also for calculations. Okay, it's very expensive to perform matrix calculations, especially if they're empty. Okay, you have to store these matrices that have millions of rows and millions of columns, and 98% of them are empty.
+
+200
+00:39:04.400 --> 00:39:20.069
+Jessica: So what did Netflix actually came up with it came up. Well, Netflix did not come up with this, but Netflix used a technique that has been around for decades, which is called the singular single value, decomposition or singular value decomposition.
+
+201
+00:39:20.190 --> 00:39:27.600
+Jessica: And this technique is actually something that it's very popular in linear algebra. Okay, this is not nothing
+
+202
+00:39:27.760 --> 00:39:53.200
+Jessica: like it wasn't invented by machine learning whatsoever. This has been around in linear algebra for decades, if not centuries. And it's a technique that allows you to take any matrix, okay and decompose it into smaller matrices. Okay? And it turns out that working with smaller matrices, it's easier. It's more and it's more efficient. Okay.
+
+203
+00:39:53.300 --> 00:40:17.529
+Jessica: I remember doing singular value, decomposition by hand, in high school at some point on 3 by 3 matrices. But this concept stays the same. You take these big matrices, and you start decomposing them into smaller ones to make your calculations easier. So Netflix, actually and there is an article linked in your module about this
+
+204
+00:40:18.200 --> 00:40:31.510
+Jessica: realized a few years ago that you can use this singular value decomposition to essentially manage the sparse matrix that they would end up with, okay?
+
+205
+00:40:31.670 --> 00:40:42.880
+Jessica: So they basically leveraged this technique. Singular value decomposition to factor this matrix and to optimize this problem.
+
+206
+00:40:43.730 --> 00:40:45.483
+Jessica: So let's
+
+207
+00:40:46.950 --> 00:41:00.649
+Jessica: try and take a look at how we can implement this item-based collaborative filtering that uses and decompose the matrix that we end up with to build our recommender system.
+
+208
+00:41:01.000 --> 00:41:04.359
+Jessica: So for
+
+209
+00:41:04.730 --> 00:41:16.959
+Jessica: scalability reasons. And because I don't want to end up with a matrix that has millions of rows in during office hour, we are going to be using a smaller data set than what we used before.
+
+210
+00:41:17.280 --> 00:41:21.079
+Jessica: So and we're also gonna use the surprise library.
+
+211
+00:41:21.960 --> 00:41:27.799
+Jessica: So here I am reading my smaller data set. Okay.
+
+212
+00:41:27.980 --> 00:41:34.860
+Jessica: so these data sets are rated on a scale of 5. So I have the user Id.
+
+213
+00:41:34.970 --> 00:41:39.590
+Jessica: the movie Id, the rating and the timestamp at
+
+214
+00:41:39.720 --> 00:41:45.010
+Jessica: that describes basically when the user has scored the movie. Okay?
+
+215
+00:41:48.290 --> 00:42:01.970
+Jessica: what I'm also taking a look at is with the library surprise. I can immediately apply the singular value composition to my data frame.
+
+216
+00:42:02.330 --> 00:42:14.510
+Jessica: So I'm using the cross validate function to perform the singular value composition and to look at the error on my matrix.
+
+217
+00:42:16.290 --> 00:42:20.400
+Jessica: So this should take a few seconds here. Okay, not too long.
+
+218
+00:42:20.730 --> 00:42:25.000
+Jessica: And we see that the error where is it?
+
+219
+00:42:26.290 --> 00:42:35.849
+Jessica: Yes, the error is around 0 point 8 9, which is good enough for our case. It's pretty low, and we're going to be able probably to make predictions in this case.
+
+220
+00:42:36.360 --> 00:42:45.140
+Jessica: So now that we have our singular value, decomposition matrix. We can train our
+
+221
+00:42:45.480 --> 00:42:48.189
+Jessica: model, okay, our recommender system.
+
+222
+00:42:48.730 --> 00:42:53.230
+Jessica: And then we can play with it and see what happens. So
+
+223
+00:42:53.700 --> 00:43:07.689
+Jessica: what we can do is pick a user with user id one and see what ratings this person has given. So I'm filtering my data frame by the user one
+
+224
+00:43:09.100 --> 00:43:10.194
+Jessica: and
+
+225
+00:43:11.490 --> 00:43:17.279
+Jessica: we can see that this, these are the movies that she or he has watched, and these are the ratings.
+
+226
+00:43:17.870 --> 00:43:32.119
+Jessica: We can also try and make a prediction. So we can say, well, if user, one watched movie 3 or 2, what would be the estimated rating for it?
+
+227
+00:43:32.550 --> 00:43:47.619
+Jessica: So we can do that. And we can see that there is a estimated rating for from user one for movie 302 of roughly 2.7 6. Okay, so basically.
+
+228
+00:43:47.860 --> 00:43:59.485
+Jessica: what does this mean is that you can use? It's actually very simple using the library surprise. Okay, it's actually very simple here to
+
+229
+00:44:00.690 --> 00:44:14.490
+Jessica: create a singular value decomposition. Matrix for your, from your, from your data set, you can use the library surprise to create your recommender system. And then you can essentially
+
+230
+00:44:14.510 --> 00:44:36.350
+Jessica: make recommendation based on that. If you want your, if you want to suggest, if you want, if you want your system to suggest only movies that would be scored 3 higher than 3.8. For example, by your users. You can set that as a threshold, for example, and only recommend movies that way. Okay?
+
+231
+00:44:37.060 --> 00:45:00.440
+Jessica: And of course, you can play with this. You can. Do you know, I don't know. 501. For example, this would be 3.4 3 42. I don't know what movie this would be would be nice to match this data, set this smaller data set with the one that we had before. But you see here that it can become pretty pretty easy. Okay, to create a recommender system.
+
+232
+00:45:01.260 --> 00:45:21.109
+Jessica: Now that is all I had for today. My conclusion is, you know, like, whenever you are building recommender system, I think the best approach is to work with multiple recommender system at once and compare the results. Okay, it's not that the item based filtering
+
+233
+00:45:21.110 --> 00:45:43.420
+Jessica: or the collaborative filtering is necessarily better than one another. My recommendation is to use all of them, and see which ones give you the best results. And, of course, you know, like any recommender system, they also need to learn, and they do require a lot of testing for for them to work well.
+
+234
+00:45:45.380 --> 00:45:49.859
+Jessica: and that's it for today. Do you guys have any questions or comments.
+
+235
+00:45:51.049 --> 00:45:56.989
+Zhujun Wang: I have a question about the would you mind like Bring back the example.
+
+236
+00:45:57.810 --> 00:46:11.209
+Zhujun Wang: You just show. Yeah, you just show. And the 1st question is, relate to tf, idf, and because I saw like you, input the the plot and do the natural and the
+
+237
+00:46:11.650 --> 00:46:12.660
+Zhujun Wang: natural language
+
+238
+00:46:12.730 --> 00:46:32.550
+Zhujun Wang: processing and get a recommendation. So so, for example, if I want to combine, for example, like the crew with the plot together. So how to work is like, I need to reconstruct the text like concatenate the
+
+239
+00:46:32.550 --> 00:46:57.439
+Zhujun Wang: the plot with the crew in the single loan stream and then apply the Tf, idf is, oh, yeah. Just wondering if I want to consider more, because based on the only the plot. Maybe sometimes you, you see, like, if it's Avenger, maybe a lot of movie not related to Avenger. So yeah, just want to see usually what's the approach? And if I consider more.
+
+240
+00:46:57.440 --> 00:47:06.139
+Jessica: Yeah, I I think that you could do that. You could probably, or even like, perhaps create. I
+
+241
+00:47:06.630 --> 00:47:08.890
+Jessica: I don't know if it's better to
+
+242
+00:47:09.580 --> 00:47:14.609
+Jessica: combine them into a single column, or to keep the column separate.
+
+243
+00:47:15.190 --> 00:47:18.580
+Jessica: Cause you can do Tfidf on.
+
+244
+00:47:18.830 --> 00:47:25.380
+Zhujun Wang: Both on on both columns, and I think that might. That might be better.
+
+245
+00:47:25.920 --> 00:47:28.100
+Zhujun Wang: Okay, Gotcha.
+
+246
+00:47:28.100 --> 00:47:29.569
+Jessica: That's what I would do.
+
+247
+00:47:29.760 --> 00:47:31.460
+Jessica: That's what I was. Yes.
+
+248
+00:47:32.320 --> 00:47:37.370
+Zhujun Wang: Gotcha. And and next question, is the
+
+249
+00:47:37.570 --> 00:47:51.029
+Zhujun Wang: content based filter? I remember, if you scroll down you showed a say, yeah, this one, you say, like a has been filtered out because the A doesn't see any movie as e
+
+250
+00:47:51.190 --> 00:47:58.220
+Zhujun Wang: a simpler. If you see they do see the transformers. But the similarity is not, do you?
+
+251
+00:47:58.220 --> 00:47:59.929
+Zhujun Wang: It's a typo, or is it.
+
+252
+00:47:59.930 --> 00:48:07.340
+Jessica: No, I don't think it's a typo, I think is that you have only one movie, and you can't correlate to only one movie.
+
+253
+00:48:07.400 --> 00:48:09.859
+Zhujun Wang: Oh, that's the reason gotcha gotcha.
+
+254
+00:48:09.860 --> 00:48:10.290
+Jessica: Yeah.
+
+255
+00:48:10.290 --> 00:48:11.109
+Zhujun Wang: Cool, cool.
+
+256
+00:48:11.110 --> 00:48:16.160
+Jessica: And yeah, and thank you for your question. And there was a question in the chat. Let me.
+
+257
+00:48:16.582 --> 00:48:18.270
+Kiran: Jessica. This is Vijay.
+
+258
+00:48:18.270 --> 00:48:18.940
+Jessica: Yeah.
+
+259
+00:48:19.670 --> 00:48:26.609
+Kiran: This is regarding the practical application, submission. By mistake I attached the wrong, URL, and then you have reverted that
+
+260
+00:48:26.940 --> 00:48:27.480
+Jessica: Oh, yeah.
+
+261
+00:48:27.480 --> 00:48:28.200
+Kiran: To me.
+
+262
+00:48:29.574 --> 00:48:41.600
+Kiran: I submitted, resubmitted, that I just want to confirm if that is taken care. And I I opened a case to to allow me to resubmit. But you know.
+
+263
+00:48:41.760 --> 00:48:54.300
+Kiran: someone in the support team has reset all my code assignment grades for from module one and part of my yeah, yeah, every every Korea assignment is graded to 0 now
+
+264
+00:48:54.961 --> 00:48:59.750
+Jessica: Let me let me let me check like. Are are your grades gone? Is that what you're.
+
+265
+00:48:59.750 --> 00:49:02.249
+Kiran: Yeah, that's correct for career assignments.
+
+266
+00:49:02.420 --> 00:49:06.219
+Jessica: Let me let me check your grade book quick, because this is this is urgent.
+
+267
+00:49:07.110 --> 00:49:08.409
+Namrata: That happen to many.
+
+268
+00:49:08.410 --> 00:49:09.859
+Zhujun Wang: That happened to me actually.
+
+269
+00:49:09.860 --> 00:49:10.650
+Kiran: I think like.
+
+270
+00:49:10.650 --> 00:49:13.950
+Zhujun Wang: Receive the email. Say this Assistant Arrow, like probably.
+
+271
+00:49:13.950 --> 00:49:14.349
+Kiran: That's correct.
+
+272
+00:49:14.350 --> 00:49:15.749
+Zhujun Wang: Of student got impact.
+
+273
+00:49:15.750 --> 00:49:16.840
+Jessica: Oh, really.
+
+274
+00:49:17.110 --> 00:49:17.460
+Zhujun Wang: Yeah.
+
+275
+00:49:17.460 --> 00:49:18.250
+Kiran: Okay. Okay.
+
+276
+00:49:20.200 --> 00:49:30.200
+Jessica: okay? So, well, okay. So for the code, you assignments. We code you lives on a separate system. So
+
+277
+00:49:30.530 --> 00:49:51.509
+Jessica: I know, like, if the grades are not on canvas, they are in Codeo, so we can find those. I'm sure somebody's freaking out, and you're not the only ones I was not aware of this, but I will, mark. I will grade your module. 17
+
+278
+00:49:51.820 --> 00:49:56.040
+Jessica: practical application assignment tonight or tomorrow.
+
+279
+00:49:56.610 --> 00:49:57.640
+Kiran: Sure, sure. Thank you very much.
+
+280
+00:49:57.640 --> 00:50:03.469
+Jessica: Yeah, yeah, I'll I'll make a note of that. So I can do that tomorrow. 1st thing in the morning.
+
+281
+00:50:07.670 --> 00:50:08.520
+Jessica: Okay?
+
+282
+00:50:08.680 --> 00:50:16.459
+Jessica: And then there was, what are causes for wrong recommendations?
+
+283
+00:50:17.082 --> 00:50:23.220
+Jessica: Missing items it could be also like users that you know, rate
+
+284
+00:50:23.220 --> 00:50:48.279
+Jessica: something 5 stars because they're in a rush. And they don't really think it's a 5 star movie. We've all done that. Okay, we've all done. We've all rated Apps 5 stars not to do the survey. Okay, so wrong recommendations can be caused by a lot of factors. It can be that an item is missing can be. There is like a mistake in the system. It can be also that people are just reviewing stuff wrong. And you know.
+
+285
+00:50:48.440 --> 00:50:49.660
+Jessica: it's
+
+286
+00:50:49.870 --> 00:51:14.840
+Jessica: perhaps is like, you know, the system is trained on data that does not actually reflect the user taste. So it is important to leave reviews and to, you know, leave reviews that actually make sense to improve everybody's experience with recommender system. I do think, though, that after many years, especially with the most popular services, they do work pretty well. Okay. It's
+
+287
+00:51:15.090 --> 00:51:29.299
+Jessica: always going to happen that you are given a song or a Youtube video or a product that you don't really like. But I do think that recommender systems over. The years have gotten better. And I think you notice that, too.
+
+288
+00:51:32.000 --> 00:51:38.640
+Jessica: Okay, I'm curious about the grades. Are you guys still without grades, or you have them.
+
+289
+00:51:39.850 --> 00:51:41.230
+Kiran: Still without.
+
+290
+00:51:41.230 --> 00:51:42.030
+Zhujun Wang: On my side.
+
+291
+00:51:42.600 --> 00:51:49.259
+Kiran: It is with 0 grade for some of almost 7 to 8 Choreo assignments were set to 0 for me.
+
+292
+00:51:49.570 --> 00:51:50.569
+Jessica: Hmm, that's you know.
+
+293
+00:51:50.570 --> 00:51:52.470
+Jessica: Yeah. So let me take a look at
+
+294
+00:51:52.620 --> 00:51:57.560
+Jessica: some of your name. I'm not gonna share this screen for privacy reasons.
+
+295
+00:51:59.870 --> 00:52:03.650
+Kiran: I was getting. I was getting a lot of.
+
+296
+00:52:04.760 --> 00:52:09.159
+Jessica: I was getting a lot. Oh, yeah, all of you have zeros.
+
+297
+00:52:09.160 --> 00:52:10.180
+Namrata: Yeah.
+
+298
+00:52:10.640 --> 00:52:12.750
+Jessica: Moment. Okay.
+
+299
+00:52:13.040 --> 00:52:42.289
+Jessica: the the good news is that again, codeyo. Like, Dom, I know it's it's worrying you. But I worked with codeo, a lot to create assignments and to, you know, test assignment. So I know that the grades are not lost, even if we have to do it manually, and we have to like, replace all the grades. That is something that we can do, because Codeo has a grade book as well, and
+
+300
+00:52:42.360 --> 00:52:46.349
+Jessica: let me check for you, but I think that
+
+301
+00:52:46.590 --> 00:52:51.220
+Jessica: I I'm hoping that all the grades are there. So let me check that quick.
+
+302
+00:52:52.810 --> 00:52:54.569
+Jessica: And it's just for Codeo.
+
+303
+00:52:55.370 --> 00:52:56.030
+Kiran: Yeah.
+
+304
+00:52:56.440 --> 00:52:59.620
+Jessica: Just for okay. So the discussions and everything else is fine.
+
+305
+00:52:59.620 --> 00:53:00.869
+Kiran: Yeah, it's fine.
+
+306
+00:53:00.870 --> 00:53:08.099
+Jessica: Okay. I will also maybe put that in the chat because I I was not aware of this. Let me check.
+
+307
+00:53:08.100 --> 00:53:13.679
+Zhujun Wang: Let me try to find out the notification. Okay.
+
+308
+00:53:13.680 --> 00:53:18.510
+Kiran: Yeah, 31st of December. We got notifications email notifications about this one.
+
+309
+00:53:19.260 --> 00:53:33.660
+Jessica: Yeah. So I'm gonna I'm gonna quickly share the screen here. You see, this is the code one of the Codeo assignment for Module 18. We do have the grades here. So the grades are. They are in Codeo. They're not on canvas.
+
+310
+00:53:34.110 --> 00:53:44.929
+Jessica: but I will definitely communicate that, because I think they know, and they haven't made us aware. But I will make sure that that everything is is reported
+
+311
+00:53:45.450 --> 00:53:51.919
+Jessica: sure. Okay, alright, and yeah. And and is there anything else I can do for you?
+
+312
+00:53:55.390 --> 00:54:06.090
+Jessica: Okay? Well, guys, I'm apologies about the grades, and I'm sure it will be solved very soon. I will be sharing the material.
+
+313
+00:54:09.400 --> 00:54:18.959
+Jessica: I will be sharing the material with you right away. And yeah, I will see you in a couple of weeks for the next office hours bye, and have a good rest of your day.
+

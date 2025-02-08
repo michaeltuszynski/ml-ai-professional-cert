@@ -94,13 +94,20 @@ def find_module_page(notion: Client, module_number: str) -> Optional[str]:
 def find_notes_page(notion: Client, module_id: str) -> Optional[str]:
     """Find the Notes page under a module"""
     children = notion.blocks.children.list(module_id).get("results", [])
+    print(f"\nSearching for Notes page among {len(children)} children...")
 
     for child in children:
         if child["type"] == "child_page":
-            title = child.get("child_page", {}).get("title", "")
-            if title == "Notes":
+            print(f"Found child page structure: {json.dumps(child, indent=2)}")
+            # Try different ways to access the title
+            title = (child.get("child_page", {}).get("title", "") or
+                    child.get("title", [{}])[0].get("text", {}).get("content", ""))
+            print(f"Extracted title: {title}")
+            if "Notes" in title:
+                print(f"Found Notes page with ID: {child['id']}")
                 return child["id"]
 
+    print("Notes page not found")
     return None
 
 def extract_notebook_summary(notebook_path: str) -> Optional[str]:
