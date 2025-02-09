@@ -269,11 +269,47 @@ def convert_markdown_to_blocks(content: str) -> List[Dict[str, Any]]:
 
     return blocks
 
+def get_root_page_id(notion: Client) -> str:
+    """Find the root page ID by looking for the AIML Class page"""
+    # First try to find the AIML Class page directly
+    response = notion.search(
+        query="AIML Class",
+        filter={"property": "object", "value": "page"}
+    ).get("results", [])
+
+    for page in response:
+        if page["object"] == "page":
+            title = page["properties"]["title"]["title"][0]["text"]["content"]
+            if title == "AIML Class":
+                return page["id"]
+
+    # If AIML Class page not found, try to find parent of any module page
+    response = notion.search(
+        query="Module",
+        filter={"property": "object", "value": "page"}
+    ).get("results", [])
+
+    for page in response:
+        if page["object"] == "page":
+            title = page["properties"]["title"]["title"][0]["text"]["content"]
+            if title.startswith("Module "):
+                # Get the parent ID of this module page
+                parent = page.get("parent", {})
+                if parent.get("type") == "page_id":
+                    return parent["page_id"]
+
+    # Fallback to environment variable if no modules found
+    root_id = os.getenv('NOTION_ROOT_PAGE_ID')
+    if not root_id:
+        raise ValueError("Could not find AIML Class page or root page ID. Please set NOTION_ROOT_PAGE_ID environment variable.")
+    return root_id
+
 def create_module_page(notion: Client, module_number: str, module_title: str) -> str:
     """Create a new module page"""
     full_title = f"Module {module_number}: {module_title}"
+    root_id = get_root_page_id(notion)
     new_page = notion.pages.create(
-        parent={"type": "page_id", "page_id": "2f7f4bed-9f8a-4725-b486-afead86f9d64"},  # Root page ID
+        parent={"type": "page_id", "page_id": root_id},
         properties={
             "title": {
                 "title": [

@@ -96,43 +96,105 @@ def list_page_hierarchy(notion: Client) -> None:
         print("\n" + page_titles.get(root_id, "Untitled"))
         print_hierarchy(hierarchy, page_titles, root_id)
 
-def find_module_notes_structure(notion: Client, module_number: str) -> None:
-    """Find and print the structure of a module's Notes page"""
-    # Find the module page
+def get_root_page_id(notion: Client) -> str:
+    """Find the root page ID by looking for the AIML Class page"""
+    # First try to find the AIML Class page directly
     response = notion.search(
-        query=f"Module {module_number}: Recommendation Systems",
+        query="AIML Class",
         filter={"property": "object", "value": "page"}
     ).get("results", [])
 
-    print(f"\nSearching for Module {module_number}...")
+    for page in response:
+        if page["object"] == "page":
+            title = page["properties"]["title"]["title"][0]["text"]["content"]
+            if title == "AIML Class":
+                return page["id"]
+
+    # If AIML Class page not found, try to find parent of any module page
+    response = notion.search(
+        query="Module",
+        filter={"property": "object", "value": "page"}
+    ).get("results", [])
+
+    for page in response:
+        if page["object"] == "page":
+            title = page["properties"]["title"]["title"][0]["text"]["content"]
+            if title.startswith("Module "):
+                # Get the parent ID of this module page
+                parent = page.get("parent", {})
+                if parent.get("type") == "page_id":
+                    return parent["page_id"]
+
+    # Fallback to environment variable if no modules found
+    root_id = os.getenv('NOTION_ROOT_PAGE_ID')
+    if not root_id:
+        raise ValueError("Could not find AIML Class page or root page ID. Please set NOTION_ROOT_PAGE_ID environment variable.")
+    return root_id
+
+def get_module_title(notion: Client, module_number: str) -> str:
+    """Find the title format by looking at other module pages"""
+    response = notion.search(
+        query="Module",
+        filter={"property": "object", "value": "page"}
+    ).get("results", [])
+
+    # Try to find a module page to use as template
+    for page in response:
+        if page["object"] == "page":
+            title = page["properties"]["title"]["title"][0]["text"]["content"]
+            if title.startswith("Module "):
+                # Extract the format: "Module X: Title"
+                parts = title.split(": ", 1)
+                if len(parts) == 2:
+                    return f"Module {module_number}: {parts[1]}"
+
+    # Fallback to generic title if no other modules found
+    return f"Module {module_number}"
+
+def find_module_notes_structure(notion: Client, module_number: str, module_title: str = None) -> None:
+    """Find and print the structure of a module's Notes page"""
+    if not module_title:
+        module_title = get_module_title(notion, module_number)
+
+    # Find the module page
+    response = notion.search(
+        query=module_title,
+        filter={"property": "object", "value": "page"}
+    ).get("results", [])
+
+    print(f"\nSearching for {module_title}...")
     module_id = None
     for page in response:
         if page["object"] == "page":
             title = page["properties"]["title"]["title"][0]["text"]["content"]
             print(f"Found page: {title}")
-            if f"Module {module_number}: Recommendation Systems" == title:
+            if module_title == title:
                 module_id = page["id"]
                 print(f"Selected as module page (ID: {module_id})")
                 break
 
     if not module_id:
-        print(f"Could not find main Module {module_number} page")
-        print("Creating Module 19 page...")
+        print(f"Could not find main {module_title} page")
+        print(f"Creating {module_title} page...")
+
+        # Get root page ID
+        root_id = get_root_page_id(notion)
+
         module_id = notion.pages.create(
-            parent={"type": "page_id", "page_id": "2f7f4bed-9f8a-4725-b486-afead86f9d64"},  # Root page ID
+            parent={"type": "page_id", "page_id": root_id},
             properties={
                 "title": {
                     "title": [
                         {
                             "text": {
-                                "content": f"Module {module_number}: Recommendation Systems"
+                                "content": module_title
                             }
                         }
                     ]
                 }
             }
         )["id"]
-        print(f"Created Module {module_number} page (ID: {module_id})")
+        print(f"Created {module_title} page (ID: {module_id})")
 
         print("Creating Notes page...")
         notes_id = notion.pages.create(
@@ -185,7 +247,7 @@ def find_module_notes_structure(notion: Client, module_number: str) -> None:
         return
 
     # Print Notes page structure
-    print(f"\nStructure of Module {module_number} Notes:")
+    print(f"\nStructure of {module_title} Notes:")
     notes_children = notion.blocks.children.list(notes_id).get("results", [])
     for child in notes_children:
         if child["type"] == "child_page":
@@ -201,6 +263,8 @@ def find_module_notes_structure(notion: Client, module_number: str) -> None:
 def main():
     parser = argparse.ArgumentParser(description='Sync markdown files to Notion')
     parser.add_argument('--inspect', help='Inspect module structure (e.g., "18")', required=False)
+    parser.add_argument('--title', help='Optional module title', required=False)
+    parser.add_argument('--list', action='store_true', help='List all pages in hierarchy', required=False)
     parser.add_argument('file_path', help='Path to the markdown file', nargs='?')
     parser.add_argument('--new', action='store_true', help='Force creation of a new page even if one exists')
     args = parser.parse_args()
@@ -208,16 +272,21 @@ def main():
     try:
         notion = setup_notion_client()
 
+        if args.list:
+            list_page_hierarchy(notion)
+            return
+
         if args.inspect:
-            find_module_notes_structure(notion, args.inspect)
+            find_module_notes_structure(notion, args.inspect, args.title)
             return
 
         if not args.file_path:
             parser.print_help()
             return
 
-        if not args.file_path.startswith('module19/'):
-            print("Error: Can only sync files from the module19 directory")
+        # Update file path validation to work with any module
+        if not any(args.file_path.startswith(f'module{i}/') for i in range(1, 100)):
+            print("Error: File path must be within a module directory (e.g., module1/, module2/, etc.)")
             sys.exit(1)
 
         sync_markdown_to_notion(args.file_path, force_new=args.new)
