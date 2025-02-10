@@ -22,7 +22,7 @@ def setup_notion_client() -> Client:
     return Client(auth=token)
 
 def extract_module_info(file_path: str) -> Tuple[str, str]:
-    """Extract module number and title from file path.
+    """Extract module number from file path.
     Returns tuple of (module_number, module_title)
     """
     # Extract module number from path (e.g., module19/ -> 19)
@@ -31,36 +31,29 @@ def extract_module_info(file_path: str) -> Tuple[str, str]:
         raise ValueError(f"Invalid module path format: {file_path}")
 
     module_number = match.group(1)
-
-    # For now, use a mapping for module titles
-    # This could be enhanced to read from a config file
-    MODULE_TITLES = {
-        "19": "Recommendation Systems",
-        # Add more modules as needed
-    }
-
-    module_title = MODULE_TITLES.get(module_number)
-    if not module_title:
-        # If no specific title found, use a generic one
-        module_title = f"Module {module_number}"
+    # Default title - will be overridden if existing page found
+    module_title = f"Module {module_number}"
 
     return module_number, module_title
 
-def find_module_page(notion: Client, module_number: str, module_title: str) -> Optional[str]:
-    """Find the module page ID"""
-    full_title = f"Module {module_number}: {module_title}"
+def find_module_page(notion: Client, module_number: str, module_title: str) -> Tuple[Optional[str], Optional[str]]:
+    """Find the module page ID by searching for pages starting with 'Module {number}'
+    Returns tuple of (page_id, page_title) if found, (None, None) if not found
+    """
+    search_title = f"Module {module_number}"
     response = notion.search(
-        query=full_title,
+        query=search_title,
         filter={"property": "object", "value": "page"}
     ).get("results", [])
 
     for page in response:
         if page["object"] == "page":
             title = page["properties"]["title"]["title"][0]["text"]["content"]
-            if title == full_title:  # Exact match
-                return page["id"]
+            # Match any page that starts with "Module {number}"
+            if title.startswith(search_title):
+                return page["id"], title
 
-    return None
+    return None, None
 
 def find_notes_page(notion: Client, module_id: str) -> Optional[str]:
     """Find the Notes page under a module"""
@@ -71,6 +64,7 @@ def find_notes_page(notion: Client, module_id: str) -> Optional[str]:
         if child["type"] == "child_page":
             title = child.get("child_page", {}).get("title", "")
             if title == "Notes":
+                print(f"Found Notes page under module")
                 return child["id"]
 
     return None
@@ -80,12 +74,16 @@ def find_existing_page(notion: Client, notes_page_id: str, title: str) -> Option
     # Get all child pages of Notes
     children = notion.blocks.children.list(notes_page_id).get("results", [])
 
+    print(f"Searching for '{title}' under Notes page...")
     for child in children:
         if child["type"] == "child_page":
             page_title = child.get("child_page", {}).get("title", "")
+            print(f"  Found child page: {page_title}")
             if page_title == title:
+                print(f"  Found matching page: {title}")
                 return child["id"]
 
+    print(f"  No existing page found with title: {title}")
     return None
 
 def extract_first_h1_header(content: str) -> Optional[str]:
@@ -306,7 +304,8 @@ def get_root_page_id(notion: Client) -> str:
 
 def create_module_page(notion: Client, module_number: str, module_title: str) -> str:
     """Create a new module page"""
-    full_title = f"Module {module_number}: {module_title}"
+    # Always use the default title format for new pages
+    full_title = f"Module {module_number}"
     root_id = get_root_page_id(notion)
     new_page = notion.pages.create(
         parent={"type": "page_id", "page_id": root_id},
@@ -344,6 +343,16 @@ def create_notes_page(notion: Client, module_id: str) -> str:
 
 def create_notion_page(notion: Client, parent_id: str, title: str, content: str) -> str:
     """Create a new page in Notion under the specified parent"""
+    print(f"Creating new page '{title}' under parent {parent_id}...")
+
+    # Verify parent exists and get its title
+    try:
+        parent = notion.pages.retrieve(parent_id)
+        parent_title = parent["properties"]["title"]["title"][0]["text"]["content"]
+        print(f"Parent page title: {parent_title}")
+    except Exception as e:
+        print(f"Warning: Could not verify parent page: {str(e)}")
+
     # Create the page
     new_page = notion.pages.create(
         parent={"type": "page_id", "page_id": parent_id},
@@ -413,19 +422,30 @@ def extract_last_markdown_from_notebook(notebook_path: str) -> str:
         return ''.join(last_markdown)
     return last_markdown
 
+def get_title_from_filename(filename: str) -> Optional[str]:
+    """Get formatted title from filename for special cases like quizzes"""
+    # Check for quiz files (e.g., quiz1.md, quiz2.md)
+    quiz_match = re.match(r'quiz(\d+)', filename.lower())
+    if quiz_match:
+        quiz_num = quiz_match.group(1)
+        return f"Quiz {quiz_num}"
+    return None
+
 def sync_markdown_to_notion(file_path: str, force_new: bool = False) -> None:
     """Sync a markdown file to Notion under a module's Notes page"""
     # Setup client
     notion = setup_notion_client()
 
     # Extract module information from file path
-    module_number, module_title = extract_module_info(file_path)
+    module_number, _ = extract_module_info(file_path)
 
     # Find or create module page
-    module_id = find_module_page(notion, module_number, module_title)
+    module_id, existing_title = find_module_page(notion, module_number, None)
     if not module_id:
         print(f"Creating Module {module_number} page...")
-        module_id = create_module_page(notion, module_number, module_title)
+        module_id = create_module_page(notion, module_number, None)
+    else:
+        print(f"Found existing module page: {existing_title}")
 
     # Find or create Notes page
     notes_page_id = find_notes_page(notion, module_id)
@@ -444,11 +464,15 @@ def sync_markdown_to_notion(file_path: str, force_new: bool = False) -> None:
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
-    # Try to get title from first H1 header, fallback to filename
-    title = extract_first_h1_header(content)
+    # Try to get title from filename for special cases first
+    title = get_title_from_filename(file_path.stem)
+
+    # If not a special case, try H1 header, then fall back to formatted filename
     if not title:
-        title = file_path.stem.replace('-', ' ').title()
-        print(f"No H1 header found in markdown, using filename as title: {title}")
+        title = extract_first_h1_header(content)
+        if not title:
+            title = file_path.stem.replace('-', ' ').title()
+            print(f"No H1 header found in markdown, using formatted filename as title: {title}")
 
     try:
         # Check for existing page unless force_new is True
