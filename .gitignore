@@ -2,3 +2,6 @@
 .conda
 .DS_Store
 *.zip
+
+#temp because of large file size
+capstone/data/
