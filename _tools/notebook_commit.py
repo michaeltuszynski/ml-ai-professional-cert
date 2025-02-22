@@ -203,9 +203,13 @@ def find_or_create_notebook_page(notion: Client, notes_id: str, notebook_path: s
     path_parts = notebook_path.split('/')
     file_name = Path(path_parts[-1]).stem
 
-    # Try to extract assignment number (e.g., "18.1" from various filename patterns)
-    number_match = re.search(r'(?:codio_assignment_?|colab_activity_?|try_it_?)(\d+(?:\.\d+)?)', file_name, re.IGNORECASE)
+    # Try to extract assignment number (e.g., "21.3" from colab_activity_21_3)
+    number_match = re.search(r'(?:codio_assignment_?|colab_activity_?|try_it_?)(\d+(?:[.-]\d+)?)', file_name, re.IGNORECASE)
     assignment_number = number_match.group(1) if number_match else ""
+
+    # Format assignment number to use dot instead of hyphen (21-3 -> 21.3)
+    if assignment_number:
+        assignment_number = assignment_number.replace('-', '.')
 
     # Determine page title based on path
     if 'codio' in notebook_path.lower():
@@ -217,15 +221,20 @@ def find_or_create_notebook_page(notion: Client, notes_id: str, notebook_path: s
     else:
         page_title = file_name.replace('_', ' ').title()
 
+    print(f"Looking for notebook page with title: {page_title}")
+
     # Check if page already exists
     children = notion.blocks.children.list(notes_id).get("results", [])
     for child in children:
         if child["type"] == "child_page":
-            title = child.get("child_page", {}).get("title", "")
-            if title == page_title:
+            existing_title = child.get("child_page", {}).get("title", "")
+            print(f"Found existing page: {existing_title}")
+            if existing_title == page_title:
+                print(f"Found matching page with ID: {child['id']}")
                 return child["id"]
 
     # Create new page if it doesn't exist
+    print(f"Creating new page with title: {page_title}")
     new_page = notion.pages.create(
         parent={"type": "page_id", "page_id": notes_id},
         properties={
@@ -240,6 +249,7 @@ def find_or_create_notebook_page(notion: Client, notes_id: str, notebook_path: s
             }
         }
     )
+    print(f"Created new page with ID: {new_page['id']}")
     return new_page["id"]
 
 def add_or_update_page_content(notion: Client, page_id: str, notebook_path: str, github_url: str, colab_url: str) -> None:
