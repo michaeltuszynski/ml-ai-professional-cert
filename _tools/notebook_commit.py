@@ -202,14 +202,19 @@ def find_or_create_notebook_page(notion: Client, notes_id: str, notebook_path: s
     # Extract notebook name from path (e.g., "Codio 18.1" from path)
     path_parts = notebook_path.split('/')
     file_name = Path(path_parts[-1]).stem
+    print(f"\nProcessing notebook: {file_name}")
 
     # Try to extract assignment number (e.g., "21.3" from colab_activity_21_3)
-    number_match = re.search(r'(?:codio_assignment_?|colab_activity_?|try_it_?)(\d+(?:[.-]\d+)?)', file_name, re.IGNORECASE)
-    assignment_number = number_match.group(1) if number_match else ""
+    number_match = re.search(r'(?:codio_assignment_?|colab_activity_?|try_it_?)(\d+)(?:[._-](\d+))?', file_name, re.IGNORECASE)
 
-    # Format assignment number to use dot instead of hyphen (21-3 -> 21.3)
-    if assignment_number:
-        assignment_number = assignment_number.replace('-', '.')
+    if number_match:
+        module_num = number_match.group(1)
+        activity_num = number_match.group(2) if number_match.group(2) else ""
+        assignment_number = f"{module_num}.{activity_num}" if activity_num else module_num
+        print(f"Extracted module number: {module_num}, activity number: {activity_num}")
+    else:
+        assignment_number = ""
+        print("Could not extract assignment number")
 
     # Determine page title based on path
     if 'codio' in notebook_path.lower():
@@ -221,36 +226,43 @@ def find_or_create_notebook_page(notion: Client, notes_id: str, notebook_path: s
     else:
         page_title = file_name.replace('_', ' ').title()
 
-    print(f"Looking for notebook page with title: {page_title}")
+    print(f"Looking for notebook page with title: '{page_title}'")
 
     # Check if page already exists
     children = notion.blocks.children.list(notes_id).get("results", [])
+    print(f"\nChecking {len(children)} existing pages under Notes:")
+
     for child in children:
         if child["type"] == "child_page":
             existing_title = child.get("child_page", {}).get("title", "")
-            print(f"Found existing page: {existing_title}")
+            print(f"Found existing page: '{existing_title}'")
             if existing_title == page_title:
                 print(f"Found matching page with ID: {child['id']}")
                 return child["id"]
 
     # Create new page if it doesn't exist
-    print(f"Creating new page with title: {page_title}")
-    new_page = notion.pages.create(
-        parent={"type": "page_id", "page_id": notes_id},
-        properties={
-            "title": {
-                "title": [
-                    {
-                        "text": {
-                            "content": page_title
+    print(f"\nNo matching page found. Creating new page with title: '{page_title}'")
+    try:
+        new_page = notion.pages.create(
+            parent={"type": "page_id", "page_id": notes_id},
+            properties={
+                "title": {
+                    "title": [
+                        {
+                            "text": {
+                                "content": page_title
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
             }
-        }
-    )
-    print(f"Created new page with ID: {new_page['id']}")
-    return new_page["id"]
+        )
+        print(f"Created new page with ID: {new_page['id']}")
+        print(f"New page response: {json.dumps(new_page, indent=2)}")
+        return new_page["id"]
+    except Exception as e:
+        print(f"Error creating new page: {str(e)}")
+        raise
 
 def add_or_update_page_content(notion: Client, page_id: str, notebook_path: str, github_url: str, colab_url: str) -> None:
     """Add or update page content including summary and bookmarks"""
