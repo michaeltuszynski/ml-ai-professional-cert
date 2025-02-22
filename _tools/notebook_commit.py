@@ -245,16 +245,11 @@ def find_or_create_notebook_page(notion: Client, notes_id: str, notebook_path: s
 def add_or_update_page_content(notion: Client, page_id: str, notebook_path: str, github_url: str, colab_url: str) -> None:
     """Add or update page content including summary and bookmarks"""
     try:
-        # Delete existing content
-        print(f"\nDeleting existing content from page {page_id}...")
-        blocks = notion.blocks.children.list(page_id).get("results", [])
-        for block in blocks:
-            notion.blocks.delete(block_id=block["id"])
+        content_blocks = []
 
         # Extract notebook summary
         print("Extracting notebook summary...")
         summary = extract_notebook_summary(notebook_path)
-        content_blocks = []
 
         # Add summary if available
         if summary:
