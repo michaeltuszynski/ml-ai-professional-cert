@@ -353,7 +353,11 @@ def create_notion_page(notion: Client, parent_id: str, title: str, content: str)
     except Exception as e:
         print(f"Warning: Could not verify parent page: {str(e)}")
 
-    # Create the page
+    # Convert content to blocks
+    all_blocks = convert_markdown_to_blocks(content)
+
+    # Create initial page with first 100 blocks
+    initial_blocks = all_blocks[:100]
     new_page = notion.pages.create(
         parent={"type": "page_id", "page_id": parent_id},
         properties={
@@ -367,8 +371,18 @@ def create_notion_page(notion: Client, parent_id: str, title: str, content: str)
                 ]
             }
         },
-        children=convert_markdown_to_blocks(content)
+        children=initial_blocks
     )
+
+    # If there are more blocks, append them in chunks of 100
+    remaining_blocks = all_blocks[100:]
+    for i in range(0, len(remaining_blocks), 100):
+        chunk = remaining_blocks[i:i + 100]
+        print(f"Appending blocks {i+100} to {i+len(chunk)+100}...")
+        notion.blocks.children.append(
+            block_id=new_page["id"],
+            children=chunk
+        )
 
     return new_page["id"]
 
@@ -395,11 +409,25 @@ def update_notion_page(notion: Client, page_id: str, title: str, content: str) -
     for block in blocks:
         notion.blocks.delete(block_id=block["id"])
 
-    # Add new content
+    # Convert content to blocks
+    all_blocks = convert_markdown_to_blocks(content)
+
+    # Add first 100 blocks
+    initial_blocks = all_blocks[:100]
     notion.blocks.children.append(
         block_id=page_id,
-        children=convert_markdown_to_blocks(content)
+        children=initial_blocks
     )
+
+    # If there are more blocks, append them in chunks of 100
+    remaining_blocks = all_blocks[100:]
+    for i in range(0, len(remaining_blocks), 100):
+        chunk = remaining_blocks[i:i + 100]
+        print(f"Appending blocks {i+100} to {i+len(chunk)+100}...")
+        notion.blocks.children.append(
+            block_id=page_id,
+            children=chunk
+        )
 
     return page_id
 
