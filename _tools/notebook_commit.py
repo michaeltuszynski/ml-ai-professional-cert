@@ -244,56 +244,73 @@ def find_or_create_notebook_page(notion: Client, notes_id: str, notebook_path: s
 
 def add_or_update_page_content(notion: Client, page_id: str, notebook_path: str, github_url: str, colab_url: str) -> None:
     """Add or update page content including summary and bookmarks"""
-    # Delete existing content
-    blocks = notion.blocks.children.list(page_id).get("results", [])
-    for block in blocks:
-        notion.blocks.delete(block_id=block["id"])
+    try:
+        # Delete existing content
+        print(f"\nDeleting existing content from page {page_id}...")
+        blocks = notion.blocks.children.list(page_id).get("results", [])
+        for block in blocks:
+            notion.blocks.delete(block_id=block["id"])
 
-    # Extract notebook summary
-    summary = extract_notebook_summary(notebook_path)
-    content_blocks = []
+        # Extract notebook summary
+        print("Extracting notebook summary...")
+        summary = extract_notebook_summary(notebook_path)
+        content_blocks = []
 
-    # Add summary if available
-    if summary:
-        content_blocks.extend(convert_markdown_to_blocks(summary))
+        # Add summary if available
+        if summary:
+            print(f"Converting markdown summary (length: {len(summary)}) to blocks...")
+            content_blocks.extend(convert_markdown_to_blocks(summary))
+        else:
+            print("No summary found in notebook")
 
-    # Add bookmarks
-    content_blocks.extend([
-        {
-            "type": "bookmark",
-            "bookmark": {
-                "url": github_url,
-                "caption": [
-                    {
-                        "type": "text",
-                        "text": {
-                            "content": "View on GitHub"
+        # Add bookmarks
+        print("Adding bookmark blocks...")
+        content_blocks.extend([
+            {
+                "type": "bookmark",
+                "bookmark": {
+                    "url": github_url,
+                    "caption": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "View on GitHub"
+                            }
                         }
-                    }
-                ]
-            }
-        },
-        {
-            "type": "bookmark",
-            "bookmark": {
-                "url": colab_url,
-                "caption": [
-                    {
-                        "type": "text",
-                        "text": {
-                            "content": "Open in Colab"
+                    ]
+                }
+            },
+            {
+                "type": "bookmark",
+                "bookmark": {
+                    "url": colab_url,
+                    "caption": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Open in Colab"
+                            }
                         }
-                    }
-                ]
+                    ]
+                }
             }
-        }
-    ])
+        ])
 
-    # Add all blocks to the page
-    notion.blocks.children.append(
-        block_id=page_id,
-        children=content_blocks
-    )
+        print(f"Appending {len(content_blocks)} blocks to page...")
+        # Add all blocks to the page
+        response = notion.blocks.children.append(
+            block_id=page_id,
+            children=content_blocks
+        )
+        print("Successfully added content blocks")
+
+        # Verify the blocks were added
+        new_blocks = notion.blocks.children.list(page_id).get("results", [])
+        print(f"Page now has {len(new_blocks)} blocks")
+
+    except Exception as e:
+        print(f"Error updating page content: {str(e)}")
+        raise  # Re-raise the exception to be caught by the caller
 
 def sync_notebook_to_notion(notebook_path: str, github_url: str, colab_url: str) -> None:
     """Sync a notebook's URLs and summary to Notion"""
