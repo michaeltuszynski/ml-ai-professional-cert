@@ -1,0 +1,1582 @@
+WEBVTT
+
+1
+00:00:05.980 --> 00:00:13.170
+Mani K: I forgot where the setting for transcriptionist.
+
+2
+00:00:14.070 --> 00:00:16.690
+Mani K: And that's good.
+
+3
+00:00:19.100 --> 00:00:19.830
+Mani K: Okay.
+
+4
+00:00:24.810 --> 00:00:29.069
+Mani K: alright, let's get started. We were
+
+5
+00:00:30.060 --> 00:00:33.460
+Mani K: got 5 of us in the call.
+
+6
+00:00:34.640 --> 00:00:47.960
+Mani K: Cool, alright. Let me share the slide deck in the chat window.
+
+7
+00:00:56.800 --> 00:00:58.809
+Mani K: Alright, that's the deck.
+
+8
+00:00:59.840 --> 00:01:00.495
+Mani K: Alright.
+
+9
+00:01:03.310 --> 00:01:05.579
+Mani K: Everyone can see my screen.
+
+10
+00:01:06.680 --> 00:01:18.459
+Mani K: And okay. So for moving on to today's I guess like topics.
+
+11
+00:01:19.970 --> 00:01:36.490
+Mani K: I think a few of you have already scheduled the second capstone meeting with me, I guess, like highly encourage everyone else to also schedule your second meeting so this one should have some
+
+12
+00:01:36.929 --> 00:01:57.790
+Mani K: Eda analysis done. So that is my expectation. So you already have the data. You've done some media work. If you've completed everything that's also fine, we can just review it. But if you haven't completed that's fine, but that's also fine. We'll go through how far you've done Eda, and
+
+13
+00:01:58.451 --> 00:02:09.309
+Mani K: maybe answer any questions, and then how to look to complete the project. So that's the thing. So if there is any scope adjustments, we can agree on it. And things like that. So that's the thing. Okay?
+
+14
+00:02:09.933 --> 00:02:11.079
+Mani K: Yeah. So.
+
+15
+00:02:11.080 --> 00:02:18.727
+Shashidhar S: Yeah, Mani, on that I have a question since. I'm doing the image classifier. I have done some
+
+16
+00:02:19.712 --> 00:02:39.857
+Shashidhar S: Eda, and come to the stage where I, showing the summary of images what kind of images I have, what sort of ideas I'm working on. Those kind of things have already documented. And and in the eda I would just summarize some kind of images and other
+
+17
+00:02:40.460 --> 00:02:41.030
+Shashidhar S: a static.
+
+18
+00:02:41.530 --> 00:02:50.240
+Shashidhar S: like what kind of images, how many per disease and things like that. What additional things I should be working on! Do I need to do any
+
+19
+00:02:50.845 --> 00:02:58.350
+Shashidhar S: before? Because we'll be covering the image processing, convolution, neural network, everything starting, I think, after the break.
+
+20
+00:02:58.550 --> 00:03:05.530
+Shashidhar S: So I've not selected the which are on the welcome
+
+21
+00:03:05.900 --> 00:03:13.390
+Shashidhar S: kind of libraries and other things from whatever from your earlier. Yeah.
+
+22
+00:03:13.390 --> 00:03:25.339
+Shashidhar S: I have. Yeah, that that list of things I have. And probably I can list those items which I will be using in addition to that, what else is the expectations in the Eda stage?
+
+23
+00:03:26.470 --> 00:03:54.490
+Mani K: I mean, the Eda is all about again, understanding data sets coming up with assumptions. You know. Again, for image processing. It's slightly different. Like, what other useful information you can extract out of the images. And how? How are you planning to use them right like, is there any kind of correlation there? And things like that? You can. You can try to do some of those things.
+
+24
+00:03:54.490 --> 00:04:06.416
+Mani K: Okay? So I yeah. So especially if if the images have some labeling and all of that right? Like, so I'm not sure like, how. Yeah? So is there any correlation things like that you can do
+
+25
+00:04:07.120 --> 00:04:20.059
+Mani K: with those labels. And whatever you're trying to predict so things like that. So that's what that's what it is so so it is just like looking into your data set and trying to
+
+26
+00:04:20.720 --> 00:04:46.229
+Mani K: build theories on it like or like or building assumptions on it. Hey? This is what I think, and I think we can. We can work off of that assumption and then see how the model, or whatever you're trying to build a model out is going to work. And if if the if that's if the model is behaving really bad, or something like that, or like not to that level of expectation.
+
+27
+00:04:46.230 --> 00:05:07.419
+Mani K: Then we can go back to those assumptions right like that's that's what it is so. Okay, I assume that this and this correlates with this, maybe that's not true or like it. You know, things like that. So you will have to go look into those kind of things. So there's so it's about building that story. So so it is that which part of that.
+
+28
+00:05:07.420 --> 00:05:25.740
+Shashidhar S: I have not built the model as yet. I have not still built the model, or I will discuss during the ed, and then, get the skill. I mean, whatever the topics that are covered, and see which one best fits the problem at hand, and then apply those techniques is what I was thinking
+
+29
+00:05:26.201 --> 00:05:32.440
+Shashidhar S: other than the model building and the final conclusions and other things. At least, I'll try to get the.
+
+30
+00:05:32.440 --> 00:05:32.860
+Mani K: Yeah.
+
+31
+00:05:33.070 --> 00:05:39.847
+Shashidhar S: What I'm working on, and things like that for the Ed. Today I will be picking the time for next
+
+32
+00:05:40.310 --> 00:05:46.530
+Shashidhar S: call. I think sometime Monday or Tuesday I will, based on your calendar. I will pick that time.
+
+33
+00:05:46.950 --> 00:05:48.150
+Mani K: Sounds good. Sounds good.
+
+34
+00:05:48.890 --> 00:05:50.640
+Mani K: So again, yeah.
+
+35
+00:05:51.430 --> 00:05:52.020
+Shashidhar S: Go ahead!
+
+36
+00:05:52.690 --> 00:06:04.009
+Vikash: So I had also another question on Eda. So it's like for Eda. Normally, what has been explained is like, you can do single variate, bivariate and multivariate.
+
+37
+00:06:04.280 --> 00:06:16.850
+Vikash: So I just wanted to understand, like, what are the plottings which we can do or what correlations which we can do for each variant. For example, say, taking the same example of
+
+38
+00:06:17.380 --> 00:06:20.349
+Vikash: cap of our project, that's.
+
+39
+00:06:20.350 --> 00:06:21.080
+Mani K: Yeah.
+
+40
+00:06:21.080 --> 00:06:29.520
+Vikash: Say what who will? What are the parameters which will decide the price of the car? Say, it's a project on Module 11.
+
+41
+00:06:29.520 --> 00:06:30.115
+Mani K: Okay,
+
+42
+00:06:30.710 --> 00:06:37.680
+Vikash: If I go with single variant. I I was like I was just checking the histograms of the column.
+
+43
+00:06:40.900 --> 00:06:46.349
+Vikash: for for example, I created histogram for each column, but that was not giving a story.
+
+44
+00:06:46.540 --> 00:07:13.911
+Vikash: Then, for my variant, I was just correlating the price with model say model, or say, the year in which it has been manufactured. So I was trying to kind of make a relationship between price and maybe the manufactured year, or any other features given in the table. But I'm not sure how what to do with multivariate like how to
+
+45
+00:07:14.570 --> 00:07:18.830
+Vikash: combine columns to correlate.
+
+46
+00:07:20.110 --> 00:07:25.209
+Vikash: That I'm not sure. So any any suggestions or any.
+
+47
+00:07:25.560 --> 00:07:26.240
+Mani K: Okay?
+
+48
+00:07:26.290 --> 00:07:32.749
+Mani K: So like, like like you mentioned by way univariate or single variates like,
+
+49
+00:07:33.160 --> 00:07:41.664
+Mani K: primarily histograms, you know, bar shots, spy shots, box rods. Those those kind of things would help. Okay, for
+
+50
+00:07:42.070 --> 00:08:06.316
+Mani K: by variate, like, you know, we kind of look at scatter plots heavily right like, I think. That's 1 way to look at doing like bivariate analysis. But for multivariate like there is something called you know. You can do heat maps, or you can also do like a pair plots like, you know, power plots gives you like a lot of different plots in in a single
+
+51
+00:08:07.044 --> 00:08:31.440
+Mani K: function. So you can try to do with that, like, some kind of Bivariate analysis. Okay, so that's the thing the only other thing that I can think of is like doing some 3D plots. Okay, like, if if you're dealing with like 3 variables. Then maybe, like, you can also explain with 3D scatter plots. Okay? Or 3D plots in general
+
+52
+00:08:32.090 --> 00:08:35.030
+Mani K: is that is that. Did that answer your question.
+
+53
+00:08:36.419 --> 00:08:47.550
+Mani K: So power plots or 3D scatter plots might be okay for multivariate. I think more scatter plots for Bivariate.
+
+54
+00:08:47.960 --> 00:08:48.500
+Vikash: Okay?
+
+55
+00:08:48.500 --> 00:08:50.269
+Vikash: So I'm just making a note.
+
+56
+00:08:50.580 --> 00:08:56.040
+Vikash: So 3D plots and pair plots for multivariate.
+
+57
+00:08:57.500 --> 00:08:59.529
+Vikash: And for Bivariate. You said.
+
+58
+00:09:00.241 --> 00:09:08.590
+Mani K: Like scatter plots. Even if you're doing bar plots, bar charts, you can do like stacked bar charts and things like that. Right?
+
+59
+00:09:10.660 --> 00:09:18.580
+Mani K: It's basically trying on. Yeah, trying to see how the distribution within that variable is going to look like. So you can do stack par shots.
+
+60
+00:09:19.300 --> 00:09:21.460
+Vikash: And where does box plot comes in.
+
+61
+00:09:22.300 --> 00:09:35.340
+Mani K: Box plot can also be done in both univariate and bivariate, because you can also do stacked box plots or grouped box plots, so you can do it in both univariate and as well as in Bivariate.
+
+62
+00:09:36.760 --> 00:09:39.850
+Vikash: And how about for univariate? What should I do?
+
+63
+00:09:41.194 --> 00:09:51.820
+Mani K: Univariate the the standard ones, right? Like you can. Do just plain histograms, box plots. Just bar charts, pie charts or any of them would work. Yeah.
+
+64
+00:09:53.250 --> 00:09:59.409
+Mani K: or all of them could work. I mean, it depends like, what kind of a thing that you are trying to plot. Yeah.
+
+65
+00:10:01.300 --> 00:10:01.910
+Mani K: Thanks.
+
+66
+00:10:03.400 --> 00:10:04.080
+Mani K: Cool.
+
+67
+00:10:05.643 --> 00:10:11.103
+Mani K: Yes, I think so. This is what I mean we expect out of Vda. It's just like
+
+68
+00:10:11.900 --> 00:10:36.250
+Mani K: some number crunching with. You know, some basic things around like you know the the mean Median variance. Things like that like, how does each of these vary and things like that. And then, like maybe some plots, and then maybe build your theories on it right like things like scatter, plot or heat maps. Things like that will will help you build some theories or assumptions.
+
+69
+00:10:36.310 --> 00:10:54.599
+Mani K: Those are things that you can state like. These are my hypothesis. And and you can test your hypothesis to actually. So that's the thing. When when you are doing the model, or like, there are ways to do hypothesis test right? Like. So you can also do some of them to actually like, confirm. If that is the case or not. Okay.
+
+70
+00:10:55.030 --> 00:10:59.960
+Vikash: And this Eds would be done before imputation, or is it that after imputation.
+
+71
+00:11:01.285 --> 00:11:06.960
+Mani K: Ideally. It should be done before, because I think I mean it. It.
+
+72
+00:11:08.380 --> 00:11:20.970
+Mani K: you! You got to do some level of cleaning before you do the eda. That's for sure. I mean, you don't want to do. But but then ideally, before the the actual invitation itself. Yeah.
+
+73
+00:11:23.620 --> 00:11:31.915
+Mani K: but cool great questions. Is there any any other questions on this topic regarding
+
+74
+00:11:33.682 --> 00:11:40.738
+Mani K: the capstone? Because I think that's I mean, like, we're almost there, towards the final few weeks.
+
+75
+00:11:41.370 --> 00:11:44.920
+Mani K: I think I think the projects are due like end of the month, I think.
+
+76
+00:11:46.990 --> 00:11:47.710
+Mani K: Okay.
+
+77
+00:11:48.060 --> 00:11:54.035
+Mani K: alright. Okay. So if there aren't any other questions, I'll just move on to today's topic. So
+
+78
+00:11:54.810 --> 00:12:08.138
+Mani K: So I looked at the the material covered in Module 20. So it was all about building ensemble models. So I just thought, like, I'll briefly go over some of those
+
+79
+00:12:09.161 --> 00:12:13.858
+Mani K: at a simple level, like what they are and how it works. And
+
+80
+00:12:14.775 --> 00:12:32.920
+Mani K: maybe discuss few points there. I don't have any particular notebook to kind of like work on it. But but we can just talk about it. And then if if any specific questions are there, I can. I can probably answer them. Okay, so that's the thing, right?
+
+81
+00:12:33.445 --> 00:12:50.214
+Mani K: So so far, we've been mostly dealing with a single model or a single algorithm. Right? Like, for, for example, we've been dealing with a lot of classification models like regression models and all of that. But then so what is ensemble learning? It's basically like,
+
+82
+00:12:50.690 --> 00:12:52.979
+Mani K: instead of a single model trying to
+
+83
+00:12:53.516 --> 00:13:21.703
+Mani K: make the work do the prediction. Or for you like, it's basically a group or a team that can make better decisions. Why, we are taking this approach, I mean to to get better outcomes, like, you know, increase precision, reduce errors. I mean, it's pretty standard Fab so basically, that's what ensemble learning is all about. It's having like multiple small models that can.
+
+84
+00:13:22.170 --> 00:13:45.706
+Mani K: like work towards making better decisions. Okay? So that's that's what it is. So each of those individual models will be the model that we work like, we kind of learned before. Okay, so it could be. it could be a decision tree. It could be a regression model. It could be an spm or any of them. But it's just like we are. Gonna create, like small
+
+85
+00:13:46.656 --> 00:13:56.069
+Mani K: small little models, all of them kind of working in tandem towards making a better decision. So that's what ensemble learning is all about. Okay?
+
+86
+00:13:56.521 --> 00:14:13.110
+Mani K: So some just analogy, or like how you wanna think about it is like, there are 2 2 cases. One is called bagging, and another one is called boosting. So we'll just go over like couple of them quickly, like what it is.
+
+87
+00:14:13.443 --> 00:14:36.120
+Mani K: So let's say, like, if if just for example, like 2 teams are competing to build the tallest tower, like in the case of bagging. How it works is like the team. Like all the different teams are working on different parts of that tower, and then, like they all combine the results together. So this is the quickest analogy for
+
+88
+00:14:36.120 --> 00:15:05.540
+Mani K: for bagging or another one you can say is like, if you're asking for an advice for what movie to watch, I mean, like you pretty much like, let's say, like, ask 10 friends in parallel. Each of them would pick, give their best answer, and then, like, maybe you know, 5 or 6 or 3 or 4 would have the same answer, which would mean that, like, you are most likely go ahead and and going to watch that particular movie. So that's what it is. So that's what bagging is about like, it's just like.
+
+89
+00:15:06.032 --> 00:15:33.089
+Mani K: There are multiple models. And then they are all trying to predict something and you are combining the results of that. And then, like either like you take the greatest, or you also, sometimes to the average, depending upon whether it's a classification or whether it's a regression kind of model, because that's the thing. Another example is predicting. If the weather, I mean, which is what was explained in some of the videos.
+
+90
+00:15:33.404 --> 00:15:51.340
+Mani K: So instead of asking one weather expert, you talk to 10 experts and then like and then you go with the majority. Okay, so that's what it is. So so that's what bagging is about. Okay, at a high level concept. So we'll go into a little bit deeper on other ones.
+
+91
+00:15:51.810 --> 00:16:17.359
+Mani K: Boosting is slightly different here, like here, everyone like like all these. So think of this as like multiple teams or models or workers. However, you want to do call it like they are building step by step. So basically, as they build, they learn from it. And then they adjust along the way. So that that's what it is all about.
+
+92
+00:16:18.000 --> 00:16:43.970
+Mani K: So example, like, you know, if you're solving a puzzle along with a friend, you know, sometimes, like you guys will put together a few things you learn from it, adjust it, and then finally figure out how to get the puzzle right? Like. So that's what boosting is all about. So basically, you you start with some model. You look at some errors, how that model is performing, and then you have another model which actually like.
+
+93
+00:16:43.970 --> 00:16:51.260
+Mani K: improves on that error, and then you will have, like 3 or 4 or 5 or 10 models like that, and then they all work in ensemble to
+
+94
+00:16:51.260 --> 00:17:12.417
+Mani K: to to have the best predictions at the end. So some of the boosting algorithms are like these Ada Boost and gradient boost is quite popular. Everyone uses in a in a lot of setting. Okay? So that's what it is. So between bagging and boosting like a lot of things can be
+
+95
+00:17:12.849 --> 00:17:27.469
+Mani K: done to improve the performance of the model. And so, instead of relying on one model, you are going with a suit of models to help with your either. Your predictions being a classifier or a regressor. Yes, that's what it is.
+
+96
+00:17:28.079 --> 00:17:30.760
+Mani K: Any questions so far. Yeah. Okay.
+
+97
+00:17:34.710 --> 00:17:36.195
+Mani K: Alright. So
+
+98
+00:17:37.740 --> 00:17:50.140
+Mani K: between bagging and boosting like like, like, random forest is a bagging technique, right? Like. So so again, it's a decision tree based model
+
+99
+00:17:50.513 --> 00:18:12.149
+Mani K: so basically, it builds a lot of decision trees and then, like you know, each decision tree would have its own predictions, and then you would combine all of that. So that's what Random Forest is specifically about. So it's basically in this particular case, like, you are working with a lot of decision trees.
+
+100
+00:18:12.669 --> 00:18:19.419
+Mani K: for example, would be like predicting like diagnostic diseases. Fraud, detection is
+
+101
+00:18:19.620 --> 00:18:30.069
+Mani K: like things like that. Any kind of classification, especially binary ones. Ones, could be used with random forest. But you can also go with like higher level classifications as well. Okay.
+
+102
+00:18:31.520 --> 00:18:46.771
+Mani K: Ada, boost again. This ha! It's another boosting technique. Where, like, we are working with some simple models. We'll go into the details of some of the boosting techniques. But
+
+103
+00:18:47.603 --> 00:19:15.110
+Mani K: in general, it's it's all about same thing, like you have multiple models. They all like improve. Again, boosting works by improvement, right? Like. So you have one model that does some predictions it. It has some performance, like, for example, certain kind of errors. And then the second model will improve on that. So it'll just keep moving on it. So that's the thing. So some examples could be like spam detection. So
+
+104
+00:19:15.110 --> 00:19:28.478
+Mani K: so we keep improving as it learns like what what real spam looks like. Right like, because we always have like imbalance in such scenarios. We kind of like work with some
+
+105
+00:19:29.455 --> 00:19:46.649
+Mani K: methods to to hide this imbalance, or like getting away with this imbalance. But still, you know you will. You will have some issues, and these kind of boosting techniques kind of helps you improve model quickly. So that's what it is.
+
+106
+00:19:48.200 --> 00:20:08.870
+Mani K: ingredient boost is also works the same way. It just builds models sequentially. The only thing is, it's it's a little bit more used for complex tags. That's that's all it is, I mean, in terms of the the way it does. I'm not going to go into the details of it, but it's just like, you know, it's a little bit more compute intensive
+
+107
+00:20:09.146 --> 00:20:18.260
+Mani K: way of doing things and it it could be used for a little bit more complex tasks, where, like, you have, like a lot of different variables to work with.
+
+108
+00:20:18.574 --> 00:20:37.449
+Mani K: Like, like, I put here some examples like house prices or stock prices, credit scoring things like that, or predicting some product sales where you have, like a lot of different variables to work with. I think here like green and boost will work a little better than the the area boost. That's the thing
+
+109
+00:20:38.283 --> 00:20:46.342
+Mani K: when to do boosting bag bagging again. This is just like a little
+
+110
+00:20:47.540 --> 00:20:52.611
+Mani K: a bit of a cheat sheet, if you want to. Say like when to do what?
+
+111
+00:20:53.330 --> 00:21:15.560
+Mani K: So again, bagging best for large data sets boosting. Maybe if you don't have like a very large data sets, then it it would be it would be good for that kind of use cases. Boosting can also, you know, can overfit quite easily the reason for that like is.
+
+112
+00:21:15.560 --> 00:21:31.858
+Mani K: you use boosting when you have a lot of variables. So when you have a lot of variables, the the tendency is to go for over fitting. So you just need to be a little bit careful about that and then, in terms of the errors, I think you can see like how they differ like
+
+113
+00:21:32.140 --> 00:21:52.829
+Mani K: like. If you have some kind of a systematic, repeatable errors like boosting can help fix that like. But if if the errors are truly random, like in the case of classification, like, it's just like, you know. There's no theory behind like why such an error happens, and things like that, or like it's very random. Then then bagging could be the use case for that. So that is the thing.
+
+114
+00:21:54.030 --> 00:22:03.130
+Mani K: so I would. I would like start off with just the size of the data set. And and how many variables that you have
+
+115
+00:22:03.320 --> 00:22:11.916
+Mani K: to to have a decision on whether to do bagging or boosting. Okay? So that's that's what it is. Okay, typically most
+
+116
+00:22:13.341 --> 00:22:18.949
+Mani K: I've seen more boosting done like I mean, at least in my work
+
+117
+00:22:20.095 --> 00:22:45.129
+Mani K: in my work projects, I've done like a lot of gradient booster algorithms. I haven't done a whole lot of bagging. But again, that's because, like, we always tend to work with smaller data when we are solving some kind of these specific problems. We don't have like large data. But I'm sure, like, in some use cases, you will have like large data sets and bagging might be a bit more of a useful technique. Yeah.
+
+118
+00:22:46.400 --> 00:22:47.180
+Mani K: right?
+
+119
+00:22:49.426 --> 00:22:58.153
+Mani K: I'll pause here. Are there? Are there any questions like, if on on this particular thing. It's just basically
+
+120
+00:22:58.987 --> 00:23:24.732
+Mani K: I think once one, it's basically the the concept is very simple. Okay, so I don't. There's the it's just like, you know, an ensemble of models and how you use that in a different way is what bagging and boosting is all about. Okay, one works one is predicting everything the same way. And then the other one is like, kind of
+
+121
+00:23:25.461 --> 00:23:32.860
+Mani K: you know, each model builds upon the errors, and and it keeps improving on the errors. So that's all it is. Yeah.
+
+122
+00:23:34.490 --> 00:23:56.600
+Mani K: right? If there aren't any questions. Let's move on to the next one. So so I'm just gonna go over bagging, because I think that's what was more covered. So we'll just talk about bagging. So in in bagging itself, you can have, like 2 things right? Like you can have classification models inside the bagging, or you can also have regressions or regressors inside the bagging. Okay.
+
+123
+00:23:57.236 --> 00:24:02.803
+Mani K: so basically, a bagging classified is an ensemble of models.
+
+124
+00:24:03.874 --> 00:24:24.630
+Mani K: where how how it is done is like, so let's say, like, you have a training data. So you're you're gonna well, the the function is gonna split it into multiple, random, small data sets. And then each subset is going to be fed to a separate model. And that model can be of your decision like, for example.
+
+125
+00:24:24.936 --> 00:24:35.609
+Mani K: you can use a Svm or you can use a decision tree in the this is for in the case of an classifier. So basically, let's say, like, you have, like one
+
+126
+00:24:37.604 --> 00:25:04.180
+Mani K: just for the example of simplic. Just for a quick example, like, let's say you have. Like 10,000 data points in your training data set, you can divide that into 10 ensembles. So of 1,000 each and each 1,000 data samples will be sent to. you know, 10 different 10 different models. So basically, you will have like 10 decision trees or 10 Svm models
+
+127
+00:25:04.180 --> 00:25:27.235
+Mani K: each working with that 1,000 samples and and gets trained actually. So so each of that model makes a prediction independently and then the predictions are combined to make a final prediction. Okay, so that's what it is. So it could be like a simple majority, or it could be an averaging based on what you're trying to do. Okay? So that's thing.
+
+128
+00:25:27.740 --> 00:25:32.405
+Mani K: so so that's what bagging classifier is all about and
+
+129
+00:25:33.400 --> 00:25:48.025
+Mani K: The one one additional thing that we also do in the bagging classifier is like something called out of bag classifier like what that is is like. It's just an extra parameter where like
+
+130
+00:25:49.093 --> 00:26:12.456
+Mani K: so I mentioned like in the previous in while I was going through bagging classifiers like, if you have 10,000 data data points, and you have, like 1,000 per subset within that 1,000 we can leave like, maybe I don't know 20% of that as out of bag which is like those
+
+131
+00:26:12.840 --> 00:26:23.369
+Mani K: so within the like so so we have 1,000 data points out of which, like, let's say, like out of bag, is dedicated as 20% or like 200 data points.
+
+132
+00:26:23.530 --> 00:26:49.760
+Mani K: so those could be left out, and it will be trained with the remaining 800. So what this does is like for the individual models. You can also, check how the each of those individual models are performing. Actually. So instead of having a separate like validation data set. Now, you're working with this out of bag samples to
+
+133
+00:26:50.350 --> 00:26:57.499
+Mani K: to check like how each of these models individual models are working. So that's what it is. So this is
+
+134
+00:26:58.030 --> 00:27:18.740
+Mani K: this is a pretty good technique. And and it's very commonly used. So basically as part of the ensemble, this is one other thing that you have at your at your disposal, and and this is something that you you can use, or you don't have to use all the time. So that's why it's it's optional. Totally. Okay. So that's what it is.
+
+135
+00:27:19.130 --> 00:27:28.330
+Mani K: so so this is how you you can go about in doing the kind of a bad like an ensemble model for with bagging. Okay.
+
+136
+00:27:28.716 --> 00:27:35.249
+Mani K: so again, this is just an example how it would look like again. This is all part of the
+
+137
+00:27:35.300 --> 00:27:52.169
+Mani K: the psychic library itself. So you can call your any classifier like here. I'm just in my screenshot, like, I'm just calling a decision tree classifier and then, like within the bagging classifier, I'll be calling out this decision tree classifier that I'm using.
+
+138
+00:27:52.439 --> 00:28:05.899
+Mani K: This is the number of trees that like. Again, you can start with some default number of trees, or you can do some kind of a grid search to find what would be the right number of trees to do to actually, okay. So that's all to
+
+139
+00:28:06.245 --> 00:28:16.959
+Mani K: bootstrapping is true is the one that does bagging. And then this I guess out of bag score. True means that like, you're going to have some
+
+140
+00:28:17.310 --> 00:28:38.359
+Mani K: out of bag samples. for evaluation. Okay, so that's the thing. And with this, like, you can, you can fit and train the model. And this would have like 50 like decision trees. And then it would be based on that, like, how? How the model could be evaluated. Okay, so that's what it is.
+
+141
+00:28:38.360 --> 00:28:54.850
+Mani K: Again, you can actually like fine tune the number of so that ob score there is a function for it which would give you the model performance based on the the out of bag samples that you have there.
+
+142
+00:28:55.210 --> 00:29:13.097
+Mani K: So couple of things here? increasing the number of trees or the estimators usually will improve performance. But again, it can also slow down training. That's 1 thing the choosing. The right number of trees is important. Okay? So that's that's the thing. So you can have, like, some kind of
+
+143
+00:29:16.200 --> 00:29:36.050
+Mani K: like a grid search kind of a thing to figure out like what would be the right number of trees which would give you the right performance for the model to actually. So that's something that you may have to fine tune, and and and get things done. So that's what it is. Okay
+
+144
+00:29:36.180 --> 00:29:58.513
+Mani K: again. So so this is, I mean, this is something that you may want you. I mean, if if you want, you can do within your project, or you don't have to like. If you're going to do any kind of classification, whether you want to go with an ensemble approach or not. So it's just an add on to what you're already doing. This is something that you can also check in the last
+
+145
+00:30:00.644 --> 00:30:02.185
+Mani K: in the last
+
+146
+00:30:04.357 --> 00:30:08.380
+Mani K: like. Towards the end of the project you can do that part. Okay. Alright.
+
+147
+00:30:09.193 --> 00:30:10.520
+Ravi Duvvuri: One question.
+
+148
+00:30:10.520 --> 00:30:11.330
+Mani K: Yeah.
+
+149
+00:30:11.738 --> 00:30:22.350
+Ravi Duvvuri: So any of these ones can be used for images or other classifications as well or strictly for the other data types only.
+
+150
+00:30:23.350 --> 00:30:26.249
+Mani K: So even for
+
+151
+00:30:27.420 --> 00:30:39.076
+Mani K: So for images, it depends on it depends what you are trying to do. Like if you are, if it's just like plain labels and stuff, you can definitely use it. If you are
+
+152
+00:30:40.177 --> 00:30:42.000
+Mani K: if you are.
+
+153
+00:30:42.470 --> 00:30:55.589
+Mani K: or if you're using a combination of images, and sorry image features and some text only features. You can use this. If you are primarily only relying on images. I don't think like this would be the right approach. Okay.
+
+154
+00:30:55.590 --> 00:30:56.659
+Ravi Duvvuri: Got it. Got it.
+
+155
+00:30:56.660 --> 00:31:00.049
+Mani K: Get my point. Yeah, yeah. So that's the thing. Yeah, right?
+
+156
+00:31:01.086 --> 00:31:03.299
+Shashidhar S: Was thinking about the same thing, I mean.
+
+157
+00:31:03.300 --> 00:31:03.950
+Mani K: Yeah.
+
+158
+00:31:04.361 --> 00:31:12.599
+Shashidhar S: My classification, it will be purely image based. So there is no text. This one i i know the
+
+159
+00:31:12.900 --> 00:31:19.570
+Shashidhar S: folder where I keep in will be the kind of label saying, this is the healthy, this is the disease. This is the which disease kind of thing
+
+160
+00:31:19.750 --> 00:31:20.320
+Shashidhar S: from.
+
+161
+00:31:21.220 --> 00:31:28.690
+Shashidhar S: Every intel, I mean all the inference has to come from the model. So probably this may not work, I think, right.
+
+162
+00:31:30.600 --> 00:31:31.133
+Mani K: Yeah.
+
+163
+00:31:32.410 --> 00:31:48.733
+Mani K: yeah, if you are primarily only relying on images, then it won't work so. But again. Yeah, so. But if you if you have other features, and you you are having some kind of a labels for images, and you're only using images as a way to
+
+164
+00:31:52.630 --> 00:31:53.930
+Mani K: like
+
+165
+00:31:54.639 --> 00:32:00.930
+Mani K: your image is just one of the feature, and you have other things. I think you can do it, but if not, I think I would rather not do it.
+
+166
+00:32:01.620 --> 00:32:03.800
+Shashidhar S: Yeah, because mine is only images. I mean, I won't.
+
+167
+00:32:03.800 --> 00:32:05.020
+Mani K: Yeah, only, yeah.
+
+168
+00:32:05.020 --> 00:32:05.520
+Shashidhar S: Okay.
+
+169
+00:32:05.520 --> 00:32:06.299
+Mani K: Yeah, yeah.
+
+170
+00:32:06.300 --> 00:32:11.609
+Shashidhar S: There is a mark on the leaf, or something like that. I don't know the dimensions of it, or anything like that.
+
+171
+00:32:11.610 --> 00:32:12.260
+Mani K: Right, exactly.
+
+172
+00:32:12.260 --> 00:32:13.020
+Shashidhar S: Amazing.
+
+173
+00:32:13.180 --> 00:32:15.509
+Mani K: Right, right, yeah.
+
+174
+00:32:15.510 --> 00:32:16.890
+Shashidhar S: Oh, yeah. Thanks.
+
+175
+00:32:16.890 --> 00:32:22.859
+Mani K: Yeah, yeah, like yeah, exactly. So that's that's what it is. Yeah, cool.
+
+176
+00:32:24.880 --> 00:32:28.939
+Mani K: So that's that's about classifiers. And
+
+177
+00:32:34.320 --> 00:32:38.969
+Mani K: okay, I think, the one that I also wanted to go about was also
+
+178
+00:32:42.820 --> 00:33:05.410
+Mani K: okay. So the other one was sort of about regressors. Actually. So so regressors so instead. So this works like classifiers. But it's just like instead of using a classification model, you're going to use a regressor or a regression model. To begin with, right? Like, it's basically works similar to a classifier, but used for numerical predictions.
+
+179
+00:33:05.420 --> 00:33:24.369
+Mani K: Same thing they did. The data set is split into multiple random small data sets they're called bootstrap samples. And then each regressor is trained on these random subsets. Again, again, it can be linear regression here, or it could be decision trees again
+
+180
+00:33:24.719 --> 00:33:46.721
+Mani K: each model makes a numerical prediction. And then in this case, like most of the time the predictions are going to be averaged to get a final output. Okay? So in the case of a classifier, you would go for you know what's the majority over there? Like, okay, if there are like 10 trees like
+
+181
+00:33:47.490 --> 00:33:59.689
+Mani K: like. If are a majority of them predicting the same. That's what you would go for like here. You would be going for an average of the the
+
+182
+00:34:00.048 --> 00:34:24.899
+Mani K: individual models. So that's what it is. And then and then that would be your prediction. Yeah. So that's what it is. All works the same way. It's just like an improvement to an like a single Ml model. So instead of relying on a single model that you're you're you're relying on like a multiple models to to help with your decision making or like your predictions. Yeah, that's what it is.
+
+183
+00:34:25.717 --> 00:34:42.862
+Mani K: Any any questions. I mean, so so I just wanted to just go over this part, I mean, I don't have a specific notebook for this particular exercise. But we can, we can also talk a little bit more about this particular topic, or if there are any questions around
+
+184
+00:34:43.489 --> 00:34:46.189
+Mani K: any I guess there are some
+
+185
+00:34:46.710 --> 00:34:52.360
+Mani K: codeyo examples on this, I think. If there are any questions around that like, we can also talk about it.
+
+186
+00:35:02.340 --> 00:35:03.130
+Mani K: Okay.
+
+187
+00:35:05.890 --> 00:35:08.494
+Manish Goenka: Hey? Money question, can you use these?
+
+188
+00:35:09.820 --> 00:35:13.860
+Manish Goenka: these ensemble techniques of these regressors with grid search.
+
+189
+00:35:14.710 --> 00:35:29.660
+Mani K: Yeah, yeah, you can. Yeah, you can do grid search on it. Yeah, you can do good. Search on it again, and then and then figure out what would be the right number of trees to work with. And things like that. Yeah, you can do good search on it.
+
+190
+00:35:29.660 --> 00:35:38.500
+Manish Goenka: But in in that, you know, usually we choose a specific model, right? So in that we would pass in multiple model types. And then parameters for each model type.
+
+191
+00:35:38.920 --> 00:35:40.109
+Manish Goenka: like decision tree.
+
+192
+00:35:40.110 --> 00:35:40.660
+Mani K: Food.
+
+193
+00:35:41.150 --> 00:35:41.560
+Manish Goenka: Sv.
+
+194
+00:35:43.280 --> 00:35:48.899
+Mani K: Yeah. So you will have to create some kind of a a little function to do that part. Okay.
+
+195
+00:35:49.290 --> 00:36:00.330
+Mani K: so yeah, so you will have to do a little function that kind of switches over to the different models as well. Okay, it may not be just one shot like how you did it in the previous one. Yeah.
+
+196
+00:36:00.330 --> 00:36:01.410
+Manish Goenka: Yeah, yeah, okay.
+
+197
+00:36:01.920 --> 00:36:03.919
+Mani K: Yeah, so that's what it is. Yeah.
+
+198
+00:36:04.160 --> 00:36:10.760
+Mani K: But but it is quite common. I mean, it's fairly easy to do it. Okay, yeah, alright.
+
+199
+00:36:11.302 --> 00:36:32.260
+Mani K: I I think that so this would help in kind of like, you know, like you can start with a baseline single like for your project I'm talking about. So you can start with a single baseline model like you can do a good search and figure out like what's the best model, and then, like, going on ensemble technique on top of that.
+
+200
+00:36:32.430 --> 00:36:32.820
+Manish Goenka: Like.
+
+201
+00:36:32.820 --> 00:36:40.579
+Mani K: You can also do that like, there's multiple techniques you can take. Or you can do one shot with ensemble. But I think from
+
+202
+00:36:42.050 --> 00:37:04.919
+Mani K: story building standpoint, I think. Starting with a single model, and then and then moving on with complexity, I think would would make a better narrative in general. Okay, so that's because you're trying to see. Okay, Baseline, this is what I was able to achieve. And then, like with with some more tuning, I was able to get to this level. You know, that is the thing.
+
+203
+00:37:05.190 --> 00:37:07.100
+Mani K: Yeah, thank you. Yeah. Yeah.
+
+204
+00:37:07.350 --> 00:37:08.399
+Mani K: So
+
+205
+00:37:10.910 --> 00:37:26.890
+Mani K: yeah. Yeah. So so that's that's 1 thing I would reiterate everywhere, like for machine learning or any Ml, model. I think it's all about the the narrative of, or how you build it. There's no like
+
+206
+00:37:27.380 --> 00:37:42.950
+Mani K: one. Size fits all like kind of thing where you throw everything and you get something quick you. I think I've mentioned it a lot of times before to actually start with the bare bone. Basic simplest model
+
+207
+00:37:43.430 --> 00:37:48.685
+Mani K: so that, like, you can understand like how it works. How like?
+
+208
+00:37:49.280 --> 00:38:17.298
+Mani K: from a a problem solution standpoint like the simplest solution like, what is the performance looks like, once you understand that part like you can actually like, try to make some good decisions in terms of how to improve things. Yeah. So instead of going for the most complex one to begin with. Then then coming back, and then say, let me try with a simple model and see if I get the same thing, it's just like very
+
+209
+00:38:18.230 --> 00:38:26.189
+Mani K: cumbersome working in in that kind of an approach. So that's the thing and if if there is a
+
+210
+00:38:26.420 --> 00:38:31.230
+Mani K: chance to use the simplest model, and if that
+
+211
+00:38:32.986 --> 00:38:47.503
+Mani K: I I guess, like this. The performance of that is like acceptable, I think, always go with the simplest model. I think that's that's that's also the case. I mean, if it does the work for you you no need to over engineer that. So that's the thing.
+
+212
+00:38:47.880 --> 00:39:04.610
+Mani K: So it totally depends on your needs, the risk profile or the risk diversity that you want to have in in whatever systems you're trying to build. And those things dictate like, how simple or complex you need, your your model has to be
+
+213
+00:39:05.970 --> 00:39:08.318
+Mani K: so that that's that's the thing.
+
+214
+00:39:08.910 --> 00:39:16.182
+Mani K: and you can also the the other thing that that is also important is like,
+
+215
+00:39:17.360 --> 00:39:20.303
+Mani K: I know we are talking about ensemble models. But
+
+216
+00:39:21.419 --> 00:39:46.880
+Mani K: if you have a specific workflow of doing things, and you're trying to change this to. an Ml, based way of solving a problem. You can also break the the workflow into multiple steps, and each of them can have its own small little Ml models. What I mean by that is like
+
+217
+00:39:49.870 --> 00:39:54.915
+Mani K: like, for example, like you want to predict,
+
+218
+00:39:55.540 --> 00:40:14.219
+Mani K: what your sales needs to be, or something like that. If that is your the problem that you're going after, maybe it need not be with one data set trying to predict what it is like. Maybe it can be divided into 2 groups where it kind of it kind of
+
+219
+00:40:14.380 --> 00:40:19.801
+Mani K: it can be divided into 2 things like, where in like, you're trying to predict, like
+
+220
+00:40:21.007 --> 00:40:36.972
+Mani K: I don't. Maybe this. It may not be the right example. But I'm just giving the gist of how you want to do it like it's like, you can do some kind of a forecasting first, st which would be a prediction. And then, based on that prediction. What is the
+
+221
+00:40:38.047 --> 00:40:43.625
+Mani K: what? Based on that forecast? What could be the actual real
+
+222
+00:40:45.270 --> 00:41:04.430
+Mani K: numbers that you want to achieve so that you. So you know, you're dividing it into 2 problems right? Like, so instead of having to solve it as one ml, model, you know, you're splitting it into 2 things. One is just like doing forecasting stuff. And another one is actually making the prediction. After that, with the forecast.
+
+223
+00:41:05.310 --> 00:41:13.419
+Mani K: hopefully, I kind of gave a gist of that. So this can be in in any like B 2, especially in like B, 2 B workflows.
+
+224
+00:41:13.570 --> 00:41:15.546
+Mani K: you can identify like
+
+225
+00:41:16.290 --> 00:41:33.422
+Mani K: instead of solving it with one solving it as a single problem. You can actually like sequence it into multiple ml, problems and then like and then do the and then and then do the
+
+226
+00:41:34.586 --> 00:42:00.220
+Mani K: the Ml. Solution on top of that. So that's what it is. And maybe like, like, let's say, like sequentially, there are 2 or 3 Ml models, maybe like maybe the second and 3rd might be a very simple model. The 1st one would be complex, that's all it is. So now you have like, now you know where to focus on rather than seeing the entire system as one huge black box. So that's the thing.
+
+227
+00:42:00.628 --> 00:42:29.420
+Mani K: So that's how you you should probably also be thinking about solving problems like you want to take like small units and then unit problems and then and then solve it with Ml, instead of solving it as a big black box. Okay? So if you think like that, like as a system, I think it's a little bit easier to to come up with solutions, or or solve problems in an easier way. Okay, so that's that's 1 thing.
+
+228
+00:42:29.550 --> 00:42:34.367
+Mani K: Yeah, alright. Okay,
+
+229
+00:42:35.540 --> 00:43:00.190
+Mani K: alright, is there. So I don't have any other specific topics in mind to cover. I think I'll probably open the floor. I think we can. Just in general talk about any other specific questions you guys have and or or any particular things about capstone, I think we can just chat for the next I guess 1015 min. Okay.
+
+230
+00:43:05.824 --> 00:43:07.839
+Shashidhar S: Family needs a solution.
+
+231
+00:43:08.520 --> 00:43:09.090
+Mani K: Yeah.
+
+232
+00:43:09.870 --> 00:43:16.600
+Shashidhar S: Yeah, the idea what you said? No, it makes perfect sense. I mean, build a smaller base model 1st with the
+
+233
+00:43:16.930 --> 00:43:29.689
+Shashidhar S: as flexible as light model as possible. And if that one solves the problem, and if we are able to achieve what results we are looking at, if we get that? I think if you stick to that for capstone.
+
+234
+00:43:29.820 --> 00:43:34.410
+Shashidhar S: so that one, I think, will make sense. I will. What I will do is I will try the
+
+235
+00:43:34.952 --> 00:43:59.220
+Shashidhar S: the sample what you had shared the last session, and I will see how the results perform. I mean, I probably, after submitting for Ed. Ed. Submission, what I have to do for tomorrow that I'll finish that and submit it. And in the by the time the next session starts during next couple of days, and things like that. I will work on that and then try it.
+
+236
+00:43:59.600 --> 00:44:09.029
+Shashidhar S: So is very good, and I'll try to get something ready for our discussion point. I will try to fix an appointment early next week, sometime Monday or Tuesday.
+
+237
+00:44:09.700 --> 00:44:10.050
+Mani K: To get.
+
+238
+00:44:10.050 --> 00:44:14.940
+Shashidhar S: Something done for that, so we can discuss some during the call.
+
+239
+00:44:15.710 --> 00:44:16.710
+Mani K: Right? Right?
+
+240
+00:44:16.850 --> 00:44:19.499
+Mani K: Okay, yeah, I think that sounds good.
+
+241
+00:44:19.500 --> 00:44:20.710
+Manish Goenka: Actually, yeah, honey, can.
+
+242
+00:44:20.710 --> 00:44:22.180
+Manish Goenka: That's the question that you know. I'm just.
+
+243
+00:44:22.180 --> 00:44:23.069
+Mani K: Yeah. Go ahead. Please.
+
+244
+00:44:23.520 --> 00:44:25.730
+Manish Goenka: Sorry around cyber security. If you remember
+
+245
+00:44:25.890 --> 00:44:34.790
+Manish Goenka: predicting, you know, true positives, false positives, and benign positives. I was doing some, and then I was also trying to play with the basic model.
+
+246
+00:44:35.420 --> 00:44:44.909
+Manish Goenka: It's interesting that my model, you know, even though there's only 3 classes in the data. But the model also predicts 4th class. So I'm wondering.
+
+247
+00:44:45.220 --> 00:44:49.699
+Manish Goenka: you know, because I converted the, you know, did label encoding on the target variable.
+
+248
+00:44:50.150 --> 00:45:00.369
+Manish Goenka: But the model predicts the 4th class which is not there in the data. I'm wondering what could be. Do you have any this top of your head? What could be wrong in the way I might be doing. I will set up.
+
+249
+00:45:00.930 --> 00:45:04.719
+Manish Goenka: I've set up my time with you. We can discuss it then, too, but just wondering if you.
+
+250
+00:45:05.930 --> 00:45:10.140
+Mani K: So you did something like with like one hot encoding, or something or.
+
+251
+00:45:10.310 --> 00:45:14.120
+Manish Goenka: On the on the target variable. I just did label encoding so I
+
+252
+00:45:14.620 --> 00:45:18.089
+Manish Goenka: those you know textual classes into like a 0 1 2.
+
+253
+00:45:18.430 --> 00:45:25.200
+Manish Goenka: But when I see the predicted data, I see a 3rd class, I mean 0 1, 2, 3, the 4th class, if you will.
+
+254
+00:45:26.210 --> 00:45:28.529
+Manish Goenka: It's also showing up in my classification report.
+
+255
+00:45:29.335 --> 00:45:30.140
+Mani K: No.
+
+256
+00:45:30.556 --> 00:45:35.579
+Manish Goenka: Classification summary report. So I I don't know what was going on there.
+
+257
+00:45:36.200 --> 00:45:59.240
+Mani K: Yeah, I'm not. I'm not sure. Maybe I'll have to look into your if you can share your notebook or something. I think I can take a look at it and see what is happening. I think it's probably the best way, but I mean I can. Some sometimes like with the one hot encoding like. You know you may have to. I mean I I still can't believe like why, it would predict the 4th one. If if there is no data around that
+
+258
+00:46:00.226 --> 00:46:09.730
+Mani K: so that's interesting. So we'll have to check on that. Yeah, I mean, so you did. You did all the cleaning right like. There's nothing like null, and all of that.
+
+259
+00:46:10.200 --> 00:46:12.660
+Manish Goenka: Yeah, yeah, I'm taking care of that.
+
+260
+00:46:13.305 --> 00:46:17.539
+Manish Goenka: But again, this is on. The this is on the target, variable. Right?
+
+261
+00:46:17.730 --> 00:46:18.690
+Manish Goenka: So.
+
+262
+00:46:18.690 --> 00:46:20.379
+Mani K: Oh, this is on the target. Okay.
+
+263
+00:46:20.380 --> 00:46:20.780
+Manish Goenka: Yeah.
+
+264
+00:46:20.780 --> 00:46:25.689
+Mani K: I mean, well, even on the target, like you can have, like some empty values, right? Like.
+
+265
+00:46:25.690 --> 00:46:31.930
+Manish Goenka: Yeah, no, I don't have any empty in the target. I verified empty values in the features.
+
+266
+00:46:32.618 --> 00:46:40.980
+Manish Goenka: the dip the independent features, right? But the target does not have anything. There's no empty. There's no knowledge.
+
+267
+00:46:41.450 --> 00:46:44.740
+Mani K: Okay. Anyway, I will share that with you. Maybe.
+
+268
+00:46:45.660 --> 00:46:47.466
+Mani K: Okay, was
+
+269
+00:46:48.994 --> 00:46:56.399
+Mani K: here, here, I think Rajesh has a comment. You may have a spelling in one of spelling mistake in one of the Y values, causing the 3rd value.
+
+270
+00:46:56.530 --> 00:46:57.429
+Mani K: Yeah, I would.
+
+271
+00:46:57.740 --> 00:46:58.359
+Manish Goenka: Thanks. Val.
+
+272
+00:46:58.360 --> 00:47:00.880
+Mani K: Yeah, you can check. Yeah. Yeah. So
+
+273
+00:47:01.304 --> 00:47:08.300
+Mani K: now, the other thing is, I don't know if when you are trying to convert some variable types like you know.
+
+274
+00:47:08.470 --> 00:47:15.450
+Mani K: So which one like like the the 3, is the new new classification, it added on its own, like.
+
+275
+00:47:15.450 --> 00:47:15.940
+Mani K: no one has.
+
+276
+00:47:15.940 --> 00:47:16.949
+Manish Goenka: So I have the 3.
+
+277
+00:47:16.950 --> 00:47:17.750
+Mani K: Labels.
+
+278
+00:47:18.240 --> 00:47:23.629
+Manish Goenka: Yeah. The 3 original classes were, you know, 2 positive, benign, positive, and false, positive.
+
+279
+00:47:24.280 --> 00:47:28.049
+Mani K: And you assign 0 1, 2. For that you assign 0 1, 2 for that.
+
+280
+00:47:28.050 --> 00:47:33.499
+Manish Goenka: And then, when I do the prediction and I do the classification report, I also get 0 1, 2, and 3
+
+281
+00:47:33.750 --> 00:47:34.460
+Manish Goenka: right?
+
+282
+00:47:36.170 --> 00:47:36.620
+Mani K: Hmm.
+
+283
+00:47:36.620 --> 00:47:42.050
+Manish Goenka: The classification. And and this one just is a decision tree classifier.
+
+284
+00:47:42.710 --> 00:47:43.030
+Manish Goenka: Okay?
+
+285
+00:47:43.030 --> 00:47:48.310
+Manish Goenka: I mean the logistic regression on my data set. It was just too many features that, after encoding
+
+286
+00:47:48.570 --> 00:47:52.690
+Manish Goenka: it took a long time to complete. So I thought, let me just build the basic one. The decision tree.
+
+287
+00:47:52.690 --> 00:47:53.340
+Mani K: Alright!
+
+288
+00:47:53.490 --> 00:47:57.400
+Manish Goenka: It came back, but then it produced this, so.
+
+289
+00:47:57.400 --> 00:48:14.839
+Mani K: Well, did you check? What was the classification like? Did you do a classification report on that like, and find out like how it was performing for that new label. Maybe it just created a label. But it it's a it's just all zeros or something.
+
+290
+00:48:14.840 --> 00:48:18.500
+Manish Goenka: Yeah, it is all zeros. You're right. Actually, I can. I can absolutely.
+
+291
+00:48:18.920 --> 00:48:25.701
+Mani K: Okay, so that yeah. So then I think it's just like, some function thing I think is probably
+
+292
+00:48:26.380 --> 00:48:26.899
+Manish Goenka: Yeah, actually, I.
+
+293
+00:48:26.900 --> 00:48:38.615
+Mani K: Probably the one the one. Yeah, it's probably the one something to do with the encoding. I think so. Since you assign, since you have like 3 classifiers, it's like, it's assigning to
+
+294
+00:48:39.488 --> 00:48:40.802
+Mani K: I guess, like
+
+295
+00:48:41.410 --> 00:48:48.650
+Mani K: 2 bits, and then and then it's d and then it's creating a default class. Because of that, I think, yeah, something like that.
+
+296
+00:48:48.650 --> 00:48:52.260
+Manish Goenka: Yeah, I put it in the chat. Yeah, you're right. The 3rd one only has zeros.
+
+297
+00:48:52.410 --> 00:48:53.940
+Mani K: Yeah, so yeah.
+
+298
+00:48:55.070 --> 00:49:03.819
+Mani K: so that's yeah. So I wouldn't worry. But I think you can you? I think there is a way to clean up that one if you don't want to see that. Okay?
+
+299
+00:49:04.080 --> 00:49:06.249
+Mani K: Oh, I'll look yeah.
+
+300
+00:49:06.250 --> 00:49:16.650
+Manish Goenka: One other question I have is you know, when you choose your recall, you know, like recall, score, and execute the prestine score functions. There's an average attribute
+
+301
+00:49:17.130 --> 00:49:20.369
+Manish Goenka: which is either micro micro Macro rated.
+
+302
+00:49:20.900 --> 00:49:21.540
+Manish Goenka: Can you?
+
+303
+00:49:21.540 --> 00:49:27.119
+Manish Goenka: Yeah, and remind us, like, what would be like, what's a macro versus? A weighted, and which one
+
+304
+00:49:27.610 --> 00:49:32.119
+Manish Goenka: you know how how to interpret that, and which one should we pursue, depending on our use? Case.
+
+305
+00:49:32.890 --> 00:49:43.467
+Mani K: Hmm! Honestly, I haven't used Macro and micro I I always go with precision. Recall, and f 1 those are the 3 things that I always look for.
+
+306
+00:49:43.820 --> 00:49:53.549
+Manish Goenka: No, no, I'm sorry money. What I meant is within those functions like recall, precision, and f 1 there's you know, when you execute those functions. There's a there's a parameter you pass in call average.
+
+307
+00:49:54.620 --> 00:49:58.360
+Manish Goenka: and that's where you can specify either micro macro or weighted.
+
+308
+00:50:00.050 --> 00:50:03.415
+Mani K: No do you?
+
+309
+00:50:04.523 --> 00:50:07.820
+Mani K: Do you have a do you have a screen, or can you share your screen or something?
+
+310
+00:50:07.820 --> 00:50:08.980
+Manish Goenka: Yeah, one, second.
+
+311
+00:50:08.980 --> 00:50:09.840
+Mani K: Come and done it.
+
+312
+00:50:10.250 --> 00:50:11.059
+Mani K: Let me just shop.
+
+313
+00:50:11.506 --> 00:50:14.629
+Manish Goenka: Yeah, can find my screen here.
+
+314
+00:50:21.500 --> 00:50:24.939
+Manish Goenka: See here, you know, this is the.
+
+315
+00:50:25.620 --> 00:50:32.210
+Manish Goenka: This is something I saw, and I was just playing with different there different values to that. Micro Macro, weighted.
+
+316
+00:50:34.520 --> 00:50:35.760
+Mani K: Can you see school?
+
+317
+00:50:38.010 --> 00:50:41.290
+Mani K: Okay? Recall. okay.
+
+318
+00:50:44.500 --> 00:50:48.836
+Mani K: So the the only thing
+
+319
+00:50:50.300 --> 00:50:53.128
+Mani K: is actually like, whether you're giving
+
+320
+00:50:54.424 --> 00:51:01.324
+Mani K: I believe. Like whether you're giving like it could be related to whether you're giving like equal weightage to
+
+321
+00:51:01.850 --> 00:51:06.627
+Mani K: the to the
+
+322
+00:51:09.310 --> 00:51:26.670
+Mani K: for each class, or do you want to actually like, have one? do you prefer one over the other? Right like, in that case like you would play with this macro, micro, I think, okay, yeah.
+
+323
+00:51:26.860 --> 00:51:33.440
+Manish Goenka: I could pull up the you know it exports the definition. So you see, here, average, this is micro micro samples, and then none is binary.
+
+324
+00:51:33.810 --> 00:51:37.959
+Manish Goenka: So is that maybe because if it's binary classifier, then you
+
+325
+00:51:38.560 --> 00:51:43.000
+Manish Goenka: then you that by default it's binary. But if it's not binary, then.
+
+326
+00:51:44.320 --> 00:51:45.990
+Mani K: Yeah, by default, it's a.
+
+327
+00:51:45.990 --> 00:51:46.630
+Manish Goenka: Okay.
+
+328
+00:51:46.910 --> 00:52:11.916
+Mani K: Yeah, by default, it's binary means it's like, it's like equal weightage. Right? Like all. Like all classifications are given equal weightage. Like, for example, if you think like like, let's say like between spam and not spam email right like. If if, for example, like detecting
+
+329
+00:52:12.890 --> 00:52:24.349
+Mani K: not, spam is more important because you may have some like like false negatives going into that. So then, in that case, like you would
+
+330
+00:52:25.751 --> 00:52:55.299
+Mani K: you would, you would adjust the weight weightage right? So in that case, like you would have a different thing so that's what it is. So it may be over there like you would use. I I don't know the example I haven't used micro macro specifically, but it's something to do with those things, or you can also, probably samples is probably the number of samples you want to assign things like that. Okay, so we'll have to look into the documentation for that to adjust it. Okay, so that's what it is. Basically, yeah.
+
+331
+00:52:55.360 --> 00:53:01.829
+Ravi Duvvuri: I just posted something I found, I think what you said is makes sense to what they found it also. So the.
+
+332
+00:53:02.590 --> 00:53:03.350
+Manish Goenka: Means.
+
+333
+00:53:04.560 --> 00:53:07.550
+Mani K: Weightage and weighted is like mass weightage, so.
+
+334
+00:53:10.220 --> 00:53:12.039
+Manish Goenka: Yeah, okay, got it.
+
+335
+00:53:12.040 --> 00:53:12.400
+Mani K: Yeah.
+
+336
+00:53:12.400 --> 00:53:17.429
+Manish Goenka: And the other error I was getting in this is, and I don't know if it's maybe related to this 3rd
+
+337
+00:53:17.760 --> 00:53:19.499
+Manish Goenka: you know class. And I get this.
+
+338
+00:53:19.500 --> 00:53:19.840
+Mani K: Right.
+
+339
+00:53:19.840 --> 00:53:26.590
+Manish Goenka: Undefined metric warning recall is ill defined and big set to 0 in labels with no true samples
+
+340
+00:53:26.880 --> 00:53:30.290
+Manish Goenka: use division control parameter to control this behavior.
+
+341
+00:53:31.110 --> 00:53:34.200
+Mani K: You know, this is for the 3rd class. Yeah.
+
+342
+00:53:34.200 --> 00:53:35.669
+Mani K: I think so. I think it's.
+
+343
+00:53:35.670 --> 00:53:48.060
+Mani K: yeah. Yeah. I think this one is the I think you just have? you just have to. There is a way to actually like force and remove one of those one hot encoder.
+
+344
+00:53:48.060 --> 00:53:55.080
+Mani K: Okay, I see before you do the the model model training. Okay?
+
+345
+00:53:55.800 --> 00:53:59.439
+Manish Goenka: One hot encoding. Or this is just for the target variable, right? So just for the
+
+346
+00:54:00.020 --> 00:54:04.880
+Manish Goenka: or I'm not using one hot encoding for the time. I'm just using the label encoder.
+
+347
+00:54:05.630 --> 00:54:07.550
+Mani K: We just use the label encoder.
+
+348
+00:54:08.840 --> 00:54:17.380
+Mani K: Probably you just need to look into some parameters there, I think to to see how how to not create this 3rd one. Yeah.
+
+349
+00:54:17.837 --> 00:54:25.602
+Mani K: it's definitely that's what is happening. Actually, it's just creating the 3rd one. And it is basically 0. Because you don't have any data on it.
+
+350
+00:54:26.260 --> 00:54:28.899
+Mani K: That's why everything is 0. Yeah, yeah.
+
+351
+00:54:28.900 --> 00:54:29.570
+Manish Goenka: That's true.
+
+352
+00:54:29.570 --> 00:54:33.290
+Mani K: So so you just you just need to force it to not create that. Yeah.
+
+353
+00:54:33.290 --> 00:54:35.760
+Manish Goenka: And it is actually saying that as well. Right, it's still defined.
+
+354
+00:54:35.760 --> 00:54:36.319
+Mani K: Yeah, yeah.
+
+355
+00:54:36.320 --> 00:54:38.869
+Manish Goenka: It is, it has no true samples, so.
+
+356
+00:54:38.870 --> 00:54:40.810
+Mani K: Right, yeah.
+
+357
+00:54:40.810 --> 00:54:41.750
+Manish Goenka: Use 0 days.
+
+358
+00:54:41.750 --> 00:54:42.600
+Mani K: Yeah, it.
+
+359
+00:54:42.820 --> 00:54:48.180
+Mani K: Yeah. When when you're doing the label. So is that a function that you are calling for the label encoder.
+
+360
+00:54:48.500 --> 00:54:50.930
+Manish Goenka: Yeah, the label encoder function. I mean the label.
+
+361
+00:54:50.930 --> 00:54:54.239
+Mani K: Maybe I mean the label encoder object? Right?
+
+362
+00:54:54.680 --> 00:55:06.690
+Mani K: Yeah. So may maybe. Does it have any option optional parameters and stuff, maybe, or or after you finish the label encoder. Maybe there is something you need to do to remove it to move on.
+
+363
+00:55:06.690 --> 00:55:09.030
+Mani K: Okay, yeah, I would. I will check on.
+
+364
+00:55:09.030 --> 00:55:18.630
+Mani K: Maybe maybe you can list out all the encoders it created, and then you you remove one of them that the one that is labeled as 3. Yeah, that's all you have to do. Yeah.
+
+365
+00:55:18.800 --> 00:55:19.370
+Mani K: okay.
+
+366
+00:55:19.370 --> 00:55:19.920
+Manish Goenka: Got it.
+
+367
+00:55:20.190 --> 00:55:20.710
+Manish Goenka: Okay.
+
+368
+00:55:21.809 --> 00:55:31.150
+Mani K: Cool. Yeah. But but this one is important, that the the one you just mentioned about weightage again, this is where like the
+
+369
+00:55:31.913 --> 00:55:43.196
+Mani K: like. What your what is the problem that you're trying to solve? And not necessarily every use case will have equal weightage in terms of classifier right? Like, so that everything.
+
+370
+00:55:43.560 --> 00:56:08.557
+Mani K: so so it's okay to have some spam in your email. But I don't want any of my real emails to go into the spam right? Like. So you? So that's that's the way we work. So so it's definitely between spam and not spam. It's not equal weightage. Right? So we are. We are. We, we wanna make sure that no real email goes into the
+
+371
+00:56:08.930 --> 00:56:11.889
+Mani K: stamp category. Right? So that's the thing
+
+372
+00:56:12.296 --> 00:56:29.599
+Mani K: so so he over there like we play with. And that is the same thing everywhere, too. Actually, okay. So I mean, back in the covid days like, it's okay to have some false positives. But we don't want to have any false negatives. Right? So.
+
+373
+00:56:29.600 --> 00:56:39.449
+Manish Goenka: Yeah, basically, I'm also debating here. It seems to me that in my scenario precision versus recall recall is more important, because what we're trying to say is, which of these cyber security events are?
+
+374
+00:56:40.200 --> 00:56:46.289
+Manish Goenka: You wanna have a higher, and let me get this right. Always get confused right? Which ones have a higher.
+
+375
+00:56:46.670 --> 00:56:51.960
+Manish Goenka: which ones sorry. I don't want to predict too many false. I mean, I don't want to give weightage to false positives.
+
+376
+00:56:52.170 --> 00:56:59.900
+Manish Goenka: because that means that your sock or security operating center center, can block down. Bring the service down right
+
+377
+00:56:59.900 --> 00:57:00.600
+Manish Goenka: right? Right?
+
+378
+00:57:01.040 --> 00:57:07.219
+Manish Goenka: But I always have to. I struggle right. I each time I think about it I have to go back to the definitions of precision and recall.
+
+379
+00:57:07.600 --> 00:57:33.690
+Mani K: So the the way. So that's why don't go with false positives, false negatives? I think it always confusing, because it depends what you define as positive. Right? So think of like what you can live with, what kind of error you can live with. Don't don't think about positive or negative like, okay, I can live with this benign errors, or I can live with this kind of errors. So then you will know, like which one to tune. Okay, yeah, it's just like, easy to work with. Yeah.
+
+380
+00:57:34.000 --> 00:57:34.530
+Manish Goenka: Okay.
+
+381
+00:57:35.180 --> 00:57:36.030
+Mani K: So.
+
+382
+00:57:36.260 --> 00:57:36.790
+Manish Goenka: Okay.
+
+383
+00:57:36.790 --> 00:57:37.380
+Mani K: Right?
+
+384
+00:57:38.480 --> 00:57:51.038
+Mani K: Yeah, great. I mean, I think this is good. I mean, this is some of the things I mean. If you want, you can go. This is. This is all part of further tuning, right? Like it's not model tuning. You are just trying to tune for
+
+385
+00:57:51.570 --> 00:57:57.940
+Mani K: your use case where, like, you want to work? You. You want the model to work for your business use case. So that is the thing.
+
+386
+00:57:58.150 --> 00:58:05.660
+Manish Goenka: Yeah, cool. I think a lot of time I've spent on this understanding. This is a new data. So just getting access to the Smes, to understand that I think you were saying.
+
+387
+00:58:05.660 --> 00:58:06.040
+Mani K: Right.
+
+388
+00:58:06.040 --> 00:58:09.140
+Manish Goenka: Right? 70%. 80% time goes on. Eda.
+
+389
+00:58:09.680 --> 00:58:10.080
+Mani K: Enjoy it.
+
+390
+00:58:10.120 --> 00:58:13.969
+Manish Goenka: Understanding. An Ed. That's that's what has been the biggest bottleneck.
+
+391
+00:58:13.970 --> 00:58:41.480
+Mani K: Yeah, yeah, exactly how the data gets collected originated. Whether are we collecting it the right way? is there any biases introduced there. You know, those are the major pain points. Once you have like a clean looking data. It's just like, it's just matter of hours or days to figure out a solution. Yeah, yeah, cool.
+
+392
+00:58:41.520 --> 00:58:51.934
+Mani K: Alright, I think that's about time. Thanks everyone for joining the call. And like, we look forward to having our one on one sessions on the project, and
+
+393
+00:58:52.928 --> 00:58:57.709
+Shashidhar S: I guess, like we'll talk again on a different office hour later. Alright, okay, thanks.
+
+394
+00:58:59.290 --> 00:58:59.845
+Mani K: Bye-bye,
+
+395
+00:59:00.570 --> 00:59:01.460
+Shashidhar S: Hi! Everybody!
+

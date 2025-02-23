@@ -1,0 +1,1098 @@
+WEBVTT
+
+1
+00:00:09.170 --> 00:00:14.469
+Viviana Márquez: Hi, Richard, let's wait a couple of minutes, and then we'll get started
+
+2
+00:02:05.760 --> 00:02:28.390
+Viviana Márquez: all right. So it's been a couple of minutes. Let's get started. Good morning, everyone happy. Thursday. So welcome to Module 20. The topic for this week is ensemble techniques. But let me start with capstone meetings.
+
+3
+00:02:28.430 --> 00:02:37.200
+Viviana Márquez: So we are already in the second one on ones. So in case you guys haven't
+
+4
+00:02:37.280 --> 00:02:45.449
+Viviana Márquez: booked that one on one with your learning facilitator, let me post these calendly links in the chat.
+
+5
+00:02:47.920 --> 00:02:57.889
+Viviana Márquez: so basically, you have the opportunity to meet with your learning facilitator during module 21 to 23 to talk about your Capstone project
+
+6
+00:02:57.920 --> 00:03:23.059
+Viviana Márquez: as always, just as a reminder. We're here to help you. We're not your professors. We're your learning facilitators. We're here to help facilitate that learning. So don't feel pressure. Don't feel like you have to go super prepared to those capstan one-on-ones we're here to to help you out. So wherever you are, we're there to meet you there and help you there.
+
+7
+00:03:23.421 --> 00:03:36.429
+Viviana Márquez: And once again, just as a reminder. If you don't know your section, you can click on people and type your name, you would know your section, and then you book with the corresponding learning facilitator.
+
+8
+00:03:36.430 --> 00:03:44.410
+Viviana Márquez: And if you have any questions you can ask for help through the support button.
+
+9
+00:03:44.410 --> 00:04:04.729
+Viviana Márquez: Also, if your learning facilitator doesn't really have a spot that is available that is good for you, just like you can send a message and be like, Hey, is there any chance we could meet at this time, or maybe have the conversation as sync, or whatever it is? So I wanted to mention that.
+
+10
+00:04:04.790 --> 00:04:07.489
+Viviana Márquez: And then for the agenda today.
+
+11
+00:04:07.730 --> 00:04:21.978
+Viviana Márquez: I actually was gonna take a different approach. But I can let people decide. So I wanted to talk about the practical application. Number 3, because I saw that
+
+12
+00:04:22.490 --> 00:04:42.620
+Viviana Márquez: the quality of the practical application number 3 was all over the place, so some people had some really good submissions, but some people missed the mark. It wasn't that good. So I wanted to talk more about that submission, especially because now that we have seen so many models.
+
+13
+00:04:42.710 --> 00:04:56.539
+Viviana Márquez: this submission should almost resemble what the Capstone project is. The difference is that the Capstone project is a data set that you pick on your own. So there's that option. Or I could just
+
+14
+00:04:56.690 --> 00:05:20.220
+Viviana Márquez: talk about the ensemble techniques I given the limited amount of time we have together. I can't do the 2 of them, so I don't know. Let me know if you guys have a preference. If you want me to give feedback on the practical application. Number 3, and how I would approach a classification project, or, if you just prefer to talk about ensemble techniques
+
+15
+00:05:28.670 --> 00:05:31.633
+Viviana Márquez: or no preference, maybe you guys don't have a preference.
+
+16
+00:05:49.710 --> 00:05:51.170
+Viviana Márquez: I could
+
+17
+00:05:51.330 --> 00:06:04.519
+Viviana Márquez: try going 1st through the ensemble, and if we have time we covered a practical application. I don't think we'll have the time. But yeah, I all right, so I'll give it one more minute in case
+
+18
+00:06:04.890 --> 00:06:08.150
+Viviana Márquez: other people want to give their opinion.
+
+19
+00:06:17.300 --> 00:06:31.919
+Viviana Márquez: Alright. So let's do ensemble in case if I don't have time to cover practical application. Number 3, I do have a example here.
+
+20
+00:06:33.026 --> 00:06:37.059
+Viviana Márquez: Let me share it in the chat. So you have it already.
+
+21
+00:06:39.290 --> 00:07:03.350
+Viviana Márquez: It's, of course, with a different data set in case there's people that haven't submitted a practical application. Number 3. I can't show you exactly the answers. But basically, this is how a generic classification project in machine learning should be tackled. So of course you do your Ada, your modeling. And I put as many comments as possible.
+
+22
+00:07:03.350 --> 00:07:13.080
+Viviana Márquez: I picked the Titanic data set just because it's a generic data set that anybody can just like load in their machines. But yeah, if we have some time, I'll I'll go back.
+
+23
+00:07:13.190 --> 00:07:18.320
+Viviana Márquez: But if not, let's talk about ensemble techniques.
+
+24
+00:07:20.530 --> 00:07:49.889
+Viviana Márquez: so to talk about ensemble techniques. Let's talk 1st about decision trees. So back in module 14, 6 modules ago, we talked about decision trees. So decision trees are non-parametric. So basically, you don't get a math equation at the end of the day the decisions are made using the data itself.
+
+25
+00:07:50.110 --> 00:08:14.619
+Viviana Márquez: and it can be used for both regression and classification problems which is pretty cool. You can just use a decision tree, and it works for both tasks. So in decision tree, you're basically asking a question such that you split the population into 2 or more sets to be able to come up to with a decision.
+
+26
+00:08:14.660 --> 00:08:20.449
+Viviana Márquez: So we covered this in Module 14. You guys already know about decision trees.
+
+27
+00:08:20.510 --> 00:08:46.879
+Viviana Márquez: And we were saying advantages. That is interpretable. Why? Because you can just look at the splits. And you know why, exactly a decision was made. Disadvantage is that it's prone to overfitting is prone to memorizing your data quite well, which is a disadvantage, because you want your model to be able to generalize. You want your model to be able to make good predictions on data that has not seen before.
+
+28
+00:08:47.290 --> 00:09:14.260
+Viviana Márquez: And at that moment, I said, spoilers alert. There's a really cool way to fix this, which is by putting many decision trees together. And that's the core of today's topic, which is ensemble learning. So if you put a bunch of decision trees together, they get a name. That name is Random Forest, and the cool thing is that once you put many decision trees together.
+
+29
+00:09:14.390 --> 00:09:42.199
+Viviana Márquez: even if the trees on their own are overfeeding. Once you put them together, they mitigate the overfeeding. So that's what we're going to be talking about today. So I don't think we have enough people today to make this game. But in case you you were curious about it. Where did this idea of ensemble comes from? It's something called the wisdom of the crowd.
+
+30
+00:09:43.710 --> 00:09:58.000
+Viviana Márquez: so I'll share this article in the chat. But basically, back in the day there was a mathematician, a statistician, actually, that they in his town there there was an ox.
+
+31
+00:09:58.000 --> 00:10:17.480
+Viviana Márquez: and they were asking people, oh, how much do you think the ox weights and people are saying? I think it weights 500 pounds. I think it weights a thousand pounds, and many, many people made guesses, and then he took the average of the guesses. And the average of the guesses was this number
+
+32
+00:10:17.760 --> 00:10:41.459
+Viviana Márquez: and the actual weight of the ox is this number, and this works every single time. It's a phenomenon called wisdom of the crowds. Whenever I'm working with kids I do one that is very similar. I fill a bottle full of skittles, so I have a bottle, and I put a lot of skittles on it, and then I start asking all the kids.
+
+33
+00:10:41.460 --> 00:10:59.649
+Viviana Márquez: How many skittles do you think there is in the bottle? And some kids are going to say a crazy number like 10, because they're kids, and they don't really have a good notion of what a number is. And some other kids would say, a really big guess. But if you have enough kids. Here's the trick. If you have enough people.
+
+34
+00:10:59.780 --> 00:11:03.359
+Viviana Márquez: the average typically is very close to the actual value.
+
+35
+00:11:03.460 --> 00:11:06.553
+Viviana Márquez: And the reason why this happens is because,
+
+36
+00:11:07.150 --> 00:11:33.800
+Viviana Márquez: the perception of different people can complement that answer. So maybe, for example, with the ox going back to the example of the ox, I've never been in a farm, so probably my guess is going to be bad. But here in the group, if we had a bigger group, I'm sure there will be someone that used to vacation in farms, or someone that is actually a farmer. And by getting the wisdom of everyone
+
+37
+00:11:33.820 --> 00:11:48.529
+Viviana Márquez: you get an accurate result. So that's a really cool experiment. I would suggest all of you running that experiment the one with the skittles and the bottle is super easy and fun to do so
+
+38
+00:11:49.150 --> 00:12:00.030
+Viviana Márquez: same thing. Going back to the example of the real estate that we always bring up. Imagine that you wanted to know what is the price of a San Francisco apartment.
+
+39
+00:12:00.160 --> 00:12:22.819
+Viviana Márquez: and if you in the past, what we were doing, for example, with K-means was to search at similar apartments and then get that result from those similar apartments, not K-means. That would be Knn with K nearest neighbors. But the issue with that one is that
+
+40
+00:12:23.300 --> 00:12:35.200
+Viviana Márquez: you're you're only comparing to the one that is the most similar to you. But you might be missing out on something. So that's kind of like just asking one real estate agent.
+
+41
+00:12:35.330 --> 00:12:44.530
+Viviana Márquez: But if instead, you asked several real estate agents like, Hey, can you guess how much is this apartment?
+
+42
+00:12:44.540 --> 00:12:51.830
+Viviana Márquez: Maybe one real estate gets it right? Maybe another one gets it wrong. And the reason why is because
+
+43
+00:12:51.830 --> 00:13:18.679
+Viviana Márquez: well, maybe you have a real estate agent that is focused only on high income people. So his guess, is probably going to be higher. Some other real estate agent that focuses on low income people. So his guess is probably going to be low. Some other real estate agent that focuses on families. So his guess is going to be different. But a prediction between all of them, once you take the average is better than the single prediction of an agent, because you don't know if a specific agent is, gonna
+
+44
+00:13:18.850 --> 00:13:25.559
+Viviana Márquez: get it right if they make a guess. But if you get several agents and you average their answer, you get it.
+
+45
+00:13:25.690 --> 00:13:30.560
+Viviana Márquez: And that's the magic behind ensemble learning.
+
+46
+00:13:31.380 --> 00:13:54.430
+Viviana Márquez: So ensemble learning what are ensemble models. So basically is exactly what it is, what the name says. You put together a bunch of models to make a prediction, and the beauty of it is that most of the time you're going to get a better result than a single predictor. So, for example, in the case of trees.
+
+47
+00:13:55.064 --> 00:14:02.779
+Viviana Márquez: to like a decision tree to avoid overfeeding. You just have several trees working together.
+
+48
+00:14:03.070 --> 00:14:24.239
+Viviana Márquez: and one really cool thing about ensemble models is that it will never increase bias and variance which we are always trying to reduce. Bias and variance, and most of the time ensembled models manage to decrease both, which is huge in machine learning, and that's the reason why, most of the time when you're working with tabular data.
+
+49
+00:14:24.490 --> 00:14:48.740
+Viviana Márquez: you're going to end up with an ensemble model. And I've seen this in the submissions, in the practical applications. Every now and then there's someone that tries a random forest, even though we're just covering Random Forest this week, and maybe the reason why is because the performance metric usually is better for these ensemble models. You have to have a very specific type of data, such that a different model would do better. But
+
+50
+00:14:48.740 --> 00:14:54.630
+Viviana Márquez: 95% of the time ensemble models are going to do better than a single learner.
+
+51
+00:14:55.434 --> 00:15:24.010
+Viviana Márquez: So there are several ways. You can assemble models because you might be wondering, okay, how do I combine all the models? Do I just average the result? Do I just combine different kinds of models? Do I combine the same kind of model? What do I do? So there's actually different types of ensemble methods. That's not just one. So you have voting. You have bagging and passing. You have boosting, and you have stacking. So the most popular ones, I would say, is bagging and boosting.
+
+52
+00:15:24.560 --> 00:15:27.270
+Viviana Márquez: But let's cover all of them.
+
+53
+00:15:27.620 --> 00:15:52.799
+Viviana Márquez: So in boding classifiers, the 1st kind, you have different models. So imagine this one. Let's say it's a classification task. So imagine this one is a K and n, this one is a decision tree. This one is a logistic regression. This one is A, I'm blanking out on models super vector machine.
+
+54
+00:15:53.020 --> 00:15:58.209
+Viviana Márquez: So let's say, you have those 4 different ones. So you try those classifiers.
+
+55
+00:15:58.370 --> 00:16:11.719
+Viviana Márquez: And then this one predicted it was class number one. This one predicted it was class number one. This one predicted it was class number one, but this one predicted it was class number 2. That's fine. You just do majority voting.
+
+56
+00:16:11.820 --> 00:16:21.010
+Viviana Márquez: So you select the majority vote if it's classification, if it's regression, just the average so
+
+57
+00:16:21.210 --> 00:16:43.060
+Viviana Márquez: the the weakness of the voting classifier is that you need enough diverse predictors to get a good result. So they need to be many of them, and they need to be very different. So there are better ways to assemble a model together. But this is 1 1 way.
+
+58
+00:16:43.710 --> 00:16:53.829
+Viviana Márquez: The other way. To assemble models together is with bagging, so bagging and passing. So bagging is, you use the same
+
+59
+00:16:54.030 --> 00:17:15.689
+Viviana Márquez: classifier. So for example, let's say, you're going to say, Okay, I'm going to do a support vector machine. So support vector machine. This one is also support vector machine. This one is also super vector machine. And this one is also super vector machine. So they have, they all have the same model. The difference is that you train on different subsets of your data set.
+
+60
+00:17:15.770 --> 00:17:23.770
+Viviana Márquez: So notice that here it's like highlighting different points. So you are working with different subsets
+
+61
+00:17:23.829 --> 00:17:25.510
+Viviana Márquez: of the data set.
+
+62
+00:17:25.520 --> 00:17:48.410
+Viviana Márquez: So bagging and pasting most of the time, I have only heard about bagging. I have only heard of pasting when I'm looking at the literature. I didn't think people do pasting that often, and there's a reason why. But basically, main difference is, the bagging is with replacement. So when you're training on a subset of the data.
+
+63
+00:17:48.410 --> 00:18:05.569
+Viviana Márquez: these subsets don't have to be mutually exclusive, and for pasting is without replacement. And I think the reason why it's not so popular is because then you have to have a lot of data and getting a lot of data sometimes is hard. So people just end up going for debugging.
+
+64
+00:18:05.810 --> 00:18:07.020
+Viviana Márquez: So that's bagging.
+
+65
+00:18:07.680 --> 00:18:15.840
+Viviana Márquez: So voting different classifiers bagging same classifier just on different subsets of the training data set.
+
+66
+00:18:15.990 --> 00:18:23.060
+Viviana Márquez: And then for the decision, same thing. Majority vote. If it's classification or average. If it's regression.
+
+67
+00:18:23.240 --> 00:18:25.010
+Viviana Márquez: then you have boosting.
+
+68
+00:18:25.170 --> 00:18:48.570
+Viviana Márquez: So for boosting, you use the same classifier for each predictor. So for example, here you have super vector machine super vector machine super vector machine super vector machine. But instead of all of them executing at the same time, and then voting at the end. What you do is that you train the 1st one.
+
+69
+00:18:49.060 --> 00:19:16.790
+Viviana Márquez: and then you look at the errors. And you see, okay, I made a few errors, and then on the next iteration, you pay more attention to these errors until it gets better and better. So. So this one is sequential. The other one is in parallel parallel. They're happening at the same time. This one is sequential. So it's learning from its mistakes each time that you train it, and then you have stacking
+
+70
+00:19:17.495 --> 00:19:32.700
+Viviana Márquez: and these are like the most common ways. But of course you could get crazy and combine many different ways. But with stacking, what you do is you have a vote models
+
+71
+00:19:32.840 --> 00:19:36.270
+Viviana Márquez: here. It doesn't really matter. It could be different ones
+
+72
+00:19:36.360 --> 00:20:04.680
+Viviana Márquez: like you could use a voting strategy, or you could use a bagging strategy, but to blend them instead of doing the majority vote, or instead of doing the average, you train another model and get the results. So, for example, here, you could have a super vector, machine here, you could have a knn, and here you could have logistic regression, and then to blend all of them together, you would do a decision tree.
+
+73
+00:20:05.560 --> 00:20:11.040
+Viviana Márquez: So so that's how stacking works.
+
+74
+00:20:12.237 --> 00:20:18.500
+Viviana Márquez: So in summary voting leverages, diverse algorithms.
+
+75
+00:20:18.640 --> 00:20:24.110
+Viviana Márquez: bagging uses the same algorithm on different samples of the data set.
+
+76
+00:20:25.200 --> 00:20:28.800
+Viviana Márquez: In boosting builds models
+
+77
+00:20:28.900 --> 00:20:38.479
+Viviana Márquez: iteratively. So it's like learning from the mistakes and then stacking just aggregates the predictions by using another model.
+
+78
+00:20:38.480 --> 00:21:03.349
+Viviana Márquez: So this is usually a question that comes up in interviews that they would ask you, what is the difference between boosting and bagging? So it's 1 of those things that you just kind of have to have memorized. I. Sometimes I confuse the terminology because they both start with a B. So if I know I'm going to interview, I just like do a flashcard. So I don't panic if they ask me in the moment.
+
+79
+00:21:06.020 --> 00:21:09.079
+Viviana Márquez: There's a question in the chat any real time.
+
+80
+00:21:10.360 --> 00:21:15.529
+Viviana Márquez: X for each. I'm not sure I understand the question like execution, time for each.
+
+81
+00:21:18.130 --> 00:21:26.200
+Vikash: No, my question is like any real time example like when in in what kind of scenario we choose, which versus which.
+
+82
+00:21:27.425 --> 00:21:45.940
+Viviana Márquez: So that's a great question that I don't really have the answer for. And the reason why is the same thing as with any machine learning project. Your goal is to come up with the best prediction, the the model that learns best and that generalizes the best.
+
+83
+00:21:45.990 --> 00:22:13.550
+Viviana Márquez: So you learn all these different techniques. And you apply all of them. So you could apply weak learners. So you can apply a support vector machine, a decision tree logistic regression, and then you would also apply some ensemble models. So a random forex xgboost. And you see which one gives you the best performance. So in here today when we're explaining it. Because you're learning like
+
+84
+00:22:13.550 --> 00:22:37.819
+Viviana Márquez: why things happen. You're learning the theory. But from a coding perspective is actually very easy, because from a coding perspective. You have something like random forest that is an ensemble model, and it will be from Psyche. Learn import random forest and then random forests that fit your training data. So
+
+85
+00:22:37.900 --> 00:23:00.540
+Viviana Márquez: if you didn't know better, you would think it's just like a model that is called Random Forest, like you have a 1 that is called super vector. Machine. This other one is called Random Forest. From a coding perspective. You don't really notice so much. That is an ensemble model. But what you would notice is that once you train them typically, the ensemble models will give you a better result than in the weak learner.
+
+86
+00:23:00.840 --> 00:23:02.979
+Viviana Márquez: I don't know if that answer your question.
+
+87
+00:23:03.230 --> 00:23:04.709
+Vikash: Yeah, it is. Thanks.
+
+88
+00:23:05.010 --> 00:23:05.840
+Viviana Márquez: Yeah, of course.
+
+89
+00:23:06.458 --> 00:23:20.899
+Zhujun Wang: I have a quick question about the backing the pasting. So after using the same algorithm to train a subset model after that how to get a final result is also using the bowl or using the like, say, average mean or mean.
+
+90
+00:23:20.900 --> 00:23:21.500
+Zhujun Wang: yeah, yeah.
+
+91
+00:23:21.770 --> 00:23:31.929
+Viviana Márquez: Yeah, exactly. So it depends. If it's classification voting. And if it's regression, the average or the median or mean whatever makes more sense for your data set.
+
+92
+00:23:32.170 --> 00:23:32.850
+Zhujun Wang: Gotcha.
+
+93
+00:23:36.880 --> 00:23:37.825
+Viviana Márquez: So.
+
+94
+00:23:39.180 --> 00:23:55.889
+Viviana Márquez: Here I was talking about decision trees. So the poster child of ensemble learning is Random Forest, and and that's why it's 1 of the most popular models. Even people that are not in machine learning. They have heard of Random Forest nowadays is not as impressive because now we have
+
+95
+00:23:55.890 --> 00:24:20.299
+Viviana Márquez: Chatgpt Gen. AI, other impressive things, but at the time was very impressive, because it is very, very good at making predictions, especially in structured data. So still for structured data. So if you have a data set that is in a table, it's going to be better than a neural network. A neural network is going to be an overkill for a table, and it might overfit
+
+96
+00:24:20.400 --> 00:24:44.309
+Viviana Márquez: random Forest is typically the best one. If it's not Random Forest, it's xgboost. So random forest fun fact. Also, it's actually trademarked the name. So whenever you talk about it on a slide, technically, you should have the Tm to denote that is trademarked. But yeah, I don't even know why they did that. But anyway.
+
+97
+00:24:44.690 --> 00:24:56.409
+Viviana Márquez: so the Random Forest is kind of like a bagging of decision trees. So bagging again. What is bagging? You? Take a decision tree. Let me draw it.
+
+98
+00:24:56.570 --> 00:25:16.839
+Viviana Márquez: So you take several decision trees. You train them on different subsets of the data, and then you aggregate them to get the final result. So that's bagging. So a random forest is almost like a bagging of a decision tree. The difference is that
+
+99
+00:25:16.870 --> 00:25:41.919
+Viviana Márquez: not only works on a subset of the data, it also works on a subset of the features. So that's the main difference. If someone ever asks. You know, that is super relevant, because once you're trained is like that fit that it's done. But but that's the difference. It's not exactly a bagging of decision trees, because they also select different features.
+
+100
+00:25:43.910 --> 00:25:49.840
+Viviana Márquez: So yeah, that's the Random forest. If you wanted to
+
+101
+00:25:50.020 --> 00:26:00.890
+Viviana Márquez: simulate a random forest without importing the Random Forest Library. You couldn't. You can't just say I'm gonna
+
+102
+00:26:01.560 --> 00:26:14.510
+Viviana Márquez: train different decision tree models because you could do it by hand. That's the thing like you could do it. You could do. For example, model one is decision tree. That fit
+
+103
+00:26:14.820 --> 00:26:17.260
+Viviana Márquez: XY, then model
+
+104
+00:26:17.690 --> 00:26:26.679
+Viviana Márquez: 2 equals decision 3. Well, I guess it would be in a subset. So x 1 x, 2, that y, and so on.
+
+105
+00:26:27.400 --> 00:26:52.389
+Viviana Márquez: and then you get a prediction, and you get a prediction for each one of them, and then you aggregate that prediction. It will be super annoying because you have to train all these models, and then do the predictions and aggregate the predictions. So that's the nice thing about using something like Random Forest, because it just does it for you. But if you are curious and you want to do the exercise on your own.
+
+106
+00:26:52.470 --> 00:27:13.679
+Viviana Márquez: to be able to do a bagging of decision. Trees that resembles a random forest. You will have to use this splitter random, such that it also picks on random features. And hence why the name Random Forest? Because it's using random features for each one of the decision trees.
+
+107
+00:27:14.070 --> 00:27:18.870
+Viviana Márquez: and like forest trees, you have many of them as a forest.
+
+108
+00:27:21.950 --> 00:27:25.259
+Viviana Márquez: So any questions about the random forest before I move on.
+
+109
+00:27:29.540 --> 00:27:39.890
+Viviana Márquez: Yeah. And since you, for example, for the decision tree for each one of the decision trees in the Random Forest, since you're working with different features.
+
+110
+00:27:40.050 --> 00:27:49.959
+Viviana Márquez: the the question at the top. The node could be a different question, because you might get a different feature every time. The model is always going to try to
+
+111
+00:27:50.100 --> 00:28:00.249
+Viviana Márquez: find the best question to ask, so you could have several decision trees with the same starring question, the same node, but not necessarily
+
+112
+00:28:03.630 --> 00:28:07.480
+Viviana Márquez: any other questions about random forest.
+
+113
+00:28:10.870 --> 00:28:12.090
+Viviana Márquez: All right.
+
+114
+00:28:12.690 --> 00:28:31.330
+Viviana Márquez: So let's talk about add a boost now. So this was an example almost like an example of bagging. Now let's see an example of boosting so boosting you have several of them. So you have Ada boost grading boost xg boost. So
+
+115
+00:28:31.720 --> 00:28:56.430
+Viviana Márquez: they're pretty much all the same, they're training in sequence, learning from the mistakes of the previous models. So they focus on those harder to classify examples or harder to predict examples. And it does it enough times until it improves. So add a boost and gradient boost are pretty much the same thing.
+
+116
+00:28:58.360 --> 00:29:16.019
+Viviana Márquez: and xgboost as well. Xgboost is short for extreme gradient boosting. So basically, it's a boosting method that uses I think I think the base model is
+
+117
+00:29:16.790 --> 00:29:30.780
+Viviana Márquez: that decision tree. I'm not sure I will have to look it up. But Xgboost is a separate library. So the reason why I have a slide for xgboost is because it's a separate library from Psyche. Learn.
+
+118
+00:29:31.700 --> 00:29:34.100
+Viviana Márquez: And here I have, like a good
+
+119
+00:29:34.200 --> 00:29:39.149
+Viviana Márquez: resource. If you guys want to look into it, it's very similar to Psyche. Learn.
+
+120
+00:29:39.410 --> 00:29:42.119
+Viviana Márquez: But it's not
+
+121
+00:29:42.760 --> 00:30:05.119
+Viviana Márquez: the same as cycle learn. So you do have to install. If you want to use xgboost, you do have to install a separate library. So it's like Pip install xgboost. And then, when you work with it, it's very similar to cyclearn. Notice that you do the split the same you do that fit. But the reason why I'm putting emphasis on it is because it's not
+
+122
+00:30:05.470 --> 00:30:32.810
+Viviana Márquez: from cycle. Learn some other developers. Develop this. So every now and then a few methods don't work well, so like, if you're creating a pipeline with several models, the xgboost might complain, and you might be wondering, like, why did it complain if it's not complaining for the other models, if that ever happens to you, just remember. Oh, it's because it's a different library. So I have to look up at the documentation and see if there's maybe an argument in the function that is different, or something like that.
+
+123
+00:30:33.364 --> 00:30:38.255
+Viviana Márquez: But the reason why it's even worth having, it is because
+
+124
+00:30:38.890 --> 00:30:55.370
+Viviana Márquez: xgboost is very, very good. I would say out of all the traditional machine learning models that we've learned. So anything to work with tabular data like 90% of the time xgboost is going to give you the best result.
+
+125
+00:30:55.490 --> 00:31:00.379
+Viviana Márquez: So it's worth testing. Xgboost whenever you have a problem.
+
+126
+00:31:00.640 --> 00:31:21.860
+Viviana Márquez: And I found this meme. I think it was on Reddit. And it's super accurate, because someone that doesn't know anything about machine learning. And they're just like running code for the sake of it, they would say, just use xgboost because it gives you the best performance and the best results. So they don't know why they're using it, but they're using it.
+
+127
+00:31:21.860 --> 00:31:33.880
+Viviana Márquez: Then someone like me, I would say, this is more like me, especially because I'm a teacher. I'm like, no, you have to try different models. You have to try different things. Make sure that you. You are
+
+128
+00:31:33.880 --> 00:31:56.560
+Viviana Márquez: checking all your bases, covering all your bases and making sure that you have the best model. But a lot of times. What you will realize is that you try all your models. You try a decision tree, you try a support vector machine. You try all the different models and you try the xgboost. And most of the time the xgboost is going to have the best performance metric.
+
+129
+00:31:56.580 --> 00:32:24.900
+Viviana Márquez: So someone that has a lot of experience, they would know that xgboost is the best one in the industry. What do you do? Usually you should try several models. Also, just to get a baseline. Typically, you would try something super easy, like a decision tree or a logistic regression, just to get a baseline and see how much improvement can you get from there? So you try several models a lot of times. It's either going to be Random Forest or xgboost.
+
+130
+00:32:24.930 --> 00:32:39.060
+Viviana Márquez: You do hyperparameter tuning. And well, you continue until you get the best model. But yeah, we finally made it here. But it was important to walk these 20 modules through all the other things
+
+131
+00:32:39.080 --> 00:32:59.120
+Viviana Márquez: to be able to understand xgboost, because otherwise you wouldn't know that it's just an ensemble of other models. And why does it work better? etc? So from a coding perspective, it's just another model to to test. But now you know why, it's much more important.
+
+132
+00:33:00.158 --> 00:33:12.279
+Viviana Márquez: I see a question in the chat which is which model works better with image classification. So images it depends. It depends. So if you have a table like.
+
+133
+00:33:12.400 --> 00:33:23.200
+Viviana Márquez: I don't know a table. And then here you have, like pixel values. And then the different pixel counts something like that. If it's a table
+
+134
+00:33:23.200 --> 00:33:48.620
+Viviana Márquez: we don't know. You will have to try different models. Probably xgboost is going to be the better one, and not because it's image classification anything that is a table. But if you're working with the actual image that's actually not structured data, so that will be a topic for neural networks. So once we learn about neural networks. That's what you should use on that case.
+
+135
+00:33:50.164 --> 00:33:52.299
+Viviana Márquez: Let's see what else.
+
+136
+00:33:52.730 --> 00:33:55.699
+Viviana Márquez: Oh, now we get to see the code.
+
+137
+00:33:56.620 --> 00:34:02.070
+Viviana Márquez: But before I open the code. Let me see if there's any other questions.
+
+138
+00:34:09.170 --> 00:34:11.100
+Viviana Márquez: What was in here?
+
+139
+00:34:13.810 --> 00:34:20.670
+Viviana Márquez: All right. So let me share this notebook in the chat. So you have it. But also it's gonna get posted
+
+140
+00:34:20.940 --> 00:34:22.969
+Viviana Márquez: on canvas if you need it.
+
+141
+00:34:24.381 --> 00:34:38.719
+Viviana Márquez: So here I'm installing xgboost. If you're working on your local computer, you're definitely going to have to install xgboost on Google. Colab. You also have to install it. It doesn't come by default.
+
+142
+00:34:39.320 --> 00:34:43.619
+Viviana Márquez: So you install it. You load your libraries.
+
+143
+00:34:46.250 --> 00:35:07.969
+Viviana Márquez: yeah, you load your libraries. And we're going to work with the Iris data set. Just so you know what's happening. So let's start with the voting classifier. So one caveat is that I, in my professional experience, I haven't really seen people using a voting classifier because it's a little bit cumbersome to
+
+144
+00:35:08.160 --> 00:35:09.920
+Viviana Márquez: like code
+
+145
+00:35:10.589 --> 00:35:20.029
+Viviana Márquez: and it's not that powerful. So so this is just for your knowledge. But most people don't use a voting classifier.
+
+146
+00:35:20.190 --> 00:35:38.800
+Viviana Márquez: But again, voting classifier what it is, you have different models, different kinds of models, and then you put them together to make the final decision. So here, that's what I'm doing here. I loaded the logistic regression model, the support vector machine
+
+147
+00:35:39.020 --> 00:35:41.180
+Viviana Márquez: and the decision tree.
+
+148
+00:35:41.490 --> 00:35:46.759
+Viviana Márquez: And then you do the voting classifier.
+
+149
+00:35:47.430 --> 00:36:03.560
+Viviana Márquez: So you have the different models here. The 3 models that I loaded here, and the type of voting. So, for example, here I wrote this code, and when I wrote it I knew what it was. But now I forgot what soft means. So you can just look up at the documentation. So, for example, so I could learn
+
+150
+00:36:03.720 --> 00:36:06.010
+Viviana Márquez: voting classifier.
+
+151
+00:36:06.580 --> 00:36:10.349
+Viviana Márquez: And let's see, voting hard and soft.
+
+152
+00:36:10.550 --> 00:36:18.549
+Viviana Márquez: So hard is to predict the majority. Soft predicts the class label based on the
+
+153
+00:36:19.040 --> 00:36:26.230
+Viviana Márquez: sums of the probabilities. Oh, okay, so so basically, if it's
+
+154
+00:36:26.590 --> 00:36:37.500
+Viviana Márquez: hard, it's what you would expect it to be. So let's say it's between. Let's say it's to predict the 2 kinds of flowers, let's say, is setusa
+
+155
+00:36:38.170 --> 00:36:39.630
+Viviana Márquez: and versicolor.
+
+156
+00:36:40.170 --> 00:36:55.239
+Viviana Márquez: And here you have the logistic regression and the super vector machine and the decision tree and logistic regression said, it's Setosa super vector machine said, it's a Tosa and decision Tree said, it's versicolor. So if it was hard voting.
+
+157
+00:36:56.370 --> 00:36:58.460
+Viviana Márquez: the result will be Setosa.
+
+158
+00:36:58.930 --> 00:37:07.390
+Viviana Márquez: If it's soft voting instead. This would say, Okay, the probability of
+
+159
+00:37:07.760 --> 00:37:11.230
+Viviana Márquez: it being Setosa is going to be 0 point
+
+160
+00:37:11.690 --> 00:37:19.059
+Viviana Márquez: 5 1 0 point 4 9. So you get the probabilities. And here let's say 0 point
+
+161
+00:37:19.260 --> 00:37:24.340
+Viviana Márquez: 80. And here 0 point 2 0, and here 0 point
+
+162
+00:37:24.900 --> 00:37:45.650
+Viviana Márquez: 49. And here you get 0 point 51, whatever it is, and then you average this and average this, and then, whichever one has the highest number, so the soft voting and focuses on the probabilities rather than the hard vote, so
+
+163
+00:37:45.730 --> 00:38:10.199
+Viviana Márquez: that could be a hyperparameter. Because, notice, it's something that you decide before learning. So if you're wondering, should I pick soft voting or hard voting, and my answer would be that could be a hyperparameter. So up to you, if you want to fine tune that hyperparameter. So once you have created this element here, you just train it like a normal model that fit on your training data set.
+
+164
+00:38:10.710 --> 00:38:14.199
+Viviana Márquez: And then you just do predict
+
+165
+00:38:14.670 --> 00:38:32.930
+Viviana Márquez: or score to get the accuracy. And the accuracy is 100%. And it makes sense because we're working with the flowers data set. So it's very easy to to learn that data set because it's a simple data set. But yeah, that's how the voting classifier works again.
+
+166
+00:38:33.290 --> 00:38:39.669
+Viviana Márquez: I've never seen anyone in the industry working a voting classifier. But now you know how it will work.
+
+167
+00:38:40.623 --> 00:38:47.530
+Viviana Márquez: Then you have stacking. So stacking is very similar to voting. The difference is that instead of just
+
+168
+00:38:47.670 --> 00:39:10.670
+Viviana Márquez: doing this vote like this, which is like the majority vote, or some type of average or something like this, you train a model for the final decision. So here you decide the base models. I randomly decided to use logistic regression super vector, machine decision tree. And for the final estimator. So the guy that is like
+
+169
+00:39:10.730 --> 00:39:20.899
+Viviana Márquez: the model that is receiving all the other models. I decided to use a logistic regression randomly. And if you're wondering well which one should I use?
+
+170
+00:39:21.020 --> 00:39:31.180
+Viviana Márquez: You could use whichever one you want, and this could also be a hyper parameter to see which one is better, and and you can see how you can get out of
+
+171
+00:39:31.330 --> 00:39:37.499
+Viviana Márquez: hand out of control with the hyper parameters, because you could do a hyperparameter tuning on this
+
+172
+00:39:37.730 --> 00:39:59.390
+Viviana Márquez: to select the model, and then the model hyperparameter tuning on the model itself and on the base models. It could go crazy. So most people are probably not going to do that. But yeah, depending on what you're doing. If you're doing something super sensitive, maybe you want to go crazy with the hyperparameter tuning and get that best result.
+
+173
+00:39:59.530 --> 00:40:18.900
+Viviana Márquez: and then, once you train it, it's the same that fit. And so the learning happened. And here you get the numbers. So once you once you have it here, and you do that fit. Everything else is the same. You can compute accuracy, precision, recall all the different ones. So so once you have it in this point. It's the same
+
+174
+00:40:19.430 --> 00:40:34.309
+Viviana Márquez: for traditional machine learning. So when you're working with a table, I also haven't really seen stacking being used that much, but once we get to neural networks.
+
+175
+00:40:34.430 --> 00:40:40.969
+Viviana Márquez: you do use stacking a lot, the logic is the same. The code is going to look very different, but the logic is the same.
+
+176
+00:40:42.088 --> 00:40:45.229
+Viviana Márquez: Now, backing with decision trees.
+
+177
+00:40:45.990 --> 00:40:51.380
+Viviana Márquez: So you have the bagging classifier here.
+
+178
+00:40:51.930 --> 00:40:59.979
+Viviana Márquez: So yeah, you. And where where is this coming from? This is from here that I imported here.
+
+179
+00:41:00.390 --> 00:41:07.420
+Viviana Márquez: And so, bagging, I got a bunch of decision. Trees together.
+
+180
+00:41:08.528 --> 00:41:12.679
+Viviana Márquez: How many? I'm training 500 decision trees.
+
+181
+00:41:13.030 --> 00:41:18.289
+Viviana Márquez: How many samples per decision tree a hundred
+
+182
+00:41:18.730 --> 00:41:27.670
+Viviana Márquez: bootstrap is, whether you want to do it with sampling or like resampling or not resampling.
+
+183
+00:41:27.970 --> 00:41:32.530
+Viviana Márquez: And here I train it, and once you train it, then you get the score.
+
+184
+00:41:34.040 --> 00:41:37.809
+Viviana Márquez: Same thing with bagging. I don't
+
+185
+00:41:38.220 --> 00:41:47.780
+Viviana Márquez: ever recall seeing this being done in the industry, because people would just do a random forest. But this is just so. You see it at least once in your life.
+
+186
+00:41:48.800 --> 00:42:06.999
+Viviana Márquez: passing same thing. But remember that the subsets of the data are mutually exclusive for each one of the trees. So this is where you change it, you make it false. So here was true. Here's false. So this is passing and same thing.
+
+187
+00:42:07.550 --> 00:42:24.299
+Viviana Márquez: and then a random forest. This is why people love random forests, because notice how cumbersome was for the pasting you have to create this separate element before you do the learning and same thing with bagging and same thing with
+
+188
+00:42:24.400 --> 00:42:37.110
+Viviana Márquez: stacking. You have to do this and this before you get to be that fit and same thing with voting. Where? Look at the Random Forest. If you didn't know better, you would think this is just like a single model, because it's just one line
+
+189
+00:42:37.180 --> 00:42:57.609
+Viviana Márquez: which is great, but but it's great, because also like it behaves from a coding perspective. It behaves like a single model like you're not worried about like, I need to create this pipeline. You can just treat it as like a normal model, but it has the power of an ensemble.
+
+190
+00:42:57.730 --> 00:43:04.519
+Viviana Márquez: so you just call it like you would call your decision tree. But instead of decision, tree, you call random first, st and you do that fit.
+
+191
+00:43:04.700 --> 00:43:05.960
+Viviana Márquez: and there you go.
+
+192
+00:43:06.260 --> 00:43:15.919
+Viviana Márquez: If you wanted to simulate the random forest, because remember, the random forest switches the features as well here in the bagging
+
+193
+00:43:16.190 --> 00:43:23.700
+Viviana Márquez: you would do in here, in the parentheses you will put this thing splitter equals random
+
+194
+00:43:24.540 --> 00:43:34.380
+Viviana Márquez: splitter. Here you put splitter equals random, and then this code would effectively be the same thing as a random force. But look at how cumbersome this is
+
+195
+00:43:34.530 --> 00:43:35.840
+Viviana Márquez: versus this.
+
+196
+00:43:36.070 --> 00:43:52.099
+Viviana Márquez: this one, that is just one line of code. So people, people just do this. Everything I had shown you up here. It was just for your knowledge. So you can have a better understanding of what's going on. But in practical terms, this is what people use. Just just this.
+
+197
+00:43:52.677 --> 00:44:01.979
+Viviana Márquez: And then from here, of course, like you would do hyperparameter tuning performance, metrics, interpretation. Whatever you need to do, you would do it here, boy.
+
+198
+00:44:02.530 --> 00:44:03.910
+Viviana Márquez: that was it.
+
+199
+00:44:04.350 --> 00:44:16.049
+Viviana Márquez: Then you also have adaboost adaboost is very good with binary classification tasks. So if you have something where it's only 2 classes, I would try ataboost.
+
+200
+00:44:16.440 --> 00:44:35.169
+Viviana Márquez: and then you do that fit and you get it. In this case, I think it's because it's 3 classes of flowers. Notice that it was worse than the other ones. But this is a dummy data set. So that's fine. Then you have grading, boosting. Psyche learn has grading, boosting so you can try grading boosting in here
+
+201
+00:44:35.400 --> 00:44:45.949
+Viviana Márquez: and notice that you just loaded here. I was just like using the hyper parameters, but you could just do it like this as well, and that's fine.
+
+202
+00:44:46.830 --> 00:44:47.569
+Viviana Márquez: So
+
+203
+00:44:48.630 --> 00:44:59.490
+Viviana Márquez: with Add Boost. It's not like that, because you do have to put stuff inside. But grading boosting. If you didn't know better you wouldn't even realize it's an ensemble model.
+
+204
+00:44:59.770 --> 00:45:03.110
+Viviana Márquez: And then here we have xgboost. So xgboost
+
+205
+00:45:04.770 --> 00:45:22.190
+Viviana Márquez: it's the same thing. You load it, you feed it, and then you get your result. This one was a dummy data set. So it's hard to appreciate the power of the ensemble learning, because from the beginning we were getting 100%. And even if you train just the decision tree, you will get 100%.
+
+206
+00:45:22.190 --> 00:45:37.679
+Viviana Márquez: But when you have more complex data, that's where you would notice it, because the decision tree would not give you very good performance metrics, not the logistic regression, not the other ones. But once you try, the ensemble models will give you better performance metrics.
+
+207
+00:45:38.446 --> 00:45:47.560
+Viviana Márquez: Yeah. So that was on ensemble models. Are there any questions about the code or the ensemble models?
+
+208
+00:46:01.960 --> 00:46:17.590
+Viviana Márquez: All right. So we did have some time. Sometimes we get a lot of questions with the ensemble model. So that's why I didn't think we would have time. So let me now go back and talk about practical application number 3.
+
+209
+00:46:17.700 --> 00:46:27.574
+Viviana Márquez: So practical application number 3 is a classification. I'm not going to open it. But it's a classification problem. So basically, you have to predict
+
+210
+00:46:28.610 --> 00:46:35.839
+Viviana Márquez: I forgot what it was, so maybe I do need to open it. I know that is classification.
+
+211
+00:46:38.600 --> 00:46:41.470
+Viviana Márquez: Let me have it here.
+
+212
+00:46:43.640 --> 00:46:52.719
+Viviana Márquez: You have to predict the performance. This.
+
+213
+00:46:53.695 --> 00:47:02.650
+Viviana Márquez: The campaigns! Oh, let me see here, I'm completely blanking on this.
+
+214
+00:47:03.680 --> 00:47:28.389
+Viviana Márquez: Oh, yeah, you have to predict whether someone is going to default on the loan or not. I think that's what it is. But any case is a classification model. So the beauty of a classification model is that all of them are going to have the same recipe. So whatever type of classification you have.
+
+215
+00:47:28.470 --> 00:47:33.225
+Viviana Márquez: you're gonna use the same recipe even when
+
+216
+00:47:35.026 --> 00:47:39.870
+Viviana Márquez: It's it's thank you. Sashi is the term deposit that you're trying to predict.
+
+217
+00:47:40.550 --> 00:48:03.120
+Viviana Márquez: But yeah, so for the classification model, even when we start learning about neural networks. And we're working with, let's say images. And you're trying to predict whether it's a cat or a dog or something like that. The recipe is the same. The code. Once we learn neural networks, the code is going to be completely different, but the recipe is the same. So
+
+218
+00:48:03.210 --> 00:48:12.939
+Viviana Márquez: here I'm going to use the Titanic data set. Just so I don't give the answer for people that still haven't submitted practical application number 3. But basically
+
+219
+00:48:13.040 --> 00:48:16.510
+Viviana Márquez: same thing. You load your data. You understand your data.
+
+220
+00:48:16.550 --> 00:48:42.560
+Viviana Márquez: You do your exploratory data analysis. And this is where I saw some people slacking on the data analysis. They would just do like that info. And that's it. And this is a very important part of a project. It doesn't even have to be classification. Any machine learning project. Because this is where you understand your data and you ask questions and you get a better intuition. So when you have to make decisions about the modeling. You're making the best decisions.
+
+221
+00:48:42.560 --> 00:48:51.359
+Viviana Márquez: And also, if you have to present this to stakeholders, you can use a lot of the things that you did here in the data analysis aspect.
+
+222
+00:48:51.390 --> 00:49:02.620
+Viviana Márquez: Put it on the slides to talk about the data. So you seem knowledgeable about what you're talking about. And also, so people know what you're talking about. So here I have, like some sample
+
+223
+00:49:02.740 --> 00:49:06.440
+Viviana Márquez: exploratory data analysis that I did.
+
+224
+00:49:06.700 --> 00:49:14.009
+Viviana Márquez: And then, as always, you split your data set into training and test before any learning and before any feature engineering.
+
+225
+00:49:14.440 --> 00:49:18.469
+Viviana Márquez: Then you do feature engineering. So here I put a bunch of things
+
+226
+00:49:18.700 --> 00:49:25.909
+Viviana Márquez: that are recommended for feature engineering. One thing that I saw, let me see.
+
+227
+00:49:26.929 --> 00:49:34.909
+Viviana Márquez: No! That was for the previous practical application. That, for example, in the previous practical application about the cars.
+
+228
+00:49:34.970 --> 00:50:02.629
+Viviana Márquez: There was one feature that had, like a lot of different kinds of cars, like models or makes. I don't remember what it was, and people were just using one hot encoder for that and getting a lot of columns that maybe it's not that good because you start losing information once you have so many columns with so many zeros, it's so sparse, so maybe either bucket the categories, and then do the one hot encoding or drop the column.
+
+229
+00:50:02.720 --> 00:50:11.159
+Viviana Márquez: But here for this, for this project, I think it was good. It's usually in the practical application number 2 that people have issues with this problem.
+
+230
+00:50:13.500 --> 00:50:23.889
+Viviana Márquez: balancing your data set. So this one was not spected out of the practical application. But I thought I would mention it here, since we're in office hours.
+
+231
+00:50:24.778 --> 00:50:30.609
+Viviana Márquez: So for the, if you're working with classification
+
+232
+00:50:31.040 --> 00:50:33.920
+Viviana Márquez: task, the 1st thing that you should do is
+
+233
+00:50:34.080 --> 00:50:45.869
+Viviana Márquez: check your target variable. So, for example, in the titanic data set. The target variable is a little bit unbalanced. So most people didn't survive. And 40% survived
+
+234
+00:50:46.160 --> 00:50:57.239
+Viviana Márquez: 40 60. I wouldn't be so worried. It's okay, you can get away with it and not do anything about it. But if it's massively unbalanced, like, it is most of the time with classification problems like
+
+235
+00:50:57.570 --> 00:51:23.200
+Viviana Márquez: fraudulent transactions. Only a minority are going to be fraudulent. You need to do something about that. Otherwise the model is only going to learn the majority class which most of the time is the class that you're not interested in. Like, if you're detecting fraud, the minority class is probably going to be fraud because most transactions are not going to be fraudulent, but those are the ones that you care about. So you want your model to learn them very well. So you have different strategies on how to
+
+236
+00:51:23.280 --> 00:51:36.529
+Viviana Márquez: balance that data, set. The one from the industry I would recommend is smote, smote, creates artificial samples from the minority class. So I will recommend smote. But here I wrote more things.
+
+237
+00:51:37.501 --> 00:51:39.490
+Viviana Márquez: So you balance your data set.
+
+238
+00:51:39.770 --> 00:52:03.770
+Viviana Márquez: Then you train your classification models. Here I included a random forest. Of course I didn't expect it in the practical application number 3, because we're just covering it today. So you were not expected to use this one. But moving forward, you should always try an ensemble model. If you. If, for example, I was hiring a data scientist and I get a model a machine learning project that they did.
+
+239
+00:52:03.770 --> 00:52:12.799
+Viviana Márquez: And it doesn't include an ensemble model. I would automatically be suspicious about it. I would be like, I'm not hiring this person. So you should always try an ensemble model because
+
+240
+00:52:12.800 --> 00:52:16.160
+Viviana Márquez: and most of the time it gives the best performance metric.
+
+241
+00:52:16.510 --> 00:52:31.710
+Viviana Márquez: So here you train all the models. You get the score, and you compute some performance metrics on them, and you decide which one is the best one. So in this case the best one was the super vector machine.
+
+242
+00:52:31.840 --> 00:52:47.914
+Viviana Márquez: And very important is to explain, what does this mean? So, for example, in this case, what is the true positive? So when someone survives, what is the true negative, what is the thing that you're going to focus? Are you going to focus
+
+243
+00:52:48.520 --> 00:52:53.160
+Viviana Márquez: in precision? Or are you going to focus in recall, etc. So
+
+244
+00:52:53.250 --> 00:53:01.430
+Viviana Márquez: this is very important to put it in words, not just the modeling. Sometimes, as data scientists.
+
+245
+00:53:01.440 --> 00:53:25.469
+Viviana Márquez: we forget about the words and the business. But that's what pays our bills. That's how we show value. So it's not enough to just say, Oh, yeah, the best model was a super vector, machine with a precision of 78%. That means nothing to someone that is not a machine learning practitioner. So you should say, Hey, since, let's say, this is a ship company that is working towards
+
+246
+00:53:25.840 --> 00:53:53.140
+Viviana Márquez: safety, safety of the of the boats. So it's like, Oh, since we're working with the safety of the boats. We rather focus more on precision than recall, because we want to extract all the people that survived, etc. So here I'm explaining here what it is if you want to look at this specific example. But of course, it's going to change from data set to data set. So this is very, very important
+
+247
+00:53:53.180 --> 00:53:58.120
+Viviana Márquez: to have to connect it back to the business. So this is something that most people missed.
+
+248
+00:53:58.200 --> 00:54:17.600
+Viviana Márquez: And this is this is literally what pays your bill? This is literally why people were hiring a company so you could be super technical. But if you're not able to connect it back to the business and explain in English, plain English or plain, whatever language it is, why is it valuable? Then you're not doing your job?
+
+249
+00:54:17.900 --> 00:54:27.610
+Viviana Márquez: Then, once you have selected the best model. You have the option to do hyperparameter tuning. So here I have put a bunch of texts so you can read it
+
+250
+00:54:27.740 --> 00:54:28.600
+Viviana Márquez: and
+
+251
+00:54:29.880 --> 00:54:36.980
+Viviana Márquez: Then you read it and but yeah, you do. Hyperparameter tuning to find the best model.
+
+252
+00:54:37.220 --> 00:54:43.390
+Viviana Márquez: And here well, a bunch of code for hyperparameter tuning, and you determine which one was the best model.
+
+253
+00:54:45.260 --> 00:54:47.599
+Viviana Márquez: Then. This.
+
+254
+00:54:47.880 --> 00:55:15.679
+Viviana Márquez: didn't. We? Didn't really require this in the submission. But this is just so, you know you should also try to interpret the model. If your bus model is something like a logistic regression or a linear regression or your decision tree, that's easy decision tree. You look at the tree logistic regression. You look at the coefficients. But if it's something like a random forest might not be so easy because they're typically a black box model. But there's a really cool library called Shap
+
+255
+00:55:15.710 --> 00:55:18.569
+Viviana Márquez: and Shap will allow you to
+
+256
+00:55:18.820 --> 00:55:24.016
+Viviana Márquez: understand a little bit what is going on. So, for example, here.
+
+257
+00:55:24.610 --> 00:55:28.580
+Viviana Márquez: I've read. Let me see. I put it here in the in the text.
+
+258
+00:55:28.770 --> 00:55:31.510
+Viviana Márquez: Blue is males
+
+259
+00:55:31.730 --> 00:55:43.239
+Viviana Márquez: like men, and red is women. So, for example, we see here that being a woman, no red red is
+
+260
+00:55:44.140 --> 00:56:12.260
+Viviana Márquez: for yeah, red is male. So being a man makes you have less chances of survival than being a woman. And this one is like super clear. It's like all the red points are here, and the blue points are here which makes sense for the Titanic, because at the time it was like women and children first, st so this will make sense, and then you can interpret all the other features. So this is super cool. And if you're capable explaining this to a stakeholder, or like someone that is interviewing you.
+
+261
+00:56:12.350 --> 00:56:17.150
+Viviana Márquez: they will adore you, because that's what companies are looking for, like someone that is able to
+
+262
+00:56:17.260 --> 00:56:27.969
+Viviana Márquez: show the value of their data, not just create a model, but to be able to do that, you need to be able to be really good at creating a model, but also don't forget the communication aspect of it.
+
+263
+00:56:28.020 --> 00:56:54.150
+Viviana Márquez: And then, of course you should always give recommendations. So here I put an example of how a recommendation should look like for the Titanic data set and optional. If you were a machine learning engineer how to deploy it. So here I left like some code. So I know that was like super fast. But hopefully, that gave you an overview of how like a very comprehensive machine learning model machine learning project should look like.
+
+264
+00:56:54.350 --> 00:57:10.399
+Viviana Márquez: And here I left a link for the kaggle submissions, because it's also good practice to see what other people have done exactly with the same data set and see if there's any other things that maybe I missed. Here you have many different notebooks.
+
+265
+00:57:12.390 --> 00:57:28.480
+Viviana Márquez: I see a question in the chat. So advantages and disadvantages of sampling under sampling in the data set. Well, there's only disadvantages to not resample. If your data set.
+
+266
+00:57:28.480 --> 00:57:55.090
+Viviana Márquez: it's unbalanced, you should definitely balance your data, set. Some models are more capable of handling the unbalance. But in general you should balance your data set because you want to be able to learn equally from all the categories, so you should always balance it. And that's like, for example, if I was hiring someone, and it was a classification task that we gave them, that's 1 of the 1st things that I would look if they checked.
+
+267
+00:57:55.120 --> 00:57:56.660
+Viviana Márquez: how much the data
+
+268
+00:57:56.860 --> 00:58:06.709
+Viviana Márquez: was balanced or unbalanced, and why, if they checked, if it was balanced, and if it was unbalanced, what did they do to balance it?
+
+269
+00:58:07.670 --> 00:58:10.020
+Viviana Márquez: All right, awesome.
+
+270
+00:58:11.400 --> 00:58:12.540
+Viviana Márquez: So
+
+271
+00:58:12.750 --> 00:58:22.480
+Viviana Márquez: I do have to drop exactly at the top of the hour. But maybe if there's 1 short question. I can answer it real quick.
+
+272
+00:58:31.280 --> 00:58:38.369
+Viviana Márquez: alright, awesome. Thank you so much for coming today. And I'll see you next time.
+
+273
+00:58:38.510 --> 00:58:39.930
+Viviana Márquez: Thank you, everybody.
+
+274
+00:58:40.070 --> 00:58:41.110
+Viviana Márquez: Bye-bye.
+
