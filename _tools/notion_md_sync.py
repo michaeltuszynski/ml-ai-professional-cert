@@ -184,11 +184,56 @@ def convert_markdown_to_blocks(content: str) -> List[Dict[str, Any]]:
     current_paragraph = []
     in_table = False
     table_lines = []
+    in_code_block = False
+    code_block_content = []
+    code_block_language = None
 
     # Split content into lines
     lines = content.split('\n')
 
     for line in lines:
+        # Check for code block start/end
+        if line.strip().startswith('```'):
+            # Handle code block start
+            if not in_code_block:
+                # End any current paragraph before starting code block
+                if current_paragraph:
+                    blocks.append({
+                        "type": "paragraph",
+                        "paragraph": {
+                            "rich_text": [{
+                                "type": "text",
+                                "text": {"content": '\n'.join(current_paragraph)}
+                            }]
+                        }
+                    })
+                    current_paragraph = []
+
+                in_code_block = True
+                code_block_content = []
+                # Extract language if specified
+                language_match = re.match(r'^```(\w+)', line.strip())
+                code_block_language = language_match.group(1) if language_match else ""
+            else:
+                # End code block
+                in_code_block = False
+                blocks.append({
+                    "type": "code",
+                    "code": {
+                        "rich_text": [{
+                            "type": "text",
+                            "text": {"content": '\n'.join(code_block_content)}
+                        }],
+                        "language": code_block_language or "plain text"
+                    }
+                })
+            continue
+
+        # Handle code block content
+        if in_code_block:
+            code_block_content.append(line)
+            continue
+
         # Check if line is part of a table
         if '|' in line and (line.strip().startswith('|') or line.strip().endswith('|')):
             if not in_table:
@@ -205,8 +250,58 @@ def convert_markdown_to_blocks(content: str) -> List[Dict[str, Any]]:
             table_lines = []
             in_table = False
 
+        # Handle bulleted lists (lines starting with - or *)
+        if re.match(r'^\s*[-*]\s', line):
+            if current_paragraph:
+                blocks.append({
+                    "type": "paragraph",
+                    "paragraph": {
+                        "rich_text": [{
+                            "type": "text",
+                            "text": {"content": '\n'.join(current_paragraph)}
+                        }]
+                    }
+                })
+                current_paragraph = []
+
+            # Extract the content after the bullet
+            bullet_content = re.sub(r'^\s*[-*]\s', '', line)
+            blocks.append({
+                "type": "bulleted_list_item",
+                "bulleted_list_item": {
+                    "rich_text": [{
+                        "type": "text",
+                        "text": {"content": bullet_content}
+                    }]
+                }
+            })
+        # Handle numbered lists (lines starting with number. or number))
+        elif re.match(r'^\s*\d+[.)]\s', line):
+            if current_paragraph:
+                blocks.append({
+                    "type": "paragraph",
+                    "paragraph": {
+                        "rich_text": [{
+                            "type": "text",
+                            "text": {"content": '\n'.join(current_paragraph)}
+                        }]
+                    }
+                })
+                current_paragraph = []
+
+            # Extract the content after the number
+            numbered_content = re.sub(r'^\s*\d+[.)]\s', '', line)
+            blocks.append({
+                "type": "numbered_list_item",
+                "numbered_list_item": {
+                    "rich_text": [{
+                        "type": "text",
+                        "text": {"content": numbered_content}
+                    }]
+                }
+            })
         # Handle headers
-        if line.startswith('#'):
+        elif line.startswith('#'):
             if current_paragraph:
                 blocks.append({
                     "type": "paragraph",
@@ -221,15 +316,30 @@ def convert_markdown_to_blocks(content: str) -> List[Dict[str, Any]]:
 
             level = len(re.match(r'^#+', line).group())
             text = line.lstrip('#').strip()
-            blocks.append({
-                "type": f"heading_{level}",
-                f"heading_{level}": {
-                    "rich_text": [{
-                        "type": "text",
-                        "text": {"content": text}
-                    }]
-                }
-            })
+
+            # For heading levels 1-3, use heading blocks
+            if level <= 3:
+                blocks.append({
+                    "type": f"heading_{level}",
+                    f"heading_{level}": {
+                        "rich_text": [{
+                            "type": "text",
+                            "text": {"content": text}
+                        }]
+                    }
+                })
+            # For heading levels 4+, use bulleted_list_item with bold text
+            else:
+                blocks.append({
+                    "type": "bulleted_list_item",
+                    "bulleted_list_item": {
+                        "rich_text": [{
+                            "type": "text",
+                            "text": {"content": text},
+                            "annotations": {"bold": True}
+                        }]
+                    }
+                })
         # Handle empty lines
         elif not line.strip():
             if current_paragraph:
@@ -264,6 +374,19 @@ def convert_markdown_to_blocks(content: str) -> List[Dict[str, Any]]:
         headers, rows = parse_table(table_lines)
         if headers and rows:
             blocks.append(create_table_block(headers, rows))
+
+    # Handle any remaining code block (in case file ends with a code block without closing backticks)
+    if in_code_block and code_block_content:
+        blocks.append({
+            "type": "code",
+            "code": {
+                "rich_text": [{
+                    "type": "text",
+                    "text": {"content": '\n'.join(code_block_content)}
+                }],
+                "language": code_block_language or "plain text"
+            }
+        })
 
     return blocks
 
@@ -355,6 +478,14 @@ def create_notion_page(notion: Client, parent_id: str, title: str, content: str)
 
     # Convert content to blocks
     all_blocks = convert_markdown_to_blocks(content)
+
+    # Debug: Print info about the problematic block
+    print(f"Total blocks: {len(all_blocks)}")
+    for i in range(min(10, len(all_blocks))):
+        print(f"Block {i}: type={all_blocks[i].get('type', 'unknown')}")
+
+    if len(all_blocks) > 5:
+        print(f"Block 5 details: {json.dumps(all_blocks[5], indent=2)}")
 
     # Create initial page with first 100 blocks
     initial_blocks = all_blocks[:100]

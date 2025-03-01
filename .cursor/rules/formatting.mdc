@@ -1,6 +1,7 @@
 ---
 description: Cursor to Notion Markdown Compatibility Rules
-globs: 
+globs:
+alwaysApply: false
 ---
 # Cursor to Notion Markdown Compatibility Rules
 
@@ -12,20 +13,24 @@ globs:
    - Leave one blank line before and after headers
    ```markdown
    # Header 1
-   
+
    ## Header 2
    ```
 
 2. Emphasis:
    - Use asterisks (`*`) consistently instead of underscores (`_`)
    - Single asterisk for italics: `*italic*`
-   - Double asterisk for bold: `**bold**`
+   - Double asterisk for bold: `**bold**` (no spaces between asterisks and text)
    - Triple asterisk for bold-italic: `***bold-italic***`
+   - For section headings or terms: `**Term**: Definition`
+   - For inline emphasis: `This sentence has **important words** in the middle`
 
 3. Lists:
    - Use hyphens (`-`) for unordered lists instead of asterisks or plus signs
-   - Use proper indentation (2 spaces) for nested lists
-   - Include a blank line before and after lists
+   - Always include exactly one space after the hyphen: `- Item` (not `-Item`)
+   - Use proper indentation (2 spaces) for each nesting level
+   - **Always include blank line before first bullet and after last bullet**
+   - No blank lines between bullets in the same list
    ```markdown
    - First level
      - Second level
@@ -51,6 +56,38 @@ globs:
    - Don't use spaces between the backticks and the code
    - Example: `code`
 
+3. Code Blocks in Lists:
+   - Indent code blocks with 4 spaces more than the bullet level
+   - Include blank line before and after code block
+   - Example:
+   ```markdown
+   - Bullet point
+
+       ```python
+       def example():
+           return True
+       ```
+
+   - Next bullet point
+   ```
+
+## Combined Formatting
+
+1. Bold with Bullets:
+   - Place bold formatting completely inside the bullet text
+   - Complete bold bullet: `- **Entire bullet in bold**`
+   - Partial bold bullet: `- Regular text with **bold text** in middle`
+   - Avoid starting with bold then breaking: `- **Bold** Non-bold` (use `- **Bold Non-bold**` instead)
+   - **IMPORTANT**: When a bullet starts with bold text followed by a description, use a hyphen instead of a colon:
+     - CORRECT: `- **Term** - Description`
+     - INCORRECT: `- **Term**: Description` (may show raw markdown in Notion)
+   - This applies to both main bullets and sub-bullets
+
+2. Other Combinations:
+   - Bullets with links: `- [Link text](mdc:https:/example.com)`
+   - Bullets with inline code: `- Text with `code` inside`
+   - Bullets with emphasis: `- Text with *italics* inside`
+
 ## Links and Images
 
 1. Links:
@@ -58,7 +95,7 @@ globs:
    - Keep references at the bottom of the document
    ```markdown
    [Link text][reference]
-   
+
    [reference]: https://example.com
    ```
 
@@ -90,8 +127,8 @@ globs:
    - Leave spaces around inline equation markers
    ```markdown
    This is an inline equation $ E = mc^2 $
-   
-   $$ 
+
+   $$
    \frac{d}{dx}(x^n) = nx^{n-1}
    $$
    ```
@@ -108,6 +145,12 @@ globs:
    - Use two spaces at the end of lines for soft breaks
    - Use blank lines for paragraph breaks
    - Avoid using backslash line breaks
+
+4. Section Spacing:
+   - Always include blank line before and after headers
+   - Always include blank line before and after lists
+   - Always include blank line before and after code blocks
+   - Never place two block elements together without a blank line between them
 
 ## Document Structure
 
@@ -158,3 +201,12 @@ globs:
    - Table complexity (keep simple)
    - Image paths (use relative paths)
    - Special characters in headers
+
+## Terminology Sections
+
+1. Formatting Definitions:
+   - When creating a list of terms or definitions, use hyphens instead of colons after bold terms
+   - CORRECT: `- **Term** - Definition of the term`
+   - INCORRECT: `- **Term**: Definition of the term`
+   - This prevents Notion from displaying raw Markdown syntax
+   - Apply this rule consistently to all terminology or glossary sections
