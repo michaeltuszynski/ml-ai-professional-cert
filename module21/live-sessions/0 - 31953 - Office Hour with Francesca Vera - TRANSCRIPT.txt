@@ -1,0 +1,1754 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.920
+Francesca: Session. But if you need to drop off, of course please feel free, and I hope you're okay. I hope you're doing well.
+
+2
+00:00:07.920 --> 00:00:14.429
+Shashidhar S: Yeah, yeah, I have some medical pain. So I'm visiting the doctor for therapy.
+
+3
+00:00:14.430 --> 00:00:20.879
+Francesca: Okay. Well, I hope you are able to take care of it. That the doctor is helpful.
+
+4
+00:00:21.140 --> 00:00:23.210
+Shashidhar S: Yeah, thank you
+
+5
+00:00:23.210 --> 00:00:32.049
+Shashidhar S: on mute. I'll be driving to the doctors this one, so I will be listening to the this one, and I'll once I get back home I will watch the video.
+
+6
+00:00:32.340 --> 00:00:41.180
+Francesca: Okay, sure, no, no worries at all. I'll maybe give it a minute or so. The recording has started, and just see if anyone else.
+
+7
+00:00:42.070 --> 00:00:42.850
+Francesca: Will
+
+8
+00:00:43.270 --> 00:01:03.009
+Francesca: join in. But I guess, while I have you here, if you wanted to, you know, talk to me a little bit about how your capstone project is going. I mean, I know we're approaching computer vision, which will be very important for your capstone. But how has it been going so far?
+
+9
+00:01:04.050 --> 00:01:12.209
+Shashidhar S: Yeah, I mean, I just last week I had a discussion with money about the second one on one discussion on the.
+
+10
+00:01:12.930 --> 00:01:18.560
+Shashidhar S: Capstone project which I'm working on the plant disease detection. Yes, I hear me
+
+11
+00:01:18.560 --> 00:01:28.829
+Shashidhar S: some inputs on some of the reports and additional metrics, or something like that, to showcase in the final submission
+
+12
+00:01:28.950 --> 00:01:32.529
+Shashidhar S: and see. Put the whole whole
+
+13
+00:01:32.950 --> 00:01:40.559
+Shashidhar S: detection and activities in a financial perspective like, how is it going to how it is going to benefit the
+
+14
+00:01:40.740 --> 00:01:51.209
+Shashidhar S: farming community or agriculture community, and what are the benefits and how much money people can save by using this tool
+
+15
+00:01:51.881 --> 00:02:03.530
+Shashidhar S: once it is rolled out. So that kind of information to provide. I did some initial analytics on kind of images that I have on banana and maize.
+
+16
+00:02:03.690 --> 00:02:12.819
+Shashidhar S: and if I have some additional time I may go with tomato, also detecting 2 2 diseases in each of these plants.
+
+17
+00:02:12.950 --> 00:02:15.379
+Shashidhar S: So it's primarily for that.
+
+18
+00:02:15.680 --> 00:02:22.290
+Francesca: Nice, and you were able to get through your Eda completely. Already.
+
+19
+00:02:22.770 --> 00:02:25.474
+Shashidhar S: Yeah, yeah, I mean, I did the eda, so kind of
+
+20
+00:02:25.720 --> 00:02:26.390
+Francesca: Perfect.
+
+21
+00:02:27.000 --> 00:02:31.810
+Shashidhar S: Ed. I've completed and shared it on the Github also.
+
+22
+00:02:32.660 --> 00:02:36.380
+Shashidhar S: And based on that money gave some inputs on kind of
+
+23
+00:02:36.820 --> 00:02:43.389
+Shashidhar S: additional reports and financial numbers to put in so that it will be having more value, and they can have
+
+24
+00:02:44.070 --> 00:02:48.629
+Shashidhar S: a more meaningful understanding of the entire presentation.
+
+25
+00:02:48.980 --> 00:02:50.030
+Francesca: Oh, nice!
+
+26
+00:02:50.030 --> 00:02:52.100
+Shashidhar S: When when I'm working on the
+
+27
+00:02:52.240 --> 00:02:59.539
+Shashidhar S: project, I will include those reports and additional metrics and visualizations.
+
+28
+00:03:00.330 --> 00:03:05.999
+Francesca: And have you implemented any of your classifiers as well already? Or.
+
+29
+00:03:06.000 --> 00:03:09.582
+Shashidhar S: Yeah, but I did one Classifi classifier with
+
+30
+00:03:10.530 --> 00:03:17.673
+Shashidhar S: the basic baseline model I mean the it was overfitting, I mean within
+
+31
+00:03:18.150 --> 00:03:18.610
+Francesca: Oh!
+
+32
+00:03:19.537 --> 00:03:30.290
+Shashidhar S: It was. I mean, I have some 4,000 images within that itself after within 10 epochs itself. It was over fitting.
+
+33
+00:03:30.290 --> 00:03:30.880
+Francesca: Oh no!
+
+34
+00:03:30.880 --> 00:03:37.329
+Shashidhar S: And it for so that I need to tune it, and the error in
+
+35
+00:03:39.090 --> 00:03:41.909
+Shashidhar S: validation error was still bit high. It was.
+
+36
+00:03:41.910 --> 00:03:42.270
+Francesca: And.
+
+37
+00:03:42.270 --> 00:03:42.780
+Shashidhar S: You know.
+
+38
+00:03:42.930 --> 00:03:48.753
+Shashidhar S: 40%. I was getting around 60 to 70% accuracy. But that, I need to work on
+
+39
+00:03:49.380 --> 00:04:03.009
+Shashidhar S: reducing it and kind. I'm trying to modify the images, adjust the lights and things like that, and skew them and do some kind of drop off. And things like that I still haven't done the entire
+
+40
+00:04:03.680 --> 00:04:06.130
+Shashidhar S: many models kind of.
+
+41
+00:04:06.130 --> 00:04:06.470
+Francesca: I know.
+
+42
+00:04:06.470 --> 00:04:08.670
+Shashidhar S: Fine tuning, with various other options.
+
+43
+00:04:08.670 --> 00:04:09.150
+Francesca: Right.
+
+44
+00:04:09.150 --> 00:04:19.670
+Shashidhar S: But just done the baseline this week I want to finish up the this week's assignments so that I can concentrate little bit more on
+
+45
+00:04:20.269 --> 00:04:23.970
+Shashidhar S: this fine tuning, this model before
+
+46
+00:04:24.480 --> 00:04:35.209
+Shashidhar S: the next module and deep, deep neural network kicks in on Wednesday. So I want to focus today and tomorrow, at least on that one, and try to improve the model performance.
+
+47
+00:04:35.560 --> 00:04:43.619
+Francesca: Yeah, that makes a lot of sense. I'm glad it's going well. And you were able to meet with Mani already. Hi, everyone else
+
+48
+00:04:43.910 --> 00:05:10.139
+Francesca: we are doing sort of the icebreaker portion of the office hours. Just a very informal check-in. Does anyone else want to share how their capstone is going? Have you met with your learning facilitator yet in the one-on-ones that are available to you, or any findings about your process, or your models, or even results that you want to check in on.
+
+49
+00:05:12.830 --> 00:05:16.700
+Chetan Chaganti: Yeah. So the capstone project is still in progress. Right? So.
+
+50
+00:05:16.700 --> 00:05:17.480
+Francesca: Yes.
+
+51
+00:05:17.490 --> 00:05:25.150
+Chetan Chaganti: We want to submit. Eda. Should that be complete and final before submission or we can work
+
+52
+00:05:25.330 --> 00:05:26.889
+Chetan Chaganti: to after submitting it.
+
+53
+00:05:28.018 --> 00:05:37.429
+Francesca: So when you say submission, do you mean the final submission module 24, or do you mean the initial report.
+
+54
+00:05:37.440 --> 00:05:40.929
+Chetan Chaganti: Eda need to be submitted right.
+
+55
+00:05:41.060 --> 00:05:45.920
+Francesca: Yes, so you can. Still
+
+56
+00:05:46.460 --> 00:05:57.710
+Francesca: edit your project, including the Eda up until the last week of the course, so maybe it will help to go to this calendar.
+
+57
+00:05:58.040 --> 00:06:03.129
+Francesca: So your initial report was due Module 20, with the Eda.
+
+58
+00:06:03.130 --> 00:06:03.550
+Chetan Chaganti: No.
+
+59
+00:06:03.550 --> 00:06:21.139
+Francesca: And we are here now. Module 21. But you will actually receive feedback from your learning facilitators, including feedback on your Eda, so you can incorporate any feedback before you do the final submission. Here.
+
+60
+00:06:21.140 --> 00:06:26.459
+Chetan Chaganti: How about grading? I mean, when it is pro work in progress? How do we get grading on that.
+
+61
+00:06:26.690 --> 00:06:38.749
+Francesca: So the grading for your initial report will be done, and I believe I can pull it up for you actually, so that I
+
+62
+00:06:39.200 --> 00:06:49.140
+Francesca: have the screen share available, but the grading will be mostly to make sure that you are on track.
+
+63
+00:06:49.230 --> 00:06:49.810
+Chetan Chaganti: With.
+
+64
+00:06:49.810 --> 00:07:02.440
+Francesca: The progress. So did you create your Github Repo? Does it have the correct files? Did you make an attempt to do Eda, according to the best practices we
+
+65
+00:07:03.236 --> 00:07:13.130
+Francesca: we went through in the course. Did you have you done an initial baseline model for your project yet? Or is that still a work in progress.
+
+66
+00:07:13.130 --> 00:07:17.960
+Chetan Chaganti: No, no, not yet. I'm at Ed apart, and I submitted yesterday because I.
+
+67
+00:07:17.960 --> 00:07:18.759
+Francesca: Oh! And nice!
+
+68
+00:07:18.760 --> 00:07:24.489
+Chetan Chaganti: I I requested extension until today. I submitted last night, but it is still in progress, so.
+
+69
+00:07:24.880 --> 00:07:32.160
+Francesca: That's great. Well, I'm I'm glad that you were able to submit. And you're still in progress. So if I
+
+70
+00:07:32.460 --> 00:07:36.420
+Francesca: bring it into the screen share here
+
+71
+00:07:36.550 --> 00:07:42.960
+Francesca: hopefully, the assignments load you're going to be graded on.
+
+72
+00:07:44.060 --> 00:08:03.470
+Francesca: If you have mostly the right components, such as your Github repo, and all the correct files. Did you do your Eda according to best practices? So are you using the right visualizations? Are you explaining your insights?
+
+73
+00:08:04.150 --> 00:08:07.781
+Francesca: Well, and then you will also be
+
+74
+00:08:09.130 --> 00:08:15.949
+Francesca: graded on. Here, sorry. Here's the grading criteria. If you can see the screen.
+
+75
+00:08:16.426 --> 00:08:22.620
+Francesca: This 1st one is just organization. Do you have all the correct files, are they in the correct place?
+
+76
+00:08:23.070 --> 00:08:44.069
+Francesca: The next is syntax and code quality, so does your code compile? Is the syntax of your code correct, such as no extremely long strings of code are your variables named appropriately? Are you organizing it well, with your import statements organized at the top and doing everything in sequence.
+
+77
+00:08:44.440 --> 00:09:11.929
+Francesca: The visualizations, I think, will be really important for Eda. So you'll also be graded on visualizations. So are you using the correct plots in your Eda. And do you have the right labels, the right titles, the right colors where relevant for the Eda portion? Did you clean your data, set. So duplicate values outliers, missing values is your data set very sparse?
+
+78
+00:09:12.200 --> 00:09:16.660
+Francesca: And then I think this is also really important feature.
+
+79
+00:09:17.307 --> 00:09:22.230
+Francesca: Engineering. With the Eda, did you identify potentially
+
+80
+00:09:22.410 --> 00:09:39.639
+Francesca: important features for your model? And then we would hope that the initial report would have a baseline model. We acknowledge that for some projects. It'll be really tough to have that done without having gone through the neural network portion.
+
+81
+00:09:39.910 --> 00:09:47.060
+Francesca: But if you did submit that model or make an attempt for a baseline model. You will also be evaluated on that.
+
+82
+00:09:49.590 --> 00:09:53.190
+Francesca: Does that help sort of clarify.
+
+83
+00:09:53.340 --> 00:09:54.090
+Chetan Chaganti: Thank you.
+
+84
+00:09:54.090 --> 00:09:59.169
+Francesca: The expectation. Okay, great. Does anyone else have any other questions about
+
+85
+00:09:59.660 --> 00:10:04.710
+Francesca: this initial report? And Eda for their capstone?
+
+86
+00:10:11.870 --> 00:10:17.719
+Francesca: If not feel free to put it in the chat during the office hours, and I'll try to get back to it.
+
+87
+00:10:18.777 --> 00:10:28.039
+Francesca: But for my agenda today I will actually go over some general observations, and
+
+88
+00:10:28.750 --> 00:10:41.030
+Francesca: you know pieces of feedback that I noticed from the 1st few submissions of the initial report, and then maybe these pieces of feedback, or these observations can be included for your final report.
+
+89
+00:10:41.650 --> 00:10:54.160
+Francesca: I'll then go over, you know the introduction to neural networks. So key concepts, and if we have time, what to expect in part 2. So it's a 2 part.
+
+90
+00:10:54.660 --> 00:11:03.490
+Francesca: a lesson for the course, especially because it is such an important but also, you know.
+
+91
+00:11:04.040 --> 00:11:09.880
+Francesca: complex topic. And then an example. Walkthrough, hopefully.
+
+92
+00:11:11.660 --> 00:11:22.479
+Francesca: So, as I said, in terms of just making sure everyone is on track with the key dates. Your initial report was due here.
+
+93
+00:11:23.200 --> 00:11:29.259
+Francesca: Before the break on the 20th 20th week or 20th module.
+
+94
+00:11:29.430 --> 00:11:34.619
+Francesca: We are now here in deep neural networks. So that's what today is about.
+
+95
+00:11:34.720 --> 00:11:44.390
+Francesca: And I wanted to flag that you have the opportunity to meet with your learning facilitators across 3 weeks.
+
+96
+00:11:44.670 --> 00:12:07.240
+Francesca: So if you have not yet scheduled your one-on-one with your learning facilitator, or have not looked at their schedules and your schedules to have that discussion. Please make sure you book some time with your learning facilitator through their calendly, and take the opportunity to talk about your project.
+
+97
+00:12:07.340 --> 00:12:12.960
+Francesca: I have started to do one-on-ones with some of the learners, and
+
+98
+00:12:13.260 --> 00:12:33.389
+Francesca: you know some people are already near the end where they have their models, and it's about polishing and cleaning things up, making their project look good making sure they're writing everything down, so you might be near the end. And it's still worthwhile to have that discussion, because your learning facilitator can help you
+
+99
+00:12:33.530 --> 00:12:52.809
+Francesca: think of how to polish your project, and then maybe run a few more experiments. I also have had some one on ones where people are still catching up, you know. The course was moved quickly. We're almost at the end. Everything has crept up on us, and they've said, Hey, I'm behind, but I want
+
+100
+00:12:52.980 --> 00:13:05.439
+Francesca: help to do a really great capstone project. Can you please walk me through it? Now that we've learned all of these algorithms so regardless of the stage that you're in.
+
+101
+00:13:05.903 --> 00:13:25.800
+Francesca: These one-on-one meetings are going to be helpful to you, so please make sure that you do them, and they run from, you know last week up until the end of the 1st week of March. So you have a lot of time to pick, depending on your schedule, but also where you are in your project.
+
+102
+00:13:29.350 --> 00:13:37.340
+Francesca: So just next steps for your capstone. Firstly, submit your initial report. If you have not already done so.
+
+103
+00:13:37.520 --> 00:13:55.270
+Francesca: I showed the page just prior to this initial report, and what you have to include an Eda, a clean data set, and hopefully, even a baseline model or an attempt at a baseline model for your project.
+
+104
+00:13:55.950 --> 00:14:18.430
+Francesca: If you've already received feedback, because people who submitted on time would have received feedback already. Please review the feedback you received, especially if you have not yet met with your learning. Facilitator. It would be really helpful if you came into your one on one with your learning facilitator. Having read the feedback that you
+
+105
+00:14:18.790 --> 00:14:22.309
+Francesca: that you received the second step
+
+106
+00:14:22.590 --> 00:14:46.340
+Francesca: is schedule your one-on-one with your learning facilitator. This is perhaps the last time you will get that one-on-one consultation with them about your project before you have to submit it, maybe even before the end of the course. The last time you'll really get to speak with them, one on one on advice about the project, or maybe broader advice about your career and
+
+107
+00:14:46.840 --> 00:14:51.169
+Francesca: AI and machine learning. So make the most of your time
+
+108
+00:14:51.700 --> 00:14:54.460
+Francesca: schedule it. Come with questions and comments.
+
+109
+00:14:54.690 --> 00:14:56.660
+Francesca: Maybe there was an attempt
+
+110
+00:14:57.230 --> 00:15:02.580
+Francesca: at a model that gave you a result you didn't like, and you don't know why. Maybe
+
+111
+00:15:03.050 --> 00:15:13.160
+Francesca: you want help with visualizations. What is the correct visualization to use for this scenario, and then take note of the feedback given during that session.
+
+112
+00:15:13.830 --> 00:15:36.760
+Francesca: and once you've done one and 2, you can adjust your project, you can run more experiments depending on where you are in terms of your modeling. You can clean everything up. I love the word polish. This project when you submit it at the end of the course, is supposed to be a very polished project. It is supposed to be
+
+113
+00:15:36.760 --> 00:15:55.059
+Francesca: complete with formatting, complete with file names complete with sentences. You have to write a non-technical report. Everything should be very polished, very put together, and sent off into your Github Repo as a completed project.
+
+114
+00:15:55.150 --> 00:15:58.329
+Francesca: And again, if you have not
+
+115
+00:15:58.910 --> 00:16:14.850
+Francesca: spent so much time on your report. If you're kind of like me, where I like to do all my experiments and my tweaking, and my modeling and my code first, st and then writing up the very, very nice finished report. Remember, that is still something you're going to have to do.
+
+116
+00:16:21.290 --> 00:16:32.816
+Francesca: So just some pieces of feedback and observations from the initial reports that I've graded and also seen, and common questions.
+
+117
+00:16:33.500 --> 00:16:43.650
+Francesca: the 1st is, I put it as clean up your repo. This is really the polish that I've thought about. But
+
+118
+00:16:44.140 --> 00:16:59.410
+Francesca: small things can actually make a big difference. For example, if you have a lot of figures from your Eda, and also a lot of figures from your model evaluation. You might end up wanting to upload images to your repo.
+
+119
+00:16:59.640 --> 00:17:24.850
+Francesca: If you are going to upload images, create a folder, create like an image folder or a figs folder something, so that everything that is just an image, a standalone image, a standalone visualization. All of that is together very nicely in a folder, instead of floating with the other files like your readme and your python notebook.
+
+120
+00:17:25.900 --> 00:17:44.589
+Francesca: Another really small but effective way to clean up your repo is, think of having a descriptive file name. So I have these 2 examples here. You could call it colab notebook. You could call it Project
+
+121
+00:17:44.670 --> 00:17:57.260
+Francesca: Dot, IP, y, and B. But that's not really descriptive other than telling me that it is a python notebook which I could also tell by the file extension. Right?
+
+122
+00:17:58.260 --> 00:18:06.494
+Francesca: If you call it something like loan default predictor. So something descriptive, or you might
+
+123
+00:18:07.510 --> 00:18:12.086
+Francesca: you might want to call it in
+
+124
+00:18:13.080 --> 00:18:21.980
+Francesca: plant image classifier, or you might want to call it I I but
+
+125
+00:18:22.850 --> 00:18:32.749
+Francesca: sepsis prediction you know something descriptive, so that I know exactly what the contents of this notebook.
+
+126
+00:18:34.580 --> 00:18:35.350
+Francesca: R.
+
+127
+00:18:36.380 --> 00:18:46.580
+Francesca: Another thing is to use formatting features to your advantage. This is another small but really powerful thing. I've included 2 examples.
+
+128
+00:18:46.600 --> 00:19:12.630
+Francesca: You can see here in example one. It's a sentence, and it's a correct sentence, and it's a complete sentence and a relevant sentence. It says, the model features include age, zip code, income number of previous defaults, amount of loan years with credit score. You could write this, as is in your readme, and it would convey the information that these are the model features that you used.
+
+129
+00:19:13.890 --> 00:19:20.329
+Francesca: but you could also make use of formatting features. This is true for the readme
+
+130
+00:19:20.510 --> 00:19:24.589
+Francesca: and for the colab notebook, also for your non-technical report.
+
+131
+00:19:25.000 --> 00:19:38.629
+Francesca: a bullet point list like this, where you have model features, and then listing out your features is one a lot easier to read than this long list in a continuous sentence.
+
+132
+00:19:38.760 --> 00:19:49.069
+Francesca: It also gives me additional pieces of information. For example, it is much easier for me to tell how many features you used when it's listed like this.
+
+133
+00:19:49.520 --> 00:20:01.459
+Francesca: Then, when I have to sort of count like 1, 2, 3, 4, like count by the number of commas. Right? So simple things like this make it
+
+134
+00:20:01.790 --> 00:20:13.989
+Francesca: make a big difference, even though it seems like a small change. Another reason why this Bullet Point list is useful is, I could be thinking, oh, I wonder if they thought about how
+
+135
+00:20:14.200 --> 00:20:21.219
+Francesca: the amount of loan would make a difference. Maybe big loans were less likely to default.
+
+136
+00:20:21.390 --> 00:20:33.400
+Francesca: And if I'm looking at this sentence I'm going to have to read the sentence, start to finish every time to get there, whereas with the bullet points I can see it very clearly right away.
+
+137
+00:20:33.850 --> 00:20:46.939
+Francesca: So these 2 observations, really small but really effective. So don't neglect these points of cleaning everything up and also using the text format features.
+
+138
+00:20:52.770 --> 00:20:59.709
+Francesca: A couple more observations. The 1st one I really love don't assume anything.
+
+139
+00:21:00.080 --> 00:21:13.009
+Francesca: Remember, this project is going to go on your Github in a public facing repository. So that means there was a good chance that no one who let someone who has never met you.
+
+140
+00:21:13.320 --> 00:21:28.730
+Francesca: and someone who has never spoken to you has never heard you talk about this project. So not your learning facilitator. But just anyone who is really looking up. Maybe your Github profile, maybe looking up, projects about
+
+141
+00:21:29.170 --> 00:21:37.679
+Francesca: about loan default, prediction, they might end up at your repo, and this person
+
+142
+00:21:37.900 --> 00:21:56.129
+Francesca: needs to be communicated too clearly. So write as though the person encountering your repo is meeting your project for the 1st time. Right? So some important questions, it's almost a checklist, you can ask yourself, is my research question. Clear tick
+
+143
+00:21:56.700 --> 00:22:02.800
+Francesca: is what I'm predicting clear. So in this case, it's, you know. Did this person default on the loan
+
+144
+00:22:03.600 --> 00:22:10.109
+Francesca: tick? Is the methodology clear? Do I state what models I'm going to use?
+
+145
+00:22:11.210 --> 00:22:18.249
+Francesca: How I'm going to use those models like the, you know, train test split. Maybe the types of models
+
+146
+00:22:18.550 --> 00:22:19.280
+Francesca: tick.
+
+147
+00:22:19.510 --> 00:22:32.209
+Francesca: do I justify my choices? I think this is a really, really key one, because the way you justify your design choices is the way you're going to communicate to your learning facilitator that you really know what you're talking about.
+
+148
+00:22:32.440 --> 00:22:40.640
+Francesca: So did you justify? Why, you used a classification model. Why did you use that one? Did you justify? Why you use those features?
+
+149
+00:22:40.860 --> 00:23:02.890
+Francesca: Did you justify why you use that evaluation. Metric different problems will have different uses and different cases for evaluation metrics. And then are your results clear and concise? Can someone who only has 30 seconds to look at my readme and see what results I got. Can they easily identify my results?
+
+150
+00:23:03.930 --> 00:23:11.240
+Francesca: So don't assume anything. Write as if someone is going to see your repo and see your project with fresh eyes
+
+151
+00:23:12.400 --> 00:23:19.600
+Francesca: and the last bit of feedback that is related to you know, not assuming anything is.
+
+152
+00:23:19.840 --> 00:23:27.619
+Francesca: display your results in a helpful format. So I have observed in most projects that
+
+153
+00:23:27.850 --> 00:23:37.390
+Francesca: when you look through their colab notebook, and you do the you know the code through it. It's a
+
+154
+00:23:37.510 --> 00:23:49.280
+Francesca: often people will write a print statement that prints out the accuracy of their model, and that makes a lot of sense right? You want to know what the accuracy of your model is.
+
+155
+00:23:49.530 --> 00:23:54.490
+Francesca: Of course you're going to print that into your into your colab notebook.
+
+156
+00:23:54.840 --> 00:24:13.840
+Francesca: But if you think about actually communicating those results in your readme or in your report, you don't want to just copy and paste all your print statements and put that into your readme like this like you don't want it to just be, maybe some, you know text like
+
+157
+00:24:13.840 --> 00:24:31.499
+Francesca: Rf. Accuracy, and then the result or knn accuracy, and then the result or Lr accuracy and the result. And you don't want to just copy and paste that into your readme, because that's almost like your working document, your experiment document, where your
+
+158
+00:24:31.510 --> 00:24:35.300
+Francesca: you know, making those print statements to inform yourself how you're doing.
+
+159
+00:24:35.370 --> 00:24:46.609
+Francesca: But when you actually want to present your results in your public facing readme and your report very formally. Think about displaying them in a way that would be very helpful.
+
+160
+00:24:46.690 --> 00:24:57.380
+Francesca: For example, if your project is designed to compare models against each other, and you want to find the best model for predicting your loan default.
+
+161
+00:24:57.520 --> 00:25:07.399
+Francesca: a table would be really effective, because in a table like this I can compare. I know each row represents a different model.
+
+162
+00:25:07.800 --> 00:25:20.659
+Francesca: and I can compare very easily across rows for each column such as this test accuracy column. I know, just looking down, that logistic regression had the highest accuracy.
+
+163
+00:25:20.860 --> 00:25:26.959
+Francesca: or if I want to compare across train and test accuracy I know to go across.
+
+164
+00:25:27.460 --> 00:25:30.359
+Francesca: And that's just something that
+
+165
+00:25:30.740 --> 00:25:58.999
+Francesca: most people who encounter a project, particularly a research project or a completed project where you have some results. People want to see your results almost right away, and when they do want to see it, they want to make sure it's really clear and really easy for you to digest. So once you've done your print statements, once you have collected all your results, think about actually displaying them in a helpful format.
+
+166
+00:25:59.380 --> 00:26:04.520
+Francesca: If you're trying to compare models against each other, then you know a table
+
+167
+00:26:04.740 --> 00:26:09.849
+Francesca: comparing all the models might work. If you, if you want to
+
+168
+00:26:10.100 --> 00:26:29.909
+Francesca: actually show the various feature, important, the various results for feature, importance, maybe a visualization for each feature and showing how much influence they had over the model just really, really impactful ways to actually display your results.
+
+169
+00:26:33.800 --> 00:26:38.540
+Francesca: That was what I had for the capstone section.
+
+170
+00:26:38.820 --> 00:26:41.849
+Francesca: Does anyone have any questions before I move on.
+
+171
+00:26:50.430 --> 00:26:51.952
+Francesca: or did anyone
+
+172
+00:26:52.930 --> 00:26:59.970
+Francesca: Was anyone inspired by any of these ideas of something they might actually include into their capstone?
+
+173
+00:27:10.180 --> 00:27:35.109
+Francesca: Well, of course, this session is recorded, and these slides will be made available to you. So feel free to refer back to this feedback. I know it was a lot, and is the kind of thing where it will be really easy to implement once you have your project in front of you at the same time. So just some things to keep in mind as you get ever so close to the finished product.
+
+174
+00:27:37.720 --> 00:27:40.359
+Francesca: So now I'll be
+
+175
+00:27:40.500 --> 00:27:51.609
+Francesca: pivoting to the topic of the week, which is deep neural networks. Part one. I'll cover some of the concepts.
+
+176
+00:27:52.909 --> 00:27:57.409
+Francesca: In a way that will hopefully be
+
+177
+00:27:58.197 --> 00:28:02.460
+Francesca: we'll hopefully make things that are very complex. And we're very.
+
+178
+00:28:02.940 --> 00:28:19.820
+Francesca: you know, mathematically discussed in the lecture videos of the module, hopefully making that in a way that's very accessible to your understanding and again. Just feel free to ask questions or drop some questions in the chat while we go through this.
+
+179
+00:28:23.330 --> 00:28:29.069
+Francesca: So let's say I have this task. Let's say I want to predict
+
+180
+00:28:29.230 --> 00:28:45.719
+Francesca: if a patient has diabetes right and this will be a, you know, binary outcome has diabetes, does not have diabetes. And let's say I'm given a data set with features like glucose concentration.
+
+181
+00:28:46.030 --> 00:28:50.630
+Francesca: blood pressure, skin thickness, age, and given the outcome.
+
+182
+00:28:50.900 --> 00:28:56.679
+Francesca: So I'd like to take a second to just fill in the blanks with an exercise.
+
+183
+00:28:57.080 --> 00:28:59.766
+Francesca: If this is the task at hand,
+
+184
+00:29:00.840 --> 00:29:03.729
+Francesca: what algorithms could I use so
+
+185
+00:29:05.060 --> 00:29:11.449
+Francesca: feel free to unmute or put it in the chat. What algorithms might be, you know.
+
+186
+00:29:11.960 --> 00:29:18.410
+Francesca: relevant and useful algorithms for this task to predict if a patient has
+
+187
+00:29:20.840 --> 00:29:27.520
+Zhujun Wang: Logistic regression. Svm decision tree to Kn.
+
+188
+00:29:28.360 --> 00:29:38.050
+Francesca: And then and decision tree. Okay, these are all great. How did you know those were the algorithms to use? What was your thought process?
+
+189
+00:29:38.050 --> 00:29:47.599
+Zhujun Wang: Just think about this as a classification problem and either classification or regression. This is a single model for the classification.
+
+190
+00:29:48.090 --> 00:29:59.970
+Francesca: Yeah, perfect. Thank you so much. It is absolutely a classification problem. We want to just predict a category has diabetes, does not have diabetes. And then
+
+191
+00:30:00.480 --> 00:30:06.780
+Francesca: these are fine algorithms, right? Logistic regression. Svm Knn and decision tree.
+
+192
+00:30:07.110 --> 00:30:11.510
+Francesca: Now, let's say, I want to go
+
+193
+00:30:11.670 --> 00:30:30.270
+Francesca: and identify lifelike cat images from a data set of images from an Internet search of cat images. So here are some images I pulled up from searching for cat images on the Internet. Can I use the same algorithms? So
+
+194
+00:30:30.450 --> 00:30:34.340
+Francesca: if we recall the algorithms used
+
+195
+00:30:34.520 --> 00:30:51.560
+Francesca: or the algorithm suggested logistic regression, Svm, can and decision trees, can I use these algorithms to great effect.
+
+196
+00:30:51.670 --> 00:30:53.000
+Francesca: For this task.
+
+197
+00:30:54.510 --> 00:30:55.090
+Zhujun Wang: Voicing.
+
+198
+00:30:55.090 --> 00:30:57.020
+Francesca: Yes. Yes. Okay.
+
+199
+00:30:57.290 --> 00:31:10.129
+Zhujun Wang: Just probably need to like, put the image pixel, and with probably the the shape into the vector, and use that as input
+
+200
+00:31:10.420 --> 00:31:19.879
+Zhujun Wang: and and also since it's a labeled data. And then, yeah, I think, probably using that to train the this classification model.
+
+201
+00:31:20.553 --> 00:31:23.730
+Francesca: So yeah, so could we use them?
+
+202
+00:31:23.880 --> 00:31:46.029
+Francesca: Yeah, we could. As you said, we did learn in the lecture that an image is just, you know, pixels. And so we can get information from the pixels from this image, and put that through our classifier. How well would these classifiers do, or how well would this method actually work in practice
+
+203
+00:31:46.340 --> 00:31:53.669
+Francesca: if we wanted to use something like, you know, logistic regression or Svm to classified this image?
+
+204
+00:31:57.930 --> 00:32:01.280
+Francesca: Would would they work well? Is this is this a good idea?
+
+205
+00:32:07.390 --> 00:32:15.220
+Zhujun Wang: That probably depends the how I how I fertilize the input.
+
+206
+00:32:15.220 --> 00:32:15.820
+Francesca: Yeah.
+
+207
+00:32:15.820 --> 00:32:17.700
+Zhujun Wang: Really depends.
+
+208
+00:32:19.330 --> 00:32:21.350
+Zhujun Wang: Right? Probably for this.
+
+209
+00:32:21.710 --> 00:32:28.569
+Zhujun Wang: for the shape. Probably I might need to use some smooth filter to make the.
+
+210
+00:32:28.970 --> 00:32:37.289
+Zhujun Wang: I guess, just just like animal shake outbound more obviously, like we need to do some image processing.
+
+211
+00:32:37.660 --> 00:32:38.120
+Francesca: Yeah.
+
+212
+00:32:38.120 --> 00:32:42.579
+Zhujun Wang: Then treating. Then, instead of using raw image, Pixel.
+
+213
+00:32:42.740 --> 00:33:09.509
+Francesca: Yeah, I mean, it depends is a great answer, right? And you outlined. Why, it would depend it would depend on sort of what you do, how you treat the image? And then also how many images are in your data set? Are we only looking at 5 images? Or are we looking at 5,000 images. I also want to recall from the lecture in the module, you know. Sometimes these images are like.
+
+214
+00:33:09.680 --> 00:33:19.899
+Francesca: let's say, if it's like 642 pixels, or and let's say, this is like 400 something pixels, you know. That's
+
+215
+00:33:20.300 --> 00:33:22.310
+Francesca: 642.
+
+216
+00:33:22.900 --> 00:33:27.810
+Francesca: I don't know what that is off the top of my head number of pixels.
+
+217
+00:33:28.140 --> 00:33:30.820
+Francesca: That's, you know, the amount
+
+218
+00:33:31.910 --> 00:33:43.329
+Francesca: for just one image, and you might have hundreds of images, thousands of images. So it really depends. Because if this is the case, I don't know that we really want to use
+
+219
+00:33:43.490 --> 00:33:52.139
+Francesca: these algorithms for something like this, right? Maybe if it's 5 pictures, it's okay. 5,000 feels like a lot. Right?
+
+220
+00:33:52.390 --> 00:33:55.529
+Francesca: So that's sort of what leads us
+
+221
+00:33:55.890 --> 00:34:04.849
+Francesca: to neural networks. And why neural networks have become extremely effective, extremely popular, and extremely powerful.
+
+222
+00:34:05.070 --> 00:34:14.370
+Francesca: It's that sometimes we are given these really complex tasks of thousands of pixels
+
+223
+00:34:14.540 --> 00:34:32.989
+Francesca: in each image thousands of pixels in each one, and we could have 5,000, if not more. We could have, you know, 10,000 pictures that we want to go through, and that would just be so complicated to do through logistic regression, Svm, etc.
+
+224
+00:34:33.150 --> 00:34:38.849
+Francesca: So for complex tasks like those in computer vision or with language.
+
+225
+00:34:39.550 --> 00:34:54.169
+Francesca: simple classification algorithms, like the ones mentioned often won't work. Well, you know, the data itself may be too complex. If the pictures are, you know, large files, and you also have to do
+
+226
+00:34:54.380 --> 00:34:58.799
+Francesca: some transformation on each of the images.
+
+227
+00:34:59.050 --> 00:35:11.580
+Francesca: There may be too many features. So what if you had to pass in? You know tens of thousands of features for each image every time into your algorithm. And
+
+228
+00:35:13.090 --> 00:35:25.979
+Francesca: the patterns in the data may not be captured by simple classification algorithms like, if I look at these pictures and think about the patterns in the data that would lead me to
+
+229
+00:35:26.250 --> 00:35:52.239
+Francesca: to even know these pictures by eye when I'm looking at these images. There are so many things that I have to think about as a human right to to identify these images as cat or not cat. And there are just so many things I'm looking at depth. I'm looking at color. I'm looking at texture. I'm looking at shape. There are just so many things that I'm looking at as a human. And you can think
+
+230
+00:35:52.500 --> 00:36:01.820
+Francesca: of it as akin to when your algorithm is trying to learn from these data sets the patterns in the data
+
+231
+00:36:02.310 --> 00:36:13.440
+Francesca: like images. Maybe just really too complex for simple classification algorithms to understand.
+
+232
+00:36:13.640 --> 00:36:17.239
+Francesca: So for complicated problems, we tend to use
+
+233
+00:36:17.420 --> 00:36:27.680
+Francesca: complicated and more powerful models, like neural networks. And that's why, you know, previewing for next week there will be
+
+234
+00:36:27.820 --> 00:36:40.640
+Francesca: lesson on neural networks for image classification, particularly because these neural networks work well on image classification in ways that the simple algorithms don't.
+
+235
+00:36:42.690 --> 00:36:50.350
+Francesca: So just getting into the neural network structure quickly. You know, we recall from linear regression that this is.
+
+236
+00:36:51.280 --> 00:36:59.810
+Francesca: These are the mathematical equations that inspired us with our input X and some features
+
+237
+00:37:00.960 --> 00:37:02.829
+Francesca: to get to our output.
+
+238
+00:37:03.230 --> 00:37:06.560
+Francesca: And neural networks are similar.
+
+239
+00:37:07.600 --> 00:37:15.129
+Francesca: From similar to linear regression. In the same way that we are looking at
+
+240
+00:37:15.640 --> 00:37:30.309
+Francesca: specific coefficients as we would in linear progression. And these coefficients are applied on our input, and that using the same kind of
+
+241
+00:37:30.430 --> 00:37:38.189
+Francesca: a mathematical structure, we are able to produce some output just with a lot more complexity within it.
+
+242
+00:37:38.390 --> 00:38:05.030
+Francesca: The reason I started with this is well, one. This is lifted from the slides, from the lecture video. So these should look really familiar to you. It was emphasized in the lecture that neural networks have specific feature functions called activation functions. They add all coefficients to all lines of the graph and neural networks allow for multiple layers. But I like to start with this, because
+
+243
+00:38:05.200 --> 00:38:25.370
+Francesca: when I think of neural networks, and particularly introducing neural networks to people for the 1st time. I like to break it down, taking this complicated looking thing into something that is more visually digestible. So that's what I'll be tackling for the next 10 min or so.
+
+244
+00:38:29.170 --> 00:38:35.670
+Francesca: One way that I will represent this is taking something that looks like
+
+245
+00:38:36.820 --> 00:38:44.399
+Francesca: this, similar to this, where every thing is densely connected with those lines.
+
+246
+00:38:44.600 --> 00:38:48.430
+Francesca: I'm going to firstly, simplify it by just
+
+247
+00:38:48.740 --> 00:38:57.010
+Francesca: using these circles, these arrows, and these stacks of circles.
+
+248
+00:38:57.830 --> 00:39:02.070
+Francesca: So you can see that these are
+
+249
+00:39:03.030 --> 00:39:14.230
+Francesca: same or similar, visually represented, but just taking all the mathematical notation out of it, and really just picturing it visually. Right?
+
+250
+00:39:14.810 --> 00:39:22.030
+Francesca: So this is an illustration of a very simple neural network.
+
+251
+00:39:24.240 --> 00:39:30.410
+Francesca: Does anyone remember what this bit is called? So
+
+252
+00:39:30.780 --> 00:39:33.840
+Francesca: hopefully? It's clear for the from the visualization?
+
+253
+00:39:34.100 --> 00:39:43.340
+Francesca: But, as you can see, this is where things are going in, and
+
+254
+00:39:43.510 --> 00:39:48.710
+Francesca: they are visually represented as a stack of
+
+255
+00:39:49.480 --> 00:39:56.120
+Francesca: circles. Any anyone want to fancy a guess of what this might be visually referencing.
+
+256
+00:39:59.600 --> 00:40:01.659
+Ishaan: You mean the input layer.
+
+257
+00:40:02.320 --> 00:40:08.264
+Francesca: I mean exactly that. It is exactly that the input layer. So
+
+258
+00:40:08.960 --> 00:40:22.359
+Francesca: I am really trying to just visualize the neural network. And you got it completely correct. This is my input layer. And so how many inputs do I have based on this
+
+259
+00:40:22.970 --> 00:40:25.520
+Francesca: this diagram or this visualization.
+
+260
+00:40:30.360 --> 00:40:31.140
+Ishaan: 4.
+
+261
+00:40:31.140 --> 00:40:35.220
+Francesca: 4 exactly. Yes, there are 4 circles. I have 4 inputs perfect.
+
+262
+00:40:35.380 --> 00:40:39.770
+Francesca: So now I'm going to move on to here.
+
+263
+00:40:40.720 --> 00:40:43.360
+Francesca: Sort of the most complex looking thing.
+
+264
+00:40:44.660 --> 00:40:51.150
+Francesca: What would I reference this as so, the complex looking thing?
+
+265
+00:40:52.060 --> 00:40:52.690
+Francesca: What would that.
+
+266
+00:40:52.690 --> 00:40:53.300
+Zhujun Wang: There!
+
+267
+00:40:53.650 --> 00:40:57.990
+Francesca: Exactly so hidden layer. How many hidden layers do I have.
+
+268
+00:41:00.920 --> 00:41:02.210
+Zhujun Wang: 2.
+
+269
+00:41:02.210 --> 00:41:06.519
+Francesca: Yes, I have 2 hidden layers, because these are the 2
+
+270
+00:41:07.120 --> 00:41:12.040
+Francesca: stacks of circles perfect. And then
+
+271
+00:41:12.270 --> 00:41:15.400
+Francesca: what do we want out here? What are we going to call this.
+
+272
+00:41:15.740 --> 00:41:16.440
+Zhujun Wang: I'll put it.
+
+273
+00:41:16.980 --> 00:41:22.890
+Francesca: Perfect output layer. So when I think of
+
+274
+00:41:23.120 --> 00:41:29.720
+Francesca: neural networks, I always go back to this personally, because I'm I'm a very visual learner, and
+
+275
+00:41:29.910 --> 00:41:33.650
+Francesca: sometimes when I see things with too much.
+
+276
+00:41:33.880 --> 00:41:57.520
+Francesca: too many mathematical notations, and it's hard for me to go back to the basics. And so I like to always reference, really, just the basic visualization where I know I have my input layer. I have my output layer, and I have the hidden layers in between, and I can count the number of hidden layers by these vertical stacks or representations.
+
+277
+00:41:58.511 --> 00:42:01.370
+Francesca: I have highlighted something here
+
+278
+00:42:02.060 --> 00:42:05.929
+Francesca: in red. What? What am I referring to here.
+
+279
+00:42:08.060 --> 00:42:11.780
+Francesca: What, what, what do each of these circles represent?
+
+280
+00:42:12.530 --> 00:42:13.620
+Zhujun Wang: A neuron.
+
+281
+00:42:13.840 --> 00:42:17.350
+Francesca: Exactly a neuron. And so I have
+
+282
+00:42:18.070 --> 00:42:25.929
+Francesca: neurons represented in circles in this greater neural network sounds like, we're all we're all together. So far.
+
+283
+00:42:28.310 --> 00:42:38.980
+Francesca: The next thing I do when I try to, you know, conceptually visualize the neuron is, I like to break it down into something that looks like this.
+
+284
+00:42:39.290 --> 00:42:40.609
+Francesca: And so
+
+285
+00:42:40.920 --> 00:42:51.670
+Francesca: for each of my layers, my input layer. I think we already mentioned. There are 4, and then I can count here 1, 2, 3, 4, 5, 6,
+
+286
+00:42:51.850 --> 00:42:55.459
+Francesca: 6 neurons here. And then I have 6 again here. Right?
+
+287
+00:42:56.250 --> 00:43:06.609
+Francesca: So now, I'm going to extract more complexity by looking at each individual neuron looks something like this. Right?
+
+288
+00:43:06.780 --> 00:43:11.649
+Francesca: And let's say, I go into
+
+289
+00:43:11.900 --> 00:43:19.640
+Francesca: what that neuron is. I then like to break it down into 3 parts in my head
+
+290
+00:43:22.330 --> 00:43:23.880
+Francesca: the 1st part
+
+291
+00:43:24.670 --> 00:43:46.550
+Francesca: that I like to break it down to which is this part? It's where I'm really going to understand the idea of weights right? We know that in the training of a neural network, what the algorithm is attempting to develop is the ideal weights for each
+
+292
+00:43:46.740 --> 00:44:08.459
+Francesca: of the various inputs. And in each neuron and then creating just the optimal weights for all the inputs in the neural network. And so that's what I think of in this portion over here. This is where I'm going to try to think of the weights that make the most sense for the
+
+293
+00:44:08.550 --> 00:44:19.249
+Francesca: problem or the task I'm trying to solve. And so I have a what I think is a little fun example that illustrates this quite well.
+
+294
+00:44:19.780 --> 00:44:25.569
+Francesca: Let's say that I want to create a neural network
+
+295
+00:44:25.920 --> 00:44:39.999
+Francesca: or some neuron that tells me whether and or not I should eat this sandwich. There is a sandwich that I have been offered, and I want to use this to help me eat this sandwich.
+
+296
+00:44:40.210 --> 00:44:51.179
+Francesca: So let's say, my 3 inputs are hungry, yummy or nut allergy, what would the input look like
+
+297
+00:44:51.740 --> 00:44:54.770
+Francesca: over here. If I am hungry.
+
+298
+00:44:56.920 --> 00:45:02.299
+Francesca: let's say, the 1st thing I want to figure out is, you know, am I hungry?
+
+299
+00:45:02.430 --> 00:45:05.039
+Francesca: What could my input be.
+
+300
+00:45:10.160 --> 00:45:16.590
+Zhujun Wang: 1 0, 0, like each each, as each input represent want.
+
+301
+00:45:16.860 --> 00:45:23.230
+Zhujun Wang: Now, all number like totally 3 digits. Each one represents one digit.
+
+302
+00:45:23.880 --> 00:45:24.430
+Francesca: Yeah.
+
+303
+00:45:24.430 --> 00:45:25.579
+Zhujun Wang: 1 0, 0, something.
+
+304
+00:45:25.580 --> 00:45:32.839
+Francesca: Yeah. So if I'm hungry, I could put one, and then that could be 0. 0. Is this what you.
+
+305
+00:45:32.840 --> 00:45:33.370
+Zhujun Wang: Yeah.
+
+306
+00:45:33.370 --> 00:45:42.099
+Francesca: Yes, perfect. So exactly so, for the purposes of this, I'll just keep it at one. But yes, one could be my input if I am hungry.
+
+307
+00:45:42.943 --> 00:45:48.029
+Francesca: Let's say the sandwich is yummy. So what would the input for that be?
+
+308
+00:45:53.400 --> 00:45:56.339
+Zhujun Wang: 0, 1 0, like.
+
+309
+00:45:56.780 --> 00:46:23.669
+Francesca: So it would be a 0 1 0 like this. So for the diagram, I'll just keep it at one just to keep it clean. But yes, exactly. And then you can see here there's Nut allergy. Maybe this sandwich has pesto, which has nuts, and so, you know, it might be an important feature to determine whether or not I have a nut. Allergy. I don't have a nut allergy.
+
+310
+00:46:23.910 --> 00:46:26.819
+Francesca: so I'm just going to go for 0. There.
+
+311
+00:46:27.750 --> 00:46:34.660
+Francesca: now we move on to the weights. And so, for whether or not I'm hungry.
+
+312
+00:46:35.590 --> 00:46:48.420
+Francesca: how would you weight this? You know. How would you weight this feature? Do you wait hungry for eating the sandwich as important medium importance? What kind of weight would be useful
+
+313
+00:46:48.530 --> 00:46:50.280
+Francesca: for something like concrete.
+
+314
+00:46:53.120 --> 00:46:54.070
+Chetan Chaganti: Most important.
+
+315
+00:46:54.720 --> 00:46:59.940
+Francesca: Most important. Okay, so do we want to give that, maybe let's give that a 10.
+
+316
+00:47:00.220 --> 00:47:02.328
+Chetan Chaganti: If that is the most important.
+
+317
+00:47:02.870 --> 00:47:09.550
+Francesca: What about if the sandwich is yummy? Is that as important as hungry, more or less.
+
+318
+00:47:09.860 --> 00:47:10.670
+Chetan Chaganti: Less.
+
+319
+00:47:10.670 --> 00:47:14.349
+Francesca: Less. Okay, do you want to give me a number for that?
+
+320
+00:47:14.770 --> 00:47:15.840
+Chetan Chaganti: Maybe 4.
+
+321
+00:47:16.220 --> 00:47:17.290
+Francesca: 4. Okay.
+
+322
+00:47:17.990 --> 00:47:20.080
+Francesca: Now, what about a nut? Allergy?
+
+323
+00:47:20.730 --> 00:47:29.889
+Francesca: What could my weight? You know? How much do I want this, this feature of nut allergy. How much do I want that to impact.
+
+324
+00:47:31.000 --> 00:47:33.990
+Chetan Chaganti: You would go between me and Hungary, maybe 6.
+
+325
+00:47:34.320 --> 00:47:40.480
+Francesca: 6. Okay, now let's say my nut allergy is.
+
+326
+00:47:42.650 --> 00:47:46.050
+Francesca: let's say I've turned my nut allergy to one right?
+
+327
+00:47:46.800 --> 00:47:53.569
+Francesca: And so if I have turned my nut allergy to one. What do I put in here?
+
+328
+00:47:58.270 --> 00:48:01.050
+Chetan Chaganti: So 14, under 20.
+
+329
+00:48:01.050 --> 00:48:02.910
+Francesca: So I would put this 20 right.
+
+330
+00:48:03.380 --> 00:48:11.510
+Francesca: Now, what if I change my nut allergy to 0? Right? Let's say I change my nut allergy to 0.
+
+331
+00:48:12.070 --> 00:48:12.440
+Chetan Chaganti: Okay.
+
+332
+00:48:13.140 --> 00:48:20.039
+Francesca: That ends up being 14. Right? So does this make sense.
+
+333
+00:48:20.530 --> 00:48:28.409
+Francesca: Does it make sense that if I do have the nut allergy, which was 20. This was
+
+334
+00:48:28.770 --> 00:48:34.149
+Francesca: yes to allergy, and 14 was no to allergy.
+
+335
+00:48:34.340 --> 00:48:36.550
+Francesca: Does it make sense that
+
+336
+00:48:37.020 --> 00:48:43.459
+Francesca: if I do have the nut, Allergy, my number is higher, and I will want to eat the sandwich.
+
+337
+00:48:46.590 --> 00:48:58.080
+Chetan Chaganti: The my intention is, if if I have nut allergy, then I want to make a priority that I shouldn't eat so that should go that should give more weightage than me.
+
+338
+00:48:59.810 --> 00:49:06.619
+Chetan Chaganti: Because not allergic is very important than me for me, so would I give that weight is.
+
+339
+00:49:07.898 --> 00:49:11.459
+Francesca: Does anyone have any ideas on what?
+
+340
+00:49:12.890 --> 00:49:21.889
+Francesca: So you're right, you know, if you have a nut allergy, it's more important to address that than Yummy. So you're totally correct.
+
+341
+00:49:23.490 --> 00:49:26.590
+Francesca: But remember, nut, allergy, if you
+
+342
+00:49:27.770 --> 00:49:30.629
+Francesca: do not have it is 0.
+
+343
+00:49:31.560 --> 00:49:35.709
+Francesca: If you do not have it. That means you. You want to eat the sandwich.
+
+344
+00:49:35.870 --> 00:49:39.120
+Francesca: but if you do have it, you don't want to eat the sandwich.
+
+345
+00:49:39.450 --> 00:49:39.990
+Chetan Chaganti: Yep.
+
+346
+00:49:41.240 --> 00:49:42.413
+Francesca: But when
+
+347
+00:49:43.920 --> 00:49:46.210
+Francesca: When nut allergy is one.
+
+348
+00:49:48.260 --> 00:49:54.340
+Francesca: so if I write it here, so this is not allergy one, this is not allergy 0.
+
+349
+00:49:54.840 --> 00:50:03.079
+Francesca: Why, then, with your weight would when you have Nut allergy, why would it be higher than when you.
+
+350
+00:50:03.360 --> 00:50:03.780
+Chetan Chaganti: Yeah.
+
+351
+00:50:03.780 --> 00:50:06.589
+Francesca: Don't have it. Shouldn't it be the other way around?
+
+352
+00:50:11.460 --> 00:50:20.420
+Francesca: Is there anything you can do to this weight to make it so that when you do have the nut Allergy, it decreases the score.
+
+353
+00:50:23.490 --> 00:50:27.480
+Chetan Chaganti: So we can inverse that one by something.
+
+354
+00:50:27.890 --> 00:50:33.290
+Francesca: Yeah. So what if my nut allergy is one that means I have my nut allergy right?
+
+355
+00:50:34.840 --> 00:50:49.860
+Francesca: And if I have, so if one, I should not eat sandwich if 0 I should eat sandwich right?
+
+356
+00:50:52.270 --> 00:51:09.059
+Francesca: So right now, this weight is looking at either one times 6 or 0 times 6 right?
+
+357
+00:51:09.590 --> 00:51:17.420
+Francesca: One times 6 is 6 and 0 times 6 is 0. Right?
+
+358
+00:51:18.340 --> 00:51:23.820
+Francesca: So does this make sense?
+
+359
+00:51:25.200 --> 00:51:28.710
+Francesca: Should I be adding 6 more
+
+360
+00:51:29.920 --> 00:51:34.890
+Francesca: to my score? If what I really want is to not eat the sandwich.
+
+361
+00:51:41.350 --> 00:51:42.100
+Chetan Chaganti: Yes.
+
+362
+00:51:42.100 --> 00:51:42.550
+Zhujun Wang: And.
+
+363
+00:51:42.550 --> 00:51:44.090
+Francesca: Anyone have any ideas.
+
+364
+00:51:44.580 --> 00:51:49.100
+Zhujun Wang: I think, like nut allergy should be the most important weight.
+
+365
+00:51:49.410 --> 00:51:49.830
+Francesca: Okay.
+
+366
+00:51:51.890 --> 00:51:53.170
+Zhujun Wang: probably
+
+367
+00:51:54.660 --> 00:51:56.500
+Chetan Chaganti: I would give negative weight for that.
+
+368
+00:51:58.510 --> 00:51:59.600
+Francesca: Negative weight.
+
+369
+00:52:00.110 --> 00:52:04.400
+Francesca: Okay, so what? What do you want to change this to.
+
+370
+00:52:04.400 --> 00:52:05.410
+Chetan Chaganti: Minus 6.
+
+371
+00:52:06.460 --> 00:52:10.870
+Francesca: Minus 6. Okay, minus 6. So
+
+372
+00:52:11.000 --> 00:52:15.700
+Francesca: let's do this all again. I'm going to clear all my drawings. And oh.
+
+373
+00:52:16.440 --> 00:52:23.320
+Francesca: I didn't realize it was going to do that. Never mind, I'll just clear my oops. Sorry
+
+374
+00:52:25.140 --> 00:52:28.289
+Francesca: I won't clear anything. I will just move things.
+
+375
+00:52:28.963 --> 00:52:32.829
+Francesca: So let's say I have the negative. 6.
+
+376
+00:52:34.640 --> 00:52:38.630
+Francesca: What is my total now for this?
+
+377
+00:52:39.370 --> 00:52:40.719
+Francesca: So I have.
+
+378
+00:52:41.150 --> 00:52:41.970
+Chetan Chaganti: In data.
+
+379
+00:52:42.790 --> 00:52:46.810
+Francesca: 8. Okay, but I have a nut. Allergy.
+
+380
+00:52:48.792 --> 00:52:52.679
+Zhujun Wang: I will give like a nut. Allergy want
+
+381
+00:52:52.830 --> 00:53:03.869
+Zhujun Wang: and weight as one, and hungry and yummy both 0 point something so so hungry, plus yummy won't be on one. And as long as like people have a
+
+382
+00:53:04.200 --> 00:53:27.809
+Zhujun Wang: not allergy, because the the weight gonna be one. So as long as it's bit because they only have a 2 value, either 0 or one. So once like weight total greater than one. And then the people shouldn't eat as long as like they're less than one means. It's not allergy, not allergy. And whatever the hungry and yummy.
+
+383
+00:53:27.940 --> 00:53:33.719
+Zhujun Wang: whatever, take whatever, take the more weights, and we'll take a fat something like that.
+
+384
+00:53:33.720 --> 00:53:41.429
+Chetan Chaganti: Current way. It should work right. If it is nut. Allergy is one. I'm getting score as 8, if not allergy is 0. I'm getting score as 14.
+
+385
+00:53:41.780 --> 00:53:48.939
+Chetan Chaganti: So if net allergy is 0, I can eat if it is 14, if net allergy is one, I cannot eat because it is 8.
+
+386
+00:53:50.520 --> 00:53:51.960
+Chetan Chaganti: It is working right.
+
+387
+00:53:51.960 --> 00:54:06.929
+Francesca: Okay, yes. So I'll summarize everyone. So here we had negative 6, and it gave us 8. And it sounds like the argument is that if your nut allergy is 0.
+
+388
+00:54:07.330 --> 00:54:08.690
+Chetan Chaganti: The score is 14.
+
+389
+00:54:08.860 --> 00:54:17.069
+Francesca: Then your score is 14. Okay, yes, and then the alternative would be if the nut allergy
+
+390
+00:54:17.210 --> 00:54:26.930
+Francesca: weight is one and remind me. What did you want the
+
+391
+00:54:27.460 --> 00:54:30.980
+Francesca: yummy weights to be? Was this a did you say a decimal.
+
+392
+00:54:32.620 --> 00:54:33.250
+Francesca: Or.
+
+393
+00:54:33.250 --> 00:54:38.750
+Zhujun Wang: My, yeah, my situation is yummy and hungry, both decimal. Only nut is one.
+
+394
+00:54:39.150 --> 00:54:39.730
+Francesca: Okay.
+
+395
+00:54:39.970 --> 00:54:43.559
+Zhujun Wang: You can probably like, say, it's 0 point 5 or something.
+
+396
+00:54:43.560 --> 00:54:48.840
+Francesca: Okay. So then, in that case this would be one.
+
+397
+00:54:49.910 --> 00:54:54.600
+Francesca: And then, if the Nut Allergy were one, this would be 2.
+
+398
+00:54:56.660 --> 00:54:57.420
+Francesca: You were.
+
+399
+00:54:59.140 --> 00:55:02.520
+Zhujun Wang: My thinking is like, if a it
+
+400
+00:55:02.980 --> 00:55:06.560
+Zhujun Wang: have a nut, allergy, and the total weight is beyond
+
+401
+00:55:09.000 --> 00:55:17.480
+Zhujun Wang: beyond 1. 0, sorry, not 0, not 0. The 1st one, probably hungry, is a 0 5, and the yummy is a 0 0 point 3.
+
+402
+00:55:18.743 --> 00:55:25.230
+Zhujun Wang: As long as like the people have a nut, Allergy, and the total weight will be on one.
+
+403
+00:55:26.330 --> 00:55:28.979
+Zhujun Wang: You add together. So you should.
+
+404
+00:55:29.580 --> 00:55:31.960
+Zhujun Wang: it shouldn't eat as long as like
+
+405
+00:55:32.130 --> 00:55:40.279
+Zhujun Wang: the people doesn't have a allergy, the input value will be 0. So the way going to be
+
+406
+00:55:40.460 --> 00:55:45.830
+Zhujun Wang: 0 point 8. So as long as like a total weight, less than one. Which means it's okay to eat.
+
+407
+00:55:46.060 --> 00:55:47.510
+Zhujun Wang: Yes, okay. You first.st
+
+408
+00:55:47.510 --> 00:55:49.920
+Zhujun Wang: Beyond one means like they shouldn't eat.
+
+409
+00:55:50.130 --> 00:55:53.830
+Francesca: So, if less than one eat.
+
+410
+00:55:54.000 --> 00:55:54.530
+Zhujun Wang: Hmm.
+
+411
+00:55:55.670 --> 00:56:01.009
+Francesca: If one or more more don't eat.
+
+412
+00:56:01.070 --> 00:56:02.390
+Francesca: Okay. Great.
+
+413
+00:56:02.880 --> 00:56:10.410
+Francesca: Well, I'm glad we had this discussion, because, firstly, it shows how many options
+
+414
+00:56:10.530 --> 00:56:30.920
+Francesca: you could do something really simple, which is just 3 inputs and 3 weights. But there are just so many ways to do this. And you can imagine that when you are actually training these models, there are just so many possibilities. But it also really matters the way you interpret something.
+
+415
+00:56:31.000 --> 00:56:48.099
+Francesca: because if this is what you're looking for, ie. Looking for the lower number means Eat, then this works, but if you're looking for the higher number means eat. Then we ended up with something like negative. 6 here, right?
+
+416
+00:56:48.570 --> 00:56:57.539
+Francesca: So I purposely made this nut allergy feature a little bit ambiguous and confusing, because
+
+417
+00:56:58.030 --> 00:57:11.099
+Francesca: it is the case where this one is the most important one. But depending on how you interpret the you know the the final answer. You might actually need a negative weight, as
+
+418
+00:57:11.440 --> 00:57:16.139
+Francesca: someone suggested, or you may want to adjust certain weights
+
+419
+00:57:16.290 --> 00:57:24.089
+Francesca: in the other way around, so that the combination of those weights are never greater than the nut allergy weight.
+
+420
+00:57:25.210 --> 00:57:28.885
+Francesca: But thank you, everyone. That was, that was a great discussion.
+
+421
+00:57:29.790 --> 00:57:44.529
+Francesca: And so now that I've done that, let's say I've done each thing. If I add my bias term and have an activation function over here, I should be able to get some output. And so this is
+
+422
+00:57:45.540 --> 00:57:47.070
+Francesca: again going back.
+
+423
+00:57:47.180 --> 00:57:52.709
+Francesca: This is just one neuron that I'm zooming into. And if you can imagine
+
+424
+00:57:54.270 --> 00:57:56.839
+Francesca: a very complex network will have
+
+425
+00:57:57.020 --> 00:58:11.980
+Francesca: something like this, you know, if you really made it into as many circles and triangles as was displayed in this this network. It could end up being very complicated.
+
+426
+00:58:12.210 --> 00:58:22.950
+Francesca: And so visually, it's complex when we look at it. In computation it is also complex. I also wanted to say deep learning. When you hear the turn
+
+427
+00:58:23.584 --> 00:58:36.749
+Francesca: deep learning. It's a very commonly used term in the, you know, in the context of AI. Now, the deep of deep learning really means more computational layers. So of course.
+
+428
+00:58:37.420 --> 00:58:46.869
+Francesca: you don't need to do 2 layers right? You don't need to do 2 hidden layers, you you don't need to do 200 hidden layers, but
+
+429
+00:58:47.590 --> 00:59:13.869
+Francesca: having more layers is the key characteristic of deep learning. When you are actually using a neural network with multiple computational layers, I believe it's 3 or more. Typically, that's when you are actually using deep learning. So for your projects, if you do end up using neural networks that have
+
+430
+00:59:14.080 --> 00:59:20.249
+Francesca: multiple computational layers, you could use this term deep learning to describe what you are doing.
+
+431
+00:59:23.030 --> 00:59:41.600
+Francesca: And then, lastly, before time is out, I did want to emphasize neural networks, support multi-class classification. And so when you visualize a larger network. You can just change the output layer so that each
+
+432
+00:59:42.480 --> 00:59:48.090
+Francesca: each class has its own node represented visually in these diagrams.
+
+433
+00:59:49.050 --> 01:00:04.579
+Francesca: and that is all for me. I really appreciate the discussion, especially about sort of walking through the design of various weights. These resources will be available
+
+434
+01:00:04.750 --> 01:00:12.219
+Francesca: to you on the course site as always. And thank you very much.
+
+435
+01:00:15.660 --> 01:00:16.370
+Chetan Chaganti: Cool.
+
+436
+01:00:16.600 --> 01:00:17.166
+Ishaan: Thank you.
+
+437
+01:00:17.450 --> 01:00:18.130
+Francesca: You too.
+
+438
+01:00:20.080 --> 01:00:20.710
+Zhujun Wang: Thank you.
+

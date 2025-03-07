@@ -1,0 +1,1870 @@
+WEBVTT
+
+1
+00:00:01.020 --> 00:00:07.360
+Viviana Márquez: Hi, everyone. So I have a special song for today.
+
+2
+00:00:07.500 --> 00:00:17.790
+Viviana Márquez: I wanted to. I'm gonna wait for 30 more seconds to see if people join the call. So they don't miss the song, and then we'll start with the usual stuff.
+
+3
+00:00:18.160 --> 00:00:24.840
+Viviana Márquez: There's there's a reason why this song is relevant to this lesson today. So bear with me
+
+4
+00:00:34.170 --> 00:00:46.890
+Viviana Márquez: alright. So it's been a minute. So let's just go for this song, and if anything, I can just replay it. If I see that more people are joining after the fact.
+
+5
+00:00:47.360 --> 00:00:55.249
+Viviana Márquez: So here it goes.
+
+6
+00:00:56.140 --> 00:00:57.899
+Viviana Márquez: EI, Youtube is.
+
+7
+00:01:11.330 --> 00:01:11.990
+Viviana Márquez: you're standing
+
+8
+00:01:17.760 --> 00:01:22.690
+Viviana Márquez: decision tree show, like, there's a
+
+9
+00:01:59.040 --> 00:02:05.790
+Viviana Márquez: they made us. Our reinforcement taught us to nothing's time to smile.
+
+10
+00:02:07.920 --> 00:02:08.590
+Viviana Márquez: There be.
+
+11
+00:02:12.410 --> 00:02:13.200
+Viviana Márquez: he said.
+
+12
+00:02:29.220 --> 00:02:34.570
+Viviana Márquez: with neural networks, the future's turn to listen.
+
+13
+00:02:35.400 --> 00:02:36.809
+Viviana Márquez: Shall we start today?
+
+14
+00:02:38.970 --> 00:02:41.150
+Viviana Márquez: Dreams? We've made a mind.
+
+15
+00:02:41.580 --> 00:02:43.740
+Viviana Márquez: The AI thing next is fun.
+
+16
+00:02:44.540 --> 00:02:47.470
+Viviana Márquez: Together we my feet
+
+17
+00:02:49.980 --> 00:03:11.650
+Viviana Márquez: alright. So that song. The reason why it was relevant is because I created it with AI. Well, and I didn't train the model. But it's an app called Zuno. So I'll share it in the chat in case you guys are curious.
+
+18
+00:03:11.810 --> 00:03:25.199
+Viviana Márquez: But yeah, basically with Suno, you can just create a song using a prompt so you could say, let's say, hip, hop
+
+19
+00:03:26.170 --> 00:03:31.740
+Viviana Márquez: about cows. I don't know something like that. And you click, create.
+
+20
+00:03:32.550 --> 00:03:59.650
+Viviana Márquez: And it only takes a few seconds to create a song for you using AI. I don't know exactly what model they use because this is a company Zuno, so they don't want to release their secret sauce. But for sure, I know that is a Gen. AI model. Gen just means generating. So it generates something. So this is a Gen. AI model. What model? Exactly I don't know, because I don't know.
+
+21
+00:03:59.650 --> 00:04:04.259
+Viviana Márquez: It's it's a private company. So they're not going to release their secret sauce.
+
+22
+00:04:04.310 --> 00:04:07.779
+Viviana Márquez: So yeah, this is the song that it created out of my prompt
+
+23
+00:04:10.570 --> 00:04:22.319
+Viviana Márquez: cows in the meadow. They got swagger for days, hoof prints like diamond sparkling in the haze, eating that grass like it's gourmet cuisine, boss of the barnyard, living the dream
+
+24
+00:04:23.647 --> 00:04:29.740
+Viviana Márquez: so it it's so cool. I've played with this app so much.
+
+25
+00:04:29.750 --> 00:04:53.300
+Viviana Márquez: and that was just a cool introduction of all the cool things that you can do with deep learning. So we finally made it to the cool part of this program, which is deep learning. But of course you needed to walk this long journey to have the foundations to be able to tackle deep learning. So this is the agenda for today.
+
+26
+00:04:53.680 --> 00:05:16.029
+Viviana Márquez: We're going to talk about capstone for a little bit since we're on week 24 and week, 20 week, 22 and week 24 is when you have the final submission. Also, I wanted to do a quick recap of what have we done in this program so far? And what do we have left in this few weeks that we have together?
+
+27
+00:05:16.370 --> 00:05:30.480
+Viviana Márquez: Then go on the content review. So let's start with capstone. So if you haven't booked your meeting already, you should do it soon. So here are the links. I'll put them in the chat.
+
+28
+00:05:30.550 --> 00:05:41.990
+Viviana Márquez: If you have done so already, then you don't have to do it again. But this is your opportunity to meet with someone for a 1 on one and ask questions.
+
+29
+00:05:41.990 --> 00:06:03.080
+Viviana Márquez: Share your progress about your capstone project, whatever it is, and we're here to guide you. We're not your professors, we're not. We're learning facilitators. So we're here to unstuck you wherever you are in this part of the process. So some people are very advanced. They pretty much have the capstone project already. Some people
+
+30
+00:06:03.080 --> 00:06:15.570
+Viviana Márquez: are still beginning to work on it, so it doesn't matter where you are. We are happy to meet with you. So I posted these these links in slack, not slack in the Channel.
+
+31
+00:06:15.710 --> 00:06:38.479
+Viviana Márquez: not channel. What am I saying in this zoom, chat, and as always. If you want to know your section, click on, people find yourself, it will tell you a session section, and if you need help with anything, just click on the support button, and someone will reply to your question within 24 h. Give or take.
+
+32
+00:06:38.980 --> 00:07:02.160
+Viviana Márquez: So what's the roadmap for the capstone project in Module 6, you have to draft. You had to draft the problem statement. So do a small write up about what you potentially wanted to work in. But this this was a little bit too early in the program. So something that I saw was that at the time we had only learned about K-means.
+
+33
+00:07:02.160 --> 00:07:26.310
+Viviana Márquez: so absolutely everyone committed to created to create a model using K-means. And now that you have been exposed to more stuff, maybe you want to do cooler stuff. So I mean not. I'm not saying that K-means is not cool, but maybe you want to do tackle a different problem or tackle the same problem with a different approach. So it's completely fine. Now that you have more knowledge. That's why we have this
+
+34
+00:07:26.310 --> 00:07:32.134
+Viviana Márquez: other submission on Module 16 which is finalizing your problem statement. So
+
+35
+00:07:32.870 --> 00:07:47.669
+Viviana Márquez: understanding. Now, with the understanding that you have, how would you frame that capstone project a little bit better? This is just text that you have to write, so I wouldn't sweat too much over it.
+
+36
+00:07:47.820 --> 00:07:59.230
+Viviana Márquez: And this already passed that was the 1st opportunity to meet with your learning facilitator. Now, on week 20 you submitted your 1st
+
+37
+00:07:59.360 --> 00:08:27.460
+Viviana Márquez: notebook and your 1st readme file on Module 20, and you, if you submitted on time, you should have have received some feedback, and you can incorporate that feedback on your final submission. Now, as we're going through these weeks, we are going through the weeks where you can meet again with the learning facilitator. That's why I posted those links in the chat. So you can meet with us.
+
+38
+00:08:27.490 --> 00:08:33.020
+Viviana Márquez: and then module 24. The final submission, very final submission.
+
+39
+00:08:33.120 --> 00:08:38.320
+Viviana Márquez: If you're wondering what is the amount of work that you're supposed to do for these capstone projects.
+
+40
+00:08:38.340 --> 00:08:58.210
+Viviana Márquez: the practical application number 2 and number 3 should be a good indicator. So whatever amount of time you spent doing those, maybe add a few more hours because you have to find your own data set. We're not going to give you a data set. You can pick whatever you want. So a few more hours like on that decision-making process. But
+
+41
+00:08:58.210 --> 00:09:15.790
+Viviana Márquez: when it comes to coding is going to be very similar. We want to see a machine learning project from beginning to end, because the goal is that you can put that in your resume and talk about your experience as a data scientist developing this project. So when you're interviewing, you have something to talk about.
+
+42
+00:09:16.330 --> 00:09:18.460
+Chetan Chaganti: Hi! One quick question here!
+
+43
+00:09:18.460 --> 00:09:19.449
+Viviana Márquez: Yeah, go for it.
+
+44
+00:09:19.630 --> 00:09:36.100
+Chetan Chaganti: So the capstone one that we submit in model 20, and then capstone 2 is, you know, next phase of capstone, one right. You know, we are work in progress, and then we submit initial phase up to Eda, and then models will be designed and then submitting
+
+45
+00:09:36.280 --> 00:09:38.470
+Chetan Chaganti: model 24 right?
+
+46
+00:09:38.470 --> 00:09:46.290
+Viviana Márquez: Yeah, exactly. So if you want, you can almost submit the same Github Link, we've just improved. The
+
+47
+00:09:46.290 --> 00:09:46.710
+Viviana Márquez: happy new
+
+48
+00:09:46.710 --> 00:09:52.819
+Viviana Márquez: would be improved. So you build up on that. It's not like 2 separate submissions you build up on that 1st submission.
+
+49
+00:09:52.820 --> 00:10:06.800
+Chetan Chaganti: Yes, but in the rubric there are 5 points. Right? You know, the 50 point is for model building, are we? Are you guys going to grade that as well now, or we'll wait until the completion of the project is.
+
+50
+00:10:06.800 --> 00:10:12.390
+Viviana Márquez: So that's a good point. Check the rubric. So you hit all the markers.
+
+51
+00:10:12.736 --> 00:10:29.050
+Viviana Márquez: I don't remember the rubric from the top of my head. But, for example, something that we don't check in Module 20 is hyperparameter tuning, but something that we do check in Module 24 is hyperparameter tuning in Module 20. You're expected to train just one model just connect
+
+52
+00:10:29.050 --> 00:10:43.239
+Viviana Márquez: to get an idea of what is going on with your data in Module 24, we expect you to train several models. So I think that's the main difference. But yeah, I don't know the rubric from the top of my head, so make sure to read the rubric so you can hit all those points in there.
+
+53
+00:10:44.240 --> 00:10:45.570
+Chetan Chaganti: Okay. Thank you.
+
+54
+00:10:45.570 --> 00:10:46.410
+Viviana Márquez: Yeah, of course.
+
+55
+00:10:46.690 --> 00:10:59.609
+Viviana Márquez: And also as a reminder, the capstone activities 6, 1620, and 24 account for 50% of your grade. And you need 75%
+
+56
+00:10:59.630 --> 00:11:19.980
+Viviana Márquez: completion to be able to get not completion, but 75% of the all the activities to be able to get the certificate. So if you work on your caps and submissions, you're like halfway there, like 50% of your grade is going to be there. So yeah, just just so. You know.
+
+57
+00:11:20.150 --> 00:11:38.530
+Viviana Márquez: grading wise, how important the capstone project is that being said? Don't let the word capstone make it scary. It should be, it should feel very similar to the practical applications. Just the main difference is that you pick your own data set rather than us giving you that data set?
+
+58
+00:11:39.153 --> 00:11:44.240
+Viviana Márquez: So before I go into the next slide, any questions about the capstone project.
+
+59
+00:11:49.500 --> 00:11:58.349
+Chetan Chaganti: So we get grade. And then, based on the feedback, we improve, and then the grade is going to be regret again, or how it is going to work.
+
+60
+00:11:58.694 --> 00:12:09.730
+Viviana Márquez: So that's a great question. So these 2 grades are independent of each other. So the grade that you get in Module 20 is the grade that you get for that activity?
+
+61
+00:12:10.092 --> 00:12:29.300
+Viviana Márquez: But we, if you submit it within time, you're going to get a feedback. You should have gotten feedback already. That being said, sometimes we still give feedback to some late submissions, because we want you to do the best, but it's not promise where, if you submit on time. It was promised that feedback
+
+62
+00:12:29.740 --> 00:12:44.490
+Viviana Márquez: and based on that feedback, you can improve your final submission. So you have, like a guidance on how to improve that final submission. If you didn't get feedback because either you submitted late or I don't know something happened. That's okay. You can still like
+
+63
+00:12:44.600 --> 00:13:12.369
+Viviana Márquez: improve, you can know yourself like, oh, maybe this performance metric is not as great. How can I make it better? Or maybe I should do a little bit more of this, whatever it is, you can just submit a better version to this. But the 2 grades are separated. So whatever you got on module 20. That's why you got in Module 20. And then for Module 24, you're going to get a new grade for for that activity. But the you can
+
+64
+00:13:12.400 --> 00:13:17.080
+Viviana Márquez: build up on that work. So it's not like you have to submit something completely different.
+
+65
+00:13:17.080 --> 00:13:26.391
+Chetan Chaganti: Actually, this is it is confusing. You know, rubric is having something, and then grading is, you know, doing it a different
+
+66
+00:13:26.750 --> 00:13:43.350
+Viviana Márquez: Know we're grading based on the rubric. So it's not confuse. I mean, it could be confusing. If if you have further up questions of something that might not be clear. Support is the best way to to get the answer. But the grading that we do is based on that rubric.
+
+67
+00:13:43.800 --> 00:13:45.029
+Chetan Chaganti: Okay. Thank you.
+
+68
+00:13:45.030 --> 00:14:02.919
+Viviana Márquez: Yeah, of course, and the rubrics are very similar for both submissions, but it has some slight differences. So, for example, I clearly remember module 24 has the hyperparameter stuff where Module 20 doesn't have it. But yeah, you would have to look at the rubric to make sure you have everything in there.
+
+69
+00:14:04.506 --> 00:14:14.250
+Viviana Márquez: So for the custom project, this is not mandatory. This is just me as a professional that has been where you were. I was a student at some moment
+
+70
+00:14:14.260 --> 00:14:27.959
+Viviana Márquez: what I wish I would have done with my school projects. Go that extra mile. You can fully milk those projects, because once you start working as a data scientist, it's very hard to milk projects in the sense that
+
+71
+00:14:27.960 --> 00:14:50.650
+Viviana Márquez: you can't really say much of what you did. You can't show it because it's data owned by the company that you're working for most of the time. Where, with a school project, you can create a Linkedin post, you can create a cool web app. If you know how to create web apps or a dashboard, you can write a post on medium
+
+72
+00:14:50.650 --> 00:15:01.660
+Viviana Márquez: if you're a little bit more into the social media. You could even create a Tiktok video, find a meetup near you and present to that capstone project. So you can do a lot of things with a capstone project
+
+73
+00:15:01.660 --> 00:15:13.030
+Viviana Márquez: that maybe you wouldn't be able to do with a company project because you can't really talk that much about it and give that much detail. So use that opportunity to
+
+74
+00:15:13.030 --> 00:15:36.829
+Viviana Márquez: fully milk that project and help build your professional brand just to be clear. You don't have to do this for the Capstone project. This is just my personal suggestion to you. Maybe after the program is done, I know that right now there's a lot of assignments and a lot of things going on. Maybe after the program is done you can revisit your capstone project and do something like this. So I would encourage all of you to do that
+
+75
+00:15:37.340 --> 00:15:43.080
+Viviana Márquez: alright. So now that we have talked about the custom project, let's do a quick reflection of
+
+76
+00:15:43.200 --> 00:15:46.679
+Viviana Márquez: what have we learned so far? And what do we have left?
+
+77
+00:15:46.950 --> 00:16:15.709
+Viviana Márquez: So, as you know, this program had 3 big sections, which were section number one was Module, one from 2 5, which was foundations to be able to work with machine learning, deep learning. AI, you have to know some basic statistics, basic probability, basic data analysis and basic programming. So that's what we focused on on those 5 modules. These are the modules where people are like.
+
+78
+00:16:16.130 --> 00:16:37.750
+Viviana Márquez: but is this going to be a data analysis program and no. But you need those foundations. Then. Section 2, it starts getting a little bit more exciting. Section 2 is from module 6 to 17. And that's traditional or classical machine learning. So when you're working with structured data, you have a table
+
+79
+00:16:37.750 --> 00:16:52.540
+Viviana Márquez: and you apply machine learning, usually using Psyche learn, I included Module 20. Because I feel like module 20 is also part of this module in machine learning. The module 20 was the module on ensemble learning so random forest. All those guys.
+
+80
+00:16:52.590 --> 00:16:55.630
+Viviana Márquez: So I feel like that's more like in here.
+
+81
+00:16:55.890 --> 00:17:10.740
+Viviana Márquez: And then section 3 was called Advanced AI. So it was. So we had a module on Nlp with a perspective still very machine learning focused.
+
+82
+00:17:10.849 --> 00:17:27.299
+Viviana Márquez: But it's still relevant and important because you can't treat text like you treat categories because you want to capture the meaning of the text. So so we covered Nlp, then we had recommenders. So recommenders
+
+83
+00:17:27.390 --> 00:17:37.509
+Viviana Márquez: are there still machine learning. But it's not the same logic as usual that you have with Cyclarn. So that's why it's a little bit more advanced.
+
+84
+00:17:37.570 --> 00:17:46.310
+Viviana Márquez: And then finally, we make it to deep learning. So deep learning is probably the reason why many of you joined this program which is
+
+85
+00:17:46.310 --> 00:18:08.050
+Viviana Márquez: to be able to work with unstructured data. So images, text, audio videos and all that fun stuff that allows you to create cool applications like this song I show you at the beginning of the office hour today, like Chat Gpt, all this cool stuff is being developed through deep learning.
+
+86
+00:18:08.050 --> 00:18:22.289
+Viviana Márquez: So you usually apply deep learning on unstructured data. And usually you don't use Psyche. Learn you use pytorch or tensorflow or keras. So from a coding perspective, it changes a lot.
+
+87
+00:18:22.350 --> 00:18:33.969
+Viviana Márquez: But many, many of the things that we learned in machine learning are still fully valid in deep learning, like splitting your data, set in training and tests that's still valid in deep learning.
+
+88
+00:18:33.970 --> 00:18:59.730
+Viviana Márquez: computing, performance, metrics, hyperparameter, tuning, connecting back to the business all of those skills that you have learned were the foundation that you can already use for machine learning, but were also the foundation to be able to tackle deep learning. The logic stays the same as well. So maybe you have a regression problem, and you're trying to predict the number. Maybe you have a classification number problem, and you're trying to predict classes.
+
+89
+00:19:00.010 --> 00:19:19.880
+Viviana Márquez: so many, many, pretty much everything that you learned is still useful. It's just the code, the coding logic that changes to be able to work with deep learning. So specifically, what do we have left? We're here module 22. And so basically, we have only one more module of content because
+
+90
+00:19:19.880 --> 00:19:38.519
+Viviana Márquez: it's that's next week, and then module 24 is the capstone module, and there's no content in that week, so you can focus on your capstone submission. So what did we do last week? Last week? We started talking about neural networks. So what are neural networks?
+
+91
+00:19:38.690 --> 00:19:48.880
+Viviana Márquez: How do you deal with them? How do you code them? Etcetera. Then, in Module 22, which is this week
+
+92
+00:19:48.880 --> 00:20:14.219
+Viviana Márquez: we start looking at the different architectures. So same thing with machine learning. At first, st we learn, oh, yeah, we have the inputs, the outputs. We have to load our data into training and test. And then we get into the modeling. And there's many models. You have logistic regression, linear regression, Knn, random forest. Well, all of them same thing for neural networks. So you got the basis of neural networks.
+
+93
+00:20:14.240 --> 00:20:37.579
+Viviana Márquez: And now we're going to look at some specific architectures. So in here, people call it architectures, but you can think of it as models. So this week we covered several architectures, convolutional neural networks for image classification, Lstms for time series and fully connected neural networks for regression.
+
+94
+00:20:37.880 --> 00:20:39.310
+Viviana Márquez: And then next week.
+
+95
+00:20:39.490 --> 00:20:54.070
+Viviana Márquez: Finally, we make it to Gen. AI, which is the the technology that allows us to have stuff like chat gpt nowadays. So we're going to talk about gangs, diffusion models, recurrent neural networks to generate texts
+
+96
+00:20:54.200 --> 00:20:56.500
+Viviana Márquez: and transformers to generate.
+
+97
+00:20:56.650 --> 00:21:25.780
+Viviana Márquez: So gen AI is any model that allows you to generate stuff rather than making a prediction like, I'm going to predict the price of a house, or I'm going to predict this. This picture has a cat or not. You're generating stuff. So you're generating images. You're generating text. You're generating audio like, I show you at the beginning of the class. So this is, this is Gen. AI for this office hour. I have 2 options. And I'm
+
+98
+00:21:25.780 --> 00:21:39.560
+Viviana Márquez: going to ask you guys, what option do you prefer? Because deep learning is a very extensive topic that we're cramming on through 3 weeks? You could very easily have a certificate program
+
+99
+00:21:39.630 --> 00:22:06.329
+Viviana Márquez: full of deep learning that is also 24 weeks. This is a very, very extensive topic. So if it feels overwhelming, it's expected to feel overwhelming because it's a lot of information. But the question that I have for you guys is, I prepared 2 things for today. I can't cover the 2 things because we don't have the time. So the 2 things I covered I prepared for today were foundations of neural networks.
+
+100
+00:22:06.870 --> 00:22:09.670
+Viviana Márquez: So this one foundations of neural networks
+
+101
+00:22:09.830 --> 00:22:35.929
+Viviana Márquez: and convolutional neural networks for image classification. So I have those 2 options start thinking. Which one would you like to do? Maybe we can just do it by voting. So I don't know about you guys. But when I 1st went from machine learning that it was all this hard work to learn cycle, learn and learn how it works
+
+102
+00:22:35.930 --> 00:22:40.870
+Viviana Márquez: when I had to switch to deep learning for me when I was learning, it was very difficult, because
+
+103
+00:22:40.890 --> 00:23:03.630
+Viviana Márquez: you have to code things very differently, and I was like, really shocked about like, why can't I just load a model? Why can't I just say neural network that fit? Why do I have to create the code myself. So it was a little bit frustrating. So I now, when I teach it, since I had that experience, when I teach it, I want to connect.
+
+104
+00:23:03.770 --> 00:23:10.309
+Viviana Márquez: How was it done in in Psyche? Learn versus? How would you do it? In deep learning to to reach that gap?
+
+105
+00:23:10.440 --> 00:23:11.450
+Viviana Márquez: And then
+
+106
+00:23:11.530 --> 00:23:36.499
+Viviana Márquez: but that was a content for last week. So if you guys are feeling comfortable with neural networks, maybe we can skip that and then talk about convolutional neural networks. I have all these slides in this deck for both things, so whichever one we don't cover, you'll have the slides, anyway. But we don't have the time. Our time is very limited, so we don't have the time to cover both things. So maybe let me see in the chat.
+
+107
+00:23:36.530 --> 00:23:43.040
+Viviana Márquez: what do you guys prefer or yeah, just like, unmute yourselves. If you want to say something as well.
+
+108
+00:23:43.890 --> 00:23:56.219
+Namrata Baid: Yeah, can we quickly just go 5 min over the deep neural network because we have done it somewhat right, and then basically do more on the deep neural network, too. Right? Cnn.
+
+109
+00:23:57.670 --> 00:24:02.959
+Viviana Márquez: I can try, but it's very broad. I can try. Maybe I can
+
+110
+00:24:03.330 --> 00:24:09.720
+Viviana Márquez: show you the code. That would be the best way I could show you the code. And you would have this.
+
+111
+00:24:09.720 --> 00:24:16.089
+Namrata Baid: Scroll through it fast. Yeah, just scroll through it fast. Actually, I think that I I, if others agree also, yeah.
+
+112
+00:24:16.330 --> 00:24:20.479
+Viviana Márquez: Okay, sounds good. So it seems like it's 2 votes for Cnn's.
+
+113
+00:24:20.800 --> 00:24:28.129
+Viviana Márquez: I'll give it maybe 20 more seconds to see if we have any other votes, how people feel.
+
+114
+00:24:28.130 --> 00:24:36.249
+Lakshmi: Yeah, that would be good idea just to go over the deep, deep, neural network faster, that we will get an idea what you are wanting to teach us.
+
+115
+00:24:36.720 --> 00:24:37.340
+Viviana Márquez: Okay.
+
+116
+00:24:37.450 --> 00:24:58.769
+Viviana Márquez: okay, sounds good. So let's do that. So let's get started. I feel like I need to buckle up because there's a lot of stuff coming up. Okay, cool. So let's start with that. So yeah, you guys already know, AI machine learning deep learning. So, machine learning usually tables with, second, learn deep learning, usually
+
+117
+00:24:58.890 --> 00:25:05.159
+Viviana Márquez: unstructured data, so images, text, etc. With pytorch or tensorflow
+
+118
+00:25:05.520 --> 00:25:11.989
+Viviana Márquez: key word. Here. Usually, sometimes you can do
+
+119
+00:25:12.290 --> 00:25:20.749
+Viviana Márquez: machine deep learning with second, learn. Sometimes you can work with tables using deep learning, etc, but usually usually that's how it is.
+
+120
+00:25:20.970 --> 00:25:23.689
+Viviana Márquez: So when would you use one versus the other? One
+
+121
+00:25:24.130 --> 00:25:38.409
+Viviana Márquez: machine learning versus deep learning. So if you don't have a lot of data machine learning, because deep learning is going to overfit so deep learning, you could use it in large amount of data. So you shouldn't be using it on a small data set because it's going to overfit
+
+122
+00:25:38.700 --> 00:25:50.840
+Viviana Márquez: if you care about the interpretation of the model. Why is the model making those decisions? Machine learning with deep learning is very hard to interpret what the model is doing?
+
+123
+00:25:51.330 --> 00:26:03.909
+Viviana Márquez: Also, if you have a computational restriction like, you only have your personal computer. And your personal computer is kind of old. You're going to have to do machine learning, because deep learning requires a lot of computing power.
+
+124
+00:26:04.160 --> 00:26:21.590
+Viviana Márquez: If you don't want to do feature engineering, deep learning, you don't have to do feature engineering, deep learning. If you want to train faster machine learning, deep learning takes longer, and the biggest advice of all is
+
+125
+00:26:21.690 --> 00:26:50.500
+Viviana Márquez: problems that in the past have been successfully tackled with one technique versus the other. That's the best way to approach it. So, for example, images, if you get a task to classify images, do a quick Google search, and you will quickly see that the way to tackle images to classify images is with deep learning versus if you say, okay, I want to predict what are the fraudulent transactions in a bank?
+
+126
+00:26:50.590 --> 00:27:02.149
+Viviana Márquez: You Google, it. And you're going to see that it's machine learning. So so problems, problem domains with proven success in those fields. That's the best way to know which framework to apply.
+
+127
+00:27:02.540 --> 00:27:09.350
+Viviana Márquez: Here are some cool examples of deep learning so chatgpt. This is what I used to create the song at the beginning of the class.
+
+128
+00:27:09.460 --> 00:27:23.000
+Viviana Márquez: This is to edit videos for influencers. Automatically. This is to clone voices, to create images and many more. So there's many, many cool, cool examples of deep learning.
+
+129
+00:27:23.310 --> 00:27:40.640
+Viviana Márquez: One small note here, like on the side is that you and me? We wouldn't be able to train a model like Chat Gpt, because this is Gpt. 3. And now we're on Gpt. 4, and I think Gpt. 5 is coming out in the next month.
+
+130
+00:27:40.840 --> 00:28:06.860
+Viviana Márquez: Gpt. 3. For Chatgpt required 3.2 million dollars in computing resources plus access to all that training data, enormous amounts of data. So yeah, you and me, we wouldn't be able to do that unless someone in here maybe has this a millionaire. Then maybe you could do it. But for normal people like us, we wouldn't be able to train this model.
+
+131
+00:28:06.870 --> 00:28:17.449
+Viviana Márquez: The only way to train a model like Chat Gpt is to work for a company like Openai, the owners of Chatgpt. You will be there at the forefront doing this cool stuff.
+
+132
+00:28:17.830 --> 00:28:18.810
+Viviana Márquez: but
+
+133
+00:28:18.930 --> 00:28:44.100
+Viviana Márquez: you can still do deep learning. I'll show you like the convolutional neural network, you can still do cool stuff. But these things that are at the frontier more and more. You can't do them yourself. So you have to understand very well what's going on. So you use it correctly, but also learn a little bit of software engineering. So, for example, how are people nowadays leveraging Gpt onto their own applications.
+
+134
+00:28:44.470 --> 00:28:55.150
+Viviana Márquez: They connect to the open AI Api to to work with that model on top of it. You can create someone that is called rag, which is.
+
+135
+00:28:55.150 --> 00:29:24.069
+Viviana Márquez: I forget what it stands for. But basically it's just to limit the Gpt to search on a specific set of information. So it doesn't hallucinate and stuff like that. But it's a lot of software engineering. So my advice from this program is that after this program, now that you have the data, science knowledge. Learn a little bit of software engineering. So you can also leverage tools like Chat Gpt, you wouldn't train Gpt on your own. But you can leverage it by connecting to the Api and stuff like that.
+
+136
+00:29:25.610 --> 00:29:40.459
+Viviana Márquez: yeah. And here you can see the different skills that you require as a data scientist data analyst data engineer and machine learning engineer. So nowadays, because of Gpt machine learning, engineers are very popular because you have to know a lot of mlops and deployment?
+
+137
+00:29:42.220 --> 00:29:52.449
+Viviana Márquez: so one issue that you might have noticed already with deep learning is that it takes a while to to train. So what can you do to be able to train
+
+138
+00:29:52.570 --> 00:30:14.209
+Viviana Márquez: machine deep learning models? And now we have to talk about Gpus. So Gpus are graphic processing units versus cpus that are central processing units. And this is just like the hardware of your computer, like the actual machine. And how they built these processors for different tasks.
+
+139
+00:30:14.210 --> 00:30:24.980
+Viviana Márquez: So Gpus were originally designed to render graphics. So back in the day, people that designed video games that created movies.
+
+140
+00:30:24.980 --> 00:30:38.169
+Viviana Márquez: anything that it was like graphic, intense. They were the ones using Gpu's because they're able to handle multiple tasks simultaneously. So they are much faster at those tasks.
+
+141
+00:30:38.330 --> 00:31:04.259
+Viviana Márquez: What people realize later on is that you can use Gpus for deep learning, because in deep learning you're running multiple tasks at the same time. And the Gpu. Well, that's basically what I was doing. So it's the perfect fit for deep learning cpus. Every computer has cpus. They are optimized for tasks that require sequential processing. So you're not doing things at the same time, and it's better for stuff like
+
+142
+00:31:04.400 --> 00:31:24.840
+Viviana Márquez: computer stuff like you open word. You open your browser, you open zoom. So the CPU is better for that. You wouldn't use a Gpu for that. It would be bad for that. But when it comes to computing many operations like math operations. Gpus, are the ones. So some computers have Gpus. Some computers don't have Gpus.
+
+143
+00:31:26.540 --> 00:31:36.160
+Viviana Márquez: So, Gpus, what what do you do if you don't have Gpu, a computer with a Gpu, and and actually, in fact.
+
+144
+00:31:36.200 --> 00:31:58.860
+Viviana Márquez: you shouldn't go out and just buy a computer with a Gpu unless you are into gaming, or I don't know some specific case, because it's better to work with the cloud, because with the cloud you can always get a monster, Gpu, that if you purchase it, and you have it in your house. It will be very expensive, but if you are in the cloud you only paid on demand, so
+
+145
+00:31:58.860 --> 00:32:09.079
+Viviana Márquez: it's usually a few dollars per hour. So what options do you have to run this Gpu? The easiest option, and the only one
+
+146
+00:32:09.100 --> 00:32:28.039
+Viviana Márquez: that we kind of cover. Here is Google colab. So you go on Google colab, it works just like a Jupyter notebook. But you can actually click runtime, change runtime type and click on Gpu, and then you will be working with a Gpu for free on Google colab. So for
+
+147
+00:32:28.310 --> 00:32:41.989
+Viviana Márquez: these assignments in these last 2 weeks, this could be helpful, and you also have the option to have access to premium, Gpus, and you can purchase it, but you can still get around with the free option
+
+148
+00:32:42.250 --> 00:33:10.689
+Viviana Márquez: in the industry. People don't really use Google Colab. They would deploy their own computers on the cloud, either with Aws, Azure or Google Cloud Platform, one of the 3. And that's a desired skill of a data scientist nowadays. So I would look into that. I'm not going to go into that rabbit hole, because that's more like software engineering, not so much machine learning. But it's something valuable to learn.
+
+149
+00:33:10.840 --> 00:33:15.269
+Viviana Márquez: My only advice is that if you venture on your own and to learn.
+
+150
+00:33:15.680 --> 00:33:40.359
+Viviana Márquez: And you deploy a cloud computer. Always remember to turn it off once you're not using it. So you're not surprised with a big bill at the end of the month, because you can select a Gpu, a monster Gpu, like the best computer that you can think of, and it's only probably going to be a few dollars per hour, but if you forget to turn it off at the end of the month, that's going to be a lot of money, so don't forget to turn it off when you're not using it.
+
+151
+00:33:41.351 --> 00:33:49.489
+Viviana Márquez: So you can code deep learning in these 3 languages, tensorflow keras and pytorch
+
+152
+00:33:49.540 --> 00:34:11.039
+Viviana Márquez: with machine learning. We're lucky because Psyche learn just kind of took over. And it's like the one library to use. Maybe once you start working with xgboost. You have to install xgboost. But you got lucky that there's that one single framework in deep learning. Google developed tensorflow
+
+153
+00:34:11.080 --> 00:34:25.660
+Viviana Márquez: and pytorch developed Facebook developed pytorch so that's why you have those 2. They do the same thing. Decoding is only slightly different. And which one you should learn, whatever one they use in your company. I, for example.
+
+154
+00:34:25.940 --> 00:34:33.020
+Viviana Márquez: I don't know much about tensorflow or keras. Keras is like merged with tensorflow nowadays.
+
+155
+00:34:33.030 --> 00:34:51.109
+Viviana Márquez: But yeah, I don't know much about tensorflow, because for every company that I've worked with they work with pytorch. So I'm an expert in pytorch. I can figure out tensorflow. If I get tensorflow code because it's kind of similar. But I'm not an expert in tensorflow.
+
+156
+00:34:51.110 --> 00:35:04.809
+Viviana Márquez: But some other people would be flipped because for the companies that they worked for they happened to be using tensorflow. So they became tensorflow experts, but not so much with pytorch. So that's the main difference in there.
+
+157
+00:35:05.470 --> 00:35:13.290
+Viviana Márquez: So now this is where I'm switching so neural networks. Here I have a bunch of slides about neural networks.
+
+158
+00:35:13.690 --> 00:35:22.739
+Viviana Márquez: The biggest insight of a neural network that I can give you is that? Well, you have a neural network that is composed of many neurons.
+
+159
+00:35:23.230 --> 00:35:46.030
+Viviana Márquez: Each neuron is a linear regression. So that's why linear regression was so important when we 1st started learning machine learning. And when we 1st started learning this course because it's the building blocks of neural networks, you put a bunch of linear regressions together. And you get a neural network. The only twist
+
+160
+00:35:46.100 --> 00:36:10.350
+Viviana Márquez: is the activation function. So you finish your linear regression and you add an activation function. But all of these guys are linear regressions. It's basically to oversimplify. It is basically an ensemble of linear regressions which is both surprising and disappointing. When I 1st learned. This I was like is that it? Is that what
+
+161
+00:36:10.840 --> 00:36:24.680
+Viviana Márquez: AI is just linear regressions I don't know. At 1st I was so offended, but now I'm marveled that with something so simple, like a linear regression, you can create stuff that is so wonderful, like chat Gpt. So
+
+162
+00:36:24.970 --> 00:36:36.789
+Viviana Márquez: so that's the biggest takeaway. And the second biggest takeaway of neural networks. Is that the reason why you have all these linear regressions connected and doing stuff
+
+163
+00:36:36.940 --> 00:36:43.929
+Viviana Márquez: is because the goal is that when you have complex data like images, like videos like text.
+
+164
+00:36:44.060 --> 00:36:59.569
+Viviana Márquez: you do all these linear regressions with the objective to send this data to a space where it's linearly separable. And you can separate this data and make accurate predictions. So that's the secret sauce in there.
+
+165
+00:37:00.183 --> 00:37:21.220
+Viviana Márquez: So yeah, you have all of this all of this, all of this, all of this. So, for example, if you were wondering, how do I pick the activation function here? I put in the slide, depending on what you're trying to do. So if you're doing binary classification typically sigmoid. And this is for the output layers and so on for all the different use cases
+
+166
+00:37:21.730 --> 00:37:32.350
+Viviana Márquez: for the hidden layers. Typically, it's just Relu. And I put a bunch of information there. And yeah, so let me open up the.
+
+167
+00:37:32.670 --> 00:37:35.250
+Viviana Márquez: oh, yeah, no, we're gonna go through the code.
+
+168
+00:37:35.640 --> 00:37:38.840
+Viviana Márquez: So here, the code that I have
+
+169
+00:37:39.200 --> 00:38:08.369
+Viviana Márquez: is basically I'm doing this because I applied a neural network on this data set that you guys are already familiar with. You should never do that, because this data set is very simple. So deep learning is so powerful that it's going to overfit. So you shouldn't apply deep learning on a very simple data set. You should use traditional machine learning. So I'm basically being Bill Gates here. But this is just to make that transition from deep learning.
+
+170
+00:38:08.530 --> 00:38:10.690
+Viviana Márquez: from machine learning to deep learning.
+
+171
+00:38:12.360 --> 00:38:13.520
+Viviana Márquez: So basically.
+
+172
+00:38:14.020 --> 00:38:36.700
+Viviana Márquez: what is our objective? Again, we want to predict the species of the flower using these 4 features. So the architecture of the neural network is going to be like a little bit dictated by that. So you have 4 neurons at 1st corresponding to the number of features. If you had 6 features, it will be 6 neural networks.
+
+173
+00:38:37.380 --> 00:38:55.569
+Viviana Márquez: the internal ones are a little bit arbitrary. You can just play around with that. You can also treat it as a hyperparameter if you wanted to, but the final one corresponds to what you're trying to predict. So if you're trying to predict the number, it will be just a single neuron. And that neuron
+
+174
+00:38:55.790 --> 00:39:19.229
+Viviana Márquez: outputs that number. In this case it's a classification task. So you're trying to predict these 3 classes. So when you're trying to predict these 3 classes, you would have 3 neurons, one for each class. So when a neuron turns on, that's the thing, the output. So for example, let's say, this neuron represents Setosa.
+
+175
+00:39:19.720 --> 00:39:25.579
+Viviana Márquez: This one represents Virginia come, and this one represents versicolor.
+
+176
+00:39:26.070 --> 00:39:32.380
+Viviana Márquez: So the final output is going to look something like 0 point 8 0 point
+
+177
+00:39:32.720 --> 00:39:41.890
+Viviana Márquez: one and 0 point 2. No! Let's make this 0 point 7, because they have to add to one, all of them.
+
+178
+00:39:42.310 --> 00:40:08.529
+Viviana Márquez: And by this output I see the biggest number is this one. So this neuron would turn on so the prediction would be virginica for that flower. So that's what that architecture means. And this is where you learned switches a little bit, because when we were working with machine learning, we didn't have to think about that, it would just like come up with the prediction. But here we have to think about this structure.
+
+179
+00:40:09.000 --> 00:40:11.660
+Viviana Márquez: So here is
+
+180
+00:40:12.120 --> 00:40:17.850
+Viviana Márquez: the explanation of how it works. I'm going to skip this. So we have time for the convolutional neural network.
+
+181
+00:40:19.790 --> 00:40:21.210
+Viviana Márquez: But basically.
+
+182
+00:40:22.230 --> 00:40:27.699
+Viviana Márquez: And here I'm talking about the losses and how to pick the loss. But let me show you the notebook.
+
+183
+00:40:30.900 --> 00:40:33.210
+Viviana Márquez: So I have 2 notebooks.
+
+184
+00:40:33.920 --> 00:40:50.320
+Viviana Márquez: I did this notebook myself, which is Pytorch. Let me copy it in the chat because I know Pytorch. And then I asked Chatgpt to translate that into tensorflow. So here's the tensorflow one, and I'll share it.
+
+185
+00:40:51.010 --> 00:40:56.440
+Viviana Márquez: But I'm going to explain, you guys with Pytorch, because that's the one that I'm more fluent in
+
+186
+00:40:56.690 --> 00:41:01.860
+Viviana Márquez: despite that the logic stays the same, the logic is very similar.
+
+187
+00:41:02.090 --> 00:41:11.390
+Viviana Márquez: So what do we have here in the code? Let me open up this here.
+
+188
+00:41:11.900 --> 00:41:18.410
+Viviana Márquez: So with load or libraries, we have to make sure that we're working with the Gpu.
+
+189
+00:41:18.510 --> 00:41:21.800
+Viviana Márquez: So this is how you select the Gpu.
+
+190
+00:41:21.980 --> 00:41:23.090
+Viviana Márquez: So if
+
+191
+00:41:23.330 --> 00:41:35.409
+Viviana Márquez: it says Cuda, you have a Gpu, if it says CPU, either your computer doesn't have a Gpu, or there's something wrong with the pytorch installation.
+
+192
+00:41:35.720 --> 00:41:38.810
+Viviana Márquez: But yeah, if you see cooler, you're using the Gpu.
+
+193
+00:41:39.170 --> 00:41:43.319
+Viviana Márquez: if you're working on windows and Linux, this is the one.
+
+194
+00:41:44.970 --> 00:42:01.200
+Viviana Márquez: yeah, if you're working with the newer apple computers that have Gpu's, the ones with the metal performance. So basically, if it's the Macbook, m. 1 Macbook, M. 2, m. 3, all of those M family ones.
+
+195
+00:42:01.260 --> 00:42:17.749
+Viviana Márquez: The piece of code that you have to use is this, one is a little bit different. But yeah, that's just to make sure that you're using the Gpu. That's super important, because you could be coding in Pytorch and still be using the CPU. So you make sure that you're working with the Gpu.
+
+196
+00:42:18.010 --> 00:42:28.549
+Viviana Márquez: So we load our data set. We load it as business as usual. This is the data set as business. As usual. We do our train test split business as usual. This is the same thing.
+
+197
+00:42:28.890 --> 00:42:38.199
+Viviana Márquez: And now that's where the logic changes. You have to create these pytorch tensors. And the reason why is that?
+
+198
+00:42:38.370 --> 00:43:02.719
+Viviana Márquez: Because we're using the Gpu. We need to distribute our data in such way that it can be worked in parallel, and for pytorch to be able to do this in an optimal manner. You have to convert the data that you have into this object that is called a torch. So this is basically like a special matrix that is more optimized.
+
+199
+00:43:03.053 --> 00:43:13.089
+Viviana Márquez: So this is how you do it. So not very much going on in here, but you have to do it. So you make sure that you're using. You're using the Gpu.
+
+200
+00:43:13.540 --> 00:43:18.509
+Viviana Márquez: Now let's define the neural network structure. So in this case.
+
+201
+00:43:19.010 --> 00:43:20.759
+Viviana Márquez: what do we have in here.
+
+202
+00:43:21.000 --> 00:43:24.200
+Viviana Márquez: If we have the scenario where
+
+203
+00:43:24.400 --> 00:43:49.689
+Viviana Márquez: the neuron is connected to all the other neurons like in this case, because you could have a neuron that is not connected to all the neurons and some specific cases. But if it's just like the normal business as usual, you're going to load this linear layer. So that's a linear layer. And how do you define these numbers? These numbers means on the 1st layer you're going to have 4 neurons, one.
+
+204
+00:43:50.280 --> 00:44:02.829
+Viviana Márquez: 2, 3, 4. This is the bias in Pytorch. You don't need to define it. It just does it for you, so you can just ignore the bias. But you have 1, 2, 3, 4. That's what that 4 here means.
+
+205
+00:44:02.970 --> 00:44:10.939
+Viviana Márquez: Then the 12. What does it mean? The 12 means that in the next layer you have 12 neurons. So basically, you have
+
+206
+00:44:12.100 --> 00:44:17.879
+Viviana Márquez: 1, 2, 3, 4, and the next layer, you have 1, 2, 3, 4, and so on until 12.
+
+207
+00:44:18.250 --> 00:44:25.309
+Viviana Márquez: So that's what it means. And so, naturally, in the next layer you need to connect.
+
+208
+00:44:25.670 --> 00:44:52.310
+Viviana Márquez: So you do. 12, the same number that you picked here you picked in here. How do you pick this number? This is a little bit arbitrary. You can just. You could treat it as a hyperparameter and define what is the best number. It's usually a little bit of waste of time. As long as you put like a big enough number it would make, it would learn, especially for a small data set like this. So 4 again, comes from the 4 features.
+
+209
+00:44:52.310 --> 00:45:02.289
+Viviana Márquez: so that 4 is defined by that. This 12. You have a little bit of freedom to choose whatever you want. But whatever you put in here, you have to put in here same thing. This is the next layer.
+
+210
+00:45:02.310 --> 00:45:11.979
+Viviana Márquez: So we have 1, 2, 3, 4. Then you have 12 in here, and then you will have
+
+211
+00:45:12.300 --> 00:45:14.320
+Viviana Márquez: 8 in here as well.
+
+212
+00:45:14.530 --> 00:45:35.360
+Viviana Márquez: So that's what that 8 means that's also a little bit arbitrary. You pick just a number and see how it goes. And then these 3 is the last layer which are these 3. And this is dictated by what you're trying to predict. So in this case, we're trying to predict the flowers. And you have 3 classes. So that's why you have that 3.
+
+213
+00:45:35.790 --> 00:45:38.030
+Viviana Márquez: So you define it this way.
+
+214
+00:45:38.630 --> 00:45:43.230
+Viviana Márquez: And here you're doing the forward pass.
+
+215
+00:45:43.970 --> 00:45:45.130
+Viviana Márquez: So
+
+216
+00:45:45.740 --> 00:45:58.069
+Viviana Márquez: this this step when you're sending the information forward. So that's how you define it. This is the activation function. Typically, you just use a relu, and that's the end of the story.
+
+217
+00:45:58.500 --> 00:46:12.779
+Viviana Márquez: And that's your model. And I struggled with this a lot when I 1st learned deep learning, because I was so used to just loading my model and just doing the whatever it was like logistic regression that fit
+
+218
+00:46:13.020 --> 00:46:16.030
+Viviana Márquez: X and Y end of story in here
+
+219
+00:46:16.370 --> 00:46:20.739
+Viviana Márquez: you actually have to code the architecture yourself.
+
+220
+00:46:20.880 --> 00:46:37.609
+Viviana Márquez: And I was really annoyed by that. But now I see that the power is that you can decide exactly what structure to use, where with this other models, they do all the hard work, but they're like there. So you can't customize your
+
+221
+00:46:37.740 --> 00:46:43.539
+Viviana Márquez: do whatever you're doing. So now I initialize the model.
+
+222
+00:46:44.500 --> 00:46:50.810
+Viviana Márquez: I compute the loss. So this is, how am I going to find those optimal values for my neural network?
+
+223
+00:46:51.050 --> 00:47:13.459
+Viviana Márquez: And I run the optimizer to to find those values? And here this is the training loop, where, as I was telling you, machine learning was just that fit end of story. Here you have to do a lot of coding. I put a bunch of comments. Just so you would know what each step means. But basically, this is the loop for the training.
+
+224
+00:47:13.770 --> 00:47:33.679
+Viviana Márquez: And this is the evolution of the model. So here the logic stays the same. So I computed accuracy you could have computed recall. You could have computed precision. You could have computed any metric that is relevant to classification, so that knowledge stays the same. The coding looks a little bit different, but the knowledge stays the same.
+
+225
+00:47:34.130 --> 00:47:40.970
+Viviana Márquez: And then this is how you would deploy this model. So how would you make a prediction on a new
+
+226
+00:47:41.280 --> 00:47:53.919
+Viviana Márquez: on a new observation? So I know that was very fast. That's the gist of neural networks switching from
+
+227
+00:47:54.370 --> 00:48:04.899
+Viviana Márquez: machine learning to neural networks. And I put a lot of comments in this code so hopefully that would help you answer some questions that you might have
+
+228
+00:48:05.470 --> 00:48:09.970
+Viviana Márquez: on neural networks. You can also do hyperparameter tuning
+
+229
+00:48:10.280 --> 00:48:27.989
+Viviana Márquez: usually the most. There's so many things that you can hyperparameter tuned in neural networks, but the important ones are learning rate. So learning rate is, how fast is your model finding the optimal values. And you want to find a sweet spot. Let me show you an image.
+
+230
+00:48:28.530 --> 00:48:38.179
+Viviana Márquez: real quick, of that sweet spot which is here.
+
+231
+00:48:38.390 --> 00:48:40.790
+Viviana Márquez: So if you're learning too slow.
+
+232
+00:48:41.330 --> 00:48:45.099
+Viviana Márquez: it's not too bad. The only issue is that it's going to take forever to train.
+
+233
+00:48:45.240 --> 00:49:03.519
+Viviana Márquez: If you're learning too fast, you might end up bouncing and not finding the optimal solution, which is the minimum here. So you just want to have that learning rate. Just right? So that's what the learning rate is controlling. How how big are the steps that it's taking. So so that's a hyperparameter.
+
+234
+00:49:05.350 --> 00:49:11.649
+Viviana Márquez: Let's go back here learning rate learning rate. Where are you learning rate?
+
+235
+00:49:12.100 --> 00:49:23.120
+Viviana Márquez: So that's a hyperparameter on neural networks. The other one that is important is their dropout rate. So to avoid overfitting and memorizing your data, set
+
+236
+00:49:23.270 --> 00:49:39.050
+Viviana Márquez: you randomly turn off some neurons, and you avoid that. So that's the dropout rate is how many neurons in a given pass you're going to turn off at random. So that's also another hyperparameter.
+
+237
+00:49:39.340 --> 00:49:55.769
+Viviana Márquez: and this one I don't hyper parameter tune this one that often. But what kind of regularization do you want to use to also avoid hyper parameter to avoid overfitting. So here's a spreadsheet.
+
+238
+00:49:56.280 --> 00:50:14.619
+Viviana Márquez: Let me send you the code first.st Actually let me open the code. So this is the code on how to do that hyperparameter tuning on neural networks. So let me copy and paste this link in the chat. All of this is going to get posted on canvas. So don't worry. And the
+
+239
+00:50:14.780 --> 00:50:22.339
+Viviana Márquez: way people do it in the industry there's different ways to do it. The people, the way people do it in the industry to find these hyper parameters
+
+240
+00:50:22.440 --> 00:50:45.010
+Viviana Márquez: is with optuna, this library. It just makes it easier to, because grid search. So let me go back in machine learning. You can do hyperparameter tuning with random search, grid search and Bayesian search. So random search you. Just choose some random hyperparameters, and you try them out. That's not a very
+
+241
+00:50:45.290 --> 00:50:52.310
+Viviana Márquez: great solution. You can do grid search, which is, you try all possible combinations of possible hyperparameters.
+
+242
+00:50:52.400 --> 00:51:13.049
+Viviana Márquez: That one is not very efficient. But since we're working with machine learning. That's what we were doing, because it wasn't super computationally expensive. So you could just compute everything and decide from there. Some people might argue with me, because I know that for some people it would take a really long time to do that grid search.
+
+243
+00:51:13.110 --> 00:51:22.039
+Viviana Márquez: So there's a better way. That is not random search. It's not grid search. It's called Bayesian optimization. So you do. Bayesian search, which is.
+
+244
+00:51:22.050 --> 00:51:41.560
+Viviana Márquez: you start making some guesses, but your guesses get smarter over time until you find the best configuration. And that's the best way to do hyperparameter tuning in general. You could do Bayesian optimization in machine learning. It's a little bit of an overkill in machine learning. So that's why we didn't cover it. But you could.
+
+245
+00:51:41.560 --> 00:52:00.459
+Viviana Márquez: But for neural networks you should definitely do Bayesian optimization grid search it would take forever. And random. Search is not very smart. So Bayesian optimization. If you try to implement the Bayesian optimization yourself, it will be very cumbersome. So that's why people use optune as a library that does it for you.
+
+246
+00:52:00.500 --> 00:52:03.130
+Viviana Márquez: And here, basically, this whole notebook
+
+247
+00:52:03.450 --> 00:52:16.279
+Viviana Márquez: is on how to do that hyperparameter tuning, so I'll skip it for now. But you have it there for your reference. And now onto the good stuff which is the spreadsheet. Let me share. This spreadsheet in the chat
+
+248
+00:52:16.790 --> 00:52:35.109
+Viviana Márquez: is of the different, the potential different hyperparameters that you have in a neural network. So you have hyperparameters that are associated to the optimization of the model. So how to find those best configurations of the model.
+
+249
+00:52:35.340 --> 00:52:41.410
+Viviana Márquez: This one is on the not configurations, but best results how to find those best results.
+
+250
+00:52:41.750 --> 00:52:44.860
+Viviana Márquez: This one is on the training configuration. So like.
+
+251
+00:52:45.310 --> 00:53:04.919
+Viviana Márquez: how many times should I go over my data and stuff like that. And these ones are on the network architecture. So how many neurons should I have? How many layers should I have? And what activation function should I have and regularization to avoid overfeeding.
+
+252
+00:53:05.060 --> 00:53:32.839
+Viviana Márquez: So in theory, you could do hyperparameter tuning on all these things. I wouldn't be surprised if a huge company like Openai devoted a lot of time to do all this hyperparameter tuning on a model like Chatgpt. But in practice you wouldn't do this because it would be very, very time consuming and computationally expensive. So you wouldn't do that. The ones that you focus on are the ones that are in yellow. So learning rate.
+
+253
+00:53:33.410 --> 00:53:38.260
+Viviana Márquez: Here's here's how it looks like in code. Why is it important?
+
+254
+00:53:38.700 --> 00:53:47.239
+Viviana Márquez: And the other one is dropout rate. This is how it looks like in code. Why is it important.
+
+255
+00:53:47.360 --> 00:53:53.720
+Viviana Márquez: And this one, although I haven't really used this one, that much I usually focus on dropout rate and learning rate.
+
+256
+00:53:53.840 --> 00:54:00.770
+Viviana Márquez: But you could also do this one. This is how you would do it here. I show you how to do the other ones in case you were curious.
+
+257
+00:54:01.130 --> 00:54:08.759
+Viviana Márquez: And here I describe how to optimize that. So, for example, for the number of neurons that you should have.
+
+258
+00:54:08.940 --> 00:54:38.249
+Viviana Márquez: typically, you do that by historical precedent. So you find a similar problem, and you choose the same architecture. You don't really waste that much time on. Should I use 12 neurons or 13 neurons? You just go with something that kind of looks similar and go for it like people don't hyper parameter tune this unless they were actively working on creating a brand new architecture to tackle a brand new problem. But if something that has been solved, you just use something that has already been used
+
+259
+00:54:38.320 --> 00:54:49.090
+Viviana Márquez: meaning like, if you're gonna work on image classification that exists already you work on new architecture that already exists.
+
+260
+00:54:49.140 --> 00:55:14.150
+Viviana Márquez: But if, for example, you come up with this specific data set that you're working for a neuroscience company. And you're trying to process brain data. And this specific brain data comes in this specific input and you want this specific output. Then you will work on this hyperparameter tuning to find the best configuration for that very specific data set if it doesn't exist already. But
+
+261
+00:55:14.160 --> 00:55:22.740
+Viviana Márquez: unless you're working for a research facility or a tech giant. It's very rare that you will have to do that at work.
+
+262
+00:55:23.344 --> 00:55:30.300
+Viviana Márquez: So yeah, these are the ones that you optimize. For in job interviews, learning, rape
+
+263
+00:55:30.500 --> 00:55:37.539
+Viviana Márquez: and dropout rate, this is a common question. I mean, all of these are common questions, actually, learning rate
+
+264
+00:55:39.640 --> 00:55:47.219
+Viviana Márquez: activation functions. But yeah, I feel like they ask more about dropout rate and learning rate. That's a common interview question.
+
+265
+00:55:47.660 --> 00:55:50.400
+Viviana Márquez: So that's on hyper parameters.
+
+266
+00:55:50.810 --> 00:56:04.089
+Viviana Márquez: And look at that we're running out of out of time. If you need to drop, feel free to drop. But I'll do the same thing with convolutional neural networks, so I'll just quickly go through convolutional neural networks.
+
+267
+00:56:05.355 --> 00:56:06.340
+Viviana Márquez: Okay.
+
+268
+00:56:06.570 --> 00:56:10.200
+Viviana Márquez: So for convolutional neural networks or
+
+269
+00:56:12.090 --> 00:56:30.060
+Viviana Márquez: way of working with data changes a little bit, because so far we were working with numerical data. So far we were working with categorical data. But what do you do if you have an image, how do you work with that. So this is what you see. But this is what the computers see. So how do you load a data onto python? So
+
+270
+00:56:30.060 --> 00:56:46.780
+Viviana Márquez: images are composed by pixels. You can think of the pixel like the atom of the of the picture, is like the basic unit of a digital image. So each little square of an image like if you zoom in an image.
+
+271
+00:56:46.900 --> 00:56:50.040
+Viviana Márquez: let me find an image.
+
+272
+00:56:50.996 --> 00:56:56.449
+Viviana Márquez: Let's see not to be annoying. But let me just find.
+
+273
+00:56:57.521 --> 00:57:00.570
+Viviana Márquez: Picture! I'm gonna use a picture of myself.
+
+274
+00:57:01.030 --> 00:57:22.049
+Viviana Márquez: whatever. But this, if you fully zoom on this, and you keep zooming, let me zoom on my hair, so we can see it better if you zoom and zoom and zoom and zoom and zoom even more. You end up with these little squares with each square has a specific color, and once you put a bunch of squares together you end up
+
+275
+00:57:22.330 --> 00:57:36.630
+Viviana Márquez: with a picture. Any pictures? So that's what a pixel is. So each pixel represents a tiny area of the picture, and it's a sign color value. So the most
+
+276
+00:57:36.780 --> 00:57:43.290
+Viviana Márquez: direct measure of an image resolution is the width and height in pixels. So, for example, this picture
+
+277
+00:57:43.420 --> 00:57:55.270
+Viviana Márquez: has a width of 1,151 and a height of 1,107. So how many pixels do I have in there? I have.
+
+278
+00:57:56.070 --> 00:57:58.679
+Viviana Márquez: because it's an area right? So times
+
+279
+00:57:59.240 --> 00:58:04.540
+Viviana Márquez: this. So I have 1 million pixels in this picture.
+
+280
+00:58:04.660 --> 00:58:32.050
+Viviana Márquez: So next time you're buying a phone and it tells you this phone has a new camera of 48 megapixels. That's what it means it's capable of capturing 48 million of those squares. So the more pixels you have, the higher quality of your image is going to be. So from a computer perspective. What does that mean? You could have images that are grayscale or color. So if it's grayscale.
+
+281
+00:58:32.620 --> 00:58:53.430
+Viviana Márquez: each little square is going to have only one value that is going to go from 0 to 225 0 is black, 255 is white, and anything in between are all different shades of grade. And that huge matrix, with all those numbers, is what creates that color of the image
+
+282
+00:58:54.030 --> 00:58:58.189
+Viviana Márquez: that, like it, creates the image for color.
+
+283
+00:58:58.360 --> 00:59:10.809
+Viviana Márquez: We have 3 channels, so we have red, green, and blue. So each pixel is going to have 3 values, and each pixel is going to be I don't know. Let's say 200,
+
+284
+00:59:11.460 --> 00:59:24.399
+Viviana Márquez: a hundred 122, whatever it is. This represents a color, and you might have seen this when you you can even Google it like I'm going to say, color
+
+285
+00:59:24.690 --> 00:59:32.930
+Viviana Márquez: 200, a hundred 12, and let's say 90 N.
+
+286
+00:59:33.440 --> 00:59:35.380
+Viviana Márquez: Here, it tells you.
+
+287
+00:59:35.840 --> 00:59:41.520
+Viviana Márquez: Well, it didn't find find the one that I wanted. But here you can see 13.
+
+288
+00:59:41.630 --> 00:59:45.899
+Viviana Márquez: So let me pick a color. This one is a color. So this one has
+
+289
+00:59:46.030 --> 00:59:57.880
+Viviana Márquez: 42 of red. It can go all the way to 255. It has one of green and 24 of blue. And by combining these 3 numbers, you get this color. So you have
+
+290
+00:59:58.040 --> 01:00:17.240
+Viviana Márquez: 3, basically 3 matrices. Each matrix represents a channel. Why is it. 3. That's actually connected to our biology. Us as humans, we process 3 channels of colors. And that's why we're able to see these colors. Not all animals have the same channels. So, for example, deer.
+
+291
+01:00:17.510 --> 01:00:26.870
+Viviana Márquez: let me see, dear Vision, so the ears have only.
+
+292
+01:00:27.150 --> 01:00:42.990
+Viviana Márquez: And let's see, Tiger, they only have 2 channels. They don't really have the red channel. So, for example, for deers, they can't really see the tiger. They only see it that way because they only have 2 channels in their eye color. So so they see it like this.
+
+293
+01:00:42.990 --> 01:01:06.820
+Viviana Márquez: There are animals that have more channels than us, so they see colors that we can't even imagine because we don't have those channels biologically. So the way that the computer shows those channels is limited to our own biology, you could create something crazy where you use several matrices and create like a color that a different animal would see.
+
+294
+01:01:06.830 --> 01:01:23.710
+Viviana Márquez: There's the the shrimp. There's a specific type of shrimp that has 16 channels. So imagine the colors that those guys can see that we can't see by. Yeah, you are physically limited by our biology. So that's that's where that's coming from.
+
+295
+01:01:24.470 --> 01:01:36.969
+Viviana Márquez: So that that was a little bit of an introduction to be able to talk about convolutional neural networks. Because since we're working with images. We need to be able to understand images. So
+
+296
+01:01:37.230 --> 01:01:38.380
+Viviana Márquez: us.
+
+297
+01:01:38.580 --> 01:01:46.519
+Viviana Márquez: I've been telling you throughout this program, and everyone has been telling you and not just me. The goal of machine learning is to generalize.
+
+298
+01:01:46.940 --> 01:01:52.170
+Viviana Márquez: So imagine you had the task to recognize handwritten digits.
+
+299
+01:01:52.280 --> 01:01:53.400
+Viviana Márquez: So
+
+300
+01:01:53.600 --> 01:02:17.379
+Viviana Márquez: you shouldn't create an explicit rule like, Oh, yeah, like ones are a set of aligned pixels and zeros are kind of like a circle, because then you can't generalize. It's about generalization. What if people sometimes they write the number one like this, or like this, or the image is a little bit blurry, you're as a human. You're still able to tell that this is a 1. So if you do explicit rules.
+
+301
+01:02:17.490 --> 01:02:25.699
+Viviana Márquez: the model is not going to be able to do that. So that's why you need machine learning to be able to generalize. So that's the main goal of machine learning.
+
+302
+01:02:26.140 --> 01:02:32.589
+Viviana Márquez: So how do we generalize in computer vision in convolutional neural networks?
+
+303
+01:02:32.700 --> 01:02:43.890
+Viviana Márquez: So the examples I'm going to show you is with this data set. This data set has 10 classes, the 10 digits all the way from 0 to 9.
+
+304
+01:02:44.020 --> 01:02:48.569
+Viviana Márquez: So you have 10 classes, and you have an image, and you have to predict, what kind of
+
+305
+01:02:49.050 --> 01:03:16.649
+Viviana Márquez: class do you have? What digit is in there. These images are 28 by 28. So they're very small. They're very low quality, but 28 by 28. It means that they have 784 pixels, and since they're grayscale you only have one channel. You don't have the 3 channels, so it's only 784. You have 70,000 images in there, and you have 784. So
+
+306
+01:03:17.620 --> 01:03:25.119
+Viviana Márquez: if you were going to work this from a machine, learning perspective, not a deep learning perspective.
+
+307
+01:03:25.510 --> 01:03:32.039
+Viviana Márquez: You could treat this as a table because those are values after all, right, those are numbers. So you could say, pixel, one
+
+308
+01:03:32.290 --> 01:03:39.350
+Viviana Márquez: pixel, 2, pixel 3, and so on until you make it to Pixel. What? Pixel? 784.
+
+309
+01:03:39.740 --> 01:03:50.800
+Viviana Márquez: And then the label. So you would say, Okay, Pixel. One has a value of 0 0 255, and so on. And then the label is this number 8.
+
+310
+01:03:51.200 --> 01:03:58.210
+Viviana Márquez: So in theory, you could treat this as a machine learning project, you could make it into a table.
+
+311
+01:03:59.070 --> 01:04:11.969
+Viviana Márquez: You apply any classifier model, you're more than welcome to try it. Try it best of luck. Why, best of luck, you have 784 features, and this is a very low quality image.
+
+312
+01:04:12.030 --> 01:04:30.800
+Viviana Márquez: Once you have an image that is bigger. You're going to have so many more dimensions. So it's going to very hard for the poor machine learning models to learn how to generalize, based on that also. Once you put it into a table, you lose the concept of location, and pixels
+
+313
+01:04:31.010 --> 01:04:45.859
+Viviana Márquez: are like when you're working with machine learning. Features are not really related to each other, like the age of the house, is completely independent from the number of bathrooms like those 2 features, don't have a relationship. But in this case
+
+314
+01:04:46.000 --> 01:04:54.339
+Viviana Márquez: the the in an image, they always have a relationship. Because if you're next, if you're a 0, you're probably surrounded by other zeros.
+
+315
+01:04:54.490 --> 01:05:06.069
+Viviana Márquez: if you have a bunch of zeros here. But suddenly you have other stuff. That means that this this is like an edge. But once you put it into columns. You lose that sense of
+
+316
+01:05:06.660 --> 01:05:08.579
+Viviana Márquez: space. Right? So
+
+317
+01:05:08.930 --> 01:05:21.400
+Viviana Márquez: so so you do want to keep that space notion. So so that's why machine learning is also a bad approach. So you have to do it with deep learning. So with deep learning.
+
+318
+01:05:21.640 --> 01:05:31.950
+Viviana Márquez: the input layer is going to be how big your image is so in this case our image is 784. So that's what you have in there. And the output layer
+
+319
+01:05:32.170 --> 01:05:36.490
+Viviana Márquez: is 10. The 10 classes that you want to predict. So you do know those
+
+320
+01:05:36.630 --> 01:05:49.330
+Viviana Márquez: 2 things. But what is in the middle? What happens in between can get really crazy? Because imagine if we were going to do a normal neural network like the one that we just learned for the Iris data set.
+
+321
+01:05:49.520 --> 01:05:57.899
+Viviana Márquez: And we did. Let's say we have only let's see.
+
+322
+01:05:59.270 --> 01:06:08.659
+Viviana Márquez: Only let's say we only have one hidden layer with 256 neurons. So basically, this is going to look this way. You have for your input layer.
+
+323
+01:06:08.880 --> 01:06:12.950
+Viviana Márquez: You have 784
+
+324
+01:06:13.630 --> 01:06:19.130
+Viviana Márquez: neurons, and you arbitrarily decided to have one.
+
+325
+01:06:20.060 --> 01:06:27.200
+Viviana Márquez: a layer with 256. So this 256 neurons. And then the output layer would have
+
+326
+01:06:27.410 --> 01:06:31.980
+Viviana Márquez: 1010 neurons right for the 10 classes.
+
+327
+01:06:32.300 --> 01:06:42.380
+Viviana Márquez: And if you do a fully connected neural network where everything is connected to everything. Each one of these lines represent a value that the neural network has to learn. It's like.
+
+328
+01:06:42.690 --> 01:07:02.189
+Viviana Márquez: if we were speaking in linear regression terms is like a coefficient that you have to learn. But in this case it's called parameter. It's exactly the same thing as a coefficient. So in a fully connected neural network, if you treat it as a fully connected neural network, if everything is connected with everything. How much stuff will we have to learn? So we have.
+
+329
+01:07:03.050 --> 01:07:11.430
+Viviana Márquez: how many lines do we have in here? In this step? We will have 784 times the 256 in here. So that's this number.
+
+330
+01:07:12.040 --> 01:07:17.659
+Viviana Márquez: and you have to add the bias term. So that will be 256 biases. That's
+
+331
+01:07:17.900 --> 01:07:19.410
+Viviana Márquez: the same as this number.
+
+332
+01:07:20.200 --> 01:07:31.670
+Viviana Márquez: then for the next layer, so how many lines do we have on this step? It will be the 256 neurons here times the 10 neurons here is this number.
+
+333
+01:07:32.150 --> 01:07:34.510
+Viviana Márquez: and plus the 10 viruses that you have.
+
+334
+01:07:34.650 --> 01:07:39.130
+Viviana Márquez: So if you add these numbers, these plus this
+
+335
+01:07:39.620 --> 01:08:09.209
+Viviana Márquez: plus this plus this, you get this grand total of parameters. So when you're working with images, this quickly grows so much, and this is a lot of learning you can overfeed. It doesn't do it well, so you can't use a fully. I mean, you could. You could try it, use a fully connected neural network for classifying images. But this is not really ideal. Is there a way we can do better? Can we do better, and this is only one layer. Imagine, if you do
+
+336
+01:08:09.270 --> 01:08:12.910
+Viviana Márquez: 10 layers, each one with a big number of neurons.
+
+337
+01:08:13.200 --> 01:08:20.000
+Viviana Márquez: this number would explode. So what do you do? Because when you're working with images.
+
+338
+01:08:20.100 --> 01:08:25.079
+Viviana Márquez: for example, this data set, that is a famous data set to detect cancer on skin.
+
+339
+01:08:25.470 --> 01:08:29.710
+Viviana Márquez: you have 7 classes of cancers you have.
+
+340
+01:08:29.870 --> 01:08:34.650
+Viviana Márquez: Well, this is the size of the train data set, but each image is
+
+341
+01:08:34.850 --> 01:08:50.150
+Viviana Márquez: 628 pixels by 417 pixels. So this is the height and the width times 3, because we it's a color picture. So you have the 3 channels. So just from the get go. You have 707,085.
+
+342
+01:08:50.370 --> 01:09:03.050
+Viviana Márquez: I don't know how to read this number, but in this number you have this number of dimensions of features. So your input layer, if you were going to treat it as a normal, fully connected neural network would be
+
+343
+01:09:03.100 --> 01:09:21.919
+Viviana Márquez: just the input layer would be 785,660, 28,000 neurons. So I now imagine, once you start putting a hidden layer. No, it would just it was just, too much same thing with this other data set.
+
+344
+01:09:22.260 --> 01:09:23.870
+Viviana Márquez: So what do you do?
+
+345
+01:09:24.479 --> 01:09:31.069
+Viviana Márquez: You can't treat it as a fully connected neural network. For that reason
+
+346
+01:09:31.700 --> 01:09:53.079
+Viviana Márquez: you could treat it as a machine learning project if if you detect like the edges, and maybe you do a histogram count of the pixels that are black versus the pixels that are white. And you do some feature engineering, and that's how people used to do it back in the day, and that's still valid. But it doesn't give you the best results. So how do you get the best results?
+
+347
+01:09:53.450 --> 01:09:57.530
+Viviana Márquez: You do a convolutional neural network?
+
+348
+01:09:58.310 --> 01:10:02.049
+Viviana Márquez: So how do you do the convolutional neural network?
+
+349
+01:10:02.740 --> 01:10:10.969
+Viviana Márquez: So a convolutional neural network is a specific kind of architecture focused for on images. You could also use it for other stuff.
+
+350
+01:10:10.980 --> 01:10:35.889
+Viviana Márquez: But typically if you have an image problem, it's going to be a convolutional neural network. And within the world of convolutional neural networks, you have many different architectures to tackle different things. So image classification, where you're trying to predict a class for each image versus image multilabeling. So you have different stuff on the image image detection.
+
+351
+01:10:35.900 --> 01:10:48.570
+Viviana Márquez: So like, if you want to detect something in particular in the image. So yeah, you have different architectures for different problems. How do you know which architecture to use? Literally, just Google, like Google, a similar problem?
+
+352
+01:10:48.620 --> 01:10:49.899
+Viviana Márquez: What kind of
+
+353
+01:10:49.960 --> 01:10:55.769
+Viviana Márquez: neural networks have had a success in the past with that, and then you can start from there.
+
+354
+01:10:56.692 --> 01:11:01.670
+Viviana Márquez: So convolutional neural networks are so cool like
+
+355
+01:11:02.200 --> 01:11:07.970
+Viviana Márquez: this. This like blows my mind. Because
+
+356
+01:11:08.250 --> 01:11:17.059
+Viviana Márquez: if if you read about how the brain processes visual images from a biology standpoint.
+
+357
+01:11:17.130 --> 01:11:38.990
+Viviana Márquez: the brain doesn't just like capture the image that you're looking all at once the brain kind of process in layers. So the brain 1st processes like the edges, then it detects important stuff like faces or evolution trained us to detect faces. So we see if someone is like looking at us or observing at us.
+
+358
+01:11:38.990 --> 01:11:53.130
+Viviana Márquez: So so it's like multiple steps that we are not aware we do it like unconsciously. But our brain is like doing several things to finally finally put it all together and make sense of the stuff that we're looking at.
+
+359
+01:11:54.020 --> 01:11:55.250
+Viviana Márquez: It turns out
+
+360
+01:11:55.350 --> 01:12:17.840
+Viviana Márquez: that when you train a convolutional neural network it does the same thing without you explicitly telling it. So it starts detecting the shapes and the edges and the shadows, and then it starts detecting more complex stuff. So it's truly, truly marvelous stuff like it blows my mind every time I look at it.
+
+361
+01:12:18.630 --> 01:12:32.849
+Viviana Márquez: So the convolutional neural network, as I was telling you, has that advantage. The 1st advantage, which is, it takes into consideration where, in the image that Pixel is, and takes advantage of that information.
+
+362
+01:12:32.970 --> 01:12:38.680
+Viviana Márquez: It also does a feature learning, so it learns
+
+363
+01:12:39.010 --> 01:13:01.750
+Viviana Márquez: first, st like the edges of the image, then it learns the shadows, and it learns a bunch of things just like we do it in biology, in our how our human brain interprets images. And how do the scientists even know this by running experiments, sometimes a little bit of messed up experiments. So, for example, one time they took some cats.
+
+364
+01:13:01.970 --> 01:13:06.039
+Viviana Márquez: and when the control group was a normal set of cats.
+
+365
+01:13:06.120 --> 01:13:15.980
+Viviana Márquez: And then the test group was, some cats that were put in an environment when they were kittens that only had vertical lines, just vertical lines.
+
+366
+01:13:15.980 --> 01:13:40.439
+Viviana Márquez: and they never saw any horizontal lines. And they basically messed up those cats because once those cats were put into the real world. They couldn't really process the information that they were seeing because they were not trained to see horizontal lines. So doing. Those kind of experiments they learn how the brain processes information and makes sense of what we're seeing.
+
+367
+01:13:41.520 --> 01:13:42.370
+Viviana Márquez: So
+
+368
+01:13:42.830 --> 01:13:54.090
+Viviana Márquez: Cnns have 2 main components. They have convolutional new layers and pulling layers. So, instead of just having a fully connected layer, which is the layer that just
+
+369
+01:13:54.570 --> 01:13:56.619
+Viviana Márquez: connects everything to everything.
+
+370
+01:13:57.190 --> 01:14:14.310
+Viviana Márquez: it also has a few layers like that which is the fully connected layer, but it has convolutional layer. So the convolutional layer is just taking averages of the image. So here you have your original image and the convolutional layer. Just
+
+371
+01:14:14.840 --> 01:14:32.109
+Viviana Márquez: no sorry I misspoke. So the convolutional layer applies a filter to the image. So it goes, sector by sector, and it multiplies a matrix by another matrix. But the effect of this is that it creates
+
+372
+01:14:32.350 --> 01:14:55.670
+Viviana Márquez: one version of the image that is fussy. Another version of the image that is a little bit blurry. Another version of the image, that it has a different thing so literally, the concept of a filter, even like an Instagram filter where you say I'm going to make my image black and white, or sepia, or something like that. That's what is happening in the convolutional layer. You're applying a filter.
+
+373
+01:14:55.770 --> 01:15:18.660
+Viviana Márquez: and then the pooling layer. That's the one where you're reducing the image. So you have the image, and you make it smaller. And how do you make it smaller? So you look into this area and you compute the mean of the pixels of this area to make the 1st pixel in here and you do it until you reduce the area. So those are the ingredients of a convolutional neural network.
+
+374
+01:15:19.110 --> 01:15:22.640
+Viviana Márquez: So the main architecture is Linux 5.
+
+375
+01:15:23.390 --> 01:15:35.129
+Viviana Márquez: Not the main like one architecture, and I brought some example code in there. So let me here. I have some more slides that we don't have time to cover.
+
+376
+01:15:35.310 --> 01:15:37.039
+Viviana Márquez: But we learn at 5.
+
+377
+01:15:37.150 --> 01:15:42.229
+Viviana Márquez: Basically, this is the architecture. And this is whoever designed Linux 5
+
+378
+01:15:42.390 --> 01:16:05.349
+Viviana Márquez: came up with this architecture. Could you design a different architecture. Yes, you're more than welcome to try a different architecture. But basically here they have the 1st layer, which is the input layer that's not going to change. So for this data set of the digits is going to be 784 neurons, because you have all those pixels in that image.
+
+379
+01:16:05.700 --> 01:16:08.880
+Viviana Márquez: then you could do a convolutional layer.
+
+380
+01:16:09.100 --> 01:16:13.610
+Viviana Márquez: So this is how it looks like
+
+381
+01:16:13.860 --> 01:16:23.870
+Viviana Márquez: this. 6. It means that is trying 6 filters. So at 1st you had this one means you are working with the original image just one image.
+
+382
+01:16:24.160 --> 01:16:34.860
+Viviana Márquez: If you were working with a color image, it will be 3, because you will have 3 original matrices, and then you're applying 6 filters to this layer in this layer.
+
+383
+01:16:34.960 --> 01:16:38.748
+Viviana Márquez: then in the next layer you're doing
+
+384
+01:16:39.540 --> 01:16:42.339
+Viviana Márquez: pulling. So you're making the image smaller.
+
+385
+01:16:42.670 --> 01:16:49.909
+Viviana Márquez: then in the convolutional another, you have another convolutional layer in the convolutional layer. You're carrying the 6
+
+386
+01:16:50.200 --> 01:16:56.870
+Viviana Márquez: layers from before like the 6 filters. So now to the 6 filters you apply 16 filters.
+
+387
+01:16:57.760 --> 01:16:59.819
+Viviana Márquez: you reduce it again.
+
+388
+01:17:00.090 --> 01:17:15.829
+Viviana Márquez: and after you have done this, this is a convolutional aspect of the neural network. You flatten those matrices that you have. So you make it a long line. And then this is just a fully connected neural network.
+
+389
+01:17:15.930 --> 01:17:26.279
+Viviana Márquez: So here you have the linear, the linear layer, linear layer and linear layer, and there you go. So let me show you in code and send it in the chat.
+
+390
+01:17:31.070 --> 01:17:36.619
+Viviana Márquez: So and here, same thing. I put a bunch of code. So you have it for your reference.
+
+391
+01:17:40.188 --> 01:17:47.400
+Viviana Márquez: So here you have all of that. So here you have the convolutional layer.
+
+392
+01:17:47.680 --> 01:17:52.549
+Viviana Márquez: the pooling layer, and so on. How did I decide to
+
+393
+01:17:52.830 --> 01:17:58.460
+Viviana Márquez: do it this way? I didn't. I just looked up the Lynette 5 architecture, which is this one.
+
+394
+01:17:58.680 --> 01:18:00.799
+Viviana Márquez: So I created it.
+
+395
+01:18:01.230 --> 01:18:13.320
+Viviana Márquez: I train my model and I get my results here. And here I included a bonus code which is
+
+396
+01:18:13.550 --> 01:18:18.239
+Viviana Márquez: to be able to look at what is happening on each layer.
+
+397
+01:18:18.580 --> 01:18:22.750
+Viviana Márquez: So, for example, in this one is the 1st layer
+
+398
+01:18:23.160 --> 01:18:49.629
+Viviana Márquez: which the 1st layer has these 6 filters, you're applying 6 filters to the image. So the original image was probably this 7, and then each filter created this. So 1, 2, 3, 4, 5 6 images. So that's why we have this 6. Here we applied 6 filters onto this image. And then what is beautiful about this is that you see that the neural network kind of starts detecting the edges.
+
+399
+01:18:49.840 --> 01:18:51.299
+Viviana Márquez: the shadows.
+
+400
+01:18:52.270 --> 01:19:13.409
+Viviana Márquez: other kind of edges. So basically, what the human brain does, the neural network does it as well. So it's pretty cool to be able to visualize this, and you can visualize any layer at any given moment. Here, I just put the 1st one. But you can change this number to this one or this one or this one, and see what is going on at any given moment.
+
+401
+01:19:14.356 --> 01:19:20.610
+Viviana Márquez: So I know that was a lot. Let me show you one last notebook.
+
+402
+01:19:21.090 --> 01:19:27.040
+Viviana Márquez: which is, yeah, that was the the Lynette code I shared is
+
+403
+01:19:27.490 --> 01:19:54.299
+Viviana Márquez: code for how to train your neural network from scratch in the real world. You're not going to do that. You're going to piggyback on someone that has already trained stuff. So for images, there's this big model called Resnet, that someone trained many, many images like millions of images with millions of labels, and it called it resnet. So what you do is that you piggyback on that model? So you don't train it yourself.
+
+404
+01:19:54.610 --> 01:20:04.990
+Viviana Márquez: and you just add a small layer at the end for your specific use case. So in this case, this case, I'm working with this data set.
+
+405
+01:20:05.440 --> 01:20:10.500
+Viviana Márquez: which I want to predict these 10 classes. And this is how my data set looks like.
+
+406
+01:20:10.630 --> 01:20:19.240
+Viviana Márquez: So what I do is that I do transfer learning. So this notebook that I just shared in the chat is, oh, no, you haven't shared it in the chat. Let me share it in the chat.
+
+407
+01:20:19.740 --> 01:20:22.060
+Viviana Márquez: This notebook is for transfer learning.
+
+408
+01:20:23.817 --> 01:20:40.409
+Viviana Márquez: So in transfer learning what you do is okay. You load the model you have loaded already that resnet model, and you piggyback on it. And you just create one last linear layer, a fully connected linear layer. So basically, you're working with resnet.
+
+409
+01:20:40.780 --> 01:21:00.760
+Viviana Márquez: You don't know what resnet is. I mean, you could. You can just look it up. Resnet probably has a bunch of layers here. Convolutions you have pulling layers. Well, you have a lot of stuff going on here, but I don't need to do that training myself, I just piggyback on it. So since I want to predict 10 classes in my data set.
+
+410
+01:21:01.150 --> 01:21:12.509
+Viviana Márquez: I just create this last fully connected layer. So here is going to have a last layer with the outputs for that specific model that someone trained for the different task.
+
+411
+01:21:12.760 --> 01:21:26.159
+Viviana Márquez: And that's what I'm asking here. How many features do I have in this last layer? So let's say, oh, here I am actually printing that values. It's 512. So here you have 512 in this rustnet
+
+412
+01:21:26.450 --> 01:21:27.929
+Viviana Márquez: that it was created.
+
+413
+01:21:28.050 --> 01:21:29.979
+Viviana Márquez: So you don't have any
+
+414
+01:21:30.120 --> 01:21:49.050
+Viviana Márquez: choice on that one but this 10 last 10 that I have here is for me to piggyback on it. So those are the 10 classes I want to predict. So then I'm creating this fully connected layer in here. So I added an extra layer to the model that had already been trained.
+
+415
+01:21:49.300 --> 01:22:11.259
+Viviana Márquez: And it works. So this is great, because if you don't have access to a lot of data. If you don't have access to a lot of computing power, you can piggyback on a model that has already been trained. You just find it on Google, and you piggyback on it. So this is how you piggyback on it. And then here you have a lot of the code.
+
+416
+01:22:11.380 --> 01:22:17.640
+Viviana Márquez: and you see that the model is performing to an 80% accuracy, which is, which is pretty great for this data set
+
+417
+01:22:17.900 --> 01:22:21.689
+Viviana Márquez: without me doing much of the effort I piggybacked on the restnet.
+
+418
+01:22:22.580 --> 01:22:25.530
+Viviana Márquez: The last thing I wanted to show you is grad cam.
+
+419
+01:22:25.720 --> 01:22:40.759
+Viviana Márquez: So grad cam is pretty cool because someone developed this code to show why the model is predicting what it is, predicting. It only works for convolutional neural networks, but still it's pretty cool. Let me share it in the chat.
+
+420
+01:22:43.310 --> 01:22:46.530
+Viviana Márquez: It is pretty cool, because.
+
+421
+01:22:47.139 --> 01:22:59.009
+Viviana Márquez: it shows you what part of the image the model is using to make the prediction. So, for example, this image is, I'm using the same data set as this transfer learning model that I used.
+
+422
+01:22:59.220 --> 01:23:05.809
+Viviana Márquez: So the label was frog and the prediction was frog. So you got it right. And this was the original image.
+
+423
+01:23:05.920 --> 01:23:15.359
+Viviana Márquez: And what the model used to to make that prediction was this area which it is kind of like the head of the frog, which is pretty cool
+
+424
+01:23:15.940 --> 01:23:31.160
+Viviana Márquez: with the car. It is the car, all the whole car, this one cat, cat, this one. I'm impressed because as a human, I would have not been able to classify this as a cat, but the model was able to classify it as a cat, and it's using kind of like this head shape here.
+
+425
+01:23:32.210 --> 01:23:54.459
+Viviana Márquez: this one, this one. It got it wrong. It was a frog, and it predicted a dog. And it was using this area of this image to say that it was a dog. So you can start understanding why your model is doing what it's doing. In fact, I learned about Greg Cam from someone that was sharing an anecdote that they trained a model like this.
+
+426
+01:23:54.670 --> 01:24:18.689
+Viviana Márquez: and the model was very good at classifying horses, all the horses. It would get it 100% right. And as we know, whenever you get 100% accuracy, that's suspicious right away. There's some type of thing going on. And they looked at the code. The code looked fine. There was no data leakage, and they couldn't figure out why the the model was so good predicting horses
+
+427
+01:24:18.870 --> 01:24:32.800
+Viviana Márquez: when they use grad Cam, it turns out that on their training data set the horses had a watermark of the photographer that you couldn't see with the human eye. But the model would see it, and it would just always highlight that small watermark.
+
+428
+01:24:32.920 --> 01:24:55.889
+Viviana Márquez: So that means that you have bad data, because if you take a picture of the horse in the wild, it's not going to have that watermark. So your model would be useless in the wild. So, even despite the fact that they had the test data set, they couldn't possibly think that the images they had that had that watermark. That was a hard catch. But thanks to Grad cam, they were able to catch that watermark.
+
+429
+01:24:57.480 --> 01:24:58.770
+Viviana Márquez: So that was
+
+430
+01:24:58.890 --> 01:25:24.230
+Viviana Márquez: it. I know that it was too much, because it was a lot of content. But my main goal with this session was to give you a bunch of notebooks, so you can later on reuse these notebooks for your own problems down the line. So I know that we are like super over time. But I wanted to stop for a second and see if there's any questions or
+
+431
+01:25:24.640 --> 01:25:26.810
+Viviana Márquez: things that you're wondering about.
+
+432
+01:25:38.620 --> 01:25:39.580
+Viviana Márquez: All right.
+
+433
+01:25:40.560 --> 01:25:46.209
+shashi: Yeah, these are all great. This one, I mean, I'm working on image classifier for my capstone.
+
+434
+01:25:46.370 --> 01:25:53.808
+shashi: So I think, after the submission and the fine tuning for productizing, and all. I think these are the tools
+
+435
+01:25:54.420 --> 01:25:58.530
+shashi: which I can use effectively for improving the model.
+
+436
+01:25:58.880 --> 01:26:00.420
+shashi: They look awesome, actually.
+
+437
+01:26:01.534 --> 01:26:26.839
+Viviana Márquez: That's awesome. I'm super happy to hear that. So let me send you the all the notebooks I had. They're going to be posted on canvas as well, but in case in case you want to have them already, let me post them here. So these are all the notebooks I had related to convolutional neural networks, and these are all the notebooks I had in relation to neural networks. So I just put them in the chat.
+
+438
+01:26:27.290 --> 01:26:34.090
+Viviana Márquez: I'll just be here for a little bit until people have the chance to download them.
+
+439
+01:26:34.470 --> 01:26:46.510
+Viviana Márquez: And then, yeah, that's it. I'll see you in 2 weeks for the final module module. 24. The Cafstan module.
+
+440
+01:26:47.235 --> 01:26:47.680
+Viviana Márquez: Yeah.
+
+441
+01:26:48.066 --> 01:26:53.653
+shashi: One more question on the capstone. I had one on one
+
+442
+01:26:54.710 --> 01:27:02.661
+shashi: last week. I got some feedback on, including some analytics and things like that. Should I submit the updated
+
+443
+01:27:03.220 --> 01:27:08.759
+shashi: 1st part of the submissions? Or should I wait for my final capstone submission? What should I do.
+
+444
+01:27:10.439 --> 01:27:21.430
+Viviana Márquez: So if you get feedback, either through the comment section of the submission that you made for week 20, or during the one on one
+
+445
+01:27:21.747 --> 01:27:49.710
+Viviana Márquez: up to you. You can choose what feedback to incorporate. You don't have to incorporate everything. And yeah, once you have all the feedback that you need, you can work on it and then make the final submission. Just keep in mind that once you make the final submission is the final submission. So so you can't go back. So maybe if you're waiting on some feedback or or something, I would just hold on and wait until I have everything that I want for that final submission.
+
+446
+01:27:50.960 --> 01:28:00.529
+shashi: Okay, no. What I meant is, for the part one should I make? Make a resubmission, or I can. Wait till final submission.
+
+447
+01:28:01.100 --> 01:28:06.860
+Viviana Márquez: Yeah, so it's not resubmission. Whatever you already submitted for. Module 20 is already submitted. So you don't have to go.
+
+448
+01:28:06.860 --> 01:28:08.550
+shashi: I don't have to worry about that one.
+
+449
+01:28:08.550 --> 01:28:23.770
+Viviana Márquez: Yeah. So for module 24, you're gonna have to submit again a link to the Github. It could be the same Github you, if you're working on the same Github repo. But yeah, it's a new submission. So this is not gonna get regretted. What you got on module 20.
+
+450
+01:28:23.770 --> 01:28:27.210
+shashi: Yeah, I just wanted to know that one, because some of the
+
+451
+01:28:27.970 --> 01:28:35.830
+shashi: analytics, financial numbers and things like that money had suggested to include to improve the
+
+452
+01:28:36.170 --> 01:28:40.060
+shashi: final output. So I was working on that. So
+
+453
+01:28:40.730 --> 01:28:46.640
+shashi: I was wondering if I should resubmit the assignment after module 20.
+
+454
+01:28:46.640 --> 01:28:51.349
+Viviana Márquez: Oh, I see, I see I see your question. No. Once you get the grade, you get the grade at like.
+
+455
+01:28:51.350 --> 01:28:53.686
+shashi: Yeah, yeah, I got the way, yeah.
+
+456
+01:28:54.020 --> 01:28:57.130
+Viviana Márquez: But but you have the opportunity to improve, for for module 20.
+
+457
+01:28:57.130 --> 01:29:02.049
+shashi: Yeah, yeah, correct. Yeah, I got some financial data and implications in the
+
+458
+01:29:02.536 --> 01:29:09.939
+shashi: general public. And things like, what happens with that and things like that, so that I've already included. I was wondering if I should again resubmit it, or that's all.
+
+459
+01:29:09.940 --> 01:29:10.680
+Viviana Márquez: Oh, for.
+
+460
+01:29:10.680 --> 01:29:11.610
+shashi: Clarification.
+
+461
+01:29:11.610 --> 01:29:16.470
+Viviana Márquez: Yeah, no, that's that's a good question. But no like. Once you get the grade, you get the grade.
+
+462
+01:29:18.720 --> 01:29:21.430
+Viviana Márquez: That would be a lot of work for us. Imagine all.
+
+463
+01:29:21.430 --> 01:29:28.610
+shashi: Yeah, yeah, I know. That's what that's why I wanted to check up. And I didn't know if there was any you have to resubmit for any additional things.
+
+464
+01:29:28.610 --> 01:29:29.190
+shashi: Yeah.
+
+465
+01:29:31.250 --> 01:29:48.139
+Viviana Márquez: All right. So thank you. Everyone for staying here until the end with me. I'll see you in 2 weeks if maybe you didn't get the chance to download the notebooks and stuff they're going to get posted on canvas regardless. So yeah, have a good day, everyone. Thank you. Bye, bye.
+
+466
+01:29:48.140 --> 01:29:49.040
+shashi: Thanks, everybody! Bye.
+
+467
+01:29:49.040 --> 01:29:50.789
+Namrata Baid: Thank you. Bye.
+
