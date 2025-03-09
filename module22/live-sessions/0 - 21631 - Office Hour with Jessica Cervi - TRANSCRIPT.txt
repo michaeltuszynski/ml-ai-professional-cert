@@ -1,0 +1,1162 @@
+WEBVTT
+
+1
+00:00:03.410 --> 00:00:29.670
+Jessica: Alright! Hello, everybody! And welcome to the module. 23 office hour for the professional certificate in machine learning. And AI. So we are almost at the end of the course. This is the last office hour with me. You obviously still have the ones for Module 24. But this is the last time I will be having an office hour with you, which is sad and exciting at the same time.
+
+2
+00:00:30.280 --> 00:00:47.399
+Jessica: Okay, so exciting things for module 23 module 23 is a module that we sort of like introduced very recently in the
+
+3
+00:00:48.200 --> 00:01:00.169
+Jessica: in the course. And the reason why we did that was to you know, give you a little bit of an introduction to what the generative AI is is a very hot topic.
+
+4
+00:01:00.616 --> 00:01:15.430
+Jessica: You know, there are entire courses on generative AI. So of course, we won't be able to cover everything or to talk about everything today. So the plan for today is to give you a little bit of a definition about generative AI and
+
+5
+00:01:15.430 --> 00:01:38.749
+Jessica: then see a couple of use cases that I think, are going to help you with the assignments for this week. So the the goal, essentially, is just to go over some of the you know, like architectures and methodologies that are also using the assignment that we have given you for this week to see if that can help you out a little bit
+
+6
+00:01:39.290 --> 00:01:43.736
+Jessica: before we do that, though. I want to.
+
+7
+00:01:45.042 --> 00:02:07.727
+Jessica: really stress about the importance of booking your capstone consultation with us. We noticed that the registrations have been a little bit lower than usual compared to previous runs. So we just want to, you know, like, make sure that you take advantage of this opportunity.
+
+8
+00:02:08.190 --> 00:02:15.820
+Jessica: you know you only have one more week to do so actually a little bit less than that, because you have until the end of Module 23.
+
+9
+00:02:15.820 --> 00:02:40.809
+Jessica: But it's really a great opportunity to chat with your learning facilitator, and, you know, discuss your project on the capstone. See if everything checks out. Ask any questions you may have, and that basically, if you have, you know, like, if you meet with your learning facilitator, basically, you are almost ensured that you are going to receive
+
+10
+00:02:40.810 --> 00:03:01.330
+Jessica: a good grade in Module 24, not because you met with him, but because most likely he or she is going to tell you what you need to do in order to receive a good grade and what your project is missing. Okay, very, very important, though, that you know your section. And by now I hope that all of you do.
+
+11
+00:03:01.330 --> 00:03:25.590
+Jessica: and that you book the consultation with your learning facilitator. Okay, I've had a few requests in my calendar from people in other sections that were not in mine, and I have to cancel those. Okay. I cannot take consultations with learners that are not in my section. That's not fair. So just a quick reminder. If you haven't.
+
+12
+00:03:25.600 --> 00:03:46.169
+Jessica: doesn't matter. If you're in my section or not, please book the consultations. It's important, and it really guarantees that you do a good job with the capstone project, which is worth a lot for your final grade since that's coming up. Another thing I want to mention
+
+13
+00:03:46.220 --> 00:03:58.629
+Jessica: is something about, you know, like what's gonna happen after the end of the course. So the course ends on. Let me pull up a calendar here, just give me one moment
+
+14
+00:04:01.110 --> 00:04:04.680
+Jessica: and share my screen again.
+
+15
+00:04:06.510 --> 00:04:07.320
+Jessica: Okay.
+
+16
+00:04:07.620 --> 00:04:19.380
+Jessica: so the course is going to end on the on March 19.th Okay, this is the last day of Module 24.
+
+17
+00:04:19.529 --> 00:04:32.990
+Jessica: Now you are going to have access to the course material for a year after the course is done. So until March 19th of 2026, you will have access to campus.
+
+18
+00:04:33.875 --> 00:04:44.240
+Jessica: Regarding late submission. Okay, if you're planning on submitting any. So everything for that course should be due
+
+19
+00:04:44.568 --> 00:05:09.209
+Jessica: or is due actually on March 19.th Okay, if you need extensions for anything now it's the time to start planning for that. So if you think you need an extra week for a code, you assignment that you left behind, or a practical application assignment that you never completed, or an extra couple of weeks for the Capstone project start making those requests. Now the system gets really busy towards the end of the
+
+20
+00:05:09.210 --> 00:05:17.909
+Jessica: course. And we we granting extensions is not a problem, but plan ahead. Okay, it's it's important that you do that
+
+21
+00:05:17.990 --> 00:05:20.220
+Jessica: in terms of grading.
+
+22
+00:05:21.081 --> 00:05:26.978
+Jessica: Here's what you should know. So oh, my God, I'm sorry.
+
+23
+00:05:28.810 --> 00:05:30.070
+Jessica: Our
+
+24
+00:05:30.410 --> 00:05:46.710
+Jessica: duties as learning facilitators, and 2 weeks after the course is done. So on April second, our duties as learning facilitators are lifted, meaning that we can only grade
+
+25
+00:05:47.586 --> 00:05:54.260
+Jessica: practical application, assignment and capstone project between March 19th and April second.
+
+26
+00:05:54.790 --> 00:05:58.439
+Jessica: If you submit anything after April second.
+
+27
+00:05:58.820 --> 00:06:10.249
+Jessica: someone from the grading team will grade your submission. Now it is. I strongly advise you. I'm telling you this now, because it's
+
+28
+00:06:10.290 --> 00:06:15.950
+Jessica: you want the learning facilitator to grade your assessment. Okay, we are more, more.
+
+29
+00:06:15.960 --> 00:06:44.769
+Jessica: We have a better expertise. We followed you. We, you know we looked at your caps and we looked at your progress, and so we know you better than just some person on the grading team. Therefore I highly highly advise you that you try, and if you need extensions, you try and submit everything before April second, because after that we lose access to canvas and to to the course, and we are not able to grade anything. Okay?
+
+30
+00:06:45.905 --> 00:07:14.439
+Jessica: Regarding the certificates. The certificates are going to come out in batches, of course. So people that finish everything on time. Those are going to be the 1st people that we're going to grade, and those are going to be the 1st people that receive the certificate that still takes, you know, 2 or 3 weeks. Okay, so don't don't panic. The 1st batch of certificate will come, probably either this 1st or second week of April.
+
+31
+00:07:14.550 --> 00:07:21.509
+Jessica: and then, of course, as everybody else finishes, they are going to receive the certificate at a later time as well. But
+
+32
+00:07:21.810 --> 00:07:29.299
+Jessica: it goes without saying that the longer you take to finish the course the later you're going to receive the certificate. Okay.
+
+33
+00:07:29.760 --> 00:07:32.620
+Jessica: any questions on the matter.
+
+34
+00:07:37.500 --> 00:07:39.589
+Jessica: Okay, so.
+
+35
+00:07:39.590 --> 00:07:40.609
+shashi: I had a question.
+
+36
+00:07:40.610 --> 00:07:41.000
+Jessica: Yeah.
+
+37
+00:07:41.715 --> 00:07:42.430
+shashi: Shashi
+
+38
+00:07:42.889 --> 00:07:50.359
+shashi: my practical assignment which I had submitted in Jan is still not graded. Should I raise a ticket on that.
+
+39
+00:07:51.230 --> 00:08:06.449
+Jessica: You should. Yes, we do get emails to grade late submissions, and I am caught up with my section. But I cannot speak for other learning facilitators. So please do raise a ticket. For that.
+
+40
+00:08:06.690 --> 00:08:21.220
+Jessica: You know. Worst case, scenario, everything. It's going to be graded by the end of module 24 or a week after, I guess. But if you, if a if a grade is very late, then you should absolutely raise a ticket.
+
+41
+00:08:21.670 --> 00:08:22.370
+shashi: Oh!
+
+42
+00:08:24.040 --> 00:08:24.740
+Jessica: Okay.
+
+43
+00:08:25.230 --> 00:08:40.839
+Jessica: so what is the plan for today? So again, the generative AI module is a new module. This is the 1st time. Actually, that's in the course. So it's you know. It's something new for everybody.
+
+44
+00:08:41.503 --> 00:09:08.149
+Jessica: And but I have prepared some slides and some Jupyter notebooks for you to start playing around with what the generative AI is so generative. AI is something that it it has boomed in the last 3 years. Okay, I think when you know, like Chat Gpt was made public. I think that was a couple of years ago. There was a very, it was a very, very hot topic. It's not a secret that everybody uses. Chat, gpt.
+
+45
+00:09:08.150 --> 00:09:13.851
+Jessica: and you know, like, I think, that particularly from that moment
+
+46
+00:09:14.860 --> 00:09:26.749
+Jessica: generative AI has really become very, very popular. But what is generative? AI. Well, generative AI is simply an umbrella of AI models
+
+47
+00:09:26.750 --> 00:09:46.309
+Jessica: that are that intend to create new content. And this new content can be really anything. It can be text. So chat gpts or Gpts images, music code videos, anything you'd like. Okay? So it's essentially like a
+
+48
+00:09:46.350 --> 00:09:51.642
+Jessica: an umbrella of models and algorithms that are designed for you to generate,
+
+49
+00:09:52.130 --> 00:09:55.110
+Jessica: to generate some type of output. Okay.
+
+50
+00:09:55.470 --> 00:10:22.928
+Jessica: the models and the architectures that are at the fundamentals of generative AI are nothing but neural networks. Okay? So they are obviously more advanced types of neural networks than the one that we've seen in the previous modules. But Chat Gpt or Gpt is actually are nothing but a sorry. I need to let someone in.
+
+51
+00:10:23.710 --> 00:10:30.259
+Jessica: are nothing but like a very complicated neural network that is able to generate text.
+
+52
+00:10:31.868 --> 00:10:37.849
+Jessica: Let me just do this because my pointer doesn't work if I go full screen.
+
+53
+00:10:38.762 --> 00:11:02.629
+Jessica: Okay, so there are, of course, a lot of tools that utilize generative AI out there. Okay. The most popular, as I mentioned is chatgpt. But there are many other tools out there, from Google, from Meta, from Openai, from different industries and different
+
+54
+00:11:02.630 --> 00:11:19.619
+Jessica: organizations that can help you generate some type of AI content. So we have Gpt for text, Dali for images. That is part of the Openai family. We have a copilot for code, and so on. Okay.
+
+55
+00:11:19.650 --> 00:11:45.819
+Jessica: now for today, I am not going to try and go too deep into the architecture of all of these. You know tools, but I rather give you a more practical application that is going to help you. Well, that I'm hoping it's going to help you with your assignments. So what I want to, I want to start by talking with an overview of Openai and its Api.
+
+56
+00:11:45.940 --> 00:12:08.919
+Jessica: So Openai, I'm sure you've heard of it is an AI Research and deployment company that is working on the mission of ensuring that AI is essentially available to to humanity. Okay, it's very easy to use. It's very intuitive to use. Anybody can go on chatgpt.com and start playing with it. Okay,
+
+57
+00:12:09.550 --> 00:12:10.385
+Jessica: the
+
+58
+00:12:12.290 --> 00:12:37.029
+Jessica: side of Openai. That is not so public facing, and that is a little bit more on the developer side, I would say, is its api usage. Okay? So, as many other, you know, like deep learning or machine learning or websites out there Openai offers the possibility of using a Api, which is an application programming interface
+
+59
+00:12:37.230 --> 00:12:42.203
+Jessica: which you can use as a bridge to access.
+
+60
+00:12:43.893 --> 00:12:48.797
+Jessica: the open AI models and data sets. And
+
+61
+00:12:49.590 --> 00:13:16.660
+Jessica: by by using the Apis, you can by using the Openai Api to call the models. Essentially, it becomes very easy for you to integrate your the any open AI model within your code. Okay? It's also very easy. It also becomes very easy to fine tune models when you access them using the Api, and you integrate them with your code.
+
+62
+00:13:17.000 --> 00:13:26.243
+Jessica: So let's do some. Let's take a look at some features of the open. AI Api. So the
+
+63
+00:13:28.330 --> 00:13:51.469
+Jessica: The 1st feature is that the Openai Api allows you to access the very easily, the pre-trained models. Okay, so any model that is present in Openai has been pre-trained already. Chat Gpt has already been pre-trained. Dali has already been been pre-trained, and so on. Which is why they're so fast and can give you can give us an output fairly quickly.
+
+64
+00:13:52.292 --> 00:14:07.850
+Jessica: These. This is definitely a huge time solver. Okay, so instead of spending hours or days or months trying to train a neural network for your use case. Instead, you can just access the open AI
+
+65
+00:14:08.371 --> 00:14:13.070
+Jessica: The Openai models via its Api and integrate that in your code.
+
+66
+00:14:13.687 --> 00:14:25.842
+Jessica: As I mentioned earlier, you can also customize these AI models. So I'm gonna show you a demonstration in just a little bit, but essentially
+
+67
+00:14:26.970 --> 00:14:37.120
+Jessica: you can fine tune and adjust the parameter of your model in your code to sort of like target and better suit your specific use case.
+
+68
+00:14:37.510 --> 00:15:04.200
+Jessica: The Api interface on Openai is also very simple. It's also very well documented and maintained. And so, even if you have very little experience with Api and Openai in general, it's actually very easy to familiarize with it. And finally, one very interesting thing about using the Openai Api is the scalable infrastructure. So as your projects become larger and more complex.
+
+69
+00:15:04.620 --> 00:15:11.390
+Jessica: using the Openai Api offers you an infrastructure
+
+70
+00:15:11.610 --> 00:15:16.449
+Jessica: where you can scale and adjust the models, capabilities based on your needs.
+
+71
+00:15:20.200 --> 00:15:31.309
+Jessica: next slide. Okay? So let's take a look at how we can access the open AI Api, so I'm gonna do this on
+
+72
+00:15:31.480 --> 00:15:38.349
+Jessica: the website, because I think it's easier and better that way. So let me just reshare my screen.
+
+73
+00:15:38.770 --> 00:15:51.519
+Jessica: And all you have to do really is just navigate to the Openai developer platform. Okay, this is sort of like the hidden side that you don't see so much.
+
+74
+00:15:51.700 --> 00:16:19.070
+Jessica: And then, in order to use the Api, you need an Api key attached to your account. Okay, this is essentially a caveat that Openai requires so that it knows who it's using its models. Okay, this is a very common thing. When using Apis, you always need an Api key in order to access the server and to access the models or the data on any website.
+
+75
+00:16:19.240 --> 00:16:29.590
+Jessica: So to create a Api key the easiest way I found, I'm sure that this is not the only way you can click on this setting gear, icon.
+
+76
+00:16:30.540 --> 00:16:34.899
+Jessica: and there is something called Api keys here.
+
+77
+00:16:35.880 --> 00:16:41.249
+Jessica: and you can just click here on, create a new secret key
+
+78
+00:16:41.820 --> 00:16:47.239
+Jessica: and give it a meaningful name. So this would be my 1st key. For example.
+
+79
+00:16:47.490 --> 00:16:56.419
+Jessica: the project would be the default project, and you see here that in just a second. I obtain an Api key now.
+
+80
+00:16:56.816 --> 00:17:25.580
+Jessica: I don't know if you know this, but Api keys are supposed to be a secret. Okay? You're not supposed to share your Api key with anyone. And I don't mind that you guys are seeing some of this right now because because you're not seeing the entire key. Okay? So it's gonna be impossible for you to copy it. But essentially, what you want to do is to copy this Api key. Place it in a secure place on your laptop, or, you know, like anywhere that works for you
+
+81
+00:17:25.710 --> 00:17:36.000
+Jessica: and make sure that you don't lose that. Okay, this this way, you can always reuse the same Api key to you to call the models.
+
+82
+00:17:36.220 --> 00:17:37.200
+Jessica: Okay?
+
+83
+00:17:37.721 --> 00:17:51.518
+Jessica: The other reason why you don't want others to use your Api key is because, the Openai Api, the open AI Api is actually not completely free to use. Okay, so
+
+84
+00:17:51.950 --> 00:18:15.660
+Jessica: when, if you try to create an Api key on open AI. It's not going to be free. Well, you're going to be requested to enter some credit card information. The cost is extremely low. I'm talking cents. Okay on the dollar of the dollar. But I want to make really clear that don't just make a thousand Api call just to play with that. Okay.
+
+85
+00:18:17.620 --> 00:18:27.580
+Jessica: But it's a really cool feature. Okay, there are also other servers that do provide you with free Api keys. Okay, but
+
+86
+00:18:28.290 --> 00:18:42.100
+Jessica: honestly, I don't know how stable they are, and I and there they are less popular in the generative AI world. And so I decided to go with the most stable one, which, of course, requires credit card information. But just bear with me.
+
+87
+00:18:42.410 --> 00:19:09.670
+Jessica: So here I would just copy the Api key and put it somewhere on my computer for later use. Okay? As you can. See here, I have a few Api keys. So I have one for the one that I created yesterday when I was testing things that's never been used, the one I just created now it's never been used. And then yesterday I also created one that I was using. Okay, so this is the key that I've actually
+
+88
+00:19:09.780 --> 00:19:11.630
+Jessica: been using more regularly.
+
+89
+00:19:13.006 --> 00:19:15.140
+Jessica: Let's go back to the
+
+90
+00:19:15.820 --> 00:19:43.320
+Jessica: slide deck. So we've done all this stuff. And now I want to show you how you can use your Api key to call models within some python code. Okay, this is actually quite like what I'm about to show you is somewhat similar to the code you assignment for this module. Okay? So if you have trouble with the assignment, or you don't understand exactly what's going on.
+
+91
+00:19:43.650 --> 00:19:51.640
+Jessica: Come back to this office hour to the recording, because what what we're doing is not exactly the same, but it follows the same structure.
+
+92
+00:19:52.850 --> 00:20:09.080
+Jessica: All right. So here I have a Jupyter notebook. So here I am. 1st of all, I am installing the Openai Library. Okay, this is something that we need to do in order to use it. So this is going to take just a second.
+
+93
+00:20:25.030 --> 00:20:45.880
+Jessica: okay. So next, we import Openai. This is very standard. Okay, it's like a library that we're using. And the 1st thing I need to do is actually identify myself. Okay, so I am identify the client. Okay, who is going to make the Api calls on the open AI server
+
+94
+00:20:46.310 --> 00:21:11.289
+Jessica: as my client, and I am defining myself. I'm identifying myself by using the Api key that I just created. Okay, or that I've created yesterday doesn't matter I am going to tend to erase this before I share the notebook with you. But this is the idea. Okay. So all you have to do to run this notebook again, is to copy an Api key in here on your own of your own.
+
+95
+00:21:14.120 --> 00:21:24.680
+Jessica: Okay. So now, I have essentially communicated that this is the user that will be making the Api calls. And the 1st example of
+
+96
+00:21:25.130 --> 00:21:40.930
+Jessica: of the application I want to show you is an example of prompt engineering. So prompt engineering is actually a smaller field of generative AI that focuses on how to craft prompts
+
+97
+00:21:40.930 --> 00:22:07.900
+Jessica: in order to train Gpt's model. So transformers large language models and all that. Okay? Why, for example, going back to Chat Gpt, why is Chatgpt able to understand? Okay, I don't know if understand is 100% the correct word, but is able to understand what we're asking to it. Well, the answer is that Chat Gpt was not only trained on
+
+98
+00:22:07.970 --> 00:22:28.040
+Jessica: data from the web. Okay? But it was also trained using prompt engineering. Inputs, okay? Or sentences. Okay, that somebody, I guess at some point created in order to train the Gpt to understand what a regular user would use. Okay.
+
+99
+00:22:28.300 --> 00:22:52.490
+Jessica: so it's actually very important when communicating with chat to any Gpt, really, it's actually really important to be as detailed as you want. Okay, remember, you're not talking to a real person, although sometimes it may feel like you are. But it's very important to structure your prompt correctly in order to get a response that is satisfactory to you.
+
+100
+00:22:53.050 --> 00:23:07.729
+Jessica: So here I am going to show you an example of prompt engineering. Okay, so we are essentially just simulating a Gpt version of Chat Gp of like a chat Gpt in our python code.
+
+101
+00:23:08.380 --> 00:23:24.250
+Jessica: So what I'm doing here? I am my client. So the user, okay, the client that is about to make a call is making a request for a chat completion create. So to create that a chat okay, to complete a chat
+
+102
+00:23:24.410 --> 00:23:42.100
+Jessica: with the following request. So the message, which is essentially what I would type inside Chat Gpt, if I was making the same request, was, write a story to inspire greatness, and take the antagonist as a rabbit and the protagonist as a turtle, let the antagonist and protagonist
+
+103
+00:23:42.720 --> 00:23:57.150
+Jessica: compete against each other for a common goal limit the story to 450 characters. Okay, very specific. Next, I also decide, or I also pass what type of model I want to use.
+
+104
+00:23:57.720 --> 00:24:00.740
+Jessica: I extract the content from
+
+105
+00:24:00.910 --> 00:24:19.300
+Jessica: the response. And I use this. I replace any new line character with a space just to format the text a little bit. And this is with the response that I get. Okay, notice that if I were to run this code again.
+
+106
+00:24:19.430 --> 00:24:40.939
+Jessica: Okay, take a quick look at it. But also, if you were to run this code again, the response would be similar, would have probably the same characteristics, but the response would be different. Okay, chat Gpt is never going to give you the exact same answer. Okay, even if you ask the same questions over and over. Why? Because because it's a Gpt, it's not a real person. Okay?
+
+107
+00:24:42.380 --> 00:24:47.279
+Jessica: So yes. And you see, in fact, the response is different. Okay.
+
+108
+00:24:47.770 --> 00:25:14.180
+Jessica: another example that I want to show you on how to use the Api is for image generation. So with the Openai Api, you essentially can access any of the generative AI tools and architectures that live under the Openai family. Okay? So what I'm gonna do here is do something very similar to what I did before.
+
+109
+00:25:14.180 --> 00:25:31.189
+Jessica: But now I am going to use the Dali model that is used to generate images. Okay, so here I am just importing some visualization libraries. They're not your standard visualization libraries. Essentially
+
+110
+00:25:31.260 --> 00:25:43.590
+Jessica: what the generative AI is going to do here is going to generate an image on a different web page. And I'm using this library just to get the URL and to render the image. Okay?
+
+111
+00:25:45.910 --> 00:25:48.530
+Jessica: So let's take a look at how we can
+
+112
+00:25:49.365 --> 00:25:55.809
+Jessica: call? Well, ask Dolly to generate an image of something given a prompt.
+
+113
+00:25:56.030 --> 00:26:17.820
+Jessica: So here I am defining a user function. I have generate image takes a prompt and the now the response, okay, it's going to be equal to my client, which is still what I've defined before. Okay, I'm still me making the request with my Api key.
+
+114
+00:26:18.060 --> 00:26:28.480
+Jessica: But now, because I'm I'm I want to generate image instead of having a chat completion. I have image generate, and then the model is, gonna be Dali 2.
+
+115
+00:26:28.910 --> 00:26:53.189
+Jessica: The prompt is going to be the prompt that if I pass to the function I only want to generate one image in this case of size 512 by 512. And next I fetch the URL. Okay, so this is the function that is going to generate the image. Now, this is the prompt that I have defined so batman heart in red and blue color.
+
+116
+00:26:53.450 --> 00:27:05.579
+Jessica: and next I call the function generate image with my prompt. And I obtain the URL. So let's run this. It's gonna take a few seconds.
+
+117
+00:27:12.200 --> 00:27:29.620
+Jessica: It's obviously a little bit slower, I think, than what Dali or Gpts are. But this is the image that I get. Okay. And again, if I were to run this code again, I would obtain a new URL, and the image would have the same characteristics, but it would not be exactly the same as the one we had
+
+118
+00:27:36.430 --> 00:27:38.319
+Jessica: little bit slow today. Oh, there we go.
+
+119
+00:27:39.370 --> 00:27:42.429
+Jessica: Okay. So you see that these 2 images are
+
+120
+00:27:42.540 --> 00:27:45.140
+Jessica: similar. Okay? But they're not quite the same.
+
+121
+00:27:45.540 --> 00:27:49.790
+Jessica: Okay, the next.
+
+122
+00:27:49.890 --> 00:27:52.369
+Jessica: Going back to the slide deck now.
+
+123
+00:27:53.306 --> 00:28:03.099
+Jessica: the next topic I want to talk about is actually hugging face. So hugging face is another very popular machine learning, deep learning. AI.
+
+124
+00:28:03.100 --> 00:28:03.680
+Chetan Chaganti: Him.
+
+125
+00:28:04.150 --> 00:28:05.859
+Jessica: Yeah, is that our question?
+
+126
+00:28:05.930 --> 00:28:10.800
+Chetan Chaganti: When when we build a a rag bot using Openai.
+
+127
+00:28:10.990 --> 00:28:16.230
+Jessica: I mean giving, say, every day, like, you know, 1,000 pages of reading for free.
+
+128
+00:28:16.871 --> 00:28:30.589
+Chetan Chaganti: Example. Suppose if I build today and I read 1,000 pages tomorrow, I have a thousand 10 pages instead of reading the entire 1,010. How can I do only the new 10 pages the next day? Is there? Is there any way I can do that?
+
+129
+00:28:32.510 --> 00:28:36.199
+Jessica: So you have a book so sorry. Can you repeat the question.
+
+130
+00:28:36.200 --> 00:28:42.639
+Chetan Chaganti: I. I have a document of 1,000 pages today, and it is going to be a 10 pages extra tomorrow.
+
+131
+00:28:43.240 --> 00:28:47.579
+Chetan Chaganti: If I have to include those 10 pages extra to read by the Openai.
+
+132
+00:28:47.580 --> 00:28:48.320
+Jessica: Oh!
+
+133
+00:28:48.320 --> 00:28:49.070
+Chetan Chaganti: Board.
+
+134
+00:28:49.070 --> 00:28:56.910
+Jessica: I I you. There are parameters for which the basically your Api is going to have a memory of the calls you have you made before.
+
+135
+00:28:57.730 --> 00:29:07.560
+Jessica: So there, there is a parameter on. If you look at the documentation on Openai, you can essentially like.
+
+136
+00:29:08.130 --> 00:29:23.259
+Jessica: make multiple calls on the same topic, and it's going to remember what it meant, which is what happens on chat gpt right if you ask her. Oh, remember, yesterday I was talking about this. It's going to remember what you were talking about, and it's the same principle.
+
+137
+00:29:23.930 --> 00:29:26.389
+Chetan Chaganti: Okay, got it. Thank you.
+
+138
+00:29:26.390 --> 00:29:26.840
+Jessica: Yep.
+
+139
+00:29:26.840 --> 00:29:34.939
+zhujunwang: Api have a session id. So as long as you made a call attached to that session, Id. It will be in the same conversation. So they have a background for that.
+
+140
+00:29:34.940 --> 00:29:35.929
+Jessica: Yes, yes.
+
+141
+00:29:36.230 --> 00:29:37.050
+Chetan Chaganti: Okay.
+
+142
+00:29:38.539 --> 00:29:55.489
+Jessica: Okay. So going into a game face, this is also something that you will see in one of the assignments in Module 23. A game face is just to give you a quick introduction of what it is. It's been around for a few years. It's essentially an excellent
+
+143
+00:29:55.490 --> 00:30:13.350
+Jessica: machine learning and data. Science. AI deep learning platform where you know, users have been essentially just storing or putting up various things they've been working on, whether it's a library, whether it's a model, whether it's a data set. It's essentially a giant
+
+144
+00:30:13.350 --> 00:30:15.489
+Jessica: repository for
+
+145
+00:30:16.730 --> 00:30:37.664
+Jessica: for machine learning models, libraries, data sets, applications and so on, okay? Or AI as well. Okay. So I want to give you a little tour of a game face. Well, before we do that, actually, let's talk about the benefits of using a game face. So it's essentially, it's extremely accessible. Okay,
+
+146
+00:30:38.270 --> 00:31:04.959
+Jessica: you don't need to be an AI developer. Okay, in order to use a game face. Yes, the content. Maybe that's there. It's been put up by very, very smart people that have been developing models. But the information on how to use this model and how to incorporate that in your code it's all present. So it's extremely accessible even for beginners.
+
+147
+00:31:04.960 --> 00:31:15.249
+Jessica: very easy to integrate with some of the machine Learning library that we've been using, such as tensorflow pytorch, Sklearn, etc. Pandas, too. Okay.
+
+148
+00:31:15.250 --> 00:31:35.839
+Jessica: It provides an excellent sense of community. Again. Think of a game face I mentioned earlier, Github, but it's essentially a stack overflow in Github for machine learning and AI altogether. So if you want to comment on somebody's model, or you want to provide feedback, or you want to write a post, you can do that. And it's
+
+149
+00:31:35.840 --> 00:31:41.080
+Jessica: they're really, really a great place for community and to create a network.
+
+150
+00:31:41.260 --> 00:32:04.829
+Jessica: And finally, it's also cost effective. So a game face provides a cost effective and scalable solution for businesses. And it's and the reason why that is, it's because while building a model from scratch and training, a model from scratch might be expensive. But there is most likely a model that does what you need on a game face. Okay?
+
+151
+00:32:05.150 --> 00:32:11.910
+Jessica: And so let's take a look at what again, phase looks like. So obviously, you're gonna have to create an account.
+
+152
+00:32:13.310 --> 00:32:19.039
+Jessica: Oh, this is, of course, happens during office hour
+
+153
+00:32:22.810 --> 00:32:24.130
+Jessica: buckets.
+
+154
+00:32:25.510 --> 00:32:34.389
+Jessica: See? If I got it right. Okay, all right. So this is after you sign up for a game face. This is what the main page is going to look like.
+
+155
+00:32:35.177 --> 00:33:04.279
+Jessica: I am going. I'm not going to go too deep into a game face and how to install it and all that. You can actually start using a game face in a very simple way. So what I want you to pay attention here is this menu at the top, so you can click on models. And this is a list of a million or almost 1.5 million models. Just models. Okay, that are available on a game face, which is a crazy number. Okay.
+
+156
+00:33:04.330 --> 00:33:17.340
+Jessica: this is what I meant when I said, Well, there is probably something on a game face that is going to serve your purpose. Okay. So if you need a model that does that. Well, probably somebody already thought of it, and it's probably already on a game face, and you don't have to do it yourself.
+
+157
+00:33:17.840 --> 00:33:27.234
+Jessica: It's also quite easy to filter by models. So, depending on what you want to do. Okay, you can search. So if you want to
+
+158
+00:33:28.070 --> 00:33:35.861
+Jessica: text to image or image to 3D. Or really anything you want. Okay, there is also,
+
+159
+00:33:36.420 --> 00:33:48.300
+Jessica: let me go back here. Depending on your field. So whether you are in computer vision. Nlp, audio, tabular enforcement learning. Okay, there is probably something that works for you.
+
+160
+00:33:49.540 --> 00:34:08.100
+Jessica: even better for data sets. Okay? Well, there is also 300,000 data sets here. There is any type of data sets you may want audio data sets, geospatial images, tabular. So like normal regular data frame text to time series videos. And so on. Okay, there is.
+
+161
+00:34:08.100 --> 00:34:27.130
+Jessica: you know, like, I bet if you you can do probably a research here, I don't think it's as extensive as maybe Kaggle or other sources. Okay. But there are, you know, like data sets that are more targeted for generative AI and for deep learning applications on a game face. For sure.
+
+162
+00:34:27.380 --> 00:34:48.290
+Jessica: the fun part of so. And to use a data set, I'm actually going to show you how to do that. Now, before we go into the Jupiter notebook, let's take a look at the tabular data sets. Okay? So the ones that can be read, read with pandas. So let's take a look at. I don't even know this one
+
+163
+00:34:48.520 --> 00:35:01.929
+Jessica: took a random one. So it tells you everything about the data set. Okay, what what it does and to use the data set. Okay, it also tells you how to do that.
+
+164
+00:35:01.930 --> 00:35:21.450
+Jessica: So if you click on, use this data set and then on pandas. It tells you how you can import it. Okay, you can either do it as a parquet. This is a parquet file which we have not seen in the course. It's just a file format, but you can also find Csv files, as I will show you in the example
+
+165
+00:35:22.310 --> 00:35:48.949
+Jessica: the other thing I want to. I want. I would like for you to spend some time with, and just to get familiar with what generative AI can do is aggin face spaces. So these are essentially models, and that have been, or tools that live on aggin face, but that have been translated to like little apps or games that you can use, and you just to see what generative AI can do.
+
+166
+00:35:48.950 --> 00:35:57.779
+Jessica: So again. There is lots of them. I don't know how many. Okay, exactly. But let's take a look at
+
+167
+00:35:58.090 --> 00:36:05.220
+Jessica: one and see if it works. So let's do the photo doodle.
+
+168
+00:36:12.940 --> 00:36:26.840
+Jessica: Okay? So we have an image of a cat and add a halo and wings for the cat by sask magic effects. So let's see if I can actually change this, and if it works, add a hat
+
+169
+00:36:27.090 --> 00:36:28.730
+Jessica: and a scarf.
+
+170
+00:36:32.000 --> 00:36:40.060
+Jessica: and I'm going to adjust the number of steps here. So it's a little bit faster, and I'm going to click on submit.
+
+171
+00:36:41.640 --> 00:36:52.270
+Jessica: So you see here, the output is being generated. Okay? And let's see how well it works. I actually have no idea if this is gonna work or not, but I hope it does.
+
+172
+00:36:53.358 --> 00:36:58.389
+Jessica: It should right? Cause it's but let's see.
+
+173
+00:37:02.480 --> 00:37:27.059
+Jessica: Okay, so this is our cat with a scarf and a hat. It's very cute, and I'm happy. It worked okay. But you know, for the ones of you that don't have a lot of experience with generative AI and want to explore what generative I can do. I think that hugging face space is really a great place to start. Okay, you can even take inspiration and with practice even see if you can create your own.
+
+174
+00:37:27.550 --> 00:37:42.470
+Jessica: Now, last thing for today, which again, it is related to something to an assignment of Module 23. And I know that because I made the assignments for Module 23 is
+
+175
+00:37:43.170 --> 00:38:08.170
+Jessica: the notebook. So it's 1 in one of the assignments. And probably you haven't gotten there yet, because we are just at the beginning of the module. We essentially, we essentially use a model that is created, that is, on argument phase in order to generate some images. Okay? So you give them picture of actually yourself the assignment ask, or the tried activity. I think
+
+176
+00:38:08.170 --> 00:38:15.170
+Jessica: it is, and we ask you to import a model from a game face, and to.
+
+177
+00:38:15.740 --> 00:38:35.389
+Jessica: and essentially to try and see if you can change the image of yourself based on an input. Okay. So we're not going to do that today. But I want to show you really how easy it is to use a game face within your python code. So here the goal of this example is to
+
+178
+00:38:35.390 --> 00:38:48.359
+Jessica: take a data frame from a game face and then use the Openai Api and the Chat Gpt model in order to extract information from a
+
+179
+00:38:48.360 --> 00:38:49.969
+Jessica: data frame. Okay.
+
+180
+00:38:50.230 --> 00:38:59.706
+Jessica: so here I am importing a game face from sorry, a data set from a game face on my
+
+181
+00:39:00.320 --> 00:39:05.250
+Jessica: in my code. Okay? And you know that because I have this hf, at the front.
+
+182
+00:39:08.980 --> 00:39:11.660
+Jessica: This is gonna take a second, probably to import.
+
+183
+00:39:16.400 --> 00:39:22.700
+Jessica: But let's see, in the meantime, if I can find this data set.
+
+184
+00:39:27.150 --> 00:39:31.650
+Jessica: Yes. So it was this data data set. Okay, so it's
+
+185
+00:39:32.500 --> 00:39:34.910
+Jessica: a sales data set. Very simple.
+
+186
+00:39:36.330 --> 00:39:46.980
+Jessica: And this is the what the data frame looks like now. And now, essentially, we can just work with the traditional data science tool that we know.
+
+187
+00:39:47.000 --> 00:40:08.109
+Jessica: Now, suppose that I am interested in looking at the sales per city. Okay? And I don't want to use the traditional tools that you've learned so far in the course. You don't want to look at Instagrams. You don't want to use matplotly, but instead, you want to use generative AI. Well, a very simple way to do that is to essentially
+
+188
+00:40:08.839 --> 00:40:22.010
+Jessica: well, it's easy, actually, for time reasons. Okay, to group this, this sales by city. Okay? So that you reduce, since this, this is since this is the only information we're interested in.
+
+189
+00:40:23.110 --> 00:40:33.630
+Jessica: And next, I am also converting this grouped data frame to a string.
+
+190
+00:40:34.320 --> 00:40:49.830
+Jessica: I use my Openai key again. It's the same one I used before, and I am using a code that it's very similar to the one that was in the previous notebook to ask my
+
+191
+00:40:49.830 --> 00:41:06.290
+Jessica: Gpt model to analyze the average sales for the top 10 cities. Okay, I know you have other tools to do that. Okay, but it's cool also to do it with generative AI. So I, my request message is to analyze the average sales for a top 10 city in this
+
+192
+00:41:06.460 --> 00:41:11.139
+Jessica: data dictionary using the Gpt 3.5 model.
+
+193
+00:41:11.280 --> 00:41:14.909
+Jessica: And this is the message that I
+
+194
+00:41:14.920 --> 00:41:34.550
+Jessica: get in just a second. Here we go. Okay. So again, it's not a secret that you can go to chat, Gpt, and you know, upload a data frame and ask it to analyze it. That's probably a simpler way. But I wanted to show you, during this office hour how easy it can be to
+
+195
+00:41:34.550 --> 00:41:51.030
+Jessica: play with the Openai Api and really integrate these new models, and that are very exciting, in my opinion, into your code. Okay? And that is all I had for today. Do you guys have any questions or comments.
+
+196
+00:41:53.402 --> 00:41:57.207
+zhujunwang: Just, I have a quick question. So for the
+
+197
+00:41:58.690 --> 00:42:11.770
+zhujunwang: the the sample playbook you just show us. And I just see interact with Openai, but I didn't see. There's a hook up with a hugging face. Maybe I missed somewhere. Would you mind.
+
+198
+00:42:11.770 --> 00:42:14.600
+Jessica: I can go back. So yeah, maybe I missed that part
+
+199
+00:42:14.600 --> 00:42:19.430
+Jessica: I was doing with again. Face was actually very simple. It was just calling the data set, the data set.
+
+200
+00:42:19.430 --> 00:42:21.389
+zhujunwang: Oh, gotcha! I see.
+
+201
+00:42:21.712 --> 00:42:36.870
+Jessica: But in the assignment, or I think it's a tried activity. I don't remember if it's a required assignment or not. We actually are using. You will see there is actually calling like using an engine phase model. But the principle is the same right.
+
+202
+00:42:36.870 --> 00:42:37.220
+zhujunwang: Say.
+
+203
+00:42:37.220 --> 00:42:51.940
+Jessica: Once, you know, once you have a data set or a model on a game face that you want to use, it's actually quite simple to incorporate that in an environment that you're very familiar with. So I do encourage you to to try it out and experiment with that.
+
+204
+00:42:52.310 --> 00:42:53.859
+zhujunwang: Gotcha. Thank you. Appreciate it.
+
+205
+00:42:54.373 --> 00:42:59.959
+Jessica: No worries, any other questions or comments.
+
+206
+00:43:00.650 --> 00:43:06.668
+patrick: I just got this, Patrick. So I have a quick question. So I'm going through. I started the module, but I'm confused. There's
+
+207
+00:43:07.340 --> 00:43:12.710
+patrick: what shows up in the module like course dashboard, and what shows up in terms of.
+
+208
+00:43:12.850 --> 00:43:16.199
+patrick: as you follow the module their assignments they don't seem to match up.
+
+209
+00:43:16.340 --> 00:43:22.210
+patrick: So I'm seeing, like 2 extra assignments, the current applications of Gen. AI,
+
+210
+00:43:22.710 --> 00:43:28.659
+patrick: the generating, a prompt using geni platform. I'm not sure if it goes in the actual module.
+
+211
+00:43:31.400 --> 00:43:32.669
+patrick: Pages. You know what I'm saying.
+
+212
+00:43:32.670 --> 00:43:34.319
+Jessica: Lab activity.
+
+213
+00:43:35.690 --> 00:43:40.579
+Jessica: Okay, the current applications of Gen. Oh, that's a discussion.
+
+214
+00:43:40.840 --> 00:43:45.609
+Jessica: All right, let me check. Let me share my screen. And let's look at this together.
+
+215
+00:43:45.730 --> 00:43:50.299
+Jessica: Yeah, okay, so we have. There is a Cody assignment.
+
+216
+00:43:51.000 --> 00:43:51.460
+patrick: That.
+
+217
+00:43:51.460 --> 00:43:54.830
+Jessica: Is, where is it? Video?
+
+218
+00:43:54.830 --> 00:43:57.060
+patrick: It's the translating text that one's good.
+
+219
+00:43:57.060 --> 00:44:04.220
+Jessica: Yes. So that is very similar to something in this notebook. Okay.
+
+220
+00:44:04.220 --> 00:44:04.750
+patrick: Yeah, yeah.
+
+221
+00:44:04.750 --> 00:44:10.030
+Jessica: Essentially okay. And then there is a
+
+222
+00:44:10.150 --> 00:44:16.099
+Jessica: unless we didn't include it. Oh, this one, there's a self-study. I think it's this one
+
+223
+00:44:17.180 --> 00:44:20.929
+Jessica: running an image generator. Yes. So this
+
+224
+00:44:21.040 --> 00:44:44.819
+Jessica: as it's a self study activity, it's not required for completion. But this Collab essentially guides you through using a transformers model taken from agin face to essentially just transform image of yourself. Or you know somebody that, like a famous person on the Internet, for example, to
+
+225
+00:44:44.820 --> 00:44:52.830
+Jessica: something that you something that is prompt to generated. Okay? So when I was testing the assignment, I think I took a
+
+226
+00:44:52.890 --> 00:45:04.160
+Jessica: I don't remember exactly what I did, but you know it was something with like a singer, and you could see like that. The transformer was generating images that were more and more accurate.
+
+227
+00:45:05.890 --> 00:45:06.530
+Jessica: but they.
+
+228
+00:45:06.530 --> 00:45:15.110
+patrick: No, I can add, that's that's fine. My question is just. There's there appears to be additional required assignments that I don't know how to necessarily reach in a module.
+
+229
+00:45:17.240 --> 00:45:17.920
+patrick: There's a.
+
+230
+00:45:17.920 --> 00:45:19.839
+Jessica: Yeah, so take a look.
+
+231
+00:45:20.110 --> 00:45:20.654
+patrick: Yeah.
+
+232
+00:45:23.850 --> 00:45:25.260
+Jessica: Okay, let's see.
+
+233
+00:45:26.160 --> 00:45:27.770
+patrick: Which is fine. I mean I you know.
+
+234
+00:45:27.830 --> 00:45:36.179
+Jessica: Yeah. And I mean, I did give you some inputs for some of the activities, but not for all of them. So there is.
+
+235
+00:45:36.360 --> 00:45:38.250
+Jessica: Now let's check.
+
+236
+00:45:38.940 --> 00:45:47.529
+patrick: So I see, like a required discussion, 23.2, which is called current application of Gen. AI. I don't see that in my module
+
+237
+00:45:47.690 --> 00:45:50.179
+patrick: as I navigate through the page section. There.
+
+238
+00:45:50.490 --> 00:45:51.729
+Jessica: You don't see this.
+
+239
+00:45:52.390 --> 00:45:55.670
+patrick: I don't see. I don't know how to get to it.
+
+240
+00:45:57.000 --> 00:45:57.880
+patrick: It's weird.
+
+241
+00:45:58.740 --> 00:45:59.575
+Jessica: Okay.
+
+242
+00:46:01.240 --> 00:46:02.149
+patrick: Now, maybe it's.
+
+243
+00:46:02.150 --> 00:46:04.200
+Jessica: Is anybody having this problem like?
+
+244
+00:46:04.200 --> 00:46:06.209
+Jessica: So that real 23, right?
+
+245
+00:46:06.370 --> 00:46:15.430
+patrick: Yeah. Yeah. But it's so. So what I see is a required discussion which is evaluate and textualization which is based on the coding assignments that one's fine, but I don't see the
+
+246
+00:46:16.340 --> 00:46:18.260
+patrick: current application. Gen. AI.
+
+247
+00:46:19.740 --> 00:46:23.380
+Jessica: Maybe. Is it okay? Maybe it has yet to be released.
+
+248
+00:46:24.607 --> 00:46:28.359
+Pooja: I also don't see that the that part of.
+
+249
+00:46:28.360 --> 00:46:30.339
+patrick: Oh, it's in the it's in the wrap up. Never mind.
+
+250
+00:46:30.340 --> 00:46:33.459
+Jessica: It's in the wrap up. So maybe you have to expand the section.
+
+251
+00:46:34.310 --> 00:46:37.710
+patrick: And I really don't see stuff in the wrap up. Okay, cool. I'm good. Thank you.
+
+252
+00:46:38.480 --> 00:46:48.139
+Jessica: Okay, well, if you guys have any issues, seeing the content, you know, reach out to program support but it seems like it's there, right.
+
+253
+00:46:49.690 --> 00:46:52.770
+patrick: Yeah. It's in the wrap up. Sorry?
+
+254
+00:46:52.770 --> 00:46:53.340
+Jessica: No no worries.
+
+255
+00:46:54.005 --> 00:46:55.335
+patrick: Quick! Section!
+
+256
+00:46:56.000 --> 00:46:56.706
+Jessica: It's okay.
+
+257
+00:46:57.660 --> 00:47:00.519
+Jessica: Okay. Any other comment or question.
+
+258
+00:47:02.163 --> 00:47:04.990
+shashi: Yeah, it's been a great session, Jessica. So.
+
+259
+00:47:04.990 --> 00:47:28.539
+Jessica: Thank you very much, and you know what. I will give you guys a few seconds to think about questions. But you know this is my last office hour with you. It's been a great run. I hope you all enjoy the course, and you know, for anything you can reach out even after the course is done, you can add me on Linkedin for the ones in my section that I know better.
+
+260
+00:47:28.540 --> 00:47:38.440
+Jessica: Map you also to write recommendation letters. If you ever need, you know, applying for jobs, or you need some input for resumes. Or, you know, Linkedin, anything like that. But
+
+261
+00:47:38.440 --> 00:47:56.710
+Jessica: on behalf of myself and emeritus. I want to thank everybody for joining the course. You still have 2 almost 2 more modules to go, but you won't be seeing me anymore. So I want to, you know. Thank you. And saying, You know, it's been a real pleasure being your learning facilitator for this run.
+
+262
+00:47:57.040 --> 00:47:58.330
+shashi: Thank you. Thank you.
+
+263
+00:48:00.765 --> 00:48:01.920
+shashi: Request.
+
+264
+00:48:01.920 --> 00:48:02.800
+Jessica: Thank you so much.
+
+265
+00:48:02.800 --> 00:48:06.830
+shashi: I never well, so many of your sessions. It has been great.
+
+266
+00:48:07.040 --> 00:48:09.170
+Jessica: Thank you. Thank you very much. I appreciate that.
+
+267
+00:48:09.170 --> 00:48:11.530
+Raghavan Srinivasan: Thank you. Jessica, this is really great. Yeah.
+
+268
+00:48:11.800 --> 00:48:13.315
+Jessica: Thank you. Guys.
+
+269
+00:48:14.100 --> 00:48:26.229
+Jessica: yes, Matt is asking in the chat. This is the last week of content. Correct module 24 is an empty module where you just have to focus on your capsule.
+
+270
+00:48:27.650 --> 00:48:33.300
+Raghavan Srinivasan: So, Jessica? I have one last question. So we submitted the eda part.
+
+271
+00:48:33.450 --> 00:48:37.339
+Raghavan Srinivasan: which is the capstone project part one right.
+
+272
+00:48:37.940 --> 00:48:44.249
+Raghavan Srinivasan: Now for the final submission. We need to add on to the same thing with the models.
+
+273
+00:48:44.250 --> 00:48:48.300
+Jessica: Yes, it's the same data. Set, the same project. You just.
+
+274
+00:48:48.300 --> 00:48:58.960
+Raghavan Srinivasan: Project. Yeah, build onto it and then put it on the final model and the final, the project template report template that we have to use to report the findings
+
+275
+00:48:59.290 --> 00:49:03.420
+Raghavan Srinivasan: and put it into the part of github right.
+
+276
+00:49:03.420 --> 00:49:19.930
+Jessica: Yes, you can either create a new repository on, or work on the one of Module 20, I would suggest you create a new one. In case the module 20 submission has not been graded yet, so just create a separate like, make a copy of it, and call it module 24,
+
+277
+00:49:20.190 --> 00:49:27.070
+Jessica: and then you know, so that we we have both submissions available for grading.
+
+278
+00:49:27.650 --> 00:49:30.609
+Raghavan Srinivasan: Okay, so yeah, go ahead. Yeah.
+
+279
+00:49:31.290 --> 00:49:53.269
+Pooja: Yeah. So, Jessica. Sorry I I like, I am still working on the the 20. I think capstone pro 1st part which is from module 20. So is it like? I can, I can complete the both 20th and 20 on the actual assignment together, and submit. Or do I need to do the submission separately.
+
+280
+00:49:53.630 --> 00:50:01.770
+Jessica: They have to be separate because they are because we. They are weighted differently, and they both impact.
+
+281
+00:50:01.770 --> 00:50:02.180
+Pooja: Okay.
+
+282
+00:50:02.560 --> 00:50:03.340
+Jessica: Yeah.
+
+283
+00:50:03.860 --> 00:50:17.979
+Pooja: Okay? So I can. So the thing is so. So then, in that case, I have to 1st complete the the requirement of module one I mean to add module 20, and then I have to. I have to proceed it with the next part.
+
+284
+00:50:18.280 --> 00:50:18.900
+Jessica: Correct.
+
+285
+00:50:19.680 --> 00:50:20.350
+Pooja: Okay.
+
+286
+00:50:20.550 --> 00:50:36.619
+Jessica: Okay? And yes, for any questions you know, contact, your learning facilitator. We are here to help you as always. So if you have any questions or comments about the capstone especially, I know towards the end it gets a little crazy. Don't hesitate to reach out
+
+287
+00:50:37.620 --> 00:50:52.049
+Jessica: alright, guys. I'm going to give you 10 min back of your time. Thank you very much for coming. I will be sharing the material and the recording, and yes, good luck with your future endeavors and finishing the course. It's been a pleasure and goodbye. Everybody.
+
+288
+00:50:52.543 --> 00:50:52.889
+Namrata: Thank you.
+
+289
+00:50:53.530 --> 00:50:53.890
+Jessica: Bye, bye.
+
+290
+00:50:53.890 --> 00:50:54.400
+Pooja: Thank you.
+

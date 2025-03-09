@@ -1,0 +1,1942 @@
+WEBVTT
+
+1
+00:00:03.742 --> 00:00:04.987
+Francesca: Hi, shashi!
+
+2
+00:00:06.290 --> 00:00:09.950
+Francesca: Hope you're doing well today?
+
+3
+00:00:14.295 --> 00:00:20.430
+Francesca: Just so you know, I've I've started the recording, but I also well.
+
+4
+00:00:20.730 --> 00:00:27.129
+Francesca: not be able to go on video today, because for some reason the Wi-fi is not
+
+5
+00:00:29.210 --> 00:00:34.189
+Francesca: working quite as it typically is, and would rather
+
+6
+00:00:35.047 --> 00:00:39.040
+Francesca: make sure that I can share the
+
+7
+00:00:41.090 --> 00:00:42.570
+Francesca: Share the screen
+
+8
+00:00:43.685 --> 00:00:50.629
+Francesca: instead of having the the call drop. And I see a few more people are coming in so
+
+9
+00:00:51.290 --> 00:00:51.840
+Francesca: letting, you know.
+
+10
+00:00:51.840 --> 00:00:54.239
+shashi: Good morning, Francesca, yeah, I'm feeling better.
+
+11
+00:00:54.630 --> 00:00:56.970
+Francesca: Great, great! I'm glad.
+
+12
+00:00:57.593 --> 00:01:01.806
+shashi: Have another doctor visit, so at 11 o'clock I have to.
+
+13
+00:01:02.190 --> 00:01:07.659
+Francesca: Yeah, okay, yeah. No worries, no worries. And Hello, everyone. I hope you're
+
+14
+00:01:09.110 --> 00:01:17.420
+Francesca: hope everyone is doing all right. We're getting to the you know, to that part of the
+
+15
+00:01:18.090 --> 00:01:22.989
+Francesca: the course where it's I know, quite relevant for many
+
+16
+00:01:23.820 --> 00:01:27.460
+Francesca: of the people who regularly attend
+
+17
+00:01:28.396 --> 00:01:30.903
+Francesca: this session relevant the
+
+18
+00:01:31.670 --> 00:01:50.066
+Francesca: the content. So that is something that we well, I did allocate some time to discuss for those of you arriving a little later. As well. I mentioned that I will not be able to go on video today, because my Wi-fi is strangely not
+
+19
+00:01:50.700 --> 00:01:57.299
+Francesca: working as it normally does, and I would rather make sure that we get the.
+
+20
+00:01:58.250 --> 00:02:02.990
+Francesca: We get all of the content on the screen share working
+
+21
+00:02:04.660 --> 00:02:15.385
+Francesca: and not have the call drop for for for me! So I'll get started.
+
+22
+00:02:16.060 --> 00:02:21.009
+Francesca: as people trickle in, and hopefully
+
+23
+00:02:21.390 --> 00:02:32.129
+Francesca: you will, you know, enjoy the content. And like I said, I know this is quite relevant for some of your projects. So that's kind of where I'm
+
+24
+00:02:32.280 --> 00:02:39.959
+Francesca: going to start. I'm going to start by asking very generally as you are thinking about
+
+25
+00:02:40.120 --> 00:02:49.559
+Francesca: your projects, and those are going to be wrapped up in, you know, a couple of weeks. Has anyone started or even successfully
+
+26
+00:02:49.730 --> 00:02:54.450
+Francesca: included, you know, a neural network model in their project.
+
+27
+00:02:54.770 --> 00:02:57.900
+Francesca: So for any of your projects, and
+
+28
+00:02:58.200 --> 00:03:04.059
+Francesca: perhaps you had been planning to use neural networks. Was anyone successful in.
+
+29
+00:03:05.351 --> 00:03:09.850
+Francesca: you know, creating a neural network for for their project and want to share.
+
+30
+00:03:11.236 --> 00:03:28.633
+shashi: Yeah, I have included the neural network. I just use the base baseline model, not use the fine tuning and image augmentation and any additional techniques to improve the performance or used any other models like
+
+31
+00:03:29.380 --> 00:03:44.743
+shashi: mobile mobile net. We do, or resnet or anything. So I just done the basic baseline model for the capstone project. I need to improve on the performance because it's overfitting and validation
+
+32
+00:03:45.360 --> 00:03:45.900
+Francesca: Awesome.
+
+33
+00:03:45.900 --> 00:03:52.430
+shashi: Hi. So I stopped there because of module other modules have taken the priority.
+
+34
+00:03:52.430 --> 00:04:09.370
+Francesca: Sure. Sure I see do you want to explain? Generally, what your project is about for those who don't know what your project is about. And can you tell us what your input
+
+35
+00:04:10.045 --> 00:04:15.399
+Francesca: what your input, was, what your design for your neural network was, and what your output was.
+
+36
+00:04:15.800 --> 00:04:17.419
+shashi: Yeah, just a second.
+
+37
+00:04:17.420 --> 00:04:18.339
+Francesca: Sure.
+
+38
+00:04:19.000 --> 00:04:27.819
+shashi: Basically, the project is about detecting diseases in field crops, vegetables and fruits.
+
+39
+00:04:28.425 --> 00:04:32.620
+shashi: This is using image classification.
+
+40
+00:04:33.351 --> 00:04:35.398
+shashi: I'm using data from
+
+41
+00:04:36.723 --> 00:04:41.490
+shashi: Tanzania. It is from Nelson Mandela University of Technical Education there.
+
+42
+00:04:41.800 --> 00:04:46.979
+shashi: So I'm using the deceased and healthy plants of banana and
+
+43
+00:04:47.450 --> 00:04:47.990
+Francesca: Oh!
+
+44
+00:04:47.990 --> 00:04:50.400
+shashi: Maze for classifying.
+
+45
+00:04:51.930 --> 00:04:54.999
+Francesca: Cool, and tell us about your model that you.
+
+46
+00:04:55.000 --> 00:04:59.760
+shashi: Yeah, exactly. I'm just. I'm starting my Gpu.
+
+47
+00:05:02.110 --> 00:05:05.990
+Francesca: Yeah, no, I think. You know, I think
+
+48
+00:05:06.120 --> 00:05:31.450
+Francesca: these are good opportunities for people who attend office hours to not only share what you're doing and for everyone attending to learn about what everyone else is doing. But it's also an opportunity. If you have a question, and or if you hear that you're doing a similar project on image classification. Maybe what your peers are sharing will be helpful
+
+49
+00:05:31.560 --> 00:05:34.339
+Francesca: to you for your own project.
+
+50
+00:05:34.480 --> 00:05:38.340
+Francesca: Is there anyone else so far, who has
+
+51
+00:05:38.480 --> 00:05:43.420
+Francesca: used a neural network for the project, or intends to use
+
+52
+00:05:43.600 --> 00:06:10.039
+Francesca: a neural network? I saw Matt, you put in the chat. You haven't gotten that far yet, but I assume that you have some intentions of using neural networks. So that's really exciting. Anyone else. Think that far ahead for their project. Yes. Great Cnn. For images. I think this this week for any of you doing image classification this week was definitely definitely for you.
+
+53
+00:06:11.770 --> 00:06:13.545
+shashi: Yeah, this week has been
+
+54
+00:06:14.140 --> 00:06:18.252
+shashi: but I mean both the module 21 and
+
+55
+00:06:20.880 --> 00:06:22.945
+shashi: module 22 have been quite
+
+56
+00:06:24.110 --> 00:06:28.870
+shashi: entertaining as well as engaging. Also, I mean lot of learning happening there.
+
+57
+00:06:28.870 --> 00:06:29.310
+Francesca: Right.
+
+58
+00:06:29.310 --> 00:06:30.615
+shashi: Even the videos
+
+59
+00:06:32.051 --> 00:06:39.670
+shashi: pretty interesting. And we had to do additional research on this one. So it was kind of good.
+
+60
+00:06:40.170 --> 00:06:45.289
+shashi: So, yeah, that is the we just.
+
+61
+00:06:46.380 --> 00:06:48.789
+Francesca: Great. Yes, I I think.
+
+62
+00:06:49.573 --> 00:06:56.949
+Francesca: It's a nice progression, you know. The course is designed on purpose to be a progression from
+
+63
+00:06:57.240 --> 00:07:17.069
+Francesca: the sort of traditional machine learning algorithms for classification like your logistic regression and your, you know, maybe you're using Svm for your initial report and ideally progressing to using a neural network for your
+
+64
+00:07:17.090 --> 00:07:32.349
+Francesca: problem. So if you, if anything comes to mind about your project, and you want to share some ideas with your peers feel free to put it in the chat or raise your hand, but I will
+
+65
+00:07:33.090 --> 00:07:40.119
+Francesca: keep moving on then. So I am before getting into the the new
+
+66
+00:07:40.790 --> 00:07:59.479
+Francesca: concepts from this week I will just do a brief recap of some of the things that I didn't quite get to at the end of last week for my office hours about neural networks. So this visualization should not look
+
+67
+00:07:59.670 --> 00:08:03.376
+Francesca: too unfamiliar to you anymore. Where you have
+
+68
+00:08:04.220 --> 00:08:19.309
+Francesca: your input layer, your hidden layers and your output layer, and you can see that I noted down. This is already visually complex trying to capture this.
+
+69
+00:08:20.120 --> 00:08:36.550
+Francesca: This neural network structure visually is already complex, and hopefully that, you know, drives home the fact that neural networks are used for complex problems and are themselves complex structures.
+
+70
+00:08:36.710 --> 00:08:43.879
+Francesca: and that the term deep learning, which you probably hear to you know as
+
+71
+00:08:43.980 --> 00:08:48.270
+Francesca: as conflated with artificial modern, artificial intelligence.
+
+72
+00:08:48.380 --> 00:09:06.240
+Francesca: deep learning. The depth really comes from the idea of using more layers. And so if you are using multiple hidden layers, you are essentially, you know, conducting this this deep learning, this term that is used very much
+
+73
+00:09:06.350 --> 00:09:16.900
+Francesca: in, you know similarly, or in place of modern AI. You know in in articles that you probably read, or in summaries of research, or
+
+74
+00:09:17.070 --> 00:09:27.069
+Francesca: in summaries of startups or companies, etc. So the deep learning really means more layers and more layers tends to mean more complexity.
+
+75
+00:09:27.600 --> 00:09:46.870
+Francesca: just as a sanity check. How many, how many hidden layers am I working with in this structure that I have visually represented just as a sanity check to make sure we're still, we still remember the the basics of the neural network structure, how many hidden layers.
+
+76
+00:09:49.130 --> 00:09:50.269
+zhujunwang: You mean this graph.
+
+77
+00:09:50.570 --> 00:09:51.430
+Francesca: Yes, yes.
+
+78
+00:09:51.430 --> 00:09:52.060
+zhujunwang: 2.
+
+79
+00:09:52.060 --> 00:09:57.500
+Francesca: 2 great yes, and I saw a bunch of twos in the chat as well so perfect.
+
+80
+00:10:01.610 --> 00:10:08.420
+Francesca: As you can see. There is an output layer, and I've represented this with just one node. But
+
+81
+00:10:09.170 --> 00:10:21.729
+Francesca: neural networks inherently support multi-class classification. In this case I have denoted 2 classes, but you would imagine if you were
+
+82
+00:10:22.010 --> 00:10:23.650
+Francesca: looking at
+
+83
+00:10:24.780 --> 00:10:45.490
+Francesca: something with 3 classes. Maybe you are predicting soccer matches for the season, and there are 3 classes win, lose, or draw. You would have an extra, you know, an extra node over here in the output for the class of like one.
+
+84
+00:10:45.650 --> 00:10:49.240
+Francesca: 2, 3, and then, if you had something
+
+85
+00:10:49.360 --> 00:11:13.569
+Francesca: with 4 classes. Maybe you're looking at types of fish, and maybe your data set has 4 types of fish. So you would then also represent the number of classes in this output layer. So it's very useful and not really that surprising right. Given the fact that
+
+86
+00:11:13.900 --> 00:11:30.479
+Francesca: neural networks can tackle really complex problems. It is not surprising that neural networks support multi-class classification, because, as we know from the real world and use cases for neural networks.
+
+87
+00:11:31.100 --> 00:11:38.220
+Francesca: frequently, there will be some kind of multi-class classification, like the examples I just just illustrated.
+
+88
+00:11:39.920 --> 00:11:43.169
+Francesca: The last thing I wanted to get to as a recap
+
+89
+00:11:43.668 --> 00:11:51.230
+Francesca: that I was not able to get to last time. Was. The idea of loss and loss is
+
+90
+00:11:51.360 --> 00:12:04.310
+Francesca: an extremely important concept in neural networks, because this is how we are able to effectively assess how
+
+91
+00:12:04.650 --> 00:12:07.680
+Francesca: our neural network has been trained.
+
+92
+00:12:08.020 --> 00:12:16.440
+Francesca: and I like to start by saying, loss is akin to error.
+
+93
+00:12:16.790 --> 00:12:24.950
+Francesca: And the reason I start with. That is because when we are training, let's say a logistic regression.
+
+94
+00:12:25.380 --> 00:12:29.080
+Francesca: and our metric is accuracy.
+
+95
+00:12:29.530 --> 00:12:32.640
+Francesca: If I have model one with
+
+96
+00:12:33.370 --> 00:12:37.999
+Francesca: 0 point 7 8 and then model 2 was 0 point 9 3,
+
+97
+00:12:38.620 --> 00:12:44.020
+Francesca: based on just our metric. Which model is the better model model, one or 2.
+
+98
+00:12:50.680 --> 00:12:54.740
+Francesca: So I'm looking over here for now.
+
+99
+00:12:55.320 --> 00:13:02.889
+Francesca: So if I'm training a model, a logistic regression model, my metric is accuracy, and these are my 2
+
+100
+00:13:03.580 --> 00:13:04.630
+Francesca: results.
+
+101
+00:13:05.040 --> 00:13:09.779
+Francesca: Which model is better model one or 2. Let's see, in the chat. I see some answers.
+
+102
+00:13:10.040 --> 00:13:10.360
+Raghavan Srinivasan: Hello!
+
+103
+00:13:10.360 --> 00:13:27.909
+Francesca: 2 great, so sounds unanimously. M. 2 is better, and M. 2 is better by this metric, because the score is higher, right 0 point 9 3 is higher than 0 point 7 8.
+
+104
+00:13:29.010 --> 00:13:34.190
+Francesca: But what if I am training my neural network?
+
+105
+00:13:34.840 --> 00:13:44.050
+Francesca: My metric is loss, and I take the same scores 7, 8 and
+
+106
+00:13:44.920 --> 00:13:48.640
+Francesca: 0 point 9 3. So in this case.
+
+107
+00:13:48.810 --> 00:13:58.230
+Francesca: I'm looking here at my neural network models one and 2, which model is better.
+
+108
+00:13:58.230 --> 00:13:59.079
+Raghavan Srinivasan: Yeah. Morning.
+
+109
+00:13:59.540 --> 00:14:11.900
+Francesca: Okay, a bunch of people. Yep, m. 1. i heard m. 1 said out loud, m. 1 in the chat, m. 1. So totally correct, and it's because 0 point 7 8 is lower.
+
+110
+00:14:12.090 --> 00:14:13.720
+Francesca: And so I like to
+
+111
+00:14:13.930 --> 00:14:21.450
+Francesca: start by saying, loss is akin to error, because the higher number, particularly with accuracy
+
+112
+00:14:21.680 --> 00:14:32.029
+Francesca: is intuitively, you know, it's really intuitive to understand that the higher number is the better better model. For when we are training things like
+
+113
+00:14:32.200 --> 00:14:33.690
+Francesca: logistic regression.
+
+114
+00:14:33.970 --> 00:14:41.920
+Francesca: It is less intuitive for training neural networks that the lower number is
+
+115
+00:14:42.400 --> 00:14:46.670
+Francesca: what you are, you know, trying to achieve.
+
+116
+00:14:47.310 --> 00:14:53.389
+Francesca: And the way that I personally remember lower is better other than just telling myself lower is better.
+
+117
+00:14:54.160 --> 00:14:57.239
+Francesca: is by thinking of loss as akin to error.
+
+118
+00:14:57.650 --> 00:15:22.550
+Francesca: When we, when we want to look at error. We want to have as low an error as possible. Ideally, we would want no error right? And so, as I keep minimizing loss if my error is, so quote, unquote error is 0 point 5, and then 0 point 4, and then 0 point 2 5, then 0 point 1, then 0 point 0. 1.
+
+119
+00:15:24.880 --> 00:15:35.000
+Francesca: Thinking of it as akin to error is an an easy and and more intuitive way to know that your model is is doing a good job.
+
+120
+00:15:35.620 --> 00:15:42.599
+Francesca: So I have a, you know, very, very simple example here.
+
+121
+00:15:42.930 --> 00:15:52.250
+Francesca: just as a sanity check. Again, I have networks 1, 2, 3, predicting 2 classes, cat, dog.
+
+122
+00:15:52.500 --> 00:15:57.059
+Francesca: And this was my input.
+
+123
+00:15:59.770 --> 00:16:10.923
+Francesca: So between networks, one to 3, what is
+
+124
+00:16:12.420 --> 00:16:17.549
+Francesca: What is the what is the network that I that I probably
+
+125
+00:16:19.361 --> 00:16:23.470
+Francesca: would like to say is high loss.
+
+126
+00:16:26.670 --> 00:16:43.210
+Francesca: So one. So if I'm if I'm trying to categorize these things as either Hi, medium low loss.
+
+127
+00:16:46.130 --> 00:16:48.360
+Francesca: which ones would you say?
+
+128
+00:16:48.660 --> 00:16:50.549
+Francesca: Which one would you say is high.
+
+129
+00:16:51.100 --> 00:16:53.709
+Francesca: which one would you say is medium.
+
+130
+00:16:53.960 --> 00:16:56.380
+Francesca: and which one would you say is low?
+
+131
+00:17:00.100 --> 00:17:10.920
+Francesca: All right. I see some answers in the chat. Okay, let's see, 2 is high loss for cat.
+
+132
+00:17:12.760 --> 00:17:24.680
+Francesca: So we have N 2 high than n, 1 medium than N, 3 low.
+
+133
+00:17:25.609 --> 00:17:28.510
+Francesca: Okay, we see a lot of N 3 low.
+
+134
+00:17:30.600 --> 00:17:39.009
+Francesca: Does anyone who has put an answer in the chat want to explain how they're getting there?
+
+135
+00:17:43.880 --> 00:17:47.630
+shashi: The loss value is high in network 2 for cat.
+
+136
+00:17:49.720 --> 00:17:53.349
+Francesca: And where are you getting the loss value.
+
+137
+00:17:55.927 --> 00:18:00.840
+shashi: In the node you have mentioned point 8 5 and point 1 5 right.
+
+138
+00:18:01.090 --> 00:18:05.410
+Francesca: So this is where you're getting. This is your loss value? Yeah.
+
+139
+00:18:05.540 --> 00:18:07.452
+Francesca: Anyone else. Wanna
+
+140
+00:18:08.530 --> 00:18:18.119
+Francesca: try chime in on what they think. I saw. You know I saw a couple of people had this answer, that N. 2 was high and and one was
+
+141
+00:18:19.710 --> 00:18:21.360
+Francesca: anyone else want to chime in.
+
+142
+00:18:24.340 --> 00:18:33.990
+Francesca: So let's take a step back. Right? So if we go back let's see if
+
+143
+00:18:34.500 --> 00:18:43.420
+Francesca: if we go back to this, this is essentially what we're doing, because we have 2 classes right there.
+
+144
+00:18:46.450 --> 00:18:48.260
+Francesca: When there's a number here.
+
+145
+00:18:49.290 --> 00:18:54.639
+Francesca: Is that number. What does that number represent? Does that number represent loss?
+
+146
+00:19:00.830 --> 00:19:03.710
+Francesca: Is the output of a neural network loss.
+
+147
+00:19:04.760 --> 00:19:05.860
+Francesca: Okay?
+
+148
+00:19:06.090 --> 00:19:09.519
+Francesca: So I see some question and some answers in the chat.
+
+149
+00:19:10.507 --> 00:19:23.949
+Francesca: I see. Okay, that may have been may have been on me then. But thank you for clarifying in the chat. So it seems that there is a general understanding that
+
+150
+00:19:25.030 --> 00:19:30.030
+Francesca: this number is not the loss number, and I acknowledge that
+
+151
+00:19:30.140 --> 00:19:32.980
+Francesca: I may have made it confusing
+
+152
+00:19:33.350 --> 00:19:38.931
+Francesca: with too many things on the screen. So that was on me. But yes,
+
+153
+00:19:39.560 --> 00:19:48.200
+Francesca: These are the probability numbers for this input. And so if I
+
+154
+00:19:49.670 --> 00:19:55.120
+Francesca: do this table again and have n, 1 n. 2 n. 3,
+
+155
+00:19:55.270 --> 00:19:58.760
+Francesca: and have high medium or low loss.
+
+156
+00:19:59.130 --> 00:20:00.380
+Francesca: Let's see.
+
+157
+00:20:01.110 --> 00:20:15.680
+Francesca: I think people have. Yes, exactly. So. Let's let's redo it and say, these are the probabilities. These are the outputs of your neural network for this specific input of
+
+158
+00:20:16.040 --> 00:20:26.980
+Francesca: this image. What do we think is the high medium or low loss network.
+
+159
+00:20:46.100 --> 00:20:46.990
+Francesca: So?
+
+160
+00:20:47.570 --> 00:20:55.140
+Francesca: Or I'll give, yeah, I'll give everyone a second, as you are typing in the chat. Okay, so
+
+161
+00:20:55.900 --> 00:21:00.550
+Francesca: and 2 low for cat. Okay.
+
+162
+00:21:01.500 --> 00:21:08.249
+Francesca: I see low for N. 2 N. 3 Hi lost her cat.
+
+163
+00:21:09.380 --> 00:21:17.540
+Francesca: and so that would make n 1 medium alright. So let's talk it through.
+
+164
+00:21:21.570 --> 00:21:23.219
+Francesca: Let's start with high.
+
+165
+00:21:23.390 --> 00:21:25.979
+Francesca: Now we know high is high error.
+
+166
+00:21:26.440 --> 00:21:30.260
+Francesca: and there is no higher error than getting it wrong.
+
+167
+00:21:32.390 --> 00:21:35.430
+Francesca: Which network gets it completely wrong.
+
+168
+00:21:39.790 --> 00:21:40.569
+zhujunwang: And 3.
+
+169
+00:21:40.570 --> 00:21:46.400
+Francesca: N. 3. Exactly because N. 3 says this image is a dog that's wrong.
+
+170
+00:21:47.060 --> 00:21:58.469
+Francesca: and so off the bat. We know that is high. The highest among the 3, because it is the one with the most error in that it definitely gets it wrong.
+
+171
+00:21:58.860 --> 00:22:04.629
+Francesca: So now we're stuck with n. 1 and N. 2, and we can see that n. 1 and N. 2 get
+
+172
+00:22:04.900 --> 00:22:06.820
+Francesca: it correct, which is great.
+
+173
+00:22:07.330 --> 00:22:12.760
+Francesca: But it seems there's a general consensus among everyone here that N. 2 has
+
+174
+00:22:12.960 --> 00:22:16.049
+Francesca: low loss and and one medium.
+
+175
+00:22:16.890 --> 00:22:26.849
+Francesca: How how come and 2 would be low and one medium if they both get it
+
+176
+00:22:27.100 --> 00:22:28.900
+Francesca: correct, which is great.
+
+177
+00:22:31.760 --> 00:22:34.870
+Francesca: Well, what? What other things are we looking at?
+
+178
+00:22:36.420 --> 00:22:38.550
+Francesca: Yeah, the probability. So
+
+179
+00:22:39.510 --> 00:22:48.259
+Francesca: if we think of probability as the confidence that the network has that it is this output.
+
+180
+00:22:48.410 --> 00:22:56.460
+Francesca: You can see here that this network is highly confident that it is this output
+
+181
+00:22:57.010 --> 00:22:59.820
+Francesca: as opposed to this network that is
+
+182
+00:23:00.010 --> 00:23:09.010
+Francesca: slightly more confident than the other class that it is a cat, and so we will assign the lowest loss
+
+183
+00:23:09.470 --> 00:23:17.969
+Francesca: to the network that has the highest confidence for the correct answer, and then the medium loss for this one in the middle.
+
+184
+00:23:18.100 --> 00:23:23.263
+Francesca: Great. It sounds like everyone was in agreement there. And
+
+185
+00:23:24.060 --> 00:23:27.880
+Francesca: I am similarly in agreement and
+
+186
+00:23:29.100 --> 00:23:35.330
+Francesca: think of loss as sounds like everyone has really understood the the concept of loss.
+
+187
+00:23:38.470 --> 00:23:47.889
+Francesca: So just to summarize generally, when do we want to use neural networks when we are
+
+188
+00:23:48.250 --> 00:23:50.880
+Francesca: dealing with highly complex data.
+
+189
+00:23:51.250 --> 00:24:04.749
+Francesca: And when we are dealing with high dimensional data and typically high dimensional data corresponds to complexity as well. So these are not mutually exclusive.
+
+190
+00:24:06.450 --> 00:24:11.335
+Francesca: I did also want to briefly show everyone this
+
+191
+00:24:12.140 --> 00:24:16.153
+Francesca: Collab exercise that I had prepared for the last
+
+192
+00:24:16.780 --> 00:24:28.229
+Francesca: office hours. I'm not going to go through the entire example. This diabetes data set I sourced from Kaggle. So it should be easy for you to find.
+
+193
+00:24:28.500 --> 00:24:31.142
+Francesca: But I did want to point out
+
+194
+00:24:32.260 --> 00:24:39.489
+Francesca: for your projects. It may be useful for you if you wanted to create some quick.
+
+195
+00:24:39.860 --> 00:24:42.351
+Francesca: some very quick baseline without
+
+196
+00:24:43.080 --> 00:24:49.600
+Francesca: tinkering around as much with tensorflow as has been
+
+197
+00:24:50.900 --> 00:25:07.200
+Francesca: as has been illustrated in the lectures where you are, you know, creating these these dense layers, and you are able to you know, toy around with various activation functions, etc. I did want to point out this
+
+198
+00:25:07.580 --> 00:25:10.840
+Francesca: Mlp classifier.
+
+199
+00:25:11.010 --> 00:25:12.420
+Francesca: And so this
+
+200
+00:25:13.070 --> 00:25:22.530
+Francesca: entire syntax should look very familiar to you, because it is the same syntax that we had been using for various classifiers.
+
+201
+00:25:24.160 --> 00:25:30.710
+Francesca: In the traditional machine learning section. And so the documentation
+
+202
+00:25:31.070 --> 00:25:38.540
+Francesca: in scikit-learn for Mlp classifier essentially has
+
+203
+00:25:40.590 --> 00:25:53.790
+Francesca: uses the same syntax as you did for your traditional machine learning algorithms like logistic regression. As you can see, it's the same
+
+204
+00:25:53.890 --> 00:25:56.870
+Francesca: X train X test Y train wide test split.
+
+205
+00:25:57.980 --> 00:26:06.540
+Francesca: And you Initi, you initialize the model in the same way by calling, you know, Mlp. Classifier.
+
+206
+00:26:06.990 --> 00:26:20.050
+Francesca: what you can do is actually actually denote in the parameters the hidden layer sizes.
+
+207
+00:26:20.230 --> 00:26:26.400
+Francesca: Of course you can also write your activation function, your solver. It essentially
+
+208
+00:26:27.173 --> 00:26:35.600
+Francesca: creates a neural network using syntax that is very familiar to you in that it is similar to your
+
+209
+00:26:35.820 --> 00:26:45.850
+Francesca: to your logistic regression, or to your Svm. Or to your decision trees. And so you can see here that I have imported it
+
+210
+00:26:46.060 --> 00:26:54.500
+Francesca: and have defined it such that I have hidden layer sizes 5 and 2, so I can
+
+211
+00:26:54.880 --> 00:27:03.479
+Francesca: run this and fit it on my my data. If I wanted to add another dense layer.
+
+212
+00:27:03.930 --> 00:27:08.930
+Francesca: I would do it as such.
+
+213
+00:27:09.060 --> 00:27:13.639
+Francesca: And now I have a new neural network.
+
+214
+00:27:14.070 --> 00:27:18.870
+Francesca: or I could just go with this, and
+
+215
+00:27:19.010 --> 00:27:23.370
+Francesca: that would give me another neural network.
+
+216
+00:27:23.660 --> 00:27:51.209
+Francesca: And so I did want to show this to everyone in case you are in the stage of your projects, where you are looking really to just get some kind of quick baseline result, especially if you have not yet incorporated neural networks to your initial report, or to, or, as the next step in your project, after having done your one-on-one
+
+217
+00:27:51.420 --> 00:28:00.669
+Francesca: feedback with your learning facilitator. And since this is such a familiar, you know syntax to everyone.
+
+218
+00:28:00.930 --> 00:28:04.239
+Francesca: It is very much going through. The same thing of
+
+219
+00:28:05.250 --> 00:28:17.059
+Francesca: ypread is your, you know, model variable dot predict X test, and then you have your accuracy score as as you would as well.
+
+220
+00:28:17.740 --> 00:28:19.040
+Francesca: I see a question in the chat.
+
+221
+00:28:19.445 --> 00:28:26.750
+zhujunwang: I'm trying to use this one, because somehow my tensorflow is not running properly in my local laptop.
+
+222
+00:28:26.750 --> 00:28:27.170
+zhujunwang: So.
+
+223
+00:28:27.170 --> 00:28:42.659
+zhujunwang: however, I found the limitation, for this one is like you can for the Mlp. You can specify the activation, but it's not like tensorflow, like you can like say for the for the hidden layer, you could use a different activation.
+
+224
+00:28:42.660 --> 00:28:43.400
+Francesca: Yes.
+
+225
+00:28:43.400 --> 00:28:46.789
+zhujunwang: It's not yeah, kind of as flexible as the.
+
+226
+00:28:46.790 --> 00:28:47.630
+Francesca: Yes, yes.
+
+227
+00:28:47.630 --> 00:28:49.110
+zhujunwang: Yeah, that's my fine fine.
+
+228
+00:28:49.110 --> 00:29:00.270
+Francesca: Yes, you are 100% correct on that. It does not have the flexibility of tensorflow. And
+
+229
+00:29:00.650 --> 00:29:25.789
+Francesca: because it doesn't have that flexibility, it also doesn't have that complexity. And so this is probably not the classifier that you would want to use on a complex industry problem if you were to create your own industry greater, maybe a large research project. So you're absolutely right. And you can see that
+
+230
+00:29:27.310 --> 00:29:54.199
+Francesca: It is very much nicely packaged in this very familiar syntax. I do like the idea of using it as you have. If you can't get your tensorflow to work, or maybe it'll take you a longer time for the setup, or if something's wrong, and you need some quick classifier, whether it be for your initial report or for some baseline. This is a nice option for that.
+
+231
+00:29:54.200 --> 00:29:54.830
+zhujunwang: Gotcha.
+
+232
+00:29:54.830 --> 00:30:01.889
+Francesca: So I like that. I like that idea. I think we can also compare it
+
+233
+00:30:02.020 --> 00:30:06.410
+Francesca: to this. In that, you know, I see my
+
+234
+00:30:06.730 --> 00:30:10.360
+Francesca: layers, and I might want to
+
+235
+00:30:11.130 --> 00:30:17.595
+Francesca: compare it as such, and do my my
+
+236
+00:30:18.670 --> 00:30:26.199
+Francesca: 1224, and 12 mlp. Classifier predict, and then have my accuracy. Score.
+
+237
+00:30:27.680 --> 00:30:46.220
+Francesca: But yes, it definitely is encouraged to use your tensorflow where you can, not only because you have the flexibility, as you mentioned, but also because it demonstrates your understanding, and it demonstrates the fact that you were able to
+
+238
+00:30:46.340 --> 00:30:56.150
+Francesca: use use a new a new kind of model. And so if I'm just going through the process.
+
+239
+00:30:56.480 --> 00:31:02.499
+Francesca: as you can see, without having done too much. The accuracy
+
+240
+00:31:03.060 --> 00:31:17.548
+Francesca: that I got with my tensorflow model is virtually the same as the one with the Mlp. Classifier, because this was such a you know, a baseline model. But it's nice to know all the options. So
+
+241
+00:31:18.580 --> 00:31:26.440
+Francesca: here's just something additional to use for for anyone who would like to look look further into that.
+
+242
+00:31:26.730 --> 00:31:43.159
+Francesca: And actually, in the same way. That there is this, there is this classifier from Sklearn for the
+
+243
+00:31:44.490 --> 00:31:55.030
+Francesca: for the neural network. There are also similar
+
+244
+00:31:55.550 --> 00:32:03.710
+Francesca: classifiers for convolutional neural networks, and so I will get to that
+
+245
+00:32:03.860 --> 00:32:13.419
+Francesca: later, but just letting you know that if you are doing your extra research and you are looking at just some kind of baseline.
+
+246
+00:32:13.600 --> 00:32:23.479
+Francesca: then you can use Mlp. Classifier, and then also pre-trained or not pre-trained but simpler syntax for convolutional neural networks.
+
+247
+00:32:26.140 --> 00:32:40.720
+Francesca: and with that I will actually enter the topic of convolutional neural networks. Yes, questions. You share this notebook. Yes. I will share this notebook with the slides in the
+
+248
+00:32:42.010 --> 00:32:48.859
+Francesca: in the posting, with this recording and and all of that. Thank you for the reminder.
+
+249
+00:32:50.200 --> 00:32:56.759
+Francesca: So now we are entering convolutional neural networks, and essentially
+
+250
+00:32:57.390 --> 00:33:17.970
+Francesca: for the application of neural networks for images which I know is very, very relevant to some of your projects, and just a generally exciting and useful topic. Whenever I think of images, I always start by setting the goal
+
+251
+00:33:18.540 --> 00:33:44.629
+Francesca: as to represent the image as numbers, because computers like numbers, I know as humans who may perceive visual data images are images, but we have to assume that the computer really just wants numbers. And so we have to find a way to represent what we perceive as visual data into a number format so that the computer can digest it.
+
+252
+00:33:44.980 --> 00:33:47.499
+Francesca: I did put a little bonus question.
+
+253
+00:33:48.090 --> 00:33:54.249
+Francesca: where have we seen some similar process of turning something into numbers before.
+
+254
+00:33:54.510 --> 00:33:55.941
+Francesca: Does anyone have any
+
+255
+00:33:56.840 --> 00:34:02.230
+Francesca: Any ideas of what? This process is really quite similar to.
+
+256
+00:34:02.230 --> 00:34:03.340
+Raghavan Srinivasan: Encoding.
+
+257
+00:34:04.310 --> 00:34:07.220
+Francesca: Okay, tell tell me more about that.
+
+258
+00:34:08.120 --> 00:34:12.671
+Raghavan Srinivasan: So in the in when we have categorical
+
+259
+00:34:13.860 --> 00:34:24.039
+Raghavan Srinivasan: variables, we want to, you know, encode them to. So for example vectorize or something we, we have used a similar technique.
+
+260
+00:34:24.230 --> 00:34:27.433
+Francesca: Yeah, that is a great example. If you have
+
+261
+00:34:27.980 --> 00:34:49.810
+Francesca: categorical values, including your labels, you know, if your labels are positive or negative, the computer doesn't know what the characters POSI, and so on mean. But if you encode it with one and 0, then the computers understand that any other ideas.
+
+262
+00:34:50.230 --> 00:35:03.449
+Francesca: Okay, communication analog data is converted to digital. Yes, that is another great example. Analog data very easy for humans to interpret. Not so
+
+263
+00:35:03.450 --> 00:35:10.859
+Francesca: images, computers, images? Yep, exactly images. That's that's the whole evolution. I'm sorry.
+
+264
+00:35:10.860 --> 00:35:14.280
+shashi: RGB colors. Image is stored as RGB colors. Yeah.
+
+265
+00:35:14.280 --> 00:35:33.449
+Francesca: Yes, one more that we had as a topic not too many weeks ago. It was quite a quite a hot topic in AI. And deep learning right now, something to do with language, maybe something to do with.
+
+266
+00:35:33.670 --> 00:35:34.420
+shashi: How do you.
+
+267
+00:35:34.420 --> 00:35:35.840
+zhujunwang: And Nlp.
+
+268
+00:35:36.080 --> 00:35:46.879
+Francesca: Nlp, yeah, exactly. So does anyone remember any of the Nlp techniques that gets a sentence into some numbers that a computer might like.
+
+269
+00:35:47.441 --> 00:35:52.130
+zhujunwang: Backlog words and the T tfid. I have the.
+
+270
+00:35:52.130 --> 00:35:52.859
+Francesca: Yes. Yeah.
+
+271
+00:35:52.860 --> 00:35:59.620
+Raghavan Srinivasan: Inverse document, something like that with with the Unigram background track. Yeah.
+
+272
+00:35:59.620 --> 00:36:11.449
+Francesca: Perfect. I heard N. Grams. I heard bag of words I heard. Tf, idf, you know the when you go from your word or your sentence into numbers. That is
+
+273
+00:36:11.750 --> 00:36:30.159
+Francesca: an analogous process to getting your image into numbers. So it sounds like we've learned a lot of a lot of techniques. Now to get various types of data and data formats into into numbers and ready for some machine learning. So great job, everyone for listing those
+
+274
+00:36:31.340 --> 00:36:39.139
+Francesca: in the case of images Shashi already mentioned. You know we we like
+
+275
+00:36:40.197 --> 00:36:52.900
+Francesca: to think of images as pixels, and specifically RGB or red, green, blue before getting into that
+
+276
+00:36:53.320 --> 00:36:55.769
+Francesca: how would a Grayscale image be represented?
+
+277
+00:36:55.880 --> 00:37:05.010
+Francesca: So we know that color images are 3D arrays, red, green, blue. How how would a Grayscale image be represented.
+
+278
+00:37:05.430 --> 00:37:06.730
+shashi: Shades of gray.
+
+279
+00:37:07.500 --> 00:37:15.340
+Francesca: Ok, but what about to a computer? Right? So what would a computer understand? A Grayscale image as
+
+280
+00:37:18.730 --> 00:37:22.089
+Francesca: would it be a 3D. Array.
+
+281
+00:37:23.977 --> 00:37:26.550
+shashi: Single, 2 dimensional.
+
+282
+00:37:27.950 --> 00:37:32.439
+Francesca: Okay, it would be a what would the 2 dimensions be? Shashi.
+
+283
+00:37:33.510 --> 00:37:36.700
+shashi: Oh, width and height, and
+
+284
+00:37:40.900 --> 00:37:42.930
+Francesca: Okay, I see some some
+
+285
+00:37:43.380 --> 00:37:53.789
+Francesca: things in the chat as well. Intensity 0 to one for Grayscale for each pixel numbers between 0 to 2, 5, 6, 0 to 2, 5, 5. Yes.
+
+286
+00:37:54.130 --> 00:38:00.810
+Francesca: I I see some of the correct answers here. And so maybe if we go into this.
+
+287
+00:38:01.660 --> 00:38:04.569
+Francesca: this will help us think of grayscale. So
+
+288
+00:38:04.680 --> 00:38:07.439
+Francesca: when we have our red, green, blue.
+
+289
+00:38:08.540 --> 00:38:21.210
+Francesca: we have, as you can see, this red plane, the screen playing in this blue plane, and
+
+290
+00:38:22.300 --> 00:38:28.650
+Francesca: when it goes through here that represents a pixel, a single pixel.
+
+291
+00:38:28.800 --> 00:38:36.629
+Francesca: and then going through here, that's another pixel here, that's another pixel, and here. That's another pixel.
+
+292
+00:38:36.960 --> 00:38:41.099
+Francesca: And we see that each pixel has values
+
+293
+00:38:41.260 --> 00:38:49.250
+Francesca: for red. Let's that 255 for green, 0 and blue, 2, 55. So 3 values.
+
+294
+00:38:49.910 --> 00:38:56.579
+Francesca: So if I'm looking at a Grayscale image just to go back before unpacking more of this.
+
+295
+00:38:57.230 --> 00:39:07.160
+Francesca: what would my value be so for each. Let's say, Pixel, a G for Grayscale.
+
+296
+00:39:07.810 --> 00:39:09.350
+Francesca: How would I represent
+
+297
+00:39:09.670 --> 00:39:16.309
+Francesca: a pixel? Would it be 3 numbers? Would it be 2 numbers, one, number 14 numbers
+
+298
+00:39:16.540 --> 00:39:21.160
+Francesca: I saw on the chat. Some people said it would just be
+
+299
+00:39:21.410 --> 00:39:25.990
+Francesca: 0 to 2, 5, 5, and so it would be something like, let's say it's 0.
+
+300
+00:39:26.150 --> 00:39:28.609
+Francesca: Then, if you had Pixel B.
+
+301
+00:39:28.790 --> 00:39:36.640
+Francesca: G, you might have it as 123, or pixel cg, as
+
+302
+00:39:37.377 --> 00:39:40.120
+Francesca: maybe it is 0 again. Right?
+
+303
+00:39:40.710 --> 00:39:47.474
+Francesca: So this is totally correct. A grayscale image would
+
+304
+00:39:48.320 --> 00:39:56.429
+Francesca: just be represented by one d. Array, where each value was 0 to
+
+305
+00:39:56.760 --> 00:40:02.329
+Francesca: 2 5, 5, as illustrated, because all of these are
+
+306
+00:40:02.660 --> 00:40:24.680
+Francesca: between 0 2, 5, 5. It's just in color. You have to take into consideration all 3 colors, red, green, and blue, whereas for grayscale you are only taking into consideration the intensity that was another word that I saw, and the intensity as rated between 0 and 2 5 5.
+
+307
+00:40:26.640 --> 00:40:29.959
+Francesca: Does anyone have any questions about this.
+
+308
+00:40:30.340 --> 00:40:32.719
+Francesca: this diagram that I have here.
+
+309
+00:40:37.460 --> 00:40:43.160
+Francesca: So what are what are the dimensions of my my image?
+
+310
+00:40:45.780 --> 00:40:48.320
+Francesca: So this this colored image over here
+
+311
+00:40:48.930 --> 00:40:53.620
+Francesca: what dimensions! So it will be! What? By what?
+
+312
+00:41:23.240 --> 00:41:26.670
+Francesca: Alright I see, answers 10 by 8.
+
+313
+00:41:31.700 --> 00:41:36.534
+Francesca: So I and then I see here with times height, times 3, I think.
+
+314
+00:41:37.350 --> 00:41:46.629
+Francesca: we are foreshadowing some of the other questions I had but for just the dimensions of the image.
+
+315
+00:41:49.380 --> 00:41:53.389
+Francesca: What I would do just for something simple like this is count.
+
+316
+00:41:53.550 --> 00:42:02.080
+Francesca: And so I I see. That's probably what many others have done. 1, 2, 3, 4, 5, 6, 7,
+
+317
+00:42:02.260 --> 00:42:04.150
+Francesca: 8, 9, 10,
+
+318
+00:42:04.950 --> 00:42:19.190
+Francesca: 1, 2, 3, 4, 5, 6, 7, 8, and so my dimensions would be 10 by 8. So thank you for that. Anu
+
+319
+00:42:20.420 --> 00:42:28.879
+Francesca: And I see in the chat there is a another equation with times height, times 3.
+
+320
+00:42:29.530 --> 00:42:34.720
+Francesca: So that is a very relevant equation, but not for the dimensions of the
+
+321
+00:42:37.010 --> 00:42:42.219
+Francesca: of the image itself. What does width times height times 3 denote?
+
+322
+00:42:47.060 --> 00:42:48.980
+Francesca: So if we were to do
+
+323
+00:42:49.460 --> 00:42:54.050
+Francesca: 10 times 8 times 3, what would that denote?
+
+324
+00:42:57.120 --> 00:43:05.790
+Francesca: Yes, 3 is the yes, 3 is the number of channels we have red, green, blue, and so
+
+325
+00:43:07.840 --> 00:43:15.270
+Francesca: it would in this case, the the number of values that we are interested in.
+
+326
+00:43:15.960 --> 00:43:26.350
+Francesca: And so this was a question that I did have lined up for later and have skipped ahead because you you were one step ahead of me.
+
+327
+00:43:27.350 --> 00:43:38.060
+Francesca: If we have 10 times 3, 10 times 8, which is one plane, then 3 channels. That is the number of values that we are going to be
+
+328
+00:43:38.350 --> 00:43:51.150
+Francesca: looking at. And so, as you can see here, I had in my question how many values in an image of 480 times 680 pixels. It would be
+
+329
+00:43:51.540 --> 00:43:54.530
+Francesca: like you said width times height, times 3.
+
+330
+00:43:55.270 --> 00:43:58.390
+Francesca: I did also put this fun
+
+331
+00:43:58.820 --> 00:44:07.459
+Francesca: fun, Link, in the interest of time. I probably will not get to that exercise, but you can see that
+
+332
+00:44:08.670 --> 00:44:20.380
+Francesca: the greatest intensity of red would have green and blue as 0 green in the same way, and then
+
+333
+00:44:20.760 --> 00:44:27.660
+Francesca: blue in the same way. Anyone want to tell me quickly how I would get Gray
+
+334
+00:44:29.860 --> 00:44:32.029
+Francesca: any any ideas, how to get gray.
+
+335
+00:44:33.290 --> 00:44:35.069
+shashi: 1, 28 in all, 3.
+
+336
+00:44:36.150 --> 00:44:43.630
+Francesca: Okay, let's see if I can scroll my apologies for the screen.
+
+337
+00:44:43.630 --> 00:44:45.470
+shashi: Oh, that is fine! It will be closer.
+
+338
+00:44:45.980 --> 00:44:46.805
+Francesca: Yes,
+
+339
+00:44:48.490 --> 00:45:01.790
+Francesca: but completely correct. If you get all 3 values the same as you can see, I'm slightly off. You will get various grades of intensity. And, as you can see down here.
+
+340
+00:45:02.060 --> 00:45:05.749
+Francesca: common color combinations are provided
+
+341
+00:45:06.320 --> 00:45:15.189
+Francesca: also could grab the hex code. So I think this is just like a fun website of a color Slider tour. And then, as a reminder.
+
+342
+00:45:15.570 --> 00:45:17.810
+Francesca: if you have all your values.
+
+343
+00:45:18.680 --> 00:45:22.090
+Francesca: you end up at the highest intensity, you end up with white.
+
+344
+00:45:30.270 --> 00:45:44.050
+Francesca: So now into convolutional neural networks, neural networks for images. I have here that cnns are especially effective when handling image data. They're good at recognizing
+
+345
+00:45:44.330 --> 00:45:55.200
+Francesca: visual patterns. For example, the lines, shapes, gradients, features of images.
+
+346
+00:45:56.130 --> 00:46:00.689
+Francesca: and, as you can see here, I have 2 diagrams, one of a fully
+
+347
+00:46:01.060 --> 00:46:11.580
+Francesca: connected network, and one with a convolutional layer. What is what is something you notice in in the depiction of these 2 networks.
+
+348
+00:46:27.330 --> 00:46:28.279
+Raghavan Srinivasan: This the Cnn.
+
+349
+00:46:28.280 --> 00:46:28.650
+shashi: Connection.
+
+350
+00:46:28.960 --> 00:46:35.890
+Raghavan Srinivasan: More Cnn as very consecutively arranged.
+
+351
+00:46:35.890 --> 00:46:36.450
+Francesca: For whom?
+
+352
+00:46:36.450 --> 00:46:43.740
+Raghavan Srinivasan: In a layer wise, where whereas this one fully connected, is seem to be connected to everything connected to everything.
+
+353
+00:46:43.740 --> 00:46:46.860
+Francesca: Yes, exactly so, I
+
+354
+00:46:47.070 --> 00:46:52.479
+Francesca: see in the chat, and also thank you for your answer. You know some connections are dropped.
+
+355
+00:46:52.720 --> 00:46:57.540
+Francesca: There are missing connections, for example, in
+
+356
+00:46:57.830 --> 00:47:01.270
+Francesca: these connections don't exist in the way that they do
+
+357
+00:47:01.470 --> 00:47:22.320
+Francesca: exist here in the fully connected in a fully connected network. And so for the convolutional neural network they're looking at more immediately neighboring. The connections are looking at more immediately
+
+358
+00:47:22.740 --> 00:47:31.250
+Francesca: neighboring neighboring neurons. Then a fully connected that just looks at connecting to all of the ones
+
+359
+00:47:31.370 --> 00:47:32.810
+Francesca: in the network.
+
+360
+00:47:36.390 --> 00:47:55.035
+Francesca: The convolutional layer is also extremely useful in reducing the reducing the complexity of
+
+361
+00:47:56.760 --> 00:48:03.239
+Francesca: of a plane that may have many values, as you can see here.
+
+362
+00:48:03.760 --> 00:48:08.200
+Francesca: and putting it through a convolution filter and and
+
+363
+00:48:08.790 --> 00:48:20.959
+Francesca: and capturing the features through this convolutional filter. And so, I really like this, this image because it
+
+364
+00:48:22.180 --> 00:48:28.719
+Francesca: visually really represents some of the important steps. Firstly.
+
+365
+00:48:28.830 --> 00:48:37.080
+Francesca: I like that, it represents the input or the source pixel, as it is labeled here very nicely.
+
+366
+00:48:37.470 --> 00:48:38.760
+Francesca: I like that. It
+
+367
+00:48:39.210 --> 00:48:49.639
+Francesca: shows the filter in a visually meaningful way, because we can visually see the input passing through a filter, and that it shows the output
+
+368
+00:48:49.800 --> 00:48:52.600
+Francesca: as well as is a mess.
+
+369
+00:48:53.170 --> 00:49:07.730
+Francesca: Whenever I show this image I like to ask, where is the feature being contained or represented?
+
+370
+00:49:07.870 --> 00:49:17.410
+Francesca: In which part of the diagram are we capturing the image feature?
+
+371
+00:49:18.170 --> 00:49:21.750
+Francesca: So we have our source plane
+
+372
+00:49:22.110 --> 00:49:30.039
+Francesca: with the source pixels of the image. We have our convolution filter, and we have our destination plane.
+
+373
+00:49:31.230 --> 00:49:38.469
+Francesca: Where is the feature of an image being being captured or contained.
+
+374
+00:49:41.780 --> 00:49:43.670
+zhujunwang: Sauce, panel.
+
+375
+00:49:44.770 --> 00:49:48.870
+Francesca: Okay. So source panel is one of the.
+
+376
+00:49:48.870 --> 00:49:49.480
+zhujunwang: Think so.
+
+377
+00:49:50.097 --> 00:49:52.060
+Francesca: One of the answers. Any.
+
+378
+00:49:52.380 --> 00:49:53.920
+shashi: Destination, Pixel.
+
+379
+00:49:53.920 --> 00:49:57.729
+Francesca: Okay, so we have a guess or destination. Fix pixel.
+
+380
+00:49:58.980 --> 00:50:02.910
+Francesca: anyone want to vote for the filter?
+
+381
+00:50:09.660 --> 00:50:13.920
+Francesca: So let me ask you, what is this process? What are we?
+
+382
+00:50:14.100 --> 00:50:21.819
+Francesca: What are we doing in this process? Why, why is this helpful?
+
+383
+00:50:23.320 --> 00:50:31.090
+Francesca: What? What does it mean to pass through this and land here?
+
+384
+00:50:32.700 --> 00:50:37.940
+shashi: Take a closer look at the area. The 3 by 3 matrix and see what are the
+
+385
+00:50:41.053 --> 00:50:43.870
+shashi: this way only value.
+
+386
+00:50:44.220 --> 00:50:45.850
+Francesca: And I heard another answer.
+
+387
+00:50:46.270 --> 00:50:51.149
+zhujunwang: I would just say, well, it just. You can apply different, like a filter to highlight.
+
+388
+00:50:51.720 --> 00:50:55.320
+zhujunwang: What you want to highlight for the for the original image.
+
+389
+00:50:55.320 --> 00:50:56.260
+Francesca: Right.
+
+390
+00:50:56.260 --> 00:50:59.090
+zhujunwang: Get rid of the unneeded voice. Noise.
+
+391
+00:50:59.090 --> 00:51:03.689
+Francesca: Right? Exactly. And so when we use this filter
+
+392
+00:51:04.333 --> 00:51:13.699
+Francesca: you know, we can think of it like, if the filter did not exist, you would end up with the same destination panel as you would the source right?
+
+393
+00:51:13.880 --> 00:51:20.020
+Francesca: But we put it through a filter because this filter represents some important
+
+394
+00:51:20.140 --> 00:51:33.909
+Francesca: information, some important transformation, some important, some might say, feature about the visual image that makes it necessary to go through this transformation.
+
+395
+00:51:34.190 --> 00:51:46.229
+Francesca: And so, if we think about what piece actually contains really, important information about images or important features about images.
+
+396
+00:51:46.890 --> 00:51:55.129
+Francesca: It's this filter, because this filter is what is causing the transformation. If this filter did not exist.
+
+397
+00:51:55.310 --> 00:51:58.629
+Francesca: then there would be no transformation
+
+398
+00:51:59.070 --> 00:52:07.990
+Francesca: happening. So this filter is actually what is really important in capturing
+
+399
+00:52:08.280 --> 00:52:20.440
+Francesca: accurately capturing the the features of the images. You can imagine that you want to make sure this transformation is actually suitable for your for your problem.
+
+400
+00:52:20.840 --> 00:52:26.780
+Francesca: And after we go through this process we could also
+
+401
+00:52:27.570 --> 00:52:40.540
+Francesca: go through our pooling layer. So if we go back, this was our convolutional layer. Now we are in a pooling layer, and then the pooling layer here is where you are able to reduce your
+
+402
+00:52:42.040 --> 00:52:48.660
+Francesca: features, so here you can see it is a 4 by 4.
+
+403
+00:52:49.730 --> 00:52:53.029
+Francesca: The output is then a 2 by 2,
+
+404
+00:52:53.300 --> 00:52:56.060
+Francesca: so we have reduced it from
+
+405
+00:52:57.570 --> 00:53:10.310
+Francesca: 4 by 4 becomes 2 by 2, and that helps us reduce reduce the complexity, reduce the dimensions.
+
+406
+00:53:10.980 --> 00:53:17.599
+Francesca: Max, pooling, as you can see, takes each this quadrant
+
+407
+00:53:18.570 --> 00:53:22.170
+Francesca: and looks at the maximum value. So in this case, 20.
+
+408
+00:53:22.910 --> 00:53:25.660
+Francesca: Looking at this quadrant maximum value 30.
+
+409
+00:53:26.010 --> 00:53:34.330
+Francesca: This quadrant maximum value under 12. This quadrant maximum value 37. And that's what we end up with here.
+
+410
+00:53:35.506 --> 00:53:48.629
+Francesca: For the average pooling. It is the same principle in that you're looking quadrant by quadrant, but rather than looking at the maximum value, you are, as it says, looking at the the average.
+
+411
+00:53:49.990 --> 00:53:54.850
+Francesca: And so to summarize, this may be an example
+
+412
+00:53:55.100 --> 00:53:57.789
+Francesca: of the entire process that you.
+
+413
+00:53:58.020 --> 00:54:03.559
+Francesca: you would go through. You would have some input. Image that you were trying to
+
+414
+00:54:03.940 --> 00:54:17.390
+Francesca: perhaps classify. Maybe you're looking at various children's drawings, and want to know how many children draw images of nature versus images of man-made objects or
+
+415
+00:54:17.730 --> 00:54:21.290
+Francesca: man-made landscapes.
+
+416
+00:54:21.760 --> 00:54:28.460
+Francesca: So you have this image layer, and I'm sorry you have this input image, and going through your convolutional layer.
+
+417
+00:54:29.040 --> 00:54:36.409
+Francesca: which is represented as such, and then you go to your pooling layer.
+
+418
+00:54:36.640 --> 00:54:39.999
+Francesca: and you have reduced the dimensions.
+
+419
+00:54:40.550 --> 00:54:45.009
+Francesca: and perhaps you go again. Another convolutional layer on this.
+
+420
+00:54:45.390 --> 00:54:51.709
+Francesca: and then your pooling layer again to reduce the dimensions further.
+
+421
+00:54:52.060 --> 00:54:59.409
+Francesca: and then perhaps you have reduced this. Enough that it is time to go into your fully connected layer.
+
+422
+00:54:59.860 --> 00:55:02.410
+Francesca: I'm sorry your fully connected network.
+
+423
+00:55:02.530 --> 00:55:07.070
+Francesca: And this fully connected network, then, has output
+
+424
+00:55:07.220 --> 00:55:11.049
+Francesca: one which means it was of a natural image.
+
+425
+00:55:11.870 --> 00:55:19.919
+Francesca: And so this is just a a visual representation of the possible classification process.
+
+426
+00:55:21.060 --> 00:55:34.720
+Francesca: Using an input image, your convolutional layer, your pooling layer, perhaps rinse and repeat, and then you are finally ready to pass it through your fully connected layer, which will produce
+
+427
+00:55:35.230 --> 00:55:45.410
+Francesca: some classification output of natural image. If that's what you're you're trying to to determine.
+
+428
+00:55:47.045 --> 00:55:48.740
+Francesca: I will skip
+
+429
+00:55:48.900 --> 00:56:03.339
+Francesca: this slide in the interest of time to get, and if we have a minute or so left over I'll get back to it. But I did want to highlight Imagenet as one of the most influential resources in computer vision. One of the
+
+430
+00:56:03.540 --> 00:56:21.240
+Francesca: benchmarks for computer vision. In that it provides a data set with millions of labeled images according to hierarchy. But also is the data set that many pre-trained models
+
+431
+00:56:21.380 --> 00:56:26.670
+Francesca: have been trained on, and you can take these pre-trained models and actually
+
+432
+00:56:26.990 --> 00:56:43.849
+Francesca: fine tune it onto a smaller data set. So this may be very relevant for some of your projects where you might have a smaller or domain specific data set, and perhaps you take a pre-trained model on Imagenet to classify Shashi. You mentioned plants.
+
+433
+00:56:43.860 --> 00:56:44.410
+shashi: Okay. Yeah.
+
+434
+00:56:44.410 --> 00:56:45.960
+Francesca: But, for example.
+
+435
+00:56:46.546 --> 00:56:57.109
+Francesca: the use case of image classification. We also already walked through. I did want to talk about another use case, which was a recommendation system.
+
+436
+00:56:57.350 --> 00:57:14.040
+Francesca: and of course, recommendation systems were discussed in a previous module, but also image-based recommendation systems that use Cnns are very, very effective.
+
+437
+00:57:14.790 --> 00:57:17.301
+Francesca: And to just run through the steps.
+
+438
+00:57:17.960 --> 00:57:30.140
+Francesca: so you would have some image input from your data set. And when I say, image, input, this could be something like, perhaps you are shopping for running shoes.
+
+439
+00:57:30.390 --> 00:57:36.269
+Francesca: and you like the aesthetic of these running shoes.
+
+440
+00:57:36.900 --> 00:57:46.040
+Francesca: and you want to get some recommendation of similar aesthetic running shoes. So your input would be the 1st pair that you liked.
+
+441
+00:57:47.220 --> 00:58:09.369
+Francesca: Then you would have to go ahead and represent the input ie. Represent the image of running shoes in some meaningful way, and we just learned how to do this because we can use our Cnn to represent the image in some meaningful way. Perhaps you are going to use a pre-trained model on Imagenet
+
+442
+00:58:09.640 --> 00:58:12.649
+Francesca: to identify your input image.
+
+443
+00:58:14.100 --> 00:58:43.789
+Francesca: then you may have other images in the larger data set of all shoes, so you might have slippers. You might have sandals, you might have running shoes, hiking boots, you might have flippers or fins, and you can use your pre-trained model to identify those images as well as such. Maybe it will identify sandals, and it will identify fins and identify slippers and hiking boots.
+
+444
+00:58:44.380 --> 00:58:59.509
+Francesca: What you then want to do after having done all that is, compare your original image. So your original running shoes image to all the other images in your data, set your all the other shoes.
+
+445
+00:58:59.700 --> 00:59:02.310
+Francesca: and you might use this with some
+
+446
+00:59:02.440 --> 00:59:16.330
+Francesca: mathematical operation, like cosine similarity, and then make recommendations. And I have visually represented this. So if I have this picture of running shoes, I may
+
+447
+00:59:17.530 --> 00:59:28.830
+Francesca: this through my pre-trained on imagenet model, and then turn that output into a. Vector and this vector may represent this image.
+
+448
+00:59:30.070 --> 00:59:36.130
+Francesca: I might have other running shoes in my data set, and
+
+449
+00:59:37.420 --> 00:59:47.709
+Francesca: would then need to come up with the vector for those images. So I'm over here right now, represent other images in the same way. So vectors for each of those.
+
+450
+00:59:47.830 --> 00:59:50.350
+Francesca: and the last step would be to
+
+451
+00:59:50.600 --> 00:59:57.410
+Francesca: compare mathematically the vectors to each other, and perhaps this one
+
+452
+00:59:57.520 --> 01:00:06.390
+Francesca: ends up most similar. And so this would be the recommendation that is given. But keeping in mind that this is all
+
+453
+01:00:06.520 --> 01:00:20.079
+Francesca: made possible because we have these pre-trained Cnns that can identify my input image and represent it mathematically same for all of these.
+
+454
+01:00:20.720 --> 01:00:31.510
+Francesca: and then finally make this mathematical comparison and return my nice running shoes recommendation.
+
+455
+01:00:33.720 --> 01:00:47.969
+Francesca: and I believe that puts us a little bit over time. I will share all the resources. Thank you very much, and good luck, with good luck, with your neural networks. Good luck with your final projects.
+
+456
+01:00:49.140 --> 01:00:49.830
+shashi: Thank you.
+
+457
+01:00:50.960 --> 01:01:02.189
+Raghavan Srinivasan: I have a question, Francisco. So in the final project, how do? How do we present it? Is it like just like we did the Eda in the Eda
+
+458
+01:01:02.970 --> 01:01:06.649
+Raghavan Srinivasan: Ed assignment. We created the
+
+459
+01:01:07.420 --> 01:01:20.565
+Raghavan Srinivasan: entire you know the notebook file with the running of the results, and then we put it in the Github with Readme dottext, and everything gave the access to the
+
+460
+01:01:21.140 --> 01:01:28.030
+Raghavan Srinivasan: instructor for the to verify it. The final project, submission also the same way.
+
+461
+01:01:28.430 --> 01:01:33.969
+Francesca: Yes, so the have you already completed your initial report? Is that.
+
+462
+01:01:34.090 --> 01:01:35.880
+Raghavan Srinivasan: Which is the ed right.
+
+463
+01:01:36.191 --> 01:01:39.619
+Francesca: Yes, so that is already all, all in a github right.
+
+464
+01:01:39.620 --> 01:01:42.110
+Raghavan Srinivasan: Correct. Yeah. Ada is already in the Gita.
+
+465
+01:01:42.110 --> 01:01:53.100
+Francesca: Okay, perfect. So your final project will exist in the same github. So you're just going to keep adding to the same repository.
+
+466
+01:01:53.100 --> 01:01:58.709
+Raghavan Srinivasan: Okay? And is there any presentation we need to do at the end? How does it? The final.
+
+467
+01:01:59.440 --> 01:02:07.357
+Francesca: So if I let me let me pull up the page and quickly share my screen.
+
+468
+01:02:11.840 --> 01:02:21.000
+Francesca: so here it says to accompany your
+
+469
+01:02:21.490 --> 01:02:25.790
+Francesca: notebook, you will provide a non-technical write-up.
+
+470
+01:02:29.370 --> 01:02:33.400
+Raghavan Srinivasan: Okay, that's that's apart from the readme, is it?
+
+471
+01:02:33.400 --> 01:02:38.650
+Francesca: I believe it is so. This is in the modules.
+
+472
+01:02:39.470 --> 01:02:45.200
+Francesca: So if you go into modules on on your course.
+
+473
+01:02:46.560 --> 01:02:51.820
+Francesca: Let's see if this loads. Yes. So if you go to modules at the very top
+
+474
+01:02:52.070 --> 01:02:54.160
+Francesca: where it says program orientation.
+
+475
+01:02:55.020 --> 01:02:59.530
+Francesca: If you click and scroll, they have capstone project overview.
+
+476
+01:03:00.030 --> 01:03:06.965
+Francesca: So this has all the information about the capstone project and
+
+477
+01:03:09.100 --> 01:03:13.169
+Francesca: you have a final report. Template.
+
+478
+01:03:13.520 --> 01:03:16.070
+Raghavan Srinivasan: That you can download from here.
+
+479
+01:03:16.200 --> 01:03:24.450
+Francesca: And this final report, template will help you know what to put in your
+
+480
+01:03:24.450 --> 01:03:29.610
+Francesca: this is. This is along with the readme dot. All those things. We do it
+
+481
+01:03:29.610 --> 01:03:30.710
+Francesca: believe it is. Yes.
+
+482
+01:03:30.710 --> 01:03:32.569
+Raghavan Srinivasan: Okay, got it? Got it cool. Great.
+
+483
+01:03:32.780 --> 01:03:34.710
+Francesca: All right. Thanks. So much. Everyone.
+
+484
+01:03:34.710 --> 01:03:36.210
+Raghavan Srinivasan: Thank you. Really appreciate it.
+
+485
+01:03:36.210 --> 01:03:36.800
+Francesca: Bye.
+
